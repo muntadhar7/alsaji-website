@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trade Portal - AlSaji Auto Parts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="util">
+    <div class="wrap row between">
+      <div class="row" style="gap:12px">
+        <span style="color:var(--navy1);font-size:14px">Branch</span>
+        <div class="relative">
+          <button class="chip" id="branchBtn">Baghdad - Palestine St.</button>
+        </div>
+      </div>
+      <div class="row" style="gap:12px">
+        <div class="search">
+          <span>🔎</span>
+          <input id="searchInput" placeholder="Search by OE, name, or brand">
+        </div>
+        <button class="chip" id="langBtn">AR</button>
+        <a class="chip" href="account.html">Account</a>
+        <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="wrap row">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="shop.html">Shop</a>
+        <a class="tab" href="services.html">Services</a>
+        <a class="tab" href="brands.html">Brands & Partners</a>
+        <a class="tab" href="news.html">News & Guides</a>
+        <a class="tab" href="branches.html">Branches</a>
+        <a class="tab" href="support.html">Support</a>
+        <a class="tab" href="account.html">Account</a>
+        <a class="tab active" href="trade.html">Trade Portal</a>
+        <span style="margin-left:auto" class="muted">Live Chat available</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Trade Portal</h1>
+    <div class="row" style="gap:8px;margin-bottom:16px">
+      <button class="chip active" id="tradeLoginTab">Login</button>
+      <button class="chip" id="tradeQuickTab">Quick Order</button>
+      <button class="chip" id="tradeRegisterTab">Register</button>
+    </div>
+
+    <div class="card" id="tradeLogin">
+      <h2>Trade Login</h2>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
+        <label>Email<br><input class="select" type="email" placeholder="your@workshop.com"></label>
+        <label>Password<br><input class="select" type="password" placeholder="••••••••"></label>
+        <button class="btn" style="grid-column:span 2">Sign in to Trade Account</button>
+      </div>
+      <div class="muted" style="text-align:center;margin-top:12px">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+    <div class="card" id="tradeQuick" style="display:none">
+      <h2>Quick Order</h2>
+      <label>Paste SKUs (one per line) or upload CSV
+        <textarea class="select" style="height:120px;margin-top:6px" placeholder="04465-0K390 x 2&#10;90915-YZZE1 x 1&#10;ADV123 x 4"></textarea>
+      </label>
+      <div class="row" style="margin-top:16px;flex-wrap:wrap;gap:8px">
+        <button class="btn secondary">Upload CSV</button>
+        <button class="btn">Map substitutes</button>
+        <button class="btn secondary">Save as list</button>
+        <button class="btn" style="margin-left:auto">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card" id="tradeRegister" style="display:none">
+      <h2>Register Trade Account</h2>
+      <p class="muted">Apply for a trade account to access wholesale pricing and business features.</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
+        <label>Business Name<br><input class="select" type="text"></label>
+        <label>Contact Person<br><input class="select" type="text"></label>
+        <label>Email<br><input class="select" type="email"></label>
+        <label>Phone<br><input class="select" type="tel"></label>
+        <label>Business Type<br>
+          <select class="select">
+            <option>Workshop</option>
+            <option>Dealership</option>
+            <option>Fleet Operator</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Location<br><input class="select" type="text"></label>
+      </div>
+      <button class="btn" style="margin-top:16px;width:100%">Submit Application</button>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/trade.js"></script>
+</body>
+</html>

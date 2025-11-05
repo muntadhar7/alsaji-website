@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Debug</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .success { background: #d4edda; }
+        .error { background: #f8d7da; }
+        button { padding: 10px 20px; margin: 5px; }
+        pre { background: #f8f9fa; padding: 10px; overflow: auto; }
+    </style>
+</head>
+<body>
+    <h1>Frontend-API Connection Debug</h1>
+
+    <div class="test">
+        <h3>1. Test API Direct Connection</h3>
+        <button onclick="testDirectAPI()">Test Direct API Calls</button>
+        <div id="directTest"></div>
+    </div>
+
+    <div class="test">
+        <h3>2. Test Frontend API Class</h3>
+        <button onclick="testFrontendAPI()">Test Frontend API Class</button>
+        <div id="frontendTest"></div>
+    </div>
+
+    <div class="test">
+        <h3>3. Test Your Main Page</h3>
+        <button onclick="testMainPage()">Load Main Page Data</button>
+        <div id="mainPageTest"></div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script>
+        const baseURL = 'http://localhost:8888';
+
+        async function testDirectAPI() {
+            const endpoints = [
+                '/api/alsaji/products',
+                '/api/alsaji/categories',
+                '/api/alsaji/brands'
+            ];
+
+            let results = '';
+            for (const endpoint of endpoints) {
+                try {
+                    const response = await fetch(baseURL + endpoint);
+                    const data = await response.json();
+                    results += `<div class="success">✓ ${endpoint}: ${data.length} items</div>`;
+                } catch (error) {
+                    results += `<div class="error">✗ ${endpoint}: ${error.message}</div>`;
+                }
+            }
+            document.getElementById('directTest').innerHTML = results;
+        }
+
+        async function testFrontendAPI() {
+            const results = document.getElementById('frontendTest');
+            results.innerHTML = 'Testing...';
+
+            try {
+                // Test products
+                const products = await alsajiAPI.getProducts({ limit: 3 });
+                results.innerHTML += `<div class="success">✓ Products: ${products.length} items</div>`;
+
+                // Test categories
+                const categories = await alsajiAPI.getCategories();
+                results.innerHTML += `<div class="success">✓ Categories: ${categories.length} items</div>`;
+
+                // Test brands
+                const brands = await alsajiAPI.getBrands();
+                results.innerHTML += `<div class="success">✓ Brands: ${brands.length} items</div>`;
+
+            } catch (error) {
+                results.innerHTML = `<div class="error">✗ API Error: ${error.message}</div>`;
+            }
+        }
+
+        async function testMainPage() {
+            const results = document.getElementById('mainPageTest');
+            results.innerHTML = 'Loading...';
+
+            try {
+                // Simulate what your main page does
+                const [categories, brands, products] = await Promise.all([
+                    alsajiAPI.getCategories(),
+                    alsajiAPI.getBrands(),
+                    alsajiAPI.getFeaturedProducts(8)
+                ]);
+
+                results.innerHTML = `
+                    <div class="success">
+                        ✓ Main page data loaded:<br>
+                        - Categories: ${categories.length}<br>
+                        - Brands: ${brands.length}<br>
+                        - Products: ${products.length}
+                    </div>
+                    <pre>Sample product: ${JSON.stringify(products[0], null, 2)}</pre>
+                `;
+            } catch (error) {
+                results.innerHTML = `<div class="error">✗ Main page error: ${error.message}</div>`;
+            }
+        }
+    </script>
+</body>
+</html>

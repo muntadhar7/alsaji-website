@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AlSaji Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .success { background: #d4edda; }
+        .error { background: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>AlSaji Frontend Test</h1>
+
+    <div class="test">
+        <h3>API Connection Test</h3>
+        <div id="apiTest"></div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script>
+        async function testAPI() {
+            const results = document.getElementById('apiTest');
+
+            try {
+                // Test products
+                const products = await alsajiAPI.getProducts({ limit: 3 });
+                results.innerHTML += `<div class="success">✓ Products loaded: ${products.length} items</div>`;
+
+                // Test categories
+                const categories = await alsajiAPI.getCategories();
+                results.innerHTML += `<div class="success">✓ Categories loaded: ${categories.length} items</div>`;
+
+                // Test brands
+                const brands = await alsajiAPI.getBrands();
+                results.innerHTML += `<div class="success">✓ Brands loaded: ${brands.length} items</div>`;
+
+                results.innerHTML += `<div class="success">🎉 Frontend is working correctly!</div>`;
+
+            } catch (error) {
+                results.innerHTML = `<div class="error">✗ Error: ${error.message}</div>`;
+            }
+        }
+
+        testAPI();
+    </script>
+</body>
+</html>

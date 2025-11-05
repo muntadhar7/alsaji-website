@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Branches - AlSaji Auto Parts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="util">
+    <div class="wrap row between">
+      <div class="row" style="gap:12px">
+        <span style="color:var(--navy1);font-size:14px">Branch</span>
+        <div class="relative">
+          <button class="chip" id="branchBtn">Baghdad - Palestine St.</button>
+        </div>
+      </div>
+      <div class="row" style="gap:12px">
+        <div class="search">
+          <span>🔎</span>
+          <input id="searchInput" placeholder="Search by OE, name, or brand">
+        </div>
+        <button class="chip" id="langBtn">AR</button>
+        <a class="chip" href="account.html">Account</a>
+        <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="wrap row">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="shop.html">Shop</a>
+        <a class="tab" href="services.html">Services</a>
+        <a class="tab" href="brands.html">Brands & Partners</a>
+        <a class="tab" href="news.html">News & Guides</a>
+        <a class="tab active" href="branches.html">Branches</a>
+        <a class="tab" href="support.html">Support</a>
+        <a class="tab" href="account.html">Account</a>
+        <a class="tab" href="trade.html">Trade Portal</a>
+        <span style="margin-left:auto" class="muted">Live Chat available</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Our Branches</h1>
+    <div class="image" style="height:240px;background:var(--w2);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--muted)">
+      Map View - Interactive branch locations
+    </div>
+    <div class="grid cols-3" style="margin-top:24px" id="branchesList">
+      <!-- Loaded by JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

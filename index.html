@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlSaji - Genuine Auto Parts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="util">
+    <div class="wrap row between">
+      <div class="row" style="gap:12px">
+
+      </div>
+      <div class="row" style="gap:12px">
+        <div class="search">
+          <span>🔎</span>
+          <input id="searchInput" placeholder="Search by OE, name, or brand">
+        </div>
+        <button class="chip" id="langBtn">AR</button>
+        <a class="chip" href="account.html">Account</a>
+        <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="wrap row">
+        <a class="tab active" href="index.html">Home</a>
+        <a class="tab" href="shop.html">Shop</a>
+        <a class="tab" href="services.html">Services</a>
+        <a class="tab" href="brands.html">Brands & Partners</a>
+        <a class="tab" href="news.html">News & Guides</a>
+        <a class="tab" href="branches.html">Branches</a>
+        <a class="tab" href="support.html">Support</a>
+        <a class="tab" href="account.html">Account</a>
+        <a class="tab" href="trade.html">Trade Portal</a>
+        <span style="margin-left:auto" class="muted">Live Chat available</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Genuine parts. Clear fitment. Fast pickup.</h1>
+        <p class="muted">Shop retail or order as a workshop with branch-level availability across Iraq.</p>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:12px">
+          <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:8px">
+            <label class="muted">Make<br>
+              <select class="select" id="make">
+                <option value="">Select Make</option>
+              </select>
+            </label>
+            <label class="muted">Model<br>
+              <select class="select" id="model" disabled>
+                <option value="">Select Model</option>
+              </select>
+            </label>
+            <label class="muted">Year<br>
+              <select class="select" id="year" disabled>
+                <option value="">Select Year</option>
+              </select>
+            </label>
+          </div>
+          <div class="row" style="margin-top:8px">
+            <button class="btn" id="applyFitment">Apply</button>
+            <button class="btn secondary" id="clearFitment">Clear</button>
+          </div>
+        </div>
+        <div class="grid cols-3">
+          <a class="card" href="shop.html">
+            <div>Buy Parts Retail</div>
+          </a>
+          <a class="card" href="trade.html">
+            <div>For Workshops & Trade</div>
+          </a>
+          <a class="card" href="#">
+            <div>For Fleets</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section style="margin-top:24px">
+      <div class="row between">
+        <h2>Popular categories</h2>
+        <a class="btn ghost" href="shop.html">View all</a>
+      </div>
+      <div class="grid cols-4" id="popularCategories">
+        <!-- Loaded by JavaScript -->
+      </div>
+    </section>
+
+    <section style="margin-top:12px">
+      <div class="row between">
+        <h2>Top brands</h2>
+        <a class="btn ghost" href="brands.html">View all</a>
+      </div>
+      <div class="grid cols-6" id="topBrands">
+        <!-- Loaded by JavaScript -->
+      </div>
+    </section>
+
+    <section style="margin-top:12px">
+      <div class="row between">
+        <h2>Featured Products</h2>
+      </div>
+      <div class="grid cols-4" id="featuredProducts">
+        <!-- Loaded by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap cols">
+      <div>
+        <div style="font-weight:600">AlSaji</div>
+        <p class="muted">Since 1986. Genuine parts across Iraq.</p>
+      </div>
+      <div>
+        <div style="font-weight:600">Shop</div>
+        <ul class="muted" style="list-style:none;padding:0;margin:8px 0 0">
+          <li>Brake System</li><li>Filtration</li><li>Suspension</li><li>Electrical</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:600">Support</div>
+        <ul class="muted" style="list-style:none;padding:0;margin:8px 0 0">
+          <li>Order Tracking</li><li>Returns</li><li>Warranty</li><li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:600">Follow</div>
+        <div class="row" style="font-size:20px;margin-top:6px">f ig x</div>
+      </div>
+    </div>
+    <div class="bottom">© 2025 AlSaji Auto Spare Parts Co. Ltd. - OFFLINE TEST</div>
+  </footer>
+
+  <div class="sticky-support">
+    <div class="group">
+      <button class="btn" style="background:#25D366">WhatsApp</button>
+      <button class="btn">Live Chat</button>
+    </div>
+  </div>
+
+  <div style="position:fixed;top:20px;right:20px;background:var(--red);color:white;padding:8px 16px;border-radius:8px;z-index:9999;font-weight:bold;">
+    OFFLINE TEST
+  </div>
+<!-- Add this before other scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

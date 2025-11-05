@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Connection Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        button { padding: 10px 20px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Odoo API Connection Test</h1>
+
+    <div class="test">
+        <h3>Test Products API</h3>
+        <button onclick="testProducts()">Test Products</button>
+        <button onclick="testCategories()">Test Categories</button>
+        <button onclick="testBrands()">Test Brands</button>
+        <button onclick="testBranches()">Test Branches</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script>
+        async function testProducts() {
+            try {
+                showMessage('Testing products API...', 'info');
+                const products = await alsajiAPI.getProducts({ limit: 5 });
+                showMessage(`Success! Found ${products.length} products`, 'success');
+                console.log('Products:', products);
+            } catch (error) {
+                showMessage(`Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testCategories() {
+            try {
+                showMessage('Testing categories API...', 'info');
+                const categories = await alsajiAPI.getCategories();
+                showMessage(`Success! Found ${categories.length} categories`, 'success');
+                console.log('Categories:', categories);
+            } catch (error) {
+                showMessage(`Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testBrands() {
+            try {
+                showMessage('Testing brands API...', 'info');
+                const brands = await alsajiAPI.getBrands();
+                showMessage(`Success! Found ${brands.length} brands`, 'success');
+                console.log('Brands:', brands);
+            } catch (error) {
+                showMessage(`Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testBranches() {
+            try {
+                showMessage('Testing branches API...', 'info');
+                const branches = await alsajiAPI.getBranches();
+                showMessage(`Success! Found ${branches.length} branches`, 'success');
+                console.log('Branches:', branches);
+            } catch (error) {
+                showMessage(`Error: ${error.message}`, 'error');
+            }
+        }
+
+        function showMessage(message, type) {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.textContent = message;
+            div.className = type;
+            results.appendChild(div);
+        }
+    </script>
+</body>
+</html>
