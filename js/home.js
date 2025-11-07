@@ -14,7 +14,7 @@ async function loadHomepageData() {
         ]);
 
         renderCategories(categories);
-        renderBrands(brands);
+        renderBrandsHome(brands);
         renderFeaturedProducts(products);
         loadVehicleMakes();
 
@@ -37,13 +37,12 @@ function renderCategories(categories) {
     }
 }
 
-function renderBrands(brands) {
+function renderBrandsHome(brands) {
     const container = document.getElementById('topBrands');
     if (container) {
         container.innerHTML = brands.map(brand => `
-            <div class="card" style="text-align:center;cursor:pointer" onclick="window.location.href='shop.html?brand=${brand.name}'">
-                <image class="image" src='http://localhost:8888/${brand.image_url}'>
-
+            <div class="card" style="text-align:center;cursor:pointer   ;object-fit: contain;" onclick="window.location.href='shop.html?brand=${brand.name}'">
+                <image class="image" style="width:100%; height:150px; object-fit:contain;"  src='http://localhost:8888/${brand.image_url}'>
                 </div>
                 <div class="muted" style="margin-top:6px">${brand.name}</div>
             </div>
@@ -56,7 +55,7 @@ function renderFeaturedProducts(products) {
     if (container) {
         container.innerHTML = products.map(product => `
             <div class="card">
-                <img class="image" src = "http://localhost:8888//${product.image_url}"></img>
+                <img class="image" style=" object-fit:contain;" src = "http://localhost:8888//${product.image_url}"></img>
                 <div class="muted">${product.brand} • ${product.oe_reference}</div>
                 <div>${product.name}</div>
                 <div class="row between">
@@ -73,7 +72,7 @@ function renderFeaturedProducts(products) {
 
 async function loadVehicleMakes() {
     try {
-        const makes = await alsajiAPI.getVehicleMakes();
+        const makes = await alsajiAPI.getBrands();
         const makeSelect = document.getElementById('make');
         if (makeSelect) {
             makeSelect.innerHTML = '<option value="">Select Make</option>' +
