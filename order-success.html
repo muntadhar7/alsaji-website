@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Confirmed - AlSaji Auto Parts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="util">
+    <!-- Same header as other pages -->
+  </header>
+
+  <main class="wrap" style="text-align:center;padding:60px 20px">
+    <div style="max-width:500px;margin:0 auto">
+      <div style="font-size:64px;margin-bottom:20px">✅</div>
+      <h1 style="margin-bottom:12px;color:var(--green)">Order Confirmed!</h1>
+      <p class="muted" style="margin-bottom:24px">
+        Thank you for your order. We've sent a confirmation email with your order details.
+      </p>
+
+      <div class="card" style="text-align:left;margin-bottom:24px">
+        <h3>Order Details</h3>
+        <div class="row between">
+          <div class="muted">Order Number:</div>
+          <div id="orderNumber" style="font-weight:600"></div>
+        </div>
+        <div class="row between">
+          <div class="muted">Estimated Delivery:</div>
+          <div>2-3 business days</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;justify-content:center">
+        <a href="shop.html" class="btn">Continue Shopping</a>
+        <a href="index.html" class="btn secondary">Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Get order ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const orderId = urlParams.get('order');
+
+    if (orderId) {
+      document.getElementById('orderNumber').textContent = orderId;
+    }
+  </script>
+</body>
+</html>

@@ -1,6 +1,28 @@
+// Shop state management
+class ShopState {
+    constructor() {
+        this.products = null;
+        this.categories = null;
+        this.brands = null;
+        this.filters = {
+            brand: '',
+            category: '',
+            search: '',
+            in_stock: false
+        };
+        this.isLoading = false;
+        this.currentPage = 1;
+        this.productsPerPage = 20; // Show 12 products per page
+        this.hasMoreProducts = false;
+        this.allProducts = []; // Store all loaded products
+    }
+}
+
+const shopState = new ShopState();
+
 // Utility functions
 function formatPrice(price) {
-    return 'IQD ' + price.toLocaleString();
+    return 'IQD ' + (typeof price === 'number' ? price.toLocaleString() : '0');
 }
 
 function debounce(func, wait) {
@@ -24,6 +46,7 @@ function getUrlParams() {
     if (params.has('category')) filters.category = params.get('category');
     if (params.has('search')) filters.search = params.get('search');
     if (params.has('in_stock')) filters.in_stock = params.get('in_stock') === 'true';
+    if (params.has('page')) shopState.currentPage = parseInt(params.get('page'));
 
     return filters;
 }
@@ -35,6 +58,7 @@ function updateUrlParams(filters) {
     if (filters.category) params.set('category', filters.category);
     if (filters.search) params.set('search', filters.search);
     if (filters.in_stock) params.set('in_stock', 'true');
+    if (shopState.currentPage > 1) params.set('page', shopState.currentPage);
 
     const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
     window.history.replaceState({}, '', newUrl);
@@ -62,8 +86,13 @@ function updateCartCount(count) {
 }
 
 function showNotification(message, type = 'info') {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.shop-notification');
+    existingNotifications.forEach(notification => notification.remove());
+
     // Create notification element
     const notification = document.createElement('div');
+    notification.className = 'shop-notification';
     notification.style.cssText = `
         position: fixed;
         top: 20px;
@@ -117,45 +146,223 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 async function loadShopData() {
+    // Reset pagination when loading new data
+    shopState.currentPage = 1;
+    shopState.allProducts = [];
+
     try {
-        const [products, categories, brands] = await Promise.all([
-            alsajiAPI.getProducts(),
+        showLoadingState();
+
+        // Load categories and brands first
+        const [categories, brands] = await Promise.all([
             alsajiAPI.getCategories(),
             alsajiAPI.getBrands()
         ]);
 
-        renderProducts(products);
+        shopState.categories = categories;
+        shopState.brands = brands;
         populateFilters(categories, brands);
+
+        // Then load products with current filters
+        await loadProducts();
 
     } catch (error) {
         console.error('Failed to load shop data:', error);
         showNotification('Failed to load products', 'error');
+        hideLoadingState();
     }
+}
+
+async function loadProducts() {
+    if (shopState.isLoading) return;
+
+    shopState.isLoading = true;
+    showLoadingMoreState();
+
+    try {
+        // Load products with current filters and pagination
+        const response = await alsajiAPI.getProducts({
+            ...shopState.filters,
+            limit: shopState.productsPerPage * shopState.currentPage
+        });
+
+        console.log('API Response:', response); // Debug log
+
+        // FIX: Use response.products instead of response
+        shopState.allProducts = response.products || []; // THIS IS THE FIX
+        console.log('allProducts set to:', shopState.allProducts); // Debug log
+
+        // Store all products for pagination
+        shopState.products = getCurrentPageProducts();
+
+        // Check if there are more products to load
+        shopState.hasMoreProducts = shopState.allProducts.length >= shopState.productsPerPage * shopState.currentPage;
+
+        renderProducts(shopState.products);
+        updateLoadMoreButton();
+        hideLoadingState();
+
+    } catch (error) {
+        console.error('Failed to load products:', error);
+        showNotification('Error loading products', 'error');
+        hideLoadingState();
+    } finally {
+        shopState.isLoading = false;
+    }
+}
+function getCurrentPageProducts() {
+    const startIndex = 0; // Always show all loaded products
+    const endIndex = shopState.productsPerPage * shopState.currentPage;
+    return shopState.allProducts.slice(0, endIndex);
+}
+
+async function loadMoreProducts() {
+    if (shopState.isLoading || !shopState.hasMoreProducts) return;
+
+    shopState.currentPage++;
+    shopState.isLoading = true;
+
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const loadMoreInfo = document.getElementById('loadMoreInfo');
+
+    if (loadMoreBtn) loadMoreBtn.disabled = true;
+    if (loadMoreInfo) loadMoreInfo.textContent = 'Loading more products...';
+
+    try {
+        // Simulate loading delay for better UX
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        // Get products for the new page
+        shopState.products = getCurrentPageProducts();
+
+        // Check if we've reached the end
+        shopState.hasMoreProducts = shopState.allProducts.length > shopState.products.length;
+
+        renderProducts(shopState.products);
+        updateLoadMoreButton();
+        updateUrlFromForm();
+
+        // Scroll to show new products
+        setTimeout(() => {
+            const productGrid = document.getElementById('productGrid');
+            if (productGrid) {
+                const lastProduct = productGrid.lastElementChild;
+                if (lastProduct) {
+                    lastProduct.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }
+        }, 100);
+
+    } catch (error) {
+        console.error('Failed to load more products:', error);
+        showNotification('Error loading more products', 'error');
+        shopState.currentPage--; // Revert page on error
+    } finally {
+        shopState.isLoading = false;
+        if (loadMoreBtn) loadMoreBtn.disabled = false;
+    }
+}
+
+function updateLoadMoreButton() {
+    const container = document.getElementById('loadMoreContainer');
+    const button = document.getElementById('loadMoreBtn');
+    const info = document.getElementById('loadMoreInfo');
+
+    if (!container || !button || !info) return;
+
+    if (shopState.hasMoreProducts && shopState.allProducts.length > 0) {
+        container.style.display = 'block';
+        button.textContent = `Load More (${shopState.products.length} of ${shopState.allProducts.length} shown)`;
+        button.disabled = shopState.isLoading;
+
+        const remaining = shopState.allProducts.length - shopState.products.length;
+        info.textContent = `${remaining} more products available`;
+    } else {
+        container.style.display = 'none';
+    }
+
+    // Hide load more if we're showing all products
+    if (shopState.products.length >= shopState.allProducts.length) {
+        container.style.display = 'none';
+    }
+}
+
+function showLoadingState() {
+    const container = document.getElementById('productGrid');
+    if (container) {
+        container.innerHTML = `
+            <div style="grid-column:1/-1;text-align:center;padding:40px">
+                <div style="font-size:24px;margin-bottom:12px">⏳</div>
+                <div class="muted">Loading products...</div>
+            </div>
+        `;
+    }
+    // Hide load more during initial load
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+    if (loadMoreContainer) {
+        loadMoreContainer.style.display = 'none';
+    }
+}
+
+function showLoadingMoreState() {
+    const loadMoreInfo = document.getElementById('loadMoreInfo');
+    if (loadMoreInfo && shopState.currentPage > 1) {
+        loadMoreInfo.textContent = 'Loading more products...';
+    }
+}
+
+function hideLoadingState() {
+    // Loading state is automatically removed when products are rendered
 }
 
 function renderProducts(products) {
     const container = document.getElementById('productGrid');
     const resultsCount = document.getElementById('resultsCount');
 
-    if (container) {
+    if (!container) return;
+
+    if (products.length === 0 && shopState.currentPage === 1) {
+        container.innerHTML = `
+            <div style="grid-column:1/-1;text-align:center;padding:40px">
+                <div style="font-size:48px;margin-bottom:12px">🔍</div>
+                <h3 style="margin-bottom:8px">No products found</h3>
+                <p class="muted">Try adjusting your filters or search terms</p>
+                <button class="btn" onclick="clearFilters()" style="margin-top:16px">
+                    Clear All Filters
+                </button>
+            </div>
+        `;
+    } else {
         container.innerHTML = products.map(product => `
-            <div class="card">
-                <img class="image" src='http://localhost:8888${product.image_url}' alt='${product.name}' onerror="this.style.display='none'">
+            <div class="card product-card" data-product-id="${product.id}">
+                <img class="image" src='http://localhost:8888${product.image_url}' alt='${product.name}'
+                     onerror="this.style.display='none'"
+                     loading="lazy">
                 <div class="muted">${product.brand} • ${product.oe_reference}</div>
-                <div>${product.name}</div>
-                <div class="row between">
-                    <div style="color:var(--red)">${formatPrice(product.price)}</div>
-                    <button class="btn add-to-cart-btn" data-product-id="${product.id}" style="padding:6px 10px;font-size:12px">
-                        Add
+                <div style="font-weight:500;margin:8px 0">${product.name}</div>
+                <div class="row between" style="align-items:center">
+                    <div style="color:var(--red);font-weight:600">${formatPrice(product.price)}</div>
+                    <button class="btn add-to-cart-btn" data-product-id="${product.id}"
+                            style="padding:6px 10px;font-size:12px"
+                            ${!product.in_stock ? 'disabled' : ''}>
+                        ${product.in_stock ? 'Add' : 'Out of Stock'}
                     </button>
                 </div>
-                <div class="muted">${product.in_stock ? 'In stock' : 'Out of stock'}</div>
+                <div class="muted" style="font-size:12px;margin-top:4px">
+                    ${product.in_stock ? '✅ In stock' : '❌ Out of stock'}
+                </div>
             </div>
         `).join('');
     }
 
     if (resultsCount) {
-        resultsCount.textContent = `${products.length} results`;
+        const totalShown = products.length;
+        const totalAvailable = shopState.allProducts.length;
+        if (totalShown < totalAvailable) {
+            resultsCount.textContent = `Showing ${totalShown} of ${totalAvailable} products`;
+        } else {
+            resultsCount.textContent = `${totalShown} ${totalShown === 1 ? 'product' : 'products'} found`;
+        }
     }
 }
 
@@ -163,12 +370,12 @@ function populateFilters(categories, brands) {
     const categorySelect = document.getElementById('filterCategory');
     const brandSelect = document.getElementById('filterBrand');
 
-    if (categorySelect) {
+    if (categorySelect && categories) {
         categorySelect.innerHTML = '<option value="">All Categories</option>' +
-            categories.map(cat => `<option value="${cat.name}">${cat.name}</option>`).join('');
+            categories.map(cat => `<option value="${cat.name}">${cat.name} (${cat.product_count || 0})</option>`).join('');
     }
 
-    if (brandSelect) {
+    if (brandSelect && brands) {
         brandSelect.innerHTML = '<option value="">All Brands</option>' +
             brands.map(brand => `<option value="${brand.name}">${brand.name}</option>`).join('');
     }
@@ -176,6 +383,9 @@ function populateFilters(categories, brands) {
 
 function applyUrlFilters() {
     const urlFilters = getUrlParams();
+
+    // Update state
+    shopState.filters = { ...shopState.filters, ...urlFilters };
 
     // Apply URL filters to form elements
     if (urlFilters.brand) {
@@ -213,34 +423,87 @@ function applyUrlFilters() {
 }
 
 function setupShopEvents() {
-    // Filter changes
+    // Filter changes - use cached data when possible
     const filters = ['filterBrand', 'filterCategory', 'filterPrice', 'filterStock', 'sortSelect'];
     filters.forEach(filterId => {
         const element = document.getElementById(filterId);
         if (element) {
             element.addEventListener('change', debounce(function() {
+                // Reset pagination when filters change
+                shopState.currentPage = 1;
+                shopState.allProducts = [];
+                shopState.filters = getCurrentFilters();
                 applyFilters();
-                updateUrlFromForm(); // Update URL when filters change
+                updateUrlFromForm();
             }, 300));
         }
     });
 
-    // Search input
+    // Search input with caching
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         searchInput.addEventListener('input', debounce(function() {
+            // Reset pagination when search changes
+            shopState.currentPage = 1;
+            shopState.allProducts = [];
+            shopState.filters.search = searchInput.value;
             applyFilters();
-            updateUrlFromForm(); // Update URL when search changes
+            updateUrlFromForm();
         }, 500));
     }
 
-    // Add to cart buttons
+    // Add to cart buttons with event delegation
     document.addEventListener('click', function(e) {
-        if (e.target.closest('.add-to-cart-btn')) {
-            const productId = e.target.closest('.add-to-cart-btn').dataset.productId;
+        const addToCartBtn = e.target.closest('.add-to-cart-btn');
+        if (addToCartBtn && !addToCartBtn.disabled) {
+            const productId = addToCartBtn.dataset.productId;
             addToCart(productId);
         }
     });
+
+    // Load more button
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', loadMoreProducts);
+    }
+
+    // Quick view functionality (optional)
+    document.addEventListener('click', function(e) {
+        const productCard = e.target.closest('.product-card');
+        if (productCard && !e.target.closest('.add-to-cart-btn')) {
+            // Optional: Add quick product view
+            // showQuickView(productCard.dataset.productId);
+        }
+    });
+
+    // Infinite scroll (optional)
+    setupInfiniteScroll();
+}
+
+function setupInfiniteScroll() {
+    let scrollTimeout;
+
+    window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            if (shouldLoadMoreOnScroll()) {
+                loadMoreProducts();
+            }
+        }, 100);
+    });
+}
+
+function shouldLoadMoreOnScroll() {
+    if (shopState.isLoading || !shopState.hasMoreProducts) return false;
+
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+    if (!loadMoreContainer || loadMoreContainer.style.display === 'none') return false;
+
+    const containerRect = loadMoreContainer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Load more when the load more button is 500px from the viewport bottom
+    return containerRect.top <= windowHeight + 500;
 }
 
 function getCurrentFilters() {
@@ -248,27 +511,39 @@ function getCurrentFilters() {
         brand: document.getElementById('filterBrand')?.value || '',
         category: document.getElementById('filterCategory')?.value || '',
         search: document.getElementById('searchInput')?.value || '',
-        in_stock: document.getElementById('filterStock')?.value === 'in_stock'
+        in_stock: document.getElementById('filterStock')?.value || '',
     };
 }
 
 function updateUrlFromForm() {
-    const filters = getCurrentFilters();
-    updateUrlParams(filters);
+    updateUrlParams(shopState.filters);
 }
 
 async function applyFilters() {
-    const filters = getCurrentFilters();
+    if (shopState.isLoading) return;
+
+    shopState.isLoading = true;
 
     try {
-        const products = await alsajiAPI.getProducts(filters);
-        renderProducts(products);
+        // Reset pagination when applying new filters
+        shopState.currentPage = 1;
+        shopState.allProducts = [];
 
-        // Update page title to reflect current filters
-        updatePageTitle(filters);
+        // Use cached API call
+        const products = await alsajiAPI.getProducts(shopState.filters);
+        shopState.allProducts = products.products || [];
+        shopState.products = getCurrentPageProducts();
+        shopState.hasMoreProducts = products.length > shopState.productsPerPage;
+
+        renderProducts(shopState.products);
+        updatePageTitle(shopState.filters);
+        updateLoadMoreButton();
 
     } catch (error) {
         console.error('Failed to apply filters:', error);
+        showNotification('Error applying filters', 'error');
+    } finally {
+        shopState.isLoading = false;
     }
 }
 
@@ -286,15 +561,45 @@ function updatePageTitle(filters) {
     }
 }
 
+function clearFilters() {
+    // Reset form elements
+    const resetElements = ['filterBrand', 'filterCategory', 'filterStock', 'searchInput'];
+    resetElements.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            if (element.type === 'text' || element.type === 'search') {
+                element.value = '';
+            } else {
+                element.value = '';
+            }
+        }
+    });
+
+    // Reset state
+    shopState.filters = {
+        brand: '',
+        category: '',
+        search: '',
+        in_stock: false
+    };
+    shopState.currentPage = 1;
+    shopState.allProducts = [];
+
+    // Apply changes
+    applyFilters();
+    updateUrlParams({});
+    showNotification('Filters cleared', 'success');
+}
+
 // Add this function to create shareable links
 function createShareableLink() {
-    const filters = getCurrentFilters();
     const params = new URLSearchParams();
 
-    if (filters.brand) params.set('brand', filters.brand);
-    if (filters.category) params.set('category', filters.category);
-    if (filters.search) params.set('search', filters.search);
-    if (filters.in_stock) params.set('in_stock', 'true');
+    if (shopState.filters.brand) params.set('brand', shopState.filters.brand);
+    if (shopState.filters.category) params.set('category', shopState.filters.category);
+    if (shopState.filters.search) params.set('search', shopState.filters.search);
+    if (shopState.filters.in_stock) params.set('in_stock', 'true');
+    if (shopState.currentPage > 1) params.set('page', shopState.currentPage);
 
     return window.location.origin + window.location.pathname + '?' + params.toString();
 }
@@ -322,5 +627,58 @@ function addShareButton() {
     }
 }
 
+// Cache management for shop
+function clearShopCache() {
+    alsajiAPI.clearProductCache();
+    shopState.products = null;
+    shopState.categories = null;
+    shopState.brands = null;
+    shopState.allProducts = [];
+    shopState.currentPage = 1;
+    showNotification('Shop cache cleared', 'info');
+}
+
+// Auto-refresh products every 5 minutes (optional)
+function startAutoRefresh() {
+    setInterval(() => {
+        if (document.visibilityState === 'visible') {
+            alsajiAPI.clearProductCache();
+            loadShopData().then(() => {
+                console.log('Shop data auto-refreshed');
+            });
+        }
+    }, 5 * 60 * 1000); // 5 minutes
+}
+
+// Start auto-refresh when page becomes visible
+document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+        // Page became visible, could refresh cache if needed
+    }
+});
+
+// Debug functions
+window.shopDebug = {
+    state: () => shopState,
+    clearCache: () => clearShopCache(),
+    loadMore: () => loadMoreProducts(),
+    testCache: async () => {
+        console.log('=== CACHE TEST ===');
+        console.time('First API call');
+        const result1 = await alsajiAPI.getProducts();
+        console.timeEnd('First API call');
+        console.time('Second API call');
+        const result2 = await alsajiAPI.getProducts();
+        console.timeEnd('Second API call');
+        console.log('Cache working:', result1 === result2);
+    }
+};
+
 // Call this in your setup if you want the share button
 // addShareButton();
+
+// Uncomment to enable auto-refresh
+// startAutoRefresh();
+
+// Uncomment to enable infinite scroll
+// setupInfiniteScroll();

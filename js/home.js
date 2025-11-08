@@ -28,47 +28,80 @@ function renderCategories(categories) {
     const container = document.getElementById('popularCategories');
     if (container) {
         container.innerHTML = categories.map(cat => `
-            <div class="card" onclick="window.location.href='shop.html?category=${cat.name}'" style="cursor:pointer">
-                <img class="image" src="http://localhost:8888/${cat.image_url}"></img>
-                <div class="muted" style="margin-top:8px">${cat.name}</div>
-                <div class="muted">${cat.product_count} products</div>
+            <div class="card"
+                 onclick="window.location.href='shop.html?category=${cat.name}'"
+                 style="cursor:pointer; text-align:center; border-radius:10px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
+
+                <div style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden;">
+                    <img src="http://localhost:8888/${cat.image_url}"
+                         style="width:100%; height:100%; object-fit:contain;">
+                </div>
+
+                <div style="margin-top:8px; padding-bottom:6px;">
+                    <div class="muted">${cat.name}</div>
+                    <div class="muted">${cat.product_count} products</div>
+                </div>
             </div>
         `).join('');
     }
 }
+
 
 function renderBrandsHome(brands) {
     const container = document.getElementById('topBrands');
     if (container) {
         container.innerHTML = brands.map(brand => `
-            <div class="card" style="text-align:center;cursor:pointer   ;object-fit: contain;" onclick="window.location.href='shop.html?brand=${brand.name}'">
-                <image class="image" style="width:100%; height:150px; object-fit:contain;"  src='http://localhost:8888/${brand.image_url}'>
+            <div class="card"
+                 onclick="window.location.href='shop.html?brand=${brand.name}'"
+                 style="cursor:pointer; text-align:center; border-radius:10px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
+
+                <div style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden;">
+                    <img src="http://localhost:8888/${brand.image_url}"
+                         style="width:100%; height:100%; object-fit:contain;">
                 </div>
-                <div class="muted" style="margin-top:6px">${brand.name}</div>
+
+                <div style="margin-top:6px; padding-bottom:6px;">
+                    <div class="muted">${brand.name}</div>
+                </div>
             </div>
         `).join('');
     }
 }
 
+
 function renderFeaturedProducts(products) {
     const container = document.getElementById('featuredProducts');
     if (container) {
-        container.innerHTML = products.map(product => `
-            <div class="card">
-                <img class="image" style=" object-fit:contain;" src = "http://localhost:8888//${product.image_url}"></img>
-                <div class="muted">${product.brand} • ${product.oe_reference}</div>
-                <div>${product.name}</div>
-                <div class="row between">
-                    <div style="color:var(--red)">${formatPrice(product.price)}</div>
-                    <button class="btn add-to-cart-btn" data-product-id="${product.id}" style="padding:6px 10px;font-size:12px">
-                        Add
-                    </button>
+        container.innerHTML = get.map(product => `
+            <div class="card"
+                 style="text-align:center; border-radius:10px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
+
+                <div style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden;">
+                    <img src="http://localhost:8888/${product.image_url}"
+                         style="width:100%; height:100%; object-fit:contain;">
                 </div>
-                <div class="muted">${product.in_stock ? 'In stock' : 'Out of stock'}</div>
+
+                <div style="padding-bottom:6px;">
+                    <div class="muted">${product.brand} • ${product.oe_reference}</div>
+                    <div>${product.name}</div>
+
+                    <div class="row between" style="align-items:center;">
+                        <div style="color:var(--red)">${formatPrice(product.price)}</div>
+                        <button class="btn add-to-cart-btn"
+                                data-product-id="${product.id}"
+                                style="padding:6px 10px;font-size:12px">
+                            Add
+                        </button>
+                    </div>
+
+                    <div class="muted">${product.in_stock ? 'In stock' : 'Out of stock'}</div>
+                </div>
             </div>
         `).join('');
     }
 }
+
+
 
 async function loadVehicleMakes() {
     try {
