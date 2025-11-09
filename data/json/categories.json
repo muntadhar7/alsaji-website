@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Filters",
+    "product_count": 1,
+    "image_url": "web/image?model=product.public.category&id=1&field=image_1024"
+  },
+  {
+    "id": 2,
+    "name": "HVAC",
+    "product_count": 3,
+    "image_url": "web/image?model=product.public.category&id=2&field=image_1024"
+  },
+  {
+    "id": 3,
+    "name": "Lighting",
+    "product_count": 3,
+    "image_url": "web/image?model=product.public.category&id=3&field=image_1024"
+  },
+  {
+    "id": 4,
+    "name": "Suspention",
+    "product_count": 1,
+    "image_url": "web/image?model=product.public.category&id=4&field=image_1024"
+  },
+  {
+    "id": 5,
+    "name": "Car Care",
+    "product_count": 3,
+    "image_url": "web/image?model=product.public.category&id=5&field=image_1024"
+  }
+]

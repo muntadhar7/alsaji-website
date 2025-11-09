@@ -2,7 +2,6 @@
   <div class="wrap row between">
     <div class="row" style="gap:12px"></div>
     <div class="row" style="gap:12px">
-
       <button class="chip" id="langBtn">AR</button>
       <a class="chip" href="account.html">Account</a>
       <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
@@ -21,3 +20,76 @@
     </div>
   </nav>
 </header>
+
+<script>
+// Wait for both AlSajiAPI and DOM to be ready
+function initializeCartManager() {
+    // Check if AlSajiAPI is available
+    if (typeof AlSajiAPI === 'undefined') {
+        console.log('AlSajiAPI not ready, retrying...');
+        setTimeout(initializeCartManager, 100);
+        return;
+    }
+
+    // Check if cart count element exists
+    const cartCountElement = document.getElementById('cartCount');
+    if (!cartCountElement) {
+        console.log('Cart count element not found, retrying...');
+        setTimeout(initializeCartManager, 100);
+        return;
+    }
+
+    console.log('Initializing HeaderCartManager...');
+    new HeaderCartManager();
+}
+
+// Header Cart Manager Class
+class HeaderCartManager {
+    constructor() {
+        this.api = new AlSajiAPI(); // Create new instance
+        this.init();
+    }
+
+    async init() {
+        console.log('HeaderCartManager started');
+        await this.updateCartCount();
+
+        // Update every 10 seconds
+        setInterval(() => this.updateCartCount(), 10000);
+
+        // Update when page becomes visible
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                this.updateCartCount();
+            }
+        });
+    }
+
+    async updateCartCount() {
+        try {
+            const result = await this.api.getCart();
+            if (result.success) {
+                const count = result.cart_count || 0;
+                const cartCount = document.getElementById('cartCount');
+                if (cartCount) {
+                    console.log('Updating cart count to:', count);
+                    cartCount.textContent = count;
+                } else {
+                    console.log('Cart count element not found during update');
+                }
+            } else {
+                console.log('Cart API returned unsuccessful:', result);
+            }
+        } catch (error) {
+            console.error('Error updating cart count:', error);
+        }
+    }
+}
+
+// Start the initialization when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeCartManager);
+} else {
+    initializeCartManager();
+}
+</script>

@@ -148,3 +148,83 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+
+// Global Cart Count Manager
+class CartCountManager {
+    constructor() {
+        this.api = new AlSajiAPI();
+        this.updateInterval = null;
+        this.init();
+    }
+
+    async init() {
+        await this.updateCartCount();
+        // Update cart count every 30 seconds to keep it fresh
+        this.updateInterval = setInterval(() => this.updateCartCount(), 30000);
+
+        // Also update when page becomes visible (user returns to tab)
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                this.updateCartCount();
+            }
+        });
+    }
+
+    async updateCartCount() {
+        try {
+            const result = await this.api.getCart();
+            if (result.success) {
+                const count = result.cart_count || 0;
+                this.updateCartCountDisplay(count);
+            } else {
+                console.error('Failed to load cart count:', result.error);
+                this.updateCartCountDisplay(0);
+            }
+        } catch (error) {
+            console.error('Error loading cart count:', error);
+            this.updateCartCountDisplay(0);
+        }
+    }
+
+    updateCartCountDisplay(count) {
+        const cartCountElements = document.querySelectorAll('#cartCount');
+        cartCountElements.forEach(element => {
+            element.textContent = count;
+        });
+
+        // Also update any other cart count elements that might exist
+        const additionalCartElements = document.querySelectorAll('[data-cart-count]');
+        additionalCartElements.forEach(element => {
+            element.textContent = count;
+        });
+    }
+
+    // Call this when items are added to cart from other pages
+    async refreshCartCount() {
+        await this.updateCartCount();
+    }
+
+    // Clean up when needed
+    destroy() {
+        if (this.updateInterval) {
+            clearInterval(this.updateInterval);
+        }
+    }
+}
+
+// Initialize global cart count manager
+let cartCountManager;
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize cart count manager
+    cartCountManager = new CartCountManager();
+
+    // Your existing main.js code here...
+});
+
+// Global function to refresh cart count (call this after adding items)
+window.refreshCartCount = function() {
+    if (cartCountManager) {
+        cartCountManager.refreshCartCount();
+    }
+};

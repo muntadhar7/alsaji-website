@@ -1,7 +1,7 @@
 // Shop state management
 class ShopState {
     constructor() {
-        this.products = null;
+        this.products = [];
         this.categories = null;
         this.brands = null;
         this.filters = {
@@ -12,9 +12,9 @@ class ShopState {
         };
         this.isLoading = false;
         this.currentPage = 1;
-        this.productsPerPage = 20; // Show 12 products per page
+        this.productsPerPage = 12;
         this.hasMoreProducts = false;
-        this.allProducts = []; // Store all loaded products
+        this.totalProducts = 0;
     }
 }
 
@@ -64,9 +64,9 @@ function updateUrlParams(filters) {
     window.history.replaceState({}, '', newUrl);
 }
 
-async function addToCart(productId) {
+async function addToCart(productId, quantity = 1) {
     try {
-        const result = await alsajiAPI.addToCart(productId);
+        const result = await alsajiAPI.addToCart(productId, quantity);
         if (result.success) {
             updateCartCount(result.cart_count);
             showNotification(result.message, 'success');
@@ -74,6 +74,7 @@ async function addToCart(productId) {
             showNotification('Failed to add product to cart', 'error');
         }
     } catch (error) {
+        console.error('Error adding to cart:', error);
         showNotification('Error adding to cart', 'error');
     }
 }
@@ -84,13 +85,17 @@ function updateCartCount(count) {
         cartCount.textContent = count;
     }
 }
+function updateCartCount(count) {
+    const cartCount = document.getElementById('cartCount');
+    if (cartCount) {
+        cartCount.textContent = count;
+    }
+}
 
 function showNotification(message, type = 'info') {
-    // Remove existing notifications
     const existingNotifications = document.querySelectorAll('.shop-notification');
     existingNotifications.forEach(notification => notification.remove());
 
-    // Create notification element
     const notification = document.createElement('div');
     notification.className = 'shop-notification';
     notification.style.cssText = `
@@ -110,7 +115,6 @@ function showNotification(message, type = 'info') {
 
     document.body.appendChild(notification);
 
-    // Remove after 3 seconds
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease';
         setTimeout(() => {
@@ -121,7 +125,7 @@ function showNotification(message, type = 'info') {
     }, 3000);
 }
 
-// Add CSS for animations if not already in main.js
+// Add CSS for animations
 if (!document.querySelector('#notification-styles')) {
     const style = document.createElement('style');
     style.id = 'notification-styles';
@@ -138,32 +142,51 @@ if (!document.querySelector('#notification-styles')) {
     document.head.appendChild(style);
 }
 
+// Data loading functions for static data
+async function loadStaticData() {
+    try {
+        // Load data from our generated JSON files
+        const [productsData, categoriesData, brandsData] = await Promise.all([
+            fetch('data/json/products.json').then(r => r.json()),
+            fetch('data/json/categories.json').then(r => r.json()),
+            fetch('data/json/brands.json').then(r => r.json())
+        ]);
+
+        return {
+            products: productsData,
+            categories: categoriesData,
+            brands: brandsData
+        };
+    } catch (error) {
+        console.error('Failed to load static data:', error);
+        return { products: [], categories: [], brands: [] };
+    }
+}
+
 // Shop page functionality
 document.addEventListener('DOMContentLoaded', async function() {
     await loadShopData();
     setupShopEvents();
-    applyUrlFilters(); // Apply URL filters after data is loaded
+    applyUrlFilters();
 });
 
 async function loadShopData() {
-    // Reset pagination when loading new data
     shopState.currentPage = 1;
-    shopState.allProducts = [];
+    shopState.products = [];
 
     try {
         showLoadingState();
 
-        // Load categories and brands first
-        const [categories, brands] = await Promise.all([
-            alsajiAPI.getCategories(),
-            alsajiAPI.getBrands()
-        ]);
+        const staticData = await loadStaticData();
 
-        shopState.categories = categories;
-        shopState.brands = brands;
-        populateFilters(categories, brands);
+        shopState.categories = staticData.categories;
+        shopState.brands = staticData.brands;
+        populateFilters(staticData.categories, staticData.brands);
 
-        // Then load products with current filters
+        // Load all products initially (we'll filter client-side)
+        shopState.allProducts = staticData.products;
+        shopState.totalProducts = staticData.products.length;
+
         await loadProducts();
 
     } catch (error) {
@@ -173,119 +196,134 @@ async function loadShopData() {
     }
 }
 
-async function loadProducts() {
-    if (shopState.isLoading) return;
+// Client-side filtering and pagination
+function filterProducts(products, filters) {
+    return products.filter(product => {
+        // Brand filter
+        if (filters.brand) {
+            const productBrand = typeof product.brand === 'object' ? product.brand.name : product.brand;
+            if (productBrand !== filters.brand) return false;
+        }
 
-    shopState.isLoading = true;
-    showLoadingMoreState();
+        // Category filter
+        if (filters.category) {
+            const productCategory = typeof product.category === 'object' ? product.category.name : product.category;
+            if (productCategory !== filters.category) return false;
+        }
+
+        // Search filter
+        if (filters.search) {
+            const searchTerm = filters.search.toLowerCase();
+            const searchableText = [
+                product.name,
+                typeof product.brand === 'object' ? product.brand.name : product.brand,
+                typeof product.category === 'object' ? product.category.name : product.category,
+                product.description
+            ].join(' ').toLowerCase();
+
+            if (!searchableText.includes(searchTerm)) return false;
+        }
+
+        // In stock filter
+        if (filters.in_stock) {
+            if (!product.in_stock) return false;
+        }
+
+        return true;
+    });
+}
+
+// UPDATED loadProducts function for static data
+async function loadProducts() {
+    console.log('🔄 loadProducts: Starting with filters:', shopState.filters);
 
     try {
-        // Load products with current filters and pagination
-        const response = await alsajiAPI.getProducts({
-            ...shopState.filters,
-            limit: shopState.productsPerPage * shopState.currentPage
+        // Filter products client-side
+        const filteredProducts = filterProducts(shopState.allProducts, shopState.filters);
+        shopState.totalProducts = filteredProducts.length;
+
+        // Calculate pagination
+        const startIndex = (shopState.currentPage - 1) * shopState.productsPerPage;
+        const endIndex = startIndex + shopState.productsPerPage;
+        const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+
+        console.log('📊 loadProducts: Pagination info', {
+            total: filteredProducts.length,
+            currentPage: shopState.currentPage,
+            startIndex,
+            endIndex,
+            productsThisPage: paginatedProducts.length
         });
 
-        console.log('API Response:', response); // Debug log
-
-        // FIX: Use response.products instead of response
-        shopState.allProducts = response.products || []; // THIS IS THE FIX
-        console.log('allProducts set to:', shopState.allProducts); // Debug log
-
-        // Store all products for pagination
-        shopState.products = getCurrentPageProducts();
+        // Update products array
+        if (shopState.currentPage === 1) {
+            shopState.products = paginatedProducts;
+        } else {
+            shopState.products = [...shopState.products, ...paginatedProducts];
+        }
 
         // Check if there are more products to load
-        shopState.hasMoreProducts = shopState.allProducts.length >= shopState.productsPerPage * shopState.currentPage;
+        shopState.hasMoreProducts = endIndex < filteredProducts.length;
 
+        console.log('🎨 loadProducts: Calling renderProducts with', shopState.products.length, 'products');
         renderProducts(shopState.products);
         updateLoadMoreButton();
         hideLoadingState();
 
+        console.log('✨ loadProducts: Completed successfully');
+
     } catch (error) {
-        console.error('Failed to load products:', error);
+        console.error('❌ loadProducts: Failed to load products:', error);
         showNotification('Error loading products', 'error');
         hideLoadingState();
-    } finally {
-        shopState.isLoading = false;
     }
 }
-function getCurrentPageProducts() {
-    const startIndex = 0; // Always show all loaded products
-    const endIndex = shopState.productsPerPage * shopState.currentPage;
-    return shopState.allProducts.slice(0, endIndex);
-}
 
+// UPDATED loadMoreProducts function
 async function loadMoreProducts() {
-    if (shopState.isLoading || !shopState.hasMoreProducts) return;
+    if (shopState.isLoading || !shopState.hasMoreProducts) {
+        console.log('Cannot load more - loading:', shopState.isLoading, 'hasMore:', shopState.hasMoreProducts);
+        return;
+    }
 
+    console.log('Loading more products, moving from page', shopState.currentPage, 'to page', shopState.currentPage + 1);
     shopState.currentPage++;
-    shopState.isLoading = true;
-
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const loadMoreInfo = document.getElementById('loadMoreInfo');
-
-    if (loadMoreBtn) loadMoreBtn.disabled = true;
-    if (loadMoreInfo) loadMoreInfo.textContent = 'Loading more products...';
 
     try {
-        // Simulate loading delay for better UX
-        await new Promise(resolve => setTimeout(resolve, 500));
-
-        // Get products for the new page
-        shopState.products = getCurrentPageProducts();
-
-        // Check if we've reached the end
-        shopState.hasMoreProducts = shopState.allProducts.length > shopState.products.length;
-
-        renderProducts(shopState.products);
-        updateLoadMoreButton();
-        updateUrlFromForm();
-
-        // Scroll to show new products
-        setTimeout(() => {
-            const productGrid = document.getElementById('productGrid');
-            if (productGrid) {
-                const lastProduct = productGrid.lastElementChild;
-                if (lastProduct) {
-                    lastProduct.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }
-            }
-        }, 100);
-
+        await loadProducts();
     } catch (error) {
-        console.error('Failed to load more products:', error);
-        showNotification('Error loading more products', 'error');
-        shopState.currentPage--; // Revert page on error
+        console.error('Error in loadMoreProducts:', error);
+        shopState.currentPage--; // Revert on error
+    }
+}
+
+// UPDATED applyFilters function for static data
+async function applyFilters() {
+    if (shopState.isLoading) {
+        console.log('🔄 applyFilters: Already loading, but resetting state for new filters');
+    }
+
+    shopState.isLoading = true;
+    shopState.currentPage = 1;
+    shopState.products = []; // Clear products immediately
+
+    console.log('🔄 applyFilters: Applying filters:', shopState.filters);
+    showLoadingState(); // Show loading immediately
+
+    try {
+        await loadProducts();
+        updatePageTitle(shopState.filters);
+        console.log('✅ applyFilters: Filters applied, products loaded:', shopState.products.length);
+    } catch (error) {
+        console.error('❌ applyFilters: Failed to apply filters:', error);
+        showNotification('Error applying filters', 'error');
     } finally {
         shopState.isLoading = false;
-        if (loadMoreBtn) loadMoreBtn.disabled = false;
+        console.log('🏁 applyFilters: Finished, isLoading reset to false');
     }
 }
 
-function updateLoadMoreButton() {
-    const container = document.getElementById('loadMoreContainer');
-    const button = document.getElementById('loadMoreBtn');
-    const info = document.getElementById('loadMoreInfo');
-
-    if (!container || !button || !info) return;
-
-    if (shopState.hasMoreProducts && shopState.allProducts.length > 0) {
-        container.style.display = 'block';
-        button.textContent = `Load More (${shopState.products.length} of ${shopState.allProducts.length} shown)`;
-        button.disabled = shopState.isLoading;
-
-        const remaining = shopState.allProducts.length - shopState.products.length;
-        info.textContent = `${remaining} more products available`;
-    } else {
-        container.style.display = 'none';
-    }
-
-    // Hide load more if we're showing all products
-    if (shopState.products.length >= shopState.allProducts.length) {
-        container.style.display = 'none';
-    }
-}
+// Rest of the functions remain mostly the same, but remove API cache references
 
 function showLoadingState() {
     const container = document.getElementById('productGrid');
@@ -297,17 +335,10 @@ function showLoadingState() {
             </div>
         `;
     }
-    // Hide load more during initial load
+
     const loadMoreContainer = document.getElementById('loadMoreContainer');
     if (loadMoreContainer) {
         loadMoreContainer.style.display = 'none';
-    }
-}
-
-function showLoadingMoreState() {
-    const loadMoreInfo = document.getElementById('loadMoreInfo');
-    if (loadMoreInfo && shopState.currentPage > 1) {
-        loadMoreInfo.textContent = 'Loading more products...';
     }
 }
 
@@ -319,26 +350,59 @@ function renderProducts(products) {
     const container = document.getElementById('productGrid');
     const resultsCount = document.getElementById('resultsCount');
 
-    if (!container) return;
+    console.log('🎨 renderProducts: Called with', products.length, 'products');
+    console.log('🎨 renderProducts: Container exists:', !!container);
 
-    if (products.length === 0 && shopState.currentPage === 1) {
+    if (!container) {
+        console.error('❌ renderProducts: No product grid container found!');
+        return;
+    }
+
+    if (products.length === 0 && !shopState.isLoading) {
+        console.log('🎨 renderProducts: Showing no products message');
+        const activeFilters = [];
+        if (shopState.filters.brand) activeFilters.push(`Brand: ${shopState.filters.brand}`);
+        if (shopState.filters.category) activeFilters.push(`Category: ${shopState.filters.category}`);
+        if (shopState.filters.search) activeFilters.push(`Search: "${shopState.filters.search}"`);
+        if (shopState.filters.in_stock) activeFilters.push('In Stock Only');
+
         container.innerHTML = `
             <div style="grid-column:1/-1;text-align:center;padding:40px">
                 <div style="font-size:48px;margin-bottom:12px">🔍</div>
                 <h3 style="margin-bottom:8px">No products found</h3>
-                <p class="muted">Try adjusting your filters or search terms</p>
-                <button class="btn" onclick="clearFilters()" style="margin-top:16px">
+                <p class="muted" style="margin-bottom:16px">
+                    ${activeFilters.length > 0
+                        ? `No products match ${activeFilters.join(' + ')}`
+                        : 'Try adjusting your filters or search terms'}
+                </p>
+                ${activeFilters.length > 0 ? `
+                    <p class="muted" style="font-size:14px;margin-bottom:16px">
+                        Tip: Try removing some filters to see more products
+                    </p>
+                ` : ''}
+                <button class="btn" onclick="clearFilters()" style="margin-top:8px">
                     Clear All Filters
                 </button>
             </div>
         `;
     } else {
-        container.innerHTML = products.map(product => `
+        console.log('🎨 renderProducts: Rendering', products.length, 'product cards');
+        container.innerHTML = products.map(product => {
+            // Safely extract brand and category names
+            const brandName = typeof product.brand === 'object' ? product.brand.name : product.brand;
+            const categoryName = typeof product.category === 'object' ? product.category.name : product.category;
+
+            // Handle image URL - use placeholder if not available
+            const imageUrl = product.image_url ?
+                (product.image_url.startsWith('http') ? product.image_url : `http://localhost:8888${product.image_url}`) :
+                `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik04MCA2MEgxMjBWODBIMzBWMTIwSDEyMFYxMDBIMzBWODBINzBWNjBaIiBmaWxsPSIjOEU5MEEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjEyIiBmaWxsPSIjOEU5MEEwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiPk5vIEltYWdlPC90ZXh0Pgo8L3N2Zz4K`;
+
+            return `
             <div class="card product-card" data-product-id="${product.id}">
-                <img class="image" src='http://localhost:8888${product.image_url}' alt='${product.name}'
-                     onerror="this.style.display='none'"
+                <img class="image" src="${imageUrl}" alt="${product.name}"
+                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik04MCA2MEgxMjBWODBIMzBWMTIwSDEyMFYxMDBIMzBWODBINzBWNjBaIiBmaWxsPSIjOEU5MEEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjEyIiBmaWxsPSIjOEU5MEEwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiPk5vIEltYWdlPC90ZXh0Pgo8L3N2Zz4K'; this.style.display='block'"
                      loading="lazy">
-                <div class="muted">${product.brand} • ${product.oe_reference}</div>
+                <div class="muted">${brandName} • ${categoryName} • ${product.reference || 'N/A'}</div>
                 <div style="font-weight:500;margin:8px 0">${product.name}</div>
                 <div class="row between" style="align-items:center">
                     <div style="color:var(--red);font-weight:600">${formatPrice(product.price)}</div>
@@ -352,18 +416,31 @@ function renderProducts(products) {
                     ${product.in_stock ? '✅ In stock' : '❌ Out of stock'}
                 </div>
             </div>
-        `).join('');
+        `}).join('');
     }
 
     if (resultsCount) {
         const totalShown = products.length;
-        const totalAvailable = shopState.allProducts.length;
-        if (totalShown < totalAvailable) {
+        const totalAvailable = shopState.totalProducts;
+
+        if (shopState.hasMoreProducts) {
             resultsCount.textContent = `Showing ${totalShown} of ${totalAvailable} products`;
         } else {
             resultsCount.textContent = `${totalShown} ${totalShown === 1 ? 'product' : 'products'} found`;
+
+            // Add filter info to results count
+            const activeFilters = [];
+            if (shopState.filters.brand) activeFilters.push(`Brand: ${shopState.filters.brand}`);
+            if (shopState.filters.category) activeFilters.push(`Category: ${shopState.filters.category}`);
+
+            if (activeFilters.length > 0) {
+                resultsCount.textContent += ` • ${activeFilters.join(' • ')}`;
+            }
         }
+        console.log('🎨 renderProducts: Updated results count:', resultsCount.textContent);
     }
+
+    console.log('🎨 renderProducts: Finished rendering');
 }
 
 function populateFilters(categories, brands) {
@@ -372,81 +449,87 @@ function populateFilters(categories, brands) {
 
     if (categorySelect && categories) {
         categorySelect.innerHTML = '<option value="">All Categories</option>' +
-            categories.map(cat => `<option value="${cat.name}">${cat.name} (${cat.product_count || 0})</option>`).join('');
+            categories.map(cat => {
+                const catName = typeof cat === 'object' ? cat.name : cat;
+                return `<option value="${catName}">${catName}</option>`;
+            }).join('');
     }
 
     if (brandSelect && brands) {
         brandSelect.innerHTML = '<option value="">All Brands</option>' +
-            brands.map(brand => `<option value="${brand.name}">${brand.name}</option>`).join('');
+            brands.map(brand => {
+                const brandName = typeof brand === 'object' ? brand.name : brand;
+                return `<option value="${brandName}">${brandName}</option>`;
+            }).join('');
     }
 }
 
 function applyUrlFilters() {
     const urlFilters = getUrlParams();
 
-    // Update state
     shopState.filters = { ...shopState.filters, ...urlFilters };
 
-    // Apply URL filters to form elements
     if (urlFilters.brand) {
         const brandSelect = document.getElementById('filterBrand');
-        if (brandSelect) {
-            brandSelect.value = urlFilters.brand;
-        }
+        if (brandSelect) brandSelect.value = urlFilters.brand;
     }
 
     if (urlFilters.category) {
         const categorySelect = document.getElementById('filterCategory');
-        if (categorySelect) {
-            categorySelect.value = urlFilters.category;
-        }
+        if (categorySelect) categorySelect.value = urlFilters.category;
     }
 
     if (urlFilters.search) {
         const searchInput = document.getElementById('searchInput');
-        if (searchInput) {
-            searchInput.value = urlFilters.search;
-        }
+        if (searchInput) searchInput.value = urlFilters.search;
     }
 
     if (urlFilters.in_stock) {
         const stockSelect = document.getElementById('filterStock');
-        if (stockSelect) {
-            stockSelect.value = 'in_stock';
-        }
+        if (stockSelect) stockSelect.value = urlFilters.in_stock;
     }
 
-    // Apply the filters if any URL parameters exist
     if (Object.keys(urlFilters).length > 0) {
         applyFilters();
     }
 }
 
 function setupShopEvents() {
-    // Filter changes - use cached data when possible
+    console.log('🛠️ Setting up shop events...');
+
+    // Filter changes
     const filters = ['filterBrand', 'filterCategory', 'filterPrice', 'filterStock', 'sortSelect'];
     filters.forEach(filterId => {
         const element = document.getElementById(filterId);
         if (element) {
             element.addEventListener('change', debounce(function() {
-                // Reset pagination when filters change
+                console.log('🎛️ Filter changed:', filterId, 'value:', element.value);
+
                 shopState.currentPage = 1;
-                shopState.allProducts = [];
                 shopState.filters = getCurrentFilters();
+                console.log('📋 Current filters:', shopState.filters);
+
+                // Force immediate UI update
+                showLoadingState();
+
                 applyFilters();
                 updateUrlFromForm();
             }, 300));
         }
     });
 
-    // Search input with caching
+    // Search input
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         searchInput.addEventListener('input', debounce(function() {
-            // Reset pagination when search changes
+            console.log('🔍 Search input:', searchInput.value);
+
             shopState.currentPage = 1;
-            shopState.allProducts = [];
             shopState.filters.search = searchInput.value;
+
+            // Force immediate UI update
+            showLoadingState();
+
             applyFilters();
             updateUrlFromForm();
         }, 500));
@@ -466,52 +549,46 @@ function setupShopEvents() {
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', loadMoreProducts);
     }
-
-    // Quick view functionality (optional)
-    document.addEventListener('click', function(e) {
-        const productCard = e.target.closest('.product-card');
-        if (productCard && !e.target.closest('.add-to-cart-btn')) {
-            // Optional: Add quick product view
-            // showQuickView(productCard.dataset.productId);
-        }
-    });
-
-    // Infinite scroll (optional)
     setupInfiniteScroll();
+    console.log('✅ Shop events setup complete');
 }
 
+// Keep the same infinite scroll and utility functions
 function setupInfiniteScroll() {
-    let scrollTimeout;
+    let isThrottled = false;
 
     window.addEventListener('scroll', () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            if (shouldLoadMoreOnScroll()) {
-                loadMoreProducts();
+        if (isThrottled) return;
+
+        isThrottled = true;
+        setTimeout(() => {
+            isThrottled = false;
+
+            // Check if we should load more
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+
+            // Load when 500px from bottom
+            if (scrollTop + clientHeight >= scrollHeight - 500) {
+                if (!shopState.isLoading && shopState.hasMoreProducts) {
+                    console.log('Auto-loading more products...');
+                    loadMoreProducts();
+                }
             }
-        }, 100);
+        }, 200);
     });
-}
 
-function shouldLoadMoreOnScroll() {
-    if (shopState.isLoading || !shopState.hasMoreProducts) return false;
-
-    const loadMoreContainer = document.getElementById('loadMoreContainer');
-    if (!loadMoreContainer || loadMoreContainer.style.display === 'none') return false;
-
-    const containerRect = loadMoreContainer.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    // Load more when the load more button is 500px from the viewport bottom
-    return containerRect.top <= windowHeight + 500;
+    console.log('Infinite scroll enabled');
 }
 
 function getCurrentFilters() {
+    const stockValue = document.getElementById('filterStock')?.value;
     return {
         brand: document.getElementById('filterBrand')?.value || '',
         category: document.getElementById('filterCategory')?.value || '',
         search: document.getElementById('searchInput')?.value || '',
-        in_stock: document.getElementById('filterStock')?.value || '',
+        in_stock: stockValue === 'True' ? true : stockValue === 'False' ? false : '',
     };
 }
 
@@ -519,37 +596,8 @@ function updateUrlFromForm() {
     updateUrlParams(shopState.filters);
 }
 
-async function applyFilters() {
-    if (shopState.isLoading) return;
-
-    shopState.isLoading = true;
-
-    try {
-        // Reset pagination when applying new filters
-        shopState.currentPage = 1;
-        shopState.allProducts = [];
-
-        // Use cached API call
-        const products = await alsajiAPI.getProducts(shopState.filters);
-        shopState.allProducts = products.products || [];
-        shopState.products = getCurrentPageProducts();
-        shopState.hasMoreProducts = products.length > shopState.productsPerPage;
-
-        renderProducts(shopState.products);
-        updatePageTitle(shopState.filters);
-        updateLoadMoreButton();
-
-    } catch (error) {
-        console.error('Failed to apply filters:', error);
-        showNotification('Error applying filters', 'error');
-    } finally {
-        shopState.isLoading = false;
-    }
-}
-
 function updatePageTitle(filters) {
     let titleParts = [];
-
     if (filters.brand) titleParts.push(filters.brand);
     if (filters.category) titleParts.push(filters.category);
     if (filters.search) titleParts.push(`"${filters.search}"`);
@@ -562,20 +610,12 @@ function updatePageTitle(filters) {
 }
 
 function clearFilters() {
-    // Reset form elements
     const resetElements = ['filterBrand', 'filterCategory', 'filterStock', 'searchInput'];
     resetElements.forEach(id => {
         const element = document.getElementById(id);
-        if (element) {
-            if (element.type === 'text' || element.type === 'search') {
-                element.value = '';
-            } else {
-                element.value = '';
-            }
-        }
+        if (element) element.value = '';
     });
 
-    // Reset state
     shopState.filters = {
         brand: '',
         category: '',
@@ -583,102 +623,107 @@ function clearFilters() {
         in_stock: false
     };
     shopState.currentPage = 1;
-    shopState.allProducts = [];
+    shopState.products = [];
 
-    // Apply changes
     applyFilters();
     updateUrlParams({});
     showNotification('Filters cleared', 'success');
 }
 
-// Add this function to create shareable links
-function createShareableLink() {
-    const params = new URLSearchParams();
+// UPDATED load more button function
+function updateLoadMoreButton() {
+    const container = document.getElementById('loadMoreContainer');
+    const button = document.getElementById('loadMoreBtn');
+    const info = document.getElementById('loadMoreInfo');
 
-    if (shopState.filters.brand) params.set('brand', shopState.filters.brand);
-    if (shopState.filters.category) params.set('category', shopState.filters.category);
-    if (shopState.filters.search) params.set('search', shopState.filters.search);
-    if (shopState.filters.in_stock) params.set('in_stock', 'true');
-    if (shopState.currentPage > 1) params.set('page', shopState.currentPage);
+    if (!container) {
+        console.error('loadMoreContainer not found in HTML');
+        return;
+    }
 
-    return window.location.origin + window.location.pathname + '?' + params.toString();
-}
-
-// Optional: Add a share button to your shop page
-function addShareButton() {
-    const shareButton = document.createElement('button');
-    shareButton.className = 'btn secondary';
-    shareButton.innerHTML = '🔗 Share This View';
-    shareButton.style.marginLeft = 'auto';
-    shareButton.addEventListener('click', function() {
-        const shareUrl = createShareableLink();
-        navigator.clipboard.writeText(shareUrl).then(() => {
-            showNotification('Link copied to clipboard!', 'success');
-        }).catch(() => {
-            // Fallback for older browsers
-            prompt('Copy this link:', shareUrl);
-        });
+    console.log('Updating load more button:', {
+        hasMoreProducts: shopState.hasMoreProducts,
+        productsLength: shopState.products.length,
+        totalProducts: shopState.totalProducts,
+        currentPage: shopState.currentPage
     });
 
-    // Add to the filter section
-    const filterSection = document.querySelector('.row.between');
-    if (filterSection) {
-        filterSection.appendChild(shareButton);
-    }
-}
+    if (shopState.hasMoreProducts && shopState.products.length > 0) {
+        // SHOW LOAD MORE BUTTON
+        container.style.display = 'block';
+        container.style.border = '2px solid #3B82F6';
+        container.style.background = '#f0f7ff';
+        container.style.padding = '20px';
+        container.style.borderRadius = '8px';
+        container.style.marginTop = '24px';
 
-// Cache management for shop
-function clearShopCache() {
-    alsajiAPI.clearProductCache();
-    shopState.products = null;
-    shopState.categories = null;
-    shopState.brands = null;
-    shopState.allProducts = [];
-    shopState.currentPage = 1;
-    showNotification('Shop cache cleared', 'info');
-}
-
-// Auto-refresh products every 5 minutes (optional)
-function startAutoRefresh() {
-    setInterval(() => {
-        if (document.visibilityState === 'visible') {
-            alsajiAPI.clearProductCache();
-            loadShopData().then(() => {
-                console.log('Shop data auto-refreshed');
-            });
+        if (button) {
+            button.textContent = `Load More (Page ${shopState.currentPage + 1})`;
+            button.disabled = shopState.isLoading;
+            button.style.display = 'block';
+            button.style.fontSize = '16px';
+            button.style.padding = '12px 24px';
         }
-    }, 5 * 60 * 1000); // 5 minutes
+        if (info) {
+            const remaining = shopState.totalProducts - shopState.products.length;
+            info.textContent = `${remaining} more products available - Click to load next page`;
+            info.style.color = '#3B82F6';
+            info.style.display = 'block';
+            info.style.fontWeight = '500';
+        }
+        console.log('✅ Load more button: VISIBLE');
+
+    } else if (shopState.products.length > 0) {
+        // SHOW "ALL LOADED" MESSAGE
+        container.style.display = 'block';
+        container.style.border = '2px solid #10B981';
+        container.style.background = '#f0f9f4';
+        container.style.padding = '20px';
+        container.style.borderRadius = '8px';
+        container.style.marginTop = '24px';
+
+        if (button) {
+            button.style.display = 'none';
+        }
+        if (info) {
+            info.textContent = `✅ All ${shopState.products.length} products loaded (Page ${shopState.currentPage})`;
+            info.style.color = '#10B981';
+            info.style.display = 'block';
+            info.style.fontWeight = '500';
+        }
+        console.log('✅ Load more container: VISIBLE (all loaded)');
+
+    } else {
+        // NO PRODUCTS
+        container.style.display = 'none';
+        console.log('❌ Load more container: HIDDEN (no products)');
+    }
 }
 
-// Start auto-refresh when page becomes visible
-document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'visible') {
-        // Page became visible, could refresh cache if needed
-    }
-});
+// Debug function to check the current state
+window.debugShop = function() {
+    console.log('=== SHOP DEBUG INFO ===');
+    console.log('Shop State:', {
+        products: shopState.products.length,
+        totalProducts: shopState.totalProducts,
+        currentPage: shopState.currentPage,
+        productsPerPage: shopState.productsPerPage,
+        hasMoreProducts: shopState.hasMoreProducts,
+        isLoading: shopState.isLoading,
+        filters: shopState.filters
+    });
 
-// Debug functions
-window.shopDebug = {
-    state: () => shopState,
-    clearCache: () => clearShopCache(),
-    loadMore: () => loadMoreProducts(),
-    testCache: async () => {
-        console.log('=== CACHE TEST ===');
-        console.time('First API call');
-        const result1 = await alsajiAPI.getProducts();
-        console.timeEnd('First API call');
-        console.time('Second API call');
-        const result2 = await alsajiAPI.getProducts();
-        console.timeEnd('Second API call');
-        console.log('Cache working:', result1 === result2);
+    const container = document.getElementById('loadMoreContainer');
+    if (container) {
+        const computedStyle = window.getComputedStyle(container);
+        console.log('Load More Container:', {
+            exists: true,
+            display: container.style.display,
+            computedDisplay: computedStyle.display,
+            visibility: computedStyle.visibility,
+            opacity: computedStyle.opacity
+        });
+    } else {
+        console.log('Load More Container: NOT FOUND');
     }
 };
-
-// Call this in your setup if you want the share button
-// addShareButton();
-
-// Uncomment to enable auto-refresh
-// startAutoRefresh();
-
-// Uncomment to enable infinite scroll
-// setupInfiniteScroll();

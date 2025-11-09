@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Engi-Clean",
+    "image_url": "/web/image?model=product.brand&id=1&field=logo",
+    "categories": []
+  },
+  {
+    "id": 3,
+    "name": "AISIN",
+    "image_url": "/web/image?model=product.brand&id=3&field=logo",
+    "categories": [
+      "HVAC",
+      "Car Care",
+      "Suspention"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Denso",
+    "image_url": "/web/image?model=product.brand&id=2&field=logo",
+    "categories": [
+      "HVAC",
+      "Lighting"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Nissan",
+    "image_url": "/web/image?model=product.brand&id=4&field=logo",
+    "categories": [
+      "Lighting"
+    ]
+  }
+]

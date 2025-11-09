@@ -7,40 +7,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="util">
-    <div class="wrap row between">
-      <div class="row" style="gap:12px">
-        <span style="color:var(--navy1);font-size:14px">Branch</span>
-        <div class="relative">
-          <button class="chip" id="branchBtn">Baghdad - Palestine St.</button>
-        </div>
-      </div>
-      <div class="row" style="gap:12px">
-        <div class="search">
-          <span>🔎</span>
-          <input id="searchInput" placeholder="Search by OE, name, or brand">
-        </div>
-        <button class="chip" id="langBtn">AR</button>
-        <a class="chip" href="account.html">Account</a>
-        <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
-      </div>
+<header class="util">
+  <div class="wrap row between">
+    <div class="row" style="gap:12px"></div>
+    <div class="row" style="gap:12px">
+      <button class="chip" id="langBtn">AR</button>
+      <a class="chip" href="account.html">Account</a>
+      <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
     </div>
-    <nav class="nav">
-      <div class="wrap row">
-        <a class="tab" href="index.html">Home</a>
-        <a class="tab" href="shop.html">Shop</a>
-        <a class="tab" href="services.html">Services</a>
-        <a class="tab" href="brands.html">Brands & Partners</a>
-        <a class="tab" href="news.html">News & Guides</a>
-        <a class="tab" href="branches.html">Branches</a>
-        <a class="tab" href="support.html">Support</a>
-        <a class="tab" href="account.html">Account</a>
-        <a class="tab" href="trade.html">Trade Portal</a>
-        <span style="margin-left:auto" class="muted">Live Chat available</span>
-      </div>
-    </nav>
-  </header>
-
+  </div>
+  <nav class="nav">
+    <div class="wrap row">
+      <a class="tab active" href="index.html">Home</a>
+      <a class="tab" href="shop.html">Shop</a>
+      <a class="tab" href="services.html">Services</a>
+      <a class="tab" href="brands.html">Brands & Partners</a>
+      <a class="tab" href="branches.html">Branches</a>
+      <a class="tab" href="news.html">News & Guides</a>
+      <a class="tab" href="support.html">Support</a>
+      <a class="tab" href="trade.html">Trade Portal</a>
+    </div>
+  </nav>
+</header>
   <main class="wrap">
     <h1>Shopping Cart</h1>
 
@@ -93,230 +81,6 @@
   </footer>
 
   <script src="js/api.js"></script>
-  <script>
-    class CartManager {
-      constructor() {
-        this.api = new AlSajiAPI();
-        this.cartData = null;
-        this.init();
-      }
-
-      async init() {
-        await this.loadCart();
-        this.updateCartCount();
-        this.setupEventListeners();
-      }
-
-      async loadCart() {
-        try {
-          const result = await this.api.getCart();
-          if (result.success) {
-            this.cartData = result.cart;
-            this.renderCart();
-          } else {
-            console.error('Failed to load cart:', result.error);
-            this.showEmptyCart();
-          }
-        } catch (error) {
-          console.error('Error loading cart:', error);
-          this.showEmptyCart();
-        }
-      }
-
-      renderCart() {
-        if (!this.cartData || this.cartData.lines.length === 0) {
-          this.showEmptyCart();
-          return;
-        }
-
-        // Show cart with items
-        document.getElementById('emptyCart').style.display = 'none';
-        document.getElementById('cartWithItems').style.display = 'block';
-
-        // Render cart items
-        const cartItemsContainer = document.getElementById('cartItems');
-        cartItemsContainer.innerHTML = '';
-
-        this.cartData.lines.forEach(item => {
-          const itemElement = this.createCartItemElement(item);
-          cartItemsContainer.appendChild(itemElement);
-        });
-
-        // Update totals
-        this.updateTotals();
-      }
-
-      createCartItemElement(item) {
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'row between';
-        itemDiv.style.cssText = 'padding:12px;border-bottom:1px solid var(--w1);align-items:center';
-
-        itemDiv.innerHTML = `
-          <div class="row" style="gap:12px;align-items:center;flex:1">
-            <div class="image" style="width:60px;height:60px;background:var(--w2);border-radius:8px"></div>
-            <div style="flex:1">
-              <div style="font-weight:500;margin-bottom:4px">${this.escapeHtml(item.product_name)}</div>
-              <div class="muted" style="font-size:14px">Product ID: ${item.product_id}</div>
-            </div>
-          </div>
-          <div class="row" style="gap:16px;align-items:center">
-            <div style="font-weight:600">IQD ${this.formatPrice(item.total)}</div>
-            <select class="select quantity-select" data-line-id="${item.line_id}" style="width:80px">
-              ${this.generateQuantityOptions(item.quantity)}
-            </select>
-            <button class="btn ghost remove-btn" data-line-id="${item.line_id}" style="color:var(--red)">Remove</button>
-          </div>
-        `;
-
-        return itemDiv;
-      }
-
-      generateQuantityOptions(currentQuantity) {
-        let options = '';
-        for (let i = 1; i <= 10; i++) {
-          const selected = i === currentQuantity ? 'selected' : '';
-          options += `<option value="${i}" ${selected}>${i}</option>`;
-        }
-        return options;
-      }
-
-      updateTotals() {
-        if (!this.cartData) return;
-
-        const subtotal = this.cartData.total_amount || 0;
-        const itemCount = this.cartData.cart_count || this.cartData.lines.length;
-        const shipping = 5000; // Fixed shipping cost
-        const total = subtotal + shipping;
-
-        // Update subtotal display
-        document.getElementById('subtotalText').textContent = `Subtotal (${itemCount} item${itemCount !== 1 ? 's' : ''})`;
-        document.getElementById('subtotalAmount').textContent = `IQD ${this.formatPrice(subtotal)}`;
-
-        // Update order summary
-        document.getElementById('summarySubtotal').textContent = `IQD ${this.formatPrice(subtotal)}`;
-        document.getElementById('totalAmount').textContent = `IQD ${this.formatPrice(total)}`;
-
-        // Update cart count in header
-        this.updateCartCount();
-      }
-
-      updateCartCount() {
-        const count = this.cartData ? this.cartData.cart_count : 0;
-        document.getElementById('cartCount').textContent = count;
-      }
-
-      showEmptyCart() {
-        document.getElementById('emptyCart').style.display = 'block';
-        document.getElementById('cartWithItems').style.display = 'none';
-        document.getElementById('cartCount').textContent = '0';
-      }
-
-      setupEventListeners() {
-        // Quantity change
-        document.addEventListener('change', (e) => {
-          if (e.target.classList.contains('quantity-select')) {
-            const lineId = e.target.dataset.lineId;
-            const newQuantity = parseInt(e.target.value);
-            this.updateQuantity(lineId, newQuantity);
-          }
-        });
-
-        // Remove item
-        document.addEventListener('click', (e) => {
-          if (e.target.classList.contains('remove-btn')) {
-            const lineId = e.target.dataset.lineId;
-            this.removeItem(lineId);
-          }
-        });
-
-        // Checkout button
-        document.getElementById('checkoutBtn').addEventListener('click', () => {
-          this.proceedToCheckout();
-        });
-
-        // Clear cart (optional - add a clear cart button if needed)
-      }
-
-      async updateQuantity(lineId, quantity) {
-        try {
-          const result = await this.api.updateCart(lineId, quantity);
-          if (result.success) {
-            await this.loadCart(); // Reload cart to get updated data
-          } else {
-            alert('Failed to update quantity: ' + result.error);
-            await this.loadCart(); // Reload to reset UI
-          }
-        } catch (error) {
-          console.error('Error updating quantity:', error);
-          alert('Error updating quantity. Please try again.');
-          await this.loadCart(); // Reload to reset UI
-        }
-      }
-
-      async removeItem(lineId) {
-        if (!confirm('Are you sure you want to remove this item from your cart?')) {
-          return;
-        }
-
-        try {
-          const result = await this.api.removeFromCart(lineId);
-          if (result.success) {
-            await this.loadCart(); // Reload cart to get updated data
-          } else {
-            alert('Failed to remove item: ' + result.error);
-          }
-        } catch (error) {
-          console.error('Error removing item:', error);
-          alert('Error removing item. Please try again.');
-        }
-      }
-
-      async clearCart() {
-        if (!confirm('Are you sure you want to clear your entire cart?')) {
-          return;
-        }
-
-        try {
-          const result = await this.api.clearCart();
-          if (result.success) {
-            await this.loadCart(); // Reload cart to get updated data
-          } else {
-            alert('Failed to clear cart: ' + result.error);
-          }
-        } catch (error) {
-          console.error('Error clearing cart:', error);
-          alert('Error clearing cart. Please try again.');
-        }
-      }
-
-      // In your CartManager class, update the proceedToCheckout method:
-      proceedToCheckout() {
-        if (!this.cartData || this.cartData.lines.length === 0) {
-          alert('Your cart is empty!');
-          return;
-        }
-        window.location.href = 'checkout.html';
-      }
-
-      formatPrice(price) {
-        return new Intl.NumberFormat().format(price);
-      }
-
-      escapeHtml(unsafe) {
-        return unsafe
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/"/g, "&quot;")
-          .replace(/'/g, "&#039;");
-      }
-    }
-
-    // Initialize cart manager when page loads
-    document.addEventListener('DOMContentLoaded', () => {
-      new CartManager();
-    });
-
-  </script>
+  <script src="js/cart.js"></script>
 </body>
 </html>

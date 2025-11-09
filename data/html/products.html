@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Saji - Products</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .product-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+        .product-name { font-weight: bold; margin-bottom: 10px; }
+        .product-price { color: #2c5aa0; font-size: 1.2em; }
+        .filter-section { margin-bottom: 20px; padding: 15px; background: #f5f5f5; border-radius: 5px; }
+        .filter-group { margin-bottom: 15px; }
+        .last-updated { color: #666; font-size: 0.9em; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Al Saji Products</h1>
+    <p>Total products: 84</p>
+
+    <div class="filter-section">
+        <h3>Filters</h3>
+        <input type="text" id="search-input" placeholder="Search products..." style="width: 100%; padding: 8px; margin-bottom: 15px;">
+
+        <div class="filter-group">
+            <h4>Categories</h4>
+            <div id="category-filters"></div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Brands</h4>
+            <div id="brand-filters"></div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Price Range</h4>
+            <div id="price-filters"></div>
+        </div>
+
+        <button onclick="clearFilters()" style="padding: 8px 15px; margin-top: 10px;">Clear All Filters</button>
+    </div>
+
+    <div id="results-count"></div>
+    <div class="products-grid" id="products-grid">
+        
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="10000.0">
+                    <div class="product-name">0W20 Engine Oil</div>
+                    <div class="product-price">$10000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="filters" 
+                     data-brand="n-a" 
+                     data-price="2000.0">
+                    <div class="product-name">Filter</div>
+                    <div class="product-price">$2000.00</div>
+                    <div class="product-category">Category: Filters</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="engi-clean" 
+                     data-price="13000.0">
+                    <div class="product-name"> Engi-Clean 400ML - منظف عام لاجزاء المحرك (كارب كلينر) 400 مل</div>
+                    <div class="product-price">$13000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: Engi-Clean</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="hvac" 
+                     data-brand="aisin" 
+                     data-price="28000.0">
+                    <div class="product-name"> Quick Coupler R1234yf HP Red ولف شحن عاز 1234 احمر حار </div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: HVAC</div>
+                    <div class="product-brand">Brand: AISIN</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="30000.0">
+                    <div class="product-name"> Quick Coupler R1234yf LP Blue ولف شحن عاز 1234 ازرق بارد</div>
+                    <div class="product-price">$30000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="hvac" 
+                     data-brand="n-a" 
+                     data-price="33000.0">
+                    <div class="product-name"> Quick Coupler R134a HP Red ولف شحن غاز 134 احمر حار </div>
+                    <div class="product-price">$33000.00</div>
+                    <div class="product-category">Category: HVAC</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="33000.0">
+                    <div class="product-name"> Quick Coupler R134a LP Blue ولف شحن غاز 134 ازرق بارد</div>
+                    <div class="product-price">$33000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="28000.0">
+                    <div class="product-name"> Total Care 100ML - Mint CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل نعناع</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="28000.0">
+                    <div class="product-name"> Total Care 100ML -LEMON  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل ليمون</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="28000.0">
+                    <div class="product-name"> Total Care 100ML -OUD  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="28000.0">
+                    <div class="product-name"> Total Care 100ML -VANILA  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل فانيلا</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="28000.0">
+                    <div class="product-name"> Total Care 100ML -peach  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="lighting" 
+                     data-brand="denso" 
+                     data-price="45000.0">
+                    <div class="product-name"> بك زاوية كامري 22 - خليجي عادي دخاني  ايمن </div>
+                    <div class="product-price">$45000.00</div>
+                    <div class="product-category">Category: Lighting</div>
+                    <div class="product-brand">Brand: Denso</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="lighting" 
+                     data-brand="denso" 
+                     data-price="47000.0">
+                    <div class="product-name"> بك زاوية كامري 22 - خليجي ليد ايمن </div>
+                    <div class="product-price">$47000.00</div>
+                    <div class="product-category">Category: Lighting</div>
+                    <div class="product-brand">Brand: Denso</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="50000.0">
+                    <div class="product-name"> بك صندوق كامري 22 - خليجي عادي دخاني  ايسر</div>
+                    <div class="product-price">$50000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="50000.0">
+                    <div class="product-name"> بك صندوق كامري 22 - خليجي عادي دخاني  ايمن </div>
+                    <div class="product-price">$50000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="36000.0">
+                    <div class="product-name"> بك صندوق كامري 22 - خليجي ليد ايسر</div>
+                    <div class="product-price">$36000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="36000.0">
+                    <div class="product-name"> بك صندوق كامري 22 - خليجي ليد ايمن </div>
+                    <div class="product-price">$36000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="36000.0">
+                    <div class="product-name"> تريشة  لحية دعامية امامية كراند هايبندر 24- امريكي  وسطية سلفر </div>
+                    <div class="product-price">$36000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="78000.0">
+                    <div class="product-name"> دعامية امامية كراند هايلندر 24- امريكي</div>
+                    <div class="product-price">$78000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="78000.0">
+                    <div class="product-name"> راديتر ماء كورلا 19 - 20 -  LE خليجي امريكي - PA26 </div>
+                    <div class="product-price">$78000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="11000.0">
+                    <div class="product-name"> شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايسر </div>
+                    <div class="product-price">$11000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="11000.0">
+                    <div class="product-name"> شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايمن </div>
+                    <div class="product-price">$11000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="50000.0">
+                    <div class="product-name"> قاعدة رقم برادو 24 - اسود</div>
+                    <div class="product-price">$50000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="50000.0">
+                    <div class="product-name"> قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود</div>
+                    <div class="product-price">$50000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="6000.0">
+                    <div class="product-name"> قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو </div>
+                    <div class="product-price">$6000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="36000.0">
+                    <div class="product-name"> كفر + قاعدة ماسكة جوال لاند 22 - </div>
+                    <div class="product-price">$36000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="denso" 
+                     data-price="28000.0">
+                    <div class="product-name"> كويل مجول كورلا يارس فيوس 1NZ 2NZ</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: Denso</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="9000.0">
+                    <div class="product-name">'+5W20 SN synTECH زيت محرك ايسن 1LTx12</div>
+                    <div class="product-price">$9000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="38000.0">
+                    <div class="product-name">'+5W20 SN synTECH زيت محرك ايسن 4LTx4</div>
+                    <div class="product-price">$38000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="57000.0">
+                    <div class="product-name">0W16 SN NS زيت محرك نيسان ياباني 4LTx6</div>
+                    <div class="product-price">$57000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="10000.0">
+                    <div class="product-name">0W16 SP زيت محرك ايسن 1LTx12</div>
+                    <div class="product-price">$10000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="42000.0">
+                    <div class="product-name">0W16 SP زيت محرك ايسن 4LTx4</div>
+                    <div class="product-price">$42000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="47000.0">
+                    <div class="product-name">0W20 SN NS زيت محرك نيسان ياباني 4LTx6</div>
+                    <div class="product-price">$47000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="9000.0">
+                    <div class="product-name">0W20 SN زيت محرك ايسن 1LTx12</div>
+                    <div class="product-price">$9000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="37000.0">
+                    <div class="product-name">0W20 SN زيت محرك ايسن 4LTx4</div>
+                    <div class="product-price">$37000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="8000.0">
+                    <div class="product-name">10W30 SN زيت محرك ايسن 1LTx12</div>
+                    <div class="product-price">$8000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="32000.0">
+                    <div class="product-name">10W30 SN زيت محرك ايسن 4LTx4</div>
+                    <div class="product-price">$32000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="31000.0">
+                    <div class="product-name">10W40 SN UltraSynTech زيت محرك ايسن 4LTx4</div>
+                    <div class="product-price">$31000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="9000.0">
+                    <div class="product-name">15W40 Ci4 زيت كاز ايسن 1LTx12</div>
+                    <div class="product-price">$9000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="33000.0">
+                    <div class="product-name">15W40 Ci4 زيت كاز ايسن 4LTx4</div>
+                    <div class="product-price">$33000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="49000.0">
+                    <div class="product-name">15W40 Ci4 زيت كاز ايسن 6 لتر  6LTx3	</div>
+                    <div class="product-price">$49000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="27000.0">
+                    <div class="product-name">15W40 Ci4 زيت محرك تويوتا كاز 4LTx6</div>
+                    <div class="product-price">$27000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="50000.0">
+                    <div class="product-name">200609-201206 عنبار كلج اعلى رئيسي كوستر 2TR-1HZ عام 93 - 17</div>
+                    <div class="product-price">$50000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="7000.0">
+                    <div class="product-name">20W50 SN TY زيت محرك تويوتا اسود بلاستك 1LTx24 </div>
+                    <div class="product-price">$7000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="25000.0">
+                    <div class="product-name">20W50 SN TY زيت محرك تويوتا اسود بلاستك 4LTx6</div>
+                    <div class="product-price">$25000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="7000.0">
+                    <div class="product-name">20W50 SN زيت محرك ايسن 1LTx12</div>
+                    <div class="product-price">$7000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="28000.0">
+                    <div class="product-name">20W50 SN زيت محرك ايسن 4LTx4</div>
+                    <div class="product-price">$28000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="64000.0">
+                    <div class="product-name">31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3RZ عادي</div>
+                    <div class="product-price">$64000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+                <div class="product-card" 
+                     data-category="n-a" 
+                     data-brand="n-a" 
+                     data-price="116000.0">
+                    <div class="product-name">47201-36432 عنبار بريك كوستر عام 2TR 1HZ PSO</div>
+                    <div class="product-price">$116000.00</div>
+                    <div class="product-category">Category: N/A</div>
+                    <div class="product-brand">Brand: N/A</div>
+                </div>
+            
+    </div>
+
+    <div class="last-updated">
+        Last updated: 2025-11-09 15:22:51
+    </div>
+
+    <script src="../json/filter-data.js"></script>
+    <script src="../json/search-index.js"></script>
+    <script src="filtering.js"></script>
+</body>
+</html>

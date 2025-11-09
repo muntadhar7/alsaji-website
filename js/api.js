@@ -6,6 +6,14 @@ class AlSajiAPI {
         this.cache = new Map();
         this.cacheExpiry = new Map();
 
+        // Static data storage
+        this.staticData = {
+            products: null,
+            categories: null,
+            brands: null,
+            branches: null
+        };
+
         // Cache durations in milliseconds
         this.CACHE_DURATIONS = {
             PRODUCTS: 5 * 60 * 1000, // 5 minutes
@@ -18,7 +26,136 @@ class AlSajiAPI {
         };
     }
 
-    // Cache management methods
+    // Load static data from JSON files
+    async loadStaticData() {
+        try {
+            console.log('📁 Loading static data from /data folder...');
+
+            const [products, categories, brands, branches] = await Promise.all([
+                this.fetchJSON('/data/json/products.json'),
+                this.fetchJSON('/data/json/categories.json'),
+                this.fetchJSON('/data/json/brands.json'),
+                this.fetchJSON('/data/json/branches.json')
+            ]);
+
+            this.staticData = {
+                products: products || [],
+                categories: categories || [],
+                brands: brands || [],
+                branches: branches || []
+            };
+
+            console.log('✅ Static data loaded:', {
+                products: this.staticData.products.length,
+                categories: this.staticData.categories.length,
+                brands: this.staticData.brands.length,
+                branches: this.staticData.branches.length
+            });
+
+            return this.staticData;
+        } catch (error) {
+            console.error('❌ Failed to load static data:', error);
+            // Return empty data if files can't be loaded
+            return {
+                products: [],
+                categories: [],
+                brands: [],
+                branches: []
+            };
+        }
+    }
+
+    // Helper to fetch JSON files
+    async fetchJSON(url) {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return await response.json();
+        } catch (error) {
+            console.warn(`Could not load ${url}:`, error.message);
+            return null;
+        }
+    }
+
+    // Client-side filtering for products
+    filterProducts(products, filters = {}) {
+        if (!products || !Array.isArray(products)) return [];
+
+        return products.filter(product => {
+            // Brand filter
+            if (filters.brand) {
+                const productBrand = this.getFieldValue(product, 'brand');
+                if (productBrand !== filters.brand) return false;
+            }
+
+            // Category filter
+            if (filters.category) {
+                const productCategory = this.getFieldValue(product, 'category');
+                if (productCategory !== filters.category) return false;
+            }
+
+            // Search filter
+            if (filters.search) {
+                const searchTerm = filters.search.toLowerCase();
+                const searchableText = [
+                    product.name,
+                    this.getFieldValue(product, 'brand'),
+                    this.getFieldValue(product, 'category'),
+                    product.description || ''
+                ].join(' ').toLowerCase();
+
+                if (!searchableText.includes(searchTerm)) return false;
+            }
+
+            // In stock filter
+            if (filters.in_stock !== undefined && filters.in_stock !== '') {
+                if (Boolean(product.in_stock) !== Boolean(filters.in_stock)) return false;
+            }
+
+            return true;
+        });
+    }
+
+    // Helper to safely get field values (handles both objects and strings)
+    getFieldValue(item, field) {
+        const value = item[field];
+        if (typeof value === 'object' && value !== null) {
+            return value.name || String(value);
+        }
+        return String(value || '');
+    }
+
+    // Paginate results
+    paginateResults(results, limit = 12, offset = 0) {
+        if (!results || !Array.isArray(results)) return [];
+        return results.slice(offset, offset + limit);
+    }
+
+    // Generate search suggestions
+    generateSearchSuggestions(products, query) {
+        if (!query || query.length < 2) return [];
+
+        const searchTerms = new Set();
+        const lowerQuery = query.toLowerCase();
+
+        products.forEach(product => {
+            const fields = [
+                product.name,
+                this.getFieldValue(product, 'brand'),
+                this.getFieldValue(product, 'category')
+            ];
+
+            fields.forEach(field => {
+                if (field.toLowerCase().includes(lowerQuery)) {
+                    searchTerms.add(field);
+                }
+            });
+        });
+
+        return Array.from(searchTerms).slice(0, 10); // Limit to 10 suggestions
+    }
+
+    // Cache management methods (kept for compatibility)
     _getCacheKey(endpoint, params = {}) {
         return `${endpoint}:${JSON.stringify(params)}`;
     }
@@ -32,7 +169,6 @@ class AlSajiAPI {
     _getCache(key) {
         const expiry = this.cacheExpiry.get(key);
         if (expiry && Date.now() > expiry) {
-            // Cache expired
             this.cache.delete(key);
             this.cacheExpiry.delete(key);
             return null;
@@ -49,13 +185,24 @@ class AlSajiAPI {
         }
     }
 
+    // Main request method - now works with static data for products, real API for cart
     async request(endpoint, params = {}, cacheDuration = null) {
+        // Ensure static data is loaded for product-related endpoints
+        if (endpoint.includes('/products') || endpoint.includes('/categories') ||
+            endpoint.includes('/brands') || endpoint.includes('/branches') ||
+            endpoint.includes('/search')) {
+
+            if (!this.staticData.products) {
+                await this.loadStaticData();
+            }
+        }
+
         // Check cache first
         if (cacheDuration) {
             const cacheKey = this._getCacheKey(endpoint, params);
             const cached = this._getCache(cacheKey);
             if (cached) {
-                console.log(`API Cache HIT: ${endpoint}`);
+                console.log(`📦 Cache HIT: ${endpoint}`);
                 return cached;
             }
         }
@@ -66,6 +213,96 @@ class AlSajiAPI {
         }
 
         try {
+            console.log(`🔄 Processing: ${endpoint}`, params);
+
+            let result;
+
+            // Handle different endpoints - static data for products, real API for cart
+            switch (endpoint) {
+                case '/api/alsaji/products':
+                    const filteredProducts = this.filterProducts(this.staticData.products, params);
+                    const totalCount = filteredProducts.length;
+                    const limit = parseInt(params.limit) || 12;
+                    const offset = parseInt(params.offset) || 0;
+                    const paginatedProducts = this.paginateResults(filteredProducts, limit, offset);
+
+                    result = {
+                        success: true,
+                        products: paginatedProducts,
+                        total_count: totalCount,
+                        count: paginatedProducts.length,
+                        filters_used: params
+                    };
+                    break;
+
+                case '/api/alsaji/categories':
+                    result = {
+                        success: true,
+                        categories: this.staticData.categories
+                    };
+                    break;
+
+                case '/api/alsaji/brands':
+                    result = {
+                        success: true,
+                        brands: this.staticData.brands
+                    };
+                    break;
+
+                case '/api/alsaji/branches':
+                    result = {
+                        success: true,
+                        branches: this.staticData.branches
+                    };
+                    break;
+
+                case '/api/alsaji/search/suggest':
+                    const suggestions = this.generateSearchSuggestions(this.staticData.products, params.q);
+                    result = {
+                        success: true,
+                        suggestions: suggestions
+                    };
+                    break;
+
+                default:
+                    // For cart endpoints, use real API
+                    return await this.makeRealAPIRequest(endpoint, params, cacheDuration);
+            }
+
+            console.log(`✅ Processed: ${endpoint}`, {
+                resultCount: result.products ? result.products.length :
+                           result.categories ? result.categories.length :
+                           result.brands ? result.brands.length :
+                           result.branches ? result.branches.length :
+                           result.suggestions ? result.suggestions.length : 0
+            });
+
+            // Cache the response
+            if (cacheDuration) {
+                const cacheKey = this._getCacheKey(endpoint, params);
+                this._setCache(cacheKey, result, cacheDuration);
+            }
+
+            return result;
+
+        } catch (error) {
+            console.error('❌ Request failed:', error);
+            // Return empty result instead of throwing to maintain compatibility
+            return {
+                success: false,
+                error: error.message,
+                products: [],
+                categories: [],
+                brands: [],
+                branches: [],
+                suggestions: []
+            };
+        }
+    }
+
+    // Real API request for cart and other dynamic endpoints
+    async makeRealAPIRequest(endpoint, params = {}, cacheDuration = null) {
+        try {
             const url = new URL(`${this.baseURL}${endpoint}`);
             Object.keys(params).forEach(key => {
                 if (params[key] !== undefined && params[key] !== null) {
@@ -73,14 +310,14 @@ class AlSajiAPI {
                 }
             });
 
-            console.log(`API Request: ${url.toString()}`);
+            console.log(`🌐 Real API Request: ${url.toString()}`);
 
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                credentials: 'include', // This is crucial for sending cookies
+                credentials: 'include',
                 mode: 'cors'
             });
 
@@ -89,7 +326,7 @@ class AlSajiAPI {
             }
 
             const data = await response.json();
-            console.log(`API Response:`, data);
+            console.log(`🌐 Real API Response:`, data);
 
             // Cache the response
             if (cacheDuration) {
@@ -99,11 +336,12 @@ class AlSajiAPI {
 
             return data;
         } catch (error) {
-            console.error('API Request failed:', error);
+            console.error('Real API Request failed:', error);
             throw error;
         }
     }
 
+    // POST requests - real API for cart, static for others
     async postRequest(endpoint, data = {}, invalidateCache = []) {
         // Invalidate cache for specified endpoints
         invalidateCache.forEach(prefix => {
@@ -115,10 +353,45 @@ class AlSajiAPI {
             return this.mockPostRequest(endpoint, data);
         }
 
+        // Use real API for cart operations
+        if (endpoint.includes('/cart') || endpoint.includes('/order')) {
+            return await this.makeRealAPIPostRequest(endpoint, data, invalidateCache);
+        }
+
+        // For non-cart endpoints, use simulation
+        try {
+            console.log(`🔄 POST Processing: ${endpoint}`, data);
+
+            let result;
+
+            // Simulate POST operations for non-cart endpoints
+            switch (endpoint) {
+                // Add other non-cart endpoints here if needed
+                default:
+                    result = {
+                        success: true,
+                        message: `Operation completed for ${endpoint} (simulated)`
+                    };
+            }
+
+            console.log(`✅ POST Processed: ${endpoint}`, result);
+            return result;
+
+        } catch (error) {
+            console.error('❌ POST Request failed:', error);
+            return {
+                success: false,
+                error: error.message
+            };
+        }
+    }
+
+    // Real API POST request for cart operations
+    async makeRealAPIPostRequest(endpoint, data = {}, invalidateCache = []) {
         try {
             const url = `${this.baseURL}${endpoint}`;
 
-            console.log(`API POST Request: ${url}`, data);
+            console.log(`🌐 Real API POST Request: ${url}`, data);
 
             const response = await fetch(url, {
                 method: 'POST',
@@ -137,15 +410,15 @@ class AlSajiAPI {
             }
 
             const result = await response.json();
-            console.log(`API POST Response:`, result);
+            console.log(`🌐 Real API POST Response:`, result);
             return result;
         } catch (error) {
-            console.error('API POST Request failed:', error);
+            console.error('Real API POST Request failed:', error);
             throw error;
         }
     }
 
-    // Product methods with caching
+    // Product methods with caching (static data)
     async getProducts(filters = {}) {
         return this.request('/api/alsaji/products', filters, this.CACHE_DURATIONS.PRODUCTS);
     }
@@ -176,16 +449,16 @@ class AlSajiAPI {
         return this.request('/api/alsaji/search/suggest', { q: query }, this.CACHE_DURATIONS.SUGGESTIONS);
     }
 
-    // Cart methods with cache invalidation
+    // Cart methods with cache invalidation (REAL API)
     async addToCart(productId, quantity = 1) {
         return this.postRequest('/api/alsaji/cart/add', {
             product_id: productId,
             quantity: quantity
-        }, ['/api/alsaji/cart']); // Invalidate cart cache
+        }, ['/api/alsaji/cart']);
     }
 
     async getCart() {
-        // Cart has very short cache since it changes frequently
+        // Use real API for cart, but with short cache
         return this.request('/api/alsaji/cart/get', {}, this.CACHE_DURATIONS.CART);
     }
 
@@ -193,49 +466,71 @@ class AlSajiAPI {
         return this.postRequest('/api/alsaji/cart/update', {
             line_id: lineId,
             quantity: quantity
-        }, ['/api/alsaji/cart']); // Invalidate cart cache
+        }, ['/api/alsaji/cart']);
     }
 
     async removeFromCart(lineId) {
         return this.postRequest('/api/alsaji/cart/remove', {
             line_id: lineId
-        }, ['/api/alsaji/cart']); // Invalidate cart cache
+        }, ['/api/alsaji/cart']);
     }
 
     async clearCart() {
-        return this.postRequest('/api/alsaji/cart/clear', {}, ['/api/alsaji/cart']); // Invalidate cart cache
+        return this.postRequest('/api/alsaji/cart/clear', {}, ['/api/alsaji/cart']);
     }
 
     async placeOrder(orderData) {
         return this.postRequest('/api/alsaji/order/place', orderData, [
             '/api/alsaji/cart',
             '/api/alsaji/order'
-        ]); // Invalidate cart and order cache
+        ]);
     }
 
     // Cache management methods
     clearAllCache() {
         this.cache.clear();
         this.cacheExpiry.clear();
-        console.log('All cache cleared');
+        console.log('🗑️ All cache cleared');
     }
 
     clearProductCache() {
         this._clearCacheByPrefix('/api/alsaji/products');
         this._clearCacheByPrefix('/api/alsaji/categories');
         this._clearCacheByPrefix('/api/alsaji/brands');
-        console.log('Product cache cleared');
+        console.log('🗑️ Product cache cleared');
     }
 
     clearCartCache() {
         this._clearCacheByPrefix('/api/alsaji/cart');
-        console.log('Cart cache cleared');
+        console.log('🗑️ Cart cache cleared');
     }
 
     getCacheStats() {
         return {
             totalCached: this.cache.size,
             keys: Array.from(this.cache.keys())
+        };
+    }
+
+    // Static data management
+    async reloadStaticData() {
+        console.log('🔄 Reloading static data...');
+        this.staticData = {
+            products: null,
+            categories: null,
+            brands: null,
+            branches: null
+        };
+        this.clearAllCache();
+        return await this.loadStaticData();
+    }
+
+    getStaticDataStats() {
+        return {
+            products: this.staticData.products ? this.staticData.products.length : 0,
+            categories: this.staticData.categories ? this.staticData.categories.length : 0,
+            brands: this.staticData.brands ? this.staticData.brands.length : 0,
+            branches: this.staticData.branches ? this.staticData.branches.length : 0
         };
     }
 
@@ -257,3 +552,10 @@ class AlSajiAPI {
 
 // Create global instance
 const alsajiAPI = new AlSajiAPI();
+
+// Auto-load static data when the API is created
+alsajiAPI.loadStaticData().then(() => {
+    console.log('🚀 AlSajiAPI ready with static data + real cart API');
+}).catch(error => {
+    console.error('❌ Failed to initialize AlSajiAPI:', error);
+});

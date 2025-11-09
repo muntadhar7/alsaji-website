@@ -1,0 +1,1178 @@
+window.search-index = [
+  {
+    "id": 1,
+    "name": "0W20 Engine Oil",
+    "category": "",
+    "brand": "",
+    "price": 10000.0,
+    "slug": "0w20-engine-oil",
+    "search_terms": [
+      "0W20 Engine Oil",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Filter",
+    "category": "Filters",
+    "brand": "",
+    "price": 2000.0,
+    "slug": "filter",
+    "search_terms": [
+      "Filter",
+      "Filters",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 164,
+    "name": " Engi-Clean 400ML - منظف عام لاجزاء المحرك (كارب كلينر) 400 مل",
+    "category": "",
+    "brand": "Engi-Clean",
+    "price": 13000.0,
+    "slug": "engi-clean-400ml--منظف-عام-لاجزاء-المحرك-(كارب-كلينر)-400-مل",
+    "search_terms": [
+      " Engi-Clean 400ML - منظف عام لاجزاء المحرك (كارب كلينر) 400 مل",
+      "",
+      "Engi-Clean",
+      ""
+    ]
+  },
+  {
+    "id": 165,
+    "name": " Quick Coupler R1234yf HP Red ولف شحن عاز 1234 احمر حار ",
+    "category": "HVAC",
+    "brand": "AISIN",
+    "price": 28000.0,
+    "slug": "quick-coupler-r1234yf-hp-red-ولف-شحن-عاز-1234-احمر-حار",
+    "search_terms": [
+      " Quick Coupler R1234yf HP Red ولف شحن عاز 1234 احمر حار ",
+      "HVAC",
+      "AISIN",
+      ""
+    ]
+  },
+  {
+    "id": 166,
+    "name": " Quick Coupler R1234yf LP Blue ولف شحن عاز 1234 ازرق بارد",
+    "category": "",
+    "brand": "",
+    "price": 30000.0,
+    "slug": "quick-coupler-r1234yf-lp-blue-ولف-شحن-عاز-1234-ازرق-بارد",
+    "search_terms": [
+      " Quick Coupler R1234yf LP Blue ولف شحن عاز 1234 ازرق بارد",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 167,
+    "name": " Quick Coupler R134a HP Red ولف شحن غاز 134 احمر حار ",
+    "category": "HVAC",
+    "brand": "",
+    "price": 33000.0,
+    "slug": "quick-coupler-r134a-hp-red-ولف-شحن-غاز-134-احمر-حار",
+    "search_terms": [
+      " Quick Coupler R134a HP Red ولف شحن غاز 134 احمر حار ",
+      "HVAC",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 168,
+    "name": " Quick Coupler R134a LP Blue ولف شحن غاز 134 ازرق بارد",
+    "category": "",
+    "brand": "",
+    "price": 33000.0,
+    "slug": "quick-coupler-r134a-lp-blue-ولف-شحن-غاز-134-ازرق-بارد",
+    "search_terms": [
+      " Quick Coupler R134a LP Blue ولف شحن غاز 134 ازرق بارد",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 169,
+    "name": " Total Care 100ML - Mint CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل نعناع",
+    "category": "",
+    "brand": "",
+    "price": 28000.0,
+    "slug": "total-care-100ml--mint-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-نعناع",
+    "search_terms": [
+      " Total Care 100ML - Mint CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل نعناع",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 170,
+    "name": " Total Care 100ML -LEMON  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل ليمون",
+    "category": "",
+    "brand": "",
+    "price": 28000.0,
+    "slug": "total-care-100ml-lemon-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-ليمون",
+    "search_terms": [
+      " Total Care 100ML -LEMON  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل ليمون",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 171,
+    "name": " Total Care 100ML -OUD  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود",
+    "category": "",
+    "brand": "",
+    "price": 28000.0,
+    "slug": "total-care-100ml-oud-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-عود",
+    "search_terms": [
+      " Total Care 100ML -OUD  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 172,
+    "name": " Total Care 100ML -VANILA  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل فانيلا",
+    "category": "",
+    "brand": "",
+    "price": 28000.0,
+    "slug": "total-care-100ml-vanila-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-فانيلا",
+    "search_terms": [
+      " Total Care 100ML -VANILA  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل فانيلا",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 173,
+    "name": " Total Care 100ML -peach  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ",
+    "category": "",
+    "brand": "",
+    "price": 28000.0,
+    "slug": "total-care-100ml-peach-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-خوخ",
+    "search_terms": [
+      " Total Care 100ML -peach  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 174,
+    "name": " بك زاوية كامري 22 - خليجي عادي دخاني  ايمن ",
+    "category": "Lighting",
+    "brand": "Denso",
+    "price": 45000.0,
+    "slug": "بك-زاوية-كامري-22--خليجي-عادي-دخاني-ايمن",
+    "search_terms": [
+      " بك زاوية كامري 22 - خليجي عادي دخاني  ايمن ",
+      "Lighting",
+      "Denso",
+      ""
+    ]
+  },
+  {
+    "id": 175,
+    "name": " بك زاوية كامري 22 - خليجي ليد ايمن ",
+    "category": "Lighting",
+    "brand": "Denso",
+    "price": 47000.0,
+    "slug": "بك-زاوية-كامري-22--خليجي-ليد-ايمن",
+    "search_terms": [
+      " بك زاوية كامري 22 - خليجي ليد ايمن ",
+      "Lighting",
+      "Denso",
+      ""
+    ]
+  },
+  {
+    "id": 176,
+    "name": " بك صندوق كامري 22 - خليجي عادي دخاني  ايسر",
+    "category": "",
+    "brand": "",
+    "price": 50000.0,
+    "slug": "بك-صندوق-كامري-22--خليجي-عادي-دخاني-ايسر",
+    "search_terms": [
+      " بك صندوق كامري 22 - خليجي عادي دخاني  ايسر",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 177,
+    "name": " بك صندوق كامري 22 - خليجي عادي دخاني  ايمن ",
+    "category": "",
+    "brand": "",
+    "price": 50000.0,
+    "slug": "بك-صندوق-كامري-22--خليجي-عادي-دخاني-ايمن",
+    "search_terms": [
+      " بك صندوق كامري 22 - خليجي عادي دخاني  ايمن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 178,
+    "name": " بك صندوق كامري 22 - خليجي ليد ايسر",
+    "category": "",
+    "brand": "",
+    "price": 36000.0,
+    "slug": "بك-صندوق-كامري-22--خليجي-ليد-ايسر",
+    "search_terms": [
+      " بك صندوق كامري 22 - خليجي ليد ايسر",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 179,
+    "name": " بك صندوق كامري 22 - خليجي ليد ايمن ",
+    "category": "",
+    "brand": "",
+    "price": 36000.0,
+    "slug": "بك-صندوق-كامري-22--خليجي-ليد-ايمن",
+    "search_terms": [
+      " بك صندوق كامري 22 - خليجي ليد ايمن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 180,
+    "name": " تريشة  لحية دعامية امامية كراند هايبندر 24- امريكي  وسطية سلفر ",
+    "category": "",
+    "brand": "",
+    "price": 36000.0,
+    "slug": "تريشة-لحية-دعامية-امامية-كراند-هايبندر-24-امريكي-وسطية-سلفر",
+    "search_terms": [
+      " تريشة  لحية دعامية امامية كراند هايبندر 24- امريكي  وسطية سلفر ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 181,
+    "name": " دعامية امامية كراند هايلندر 24- امريكي",
+    "category": "",
+    "brand": "",
+    "price": 78000.0,
+    "slug": "دعامية-امامية-كراند-هايلندر-24-امريكي",
+    "search_terms": [
+      " دعامية امامية كراند هايلندر 24- امريكي",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 182,
+    "name": " راديتر ماء كورلا 19 - 20 -  LE خليجي امريكي - PA26 ",
+    "category": "",
+    "brand": "",
+    "price": 78000.0,
+    "slug": "راديتر-ماء-كورلا-19--20--le-خليجي-امريكي--pa26",
+    "search_terms": [
+      " راديتر ماء كورلا 19 - 20 -  LE خليجي امريكي - PA26 ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 183,
+    "name": " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايسر ",
+    "category": "",
+    "brand": "",
+    "price": 11000.0,
+    "slug": "شباك-دعامية-جانبية-مفتوح-شباك-لاند-22--gxr-ايسر",
+    "search_terms": [
+      " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايسر ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 184,
+    "name": " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايمن ",
+    "category": "",
+    "brand": "",
+    "price": 11000.0,
+    "slug": "شباك-دعامية-جانبية-مفتوح-شباك-لاند-22--gxr-ايمن",
+    "search_terms": [
+      " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايمن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 185,
+    "name": " قاعدة رقم برادو 24 - اسود",
+    "category": "",
+    "brand": "",
+    "price": 50000.0,
+    "slug": "قاعدة-رقم-برادو-24--اسود",
+    "search_terms": [
+      " قاعدة رقم برادو 24 - اسود",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 186,
+    "name": " قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود",
+    "category": "",
+    "brand": "",
+    "price": 50000.0,
+    "slug": "قاعدة-رقم-لاند-22--من-دون-تريشة-باب-بدي-اسود",
+    "search_terms": [
+      " قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 187,
+    "name": " قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو ",
+    "category": "",
+    "brand": "",
+    "price": 6000.0,
+    "slug": "قبغ-دبة-فضلة-رف-فور-19--كورلا-بيكاتشو",
+    "search_terms": [
+      " قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 188,
+    "name": " كفر + قاعدة ماسكة جوال لاند 22 - ",
+    "category": "",
+    "brand": "",
+    "price": 36000.0,
+    "slug": "كفر-+-قاعدة-ماسكة-جوال-لاند-22",
+    "search_terms": [
+      " كفر + قاعدة ماسكة جوال لاند 22 - ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 189,
+    "name": " كويل مجول كورلا يارس فيوس 1NZ 2NZ",
+    "category": "",
+    "brand": "Denso",
+    "price": 28000.0,
+    "slug": "كويل-مجول-كورلا-يارس-فيوس-1nz-2nz",
+    "search_terms": [
+      " كويل مجول كورلا يارس فيوس 1NZ 2NZ",
+      "",
+      "Denso",
+      ""
+    ]
+  },
+  {
+    "id": 190,
+    "name": "'+5W20 SN synTECH زيت محرك ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 9000.0,
+    "slug": "'+5w20-sn-syntech-زيت-محرك-ايسن-1ltx12",
+    "search_terms": [
+      "'+5W20 SN synTECH زيت محرك ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 191,
+    "name": "'+5W20 SN synTECH زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 38000.0,
+    "slug": "'+5w20-sn-syntech-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "'+5W20 SN synTECH زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 192,
+    "name": "0W16 SN NS زيت محرك نيسان ياباني 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 57000.0,
+    "slug": "0w16-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
+    "search_terms": [
+      "0W16 SN NS زيت محرك نيسان ياباني 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 193,
+    "name": "0W16 SP زيت محرك ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 10000.0,
+    "slug": "0w16-sp-زيت-محرك-ايسن-1ltx12",
+    "search_terms": [
+      "0W16 SP زيت محرك ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 194,
+    "name": "0W16 SP زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 42000.0,
+    "slug": "0w16-sp-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "0W16 SP زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 195,
+    "name": "0W20 SN NS زيت محرك نيسان ياباني 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 47000.0,
+    "slug": "0w20-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
+    "search_terms": [
+      "0W20 SN NS زيت محرك نيسان ياباني 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 196,
+    "name": "0W20 SN زيت محرك ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 9000.0,
+    "slug": "0w20-sn-زيت-محرك-ايسن-1ltx12",
+    "search_terms": [
+      "0W20 SN زيت محرك ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 197,
+    "name": "0W20 SN زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 37000.0,
+    "slug": "0w20-sn-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "0W20 SN زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 198,
+    "name": "10W30 SN زيت محرك ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 8000.0,
+    "slug": "10w30-sn-زيت-محرك-ايسن-1ltx12",
+    "search_terms": [
+      "10W30 SN زيت محرك ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 199,
+    "name": "10W30 SN زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 32000.0,
+    "slug": "10w30-sn-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "10W30 SN زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 200,
+    "name": "10W40 SN UltraSynTech زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 31000.0,
+    "slug": "10w40-sn-ultrasyntech-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "10W40 SN UltraSynTech زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 201,
+    "name": "15W40 Ci4 زيت كاز ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 9000.0,
+    "slug": "15w40-ci4-زيت-كاز-ايسن-1ltx12",
+    "search_terms": [
+      "15W40 Ci4 زيت كاز ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 202,
+    "name": "15W40 Ci4 زيت كاز ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 33000.0,
+    "slug": "15w40-ci4-زيت-كاز-ايسن-4ltx4",
+    "search_terms": [
+      "15W40 Ci4 زيت كاز ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 203,
+    "name": "15W40 Ci4 زيت كاز ايسن 6 لتر  6LTx3\t",
+    "category": "",
+    "brand": "",
+    "price": 49000.0,
+    "slug": "15w40-ci4-زيت-كاز-ايسن-6-لتر-6ltx3\t",
+    "search_terms": [
+      "15W40 Ci4 زيت كاز ايسن 6 لتر  6LTx3\t",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 204,
+    "name": "15W40 Ci4 زيت محرك تويوتا كاز 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 27000.0,
+    "slug": "15w40-ci4-زيت-محرك-تويوتا-كاز-4ltx6",
+    "search_terms": [
+      "15W40 Ci4 زيت محرك تويوتا كاز 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 205,
+    "name": "200609-201206 عنبار كلج اعلى رئيسي كوستر 2TR-1HZ عام 93 - 17",
+    "category": "",
+    "brand": "",
+    "price": 50000.0,
+    "slug": "200609-201206-عنبار-كلج-اعلى-رئيسي-كوستر-2tr-1hz-عام-93--17",
+    "search_terms": [
+      "200609-201206 عنبار كلج اعلى رئيسي كوستر 2TR-1HZ عام 93 - 17",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 206,
+    "name": "20W50 SN TY زيت محرك تويوتا اسود بلاستك 1LTx24 ",
+    "category": "",
+    "brand": "",
+    "price": 7000.0,
+    "slug": "20w50-sn-ty-زيت-محرك-تويوتا-اسود-بلاستك-1ltx24",
+    "search_terms": [
+      "20W50 SN TY زيت محرك تويوتا اسود بلاستك 1LTx24 ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 207,
+    "name": "20W50 SN TY زيت محرك تويوتا اسود بلاستك 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 25000.0,
+    "slug": "20w50-sn-ty-زيت-محرك-تويوتا-اسود-بلاستك-4ltx6",
+    "search_terms": [
+      "20W50 SN TY زيت محرك تويوتا اسود بلاستك 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 208,
+    "name": "20W50 SN زيت محرك ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 7000.0,
+    "slug": "20w50-sn-زيت-محرك-ايسن-1ltx12",
+    "search_terms": [
+      "20W50 SN زيت محرك ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 209,
+    "name": "20W50 SN زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 28000.0,
+    "slug": "20w50-sn-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "20W50 SN زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 210,
+    "name": "31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3RZ عادي",
+    "category": "",
+    "brand": "",
+    "price": 64000.0,
+    "slug": "31410-60571-عنبار-كلج-رئيسي-بيكب-تويوتا-جمرة-3rz-عادي",
+    "search_terms": [
+      "31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3RZ عادي",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 211,
+    "name": "47201-36432 عنبار بريك كوستر عام 2TR 1HZ PSO",
+    "category": "",
+    "brand": "",
+    "price": 116000.0,
+    "slug": "47201-36432-عنبار-بريك-كوستر-عام-2tr-1hz-pso",
+    "search_terms": [
+      "47201-36432 عنبار بريك كوستر عام 2TR 1HZ PSO",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 212,
+    "name": "47201-3D460 عنبار بريك بيكب تويوتا فيكو 3RZ عادي اوتو",
+    "category": "",
+    "brand": "",
+    "price": 92000.0,
+    "slug": "47201-3d460-عنبار-بريك-بيكب-تويوتا-فيكو-3rz-عادي-اوتو",
+    "search_terms": [
+      "47201-3D460 عنبار بريك بيكب تويوتا فيكو 3RZ عادي اوتو",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 213,
+    "name": "5W30 SN GF5 TY زيت محرك تويوتا ياباني 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 47000.0,
+    "slug": "5w30-sn-gf5-ty-زيت-محرك-تويوتا-ياباني-4ltx6",
+    "search_terms": [
+      "5W30 SN GF5 TY زيت محرك تويوتا ياباني 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 214,
+    "name": "5W30 SN NS زيت محرك نيسان ياباني 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 41000.0,
+    "slug": "5w30-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
+    "search_terms": [
+      "5W30 SN NS زيت محرك نيسان ياباني 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 215,
+    "name": "5W30 SN TY زيت محرك تويوتا بلاستك E 1LTx24",
+    "category": "",
+    "brand": "",
+    "price": 8000.0,
+    "slug": "5w30-sn-ty-زيت-محرك-تويوتا-بلاستك-e-1ltx24",
+    "search_terms": [
+      "5W30 SN TY زيت محرك تويوتا بلاستك E 1LTx24",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 216,
+    "name": "5W30 SN TY زيت ياباني اسود 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 43000.0,
+    "slug": "5w30-sn-ty-زيت-ياباني-اسود-4ltx6",
+    "search_terms": [
+      "5W30 SN TY زيت ياباني اسود 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 217,
+    "name": "5W30 SN زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 36000.0,
+    "slug": "5w30-sn-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "5W30 SN زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 218,
+    "name": "5W40 SN LEX زيت محرك لكزس بلاستك 1LTx24",
+    "category": "",
+    "brand": "",
+    "price": 7000.0,
+    "slug": "5w40-sn-lex-زيت-محرك-لكزس-بلاستك-1ltx24",
+    "search_terms": [
+      "5W40 SN LEX زيت محرك لكزس بلاستك 1LTx24",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 219,
+    "name": "5W40 SN LEX زيت محرك لكزس بلاستك 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 31000.0,
+    "slug": "5w40-sn-lex-زيت-محرك-لكزس-بلاستك-4ltx6",
+    "search_terms": [
+      "5W40 SN LEX زيت محرك لكزس بلاستك 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 220,
+    "name": "5W40 SN TY زيت محرك تويوتا ياباني 4LTx6",
+    "category": "",
+    "brand": "",
+    "price": 64000.0,
+    "slug": "5w40-sn-ty-زيت-محرك-تويوتا-ياباني-4ltx6",
+    "search_terms": [
+      "5W40 SN TY زيت محرك تويوتا ياباني 4LTx6",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 221,
+    "name": "5W40 SN زيت محرك ايسن 1LTx12",
+    "category": "",
+    "brand": "",
+    "price": 9000.0,
+    "slug": "5w40-sn-زيت-محرك-ايسن-1ltx12",
+    "search_terms": [
+      "5W40 SN زيت محرك ايسن 1LTx12",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 222,
+    "name": "5W40 SN زيت محرك ايسن 4LTx4",
+    "category": "",
+    "brand": "",
+    "price": 37000.0,
+    "slug": "5w40-sn-زيت-محرك-ايسن-4ltx4",
+    "search_terms": [
+      "5W40 SN زيت محرك ايسن 4LTx4",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 223,
+    "name": "AISIN Bug & Tar Remover 473MLx20PCS - بخاخ تنظيف القطران و البقع 473 مل ايسن ",
+    "category": "",
+    "brand": "",
+    "price": 17000.0,
+    "slug": "aisin-bug-and-tar-remover-473mlx20pcs--بخاخ-تنظيف-القطران-و-البقع-473-مل-ايسن",
+    "search_terms": [
+      "AISIN Bug & Tar Remover 473MLx20PCS - بخاخ تنظيف القطران و البقع 473 مل ايسن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 224,
+    "name": "AISIN Car Stain Remover 473MLx20PCS- بخاخ مزيل البقع الصعبة للهيكل الخارجي 473 مل ايسن ",
+    "category": "",
+    "brand": "",
+    "price": 13000.0,
+    "slug": "aisin-car-stain-remover-473mlx20pcs-بخاخ-مزيل-البقع-الصعبة-للهيكل-الخارجي-473-مل-ايسن",
+    "search_terms": [
+      "AISIN Car Stain Remover 473MLx20PCS- بخاخ مزيل البقع الصعبة للهيكل الخارجي 473 مل ايسن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 225,
+    "name": "AISIN Car Wax 473MLx20 - واكس 473 مل ايسن",
+    "category": "Car Care",
+    "brand": "AISIN",
+    "price": 16000.0,
+    "slug": "aisin-car-wax-473mlx20--واكس-473-مل-ايسن",
+    "search_terms": [
+      "AISIN Car Wax 473MLx20 - واكس 473 مل ايسن",
+      "Car Care",
+      "AISIN",
+      ""
+    ]
+  },
+  {
+    "id": 226,
+    "name": "AISIN Interior Cleane 473MLx20PCS- بخاخ منظف داخلي عام 473 مل ايسن ",
+    "category": "Car Care",
+    "brand": "AISIN",
+    "price": 13000.0,
+    "slug": "aisin-interior-cleane-473mlx20pcs-بخاخ-منظف-داخلي-عام-473-مل-ايسن",
+    "search_terms": [
+      "AISIN Interior Cleane 473MLx20PCS- بخاخ منظف داخلي عام 473 مل ايسن ",
+      "Car Care",
+      "AISIN",
+      ""
+    ]
+  },
+  {
+    "id": 227,
+    "name": "AISIN Leather Conditioner 473MLx20PCS- بخاخ بلسم و واقي جلود 473 مل ايسن ",
+    "category": "Car Care",
+    "brand": "AISIN",
+    "price": 14000.0,
+    "slug": "aisin-leather-conditioner-473mlx20pcs-بخاخ-بلسم-و-واقي-جلود-473-مل-ايسن",
+    "search_terms": [
+      "AISIN Leather Conditioner 473MLx20PCS- بخاخ بلسم و واقي جلود 473 مل ايسن ",
+      "Car Care",
+      "AISIN",
+      ""
+    ]
+  },
+  {
+    "id": 228,
+    "name": "AISIN Odor Eliminator 250MLx20PCS- بخاخ معطر داخلي  250 ملم ايسن ",
+    "category": "",
+    "brand": "",
+    "price": 11000.0,
+    "slug": "aisin-odor-eliminator-250mlx20pcs-بخاخ-معطر-داخلي-250-ملم-ايسن",
+    "search_terms": [
+      "AISIN Odor Eliminator 250MLx20PCS- بخاخ معطر داخلي  250 ملم ايسن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 229,
+    "name": "AISIN Scratch Remover 150MLx20PCS - مزيل خدوش 150 مل ايسن",
+    "category": "",
+    "brand": "",
+    "price": 9000.0,
+    "slug": "aisin-scratch-remover-150mlx20pcs--مزيل-خدوش-150-مل-ايسن",
+    "search_terms": [
+      "AISIN Scratch Remover 150MLx20PCS - مزيل خدوش 150 مل ايسن",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 230,
+    "name": "AISIN Tire & Trim Coating 473MLx20PCS- بخاخ ملمع اطارات و قطع سوداء 473 مل ايسن",
+    "category": "",
+    "brand": "",
+    "price": 18000.0,
+    "slug": "aisin-tire-and-trim-coating-473mlx20pcs-بخاخ-ملمع-اطارات-و-قطع-سوداء-473-مل-ايسن",
+    "search_terms": [
+      "AISIN Tire & Trim Coating 473MLx20PCS- بخاخ ملمع اطارات و قطع سوداء 473 مل ايسن",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 231,
+    "name": "AISIN Wash & Wax 1000MLx12PCS - شامبو غسيل و واكس 1000مل ايسن ",
+    "category": "",
+    "brand": "",
+    "price": 9000.0,
+    "slug": "aisin-wash-and-wax-1000mlx12pcs--شامبو-غسيل-و-واكس-1000مل-ايسن",
+    "search_terms": [
+      "AISIN Wash & Wax 1000MLx12PCS - شامبو غسيل و واكس 1000مل ايسن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 232,
+    "name": "AISIN Windshield Washer Fluid 60MLx160PCS- سائل شامبو ماء زراكة 60 مل ايسن ",
+    "category": "",
+    "brand": "",
+    "price": 2000.0,
+    "slug": "aisin-windshield-washer-fluid-60mlx160pcs-سائل-شامبو-ماء-زراكة-60-مل-ايسن",
+    "search_terms": [
+      "AISIN Windshield Washer Fluid 60MLx160PCS- سائل شامبو ماء زراكة 60 مل ايسن ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 233,
+    "name": "COMP ASSY W/MG CLUTCH YARIS ECHO COROLLA 01-07 كومبريسر تبريد كورلا بيكاتشو 03 - 07",
+    "category": "",
+    "brand": "",
+    "price": 341000.0,
+    "slug": "comp-assy-w-mg-clutch-yaris-echo-corolla-01-07-كومبريسر-تبريد-كورلا-بيكاتشو-03--07",
+    "search_terms": [
+      "COMP ASSY W/MG CLUTCH YARIS ECHO COROLLA 01-07 كومبريسر تبريد كورلا بيكاتشو 03 - 07",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 234,
+    "name": "COMPRESSOR ASSY,W/MAG CLUTCH W204  07/ W212 09 C230 C280 C300 07. W212 E300 E350 E220CDI E250CDI 09 كومبريسر مارسيدس\t",
+    "category": "",
+    "brand": "",
+    "price": 324000.0,
+    "slug": "compressor-assy,w-mag-clutch-w204-07-w212-09-c230-c280-c300-07.-w212-e300-e350-e220cdi-e250cdi-09-كومبريسر-مارسيدس\t",
+    "search_terms": [
+      "COMPRESSOR ASSY,W/MAG CLUTCH W204  07/ W212 09 C230 C280 C300 07. W212 E300 E350 E220CDI E250CDI 09 كومبريسر مارسيدس\t",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 235,
+    "name": "COMPRESSOR ASSY,W/MAGNET CLUTC كومبريسر تبريد عكرب كاز ",
+    "category": "",
+    "brand": "",
+    "price": 341000.0,
+    "slug": "compressor-assy,w-magnet-clutc-كومبريسر-تبريد-عكرب-كاز",
+    "search_terms": [
+      "COMPRESSOR ASSY,W/MAGNET CLUTC كومبريسر تبريد عكرب كاز ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 236,
+    "name": "COMPRESSOR W/CLUTCH MERECEDES-BENZ 6PK (W220) (C215) ((W203) (CL203) (S203) (R230)(W211) (C209) (S211) (A209) (W639) (W639)(W639) (C219)  (W906) (W906) ",
+    "category": "HVAC",
+    "brand": "Denso",
+    "price": 341000.0,
+    "slug": "compressor-w-clutch-merecedes-benz-6pk-(w220)-(c215)-((w203)-(cl203)-(s203)-(r230)(w211)-(c209)-(s211)-(a209)-(w639)-(w639)(w639)-(c219)-(w906)-(w906)",
+    "search_terms": [
+      "COMPRESSOR W/CLUTCH MERECEDES-BENZ 6PK (W220) (C215) ((W203) (CL203) (S203) (R230)(W211) (C209) (S211) (A209) (W639) (W639)(W639) (C219)  (W906) (W906) ",
+      "HVAC",
+      "Denso",
+      ""
+    ]
+  },
+  {
+    "id": 237,
+    "name": "Coolshot 2PCS x30ML - CTN 30 PAIR - محسن اداء التبريد (كوول شوت) 30 مل - عدد 2",
+    "category": "",
+    "brand": "",
+    "price": 57000.0,
+    "slug": "coolshot-2pcs-x30ml--ctn-30-pair--محسن-اداء-التبريد-(كوول-شوت)-30-مل--عدد-2",
+    "search_terms": [
+      "Coolshot 2PCS x30ML - CTN 30 PAIR - محسن اداء التبريد (كوول شوت) 30 مل - عدد 2",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 238,
+    "name": "DXE22H11C بلك نيسان سنترا 19 -  OES 22401-6CA1C 22401-6CT1C 22401-6LB1C",
+    "category": "",
+    "brand": "",
+    "price": 21000.0,
+    "slug": "dxe22h11c-بلك-نيسان-سنترا-19--oes-22401-6ca1c-22401-6ct1c-22401-6lb1c",
+    "search_terms": [
+      "DXE22H11C بلك نيسان سنترا 19 -  OES 22401-6CA1C 22401-6CT1C 22401-6LB1C",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 239,
+    "name": "EGR Valve Cleaner 400ML - منظف منظمة كونترول هواء (اي جي ار EGR) 400 مل",
+    "category": "",
+    "brand": "",
+    "price": 14000.0,
+    "slug": "egr-valve-cleaner-400ml--منظف-منظمة-كونترول-هواء-(اي-جي-ار-egr)-400-مل",
+    "search_terms": [
+      "EGR Valve Cleaner 400ML - منظف منظمة كونترول هواء (اي جي ار EGR) 400 مل",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 240,
+    "name": "EVAPORATOR SUB ASSY 15-13 فريز تبريد يارس 10 - 13",
+    "category": "",
+    "brand": "",
+    "price": 78000.0,
+    "slug": "evaporator-sub-assy-15-13-فريز-تبريد-يارس-10--13",
+    "search_terms": [
+      "EVAPORATOR SUB ASSY 15-13 فريز تبريد يارس 10 - 13",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 241,
+    "name": "EXTEREME SL 2PCSx30ML CTN 30 PAIR - مانع تسريب ( ستوب ليك )  لمنظمومة التبريد 30 مل - عدد 2 ",
+    "category": "",
+    "brand": "",
+    "price": 57000.0,
+    "slug": "extereme-sl-2pcsx30ml-ctn-30-pair--مانع-تسريب-(-ستوب-ليك-)-لمنظمومة-التبريد-30-مل--عدد-2",
+    "search_terms": [
+      "EXTEREME SL 2PCSx30ML CTN 30 PAIR - مانع تسريب ( ستوب ليك )  لمنظمومة التبريد 30 مل - عدد 2 ",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Evaporator Cleaner Foam 100ML CTN 30 PCS - -فوم تنظيف قنواة التبريد و الفريز 100 مل",
+    "category": "",
+    "brand": "",
+    "price": 14000.0,
+    "slug": "evaporator-cleaner-foam-100ml-ctn-30-pcs--فوم-تنظيف-قنواة-التبريد-و-الفريز-100-مل",
+    "search_terms": [
+      "Evaporator Cleaner Foam 100ML CTN 30 PCS - -فوم تنظيف قنواة التبريد و الفريز 100 مل",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Gift Card",
+    "category": "",
+    "brand": "",
+    "price": 70000.0,
+    "slug": "gift-card",
+    "search_terms": [
+      "Gift Card",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Light",
+    "category": "Lighting",
+    "brand": "Nissan",
+    "price": 25000.0,
+    "slug": "light",
+    "search_terms": [
+      "Light",
+      "Lighting",
+      "Nissan",
+      ""
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Shock Absorber",
+    "category": "Suspention",
+    "brand": "AISIN",
+    "price": 1.0,
+    "slug": "shock-absorber",
+    "search_terms": [
+      "Shock Absorber",
+      "Suspention",
+      "AISIN",
+      ""
+    ]
+  }
+];

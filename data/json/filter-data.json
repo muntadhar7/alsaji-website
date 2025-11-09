@@ -1,0 +1,79 @@
+{
+  "categories": [
+    {
+      "name": "Filters",
+      "count": 1,
+      "slug": "filters"
+    },
+    {
+      "name": "HVAC",
+      "count": 3,
+      "slug": "hvac"
+    },
+    {
+      "name": "Lighting",
+      "count": 3,
+      "slug": "lighting"
+    },
+    {
+      "name": "Car Care",
+      "count": 3,
+      "slug": "car-care"
+    },
+    {
+      "name": "Suspention",
+      "count": 1,
+      "slug": "suspention"
+    }
+  ],
+  "brands": [
+    {
+      "name": "Engi-Clean",
+      "count": 1,
+      "slug": "engi-clean"
+    },
+    {
+      "name": "AISIN",
+      "count": 5,
+      "slug": "aisin"
+    },
+    {
+      "name": "Denso",
+      "count": 4,
+      "slug": "denso"
+    },
+    {
+      "name": "Nissan",
+      "count": 1,
+      "slug": "nissan"
+    }
+  ],
+  "price_ranges": [
+    {
+      "min": 1.0,
+      "max": 68200.0,
+      "count": 74,
+      "label": "$1.00 - $68200.00"
+    },
+    {
+      "min": 68200.01,
+      "max": 136399.01,
+      "count": 6,
+      "label": "$68200.01 - $136399.01"
+    },
+    {
+      "min": 272797.04000000004,
+      "max": 340996.04000000004,
+      "count": 1,
+      "label": "$272797.04 - $340996.04"
+    },
+    {
+      "min": 340996.05000000005,
+      "max": 409195.05000000005,
+      "count": 3,
+      "label": "$340996.05 - $409195.05"
+    }
+  ],
+  "branches": [],
+  "last_updated": "2025-11-09T15:22:51.741214"
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root{
   --red:rgb(188, 20, 44);
   --red2:rgb(203, 23, 49);
@@ -14,7 +16,7 @@
 }
 
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter, Arial, Helvetica, sans-serif;background:var(--w2);color:var(--black1)}
+body{margin:0;font-family: "Poppins", Arial, Helvetica, sans-serif;background:var(--w2);color:var(--black1)}
 .wrap{max-width:1200px;margin:0 auto;padding:8px 16px}
 
 /* Header and navigation with ink colors */
