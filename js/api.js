@@ -1,6 +1,6 @@
 class AlSajiAPI {
     constructor() {
-        this.baseURL = 'https://alsajigroup.odoo.com';
+        this.baseURL = 'https://alsajigroup-staging-24665929.dev.odoo.com/';
         this.useMockData = false;
         this.mockDelay = 100;
         this.cache = new Map();
