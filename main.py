@@ -4,22 +4,24 @@ import requests
 from datetime import datetime
 import time
 import hashlib
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 class AlSajiDataExporter:
-    def __init__(self, base_url="http://localhost:8888"):
+    def __init__(self, base_url="http://localhost:8069", db_name="alsaji_copy"):
         self.base_url = base_url
+        self.db_name = db_name
         self.output_dir = "data"
         self.json_dir = os.path.join(self.output_dir, "json")
         self.html_dir = os.path.join(self.output_dir, "html")
         self.cache_file = os.path.join(self.output_dir, "data_hash.txt")
+
+        # Create session with retry strategy
+        self.session = requests.Session()
+        self.setup_session()
         self.setup_directories()
 
-    def setup_directories(self):
-        """Create necessary directories"""
-        os.makedirs(self.output_dir, exist_ok=True)
-        os.makedirs(self.json_dir, exist_ok=True)
-        os.makedirs(self.html_dir, exist_ok=True)
 
     def get_data_hash(self, data):
         """Generate hash of data to check for changes"""
@@ -46,13 +48,94 @@ class AlSajiDataExporter:
         with open(self.cache_file, 'w') as f:
             f.write(data_hash)
 
+    def setup_session(self):
+        """Setup session with retry strategy and headers"""
+        # Retry strategy
+        retry_strategy = Retry(
+            total=3,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["HEAD", "GET", "OPTIONS"],
+            backoff_factor=1
+        )
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        self.session.mount("http://", adapter)
+        self.session.mount("https://", adapter)
+
+        # Set headers to mimic browser
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Connection': 'keep-alive',
+        })
+
+    def setup_directories(self):
+        """Create necessary directories"""
+        os.makedirs(self.output_dir, exist_ok=True)
+        os.makedirs(self.json_dir, exist_ok=True)
+        os.makedirs(self.html_dir, exist_ok=True)
+
+    def initialize_session(self):
+        """Initialize session by visiting Odoo web interface first"""
+        print("Initializing session...")
+        try:
+            # First, access the web interface to establish session with database
+            init_url = f"{self.base_url}/web"
+            params = {'db': self.db_name}
+            response = self.session.get(init_url, params=params, timeout=10)
+            print(f"Session initialization: {response.status_code}")
+
+            # If we get a session cookie, we're good
+            if 'session_id' in self.session.cookies:
+                print("Session cookie obtained successfully")
+            else:
+                print("No session cookie received, trying alternative approach...")
+                # Try logging in as public user
+                self._try_public_login()
+
+        except Exception as e:
+            print(f"Session initialization failed: {e}")
+
+    def _try_public_login(self):
+        """Alternative: Try to simulate public user access"""
+        try:
+            # Access the website sale page to get session
+            login_url = f"{self.base_url}/web/login"
+            data = {
+                'login': '',
+                'password': '',
+                'redirect': '/shop'
+            }
+            response = self.session.post(login_url, data=data, timeout=10)
+            print(f"Public access attempt: {response.status_code}")
+        except Exception as e:
+            print(f"Public access failed: {e}")
+
     def make_request(self, endpoint, params=None):
-        """Make API request with error handling"""
+        """Make API request with session"""
         try:
             url = f"{self.base_url}{endpoint}"
-            response = requests.get(url, params=params, timeout=30)
+
+            # Add database to params for initial requests
+            if params is None:
+                params = {}
+
+            # Only add db param if we don't have a session yet
+            if 'session_id' not in self.session.cookies:
+                params['db'] = self.db_name
+
+            response = self.session.get(url, params=params, timeout=30)
+
+            # If we get redirected to login, we need to reinitialize session
+            if response.status_code == 303 or '/web/login' in response.url:
+                print("Session expired, reinitializing...")
+                self.initialize_session()
+                # Retry the request
+                response = self.session.get(url, params=params, timeout=30)
+
             response.raise_for_status()
             return response.json()
+
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {endpoint}: {e}")
             return None
@@ -60,14 +143,21 @@ class AlSajiDataExporter:
     def fetch_products(self, limit=1000):
         """Fetch all products with pagination"""
         print("Fetching products...")
+
+        # Ensure session is initialized
+        if 'session_id' not in self.session.cookies:
+            self.initialize_session()
+
         all_products = []
         page = 1
-        page_size = 100
+        page_size = 1000
+        offset = 0
 
         while True:
             params = {
                 'page': page,
-                'limit': page_size
+                'limit': page_size,
+                'offset': offset
             }
             data = self.make_request('/api/alsaji/products', params)
 
@@ -81,10 +171,13 @@ class AlSajiDataExporter:
                 break
 
             page += 1
-            time.sleep(0.1)  # Be nice to the API
+            offset += len(data['products'])
+            time.sleep(0.1)
 
         print(f"Total products fetched: {len(all_products)}")
         return all_products
+
+    # ... rest of your methods (fetch_categories, fetch_brands, etc.) stay the same
 
     def fetch_categories(self):
         """Fetch categories"""

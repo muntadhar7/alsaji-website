@@ -1,7 +1,91 @@
 [
   {
-    "id": 1,
-    "name": "My Company",
+    "id": 11,
+    "name": "Main - الرئيسي",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 14,
+    "name": "Purchases/Transit - المشتريات",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 12,
+    "name": "Turkmen - التركمان",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 13,
+    "name": "Karada - الكرادة",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 20,
+    "name": "Erbil - اربيل",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 16,
+    "name": "Street No. 6 شارع",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 19,
+    "name": "Workshop - الورشة",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 17,
+    "name": "Sinak - السنك",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 18,
+    "name": "Dhilal - الظلال",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 15,
+    "name": "Jurf - الجرف",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 26,
+    "name": "Erbil",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 27,
+    "name": "Alsaji UAE",
+    "address": "",
+    "phone": "",
+    "opening_hours": "9:00 AM - 8:00 PM"
+  },
+  {
+    "id": 28,
+    "name": "Dubai",
     "address": "",
     "phone": "",
     "opening_hours": "9:00 AM - 8:00 PM"

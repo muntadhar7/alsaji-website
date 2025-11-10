@@ -1,6 +1,6 @@
 class AlSajiAPI {
     constructor() {
-        this.baseURL = 'http://localhost:8888';
+        this.baseURL = 'http://localhost:8069';
         this.useMockData = false;
         this.mockDelay = 100;
         this.cache = new Map();
@@ -308,16 +308,17 @@ class AlSajiAPI {
                 if (params[key] !== undefined && params[key] !== null) {
                     url.searchParams.append(key, params[key]);
                 }
+                url.searchParams.append('db', 'alsaji_copy');
             });
 
             console.log(`🌐 Real API Request: ${url.toString()}`);
 
             const response = await fetch(url, {
+                credentials: 'include',
                 method: 'GET',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
-                credentials: 'include',
                 mode: 'cors'
             });
 
@@ -394,14 +395,13 @@ class AlSajiAPI {
             console.log(`🌐 Real API POST Request: ${url}`, data);
 
             const response = await fetch(url, {
+                credentials: 'include',
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Origin': 'http://localhost:8000',
-                    'X-Requested-With': 'XMLHttpRequest'
+                    'Accept': 'application/json, text/plain, */*',
+
                 },
                 body: JSON.stringify(data),
-                credentials: 'include',
                 mode: 'cors'
             });
 
@@ -559,3 +559,28 @@ alsajiAPI.loadStaticData().then(() => {
 }).catch(error => {
     console.error('❌ Failed to initialize AlSajiAPI:', error);
 });
+
+async function testJSSession() {
+  console.log('Testing JavaScript session...');
+
+  try {
+    const response = await fetch('http://localhost:8069/api/alsaji/debug-routes', {
+      credentials: 'include'
+    });
+
+    console.log('Response status:', response.status);
+    console.log('Response headers:', response.headers);
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log('SUCCESS:', data);
+      return true;
+    } else {
+      console.error('FAILED:', response.status, await response.text());
+      return false;
+    }
+  } catch (error) {
+    console.error('ERROR:', error);
+    return false;
+  }
+}

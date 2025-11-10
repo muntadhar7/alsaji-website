@@ -1,35 +1,186 @@
 [
   {
-    "id": 1,
-    "name": "Engi-Clean",
-    "image_url": "/web/image?model=product.brand&id=1&field=logo",
+    "id": 27,
+    "name": "TW",
+    "image_url": "/web/image?model=product.brand&id=27&field=logo",
     "categories": []
   },
   {
-    "id": 3,
+    "id": 21,
     "name": "AISIN",
-    "image_url": "/web/image?model=product.brand&id=3&field=logo",
-    "categories": [
-      "HVAC",
-      "Car Care",
-      "Suspention"
-    ]
+    "image_url": "/web/image?model=product.brand&id=21&field=logo",
+    "categories": []
   },
   {
-    "id": 2,
+    "id": 20,
+    "name": "Toyota",
+    "image_url": "/web/image?model=product.brand&id=20&field=logo",
+    "categories": []
+  },
+  {
+    "id": 18,
     "name": "Denso",
-    "image_url": "/web/image?model=product.brand&id=2&field=logo",
+    "image_url": "/web/image?model=product.brand&id=18&field=logo",
+    "categories": []
+  },
+  {
+    "id": 22,
+    "name": "ADVICS",
+    "image_url": "/web/image?model=product.brand&id=22&field=logo",
+    "categories": []
+  },
+  {
+    "id": 23,
+    "name": "Taiho",
+    "image_url": "/web/image?model=product.brand&id=23&field=logo",
+    "categories": []
+  },
+  {
+    "id": 414,
+    "name": "NDC",
+    "image_url": "/web/image?model=product.brand&id=414&field=logo",
+    "categories": []
+  },
+  {
+    "id": 24,
+    "name": "DENSO-X",
+    "image_url": "/web/image?model=product.brand&id=24&field=logo",
+    "categories": []
+  },
+  {
+    "id": 25,
+    "name": "ERRECOM",
+    "image_url": "/web/image?model=product.brand&id=25&field=logo",
     "categories": [
-      "HVAC",
-      "Lighting"
+      "Car Care - العناية"
     ]
   },
   {
-    "id": 4,
-    "name": "Nissan",
-    "image_url": "/web/image?model=product.brand&id=4&field=logo",
+    "id": 392,
+    "name": "FPI",
+    "image_url": "/web/image?model=product.brand&id=392&field=logo",
+    "categories": []
+  },
+  {
+    "id": 29,
+    "name": "DLAA",
+    "image_url": "/web/image?model=product.brand&id=29&field=logo",
+    "categories": []
+  },
+  {
+    "id": 30,
+    "name": "DAISEN",
+    "image_url": "/web/image?model=product.brand&id=30&field=logo",
+    "categories": []
+  },
+  {
+    "id": 31,
+    "name": "Energizer",
+    "image_url": "/web/image?model=product.brand&id=31&field=logo",
+    "categories": []
+  },
+  {
+    "id": 368,
+    "name": "AISIN-Battries",
+    "image_url": "/web/image?model=product.brand&id=368&field=logo",
+    "categories": []
+  },
+  {
+    "id": 28,
+    "name": "DAISEN-HY",
+    "image_url": "/web/image?model=product.brand&id=28&field=logo",
+    "categories": []
+  },
+  {
+    "id": 1158,
+    "name": "KOYO",
+    "image_url": "/web/image?model=product.brand&id=1158&field=logo",
+    "categories": []
+  },
+  {
+    "id": 413,
+    "name": "NA",
+    "image_url": "/web/image?model=product.brand&id=413&field=logo",
+    "categories": []
+  },
+  {
+    "id": 1159,
+    "name": "DAISEN - RADS",
+    "image_url": "/web/image?model=product.brand&id=1159&field=logo",
+    "categories": []
+  },
+  {
+    "id": 1076,
+    "name": "SekiCool",
+    "image_url": "/web/image?model=product.brand&id=1076&field=logo",
+    "categories": []
+  },
+  {
+    "id": 365,
+    "name": "555",
+    "image_url": "/web/image?model=product.brand&id=365&field=logo",
+    "categories": []
+  },
+  {
+    "id": 371,
+    "name": "ART",
+    "image_url": "/web/image?model=product.brand&id=371&field=logo",
+    "categories": []
+  },
+  {
+    "id": 380,
+    "name": "DA JUANE",
+    "image_url": "/web/image?model=product.brand&id=380&field=logo",
+    "categories": []
+  },
+  {
+    "id": 19,
+    "name": "Nissan ",
+    "image_url": "/web/image?model=product.brand&id=19&field=logo",
+    "categories": []
+  },
+  {
+    "id": 384,
+    "name": "DK-SKI",
+    "image_url": "/web/image?model=product.brand&id=384&field=logo",
+    "categories": []
+  },
+  {
+    "id": 26,
+    "name": "CASP",
+    "image_url": "/web/image?model=product.brand&id=26&field=logo",
+    "categories": []
+  },
+  {
+    "id": 1058,
+    "name": "YTM",
+    "image_url": "/web/image?model=product.brand&id=1058&field=logo",
+    "categories": []
+  },
+  {
+    "id": 1060,
+    "name": "Veedol",
+    "image_url": "/web/image?model=product.brand&id=1060&field=logo",
+    "categories": []
+  },
+  {
+    "id": 1161,
+    "name": "TAMA",
+    "image_url": "/web/image?model=product.brand&id=1161&field=logo",
+    "categories": []
+  },
+  {
+    "id": 369,
+    "name": "AISIN-LUB",
+    "image_url": "/web/image?model=product.brand&id=369&field=logo",
     "categories": [
-      "Lighting"
+      "Motor Oil - زيوت المحرك"
     ]
+  },
+  {
+    "id": 406,
+    "name": "MassFit",
+    "image_url": "/web/image?model=product.brand&id=406&field=logo",
+    "categories": []
   }
 ]
