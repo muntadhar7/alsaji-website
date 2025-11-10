@@ -32,10 +32,10 @@ class AlSajiAPI {
             console.log('📁 Loading static data from /data folder...');
 
             const [products, categories, brands, branches] = await Promise.all([
-                this.fetchJSON('/data/json/products.json'),
-                this.fetchJSON('/data/json/categories.json'),
-                this.fetchJSON('/data/json/brands.json'),
-                this.fetchJSON('/data/json/branches.json')
+                this.fetchJSON('/alsaji-website/data/json/products.json'),
+                this.fetchJSON('/alsaji-website/data/json/categories.json'),
+                this.fetchJSON('/alsaji-website/data/json/brands.json'),
+                this.fetchJSON('/alsaji-website/data/json/branches.json')
             ]);
 
             this.staticData = {
