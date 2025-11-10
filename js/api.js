@@ -1,6 +1,6 @@
 class AlSajiAPI {
     constructor() {
-        this.baseURL = 'http://localhost:8069';
+        this.baseURL = 'https://alsajigroup-staging-24665929.dev.odoo.com/';
         this.useMockData = false;
         this.mockDelay = 100;
         this.cache = new Map();
@@ -389,34 +389,72 @@ class AlSajiAPI {
 
     // Real API POST request for cart operations
     async makeRealAPIPostRequest(endpoint, data = {}, invalidateCache = []) {
-        try {
-            const url = `${this.baseURL}${endpoint}`;
+    try {
+        const url = `${this.baseURL}${endpoint}`;
 
-            console.log(`🌐 Real API POST Request: ${url}`, data);
+        console.log(`🌐 Real API POST Request: ${url}`, data);
 
-            const response = await fetch(url, {
-                credentials: 'include',
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json, text/plain, */*',
+        // First, check if we need to handle OPTIONS preflight
+        await this.handlePreflightRequest(url);
 
-                },
-                body: JSON.stringify(data),
-                mode: 'cors'
-            });
+        const response = await fetch(url, {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Accept': 'application/json',
+                'Cookie': 'db=alsaji_copy'
+            },
+            body: JSON.stringify(data)
+        });
 
-            if (!response.ok) {
-                throw new Error(`API error: ${response.status} ${response.statusText}`);
-            }
+        console.log(`🌐 Response status: ${response.status} ${response.statusText}`);
 
-            const result = await response.json();
-            console.log(`🌐 Real API POST Response:`, result);
-            return result;
-        } catch (error) {
-            console.error('Real API POST Request failed:', error);
-            throw error;
+        // Handle CORS and network errors
+        if (response.type === 'opaque' || response.status === 0) {
+            throw new Error('CORS policy blocked the request. Check server CORS configuration.');
         }
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`HTTP ${response.status}: ${errorText}`);
+        }
+
+        const result = await response.json();
+        console.log(`✅ Real API POST Success:`, result);
+        return result;
+
+    } catch (error) {
+        console.error('❌ Real API POST Request failed:', error);
+
+        // More specific error handling
+        if (error.message.includes('CORS') || error.message.includes('Failed to fetch')) {
+            throw new Error(`CORS Error: Cannot connect to API. Make sure the server is running and CORS is configured. Details: ${error.message}`);
+        }
+
+        throw error;
     }
+}
+
+    async handlePreflightRequest(url) {
+    // Check if we need to handle OPTIONS preflight
+    try {
+        const optionsResponse = await fetch(url, {
+            method: 'OPTIONS',
+            credentials: 'include',
+            headers: {
+                'Access-Control-Request-Method': 'POST',
+                'Access-Control-Request-Headers': 'Content-Type',
+            }
+        });
+
+        if (!optionsResponse.ok) {
+            console.warn('⚠️ OPTIONS preflight failed, but continuing with POST...');
+        }
+    } catch (preflightError) {
+        console.warn('⚠️ OPTIONS preflight error:', preflightError);
+        // Continue with POST anyway
+    }
+}
 
     // Product methods with caching (static data)
     async getProducts(filters = {}) {

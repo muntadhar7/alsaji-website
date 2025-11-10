@@ -1,5 +1,7 @@
 import json
 import os
+import re
+
 import requests
 from datetime import datetime
 import time
@@ -593,10 +595,29 @@ class AlSajiDataExporter:
             with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
+
+    def safe_filename(self, name):
+        """
+        Convert a string into a safe filename by:
+        - Replacing whitespace and tabs with '-'
+        - Removing invalid characters for Windows filenames
+        """
+        # Replace any whitespace (space, tab, newline) with a dash
+        name = re.sub(r'\s+', '-', name)
+
+        # Remove invalid characters for Windows filenames: \ / : * ? " < > |
+        name = re.sub(r'[\\/:*?"<>|]', '', name)
+
+        # Optionally, lowercase everything
+        name = name.lower()
+
+        return name
+
     def slugify(self, text):
         """Convert text to URL-friendly slug"""
         if not text:
             return "unknown"
+        text = self.safe_filename(text)
         return (text.lower()
                 .replace(' ', '-')
                 .replace('/', '-')

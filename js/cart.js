@@ -118,7 +118,7 @@ class CartManager {
         // Try to get from our image cache first
         if (this.productImages.has(item.product_id)) {
             const imageUrl = this.productImages.get(item.product_id);
-            return imageUrl.startsWith('http') ? imageUrl : `http://localhost:8888${imageUrl}`;
+            return imageUrl.startsWith('http') ? imageUrl : `http://alsajigroup.odoo.com/${imageUrl}`;
         }
 
         // Fallback to placeholder
@@ -148,6 +148,7 @@ class CartManager {
     document.getElementById('subtotalAmount').textContent = `IQD ${this.formatPrice(subtotal)}`;
 
     // Update order summary
+    document.getElementById('orderID').textContent =  `Order No. ${this.cartData.order_id}`;
     document.getElementById('summarySubtotal').textContent = `IQD ${this.formatPrice(subtotal)}`;
     document.getElementById('totalAmount').textContent = `IQD ${this.formatPrice(total)}`;
 
@@ -322,9 +323,10 @@ class CartManager {
     }, 3000);
   }
 
-  formatPrice(price) {
-    return new Intl.NumberFormat().format(price);
-  }
+formatPrice(price) {
+  return new Intl.NumberFormat().format(Number(price));
+}
+
 
   escapeHtml(unsafe) {
     if (!unsafe) return '';
