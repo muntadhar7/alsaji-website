@@ -492,19 +492,32 @@ class AlSajiAPI {
         // Get cart ID from localStorage or create new
         let cartId = localStorage.getItem('cart_id');
         
-        return this.postRequest('/api/alsaji/cart/add', {
+        const response = await this.postRequest('/api/alsaji/cart/add', {
             product_id: parseInt(productId),
             quantity: parseInt(quantity),
             cart_id: cartId // Send cart ID with request
         }, ['/api/alsaji/cart']);
+        
+        // Parse the response and save the cart_id if returned
+        if (response) {
+            try {
+                const result = typeof response === 'string' ? JSON.parse(response) : response;
+                if (result.cart_id) {
+                    localStorage.setItem('cart_id', result.cart_id);
+                    console.log('Saved cart ID:', result.cart_id);
+                }
+            } catch (e) {
+                console.error('Error parsing cart response:', e);
+            }
+        }
+        
+        return response;
     }
-
-// After successful cart creation, save cart ID
-// localStorage.setItem('cart_id', response.order_id);
-
+    
     async getCart() {
-        // Use real API for cart, but with short cache
-        return this.request('/api/alsaji/cart/get', {}, this.CACHE_DURATIONS.CART);
+        let cartId = localStorage.getItem('cart_id');
+        console.log('Sending cart ID to get:', cartId);
+        return this.getRequest('/api/alsaji/cart/get', { cart_id: cartId });
     }
 
     async updateCart(lineId, quantity) {
