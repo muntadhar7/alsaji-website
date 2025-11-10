@@ -489,11 +489,18 @@ class AlSajiAPI {
 
     // Cart methods with cache invalidation (REAL API)
     async addToCart(productId, quantity = 1) {
+        // Get cart ID from localStorage or create new
+        let cartId = localStorage.getItem('cart_id');
+        
         return this.postRequest('/api/alsaji/cart/add', {
-            product_id: productId,
-            quantity: quantity
+            product_id: parseInt(productId),
+            quantity: parseInt(quantity),
+            cart_id: cartId // Send cart ID with request
         }, ['/api/alsaji/cart']);
     }
+
+// After successful cart creation, save cart ID
+// localStorage.setItem('cart_id', response.order_id);
 
     async getCart() {
         // Use real API for cart, but with short cache
