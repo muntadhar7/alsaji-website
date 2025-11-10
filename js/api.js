@@ -487,27 +487,35 @@ class AlSajiAPI {
         return this.request('/api/alsaji/search/suggest', { q: query }, this.CACHE_DURATIONS.SUGGESTIONS);
     }
 
-    // Cart methods with cache invalidation (REAL API)
     async addToCart(productId, quantity = 1) {
-        // Get cart ID from localStorage or create new
+        // Get cart ID from localStorage
         let cartId = localStorage.getItem('cart_id');
         
-        const response = await this.postRequest('/api/alsaji/cart/add', {
+        // Only include cart_id if it exists and is valid
+        const requestData = {
             product_id: parseInt(productId),
-            quantity: parseInt(quantity),
-            cart_id: cartId // Send cart ID with request
-        }, ['/api/alsaji/cart']);
+            quantity: parseInt(quantity)
+        };
         
-        // Parse the response and save the cart_id if returned
+        // Only add cart_id if it exists and is a valid number
+        if (cartId && cartId !== 'null' && cartId !== 'undefined' && !isNaN(cartId)) {
+            requestData.cart_id = parseInt(cartId);
+        }
+        
+        console.log('Sending cart request:', requestData);
+        
+        const response = await this.postRequest('/api/alsaji/cart/add', requestData, ['/api/alsaji/cart']);
+        
+        // Parse response and save cart ID
         if (response) {
             try {
                 const result = typeof response === 'string' ? JSON.parse(response) : response;
-                if (result.cart_id) {
-                    localStorage.setItem('cart_id', result.cart_id);
-                    console.log('Saved cart ID:', result.cart_id);
+                if (result.order_id) {
+                    localStorage.setItem('cart_id', result.order_id.toString());
+                    console.log('✅ Saved cart ID:', result.order_id);
                 }
             } catch (e) {
-                console.error('Error parsing cart response:', e);
+                console.error('Error parsing response:', e);
             }
         }
         
