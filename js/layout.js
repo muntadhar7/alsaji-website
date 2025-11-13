@@ -1,9 +1,28 @@
 async function loadLayout() {
   try {
-    // Load header
-    const headerRes = await fetch('partials/header.html');
-    const headerHtml = await headerRes.text();
+    // Load header and footer in parallel
+    const [headerRes, footerRes] = await Promise.all([
+      fetch('partials/header.html'),
+      fetch('partials/footer.html')
+    ]);
+
+    const [headerHtml, footerHtml] = await Promise.all([
+      headerRes.text(),
+      footerRes.text()
+    ]);
+
     document.body.insertAdjacentHTML('afterbegin', headerHtml);
+    document.body.insertAdjacentHTML('beforeend', footerHtml);
+
+    // 🔥 NEW: Show page immediately, don't wait for cart
+    document.body.style.visibility = 'visible';
+
+    // Initialize cart count in background (non-blocking)
+    setTimeout(() => {
+      if (window.AlSajiCartEvents) {
+        window.AlSajiCartEvents.refreshCartCount();
+      }
+    }, 100);
 
     // Highlight active tab
     const tabs = document.querySelectorAll('header .tab');
@@ -12,17 +31,11 @@ async function loadLayout() {
       tab.classList.toggle('active', tab.getAttribute('href') === currentPath);
     });
 
-    // Load footer
-    const footerRes = await fetch('partials/footer.html');
-    const footerHtml = await footerRes.text();
-    document.body.insertAdjacentHTML('beforeend', footerHtml);
-
   } catch (err) {
     console.error('Failed to load header/footer:', err);
+    // 🔥 NEW: Always show the page, even if header/footer fails
+    document.body.style.visibility = 'visible';
   }
-
-  // ✅ Show the page ONLY after header/footer are loaded
-  document.body.style.visibility = 'visible';
 }
 
 document.addEventListener('DOMContentLoaded', loadLayout);

@@ -4,15 +4,110 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shop - AlSaji Auto Parts</title>
+  <link type="image/x-icon" rel="shortcut icon" href="/assets/ALSAJI B2B.svg">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Mobile responsive fixes */
+    @media (max-width: 768px) {
+      .shop-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+      }
+
+      .search-sort-container {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .search {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .search input {
+        width: 100%;
+        color: black;
+      }
+
+      .sort-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .sort-container .muted {
+        margin-right: 0;
+        white-space: nowrap;
+      }
+
+      #sortSelect {
+        min-width: 150px;
+      }
+
+      /* Ensure grid doesn't overflow */
+      .grid.shop {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .plp {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .wrap {
+        padding: 8px 16px;
+      }
+    }
+
+
+
+    /* Ensure search bar styling matches your theme */
+    .search {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--w1);
+      border-radius: 12px;
+      padding: 4px;
+      background: #fff;
+      flex: 1;
+    }
+
+    .search input {
+      border: 0;
+      outline: 0;
+      background: transparent;
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    .search input::placeholder {
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body style="visibility:hidden;">
+<!-- Load static data FIRST -->
+    <script src="/data/static_api.js"></script>
+
+    <!-- Then load API -->
+    <script src="/js/api.js"></script>
+
+    <!-- Then load other components -->
+    <script src="/js/cart-manager.js"></script>
+    <script src="/data/html/filtering.js"></script>
+    <script src="/js/app.js"></script>
 
 
   <main class="wrap">
     <div class="grid shop">
       <aside class="card">
-        <div class="muted" style="margin-bottom:6px">Your vehicle</div>
+        <div class="muted" id="resultsCount">Loading products...</div>
+        <h2 class="bold" style="margin-bottom:6px">Your vehicle</h2>
         <div id="vehBox" class="card" style="background:#f9f7f9">
           <div class="muted">No vehicle selected</div>
         </div>
@@ -49,16 +144,34 @@
         </div>
       </aside>
       <section>
-        <div class="row between" style="margin-bottom:8px">
-          <div class="muted" id="resultsCount">Loading products...</div>
-          <div class="row" style="align-items:center">
-            <span class="muted" style="margin-right:6px">Sort</span>
-            <select class="select" id="sortSelect">
-              <option>Relevance</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-              <option>Newest</option>
-            </select>
+        <div class="shop-header row between" style="margin-bottom:8px">
+          <div class="search-sort-container row" style="align-items:center; width: 100%;">
+            <!-- Search Bar -->
+            <div class="search">
+              <input class="search input" id="searchInput" placeholder="Search products...">
+              <button class="btn2" id="searchButton" style="white-space: nowrap;">Search</button>
+            </div>
+            <!-- Sort Dropdown -->
+<div class="sort-container" style="position: relative; display: inline-block;">
+  <label for="sortSelect" style="
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    font-size: 14px;
+  ">Sort</label>
+
+  <select class="select" id="sortSelect" style="padding-left: 50px;">
+    <option>Relevance</option>
+    <option>Price: Low to High</option>
+    <option>Price: High to Low</option>
+    <option>Newest</option>
+  </select>
+</div>
+
+
           </div>
         </div>
         <div class="grid plp" id="productGrid">
@@ -76,8 +189,44 @@
   </main>
 
   <script src="js/layout.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/shop.js"></script>
+
+  <script>
+    // Search functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('searchInput');
+      const searchButton = document.getElementById('searchButton');
+
+      // Function to perform search
+      function performSearch() {
+        const searchTerm = searchInput.value.trim();
+
+        // If there's a search term, apply the search filter
+        if (searchTerm) {
+          // This would typically call a function from shop.js to filter products
+          // For now, we'll just log the search term
+          console.log('Searching for:', searchTerm);
+
+          // In a real implementation, you would call a function from shop.js
+          // For example: window.filterProductsBySearch(searchTerm);
+        } else {
+          // If search is empty, clear any search filters
+          console.log('Clearing search');
+
+          // In a real implementation: window.clearSearchFilter();
+        }
+      }
+
+      // Search when button is clicked
+      searchButton.addEventListener('click', performSearch);
+
+      // Search when Enter key is pressed in the search input
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -10,7 +10,7 @@ window.search-index = [
       " قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -18,13 +18,13 @@ window.search-index = [
     "name": "كفر فتحة سحب هوك دعامية خلفية اعلى كورلا كروس 20 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "كفر-فتحة-سحب-هوك-دعامية-خلفية-اعلى-كورلا-كروس-20--ايمن",
     "search_terms": [
       "كفر فتحة سحب هوك دعامية خلفية اعلى كورلا كروس 20 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -32,13 +32,13 @@ window.search-index = [
     "name": "كفر فتحة سحب هوك دعامية خلفية اعلى كورلا كروس 20 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "كفر-فتحة-سحب-هوك-دعامية-خلفية-اعلى-كورلا-كروس-20--ايسر",
     "search_terms": [
       "كفر فتحة سحب هوك دعامية خلفية اعلى كورلا كروس 20 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -52,7 +52,7 @@ window.search-index = [
       "كفر فتحة سحب هوك دعامية خلفية كورلا 20 - خليجي مربع ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -66,7 +66,7 @@ window.search-index = [
       "كفر فتحة سحب هوك دعامية امامية كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -80,7 +80,7 @@ window.search-index = [
       "كفر فتحة سحب هوك دعامية امامية كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -88,13 +88,13 @@ window.search-index = [
     "name": "كفر فتحة سحب هوك دعامية خلفية اسفل كورلا كروس 20 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "كفر-فتحة-سحب-هوك-دعامية-خلفية-اسفل-كورلا-كروس-20",
     "search_terms": [
       "كفر فتحة سحب هوك دعامية خلفية اسفل كورلا كروس 20 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -102,13 +102,13 @@ window.search-index = [
     "name": "كفر جاملغ برادو 24 - اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 43000.0,
+    "price": 11000.0,
     "slug": "كفر-جاملغ-برادو-24--اسود",
     "search_terms": [
       "كفر جاملغ برادو 24 - اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -116,13 +116,13 @@ window.search-index = [
     "name": "بك زاوية هايلندر 21 - امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "بك-زاوية-هايلندر-21--امريكي-ايسر",
     "search_terms": [
       "بك زاوية هايلندر 21 - امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -136,7 +136,21 @@ window.search-index = [
       "فلتر دهن كورلا حديد عام",
       "",
       "Denso",
-      ""
+      "False"
+    ]
+  },
+  {
+    "id": 184941,
+    "name": " ماسحة حديد CONVENTIONAL U-HOOK UP WIPER BLADE 26 INCH AISIN WIPER (650MM)",
+    "category": "",
+    "brand": "AISIN",
+    "price": 4000.0,
+    "slug": "ماسحة-حديد-conventional-u-hook-up-wiper-blade-26-inch-aisin-wiper-(650mm)",
+    "search_terms": [
+      " ماسحة حديد CONVENTIONAL U-HOOK UP WIPER BLADE 26 INCH AISIN WIPER (650MM)",
+      "",
+      "AISIN",
+      "False"
     ]
   },
   {
@@ -150,7 +164,7 @@ window.search-index = [
       "بلك عادي 2TR 1GR 11 - 08 فحمي SPARK PLUG Spanner : 16 K20HRU11 OES TO 90919-01235",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -158,13 +172,13 @@ window.search-index = [
     "name": "ماسكة بك لايت كورلا 20 - خليجي صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "ماسكة-بك-لايت-كورلا-20--خليجي-صيني-ايسر",
     "search_terms": [
       "ماسكة بك لايت كورلا 20 - خليجي صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -172,13 +186,13 @@ window.search-index = [
     "name": "ماسكة بك لايت كورلا 20 - خليجي صيني ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "ماسكة-بك-لايت-كورلا-20--خليجي-صيني-ايمن",
     "search_terms": [
       "ماسكة بك لايت كورلا 20 - خليجي صيني ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -192,7 +206,7 @@ window.search-index = [
       "فلتر دهن نيسان عام محرك 3700<",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -206,7 +220,7 @@ window.search-index = [
       "قبغ راديتر رف فور كامري 18 - 23 عام كورلا 14 - 23 عام A25 ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -214,13 +228,13 @@ window.search-index = [
     "name": "حاجب زاوية دعامية امامية كورلا 20 امريكي LE / كورلا ليفان 23- وارد صين  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "حاجب-زاوية-دعامية-امامية-كورلا-20-امريكي-le-كورلا-ليفان-23-وارد-صين-ايمن",
     "search_terms": [
       "حاجب زاوية دعامية امامية كورلا 20 امريكي LE / كورلا ليفان 23- وارد صين  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -228,13 +242,13 @@ window.search-index = [
     "name": "حاجب زاوية دعامية امامية كورلا 20 امريكي LE / كورلا ليفان 23- وارد صين ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "حاجب-زاوية-دعامية-امامية-كورلا-20-امريكي-le-كورلا-ليفان-23-وارد-صين-ايسر",
     "search_terms": [
       "حاجب زاوية دعامية امامية كورلا 20 امريكي LE / كورلا ليفان 23- وارد صين ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -248,7 +262,7 @@ window.search-index = [
       "فلتر دهن نيسان سنترا سني عام",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -262,7 +276,7 @@ window.search-index = [
       "بلك كورلا 1ZZ خليجي فحمي K16R-U11 OES TO 90919-01164",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -276,7 +290,7 @@ window.search-index = [
       "كفر فتحت سحب هوك دعامية خلفية كورلا 20 - امريكي كورلا ليفان 23- وارد صين مربع ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -284,13 +298,13 @@ window.search-index = [
     "name": "فلتر دهن ورقي افلون 2GR كامري 12-17 امريكي 12-21 خليجي رف فور 06-18 2AR محرك 2500cc ب 04152-31090",
     "category": "",
     "brand": "Denso",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "فلتر-دهن-ورقي-افلون-2gr-كامري-12-17-امريكي-12-21-خليجي-رف-فور-06-18-2ar-محرك-2500cc-ب-04152-31090",
     "search_terms": [
       "فلتر دهن ورقي افلون 2GR كامري 12-17 امريكي 12-21 خليجي رف فور 06-18 2AR محرك 2500cc ب 04152-31090",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -298,13 +312,13 @@ window.search-index = [
     "name": "فلتر دهن لاند 08 1VD كاز 8 سلندر بانزين 1UR 3UR ب 04152-38020",
     "category": "",
     "brand": "Denso",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "فلتر-دهن-لاند-08-1vd-كاز-8-سلندر-بانزين-1ur-3ur-ب-04152-38020",
     "search_terms": [
       "فلتر دهن لاند 08 1VD كاز 8 سلندر بانزين 1UR 3UR ب 04152-38020",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -318,7 +332,7 @@ window.search-index = [
       "قبغ دبة فضلة لاند 08 - 21 1VD لاند 22 - V35 F33 - كورلا 19 - عام كامري 12 - 18 -  ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -332,7 +346,7 @@ window.search-index = [
       "فلتر دهن موبس كوري عام 4 سلندر 01 - 19",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -346,7 +360,7 @@ window.search-index = [
       "فلتر بطل تبريد تويوتا  عام DRYER FILTER TOYOTA",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -360,7 +374,7 @@ window.search-index = [
       "هوائية دعامية خلفية كامري 18 - SE امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -374,7 +388,7 @@ window.search-index = [
       "هوائية دعامية خلفية كامري 18 - SE امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -382,13 +396,13 @@ window.search-index = [
     "name": "قبغ راديتر لاند 08 - عام برادو 03 - 10 - عام سيكويا تندرا فيكو ريفو عام كامري افلون 05 - 17 باجيرو عام كوستر 108kPa",
     "category": "",
     "brand": "Denso",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "قبغ-راديتر-لاند-08--عام-برادو-03--10--عام-سيكويا-تندرا-فيكو-ريفو-عام-كامري-افلون-05--17-باجيرو-عام-كوستر-108kpa",
     "search_terms": [
       "قبغ راديتر لاند 08 - عام برادو 03 - 10 - عام سيكويا تندرا فيكو ريفو عام كامري افلون 05 - 17 باجيرو عام كوستر 108kPa",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -396,13 +410,13 @@ window.search-index = [
     "name": "كفر بروجكتر رف فور 19 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "كفر-بروجكتر-رف-فور-19--ايمن",
     "search_terms": [
       "كفر بروجكتر رف فور 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -410,13 +424,13 @@ window.search-index = [
     "name": "مسطرة دعامية امامية رف فور 19- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "مسطرة-دعامية-امامية-رف-فور-19-ايمن",
     "search_terms": [
       "مسطرة دعامية امامية رف فور 19- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -424,13 +438,13 @@ window.search-index = [
     "name": "كفر بروجكتر رف فور 19 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "كفر-بروجكتر-رف-فور-19--ايسر",
     "search_terms": [
       "كفر بروجكتر رف فور 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -444,7 +458,7 @@ window.search-index = [
       "سكن دعامية خلفية كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -458,7 +472,7 @@ window.search-index = [
       "سكن دعامية خلفية كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -472,7 +486,7 @@ window.search-index = [
       "ماء راديتر احمر ايسن 20% 1LTx20",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -480,13 +494,13 @@ window.search-index = [
     "name": "مسطرة دعامية امامية رف فور 19- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "مسطرة-دعامية-امامية-رف-فور-19-ايسر",
     "search_terms": [
       "مسطرة دعامية امامية رف فور 19- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -500,7 +514,7 @@ window.search-index = [
       "ماء راديتر اخضر ايسن 20% 1LTx20",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -508,13 +522,13 @@ window.search-index = [
     "name": "فلتر دهن لاند 1FZ",
     "category": "",
     "brand": "Denso",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "فلتر-دهن-لاند-1fz",
     "search_terms": [
       "فلتر دهن لاند 1FZ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -528,7 +542,7 @@ window.search-index = [
       "تكملة شباك رئيسي كامري 18 - LE اعلى ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -542,7 +556,7 @@ window.search-index = [
       "تكملة شباك رئيسي كامري 18 - LE اعلى ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -550,13 +564,13 @@ window.search-index = [
     "name": "تريشة تحت لايت كامري 21 - امريكي XSE SE اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 14000.0,
     "slug": "تريشة-تحت-لايت-كامري-21--امريكي-xse-se-اسود-ايسر",
     "search_terms": [
       "تريشة تحت لايت كامري 21 - امريكي XSE SE اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -564,13 +578,13 @@ window.search-index = [
     "name": "تريشة تحت لايت كامري 21 - امريكي XSE SE اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 14000.0,
     "slug": "تريشة-تحت-لايت-كامري-21--امريكي-xse-se-اسود-ايمن",
     "search_terms": [
       "تريشة تحت لايت كامري 21 - امريكي XSE SE اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -584,7 +598,7 @@ window.search-index = [
       "جعب بلاستك اسفل هلال الجاملغ الامامي رف فور 20 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -598,7 +612,7 @@ window.search-index = [
       "جعب بلاستك اسفل هلال الجاملغ الامامي رف فور 20 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -612,7 +626,7 @@ window.search-index = [
       "دبل بند برادو 10 - 18 ايسر + ايمن",
       "",
       "MassFit",
-      ""
+      "False"
     ]
   },
   {
@@ -626,7 +640,7 @@ window.search-index = [
       "PAG 46 80ml + UV DYE-CTN 24 PCS - زيت دهن كومبريسر + كاشف تسريب 48 مل",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -640,7 +654,7 @@ window.search-index = [
       "SPARK PLUG : PKH16TT",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -648,13 +662,13 @@ window.search-index = [
     "name": "فلتر تبريد كورلا 20 - خليجي امريكي رف فور 19 - عام لاند 22- كامري 18 - عام ريفو 16 - هاليندر 19 - ",
     "category": "",
     "brand": "Denso",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "فلتر-تبريد-كورلا-20--خليجي-امريكي-رف-فور-19--عام-لاند-22-كامري-18--عام-ريفو-16--هاليندر-19",
     "search_terms": [
       "فلتر تبريد كورلا 20 - خليجي امريكي رف فور 19 - عام لاند 22- كامري 18 - عام ريفو 16 - هاليندر 19 - ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -662,13 +676,13 @@ window.search-index = [
     "name": "كفر بالشباك جانبي ايسر كورلا 23- امريكي SE/XSE هايبرد",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "كفر-بالشباك-جانبي-ايسر-كورلا-23-امريكي-sexse-هايبرد",
     "search_terms": [
       "كفر بالشباك جانبي ايسر كورلا 23- امريكي SE/XSE هايبرد",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -682,7 +696,7 @@ window.search-index = [
       "قاعدة رقم امامي برادو 14 - 17 ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -696,7 +710,7 @@ window.search-index = [
       "حاجب زاوية دعامية امامية كورلا 20 امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -710,7 +724,7 @@ window.search-index = [
       "حاجب زاوية دعامية امامية كورلا 20 امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -724,7 +738,7 @@ window.search-index = [
       "كفر بروجكتر بدون فتحة رف فور 23 -  ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -738,7 +752,7 @@ window.search-index = [
       "كفر بروجكتر بدون فتحة رف فور 23 - ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -746,13 +760,13 @@ window.search-index = [
     "name": "هوائية دعامية امامية افلون 19 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "هوائية-دعامية-امامية-افلون-19--ايسر",
     "search_terms": [
       "هوائية دعامية امامية افلون 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -760,13 +774,13 @@ window.search-index = [
     "name": "هوائية دعامية امامية افلون 19 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "هوائية-دعامية-امامية-افلون-19--ايمن",
     "search_terms": [
       "هوائية دعامية امامية افلون 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -774,13 +788,13 @@ window.search-index = [
     "name": "عدسة بروجكتر كورلا كامري افلون ريفو عام ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 5000.0,
+    "price": 7000.0,
     "slug": "عدسة-بروجكتر-كورلا-كامري-افلون-ريفو-عام-ايسر",
     "search_terms": [
       "عدسة بروجكتر كورلا كامري افلون ريفو عام ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -788,13 +802,13 @@ window.search-index = [
     "name": "عدسة بروجكتر كورلا كامري افلون ريفو عام ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 5000.0,
+    "price": 7000.0,
     "slug": "عدسة-بروجكتر-كورلا-كامري-افلون-ريفو-عام-ايمن",
     "search_terms": [
       "عدسة بروجكتر كورلا كامري افلون ريفو عام ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -808,7 +822,7 @@ window.search-index = [
       "ردادة طين رف فور بطانة جاملغ امامي رف فور 19 - ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -822,7 +836,7 @@ window.search-index = [
       "ردادة طين رف فور بطانة جاملغ امامي رف فور 19 - ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -830,13 +844,13 @@ window.search-index = [
     "name": "20W50 SN TY زيت محرك تويوتا اسود بلاستك 1LTx24 ",
     "category": "",
     "brand": "Toyota",
-    "price": 7000.0,
+    "price": 6000.0,
     "slug": "20w50-sn-ty-زيت-محرك-تويوتا-اسود-بلاستك-1ltx24",
     "search_terms": [
       "20W50 SN TY زيت محرك تويوتا اسود بلاستك 1LTx24 ",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -850,7 +864,7 @@ window.search-index = [
       "تريشة حاجب اسفل الدعامية الامامية كامري 21 امريكي XSE رصاصي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -864,7 +878,7 @@ window.search-index = [
       "تريشة حاجب اسفل الدعامية الامامية كامري 21 امريكي XSE رصاصي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -878,7 +892,7 @@ window.search-index = [
       "سكن دعامية خلفية افلون 19 - ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -892,7 +906,7 @@ window.search-index = [
       "سكن دعامية خلفية افلون 19 - ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -900,13 +914,13 @@ window.search-index = [
     "name": "قاعدة رقم كامري 21 - عام ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "قاعدة-رقم-كامري-21--عام",
     "search_terms": [
       "قاعدة رقم كامري 21 - عام ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -920,7 +934,7 @@ window.search-index = [
       "كفر هلال داير بروجكتر كورلا 20  خليجي اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -934,7 +948,7 @@ window.search-index = [
       "كفر هلال داير بروجكتر كورلا 20  خليجي اسود ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -942,13 +956,13 @@ window.search-index = [
     "name": "ماسكة خلفية بك لايت رف فور 19 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "ماسكة-خلفية-بك-لايت-رف-فور-19--ايسر",
     "search_terms": [
       "ماسكة خلفية بك لايت رف فور 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -956,27 +970,27 @@ window.search-index = [
     "name": "ماسكة خلفية بك لايت رف فور 19 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "ماسكة-خلفية-بك-لايت-رف-فور-19--ايمن",
     "search_terms": [
       "ماسكة خلفية بك لايت رف فور 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 185991,
     "name": "Evaporator Cleaner Foam 100ML CTN 30 PCS - -فوم تنظيف قنواة التبريد و الفريز 100 مل",
-    "category": "Car Care - العناية",
+    "category": "",
     "brand": "ERRECOM",
     "price": 14000.0,
     "slug": "evaporator-cleaner-foam-100ml-ctn-30-pcs--فوم-تنظيف-قنواة-التبريد-و-الفريز-100-مل",
     "search_terms": [
       "Evaporator Cleaner Foam 100ML CTN 30 PCS - -فوم تنظيف قنواة التبريد و الفريز 100 مل",
-      "Car Care - العناية",
+      "",
       "ERRECOM",
-      ""
+      "فوم تنظيف قنواة التبريد و الفريز 100 مل"
     ]
   },
   {
@@ -990,7 +1004,7 @@ window.search-index = [
       "زيت محرك 20W50 SL Veedol Elite 12 x 1Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -1004,7 +1018,7 @@ window.search-index = [
       "تريشة زاوية دعامية امامية كامري 18 - امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1018,7 +1032,7 @@ window.search-index = [
       "تريشة زاوية دعامية امامية كامري 18 - امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1032,7 +1046,7 @@ window.search-index = [
       "كفر بروجكتر كامري 21 - امريكي حصيرة بدون فتحة ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1046,7 +1060,7 @@ window.search-index = [
       "تريشة تحت ال لايت كامري 18 - امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1060,7 +1074,7 @@ window.search-index = [
       "تريشة تحت ال لايت كامري 18 - امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1074,7 +1088,7 @@ window.search-index = [
       "كفر بروجكتر كامري 21 - امريكي حصيرة بدون فتحة ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1088,7 +1102,7 @@ window.search-index = [
       "كفر بروجكتر كامري 21 - امريكي حصيرة مع فتحة بروجكتر ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1102,7 +1116,7 @@ window.search-index = [
       "كفر بروجكتر كامري 21 - امريكي حصيرة مع فتحة بروجكتر ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1116,7 +1130,7 @@ window.search-index = [
       "فلتر شوتة بيكب ميتسيوبيشي بيكب L200 05 -",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1130,7 +1144,7 @@ window.search-index = [
       "جعب بلاستك اسفل هلال داير الباب الخلفي رف فور 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1144,7 +1158,7 @@ window.search-index = [
       "جعب بلاستك اسفل هلال داير الباب الخلفي رف فور 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1152,13 +1166,13 @@ window.search-index = [
     "name": "فلتر شوتة لاند 08 - 11 1GR برادو 03 - 09 FJ",
     "category": "",
     "brand": "Denso",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "فلتر-شوتة-لاند-08--11-1gr-برادو-03--09-fj",
     "search_terms": [
       "فلتر شوتة لاند 08 - 11 1GR برادو 03 - 09 FJ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1172,7 +1186,7 @@ window.search-index = [
       "5W30 SN TY زيت محرك تويوتا بلاستك E 1LTx24",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -1186,7 +1200,7 @@ window.search-index = [
       "20W50 SN زيت محرك ايسن 1LTx12",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -1200,7 +1214,7 @@ window.search-index = [
       "مصدة هوائية صفاحية راديتر رف فور 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1214,7 +1228,7 @@ window.search-index = [
       "فلتر شوتة افلون 13 - هايلندر 15 - سينا 12 - 20 - جيب شيروكي 10 - دورنكو 11- ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1228,7 +1242,7 @@ window.search-index = [
       "مصدة هوائية صفاحية راديتر رف فور 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1242,7 +1256,7 @@ window.search-index = [
       "شباك دعامية امامية لاند 22 - جانبي مغلق ايسر GXR ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1256,7 +1270,7 @@ window.search-index = [
       "شباك دعامية امامية لاند 22 - جانبي مغلق ايمن GXR",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1270,7 +1284,7 @@ window.search-index = [
       "5W40 SN LEX زيت محرك لكزس بلاستك 1LTx24",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -1284,19 +1298,19 @@ window.search-index = [
       "10W30 SN زيت محرك ايسن 1LTx12",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
     "id": 186673,
     "name": "5W40 SN زيت محرك ايسن 1LTx12",
-    "category": "Motor Oil - زيوت المحرك",
+    "category": "",
     "brand": "AISIN-LUB",
     "price": 9000.0,
     "slug": "5w40-sn-زيت-محرك-ايسن-1ltx12",
     "search_terms": [
       "5W40 SN زيت محرك ايسن 1LTx12",
-      "Motor Oil - زيوت المحرك",
+      "",
       "AISIN-LUB",
       ""
     ]
@@ -1312,7 +1326,7 @@ window.search-index = [
       "EGR Valve Cleaner 400ML - منظف منظمة كونترول هواء (اي جي ار EGR) 400 مل",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -1320,13 +1334,13 @@ window.search-index = [
     "name": "بلك SPARK PLUG IXUH22I ",
     "category": "",
     "brand": "Denso",
-    "price": 10000.0,
+    "price": 0,
     "slug": "بلك-spark-plug-ixuh22i",
     "search_terms": [
       "بلك SPARK PLUG IXUH22I ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1340,7 +1354,7 @@ window.search-index = [
       "15W40 Ci4 زيت كاز ايسن 1LTx12",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -1354,7 +1368,7 @@ window.search-index = [
       "كفر فتحية ليد بروجكتر كورلا 23 SE - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1368,7 +1382,7 @@ window.search-index = [
       "كفر فتحية ليد بروجكتر كورلا 23 SE - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1382,7 +1396,7 @@ window.search-index = [
       "سي اويل اكسل 1 لتر 90-80W ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -1396,7 +1410,7 @@ window.search-index = [
       "نيكل حاجب دعامية امامية كامري 21 - XLE LE امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1410,7 +1424,7 @@ window.search-index = [
       "نيكل حاجب دعامية امامية كامري 21 - XLE LE امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1424,7 +1438,7 @@ window.search-index = [
       "0W20 SN زيت محرك ايسن 1LTx12",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -1438,7 +1452,7 @@ window.search-index = [
       "+5W20 SN synTECH زيت محرك ايسن 1LTx12",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -1446,13 +1460,13 @@ window.search-index = [
     "name": "فلتر شوتة بيكب ريفو فورجنر 16 - بانزين و كاز 6-4سلندر",
     "category": "",
     "brand": "Denso",
-    "price": 11000.0,
+    "price": 10000.0,
     "slug": "فلتر-شوتة-بيكب-ريفو-فورجنر-16--بانزين-و-كاز-6-4سلندر",
     "search_terms": [
       "فلتر شوتة بيكب ريفو فورجنر 16 - بانزين و كاز 6-4سلندر",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1466,7 +1480,7 @@ window.search-index = [
       "فلتر شوتة برادو 10 - 18 6 سلندر - FJ - فورنر ولكزس برادو ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1480,7 +1494,7 @@ window.search-index = [
       "فلتر شوتة لاند 01 - 07 2UZ برادو 01 - 06 2TR",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1494,7 +1508,7 @@ window.search-index = [
       "0W16 SP زيت محرك ايسن 1LTx12",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -1508,7 +1522,7 @@ window.search-index = [
       "بلك 2TR ليزري OES TO 90919-01266 SK20HRA11 IRIDIUM PLUG SK20HR-A11",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1516,13 +1530,13 @@ window.search-index = [
     "name": "بروجكتر استقبال تحت الابواب الامامية لاند 22 - علامة GR",
     "category": "",
     "brand": "DAISEN",
-    "price": 14000.0,
+    "price": 17000.0,
     "slug": "بروجكتر-استقبال-تحت-الابواب-الامامية-لاند-22--علامة-gr",
     "search_terms": [
       "بروجكتر استقبال تحت الابواب الامامية لاند 22 - علامة GR",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -1530,13 +1544,13 @@ window.search-index = [
     "name": "بروجكتر استقبال تحت الابواب الامامية لاند بشعار تويوتا احمر و سلفر ",
     "category": "",
     "brand": "DAISEN",
-    "price": 14000.0,
+    "price": 17000.0,
     "slug": "بروجكتر-استقبال-تحت-الابواب-الامامية-لاند-بشعار-تويوتا-احمر-و-سلفر",
     "search_terms": [
       "بروجكتر استقبال تحت الابواب الامامية لاند بشعار تويوتا احمر و سلفر ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -1550,7 +1564,7 @@ window.search-index = [
       "فلتر دهن لاند كوستر عكرب 1HZكاز ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1564,7 +1578,7 @@ window.search-index = [
       "شباك دعامية امامية برادو 14 - 17 ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1572,13 +1586,13 @@ window.search-index = [
     "name": "تريشة زاوية دعامية امامية هايلندر 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 23000.0,
     "slug": "تريشة-زاوية-دعامية-امامية-هايلندر-22--ايسر",
     "search_terms": [
       "تريشة زاوية دعامية امامية هايلندر 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1586,13 +1600,13 @@ window.search-index = [
     "name": "علامة twin turbo تون توربو باب بدي لاند 22 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 14000.0,
+    "price": 21000.0,
     "slug": "علامة-twin-turbo-تون-توربو-باب-بدي-لاند-22",
     "search_terms": [
       "علامة twin turbo تون توربو باب بدي لاند 22 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -1606,7 +1620,7 @@ window.search-index = [
       "نيكل حاجب دعامية امامية لاند 12 -",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -1614,13 +1628,13 @@ window.search-index = [
     "name": "تريشة زاوية دعامية امامية هايلندر 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 23000.0,
     "slug": "تريشة-زاوية-دعامية-امامية-هايلندر-22--ايمن",
     "search_terms": [
       "تريشة زاوية دعامية امامية هايلندر 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1634,7 +1648,7 @@ window.search-index = [
       "فلتر شوتة لاند لكزس 8سلندر عام لاند 12 - 21 1GR",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1642,13 +1656,13 @@ window.search-index = [
     "name": "شباك فيكو 12 - 15 نيكل بالكامل",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-فيكو-12--15-نيكل-بالكامل",
     "search_terms": [
       "شباك فيكو 12 - 15 نيكل بالكامل",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1656,13 +1670,13 @@ window.search-index = [
     "name": "هلال داير جاملغ امامي كورلا كروس 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "هلال-داير-جاملغ-امامي-كورلا-كروس-22--ايسر",
     "search_terms": [
       "هلال داير جاملغ امامي كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1670,13 +1684,13 @@ window.search-index = [
     "name": "هلال داير جاملغ امامي كورلا كروس 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "هلال-داير-جاملغ-امامي-كورلا-كروس-22--ايمن",
     "search_terms": [
       "هلال داير جاملغ امامي كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1690,7 +1704,7 @@ window.search-index = [
       "بخاخ تبريد امامي ريفو فورجنر 16 - كامري 18 - كورلا 20- VALVE EXPANSION HILUX FORTUNER ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1704,7 +1718,7 @@ window.search-index = [
       "نيكل حاجب لايت لاند 12 - 15 ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -1718,7 +1732,7 @@ window.search-index = [
       "قاعدة شباك كورلا 20 - امريكي SE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1732,7 +1746,7 @@ window.search-index = [
       "كفر بروجكتر هلال دعامية امامية هايلندر 22 -XSE اسفل اللايت لون اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1746,7 +1760,7 @@ window.search-index = [
       "كفر بروجكتر هلال دعامية امامية هايلندر 22 -XSE اسفل اللايت لون اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1754,13 +1768,13 @@ window.search-index = [
     "name": "IRIDIUM PLUG OES SK20R11 90919-01210  Spanner: 16 بلك كامري 09 - 2AZ - لاند 08 2UZ",
     "category": "",
     "brand": "Denso",
-    "price": 11000.0,
+    "price": 13000.0,
     "slug": "iridium-plug-oes-sk20r11-90919-01210-spanner-16-بلك-كامري-09--2az--لاند-08-2uz",
     "search_terms": [
       "IRIDIUM PLUG OES SK20R11 90919-01210  Spanner: 16 بلك كامري 09 - 2AZ - لاند 08 2UZ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1774,7 +1788,7 @@ window.search-index = [
       "تريشة باب جانبية امامية رف فور 20 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1788,7 +1802,7 @@ window.search-index = [
       "تريشة باب جانبية امامية رف فور 20 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1802,7 +1816,7 @@ window.search-index = [
       "تريشة باب جانبية خلفية رف فور 20 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1810,13 +1824,13 @@ window.search-index = [
     "name": "قاعدة شباك رئيسي كورلا 20- LE / كورلا ليفان 23- وارد صين ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "قاعدة-شباك-رئيسي-كورلا-20-le-كورلا-ليفان-23-وارد-صين",
     "search_terms": [
       "قاعدة شباك رئيسي كورلا 20- LE / كورلا ليفان 23- وارد صين ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1830,7 +1844,7 @@ window.search-index = [
       "تريشة باب جانبية خلفية رف فور 20 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1844,7 +1858,7 @@ window.search-index = [
       " Engi-Clean 400ML - منظف عام لاجزاء المحرك (كارب كلينر) 400 مل",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -1858,7 +1872,7 @@ window.search-index = [
       "بلك افلون 2GR IRIDIUM PLUG FK20HR11 OES TO 90919-01247 Phased out ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1872,7 +1886,7 @@ window.search-index = [
       "IRIDIUM PLUG SC20HR11 بلك كورلا امريكي 2ZR OES 90919-01253",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1880,13 +1894,13 @@ window.search-index = [
     "name": "تريشة اسفل الدعامية الامامية كورلا كروس 22- ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 28000.0,
     "slug": "تريشة-اسفل-الدعامية-الامامية-كورلا-كروس-22",
     "search_terms": [
       "تريشة اسفل الدعامية الامامية كورلا كروس 22- ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1900,7 +1914,7 @@ window.search-index = [
       "كفر دعامية خلفية كورلا 20 - امريكي SE  صغير",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1914,7 +1928,7 @@ window.search-index = [
       "كفر محرك بلاستك كامري 18 - اسفل الدعامية امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1928,7 +1942,7 @@ window.search-index = [
       "تريشة اسفل الدعامية الامامية هايلندر 22-",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1942,7 +1956,7 @@ window.search-index = [
       "هلال داير باب خلفي رف فور 23 - ادفنجر ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1956,7 +1970,7 @@ window.search-index = [
       "هلال داير باب خلفي رف فور 23 - ادفنجر ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -1970,7 +1984,7 @@ window.search-index = [
       " Total Care 100ML - Mint CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل نعناع",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -1984,7 +1998,7 @@ window.search-index = [
       "بخاخ تبريد كوول كيير  نيسان اكستريل قشقاي سني جوك EXPANSION VALVE MIRCA CG ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -1998,7 +2012,7 @@ window.search-index = [
       "كفر بدنة كامري 18 - اعلى  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2012,7 +2026,7 @@ window.search-index = [
       "زيت فلاش تنظيف محرك تويوتا 400ml",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -2026,7 +2040,7 @@ window.search-index = [
       "زاوية لحية امامية هايلندر 22 - رصاصي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2040,7 +2054,7 @@ window.search-index = [
       "زاوية لحية امامية هايلندر 22 - رصاصي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2054,7 +2068,7 @@ window.search-index = [
       "بخاخ تبريد هايس 13 - 18 خليجي EXPANSION VALVE HAICE 13 -18 ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -2062,13 +2076,13 @@ window.search-index = [
     "name": "بخاخ تبريد كورلا 01 - 06 كامري 01 - 07",
     "category": "",
     "brand": "Denso",
-    "price": 14000.0,
+    "price": 0,
     "slug": "بخاخ-تبريد-كورلا-01--06-كامري-01--07",
     "search_terms": [
       "بخاخ تبريد كورلا 01 - 06 كامري 01 - 07",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -2082,7 +2096,7 @@ window.search-index = [
       "كفر بلاستك اعلى الدعامية الامامية كامري 21 - LE امريكي  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2090,13 +2104,13 @@ window.search-index = [
     "name": "تريشة بلاستك باب خلفي كورلا كروس 22 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 35000.0,
     "slug": "تريشة-بلاستك-باب-خلفي-كورلا-كروس-22-ايسر",
     "search_terms": [
       "تريشة بلاستك باب خلفي كورلا كروس 22 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2104,13 +2118,13 @@ window.search-index = [
     "name": "تريشة بلاستك باب خلفي كورلا كروس 22 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 35000.0,
     "slug": "تريشة-بلاستك-باب-خلفي-كورلا-كروس-22-ايمن",
     "search_terms": [
       "تريشة بلاستك باب خلفي كورلا كروس 22 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2118,13 +2132,13 @@ window.search-index = [
     "name": "بخاخ تبريد برادو 10 - 22 عام ",
     "category": "",
     "brand": "Denso",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "بخاخ-تبريد-برادو-10--22-عام",
     "search_terms": [
       "بخاخ تبريد برادو 10 - 22 عام ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -2138,7 +2152,7 @@ window.search-index = [
       "كفر تريشة قمارة برادو 10 - 17 اسود SET 4 PCS",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -2152,7 +2166,7 @@ window.search-index = [
       "ماء راديتر احمر ايسن 20% 4LTx6",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -2166,7 +2180,7 @@ window.search-index = [
       "بطانة جاملغ امامي هايلندر 21 - مخمل ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2180,7 +2194,7 @@ window.search-index = [
       "بطانة جاملغ امامي هايلندر 21 - مخمل ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2194,7 +2208,7 @@ window.search-index = [
       "كفر بلاستك داير باب خلفي رف فور 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2208,7 +2222,7 @@ window.search-index = [
       "كفر بلاستك داير باب خلفي رف فور 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2222,7 +2236,7 @@ window.search-index = [
       "كفر بلاستيك داير جاملغ خلفي رف فور 19 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2236,7 +2250,7 @@ window.search-index = [
       "كفر بلاستيك داير جاملغ خلفي رف فور 19 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2250,7 +2264,7 @@ window.search-index = [
       "قاعدة شباك افلون 19 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2264,7 +2278,7 @@ window.search-index = [
       "بك لايت بيكب فيكو 12 - 15 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2278,7 +2292,7 @@ window.search-index = [
       "بك لايت بيكب فيكو 12 - 15 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2286,27 +2300,27 @@ window.search-index = [
     "name": "ماء راديتر اخضر ايسن 20% 4LTx6",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 17000.0,
+    "price": 16000.0,
     "slug": "ماء-راديتر-اخضر-ايسن-20-4ltx6",
     "search_terms": [
       "ماء راديتر اخضر ايسن 20% 4LTx6",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
     "id": 189134,
-    "name": "بطانة درع اسفل دعامية امامية رف فور 19 - 21",
+    "name": "درع تحت دعامية امامي رف فور 19 - 21",
     "category": "",
     "brand": "DAISEN-HY",
     "price": 28000.0,
-    "slug": "بطانة-درع-اسفل-دعامية-امامية-رف-فور-19--21",
+    "slug": "درع-تحت-دعامية-امامي-رف-فور-19--21",
     "search_terms": [
-      "بطانة درع اسفل دعامية امامية رف فور 19 - 21",
+      "درع تحت دعامية امامي رف فور 19 - 21",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2320,7 +2334,7 @@ window.search-index = [
       "Spanner size: 14: EC22HPR-D7 OES TO 90919-01295بلك لاند لكزس 22 - توربو V35",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -2334,7 +2348,7 @@ window.search-index = [
       "قاعدة شباك هايلندر 22- ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2348,7 +2362,7 @@ window.search-index = [
       "شباك دعامية امامية رف فور 19 - اسفل",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2362,7 +2376,7 @@ window.search-index = [
       "نيكل اشارة مراة لاند 22 - كروم ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -2370,13 +2384,13 @@ window.search-index = [
     "name": "كفر بدنة افلون 19- اسفل الدعامية الامامية  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كفر-بدنة-افلون-19-اسفل-الدعامية-الامامية",
     "search_terms": [
       "كفر بدنة افلون 19- اسفل الدعامية الامامية  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2384,13 +2398,13 @@ window.search-index = [
     "name": "تريشة باب بدي رف فور 19 - اسفل ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "تريشة-باب-بدي-رف-فور-19--اسفل",
     "search_terms": [
       "تريشة باب بدي رف فور 19 - اسفل ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2398,13 +2412,13 @@ window.search-index = [
     "name": "ماطور بوابة تبريد فان لكزس عام لاند عام ",
     "category": "",
     "brand": "Denso",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "ماطور-بوابة-تبريد-فان-لكزس-عام-لاند-عام",
     "search_terms": [
       "ماطور بوابة تبريد فان لكزس عام لاند عام ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -2412,13 +2426,13 @@ window.search-index = [
     "name": "كفر بدنة افلون 19- اعلى ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كفر-بدنة-افلون-19-اعلى",
     "search_terms": [
       "كفر بدنة افلون 19- اعلى ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2432,7 +2446,7 @@ window.search-index = [
       "كفر بدنة كامري 18 - اسفل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2440,13 +2454,13 @@ window.search-index = [
     "name": "هلال داير باب خلفي هايلندر 21-24 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "هلال-داير-باب-خلفي-هايلندر-21-24-ايمن",
     "search_terms": [
       "هلال داير باب خلفي هايلندر 21-24 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2454,13 +2468,13 @@ window.search-index = [
     "name": "هلال داير باب خلفي هايلندر 21 -24 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "هلال-داير-باب-خلفي-هايلندر-21-24-ايسر",
     "search_terms": [
       "هلال داير باب خلفي هايلندر 21 -24 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2474,7 +2488,7 @@ window.search-index = [
       "هلال داير جاملغ امامي رف فور 20 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2488,7 +2502,7 @@ window.search-index = [
       "هلال داير جاملغ امامي رف فور 20 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2496,13 +2510,13 @@ window.search-index = [
     "name": "هلال داير جاملغ خلفي هايلندر 21-24 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "هلال-داير-جاملغ-خلفي-هايلندر-21-24-ايمن",
     "search_terms": [
       "هلال داير جاملغ خلفي هايلندر 21-24 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2510,13 +2524,13 @@ window.search-index = [
     "name": "هلال داير جاملغ خلفي هايلندر 21 -24 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "هلال-داير-جاملغ-خلفي-هايلندر-21-24-ايسر",
     "search_terms": [
       "هلال داير جاملغ خلفي هايلندر 21 -24 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2524,13 +2538,13 @@ window.search-index = [
     "name": "مثلث كرن دعامية خلفية رف فور 19- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "مثلث-كرن-دعامية-خلفية-رف-فور-19-ايسر",
     "search_terms": [
       "مثلث كرن دعامية خلفية رف فور 19- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2538,13 +2552,13 @@ window.search-index = [
     "name": "مثلث كرن دعامية خلفية رف فور 19- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "مثلث-كرن-دعامية-خلفية-رف-فور-19-ايمن",
     "search_terms": [
       "مثلث كرن دعامية خلفية رف فور 19- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2558,7 +2572,7 @@ window.search-index = [
       "كفر اعلى البدنة رف فور 19-  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2572,7 +2586,7 @@ window.search-index = [
       "كفر تريشة قمارة لاند 08 - 21 رصاصي SET 4 PCS ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -2586,7 +2600,7 @@ window.search-index = [
       "بلك كورلا 2ZR خليجي امريكي عام كورلا 19 - خليجي SC16HR11 ",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -2594,13 +2608,13 @@ window.search-index = [
     "name": "مروحة لاند 98 - 07 1FZ",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "مروحة-لاند-98--07-1fz",
     "search_terms": [
       "مروحة لاند 98 - 07 1FZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -2614,7 +2628,7 @@ window.search-index = [
       "بك صندوق كامري 07 - 09 خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2628,7 +2642,7 @@ window.search-index = [
       "بك صندوق كامري 07 - 09 خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2636,13 +2650,13 @@ window.search-index = [
     "name": "بك لايت بيكب ريفو 16 - ايسر  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 27000.0,
     "slug": "بك-لايت-بيكب-ريفو-16--ايسر",
     "search_terms": [
       "بك لايت بيكب ريفو 16 - ايسر  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2650,13 +2664,13 @@ window.search-index = [
     "name": "بك لايت بيكب ريفو 16 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 27000.0,
     "slug": "بك-لايت-بيكب-ريفو-16--ايمن",
     "search_terms": [
       "بك لايت بيكب ريفو 16 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2670,7 +2684,7 @@ window.search-index = [
       "كفر دعامية امامية هايلندر 22 - اعلى ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2678,13 +2692,13 @@ window.search-index = [
     "name": "بك صندوق هايلندر 21 - امريكي ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "بك-صندوق-هايلندر-21--امريكي-ايمن",
     "search_terms": [
       "بك صندوق هايلندر 21 - امريكي ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2692,13 +2706,13 @@ window.search-index = [
     "name": "شباك دعامية امامية كورلا 20 - خليجي بدون حساس",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "شباك-دعامية-امامية-كورلا-20--خليجي-بدون-حساس",
     "search_terms": [
       "شباك دعامية امامية كورلا 20 - خليجي بدون حساس",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2712,7 +2726,7 @@ window.search-index = [
       "ماء راديتر ازرق ايسن 50% 4LTx6",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -2726,7 +2740,7 @@ window.search-index = [
       "كفر اعلى بدنة هايلندر 21-24",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2734,13 +2748,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية خلفية كورلا كروس 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كرن-زاوية-دعامية-خلفية-كورلا-كروس-22--ايسر",
     "search_terms": [
       "كرن زاوية دعامية خلفية كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2748,13 +2762,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية خلفية كورلا كروس 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كرن-زاوية-دعامية-خلفية-كورلا-كروس-22--ايمن",
     "search_terms": [
       "كرن زاوية دعامية خلفية كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2762,13 +2776,13 @@ window.search-index = [
     "name": "IRIDIUM PLUG  FK20HBR8 Spanner 16 OES TO 90919-01263\t- بلك 2GR افلون 19 -",
     "category": "",
     "brand": "Denso",
-    "price": 23000.0,
+    "price": 22000.0,
     "slug": "iridium-plug-fk20hbr8-spanner-16-oes-to-90919-01263--بلك-2gr-افلون-19",
     "search_terms": [
       "IRIDIUM PLUG  FK20HBR8 Spanner 16 OES TO 90919-01263\t- بلك 2GR افلون 19 -",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -2776,13 +2790,13 @@ window.search-index = [
     "name": "زيت محرك  HDC 50 Veedol CF- 3x5Lt",
     "category": "",
     "brand": "Veedol",
-    "price": 28000.0,
+    "price": 23000.0,
     "slug": "زيت-محرك-hdc-50-veedol-cf-3x5lt",
     "search_terms": [
       "زيت محرك  HDC 50 Veedol CF- 3x5Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -2796,7 +2810,7 @@ window.search-index = [
       "زيت محرك 20W50 SL Veedol Elite 3 x 5Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -2810,7 +2824,7 @@ window.search-index = [
       "20W50 SN TY زيت محرك تويوتا اسود بلاستك 4LTx6",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -2818,13 +2832,13 @@ window.search-index = [
     "name": "لحية خلفية كامري 18 -  XLE امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "لحية-خلفية-كامري-18--xle-امريكي",
     "search_terms": [
       "لحية خلفية كامري 18 -  XLE امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2832,13 +2846,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية امامية كورلا كروس 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كرن-زاوية-دعامية-امامية-كورلا-كروس-22--ايسر",
     "search_terms": [
       "كرن زاوية دعامية امامية كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2846,13 +2860,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية امامية كورلا كروس 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كرن-زاوية-دعامية-امامية-كورلا-كروس-22--ايمن",
     "search_terms": [
       "كرن زاوية دعامية امامية كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2866,7 +2880,7 @@ window.search-index = [
       "هلال داير جاملغ امامي هايلندر 21-24  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2880,7 +2894,7 @@ window.search-index = [
       "هلال داير جاملغ امامي هايلندر 21 -24 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2894,7 +2908,7 @@ window.search-index = [
       "واقية طين خلفي لاند 12 - 15 ام لحية لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -2908,7 +2922,7 @@ window.search-index = [
       "تريشة باب جانبية خلفية هايلندر 21 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2916,13 +2930,13 @@ window.search-index = [
     "name": "زيت محرك 10W30 SL Veedol Elite 3 x 5Lt",
     "category": "",
     "brand": "Veedol",
-    "price": 28000.0,
+    "price": 27000.0,
     "slug": "زيت-محرك-10w30-sl-veedol-elite-3-x-5lt",
     "search_terms": [
       "زيت محرك 10W30 SL Veedol Elite 3 x 5Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -2930,13 +2944,13 @@ window.search-index = [
     "name": "زيت محرك 15W40 Veedol Max Pro Ci-4 3x5Lt ",
     "category": "",
     "brand": "Veedol",
-    "price": 29000.0,
+    "price": 28000.0,
     "slug": "زيت-محرك-15w40-veedol-max-pro-ci-4-3x5lt",
     "search_terms": [
       "زيت محرك 15W40 Veedol Max Pro Ci-4 3x5Lt ",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -2950,7 +2964,7 @@ window.search-index = [
       "تريشة باب جانبية امامية هايلندر 21 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -2958,13 +2972,13 @@ window.search-index = [
     "name": "زيت محرك 10W40 SL Veedol Elite 3 x 5Lt",
     "category": "",
     "brand": "Veedol",
-    "price": 28000.0,
+    "price": 27000.0,
     "slug": "زيت-محرك-10w40-sl-veedol-elite-3-x-5lt",
     "search_terms": [
       "زيت محرك 10W40 SL Veedol Elite 3 x 5Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -2972,13 +2986,13 @@ window.search-index = [
     "name": "10W40 SN UltraSynTech زيت محرك ايسن 4LTx4",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 31000.0,
+    "price": 30000.0,
     "slug": "10w40-sn-ultrasyntech-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
       "10W40 SN UltraSynTech زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -2992,7 +3006,7 @@ window.search-index = [
       "تريشة باب جانبية امامية هايلندر 21 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3006,7 +3020,7 @@ window.search-index = [
       "20W50 SN زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3020,7 +3034,7 @@ window.search-index = [
       "تريشة باب جانبية خلفية هايلندر 21 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3028,13 +3042,13 @@ window.search-index = [
     "name": "بخاخ تبريد خلفي لاند 01 - 07 برادو فورجنر 05 - 09 كهربائي ",
     "category": "",
     "brand": "Denso",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "بخاخ-تبريد-خلفي-لاند-01--07-برادو-فورجنر-05--09-كهربائي",
     "search_terms": [
       "بخاخ تبريد خلفي لاند 01 - 07 برادو فورجنر 05 - 09 كهربائي ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -3042,13 +3056,13 @@ window.search-index = [
     "name": "هلال داير باب خلفي كورلا كروس 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "هلال-داير-باب-خلفي-كورلا-كروس-22--ايمن",
     "search_terms": [
       "هلال داير باب خلفي كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3062,7 +3076,7 @@ window.search-index = [
       "عنبار ويل خلفي هايس 05- 13- ايمن ايسر",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -3070,13 +3084,13 @@ window.search-index = [
     "name": "كفر تريشة قمارة لكزس 08 - 21 LX570 رصاصي SET 4 PCS ",
     "category": "",
     "brand": "DAISEN",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "كفر-تريشة-قمارة-لكزس-08--21-lx570-رصاصي-set-4-pcs",
     "search_terms": [
       "كفر تريشة قمارة لكزس 08 - 21 LX570 رصاصي SET 4 PCS ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -3084,13 +3098,13 @@ window.search-index = [
     "name": "هلال داير باب خلفي كورلا كروس 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "هلال-داير-باب-خلفي-كورلا-كروس-22--ايسر",
     "search_terms": [
       "هلال داير باب خلفي كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3098,13 +3112,13 @@ window.search-index = [
     "name": "مروحة لاند  برادو  اف جي فورجنر  1GR عام - -16361-31060 هايس 20- 7GRF",
     "category": "",
     "brand": "AISIN",
-    "price": 40000.0,
+    "price": 39000.0,
     "slug": "مروحة-لاند-برادو-اف-جي-فورجنر-1gr-عام--16361-31060-هايس-20-7grf",
     "search_terms": [
       "مروحة لاند  برادو  اف جي فورجنر  1GR عام - -16361-31060 هايس 20- 7GRF",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -3118,7 +3132,7 @@ window.search-index = [
       "5W30 SN زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3132,7 +3146,7 @@ window.search-index = [
       " كويل مجول كورلا يارس فيوس 1NZ 2NZ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -3140,13 +3154,13 @@ window.search-index = [
     "name": "واقية طين امامية + خلفية برادو 14 - 18 - اسود اساس 4 قطعة ",
     "category": "",
     "brand": "DAISEN",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "واقية-طين-امامية-+-خلفية-برادو-14--18--اسود-اساس-4-قطعة",
     "search_terms": [
       "واقية طين امامية + خلفية برادو 14 - 18 - اسود اساس 4 قطعة ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -3160,7 +3174,7 @@ window.search-index = [
       "بك زاوية كامري 07 - 09 خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3174,7 +3188,7 @@ window.search-index = [
       "بك زاوية كامري 07 - 09 خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3182,13 +3196,13 @@ window.search-index = [
     "name": "لحية دعامية امامية هايلندر 21 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "لحية-دعامية-امامية-هايلندر-21",
     "search_terms": [
       "لحية دعامية امامية هايلندر 21 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3196,13 +3210,13 @@ window.search-index = [
     "name": "15W40 Ci4 زيت كاز ايسن 4LTx4",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 33000.0,
+    "price": 32000.0,
     "slug": "15w40-ci4-زيت-كاز-ايسن-4ltx4",
     "search_terms": [
       "15W40 Ci4 زيت كاز ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3210,13 +3224,13 @@ window.search-index = [
     "name": "10W30 SN زيت محرك ايسن 4LTx4",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 32000.0,
+    "price": 31000.0,
     "slug": "10w30-sn-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
       "10W30 SN زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3230,7 +3244,7 @@ window.search-index = [
       "زيت محرك 5W20 Veedol Syntron SN+ -GF-5 3x 5Lt ",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -3238,13 +3252,13 @@ window.search-index = [
     "name": "شباك دعامية امامية الاعلى لاند 22 - GXR VXR",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 42000.0,
     "slug": "شباك-دعامية-امامية-الاعلى-لاند-22--gxr-vxr",
     "search_terms": [
       "شباك دعامية امامية الاعلى لاند 22 - GXR VXR",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3252,13 +3266,13 @@ window.search-index = [
     "name": "هلال داير جاملغ خلفي كورلا كروس 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "هلال-داير-جاملغ-خلفي-كورلا-كروس-22--ايسر",
     "search_terms": [
       "هلال داير جاملغ خلفي كورلا كروس 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3266,13 +3280,13 @@ window.search-index = [
     "name": "هلال داير جاملغ خلفي كورلا كروس 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "هلال-داير-جاملغ-خلفي-كورلا-كروس-22--ايمن",
     "search_terms": [
       "هلال داير جاملغ خلفي كورلا كروس 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3286,7 +3300,7 @@ window.search-index = [
       "5W40 SN زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3300,7 +3314,7 @@ window.search-index = [
       "زيت محرك 5W30 Veedol Syntron SN+ -GF-5 3x 5Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -3308,13 +3322,13 @@ window.search-index = [
     "name": "+5W20 SN synTECH زيت محرك ايسن 4LTx4",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 38000.0,
+    "price": 37000.0,
     "slug": "+5w20-sn-syntech-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
       "+5W20 SN synTECH زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3322,13 +3336,13 @@ window.search-index = [
     "name": "لحية خلفية هايلندر 21 - ثانوي اسفل الدعامية  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "لحية-خلفية-هايلندر-21--ثانوي-اسفل-الدعامية",
     "search_terms": [
       "لحية خلفية هايلندر 21 - ثانوي اسفل الدعامية  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3336,13 +3350,13 @@ window.search-index = [
     "name": "لحية دعامية امامية رف فور 19 - وسطية ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "لحية-دعامية-امامية-رف-فور-19--وسطية",
     "search_terms": [
       "لحية دعامية امامية رف فور 19 - وسطية ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3356,7 +3370,7 @@ window.search-index = [
       "0W20 SN زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3364,13 +3378,13 @@ window.search-index = [
     "name": "كويل مجول 2TR 1GR - لبلك فحمي ",
     "category": "",
     "brand": "Denso",
-    "price": 40000.0,
+    "price": 39000.0,
     "slug": "كويل-مجول-2tr-1gr--لبلك-فحمي",
     "search_terms": [
       "كويل مجول 2TR 1GR - لبلك فحمي ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -3378,13 +3392,13 @@ window.search-index = [
     "name": "اويل بم رف كامري 03 - 11 2AZ",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "اويل-بم-رف-كامري-03--11-2az",
     "search_terms": [
       "اويل بم رف كامري 03 - 11 2AZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -3392,13 +3406,13 @@ window.search-index = [
     "name": "بروجكتر لاند 98 - 07",
     "category": "",
     "brand": "DLAA",
-    "price": 34000.0,
+    "price": 37000.0,
     "slug": "بروجكتر-لاند-98--07",
     "search_terms": [
       "بروجكتر لاند 98 - 07",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -3406,13 +3420,13 @@ window.search-index = [
     "name": " بك صندوق كامري 22 - خليجي عادي دخاني  ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بك-صندوق-كامري-22--خليجي-عادي-دخاني-ايسر",
     "search_terms": [
       " بك صندوق كامري 22 - خليجي عادي دخاني  ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3420,27 +3434,27 @@ window.search-index = [
     "name": " بك صندوق كامري 22 - خليجي عادي دخاني  ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بك-صندوق-كامري-22--خليجي-عادي-دخاني-ايمن",
     "search_terms": [
       " بك صندوق كامري 22 - خليجي عادي دخاني  ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 192275,
-    "name": "كفر بدنة  اعلى كورلا ليفان هايبرد صيني - 23 ",
+    "name": "كفر بدنة كورلا ليفان هايبرد صيني - 23 ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
-    "slug": "كفر-بدنة-اعلى-كورلا-ليفان-هايبرد-صيني--23",
+    "price": 35000.0,
+    "slug": "كفر-بدنة-كورلا-ليفان-هايبرد-صيني--23",
     "search_terms": [
-      "كفر بدنة  اعلى كورلا ليفان هايبرد صيني - 23 ",
+      "كفر بدنة كورلا ليفان هايبرد صيني - 23 ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3448,13 +3462,13 @@ window.search-index = [
     "name": "شباك رئيسي كامري 18 - 20 امريكي  SE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 39000.0,
     "slug": "شباك-رئيسي-كامري-18--20-امريكي-se",
     "search_terms": [
       "شباك رئيسي كامري 18 - 20 امريكي  SE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3462,13 +3476,13 @@ window.search-index = [
     "name": "نيكل داير شباك دعامية امامية افلون 19 - اسفل",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "نيكل-داير-شباك-دعامية-امامية-افلون-19--اسفل",
     "search_terms": [
       "نيكل داير شباك دعامية امامية افلون 19 - اسفل",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3482,7 +3496,7 @@ window.search-index = [
       "15W40 Ci4 زيت محرك تويوتا كاز 4LTx6",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -3490,13 +3504,13 @@ window.search-index = [
     "name": "بك صندوق لاند 12 - 15 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 34000.0,
+    "price": 35000.0,
     "slug": "بك-صندوق-لاند-12--15-ايسر",
     "search_terms": [
       "بك صندوق لاند 12 - 15 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3504,13 +3518,13 @@ window.search-index = [
     "name": "Coolshot 2PCS x30ML - CTN 30 PAIR - محسن اداء التبريد (كوول شوت) 30 مل - عدد 2",
     "category": "",
     "brand": "ERRECOM",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "coolshot-2pcs-x30ml--ctn-30-pair--محسن-اداء-التبريد-(كوول-شوت)-30-مل--عدد-2",
     "search_terms": [
       "Coolshot 2PCS x30ML - CTN 30 PAIR - محسن اداء التبريد (كوول شوت) 30 مل - عدد 2",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -3518,13 +3532,13 @@ window.search-index = [
     "name": "لايت برادو 24 - مستطيل بدون عدسات ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 298000.0,
+    "price": 39000.0,
     "slug": "لايت-برادو-24--مستطيل-بدون-عدسات-ايمن",
     "search_terms": [
       "لايت برادو 24 - مستطيل بدون عدسات ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3532,13 +3546,13 @@ window.search-index = [
     "name": "بك صندوق لاند 12 - 15 ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 34000.0,
+    "price": 35000.0,
     "slug": "بك-صندوق-لاند-12--15-ايمن",
     "search_terms": [
       "بك صندوق لاند 12 - 15 ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3546,13 +3560,13 @@ window.search-index = [
     "name": "5W40 SN LEX زيت محرك لكزس بلاستك 4LTx6",
     "category": "",
     "brand": "Toyota",
-    "price": 31000.0,
+    "price": 36000.0,
     "slug": "5w40-sn-lex-زيت-محرك-لكزس-بلاستك-4ltx6",
     "search_terms": [
       "5W40 SN LEX زيت محرك لكزس بلاستك 4LTx6",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -3560,13 +3574,13 @@ window.search-index = [
     "name": "لايت برادو 24 - مستطيل بدون عدسات ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 298000.0,
+    "price": 17000.0,
     "slug": "لايت-برادو-24--مستطيل-بدون-عدسات-ايسر",
     "search_terms": [
       "لايت برادو 24 - مستطيل بدون عدسات ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3574,13 +3588,13 @@ window.search-index = [
     "name": "كفر بروجكتر بالحية لمتيد امامي لاند 22 ",
     "category": "",
     "brand": "DAISEN",
-    "price": 57000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-بالحية-لمتيد-امامي-لاند-22",
     "search_terms": [
       "كفر بروجكتر بالحية لمتيد امامي لاند 22 ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -3588,13 +3602,13 @@ window.search-index = [
     "name": "دعامية امامية كورلا 20 - خليجي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كورلا-20--خليجي",
     "search_terms": [
       "دعامية امامية كورلا 20 - خليجي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3602,13 +3616,13 @@ window.search-index = [
     "name": "0W16 SP زيت محرك ايسن 4LTx4",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 42000.0,
+    "price": 41000.0,
     "slug": "0w16-sp-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
       "0W16 SP زيت محرك ايسن 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -3622,7 +3636,7 @@ window.search-index = [
       "عنبار ويل خلفي لاند 98 - 07 -47550-60120",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -3630,13 +3644,13 @@ window.search-index = [
     "name": "بك صندوك كورلا 20 - امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 30000.0,
+    "price": 32000.0,
     "slug": "بك-صندوك-كورلا-20--امريكي-le-ايسر",
     "search_terms": [
       "بك صندوك كورلا 20 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3644,13 +3658,13 @@ window.search-index = [
     "name": "بك صندوك كورلا 20 - امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 30000.0,
+    "price": 32000.0,
     "slug": "بك-صندوك-كورلا-20--امريكي-le-ايمن",
     "search_terms": [
       "بك صندوك كورلا 20 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3658,13 +3672,13 @@ window.search-index = [
     "name": "حافظة متعلقات لاند 16 - 21 بجانب مقعد السائق بيجي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "حافظة-متعلقات-لاند-16--21-بجانب-مقعد-السائق-بيجي",
     "search_terms": [
       "حافظة متعلقات لاند 16 - 21 بجانب مقعد السائق بيجي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -3672,13 +3686,13 @@ window.search-index = [
     "name": "شباك  دعامية امامية كورلا 20 - امريكي LE اسود",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-دعامية-امامية-كورلا-20--امريكي-le-اسود",
     "search_terms": [
       "شباك  دعامية امامية كورلا 20 - امريكي LE اسود",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3686,13 +3700,13 @@ window.search-index = [
     "name": "لايت برادو 24 - مستطيل 3 عدسة ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 341000.0,
+    "price": 17000.0,
     "slug": "لايت-برادو-24--مستطيل-3-عدسة-ايسر",
     "search_terms": [
       "لايت برادو 24 - مستطيل 3 عدسة ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3700,13 +3714,13 @@ window.search-index = [
     "name": "كويل مجول 3UR",
     "category": "",
     "brand": "Denso",
-    "price": 40000.0,
+    "price": 39000.0,
     "slug": "كويل-مجول-3ur",
     "search_terms": [
       "كويل مجول 3UR",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -3720,7 +3734,7 @@ window.search-index = [
       "شباك دعامية امامية بدون فتحة كامرة كامري 21 خليجي صيني LE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3728,13 +3742,13 @@ window.search-index = [
     "name": "بدنة او دعامية امامية بلاستك برادو 24 -  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 37000.0,
     "slug": "بدنة-او-دعامية-امامية-بلاستك-برادو-24",
     "search_terms": [
       "بدنة او دعامية امامية بلاستك برادو 24 -  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3742,13 +3756,13 @@ window.search-index = [
     "name": "دعامية امامية كورلا 20  - LE امريكي  / كورلا ليفان 23- وارد صين ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كورلا-20--le-امريكي-كورلا-ليفان-23-وارد-صين",
     "search_terms": [
       "دعامية امامية كورلا 20  - LE امريكي  / كورلا ليفان 23- وارد صين ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3756,13 +3770,13 @@ window.search-index = [
     "name": "دعامية خلفية كورلا 20 - امريكي LE SE - كورلا ليفان 23 - وارد صين",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-خلفية-كورلا-20--امريكي-le-se--كورلا-ليفان-23--وارد-صين",
     "search_terms": [
       "دعامية خلفية كورلا 20 - امريكي LE SE - كورلا ليفان 23 - وارد صين",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3770,13 +3784,13 @@ window.search-index = [
     "name": "عنبار كلج بيكب فيكو 2KD اسفل كاز-31470-0K110",
     "category": "",
     "brand": "AISIN",
-    "price": 40000.0,
+    "price": 39000.0,
     "slug": "عنبار-كلج-بيكب-فيكو-2kd-اسفل-كاز-31470-0k110",
     "search_terms": [
       "عنبار كلج بيكب فيكو 2KD اسفل كاز-31470-0K110",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -3784,13 +3798,13 @@ window.search-index = [
     "name": "شباك رئيسي كامري 18 - 20 امريكي  LE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 39000.0,
     "slug": "شباك-رئيسي-كامري-18--20-امريكي-le",
     "search_terms": [
       "شباك رئيسي كامري 18 - 20 امريكي  LE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3798,13 +3812,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 21 - امريكي LE خليجي عام ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كامري-21--امريكي-le-خليجي-عام",
     "search_terms": [
       "دعامية امامية كامري 21 - امريكي LE خليجي عام ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3812,13 +3826,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 21 - امريكي SE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كامري-21--امريكي-se",
     "search_terms": [
       "دعامية امامية كامري 21 - امريكي SE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3826,13 +3840,13 @@ window.search-index = [
     "name": "دعامية امامية كورلا 20  - SE امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كورلا-20--se-امريكي",
     "search_terms": [
       "دعامية امامية كورلا 20  - SE امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3840,13 +3854,13 @@ window.search-index = [
     "name": "دعامية امامية كورلا كروس 22 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كورلا-كروس-22",
     "search_terms": [
       "دعامية امامية كورلا كروس 22 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3854,13 +3868,13 @@ window.search-index = [
     "name": "دعامية خلفية كورلا 20 - خليجي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-خلفية-كورلا-20--خليجي",
     "search_terms": [
       "دعامية خلفية كورلا 20 - خليجي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3868,13 +3882,13 @@ window.search-index = [
     "name": "ماطور مروحة تبريد كامري 12 - 17 2AR  لكزس ES350 07- FAN MOTOR ",
     "category": "",
     "brand": "Denso",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "ماطور-مروحة-تبريد-كامري-12--17-2ar-لكزس-es350-07-fan-motor",
     "search_terms": [
       "ماطور مروحة تبريد كامري 12 - 17 2AR  لكزس ES350 07- FAN MOTOR ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -3882,27 +3896,27 @@ window.search-index = [
     "name": "PSO عنبار كلج الاسفل داينا 11 - وكوستر 19- N04C",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "pso-عنبار-كلج-الاسفل-داينا-11--وكوستر-19-n04c",
     "search_terms": [
       "PSO عنبار كلج الاسفل داينا 11 - وكوستر 19- N04C",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
     "id": 193399,
-    "name": "شباك دعامية وسطية برادو 24 -  ",
+    "name": "دعامية امامية وسطية برادو 24 -  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
-    "slug": "شباك-دعامية-وسطية-برادو-24",
+    "price": 42000.0,
+    "slug": "دعامية-امامية-وسطية-برادو-24",
     "search_terms": [
-      "شباك دعامية وسطية برادو 24 -  ",
+      "دعامية امامية وسطية برادو 24 -  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3910,13 +3924,13 @@ window.search-index = [
     "name": "شباك دعامية امامية كامري 21 - امريكي SE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-دعامية-امامية-كامري-21--امريكي-se",
     "search_terms": [
       "شباك دعامية امامية كامري 21 - امريكي SE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3924,13 +3938,13 @@ window.search-index = [
     "name": "شباك رئيسي كامري 21 -  خليجي امريكي LE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 42000.0,
     "slug": "شباك-رئيسي-كامري-21--خليجي-امريكي-le",
     "search_terms": [
       "شباك رئيسي كامري 21 -  خليجي امريكي LE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3938,13 +3952,13 @@ window.search-index = [
     "name": "شباك رئيسي كورلا 20- خليجي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-رئيسي-كورلا-20-خليجي",
     "search_terms": [
       "شباك رئيسي كورلا 20- خليجي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3952,13 +3966,13 @@ window.search-index = [
     "name": "EXTEREME SL 2PCSx30ML CTN 30 PAIR - مانع تسريب ( ستوب ليك )  لمنظمومة التبريد 30 مل - عدد 2 ",
     "category": "",
     "brand": "ERRECOM",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "extereme-sl-2pcsx30ml-ctn-30-pair--مانع-تسريب-(-ستوب-ليك-)-لمنظمومة-التبريد-30-مل--عدد-2",
     "search_terms": [
       "EXTEREME SL 2PCSx30ML CTN 30 PAIR - مانع تسريب ( ستوب ليك )  لمنظمومة التبريد 30 مل - عدد 2 ",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -3972,7 +3986,7 @@ window.search-index = [
       "شباك دعامية امامية كامري 21- امريكي بدون فتحة حساس و نيكل اسفل الشباك XSE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -3980,13 +3994,13 @@ window.search-index = [
     "name": "دسك خلفي لاند 98 - 07  - يابان JP 04466-60030",
     "category": "",
     "brand": "ADVICS",
-    "price": 47000.0,
+    "price": 35000.0,
     "slug": "دسك-خلفي-لاند-98--07--يابان-jp-04466-60030",
     "search_terms": [
       "دسك خلفي لاند 98 - 07  - يابان JP 04466-60030",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -3994,13 +4008,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 42000.0,
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--اسفل-بروجكتر-ايسر",
     "search_terms": [
       "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4008,13 +4022,13 @@ window.search-index = [
     "name": "كفر بلاستك باب بدي رف فور 19 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "كفر-بلاستك-باب-بدي-رف-فور-19",
     "search_terms": [
       "كفر بلاستك باب بدي رف فور 19 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4022,13 +4036,13 @@ window.search-index = [
     "name": "بك زاوية لاند 12 - 15 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 41000.0,
+    "price": 49000.0,
     "slug": "بك-زاوية-لاند-12--15-ايسر",
     "search_terms": [
       "بك زاوية لاند 12 - 15 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4036,13 +4050,13 @@ window.search-index = [
     "name": "بك زاوية لاند 12 - 15 ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 41000.0,
+    "price": 49000.0,
     "slug": "بك-زاوية-لاند-12--15-ايمن",
     "search_terms": [
       "بك زاوية لاند 12 - 15 ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4050,13 +4064,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 45000.0,
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--اسفل-بروجكتر-ايمن",
     "search_terms": [
       "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4064,13 +4078,13 @@ window.search-index = [
     "name": "شباك دعامية امامية كورلا 20 - امريكي LE رصاصي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-دعامية-امامية-كورلا-20--امريكي-le-رصاصي",
     "search_terms": [
       "شباك دعامية امامية كورلا 20 - امريكي LE رصاصي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4078,27 +4092,27 @@ window.search-index = [
     "name": "شباك دعامية امامية كورلا 20 - امريكي LE نيكل",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-دعامية-امامية-كورلا-20--امريكي-le-نيكل",
     "search_terms": [
       "شباك دعامية امامية كورلا 20 - امريكي LE نيكل",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 193582,
-    "name": "هلال جاملغ امامي برادو 24 - اسود اساس ايسر ",
+    "name": "هلال جاملغ امامي برادو 24 - ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
-    "slug": "هلال-جاملغ-امامي-برادو-24--اسود-اساس-ايسر",
+    "price": 47000.0,
+    "slug": "هلال-جاملغ-امامي-برادو-24--ايسر",
     "search_terms": [
-      "هلال جاملغ امامي برادو 24 - اسود اساس ايسر ",
+      "هلال جاملغ امامي برادو 24 - ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4112,7 +4126,7 @@ window.search-index = [
       "هايدروليك كير ايسن ATF MULTI PULS AISIN  4L x 4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -4120,13 +4134,13 @@ window.search-index = [
     "name": "بك صندوق لاند 08 - 11 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 34000.0,
+    "price": 37000.0,
     "slug": "بك-صندوق-لاند-08--11-ايسر",
     "search_terms": [
       "بك صندوق لاند 08 - 11 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4134,13 +4148,13 @@ window.search-index = [
     "name": "بك صندوق لاند 08 - 11 ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 34000.0,
+    "price": 37000.0,
     "slug": "بك-صندوق-لاند-08--11-ايمن",
     "search_terms": [
       "بك صندوق لاند 08 - 11 ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4148,13 +4162,13 @@ window.search-index = [
     "name": "بك صندوق لاند 16 - 21 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 42000.0,
     "slug": "بك-صندوق-لاند-16--21-ايسر",
     "search_terms": [
       "بك صندوق لاند 16 - 21 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4162,13 +4176,13 @@ window.search-index = [
     "name": "بك صندوق لاند 16 - 21 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 42000.0,
     "slug": "بك-صندوق-لاند-16--21-ايمن",
     "search_terms": [
       "بك صندوق لاند 16 - 21 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4182,7 +4196,7 @@ window.search-index = [
       "5W30 SN NS زيت محرك نيسان ياباني 4LTx6",
       "",
       "Nissan ",
-      ""
+      "False"
     ]
   },
   {
@@ -4190,13 +4204,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 18 - 20 بدون فتحة كامرة امريكي XSE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 42000.0,
     "slug": "دعامية-امامية-كامري-18--20-بدون-فتحة-كامرة-امريكي-xse",
     "search_terms": [
       "دعامية امامية كامري 18 - 20 بدون فتحة كامرة امريكي XSE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4204,13 +4218,13 @@ window.search-index = [
     "name": "بك زاوية كورلا 20 - امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 40000.0,
+    "price": 37000.0,
     "slug": "بك-زاوية-كورلا-20--امريكي-le-ايسر",
     "search_terms": [
       "بك زاوية كورلا 20 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4218,13 +4232,13 @@ window.search-index = [
     "name": "بك زاوية كورلا 20 - امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 40000.0,
+    "price": 37000.0,
     "slug": "بك-زاوية-كورلا-20--امريكي-le-ايمن",
     "search_terms": [
       "بك زاوية كورلا 20 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4232,13 +4246,13 @@ window.search-index = [
     "name": "لايت بيكب فيكو 09 - 11 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "لايت-بيكب-فيكو-09--11-ايسر",
     "search_terms": [
       "لايت بيكب فيكو 09 - 11 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4246,13 +4260,13 @@ window.search-index = [
     "name": "لايت بيكب فيكو 09 - 11 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "لايت-بيكب-فيكو-09--11-ايمن",
     "search_terms": [
       "لايت بيكب فيكو 09 - 11 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4266,7 +4280,7 @@ window.search-index = [
       "شباك دعامية امامية كامري 18 - 21 XLE بدون فتحة امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4280,7 +4294,7 @@ window.search-index = [
       "ماطور مروحة تبريد كورلا 08 - 19 - 2ZR FAN MOTOR COROLLA 08-19",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -4288,13 +4302,13 @@ window.search-index = [
     "name": "لايت بيكب فيكو 05 - 07 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "لايت-بيكب-فيكو-05--07-ايسر",
     "search_terms": [
       "لايت بيكب فيكو 05 - 07 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4302,27 +4316,27 @@ window.search-index = [
     "name": "لايت بيكب فيكو 05 - 07 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "لايت-بيكب-فيكو-05--07-ايمن",
     "search_terms": [
       "لايت بيكب فيكو 05 - 07 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 193744,
-    "name": "هلال جاملغ امامي برادو 24 - اسود اساس ايمن  ",
+    "name": "هلال جاملغ امامي برادو 24 - ايمن  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
-    "slug": "هلال-جاملغ-امامي-برادو-24--اسود-اساس-ايمن",
+    "price": 47000.0,
+    "slug": "هلال-جاملغ-امامي-برادو-24--ايمن",
     "search_terms": [
-      "هلال جاملغ امامي برادو 24 - اسود اساس ايمن  ",
+      "هلال جاملغ امامي برادو 24 - ايمن  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4330,13 +4344,13 @@ window.search-index = [
     "name": "شباك دعامية امامية كامري 21- امريكي بفتحة حساس و نيكل اسفل الشباك XSE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-دعامية-امامية-كامري-21-امريكي-بفتحة-حساس-و-نيكل-اسفل-الشباك-xse",
     "search_terms": [
       "شباك دعامية امامية كامري 21- امريكي بفتحة حساس و نيكل اسفل الشباك XSE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4344,13 +4358,13 @@ window.search-index = [
     "name": "تريشة باب جانبية برادو 24 - اسود اساس ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "تريشة-باب-جانبية-برادو-24--اسود-اساس-ايسر",
     "search_terms": [
       "تريشة باب جانبية برادو 24 - اسود اساس ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4358,13 +4372,13 @@ window.search-index = [
     "name": "بروجكتر باترول سفاري 05 - 09",
     "category": "",
     "brand": "DLAA",
-    "price": 44000.0,
+    "price": 54000.0,
     "slug": "بروجكتر-باترول-سفاري-05--09",
     "search_terms": [
       "بروجكتر باترول سفاري 05 - 09",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4378,7 +4392,7 @@ window.search-index = [
       "شباك دعامية امامية كورلا ليفان 23 - وارد صين ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4386,13 +4400,13 @@ window.search-index = [
     "name": "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 37000.0,
+    "price": 39000.0,
     "slug": "بك-صندوق-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايسر",
     "search_terms": [
       "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4400,13 +4414,13 @@ window.search-index = [
     "name": "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 37000.0,
+    "price": 39000.0,
     "slug": "بك-صندوق-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايمن",
     "search_terms": [
       "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4414,13 +4428,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 18 - 20 SE امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كامري-18--20-se-امريكي",
     "search_terms": [
       "دعامية امامية كامري 18 - 20 SE امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4428,13 +4442,13 @@ window.search-index = [
     "name": "دعامية خلفية كامري 18 - امريكي LE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "دعامية-خلفية-كامري-18--امريكي-le",
     "search_terms": [
       "دعامية خلفية كامري 18 - امريكي LE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4442,13 +4456,13 @@ window.search-index = [
     "name": "بروجكتر بيكب فيكو 12-13 ",
     "category": "",
     "brand": "DLAA",
-    "price": 40000.0,
+    "price": 39000.0,
     "slug": "بروجكتر-بيكب-فيكو-12-13",
     "search_terms": [
       "بروجكتر بيكب فيكو 12-13 ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4456,13 +4470,13 @@ window.search-index = [
     "name": "شباك بيكب فيكو 12 - 15 رصاصي + نيكل ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-بيكب-فيكو-12--15-رصاصي-+-نيكل",
     "search_terms": [
       "شباك بيكب فيكو 12 - 15 رصاصي + نيكل ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4470,13 +4484,13 @@ window.search-index = [
     "name": "بك صندوق كامري امريكي XLE ليد 21- ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بك-صندوق-كامري-امريكي-xle-ليد-21-ايسر",
     "search_terms": [
       "بك صندوق كامري امريكي XLE ليد 21- ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4484,13 +4498,13 @@ window.search-index = [
     "name": "بك صندوق كامري امريكي XLE ليد 21- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بك-صندوق-كامري-امريكي-xle-ليد-21-ايمن",
     "search_terms": [
       "بك صندوق كامري امريكي XLE ليد 21- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4504,7 +4518,7 @@ window.search-index = [
       "بك زاوية كورلا كروس 22 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4518,7 +4532,7 @@ window.search-index = [
       "بك زاوية كورلا كروس 22 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4526,13 +4540,13 @@ window.search-index = [
     "name": "دعامية خلفية كامري 18 - امريكي SE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "دعامية-خلفية-كامري-18--امريكي-se",
     "search_terms": [
       "دعامية خلفية كامري 18 - امريكي SE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4540,13 +4554,13 @@ window.search-index = [
     "name": "15W40 Ci4 زيت كاز ايسن 6 لتر  6LTx3\t",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 49000.0,
+    "price": 48000.0,
     "slug": "15w40-ci4-زيت-كاز-ايسن-6-لتر-6ltx3",
     "search_terms": [
       "15W40 Ci4 زيت كاز ايسن 6 لتر  6LTx3\t",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -4554,13 +4568,13 @@ window.search-index = [
     "name": "5W30 SN TY زيت ياباني اسود 4LTx6",
     "category": "",
     "brand": "Toyota",
-    "price": 43000.0,
+    "price": 39000.0,
     "slug": "5w30-sn-ty-زيت-ياباني-اسود-4ltx6",
     "search_terms": [
       "5W30 SN TY زيت ياباني اسود 4LTx6",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -4568,13 +4582,13 @@ window.search-index = [
     "name": "لايت بيكب فيكو 12 - 15 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "لايت-بيكب-فيكو-12--15-ايسر",
     "search_terms": [
       "لايت بيكب فيكو 12 - 15 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4582,13 +4596,13 @@ window.search-index = [
     "name": "لايت بيكب فيكو 12 - 15 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "لايت-بيكب-فيكو-12--15-ايمن",
     "search_terms": [
       "لايت بيكب فيكو 12 - 15 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4596,13 +4610,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 18 - 20  فتحة كامرة امريكي XSE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-كامري-18--20-فتحة-كامرة-امريكي-xse",
     "search_terms": [
       "دعامية امامية كامري 18 - 20  فتحة كامرة امريكي XSE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4610,13 +4624,13 @@ window.search-index = [
     "name": "عنبار كلج هايس 05-19 اعلى كاز بانزين ",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 39000.0,
     "slug": "عنبار-كلج-هايس-05-19-اعلى-كاز-بانزين",
     "search_terms": [
       "عنبار كلج هايس 05-19 اعلى كاز بانزين ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -4630,7 +4644,7 @@ window.search-index = [
       "دعامية خلفية كورلا كروس 22 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4638,13 +4652,13 @@ window.search-index = [
     "name": "بروجكتر برادو 05 - 09",
     "category": "",
     "brand": "DLAA",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بروجكتر-برادو-05--09",
     "search_terms": [
       "بروجكتر برادو 05 - 09",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4652,13 +4666,13 @@ window.search-index = [
     "name": "بروجكتر سيكويا 07 - 12",
     "category": "",
     "brand": "DLAA",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بروجكتر-سيكويا-07--12",
     "search_terms": [
       "بروجكتر سيكويا 07 - 12",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4666,13 +4680,13 @@ window.search-index = [
     "name": "عنبار كلج كوستر كاز بانزين اسفل  -31470-36291",
     "category": "",
     "brand": "AISIN",
-    "price": 47000.0,
+    "price": 37000.0,
     "slug": "عنبار-كلج-كوستر-كاز-بانزين-اسفل-31470-36291",
     "search_terms": [
       "عنبار كلج كوستر كاز بانزين اسفل  -31470-36291",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -4680,13 +4694,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 18 - 20 LE امريكي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 42000.0,
     "slug": "دعامية-امامية-كامري-18--20-le-امريكي",
     "search_terms": [
       "دعامية امامية كامري 18 - 20 LE امريكي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4694,13 +4708,13 @@ window.search-index = [
     "name": "بروجكتر سني سنترا 04 - 08 داير نيكل",
     "category": "",
     "brand": "DLAA",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بروجكتر-سني-سنترا-04--08-داير-نيكل",
     "search_terms": [
       "بروجكتر سني سنترا 04 - 08 داير نيكل",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4714,7 +4728,7 @@ window.search-index = [
       "بك زاوية لاند 16 - 21 ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4722,13 +4736,13 @@ window.search-index = [
     "name": "بك زاوية لاند 16 -21 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 47000.0,
     "slug": "بك-زاوية-لاند-16-21-ايسر",
     "search_terms": [
       "بك زاوية لاند 16 -21 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4736,13 +4750,13 @@ window.search-index = [
     "name": "نيكل سيف تريشة باب بدي لاند 22 - 24 -",
     "category": "",
     "brand": "DAISEN",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "نيكل-سيف-تريشة-باب-بدي-لاند-22--24",
     "search_terms": [
       "نيكل سيف تريشة باب بدي لاند 22 - 24 -",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -4750,13 +4764,13 @@ window.search-index = [
     "name": "بروجكتر تاكوما 16 -",
     "category": "",
     "brand": "DLAA",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بروجكتر-تاكوما-16",
     "search_terms": [
       "بروجكتر تاكوما 16 -",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4764,13 +4778,13 @@ window.search-index = [
     "name": "دعامية امامية هايلندر 21  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-هايلندر-21",
     "search_terms": [
       "دعامية امامية هايلندر 21  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4778,13 +4792,13 @@ window.search-index = [
     "name": "دعامية خلفية هايلندر 21  LE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-خلفية-هايلندر-21-le",
     "search_terms": [
       "دعامية خلفية هايلندر 21  LE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4798,7 +4812,7 @@ window.search-index = [
       "شباك دعامية امامية كورلا 23 - امريكي LE كورلا ليفان صيني 23 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4806,13 +4820,13 @@ window.search-index = [
     "name": "دعامية امامية رف فور 19 - رئيسية ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-امامية-رف-فور-19--رئيسية",
     "search_terms": [
       "دعامية امامية رف فور 19 - رئيسية ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4820,13 +4834,13 @@ window.search-index = [
     "name": "دعامية خلفية رف فور 19 - وارد صيني فرقة سكن دعامية ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 49000.0,
     "slug": "دعامية-خلفية-رف-فور-19--وارد-صيني-فرقة-سكن-دعامية",
     "search_terms": [
       "دعامية خلفية رف فور 19 - وارد صيني فرقة سكن دعامية ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4834,13 +4848,13 @@ window.search-index = [
     "name": "عنبار كلج برادو 05 - 17 اسفل 2TR",
     "category": "",
     "brand": "AISIN",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "عنبار-كلج-برادو-05--17-اسفل-2tr",
     "search_terms": [
       "عنبار كلج برادو 05 - 17 اسفل 2TR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -4848,13 +4862,13 @@ window.search-index = [
     "name": " بك صندوق كامري 22 - خليجي ليد ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 49000.0,
     "slug": "بك-صندوق-كامري-22--خليجي-ليد-ايسر",
     "search_terms": [
       " بك صندوق كامري 22 - خليجي ليد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4862,13 +4876,13 @@ window.search-index = [
     "name": " بك صندوق كامري 22 - خليجي ليد ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 49000.0,
     "slug": "بك-صندوق-كامري-22--خليجي-ليد-ايمن",
     "search_terms": [
       " بك صندوق كامري 22 - خليجي ليد ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4876,13 +4890,13 @@ window.search-index = [
     "name": "بروجكتر مورانو 15 - 18",
     "category": "",
     "brand": "DLAA",
-    "price": 45000.0,
+    "price": 35000.0,
     "slug": "بروجكتر-مورانو-15--18",
     "search_terms": [
       "بروجكتر مورانو 15 - 18",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -4896,7 +4910,7 @@ window.search-index = [
       "هايدروليك كير ايسن دكسرون 6 - ATF DEXRON VI AISIN - 4L x 4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -4904,13 +4918,13 @@ window.search-index = [
     "name": "فلنجة دسك امامية بيكب فيكو 09 - 15 2W 43512-0K120",
     "category": "",
     "brand": "ADVICS",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "فلنجة-دسك-امامية-بيكب-فيكو-09--15-2w-43512-0k120",
     "search_terms": [
       "فلنجة دسك امامية بيكب فيكو 09 - 15 2W 43512-0K120",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -4924,7 +4938,7 @@ window.search-index = [
       "واقية طين خلفية هايلندر 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4932,13 +4946,13 @@ window.search-index = [
     "name": "شباك بيكب ريفو 16- 21 ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "شباك-بيكب-ريفو-16-21",
     "search_terms": [
       "شباك بيكب ريفو 16- 21 ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4946,13 +4960,13 @@ window.search-index = [
     "name": "لايت كورلا 11- 13 خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 40000.0,
+    "price": 42000.0,
     "slug": "لايت-كورلا-11-13-خليجي-ايسر",
     "search_terms": [
       "لايت كورلا 11- 13 خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4960,13 +4974,13 @@ window.search-index = [
     "name": "لايت كورلا 11- 13 خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 40000.0,
+    "price": 42000.0,
     "slug": "لايت-كورلا-11-13-خليجي-ايمن",
     "search_terms": [
       "لايت كورلا 11- 13 خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -4974,13 +4988,13 @@ window.search-index = [
     "name": "فيت بم لبة طويلة لاند 08 - 15 1GR فيشة خشنة",
     "category": "",
     "brand": "Denso",
-    "price": 97000.0,
+    "price": 96000.0,
     "slug": "فيت-بم-لبة-طويلة-لاند-08--15-1gr-فيشة-خشنة",
     "search_terms": [
       "فيت بم لبة طويلة لاند 08 - 15 1GR فيشة خشنة",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -4994,7 +5008,7 @@ window.search-index = [
       " بك زاوية كامري 22 - خليجي عادي دخاني  ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5008,7 +5022,7 @@ window.search-index = [
       "بك زاوية كامري 22 - خليجي عادي دخاني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5016,13 +5030,13 @@ window.search-index = [
     "name": "قاعدة رقم خلفي لاند لمتيد 22- لولوي مع نيكلة باب بدي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "قاعدة-رقم-خلفي-لاند-لمتيد-22-لولوي-مع-نيكلة-باب-بدي",
     "search_terms": [
       "قاعدة رقم خلفي لاند لمتيد 22- لولوي مع نيكلة باب بدي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -5036,7 +5050,7 @@ window.search-index = [
       "عنبار كلج رئيسي اعلى فيكو 05 - 14 2TR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -5044,13 +5058,13 @@ window.search-index = [
     "name": "200609-201206 عنبار كلج اعلى رئيسي كوستر 2TR-1HZ عام 93 - 17",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 52000.0,
     "slug": "200609-201206-عنبار-كلج-اعلى-رئيسي-كوستر-2tr-1hz-عام-93--17",
     "search_terms": [
       "200609-201206 عنبار كلج اعلى رئيسي كوستر 2TR-1HZ عام 93 - 17",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -5058,13 +5072,13 @@ window.search-index = [
     "name": "بك زاوية لاند 08 - 11 ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "بك-زاوية-لاند-08--11-ايمن",
     "search_terms": [
       "بك زاوية لاند 08 - 11 ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5072,13 +5086,13 @@ window.search-index = [
     "name": "بك زاوية لاند 08 -11 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "بك-زاوية-لاند-08-11-ايسر",
     "search_terms": [
       "بك زاوية لاند 08 -11 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5092,7 +5106,7 @@ window.search-index = [
       "هايدروليك كير CVT ايسن ATF CVT AISIN 4LTx4",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -5100,13 +5114,13 @@ window.search-index = [
     "name": "بروجكتر كورلا كروس خليجي وصيني20 - LED",
     "category": "",
     "brand": "DLAA",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "بروجكتر-كورلا-كروس-خليجي-وصيني20--led",
     "search_terms": [
       "بروجكتر كورلا كروس خليجي وصيني20 - LED",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5120,7 +5134,7 @@ window.search-index = [
       "بروجكتر باترول 14-16",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5128,13 +5142,13 @@ window.search-index = [
     "name": "فيت بم لبة لاند لكزس 08 - 21 8 سلندر  1UR 3UR ",
     "category": "",
     "brand": "Denso",
-    "price": 97000.0,
+    "price": 96000.0,
     "slug": "فيت-بم-لبة-لاند-لكزس-08--21-8-سلندر-1ur-3ur",
     "search_terms": [
       "فيت بم لبة لاند لكزس 08 - 21 8 سلندر  1UR 3UR ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -5142,13 +5156,13 @@ window.search-index = [
     "name": "دعامية امامية افلون 19 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "دعامية-امامية-افلون-19",
     "search_terms": [
       "دعامية امامية افلون 19 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5156,13 +5170,13 @@ window.search-index = [
     "name": "دعامية خلفية افلون 19 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "دعامية-خلفية-افلون-19",
     "search_terms": [
       "دعامية خلفية افلون 19 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5170,13 +5184,13 @@ window.search-index = [
     "name": "فلنجة دسك امامية كامري 18 - رف فور 19 - امريكي خليجي - 43512-33150 ",
     "category": "",
     "brand": "ADVICS",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "فلنجة-دسك-امامية-كامري-18--رف-فور-19--امريكي-خليجي--43512-33150",
     "search_terms": [
       "فلنجة دسك امامية كامري 18 - رف فور 19 - امريكي خليجي - 43512-33150 ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5184,13 +5198,13 @@ window.search-index = [
     "name": "لايت بيكب ريفو 16 -20 نيكل ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "لايت-بيكب-ريفو-16-20-نيكل-ايمن",
     "search_terms": [
       "لايت بيكب ريفو 16 -20 نيكل ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5198,13 +5212,13 @@ window.search-index = [
     "name": "تريشة باب جانبية برادو 24 - اسود اساس ايمن  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 31000.0,
     "slug": "تريشة-باب-جانبية-برادو-24--اسود-اساس-ايمن",
     "search_terms": [
       "تريشة باب جانبية برادو 24 - اسود اساس ايمن  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5212,13 +5226,13 @@ window.search-index = [
     "name": "لايت بيكب ريفو 16 -20 نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "لايت-بيكب-ريفو-16-20-نيكل-ايسر",
     "search_terms": [
       "لايت بيكب ريفو 16 -20 نيكل ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5232,7 +5246,7 @@ window.search-index = [
       "هايدروليك كير تويوتا ATF-T-IV اسود 4 لتر",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -5240,13 +5254,13 @@ window.search-index = [
     "name": "ليد لحية امامية لكزس 10 - 11 لولوي",
     "category": "",
     "brand": "DLAA",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "ليد-لحية-امامية-لكزس-10--11-لولوي",
     "search_terms": [
       "ليد لحية امامية لكزس 10 - 11 لولوي",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5260,7 +5274,7 @@ window.search-index = [
       "5W30 SN GF5 TY زيت محرك تويوتا ياباني 4LTx6",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -5268,13 +5282,13 @@ window.search-index = [
     "name": "نيكل لحية خلفية لاند 16",
     "category": "",
     "brand": "Uncle",
-    "price": 36000.0,
+    "price": 35000.0,
     "slug": "نيكل-لحية-خلفية-لاند-16",
     "search_terms": [
       "نيكل لحية خلفية لاند 16",
       "",
       "Uncle",
-      ""
+      "False"
     ]
   },
   {
@@ -5282,13 +5296,13 @@ window.search-index = [
     "name": "فيت بم بيكب ريفو كورلا 15 - كامري 16 -",
     "category": "",
     "brand": "Denso",
-    "price": 97000.0,
+    "price": 96000.0,
     "slug": "فيت-بم-بيكب-ريفو-كورلا-15--كامري-16",
     "search_terms": [
       "فيت بم بيكب ريفو كورلا 15 - كامري 16 -",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -5296,13 +5310,13 @@ window.search-index = [
     "name": "ليد دعامية امامية لاند 12 لولوي جهتين عدل زاوية",
     "category": "",
     "brand": "DLAA",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "ليد-دعامية-امامية-لاند-12-لولوي-جهتين-عدل-زاوية",
     "search_terms": [
       "ليد دعامية امامية لاند 12 لولوي جهتين عدل زاوية",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5310,13 +5324,13 @@ window.search-index = [
     "name": "واتر بم كورلا 1ZZ خليجي -29415-16100",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "واتر-بم-كورلا-1zz-خليجي-29415-16100",
     "search_terms": [
       "واتر بم كورلا 1ZZ خليجي -29415-16100",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -5324,13 +5338,13 @@ window.search-index = [
     "name": "ليد دعامية امامية باترول 11 لولوي",
     "category": "",
     "brand": "DLAA",
-    "price": 48000.0,
+    "price": 44000.0,
     "slug": "ليد-دعامية-امامية-باترول-11-لولوي",
     "search_terms": [
       "ليد دعامية امامية باترول 11 لولوي",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5338,13 +5352,13 @@ window.search-index = [
     "name": "ليد لحية امامية لكزس 10 - 11 اسود",
     "category": "",
     "brand": "DLAA",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "ليد-لحية-امامية-لكزس-10--11-اسود",
     "search_terms": [
       "ليد لحية امامية لكزس 10 - 11 اسود",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5352,13 +5366,13 @@ window.search-index = [
     "name": "لايت كامري 07 - 09 خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "لايت-كامري-07--09-خليجي-ايسر",
     "search_terms": [
       "لايت كامري 07 - 09 خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5366,13 +5380,13 @@ window.search-index = [
     "name": "لايت كامري 07 - 09 خليجي ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "لايت-كامري-07--09-خليجي-ايمن",
     "search_terms": [
       "لايت كامري 07 - 09 خليجي ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5380,13 +5394,13 @@ window.search-index = [
     "name": "بك صندوق كورلا 20 - هايبرد LED خليجي صين ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "بك-صندوق-كورلا-20--هايبرد-led-خليجي-صين-ايمن",
     "search_terms": [
       "بك صندوق كورلا 20 - هايبرد LED خليجي صين ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5400,7 +5414,7 @@ window.search-index = [
       "لايت لاند 05 -07 بدون زنون - ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5414,7 +5428,7 @@ window.search-index = [
       "لايت لاند 05 -07 بدون زنون - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5428,7 +5442,7 @@ window.search-index = [
       "فلنجة دسك امامية بيكب ريفو 16 - 4W فورجنر -",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5442,21 +5456,21 @@ window.search-index = [
       "0W20 SN NS زيت محرك نيسان ياباني 4LTx6",
       "",
       "Nissan ",
-      ""
+      "False"
     ]
   },
   {
     "id": 195623,
-    "name": "دسك امامي لاند لكزس 08 - 21 -  يابان",
+    "name": "دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان",
     "category": "",
     "brand": "ADVICS",
-    "price": 57000.0,
-    "slug": "دسك-امامي-لاند-لكزس-08--21--يابان",
+    "price": 56000.0,
+    "slug": "دسك-امامي-لاند-لكزس-08--21-04465-60280-يابان",
     "search_terms": [
-      "دسك امامي لاند لكزس 08 - 21 -  يابان",
+      "دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5470,7 +5484,7 @@ window.search-index = [
       "لايت لاند 05 -07 زنون - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5484,7 +5498,7 @@ window.search-index = [
       "لايت لاند 05 -07 زنون - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5492,27 +5506,27 @@ window.search-index = [
     "name": "بروجكتر بيكب نافارا 16 - 18 داير نيكل",
     "category": "",
     "brand": "DLAA",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "بروجكتر-بيكب-نافارا-16--18-داير-نيكل",
     "search_terms": [
       "بروجكتر بيكب نافارا 16 - 18 داير نيكل",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
     "id": 195654,
-    "name": "بك صندوق كورلا 20 - هايبرد LED خليجي صين ايسر",
+    "name": "بك صندوق كورلا 20 - هايبرد LED خليجي صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
-    "slug": "بك-صندوق-كورلا-20--هايبرد-led-خليجي-صين-ايسر",
+    "price": 56000.0,
+    "slug": "بك-صندوق-كورلا-20--هايبرد-led-خليجي-صيني-ايسر",
     "search_terms": [
-      "بك صندوق كورلا 20 - هايبرد LED خليجي صين ايسر",
+      "بك صندوق كورلا 20 - هايبرد LED خليجي صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5520,13 +5534,13 @@ window.search-index = [
     "name": "شباك دعامية كورلا 23 -  امريكي  SE XSE كورلا ليفان 23 - صيني بدون فتحة  هوك ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "شباك-دعامية-كورلا-23--امريكي-se-xse-كورلا-ليفان-23--صيني-بدون-فتحة-هوك",
     "search_terms": [
       "شباك دعامية كورلا 23 -  امريكي  SE XSE كورلا ليفان 23 - صيني بدون فتحة  هوك ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5534,13 +5548,13 @@ window.search-index = [
     "name": "شباك برادو 05 - 09 نيكل ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 63000.0,
     "slug": "شباك-برادو-05--09-نيكل",
     "search_terms": [
       "شباك برادو 05 - 09 نيكل ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5548,13 +5562,13 @@ window.search-index = [
     "name": "واتر بم كامري رفور 12- 17  18 - 2AR ",
     "category": "",
     "brand": "AISIN",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "واتر-بم-كامري-رفور-12-17-18--2ar",
     "search_terms": [
       "واتر بم كامري رفور 12- 17  18 - 2AR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -5562,13 +5576,13 @@ window.search-index = [
     "name": "بك زاوية كورلا 20 -  هايبرد LED خليجي صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 63000.0,
     "slug": "بك-زاوية-كورلا-20--هايبرد-led-خليجي-صيني-ايسر",
     "search_terms": [
       "بك زاوية كورلا 20 -  هايبرد LED خليجي صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5576,13 +5590,13 @@ window.search-index = [
     "name": "بك زاوية كورلا كروس 20 - وارد صين مواصفات عالية  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 62000.0,
     "slug": "بك-زاوية-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايمن",
     "search_terms": [
       "بك زاوية كورلا كروس 20 - وارد صين مواصفات عالية  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5596,7 +5610,7 @@ window.search-index = [
       "لايت كامري 10 - 11 خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5610,7 +5624,7 @@ window.search-index = [
       "لايت كامري 10 - 11 خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5618,13 +5632,13 @@ window.search-index = [
     "name": "بروجكتر لاند 22 - GX- GR",
     "category": "",
     "brand": "DLAA",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "بروجكتر-لاند-22--gx-gr",
     "search_terms": [
       "بروجكتر لاند 22 - GX- GR",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5632,13 +5646,13 @@ window.search-index = [
     "name": "بك زاوية كورلا كروس 20 - وارد صين مواصفات عالية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 62000.0,
     "slug": "بك-زاوية-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايسر",
     "search_terms": [
       "بك زاوية كورلا كروس 20 - وارد صين مواصفات عالية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5652,7 +5666,7 @@ window.search-index = [
       "دسك امامي افلون كامري 18 - 20 رف فور 19 - سي اج ار 16 - ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5660,13 +5674,13 @@ window.search-index = [
     "name": "بك زاوية كورلا 20 - هايبرد LED خليجي صيني ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 63000.0,
     "slug": "بك-زاوية-كورلا-20--هايبرد-led-خليجي-صيني-ايمن",
     "search_terms": [
       "بك زاوية كورلا 20 - هايبرد LED خليجي صيني ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5674,13 +5688,13 @@ window.search-index = [
     "name": "واتر بم كامري 2AZ",
     "category": "",
     "brand": "AISIN",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "واتر-بم-كامري-2az",
     "search_terms": [
       "واتر بم كامري 2AZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -5694,7 +5708,7 @@ window.search-index = [
       "شباك رئيسي هايلندر 22 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5702,13 +5716,13 @@ window.search-index = [
     "name": "بك زاوية كورلا 20 - خليجي  ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 51000.0,
     "slug": "بك-زاوية-كورلا-20--خليجي-ايسر",
     "search_terms": [
       "بك زاوية كورلا 20 - خليجي  ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5716,13 +5730,13 @@ window.search-index = [
     "name": "بك زاوية كورلا 20 - خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 51000.0,
     "slug": "بك-زاوية-كورلا-20--خليجي-ايمن",
     "search_terms": [
       "بك زاوية كورلا 20 - خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5730,13 +5744,13 @@ window.search-index = [
     "name": "تريشة باب جانبية لاند 16 - نيكل مع كتابة لاند كروزر ",
     "category": "",
     "brand": "DAISEN",
-    "price": 57000.0,
+    "price": 63000.0,
     "slug": "تريشة-باب-جانبية-لاند-16--نيكل-مع-كتابة-لاند-كروزر",
     "search_terms": [
       "تريشة باب جانبية لاند 16 - نيكل مع كتابة لاند كروزر ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -5744,13 +5758,13 @@ window.search-index = [
     "name": "بك زاوية كامري امريكي XLE ليد 21- ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "بك-زاوية-كامري-امريكي-xle-ليد-21-ايسر",
     "search_terms": [
       "بك زاوية كامري امريكي XLE ليد 21- ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5758,13 +5772,13 @@ window.search-index = [
     "name": "بك زاوية كامري امريكي XLE ليد 21- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "بك-زاوية-كامري-امريكي-xle-ليد-21-ايمن",
     "search_terms": [
       "بك زاوية كامري امريكي XLE ليد 21- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5772,13 +5786,13 @@ window.search-index = [
     "name": "بروجكتر بيكب نافارا 16",
     "category": "",
     "brand": "DLAA",
-    "price": 51000.0,
+    "price": 56000.0,
     "slug": "بروجكتر-بيكب-نافارا-16",
     "search_terms": [
       "بروجكتر بيكب نافارا 16",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5786,13 +5800,13 @@ window.search-index = [
     "name": "بروجكتر رف فور 22- ",
     "category": "",
     "brand": "DLAA",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "بروجكتر-رف-فور-22",
     "search_terms": [
       "بروجكتر رف فور 22- ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -5800,13 +5814,13 @@ window.search-index = [
     "name": "دسك امامي كورلا 08 - 15 امريكي خليجي  رف فور 08 - 12 JP -04465-12630",
     "category": "",
     "brand": "ADVICS",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "دسك-امامي-كورلا-08--15-امريكي-خليجي-رف-فور-08--12-jp-04465-12630",
     "search_terms": [
       "دسك امامي كورلا 08 - 15 امريكي خليجي  رف فور 08 - 12 JP -04465-12630",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5820,7 +5834,7 @@ window.search-index = [
       "هايدروليك كير تويوتا  CVT-TC ",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
@@ -5828,13 +5842,13 @@ window.search-index = [
     "name": "دسك امامي كامري 07 - 11 خليجي 07 - 15 امريكي  افلون 07 - 17 لكزس  ES 09 - 18 يابان",
     "category": "",
     "brand": "ADVICS",
-    "price": 50000.0,
+    "price": 49000.0,
     "slug": "دسك-امامي-كامري-07--11-خليجي-07--15-امريكي-افلون-07--17-لكزس-es-09--18-يابان",
     "search_terms": [
       "دسك امامي كامري 07 - 11 خليجي 07 - 15 امريكي  افلون 07 - 17 لكزس  ES 09 - 18 يابان",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5842,13 +5856,13 @@ window.search-index = [
     "name": "ماطور فان تبريد كوستر 93 - 14B 24V",
     "category": "",
     "brand": "Denso",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "ماطور-فان-تبريد-كوستر-93--14b-24v",
     "search_terms": [
       "ماطور فان تبريد كوستر 93 - 14B 24V",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -5856,13 +5870,13 @@ window.search-index = [
     "name": "شباك رف فور 23 -  ادفنجر مع فتحة كامرة و حساس ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "شباك-رف-فور-23--ادفنجر-مع-فتحة-كامرة-و-حساس",
     "search_terms": [
       "شباك رف فور 23 -  ادفنجر مع فتحة كامرة و حساس ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5870,13 +5884,13 @@ window.search-index = [
     "name": "بك زاوية كورلا كروس 22 - امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 63000.0,
     "slug": "بك-زاوية-كورلا-كروس-22--امريكي-le-ايسر",
     "search_terms": [
       "بك زاوية كورلا كروس 22 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5884,13 +5898,13 @@ window.search-index = [
     "name": "عنبار كلج كوستر عام PSO",
     "category": "",
     "brand": "AISIN",
-    "price": 64000.0,
+    "price": 54000.0,
     "slug": "عنبار-كلج-كوستر-عام-pso",
     "search_terms": [
       "عنبار كلج كوستر عام PSO",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -5898,13 +5912,13 @@ window.search-index = [
     "name": "بك لايت بيكب ريفو 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 63000.0,
     "slug": "بك-لايت-بيكب-ريفو-22--ايمن",
     "search_terms": [
       "بك لايت بيكب ريفو 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5912,13 +5926,13 @@ window.search-index = [
     "name": "بك لايت بيكب ريفو 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 63000.0,
     "slug": "بك-لايت-بيكب-ريفو-22--ايسر",
     "search_terms": [
       "بك لايت بيكب ريفو 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5926,13 +5940,13 @@ window.search-index = [
     "name": "شباك برادو 14 - 17 نيكل واسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 78000.0,
+    "price": 70000.0,
     "slug": "شباك-برادو-14--17-نيكل-واسود",
     "search_terms": [
       "شباك برادو 14 - 17 نيكل واسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -5940,13 +5954,13 @@ window.search-index = [
     "name": "بك زاوية كورلا كروس 22 - امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 63000.0,
     "slug": "بك-زاوية-كورلا-كروس-22--امريكي-le-ايمن",
     "search_terms": [
       "بك زاوية كورلا كروس 22 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5954,13 +5968,13 @@ window.search-index = [
     "name": "عنبار كلج اعلى بيكب تويوتا جمرة 3RZ",
     "category": "",
     "brand": "ADVICS",
-    "price": 57000.0,
+    "price": 52000.0,
     "slug": "عنبار-كلج-اعلى-بيكب-تويوتا-جمرة-3rz",
     "search_terms": [
       "عنبار كلج اعلى بيكب تويوتا جمرة 3RZ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -5968,13 +5982,13 @@ window.search-index = [
     "name": "بك لايت برادو 14 - 17 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 59000.0,
     "slug": "بك-لايت-برادو-14--17-ايسر",
     "search_terms": [
       "بك لايت برادو 14 - 17 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5982,13 +5996,13 @@ window.search-index = [
     "name": "بك لايت برادو 14 - 17 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 54000.0,
+    "price": 59000.0,
     "slug": "بك-لايت-برادو-14--17-ايمن",
     "search_terms": [
       "بك لايت برادو 14 - 17 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -5996,13 +6010,13 @@ window.search-index = [
     "name": "0W16 SN NS زيت محرك نيسان ياباني 4LTx6",
     "category": "",
     "brand": "Nissan ",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "0w16-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
     "search_terms": [
       "0W16 SN NS زيت محرك نيسان ياباني 4LTx6",
       "",
       "Nissan ",
-      ""
+      "False"
     ]
   },
   {
@@ -6010,13 +6024,13 @@ window.search-index = [
     "name": "عنبار كلج بيكب فيكو 2KD رئيسي كاز 31420-0K030",
     "category": "",
     "brand": "AISIN",
-    "price": 70000.0,
+    "price": 69000.0,
     "slug": "عنبار-كلج-بيكب-فيكو-2kd-رئيسي-كاز-31420-0k030",
     "search_terms": [
       "عنبار كلج بيكب فيكو 2KD رئيسي كاز 31420-0K030",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6024,13 +6038,13 @@ window.search-index = [
     "name": "واتر بم 1ZR 2ZR كورلا رف فور  عام -16100-39465",
     "category": "",
     "brand": "AISIN",
-    "price": 64000.0,
+    "price": 56000.0,
     "slug": "واتر-بم-1zr-2zr-كورلا-رف-فور-عام-16100-39465",
     "search_terms": [
       "واتر بم 1ZR 2ZR كورلا رف فور  عام -16100-39465",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6038,13 +6052,13 @@ window.search-index = [
     "name": "عدسة بروجكتر ليد لاند 12 - 15",
     "category": "",
     "brand": "DLAA",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "عدسة-بروجكتر-ليد-لاند-12--15",
     "search_terms": [
       "عدسة بروجكتر ليد لاند 12 - 15",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -6052,13 +6066,13 @@ window.search-index = [
     "name": "عنبار كلج عكرب عام رئيسي",
     "category": "",
     "brand": "AISIN",
-    "price": 71000.0,
+    "price": 62000.0,
     "slug": "عنبار-كلج-عكرب-عام-رئيسي",
     "search_terms": [
       "عنبار كلج عكرب عام رئيسي",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6066,13 +6080,13 @@ window.search-index = [
     "name": "دعامية امامية لاند 16 - 21 اساس",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "دعامية-امامية-لاند-16--21-اساس",
     "search_terms": [
       "دعامية امامية لاند 16 - 21 اساس",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6086,7 +6100,7 @@ window.search-index = [
       "ماطور بوابة تبريد فان كامري رف فور 18 - افلون 18 - هايلندر 20 - سينا 20 - كورلا 20-",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -6094,13 +6108,13 @@ window.search-index = [
     "name": "شباك برادو 14 - 17 رصاصي وكروم",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "شباك-برادو-14--17-رصاصي-وكروم",
     "search_terms": [
       "شباك برادو 14 - 17 رصاصي وكروم",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6108,13 +6122,13 @@ window.search-index = [
     "name": "دعامية خلفية برادو 24 - اسود اساس ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 37000.0,
     "slug": "دعامية-خلفية-برادو-24--اسود-اساس",
     "search_terms": [
       "دعامية خلفية برادو 24 - اسود اساس ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6122,13 +6136,13 @@ window.search-index = [
     "name": "بك زاوية هايلندر 21 - امريكي ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "بك-زاوية-هايلندر-21--امريكي-ايمن",
     "search_terms": [
       "بك زاوية هايلندر 21 - امريكي ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6136,13 +6150,13 @@ window.search-index = [
     "name": "فلنجة امامية باترول سفاري 17 -",
     "category": "",
     "brand": "ADVICS",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "فلنجة-امامية-باترول-سفاري-17",
     "search_terms": [
       "فلنجة امامية باترول سفاري 17 -",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6156,7 +6170,7 @@ window.search-index = [
       "نيكل قاعدة رقم لاند 23 - اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6170,7 +6184,7 @@ window.search-index = [
       "نيكل قاعدة رقم لاند 23 - لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6178,13 +6192,13 @@ window.search-index = [
     "name": "تريشة باب جانبية برادو 18 - اسود بلاك اديشن",
     "category": "",
     "brand": "DAISEN",
-    "price": 78000.0,
+    "price": 70000.0,
     "slug": "تريشة-باب-جانبية-برادو-18--اسود-بلاك-اديشن",
     "search_terms": [
       "تريشة باب جانبية برادو 18 - اسود بلاك اديشن",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6198,7 +6212,7 @@ window.search-index = [
       "واتر بم بيكب فيكو 2TR م 16100-79445",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6206,13 +6220,13 @@ window.search-index = [
     "name": "حافظة متعلقات لاند 22 - بجانب مقعد السائق بيجي SET",
     "category": "",
     "brand": "DAISEN",
-    "price": 50000.0,
+    "price": 63000.0,
     "slug": "حافظة-متعلقات-لاند-22--بجانب-مقعد-السائق-بيجي-set",
     "search_terms": [
       "حافظة متعلقات لاند 22 - بجانب مقعد السائق بيجي SET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6220,13 +6234,13 @@ window.search-index = [
     "name": "شباك رئيسي كورلا كروس 22 -  امريكي صيني اسود ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "شباك-رئيسي-كورلا-كروس-22--امريكي-صيني-اسود",
     "search_terms": [
       "شباك رئيسي كورلا كروس 22 -  امريكي صيني اسود ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6234,13 +6248,13 @@ window.search-index = [
     "name": "باب تجوة كجمجة وسطية لاند 08 - 15 بيجي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 78000.0,
     "slug": "باب-تجوة-كجمجة-وسطية-لاند-08--15-بيجي",
     "search_terms": [
       "باب تجوة كجمجة وسطية لاند 08 - 15 بيجي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6248,13 +6262,13 @@ window.search-index = [
     "name": "بروجكتر بافندر 23 - مع واير + كفر ",
     "category": "",
     "brand": "DLAA",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "بروجكتر-بافندر-23--مع-واير-+-كفر",
     "search_terms": [
       "بروجكتر بافندر 23 - مع واير + كفر ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -6268,7 +6282,7 @@ window.search-index = [
       "اويل بم كورلا 08 - 1ZR 2ZR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6276,13 +6290,13 @@ window.search-index = [
     "name": "شباك لاند 12 - 15 نيكل ورصاصي VX",
     "category": "",
     "brand": "DAISEN",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "شباك-لاند-12--15-نيكل-ورصاصي-vx",
     "search_terms": [
       "شباك لاند 12 - 15 نيكل ورصاصي VX",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6290,13 +6304,13 @@ window.search-index = [
     "name": "دسك امامي كوستر اسود -04465-YZZE6",
     "category": "",
     "brand": "ADVICS",
-    "price": 78000.0,
+    "price": 63000.0,
     "slug": "دسك-امامي-كوستر-اسود-04465-yzze6",
     "search_terms": [
       "دسك امامي كوستر اسود -04465-YZZE6",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6304,13 +6318,13 @@ window.search-index = [
     "name": " بك زاوية كامري 22 - خليجي ليد ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 47000.0,
+    "price": 62000.0,
     "slug": "بك-زاوية-كامري-22--خليجي-ليد-ايمن",
     "search_terms": [
       " بك زاوية كامري 22 - خليجي ليد ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6324,7 +6338,7 @@ window.search-index = [
       "بك زاوية كامري 22 - خليجي ليد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6332,13 +6346,13 @@ window.search-index = [
     "name": "فلنجة دسك امامية برادو 10 - 18 43512-60191",
     "category": "",
     "brand": "ADVICS",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "فلنجة-دسك-امامية-برادو-10--18-43512-60191",
     "search_terms": [
       "فلنجة دسك امامية برادو 10 - 18 43512-60191",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6352,7 +6366,7 @@ window.search-index = [
       "بروجكتر باترول 20 - LE - SE - XE",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -6360,13 +6374,13 @@ window.search-index = [
     "name": "دعامية خلفية برادو 18 - 23 لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 136000.0,
+    "price": 85000.0,
     "slug": "دعامية-خلفية-برادو-18--23-لون-لولوي",
     "search_terms": [
       "دعامية خلفية برادو 18 - 23 لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6374,27 +6388,27 @@ window.search-index = [
     "name": "5W40 SN TY زيت محرك تويوتا ياباني 4LTx6",
     "category": "",
     "brand": "Toyota",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "5w40-sn-ty-زيت-محرك-تويوتا-ياباني-4ltx6",
     "search_terms": [
       "5W40 SN TY زيت محرك تويوتا ياباني 4LTx6",
       "",
       "Toyota",
-      ""
+      "False"
     ]
   },
   {
     "id": 197476,
-    "name": "بخاخ تبريد بالفريز كوستر عام PSO",
+    "name": "بخاخ تبريد بالفريز كوستر عام",
     "category": "",
     "brand": "Denso",
-    "price": 65000.0,
-    "slug": "بخاخ-تبريد-بالفريز-كوستر-عام-pso",
+    "price": 54000.0,
+    "slug": "بخاخ-تبريد-بالفريز-كوستر-عام",
     "search_terms": [
-      "بخاخ تبريد بالفريز كوستر عام PSO",
+      "بخاخ تبريد بالفريز كوستر عام",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -6402,13 +6416,13 @@ window.search-index = [
     "name": "حساس دبل موازنة امامي لكزس 12 ايمن",
     "category": "",
     "brand": "ADVICS",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "حساس-دبل-موازنة-امامي-لكزس-12-ايمن",
     "search_terms": [
       "حساس دبل موازنة امامي لكزس 12 ايمن",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6416,13 +6430,13 @@ window.search-index = [
     "name": "حساس دبل موازنة امامي لكزس 12 ايسر",
     "category": "",
     "brand": "ADVICS",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "حساس-دبل-موازنة-امامي-لكزس-12-ايسر",
     "search_terms": [
       "حساس دبل موازنة امامي لكزس 12 ايسر",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6436,7 +6450,7 @@ window.search-index = [
       "شباك برادو 18- ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6444,13 +6458,13 @@ window.search-index = [
     "name": "فريز تبريد امامي بيكب ريفو 16 - 21",
     "category": "",
     "brand": "Denso",
-    "price": 97000.0,
+    "price": 96000.0,
     "slug": "فريز-تبريد-امامي-بيكب-ريفو-16--21",
     "search_terms": [
       "فريز تبريد امامي بيكب ريفو 16 - 21",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -6464,7 +6478,7 @@ window.search-index = [
       "لايت تاكوما 16 - 19 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6478,7 +6492,7 @@ window.search-index = [
       "لايت تاكوما 16 - 19 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6492,7 +6506,7 @@ window.search-index = [
       "شباك هايلندر 21 - مع فتحة كاميرا ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6500,13 +6514,13 @@ window.search-index = [
     "name": "لايت كورلا 14 - 16 امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 60000.0,
+    "price": 28000.0,
     "slug": "لايت-كورلا-14--16-امريكي-ايمن",
     "search_terms": [
       "لايت كورلا 14 - 16 امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6520,7 +6534,7 @@ window.search-index = [
       "شباك بيكب ريفو  داخل اسود وعطر نيكل 22 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6528,13 +6542,13 @@ window.search-index = [
     "name": " عنبار ويل خلفي اسفل كوستر 03 - 17 - ايسر PSO",
     "category": "",
     "brand": "ADVICS",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "عنبار-ويل-خلفي-اسفل-كوستر-03--17--ايسر-pso",
     "search_terms": [
       " عنبار ويل خلفي اسفل كوستر 03 - 17 - ايسر PSO",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6542,13 +6556,13 @@ window.search-index = [
     "name": "عنبار ويل خلفي اسفل كوستر 03 - 17 - ايمن PSO",
     "category": "",
     "brand": "ADVICS",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "عنبار-ويل-خلفي-اسفل-كوستر-03--17--ايمن-pso",
     "search_terms": [
       "عنبار ويل خلفي اسفل كوستر 03 - 17 - ايمن PSO",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6562,7 +6576,7 @@ window.search-index = [
       "درع دعامية امامية برادو 05 - 09 لولوي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6570,13 +6584,13 @@ window.search-index = [
     "name": "شباك لاند 03 - 07 داير ذهبي داخل رصاصي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 68000.0,
     "slug": "شباك-لاند-03--07-داير-ذهبي-داخل-رصاصي",
     "search_terms": [
       "شباك لاند 03 - 07 داير ذهبي داخل رصاصي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6590,7 +6604,7 @@ window.search-index = [
       "هايدروليك كير نيسان  NS2-CVT",
       "",
       "Nissan ",
-      ""
+      "False"
     ]
   },
   {
@@ -6598,13 +6612,13 @@ window.search-index = [
     "name": "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايسر PSO",
     "category": "",
     "brand": "ADVICS",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "عنبار-ويل-خلفي-اعلى-كوستر-03--17--ايسر-pso",
     "search_terms": [
       "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايسر PSO",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6612,13 +6626,13 @@ window.search-index = [
     "name": "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايمن PSO",
     "category": "",
     "brand": "ADVICS",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "عنبار-ويل-خلفي-اعلى-كوستر-03--17--ايمن-pso",
     "search_terms": [
       "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايمن PSO",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6626,13 +6640,13 @@ window.search-index = [
     "name": "فريز تبريد كوول كيير  فيكو + فورجنر 05 - 15 عام كورلا 08 - 19 EVAPORATOR HILUX VIGO FURTUNER COROLLA 08 -19 CG  ",
     "category": "",
     "brand": "Denso",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "فريز-تبريد-كوول-كيير-فيكو-+-فورجنر-05--15-عام-كورلا-08--19-evaporator-hilux-vigo-furtuner-corolla-08-19-cg",
     "search_terms": [
       "فريز تبريد كوول كيير  فيكو + فورجنر 05 - 15 عام كورلا 08 - 19 EVAPORATOR HILUX VIGO FURTUNER COROLLA 08 -19 CG  ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -6646,7 +6660,7 @@ window.search-index = [
       "تريشة باب جانبية برادو 18- نيكل",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6654,13 +6668,13 @@ window.search-index = [
     "name": "دعامية خلفية برادو 18 - 23 لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 136000.0,
+    "price": 92000.0,
     "slug": "دعامية-خلفية-برادو-18--23-لون-اسود",
     "search_terms": [
       "دعامية خلفية برادو 18 - 23 لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6668,13 +6682,13 @@ window.search-index = [
     "name": "شباك رئيسي كورلا كروس 22 - داير نيكل ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 85000.0,
     "slug": "شباك-رئيسي-كورلا-كروس-22--داير-نيكل",
     "search_terms": [
       "شباك رئيسي كورلا كروس 22 - داير نيكل ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6682,13 +6696,13 @@ window.search-index = [
     "name": "دبل امامي لاند 98 - 01\t",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
+    "price": 59000.0,
     "slug": "دبل-امامي-لاند-98--01",
     "search_terms": [
       "دبل امامي لاند 98 - 01\t",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6702,7 +6716,7 @@ window.search-index = [
       "فريز تبريد امامي برادو 03 - 09 1GR",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -6710,13 +6724,13 @@ window.search-index = [
     "name": "عينة كلج بيكب فيكو 2TR 31210-35200 ",
     "category": "",
     "brand": "AISIN",
-    "price": 85000.0,
+    "price": 78000.0,
     "slug": "عينة-كلج-بيكب-فيكو-2tr-31210-35200",
     "search_terms": [
       "عينة كلج بيكب فيكو 2TR 31210-35200 ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6724,13 +6738,13 @@ window.search-index = [
     "name": "فريز تبريد خلفي لاند 08 - 21 برادو 10 - 22 مع بطل زيت تبريد ",
     "category": "",
     "brand": "Denso",
-    "price": 82000.0,
+    "price": 78000.0,
     "slug": "فريز-تبريد-خلفي-لاند-08--21-برادو-10--22-مع-بطل-زيت-تبريد",
     "search_terms": [
       "فريز تبريد خلفي لاند 08 - 21 برادو 10 - 22 مع بطل زيت تبريد ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -6744,7 +6758,7 @@ window.search-index = [
       "يدة ابواب جانبية لاند 08 - 15 نيكل شكل لاند 16 - SET بصمتين ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6752,13 +6766,13 @@ window.search-index = [
     "name": "بروجكتر بيكب ريفو 22 - + كفر مع ليد اعلى الكفر ",
     "category": "",
     "brand": "DAISEN",
-    "price": 78000.0,
+    "price": 63000.0,
     "slug": "بروجكتر-بيكب-ريفو-22--+-كفر-مع-ليد-اعلى-الكفر",
     "search_terms": [
       "بروجكتر بيكب ريفو 22 - + كفر مع ليد اعلى الكفر ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6766,13 +6780,13 @@ window.search-index = [
     "name": "شباك لكزس ES اي اس 18 -",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 82000.0,
+    "price": 85000.0,
     "slug": "شباك-لكزس-es-اي-اس-18",
     "search_terms": [
       "شباك لكزس ES اي اس 18 -",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6780,13 +6794,13 @@ window.search-index = [
     "name": "تريشة باب جانبية لاند 22 - بكتابة تويوتا عراق اسود TWIN TURBO",
     "category": "",
     "brand": "DAISEN",
-    "price": 64000.0,
+    "price": 92000.0,
     "slug": "تريشة-باب-جانبية-لاند-22--بكتابة-تويوتا-عراق-اسود-twin-turbo",
     "search_terms": [
       "تريشة باب جانبية لاند 22 - بكتابة تويوتا عراق اسود TWIN TURBO",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6794,13 +6808,13 @@ window.search-index = [
     "name": "درع دعامية امامية لاند 13 لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 68000.0,
+    "price": 65000.0,
     "slug": "درع-دعامية-امامية-لاند-13-لولوي",
     "search_terms": [
       "درع دعامية امامية لاند 13 لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6808,13 +6822,13 @@ window.search-index = [
     "name": "صينية كلج داينا 11B 14B ",
     "category": "",
     "brand": "AISIN",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "صينية-كلج-داينا-11b-14b",
     "search_terms": [
       "صينية كلج داينا 11B 14B ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6828,7 +6842,7 @@ window.search-index = [
       "عنبار بريك لاند 98 - 07 1FZ 2UZ 1HD 47201-60720",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -6836,13 +6850,13 @@ window.search-index = [
     "name": "بك صندوق هايلندر 21 - امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 56000.0,
     "slug": "بك-صندوق-هايلندر-21--امريكي-ايسر",
     "search_terms": [
       "بك صندوق هايلندر 21 - امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6850,13 +6864,13 @@ window.search-index = [
     "name": "بروجكتر مورانو 19 F190N",
     "category": "",
     "brand": "DLAA",
-    "price": 81000.0,
+    "price": 80000.0,
     "slug": "بروجكتر-مورانو-19-f190n",
     "search_terms": [
       "بروجكتر مورانو 19 F190N",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -6864,13 +6878,13 @@ window.search-index = [
     "name": "لايت لاند 08 - 11 زنون ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 71000.0,
+    "price": 82000.0,
     "slug": "لايت-لاند-08--11-زنون-ايمن",
     "search_terms": [
       "لايت لاند 08 - 11 زنون ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6878,13 +6892,13 @@ window.search-index = [
     "name": "لايت لاند 08 - 11 زنون ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 71000.0,
+    "price": 82000.0,
     "slug": "لايت-لاند-08--11-زنون-ايسر",
     "search_terms": [
       "لايت لاند 08 - 11 زنون ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6892,13 +6906,13 @@ window.search-index = [
     "name": "كلج مروحة 2TR 3RZ عام بيكب فيكو ريفو كوستر -16210-75100",
     "category": "",
     "brand": "AISIN",
-    "price": 92000.0,
+    "price": 78000.0,
     "slug": "كلج-مروحة-2tr-3rz-عام-بيكب-فيكو-ريفو-كوستر-16210-75100",
     "search_terms": [
       "كلج مروحة 2TR 3RZ عام بيكب فيكو ريفو كوستر -16210-75100",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -6912,7 +6926,7 @@ window.search-index = [
       "دعامية امامية لكزس ES اي اس 18 - خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6920,13 +6934,13 @@ window.search-index = [
     "name": "لحية امامية لاند 12 لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 71000.0,
+    "price": 82000.0,
     "slug": "لحية-امامية-لاند-12-لولوي",
     "search_terms": [
       "لحية امامية لاند 12 لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6934,13 +6948,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 12 اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "لحية-خلفية-لاند-12-اسود",
     "search_terms": [
       "لحية خلفية لاند 12 اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -6948,13 +6962,13 @@ window.search-index = [
     "name": "بك لايت برادو 18 - اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 92000.0,
     "slug": "بك-لايت-برادو-18--اسود-ايسر",
     "search_terms": [
       "بك لايت برادو 18 - اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6962,13 +6976,13 @@ window.search-index = [
     "name": "بك لايت برادو 18 - اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 92000.0,
     "slug": "بك-لايت-برادو-18--اسود-ايمن",
     "search_terms": [
       "بك لايت برادو 18 - اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -6976,13 +6990,13 @@ window.search-index = [
     "name": "بروجكتر مع كرن اسود بيكب ريفو 22 - ليد وGR",
     "category": "",
     "brand": "DLAA",
-    "price": 84000.0,
+    "price": 83000.0,
     "slug": "بروجكتر-مع-كرن-اسود-بيكب-ريفو-22--ليد-وgr",
     "search_terms": [
       "بروجكتر مع كرن اسود بيكب ريفو 22 - ليد وGR",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -6990,13 +7004,13 @@ window.search-index = [
     "name": "لايت كورلا 19 20- خليجي 3 عدسة  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 92000.0,
     "slug": "لايت-كورلا-19-20-خليجي-3-عدسة-ايمن",
     "search_terms": [
       "لايت كورلا 19 20- خليجي 3 عدسة  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7004,13 +7018,13 @@ window.search-index = [
     "name": "لحية امامية لاند 12 اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 71000.0,
+    "price": 82000.0,
     "slug": "لحية-امامية-لاند-12-اسود",
     "search_terms": [
       "لحية امامية لاند 12 اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7024,7 +7038,7 @@ window.search-index = [
       "47201-3D460 عنبار بريك بيكب تويوتا فيكو 3RZ عادي اوتو",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7032,13 +7046,13 @@ window.search-index = [
     "name": "كفر سبير برادو 11 - 18 - لولوي بدون كفر قاعدة",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 114000.0,
+    "price": 127000.0,
     "slug": "كفر-سبير-برادو-11--18--لولوي-بدون-كفر-قاعدة",
     "search_terms": [
       "كفر سبير برادو 11 - 18 - لولوي بدون كفر قاعدة",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7046,13 +7060,13 @@ window.search-index = [
     "name": "واتر بم لاند لكزس 3UR 16100-39496",
     "category": "",
     "brand": "AISIN",
-    "price": 99000.0,
+    "price": 85000.0,
     "slug": "واتر-بم-لاند-لكزس-3ur-16100-39496",
     "search_terms": [
       "واتر بم لاند لكزس 3UR 16100-39496",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7060,13 +7074,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 12 لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "لحية-خلفية-لاند-12-لولوي",
     "search_terms": [
       "لحية خلفية لاند 12 لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7080,7 +7094,7 @@ window.search-index = [
       "دوسة جانبية لاند 08 - 15 لولوي ايمن",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7094,7 +7108,7 @@ window.search-index = [
       "واتر بم لاند 08 - 11 1GR -16100-39406",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7108,7 +7122,7 @@ window.search-index = [
       "تريشة قمارة لاند 16 - 21 مسح نيكل",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7116,13 +7130,13 @@ window.search-index = [
     "name": "دعامية امامية لاند 16 - 21 لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 125000.0,
+    "price": 120000.0,
     "slug": "دعامية-امامية-لاند-16--21-لون-اسود",
     "search_terms": [
       "دعامية امامية لاند 16 - 21 لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7130,13 +7144,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 12 لولوي + واقيات",
     "category": "",
     "brand": "GBT",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "لحية-خلفية-لاند-12-لولوي-+-واقيات",
     "search_terms": [
       "لحية خلفية لاند 12 لولوي + واقيات",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -7144,13 +7158,13 @@ window.search-index = [
     "name": "عينة كلج لاند 1HZ كاز",
     "category": "",
     "brand": "AISIN",
-    "price": 92000.0,
+    "price": 96000.0,
     "slug": "عينة-كلج-لاند-1hz-كاز",
     "search_terms": [
       "عينة كلج لاند 1HZ كاز",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7164,7 +7178,7 @@ window.search-index = [
       "كلج مروحة لاند 98 - 07 1FZ -16210-66040",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7178,7 +7192,7 @@ window.search-index = [
       "لايت كورلا 20 - وارد صين هايبرد شكل الخليجي تك عدسة كلوب ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7192,7 +7206,7 @@ window.search-index = [
       "لايت كورلا 20 - وارد صين هايبرد شكل الخليجي تك عدسة كلوب ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7200,13 +7214,13 @@ window.search-index = [
     "name": "شباك لاند 2021 - نيكل + فيلي",
     "category": "",
     "brand": "DAISEN",
-    "price": 91000.0,
+    "price": 106000.0,
     "slug": "شباك-لاند-2021--نيكل-+-فيلي",
     "search_terms": [
       "شباك لاند 2021 - نيكل + فيلي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7220,7 +7234,7 @@ window.search-index = [
       "تريشة قمارة لاند 08 - 21 بدي كروم كفر سلفر SET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7228,13 +7242,13 @@ window.search-index = [
     "name": "لحية امامية برادو 18 - لولوي فيلي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 85000.0,
+    "price": 92000.0,
     "slug": "لحية-امامية-برادو-18--لولوي-فيلي",
     "search_terms": [
       "لحية امامية برادو 18 - لولوي فيلي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7242,13 +7256,13 @@ window.search-index = [
     "name": "لايت كورلا 19 20- خليجي 3 عدسة ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 92000.0,
     "slug": "لايت-كورلا-19-20-خليجي-3-عدسة-ايسر",
     "search_terms": [
       "لايت كورلا 19 20- خليجي 3 عدسة ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7256,13 +7270,13 @@ window.search-index = [
     "name": "واتر بم بيكب فيكو 2KD -16100-39486 كاز ",
     "category": "",
     "brand": "AISIN",
-    "price": 88000.0,
+    "price": 87000.0,
     "slug": "واتر-بم-بيكب-فيكو-2kd-16100-39486-كاز",
     "search_terms": [
       "واتر بم بيكب فيكو 2KD -16100-39486 كاز ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7270,13 +7284,13 @@ window.search-index = [
     "name": "كلج مروحة لاند 12 - 21 1GR -16210-31040 هايس 20- 7GRF",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 92000.0,
     "slug": "كلج-مروحة-لاند-12--21-1gr-16210-31040-هايس-20-7grf",
     "search_terms": [
       "كلج مروحة لاند 12 - 21 1GR -16210-31040 هايس 20- 7GRF",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7284,13 +7298,13 @@ window.search-index = [
     "name": "لايت لاند 12 - 15 زنون polar ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 85000.0,
     "slug": "لايت-لاند-12--15-زنون-polar-ايمن",
     "search_terms": [
       "لايت لاند 12 - 15 زنون polar ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7298,13 +7312,13 @@ window.search-index = [
     "name": "لايت لاند 12 - 15 زنون polar ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 85000.0,
     "slug": "لايت-لاند-12--15-زنون-polar-ايسر",
     "search_terms": [
       "لايت لاند 12 - 15 زنون polar ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7312,13 +7326,13 @@ window.search-index = [
     "name": "بروجكتر مكسما 20 - ",
     "category": "",
     "brand": "DLAA",
-    "price": 88000.0,
+    "price": 87000.0,
     "slug": "بروجكتر-مكسما-20",
     "search_terms": [
       "بروجكتر مكسما 20 - ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -7332,7 +7346,7 @@ window.search-index = [
       "بخاخ تبريد خلفي لاند لكزس سيكويا 08 - 21 عام ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -7340,13 +7354,13 @@ window.search-index = [
     "name": "بك صندوق لكزس ES اي اس 18 - خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 88000.0,
+    "price": 92000.0,
     "slug": "بك-صندوق-لكزس-es-اي-اس-18--خليجي-ايسر",
     "search_terms": [
       "بك صندوق لكزس ES اي اس 18 - خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7354,13 +7368,13 @@ window.search-index = [
     "name": "بك صندوق لكزس ES اي اس 18 - خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 88000.0,
+    "price": 92000.0,
     "slug": "بك-صندوق-لكزس-es-اي-اس-18--خليجي-ايمن",
     "search_terms": [
       "بك صندوق لكزس ES اي اس 18 - خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7374,7 +7388,7 @@ window.search-index = [
       "دعامية خلفية لكزس ES اي اس 18 - خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7388,7 +7402,7 @@ window.search-index = [
       "بروجكتر لاند 16 - 21 مع كفر صغير دائري كامل",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -7396,13 +7410,13 @@ window.search-index = [
     "name": "فلنجة دسك امامية باترول 10 - 17 -40206-1LB1A",
     "category": "",
     "brand": "ADVICS",
-    "price": 98000.0,
+    "price": 97000.0,
     "slug": "فلنجة-دسك-امامية-باترول-10--17-40206-1lb1a",
     "search_terms": [
       "فلنجة دسك امامية باترول 10 - 17 -40206-1LB1A",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -7410,13 +7424,13 @@ window.search-index = [
     "name": "لحية امامية لاند 19 - 20 GRAND TURNING ام كلبس لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 110000.0,
     "slug": "لحية-امامية-لاند-19--20-grand-turning-ام-كلبس-لولوي",
     "search_terms": [
       "لحية امامية لاند 19 - 20 GRAND TURNING ام كلبس لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7424,13 +7438,13 @@ window.search-index = [
     "name": "راديتر تبريد بيكب ريفو 16-21 كاز بانزين",
     "category": "",
     "brand": "Denso",
-    "price": 114000.0,
+    "price": 113000.0,
     "slug": "راديتر-تبريد-بيكب-ريفو-16-21-كاز-بانزين",
     "search_terms": [
       "راديتر تبريد بيكب ريفو 16-21 كاز بانزين",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -7438,27 +7452,27 @@ window.search-index = [
     "name": "كلج مروحة لاند 08 - 11 2UZ -16210-50110",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 85000.0,
     "slug": "كلج-مروحة-لاند-08--11-2uz-16210-50110",
     "search_terms": [
       "كلج مروحة لاند 08 - 11 2UZ -16210-50110",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
     "id": 199857,
-    "name": "هلال جاملغ خلفي برادو 24 - اسود اساس ايسر ",
+    "name": "هلال جاملغ خلفي برادو 24 - ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
-    "slug": "هلال-جاملغ-خلفي-برادو-24--اسود-اساس-ايسر",
+    "price": 113000.0,
+    "slug": "هلال-جاملغ-خلفي-برادو-24--ايسر",
     "search_terms": [
-      "هلال جاملغ خلفي برادو 24 - اسود اساس ايسر ",
+      "هلال جاملغ خلفي برادو 24 - ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7466,27 +7480,27 @@ window.search-index = [
     "name": "دعامية امامية لاند 12 - 15 لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 114000.0,
+    "price": 113000.0,
     "slug": "دعامية-امامية-لاند-12--15-لون-اسود",
     "search_terms": [
       "دعامية امامية لاند 12 - 15 لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
     "id": 199866,
-    "name": "هلال جاملغ خلفي برادو 24 - اسود اسلس ايمن ",
+    "name": "هلال جاملغ خلفي برادو 24 - ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
-    "slug": "هلال-جاملغ-خلفي-برادو-24--اسود-اسلس-ايمن",
+    "price": 113000.0,
+    "slug": "هلال-جاملغ-خلفي-برادو-24--ايمن",
     "search_terms": [
-      "هلال جاملغ خلفي برادو 24 - اسود اسلس ايمن ",
+      "هلال جاملغ خلفي برادو 24 - ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7494,13 +7508,13 @@ window.search-index = [
     "name": "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 71000.0,
     "slug": "ماسكة-دعامية-خلفية-برادو-24--اعلى-الدعامية-الخلفية-ايسر",
     "search_terms": [
       "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7508,13 +7522,13 @@ window.search-index = [
     "name": "لايت رف فور 20 - 22 امريكي SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 116000.0,
     "slug": "لايت-رف-فور-20--22-امريكي-se-ايمن",
     "search_terms": [
       "لايت رف فور 20 - 22 امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7522,13 +7536,13 @@ window.search-index = [
     "name": "لحية امامية لاند 16 - 17 عريض ام كلبس اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 103000.0,
     "slug": "لحية-امامية-لاند-16--17-عريض-ام-كلبس-اسود",
     "search_terms": [
       "لحية امامية لاند 16 - 17 عريض ام كلبس اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7536,13 +7550,13 @@ window.search-index = [
     "name": "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 113000.0,
     "slug": "ماسكة-دعامية-خلفية-برادو-24--اعلى-الدعامية-الخلفية-ايمن",
     "search_terms": [
       "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7550,13 +7564,13 @@ window.search-index = [
     "name": "لايت كورلا 17 - 19 امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 99000.0,
     "slug": "لايت-كورلا-17--19-امريكي-le-ايسر",
     "search_terms": [
       "لايت كورلا 17 - 19 امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7564,13 +7578,13 @@ window.search-index = [
     "name": "لايت كورلا 17 - 19 امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 99000.0,
     "slug": "لايت-كورلا-17--19-امريكي-le-ايمن",
     "search_terms": [
       "لايت كورلا 17 - 19 امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7578,13 +7592,13 @@ window.search-index = [
     "name": "واتربم كوستر لاند عكرب 1HZ كاز ",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 92000.0,
     "slug": "واتربم-كوستر-لاند-عكرب-1hz-كاز",
     "search_terms": [
       "واتربم كوستر لاند عكرب 1HZ كاز ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7592,13 +7606,13 @@ window.search-index = [
     "name": "لايت كامري 21 - داخل اسود SE امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 106000.0,
     "slug": "لايت-كامري-21--داخل-اسود-se-امريكي-ايسر",
     "search_terms": [
       "لايت كامري 21 - داخل اسود SE امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7606,13 +7620,13 @@ window.search-index = [
     "name": "لايت كامري 21 - داخل اسود SE امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 106000.0,
     "slug": "لايت-كامري-21--داخل-اسود-se-امريكي-ايمن",
     "search_terms": [
       "لايت كامري 21 - داخل اسود SE امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7620,13 +7634,13 @@ window.search-index = [
     "name": "شباك دعامية امامية هايلندر 22 - XSE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 97000.0,
+    "price": 96000.0,
     "slug": "شباك-دعامية-امامية-هايلندر-22--xse",
     "search_terms": [
       "شباك دعامية امامية هايلندر 22 - XSE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7634,13 +7648,13 @@ window.search-index = [
     "name": "MOTOR ASSY / FAN ماطور فان دشبول كوستر 22 - عام -12V مع سربس ",
     "category": "",
     "brand": "Denso",
-    "price": 111000.0,
+    "price": 102000.0,
     "slug": "motor-assy-fan-ماطور-فان-دشبول-كوستر-22--عام-12v-مع-سربس",
     "search_terms": [
       "MOTOR ASSY / FAN ماطور فان دشبول كوستر 22 - عام -12V مع سربس ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -7648,13 +7662,13 @@ window.search-index = [
     "name": "كفر دعامية خلفية برادو 24 - اسفل البك لايت اسود اساس مع فتحة سكن ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 113000.0,
     "slug": "كفر-دعامية-خلفية-برادو-24--اسفل-البك-لايت-اسود-اساس-مع-فتحة-سكن-ايسر",
     "search_terms": [
       "كفر دعامية خلفية برادو 24 - اسفل البك لايت اسود اساس مع فتحة سكن ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7662,13 +7676,13 @@ window.search-index = [
     "name": "كفر دعامية خلفية برادو 24 - اسفل البك لايت اسود اساس ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 85000.0,
     "slug": "كفر-دعامية-خلفية-برادو-24--اسفل-البك-لايت-اسود-اساس-ايمن",
     "search_terms": [
       "كفر دعامية خلفية برادو 24 - اسفل البك لايت اسود اساس ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7676,13 +7690,13 @@ window.search-index = [
     "name": "لحية امامية برادو 14 - 16 لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 87000.0,
     "slug": "لحية-امامية-برادو-14--16-لولوي",
     "search_terms": [
       "لحية امامية برادو 14 - 16 لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7690,13 +7704,13 @@ window.search-index = [
     "name": "تريشة باب جانبية لاند 16 - مع كتابة لاند كروزر اسود بلاك اديشن",
     "category": "",
     "brand": "DAISEN",
-    "price": 57000.0,
+    "price": 99000.0,
     "slug": "تريشة-باب-جانبية-لاند-16--مع-كتابة-لاند-كروزر-اسود-بلاك-اديشن",
     "search_terms": [
       "تريشة باب جانبية لاند 16 - مع كتابة لاند كروزر اسود بلاك اديشن",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7710,7 +7724,7 @@ window.search-index = [
       "كلج مروحة لاند 01 - 07 2UZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7718,13 +7732,13 @@ window.search-index = [
     "name": "هلال باب خلفي برادو 24 - اسود اساس ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 92000.0,
     "slug": "هلال-باب-خلفي-برادو-24--اسود-اساس-ايسر",
     "search_terms": [
       "هلال باب خلفي برادو 24 - اسود اساس ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7732,13 +7746,13 @@ window.search-index = [
     "name": "لايت كامري 21 - LE امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 106000.0,
     "slug": "لايت-كامري-21--le-امريكي-ايسر",
     "search_terms": [
       "لايت كامري 21 - LE امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7746,13 +7760,13 @@ window.search-index = [
     "name": "لايت كامري 21 - LE امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 106000.0,
     "slug": "لايت-كامري-21--le-امريكي-ايمن",
     "search_terms": [
       "لايت كامري 21 - LE امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7760,13 +7774,13 @@ window.search-index = [
     "name": "لحية امامية لاند 19 - 20 GRAND TURNING ام كلبس لون اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 110000.0,
     "slug": "لحية-امامية-لاند-19--20-grand-turning-ام-كلبس-لون-اسود",
     "search_terms": [
       "لحية امامية لاند 19 - 20 GRAND TURNING ام كلبس لون اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7780,7 +7794,7 @@ window.search-index = [
       "واتر بم لاند  08 - 11 8سلندر 2UZ -16100-59276",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7788,13 +7802,13 @@ window.search-index = [
     "name": "لايت رف فور 20 - 22 امريكي SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 116000.0,
     "slug": "لايت-رف-فور-20--22-امريكي-se-ايسر",
     "search_terms": [
       "لايت رف فور 20 - 22 امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7802,13 +7816,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 19 - 20 ام كلبس لون اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 104000.0,
     "slug": "لحية-خلفية-لاند-19--20-ام-كلبس-لون-اسود",
     "search_terms": [
       "لحية خلفية لاند 19 - 20 ام كلبس لون اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7816,13 +7830,13 @@ window.search-index = [
     "name": "اشارة لايت لاند 16 - LED سحب",
     "category": "",
     "brand": "DAISEN",
-    "price": 78000.0,
+    "price": 110000.0,
     "slug": "اشارة-لايت-لاند-16--led-سحب",
     "search_terms": [
       "اشارة لايت لاند 16 - LED سحب",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7830,13 +7844,13 @@ window.search-index = [
     "name": "لحية امامية لاند 16 - 17 عريض ام كلبس لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 99000.0,
+    "price": 103000.0,
     "slug": "لحية-امامية-لاند-16--17-عريض-ام-كلبس-لولوي",
     "search_terms": [
       "لحية امامية لاند 16 - 17 عريض ام كلبس لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7844,13 +7858,13 @@ window.search-index = [
     "name": "لايت كامري 18 - 20 امريكي LE SE دبل عدسة داخل اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 97000.0,
+    "price": 113000.0,
     "slug": "لايت-كامري-18--20-امريكي-le-se-دبل-عدسة-داخل-اسود-ايسر",
     "search_terms": [
       "لايت كامري 18 - 20 امريكي LE SE دبل عدسة داخل اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7858,13 +7872,13 @@ window.search-index = [
     "name": "لايت كامري 18 - 20 امريكي LE SE دبل عدسة داخل اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 97000.0,
+    "price": 113000.0,
     "slug": "لايت-كامري-18--20-امريكي-le-se-دبل-عدسة-داخل-اسود-ايمن",
     "search_terms": [
       "لايت كامري 18 - 20 امريكي LE SE دبل عدسة داخل اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7872,13 +7886,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 16 - 18 + واقيات لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 104000.0,
     "slug": "لحية-خلفية-لاند-16--18-+-واقيات-لولوي",
     "search_terms": [
       "لحية خلفية لاند 16 - 18 + واقيات لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7886,13 +7900,13 @@ window.search-index = [
     "name": "دعامية امامية لكزس LX570 16-21",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "دعامية-امامية-لكزس-lx570-16-21",
     "search_terms": [
       "دعامية امامية لكزس LX570 16-21",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7900,13 +7914,13 @@ window.search-index = [
     "name": "كلج مروحة فورجنر فيكو 05 - 15 كوستر 08 - 17 - 2TR",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "كلج-مروحة-فورجنر-فيكو-05--15-كوستر-08--17--2tr",
     "search_terms": [
       "كلج مروحة فورجنر فيكو 05 - 15 كوستر 08 - 17 - 2TR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -7914,13 +7928,13 @@ window.search-index = [
     "name": "لحية امامية لاند 2021 لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 107000.0,
     "slug": "لحية-امامية-لاند-2021-لون-اسود",
     "search_terms": [
       "لحية امامية لاند 2021 لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7928,13 +7942,13 @@ window.search-index = [
     "name": "تريشة قمارة لاند 22 - كروم طافي SET ",
     "category": "",
     "brand": "DAISEN",
-    "price": 114000.0,
+    "price": 113000.0,
     "slug": "تريشة-قمارة-لاند-22--كروم-طافي-set",
     "search_terms": [
       "تريشة قمارة لاند 22 - كروم طافي SET ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7942,13 +7956,13 @@ window.search-index = [
     "name": "لحية امامية لاند 2021 لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 107000.0,
     "slug": "لحية-امامية-لاند-2021-لون-لولوي",
     "search_terms": [
       "لحية امامية لاند 2021 لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -7956,13 +7970,13 @@ window.search-index = [
     "name": "كفر سبير برادو 03 -09 نيكل اسود",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 120000.0,
     "slug": "كفر-سبير-برادو-03-09-نيكل-اسود",
     "search_terms": [
       "كفر سبير برادو 03 -09 نيكل اسود",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7976,7 +7990,7 @@ window.search-index = [
       "EVAPORATOR SUB ASSY 15-13 فريز تبريد يارس 10 - 13",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -7984,13 +7998,13 @@ window.search-index = [
     "name": "هلال باب خلفي برادو 24 - اسود اساس ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 78000.0,
     "slug": "هلال-باب-خلفي-برادو-24--اسود-اساس-ايمن",
     "search_terms": [
       "هلال باب خلفي برادو 24 - اسود اساس ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -7998,13 +8012,13 @@ window.search-index = [
     "name": "فريز تبريد امامي لاند 08 - 21",
     "category": "",
     "brand": "Denso",
-    "price": 125000.0,
+    "price": 124000.0,
     "slug": "فريز-تبريد-امامي-لاند-08--21",
     "search_terms": [
       "فريز تبريد امامي لاند 08 - 21",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -8012,13 +8026,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 19 - 20 ام كلبس لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 97000.0,
+    "price": 106000.0,
     "slug": "لحية-خلفية-لاند-19--20-ام-كلبس-لولوي",
     "search_terms": [
       "لحية خلفية لاند 19 - 20 ام كلبس لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8026,13 +8040,13 @@ window.search-index = [
     "name": "عينة كلج لاند 1GR -31210-60340 وهايس 7GR 19-",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "عينة-كلج-لاند-1gr-31210-60340-وهايس-7gr-19",
     "search_terms": [
       "عينة كلج لاند 1GR -31210-60340 وهايس 7GR 19-",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8040,13 +8054,13 @@ window.search-index = [
     "name": "زيت محرك  HDC 50 Veedol CF- 25 Lt",
     "category": "",
     "brand": "Veedol",
-    "price": 142000.0,
+    "price": 97000.0,
     "slug": "زيت-محرك-hdc-50-veedol-cf-25-lt",
     "search_terms": [
       "زيت محرك  HDC 50 Veedol CF- 25 Lt",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -8054,13 +8068,13 @@ window.search-index = [
     "name": "دعامية امامية لاند 12 - 15 لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 114000.0,
+    "price": 113000.0,
     "slug": "دعامية-امامية-لاند-12--15-لولوي",
     "search_terms": [
       "دعامية امامية لاند 12 - 15 لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8068,13 +8082,13 @@ window.search-index = [
     "name": "لايت كورلا 20 - امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 106000.0,
     "slug": "لايت-كورلا-20--امريكي-le-ايسر",
     "search_terms": [
       "لايت كورلا 20 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8082,13 +8096,13 @@ window.search-index = [
     "name": "لايت كورلا 20 - امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 106000.0,
     "slug": "لايت-كورلا-20--امريكي-le-ايمن",
     "search_terms": [
       "لايت كورلا 20 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8096,13 +8110,13 @@ window.search-index = [
     "name": "دعامية خلفية لاند 16 - 21 لون لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 125000.0,
+    "price": 106000.0,
     "slug": "دعامية-خلفية-لاند-16--21-لون-لولوي",
     "search_terms": [
       "دعامية خلفية لاند 16 - 21 لون لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8110,13 +8124,13 @@ window.search-index = [
     "name": "فريز تبريد امامي كامري 08 - 17 افلون 08 - 17 - DIC",
     "category": "",
     "brand": "Denso",
-    "price": 125000.0,
+    "price": 124000.0,
     "slug": "فريز-تبريد-امامي-كامري-08--17-افلون-08--17--dic",
     "search_terms": [
       "فريز تبريد امامي كامري 08 - 17 افلون 08 - 17 - DIC",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -8124,13 +8138,13 @@ window.search-index = [
     "name": "كلج مروحة لاند لكزس 3UR 1UR",
     "category": "",
     "brand": "AISIN",
-    "price": 114000.0,
+    "price": 106000.0,
     "slug": "كلج-مروحة-لاند-لكزس-3ur-1ur",
     "search_terms": [
       "كلج مروحة لاند لكزس 3UR 1UR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8138,13 +8152,13 @@ window.search-index = [
     "name": "باور بريك بيكب تويوتا جمرة 3RZ",
     "category": "",
     "brand": "ADVICS",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "باور-بريك-بيكب-تويوتا-جمرة-3rz",
     "search_terms": [
       "باور بريك بيكب تويوتا جمرة 3RZ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -8152,13 +8166,13 @@ window.search-index = [
     "name": "جنح لاند 23 - ليد استوب لايت لمتد LIMITED اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 156000.0,
+    "price": 127000.0,
     "slug": "جنح-لاند-23--ليد-استوب-لايت-لمتد-limited-اسود",
     "search_terms": [
       "جنح لاند 23 - ليد استوب لايت لمتد LIMITED اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8166,13 +8180,13 @@ window.search-index = [
     "name": "فريز تبريد دشبول بيكاتشو كورلا 06 - 08 امريكي رفيع EVAPORATOR SUB ASSY",
     "category": "",
     "brand": "Denso",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "فريز-تبريد-دشبول-بيكاتشو-كورلا-06--08-امريكي-رفيع-evaporator-sub-assy",
     "search_terms": [
       "فريز تبريد دشبول بيكاتشو كورلا 06 - 08 امريكي رفيع EVAPORATOR SUB ASSY",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -8180,13 +8194,13 @@ window.search-index = [
     "name": "دعامية خلفية لاند 08 - 15 لون اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 113000.0,
     "slug": "دعامية-خلفية-لاند-08--15-لون-اسود",
     "search_terms": [
       "دعامية خلفية لاند 08 - 15 لون اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8194,13 +8208,13 @@ window.search-index = [
     "name": "لايت كورلا 17 - 19 امريكي SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 113000.0,
     "slug": "لايت-كورلا-17--19-امريكي-se-ايسر",
     "search_terms": [
       "لايت كورلا 17 - 19 امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8208,13 +8222,13 @@ window.search-index = [
     "name": "لايت كورلا 17 - 19 امريكي SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 113000.0,
     "slug": "لايت-كورلا-17--19-امريكي-se-ايمن",
     "search_terms": [
       "لايت كورلا 17 - 19 امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8222,13 +8236,13 @@ window.search-index = [
     "name": "دعامية خلفية لاند 16 - 21 لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 125000.0,
+    "price": 106000.0,
     "slug": "دعامية-خلفية-لاند-16--21-لون-اسود",
     "search_terms": [
       "دعامية خلفية لاند 16 - 21 لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8236,13 +8250,13 @@ window.search-index = [
     "name": "بروجكتر + كفر كامري 21 - SE شبكي",
     "category": "",
     "brand": "DLAA",
-    "price": 114000.0,
+    "price": 113000.0,
     "slug": "بروجكتر-+-كفر-كامري-21--se-شبكي",
     "search_terms": [
       "بروجكتر + كفر كامري 21 - SE شبكي",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -8250,13 +8264,13 @@ window.search-index = [
     "name": "لايت رف فور 20 - 22 امريكي LE-XLE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 127000.0,
     "slug": "لايت-رف-فور-20--22-امريكي-le-xle-ايسر",
     "search_terms": [
       "لايت رف فور 20 - 22 امريكي LE-XLE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8264,13 +8278,13 @@ window.search-index = [
     "name": "لايت رف فور 20 - 22 امريكي LE-XLE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 127000.0,
     "slug": "لايت-رف-فور-20--22-امريكي-le-xle-ايمن",
     "search_terms": [
       "لايت رف فور 20 - 22 امريكي LE-XLE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8278,13 +8292,13 @@ window.search-index = [
     "name": "صينية كلج كوستر 2TR فايبرة ابيض 31250-60500",
     "category": "",
     "brand": "AISIN",
-    "price": 121000.0,
+    "price": 92000.0,
     "slug": "صينية-كلج-كوستر-2tr-فايبرة-ابيض-31250-60500",
     "search_terms": [
       "صينية كلج كوستر 2TR فايبرة ابيض 31250-60500",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8292,13 +8306,13 @@ window.search-index = [
     "name": "تريشة قمارة لاند 22 عالية اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 99000.0,
+    "price": 116000.0,
     "slug": "تريشة-قمارة-لاند-22-عالية-اسود",
     "search_terms": [
       "تريشة قمارة لاند 22 عالية اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8306,13 +8320,13 @@ window.search-index = [
     "name": "كانستر لاند لكزس 12 - 15",
     "category": "",
     "brand": "AISAN",
-    "price": 139000.0,
+    "price": 138000.0,
     "slug": "كانستر-لاند-لكزس-12--15",
     "search_terms": [
       "كانستر لاند لكزس 12 - 15",
       "",
       "AISAN",
-      ""
+      "False"
     ]
   },
   {
@@ -8320,13 +8334,13 @@ window.search-index = [
     "name": "زيت محرك 15W40 Veedol Max Pro Ci-4 25Lt ",
     "category": "",
     "brand": "Veedol",
-    "price": 132000.0,
+    "price": 97000.0,
     "slug": "زيت-محرك-15w40-veedol-max-pro-ci-4-25lt",
     "search_terms": [
       "زيت محرك 15W40 Veedol Max Pro Ci-4 25Lt ",
       "",
       "Veedol",
-      ""
+      "False"
     ]
   },
   {
@@ -8334,13 +8348,13 @@ window.search-index = [
     "name": "صينية كلج لاند 1HZ كاز",
     "category": "",
     "brand": "AISIN",
-    "price": 135000.0,
+    "price": 120000.0,
     "slug": "صينية-كلج-لاند-1hz-كاز",
     "search_terms": [
       "صينية كلج لاند 1HZ كاز",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8348,13 +8362,13 @@ window.search-index = [
     "name": "فريز تبريد ميتسيوبيشي باجيرو 07 - 19 ",
     "category": "",
     "brand": "Denso",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "فريز-تبريد-ميتسيوبيشي-باجيرو-07--19",
     "search_terms": [
       "فريز تبريد ميتسيوبيشي باجيرو 07 - 19 ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -8362,13 +8376,13 @@ window.search-index = [
     "name": "كانستر لاند 08 - 15",
     "category": "",
     "brand": "AISAN",
-    "price": 135000.0,
+    "price": 134000.0,
     "slug": "كانستر-لاند-08--15",
     "search_terms": [
       "كانستر لاند 08 - 15",
       "",
       "AISAN",
-      ""
+      "False"
     ]
   },
   {
@@ -8376,13 +8390,13 @@ window.search-index = [
     "name": "بك زاوية لكزس ES اي اس 18 - خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 116000.0,
+    "price": 120000.0,
     "slug": "بك-زاوية-لكزس-es-اي-اس-18--خليجي-ايسر",
     "search_terms": [
       "بك زاوية لكزس ES اي اس 18 - خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8390,13 +8404,13 @@ window.search-index = [
     "name": "بك زاوية لكزس ES اي اس 18 - خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 116000.0,
+    "price": 120000.0,
     "slug": "بك-زاوية-لكزس-es-اي-اس-18--خليجي-ايمن",
     "search_terms": [
       "بك زاوية لكزس ES اي اس 18 - خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8404,13 +8418,13 @@ window.search-index = [
     "name": "PSO عنبار بريك داينا 97 - 02 14B 15B 4Y 3RZ ",
     "category": "",
     "brand": "ADVICS",
-    "price": 114000.0,
+    "price": 106000.0,
     "slug": "pso-عنبار-بريك-داينا-97--02-14b-15b-4y-3rz",
     "search_terms": [
       "PSO عنبار بريك داينا 97 - 02 14B 15B 4Y 3RZ ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -8418,13 +8432,13 @@ window.search-index = [
     "name": "لحية امامية لاند 08 - 11 لولوي",
     "category": "",
     "brand": "Vstar",
-    "price": 125000.0,
+    "price": 134000.0,
     "slug": "لحية-امامية-لاند-08--11-لولوي",
     "search_terms": [
       "لحية امامية لاند 08 - 11 لولوي",
       "",
       "Vstar",
-      ""
+      "False"
     ]
   },
   {
@@ -8432,13 +8446,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 08 - 11 لولوي + واقيات",
     "category": "",
     "brand": "Vstar",
-    "price": 125000.0,
+    "price": 134000.0,
     "slug": "لحية-خلفية-لاند-08--11-لولوي-+-واقيات",
     "search_terms": [
       "لحية خلفية لاند 08 - 11 لولوي + واقيات",
       "",
       "Vstar",
-      ""
+      "False"
     ]
   },
   {
@@ -8446,13 +8460,13 @@ window.search-index = [
     "name": "لايت كامري 21 - داخل نيكل  XLE امريكي  3 خطوط ليد ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 141000.0,
     "slug": "لايت-كامري-21--داخل-نيكل-xle-امريكي-3-خطوط-ليد-ايسر",
     "search_terms": [
       "لايت كامري 21 - داخل نيكل  XLE امريكي  3 خطوط ليد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8460,13 +8474,13 @@ window.search-index = [
     "name": "لايت كامري 18 - 20 امريكي XSE داخل صفحة نيكل 3 خطوط ليد ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 141000.0,
     "slug": "لايت-كامري-18--20-امريكي-xse-داخل-صفحة-نيكل-3-خطوط-ليد-ايسر",
     "search_terms": [
       "لايت كامري 18 - 20 امريكي XSE داخل صفحة نيكل 3 خطوط ليد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8474,13 +8488,13 @@ window.search-index = [
     "name": "لايت كامري 18 - 20 امريكي XSE داخل صفحة نيكل 3 خطوط ليد ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 141000.0,
     "slug": "لايت-كامري-18--20-امريكي-xse-داخل-صفحة-نيكل-3-خطوط-ليد-ايمن",
     "search_terms": [
       "لايت كامري 18 - 20 امريكي XSE داخل صفحة نيكل 3 خطوط ليد ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8488,13 +8502,13 @@ window.search-index = [
     "name": "لايت كامري 21 - داخل اسود XSE  امريكي 3 خطوط ليد ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 134000.0,
     "slug": "لايت-كامري-21--داخل-اسود-xse-امريكي-3-خطوط-ليد-ايمن",
     "search_terms": [
       "لايت كامري 21 - داخل اسود XSE  امريكي 3 خطوط ليد ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8502,13 +8516,13 @@ window.search-index = [
     "name": "لايت كامري 21 - داخل اسود XSE امريكي  3 خطوط ليد  ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 134000.0,
     "slug": "لايت-كامري-21--داخل-اسود-xse-امريكي-3-خطوط-ليد-ايسر",
     "search_terms": [
       "لايت كامري 21 - داخل اسود XSE امريكي  3 خطوط ليد  ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8516,13 +8530,13 @@ window.search-index = [
     "name": "تريشة باب خلفية برادو 24 - اسود اساس ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "تريشة-باب-خلفية-برادو-24--اسود-اساس-ايسر",
     "search_terms": [
       "تريشة باب خلفية برادو 24 - اسود اساس ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8536,7 +8550,7 @@ window.search-index = [
       "واقية طين خلفية هايلندر 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8550,7 +8564,7 @@ window.search-index = [
       "47201-36432 عنبار بريك كوستر عام 2TR 1HZ PSO",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -8558,13 +8572,13 @@ window.search-index = [
     "name": "لايت كامري 21 - داخل نيكل  XLE امريكي  3 خطوط ليد  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 141000.0,
     "slug": "لايت-كامري-21--داخل-نيكل-xle-امريكي-3-خطوط-ليد-ايمن",
     "search_terms": [
       "لايت كامري 21 - داخل نيكل  XLE امريكي  3 خطوط ليد  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8572,13 +8586,13 @@ window.search-index = [
     "name": "لحية امامية لاند 08 - 11 لون اسود ",
     "category": "",
     "brand": "Vstar",
-    "price": 125000.0,
+    "price": 134000.0,
     "slug": "لحية-امامية-لاند-08--11-لون-اسود",
     "search_terms": [
       "لحية امامية لاند 08 - 11 لون اسود ",
       "",
       "Vstar",
-      ""
+      "False"
     ]
   },
   {
@@ -8586,13 +8600,13 @@ window.search-index = [
     "name": "شباك لكزس 12 - 15 LX570 فيلي",
     "category": "",
     "brand": "GBT",
-    "price": 121000.0,
+    "price": 120000.0,
     "slug": "شباك-لكزس-12--15-lx570-فيلي",
     "search_terms": [
       "شباك لكزس 12 - 15 LX570 فيلي",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -8600,13 +8614,13 @@ window.search-index = [
     "name": "لحية امامية لاند 22 - 23 - لمتد كويتي بريمي لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 128000.0,
+    "price": 141000.0,
     "slug": "لحية-امامية-لاند-22--23--لمتد-كويتي-بريمي-لولوي",
     "search_terms": [
       "لحية امامية لاند 22 - 23 - لمتد كويتي بريمي لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8614,13 +8628,13 @@ window.search-index = [
     "name": "كلج مروحة كوستر 1HZ -16210-17080 كاز",
     "category": "",
     "brand": "AISIN",
-    "price": 128000.0,
+    "price": 120000.0,
     "slug": "كلج-مروحة-كوستر-1hz-16210-17080-كاز",
     "search_terms": [
       "كلج مروحة كوستر 1HZ -16210-17080 كاز",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8628,13 +8642,13 @@ window.search-index = [
     "name": "راديتر تبريد كامري 18 - رف فور 19 -",
     "category": "",
     "brand": "Denso",
-    "price": 128000.0,
+    "price": 127000.0,
     "slug": "راديتر-تبريد-كامري-18--رف-فور-19",
     "search_terms": [
       "راديتر تبريد كامري 18 - رف فور 19 -",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -8642,13 +8656,13 @@ window.search-index = [
     "name": "صينية كلج 1GR  -31250-60460",
     "category": "",
     "brand": "AISIN",
-    "price": 135000.0,
+    "price": 127000.0,
     "slug": "صينية-كلج-1gr-31250-60460",
     "search_terms": [
       "صينية كلج 1GR  -31250-60460",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8656,13 +8670,13 @@ window.search-index = [
     "name": "تريشة باب خلفية برادو 24 - اسود اساس ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 183000.0,
     "slug": "تريشة-باب-خلفية-برادو-24--اسود-اساس-ايمن",
     "search_terms": [
       "تريشة باب خلفية برادو 24 - اسود اساس ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8670,13 +8684,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 16 - 21 لولوي SET",
     "category": "",
     "brand": "DAISEN",
-    "price": 128000.0,
+    "price": 169000.0,
     "slug": "دوسة-جانبية-لاند-16--21-لولوي-set",
     "search_terms": [
       "دوسة جانبية لاند 16 - 21 لولوي SET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8684,13 +8698,13 @@ window.search-index = [
     "name": "PSO عنبار بريك كوستر 14B 15B 3RZ 1HZ",
     "category": "",
     "brand": "ADVICS",
-    "price": 128000.0,
+    "price": 120000.0,
     "slug": "pso-عنبار-بريك-كوستر-14b-15b-3rz-1hz",
     "search_terms": [
       "PSO عنبار بريك كوستر 14B 15B 3RZ 1HZ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -8698,13 +8712,13 @@ window.search-index = [
     "name": "لايت كامري 18 - خليجي  عام ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 134000.0,
     "slug": "لايت-كامري-18--خليجي-عام-ايسر",
     "search_terms": [
       "لايت كامري 18 - خليجي  عام ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8712,13 +8726,13 @@ window.search-index = [
     "name": "لايت كامري 18 - خليجي عام ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 134000.0,
     "slug": "لايت-كامري-18--خليجي-عام-ايمن",
     "search_terms": [
       "لايت كامري 18 - خليجي عام ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8726,13 +8740,13 @@ window.search-index = [
     "name": "كلج مروحة لاند 1VD -16210-51020 كاز",
     "category": "",
     "brand": "AISIN",
-    "price": 128000.0,
+    "price": 127000.0,
     "slug": "كلج-مروحة-لاند-1vd-16210-51020-كاز",
     "search_terms": [
       "كلج مروحة لاند 1VD -16210-51020 كاز",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8740,13 +8754,13 @@ window.search-index = [
     "name": "صينية كلج بيكب ريفو 2GD هايس 1GD كاز ",
     "category": "",
     "brand": "AISIN",
-    "price": 128000.0,
+    "price": 127000.0,
     "slug": "صينية-كلج-بيكب-ريفو-2gd-هايس-1gd-كاز",
     "search_terms": [
       "صينية كلج بيكب ريفو 2GD هايس 1GD كاز ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8754,13 +8768,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 08 - 11 اسود + واقيات",
     "category": "",
     "brand": "Vstar",
-    "price": 125000.0,
+    "price": 134000.0,
     "slug": "لحية-خلفية-لاند-08--11-اسود-+-واقيات",
     "search_terms": [
       "لحية خلفية لاند 08 - 11 اسود + واقيات",
       "",
       "Vstar",
-      ""
+      "False"
     ]
   },
   {
@@ -8768,13 +8782,13 @@ window.search-index = [
     "name": "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 156000.0,
+    "price": 155000.0,
     "slug": "لايت-بيكب-ريفو-22--داخل-اسود-ونيكل-ليد-ايسر",
     "search_terms": [
       "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8782,13 +8796,13 @@ window.search-index = [
     "name": "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 156000.0,
+    "price": 155000.0,
     "slug": "لايت-بيكب-ريفو-22--داخل-اسود-ونيكل-ليد-ايمن",
     "search_terms": [
       "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8796,13 +8810,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 08 - 15 لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 148000.0,
     "slug": "دوسة-جانبية-لاند-08--15-لولوي",
     "search_terms": [
       "دوسة جانبية لاند 08 - 15 لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -8810,13 +8824,13 @@ window.search-index = [
     "name": "فريز تبريد امامي لاند 98 - 07 1FZ 2UZ 1HD",
     "category": "",
     "brand": "Denso",
-    "price": 128000.0,
+    "price": 127000.0,
     "slug": "فريز-تبريد-امامي-لاند-98--07-1fz-2uz-1hd",
     "search_terms": [
       "فريز تبريد امامي لاند 98 - 07 1FZ 2UZ 1HD",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -8824,13 +8838,13 @@ window.search-index = [
     "name": "عنبار بريك كورلا 08 - 12 - برغي 10 ",
     "category": "",
     "brand": "ADVICS",
-    "price": 129000.0,
+    "price": 128000.0,
     "slug": "عنبار-بريك-كورلا-08--12--برغي-10",
     "search_terms": [
       "عنبار بريك كورلا 08 - 12 - برغي 10 ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -8838,13 +8852,13 @@ window.search-index = [
     "name": "لايت لكزس ES اي اس 18 - امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 148000.0,
+    "price": 141000.0,
     "slug": "لايت-لكزس-es-اي-اس-18--امريكي-ايسر",
     "search_terms": [
       "لايت لكزس ES اي اس 18 - امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8852,13 +8866,13 @@ window.search-index = [
     "name": "لايت لكزس ES اي اس 18 - امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 148000.0,
+    "price": 141000.0,
     "slug": "لايت-لكزس-es-اي-اس-18--امريكي-ايمن",
     "search_terms": [
       "لايت لكزس ES اي اس 18 - امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8866,13 +8880,13 @@ window.search-index = [
     "name": "لايت لكزس ES اي اس 18 - خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 142000.0,
+    "price": 141000.0,
     "slug": "لايت-لكزس-es-اي-اس-18--خليجي-ايسر",
     "search_terms": [
       "لايت لكزس ES اي اس 18 - خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8880,13 +8894,13 @@ window.search-index = [
     "name": "لايت لكزس ES اي اس 18 - خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 142000.0,
+    "price": 141000.0,
     "slug": "لايت-لكزس-es-اي-اس-18--خليجي-ايمن",
     "search_terms": [
       "لايت لكزس ES اي اس 18 - خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8894,13 +8908,13 @@ window.search-index = [
     "name": "تريشة مسطرة تحت شباك الدعامية الامامية برادو 24 - عليا  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 141000.0,
     "slug": "تريشة-مسطرة-تحت-شباك-الدعامية-الامامية-برادو-24--عليا",
     "search_terms": [
       "تريشة مسطرة تحت شباك الدعامية الامامية برادو 24 - عليا  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8908,13 +8922,13 @@ window.search-index = [
     "name": "PSO عنبار بريك داينا 200 - 88 - 96 11B 13B 14B 22R 4Y ",
     "category": "",
     "brand": "ADVICS",
-    "price": 135000.0,
+    "price": 127000.0,
     "slug": "pso-عنبار-بريك-داينا-200--88--96-11b-13b-14b-22r-4y",
     "search_terms": [
       "PSO عنبار بريك داينا 200 - 88 - 96 11B 13B 14B 22R 4Y ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -8922,13 +8936,13 @@ window.search-index = [
     "name": "كلج سيت عينة + صينية + 2TR ",
     "category": "",
     "brand": "AISIN",
-    "price": 156000.0,
+    "price": 155000.0,
     "slug": "كلج-سيت-عينة-+-صينية-+-2tr",
     "search_terms": [
       "كلج سيت عينة + صينية + 2TR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -8936,13 +8950,13 @@ window.search-index = [
     "name": "سيت تريشة باب جانبية + جاملغات برادو 03 - 09 8 قطعة ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 187000.0,
+    "price": 186000.0,
     "slug": "سيت-تريشة-باب-جانبية-+-جاملغات-برادو-03--09-8-قطعة",
     "search_terms": [
       "سيت تريشة باب جانبية + جاملغات برادو 03 - 09 8 قطعة ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8950,13 +8964,13 @@ window.search-index = [
     "name": "لايت كورلا 23 امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 162000.0,
     "slug": "لايت-كورلا-23-امريكي-le-ايسر",
     "search_terms": [
       "لايت كورلا 23 امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8964,13 +8978,13 @@ window.search-index = [
     "name": "لايت كورلا 23 امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 162000.0,
     "slug": "لايت-كورلا-23-امريكي-le-ايمن",
     "search_terms": [
       "لايت كورلا 23 امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8978,13 +8992,13 @@ window.search-index = [
     "name": "لايت كامري 22- خليجي LE هايبرد عام ايسر TY-22CMM-002A",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 111000.0,
+    "price": 148000.0,
     "slug": "لايت-كامري-22-خليجي-le-هايبرد-عام-ايسر-ty-22cmm-002a",
     "search_terms": [
       "لايت كامري 22- خليجي LE هايبرد عام ايسر TY-22CMM-002A",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -8992,13 +9006,13 @@ window.search-index = [
     "name": "لايت كامري 22- خليجي LE هايبرد عام ايمن  TY-22CMM-002A",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 111000.0,
+    "price": 148000.0,
     "slug": "لايت-كامري-22-خليجي-le-هايبرد-عام-ايمن-ty-22cmm-002a",
     "search_terms": [
       "لايت كامري 22- خليجي LE هايبرد عام ايمن  TY-22CMM-002A",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9006,13 +9020,13 @@ window.search-index = [
     "name": "دعامية امامية لاند 22 - عليا لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 142000.0,
+    "price": 141000.0,
     "slug": "دعامية-امامية-لاند-22--عليا-لون-اسود",
     "search_terms": [
       "دعامية امامية لاند 22 - عليا لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9020,13 +9034,13 @@ window.search-index = [
     "name": "دعامية امامية لاند 22 - عليا لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 153000.0,
+    "price": 141000.0,
     "slug": "دعامية-امامية-لاند-22--عليا-لون-لولوي",
     "search_terms": [
       "دعامية امامية لاند 22 - عليا لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9034,13 +9048,13 @@ window.search-index = [
     "name": "راديتر تبريد كوستر 17 - رقم 3 صغيرة - ظهر السائق",
     "category": "",
     "brand": "Denso",
-    "price": 145000.0,
+    "price": 144000.0,
     "slug": "راديتر-تبريد-كوستر-17--رقم-3-صغيرة--ظهر-السائق",
     "search_terms": [
       "راديتر تبريد كوستر 17 - رقم 3 صغيرة - ظهر السائق",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9048,13 +9062,13 @@ window.search-index = [
     "name": "لايت كامري 22 خليجي GLX ليد 3 عدسات ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 114000.0,
+    "price": 141000.0,
     "slug": "لايت-كامري-22-خليجي-glx-ليد-3-عدسات-ايسر",
     "search_terms": [
       "لايت كامري 22 خليجي GLX ليد 3 عدسات ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9062,13 +9076,13 @@ window.search-index = [
     "name": "لايت كامري 22 خليجي GLX ليد 3 عدسات ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 114000.0,
+    "price": 141000.0,
     "slug": "لايت-كامري-22-خليجي-glx-ليد-3-عدسات-ايمن",
     "search_terms": [
       "لايت كامري 22 خليجي GLX ليد 3 عدسات ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9076,13 +9090,13 @@ window.search-index = [
     "name": "بك زاوية لكزس 16 - 21 LX بلاك اديشن كورو ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 149000.0,
+    "price": 175000.0,
     "slug": "بك-زاوية-لكزس-16--21-lx-بلاك-اديشن-كورو-ايسر",
     "search_terms": [
       "بك زاوية لكزس 16 - 21 LX بلاك اديشن كورو ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9090,13 +9104,13 @@ window.search-index = [
     "name": "بك زاوية لكزس 16 - 21 LX بلاك اديشن كورو ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 149000.0,
+    "price": 175000.0,
     "slug": "بك-زاوية-لكزس-16--21-lx-بلاك-اديشن-كورو-ايمن",
     "search_terms": [
       "بك زاوية لكزس 16 - 21 LX بلاك اديشن كورو ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9104,13 +9118,13 @@ window.search-index = [
     "name": "بك زاوية لكزس 16 - 21 LX احمر ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 142000.0,
+    "price": 166000.0,
     "slug": "بك-زاوية-لكزس-16--21-lx-احمر-ايمن",
     "search_terms": [
       "بك زاوية لكزس 16 - 21 LX احمر ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9118,13 +9132,13 @@ window.search-index = [
     "name": "بك زاوية لكزس 16 - 21 LX احمر ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 142000.0,
+    "price": 166000.0,
     "slug": "بك-زاوية-لكزس-16--21-lx-احمر-ايسر",
     "search_terms": [
       "بك زاوية لكزس 16 - 21 LX احمر ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9132,13 +9146,13 @@ window.search-index = [
     "name": "تريشة باب جانبية لكزس 22 - OEM اسود SET",
     "category": "",
     "brand": "DAISEN",
-    "price": 165000.0,
+    "price": 164000.0,
     "slug": "تريشة-باب-جانبية-لكزس-22--oem-اسود-set",
     "search_terms": [
       "تريشة باب جانبية لكزس 22 - OEM اسود SET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9146,13 +9160,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 22 - اسود SET",
     "category": "",
     "brand": "DAISEN",
-    "price": 156000.0,
+    "price": 155000.0,
     "slug": "دوسة-جانبية-لاند-22--اسود-set",
     "search_terms": [
       "دوسة جانبية لاند 22 - اسود SET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9160,13 +9174,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 22 - لولوي SET",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 155000.0,
     "slug": "دوسة-جانبية-لاند-22--لولوي-set",
     "search_terms": [
       "دوسة جانبية لاند 22 - لولوي SET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9174,13 +9188,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 22 - لولوي ",
     "category": "",
     "brand": "GBT",
-    "price": 163000.0,
+    "price": 162000.0,
     "slug": "دوسة-جانبية-لاند-22--لولوي",
     "search_terms": [
       "دوسة جانبية لاند 22 - لولوي ",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -9188,13 +9202,13 @@ window.search-index = [
     "name": "بدي كت لكزس 12 - LX570 15 لولوي",
     "category": "",
     "brand": "GBT",
-    "price": 178000.0,
+    "price": 176000.0,
     "slug": "بدي-كت-لكزس-12--lx570-15-لولوي",
     "search_terms": [
       "بدي كت لكزس 12 - LX570 15 لولوي",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -9202,13 +9216,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 22 - اسود ",
     "category": "",
     "brand": "GBT",
-    "price": 163000.0,
+    "price": 162000.0,
     "slug": "دوسة-جانبية-لاند-22--اسود",
     "search_terms": [
       "دوسة جانبية لاند 22 - اسود ",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -9216,13 +9230,13 @@ window.search-index = [
     "name": "لايت برادو 14 - 17 اسود زنون هايلوجين ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 170000.0,
+    "price": 169000.0,
     "slug": "لايت-برادو-14--17-اسود-زنون-هايلوجين-ايسر",
     "search_terms": [
       "لايت برادو 14 - 17 اسود زنون هايلوجين ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9230,13 +9244,13 @@ window.search-index = [
     "name": "لايت برادو 14 - 17 اسود زنون هايلوجين ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 170000.0,
+    "price": 169000.0,
     "slug": "لايت-برادو-14--17-اسود-زنون-هايلوجين-ايمن",
     "search_terms": [
       "لايت برادو 14 - 17 اسود زنون هايلوجين ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9244,13 +9258,13 @@ window.search-index = [
     "name": "دعامية امامية لكزس 12 - 15 لولوي ",
     "category": "",
     "brand": "GBT",
-    "price": 170000.0,
+    "price": 169000.0,
     "slug": "دعامية-امامية-لكزس-12--15-لولوي",
     "search_terms": [
       "دعامية امامية لكزس 12 - 15 لولوي ",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -9258,13 +9272,13 @@ window.search-index = [
     "name": "دعامية امامية لكزس 12 - 15 لون اسود",
     "category": "",
     "brand": "GBT",
-    "price": 170000.0,
+    "price": 169000.0,
     "slug": "دعامية-امامية-لكزس-12--15-لون-اسود",
     "search_terms": [
       "دعامية امامية لكزس 12 - 15 لون اسود",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -9272,13 +9286,13 @@ window.search-index = [
     "name": "يدة ابواب كاملة جانبية لاند 16 - كروم ",
     "category": "",
     "brand": "DAISEN",
-    "price": 78000.0,
+    "price": 155000.0,
     "slug": "يدة-ابواب-كاملة-جانبية-لاند-16--كروم",
     "search_terms": [
       "يدة ابواب كاملة جانبية لاند 16 - كروم ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9286,13 +9300,13 @@ window.search-index = [
     "name": "دوسة جانبية لاند 08 - 15 لون اسود SET",
     "category": "",
     "brand": "Vstar",
-    "price": 135000.0,
+    "price": 162000.0,
     "slug": "دوسة-جانبية-لاند-08--15-لون-اسود-set",
     "search_terms": [
       "دوسة جانبية لاند 08 - 15 لون اسود SET",
       "",
       "Vstar",
-      ""
+      "False"
     ]
   },
   {
@@ -9300,13 +9314,13 @@ window.search-index = [
     "name": "لايت رف فور 23 - امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 135000.0,
+    "price": 226000.0,
     "slug": "لايت-رف-فور-23--امريكي-le-ايمن",
     "search_terms": [
       "لايت رف فور 23 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9314,13 +9328,13 @@ window.search-index = [
     "name": "لايت افلون 19 - بدون كتف زنون ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 185000.0,
+    "price": 183000.0,
     "slug": "لايت-افلون-19--بدون-كتف-زنون-ايسر",
     "search_terms": [
       "لايت افلون 19 - بدون كتف زنون ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9328,13 +9342,13 @@ window.search-index = [
     "name": "لايت افلون 19 - بدون كتف زنون ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 185000.0,
+    "price": 183000.0,
     "slug": "لايت-افلون-19--بدون-كتف-زنون-ايمن",
     "search_terms": [
       "لايت افلون 19 - بدون كتف زنون ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9342,13 +9356,13 @@ window.search-index = [
     "name": "لايت رف فور 19 - 21 امريكي هايبرد ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 135000.0,
+    "price": 183000.0,
     "slug": "لايت-رف-فور-19--21-امريكي-هايبرد-ايسر",
     "search_terms": [
       "لايت رف فور 19 - 21 امريكي هايبرد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9356,13 +9370,13 @@ window.search-index = [
     "name": "لايت رف فور 19 - 21 امريكي هايبرد ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 135000.0,
+    "price": 183000.0,
     "slug": "لايت-رف-فور-19--21-امريكي-هايبرد-ايمن",
     "search_terms": [
       "لايت رف فور 19 - 21 امريكي هايبرد ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9370,13 +9384,13 @@ window.search-index = [
     "name": "لايت رف فور 23 - امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 135000.0,
+    "price": 226000.0,
     "slug": "لايت-رف-فور-23--امريكي-le-ايسر",
     "search_terms": [
       "لايت رف فور 23 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9384,13 +9398,13 @@ window.search-index = [
     "name": "لايت لاند 16 - 21 اسود تك زنون ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 170000.0,
+    "price": 226000.0,
     "slug": "لايت-لاند-16--21-اسود-تك-زنون-ايمن",
     "search_terms": [
       "لايت لاند 16 - 21 اسود تك زنون ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9398,13 +9412,13 @@ window.search-index = [
     "name": "لايت لاند 16 - 21 اسود تك زنون ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 170000.0,
+    "price": 226000.0,
     "slug": "لايت-لاند-16--21-اسود-تك-زنون-ايسر",
     "search_terms": [
       "لايت لاند 16 - 21 اسود تك زنون ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9412,13 +9426,13 @@ window.search-index = [
     "name": "دعامية خلفية لاند 22 - GXR VXR لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 168000.0,
+    "price": 166000.0,
     "slug": "دعامية-خلفية-لاند-22--gxr-vxr-لون-اسود",
     "search_terms": [
       "دعامية خلفية لاند 22 - GXR VXR لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9426,13 +9440,13 @@ window.search-index = [
     "name": "دعامية خلفية لاند 22 - GXR VXR لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 168000.0,
+    "price": 166000.0,
     "slug": "دعامية-خلفية-لاند-22--gxr-vxr-لون-لولوي",
     "search_terms": [
       "دعامية خلفية لاند 22 - GXR VXR لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9440,13 +9454,13 @@ window.search-index = [
     "name": "وجه تايمن كيس مع اويل بم لاند 98 - 07 1FZ -11310-66020",
     "category": "",
     "brand": "AISIN",
-    "price": 213000.0,
+    "price": 176000.0,
     "slug": "وجه-تايمن-كيس-مع-اويل-بم-لاند-98--07-1fz-11310-66020",
     "search_terms": [
       "وجه تايمن كيس مع اويل بم لاند 98 - 07 1FZ -11310-66020",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -9454,13 +9468,13 @@ window.search-index = [
     "name": "لايت هايلندر 21 - امريكي LE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 156000.0,
+    "price": 190000.0,
     "slug": "لايت-هايلندر-21--امريكي-le-ايسر",
     "search_terms": [
       "لايت هايلندر 21 - امريكي LE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9468,13 +9482,13 @@ window.search-index = [
     "name": "لايت هايلندر 21 - امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 156000.0,
+    "price": 190000.0,
     "slug": "لايت-هايلندر-21--امريكي-le-ايمن",
     "search_terms": [
       "لايت هايلندر 21 - امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9482,13 +9496,13 @@ window.search-index = [
     "name": "لايت لاند 16 - 21 دبل زنون اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 192000.0,
+    "price": 212000.0,
     "slug": "لايت-لاند-16--21-دبل-زنون-اسود-ايسر",
     "search_terms": [
       "لايت لاند 16 - 21 دبل زنون اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9496,13 +9510,13 @@ window.search-index = [
     "name": "لايت لاند 16 - 21 نيكل تك زنون ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 170000.0,
+    "price": 226000.0,
     "slug": "لايت-لاند-16--21-نيكل-تك-زنون-ايمن",
     "search_terms": [
       "لايت لاند 16 - 21 نيكل تك زنون ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9510,13 +9524,13 @@ window.search-index = [
     "name": "لايت لاند 16 - 21 دبل زنون اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 192000.0,
+    "price": 212000.0,
     "slug": "لايت-لاند-16--21-دبل-زنون-اسود-ايمن",
     "search_terms": [
       "لايت لاند 16 - 21 دبل زنون اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9524,13 +9538,13 @@ window.search-index = [
     "name": "لايت كورلا 23 امريكي SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 219000.0,
     "slug": "لايت-كورلا-23-امريكي-se-ايسر",
     "search_terms": [
       "لايت كورلا 23 امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9538,13 +9552,13 @@ window.search-index = [
     "name": "لايت كورلا 23 امريكي SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 219000.0,
     "slug": "لايت-كورلا-23-امريكي-se-ايمن",
     "search_terms": [
       "لايت كورلا 23 امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9552,13 +9566,13 @@ window.search-index = [
     "name": "لايت لاند 16 - 21 نيكل تك زنون ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 170000.0,
+    "price": 226000.0,
     "slug": "لايت-لاند-16--21-نيكل-تك-زنون-ايسر",
     "search_terms": [
       "لايت لاند 16 - 21 نيكل تك زنون ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9566,13 +9580,13 @@ window.search-index = [
     "name": "وجه تايمن كيس + اويل بم لاند 08 - 11 برادو فورجنر تندرا  1GR عام",
     "category": "",
     "brand": "AISIN",
-    "price": 249000.0,
+    "price": 219000.0,
     "slug": "وجه-تايمن-كيس-+-اويل-بم-لاند-08--11-برادو-فورجنر-تندرا-1gr-عام",
     "search_terms": [
       "وجه تايمن كيس + اويل بم لاند 08 - 11 برادو فورجنر تندرا  1GR عام",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -9580,13 +9594,13 @@ window.search-index = [
     "name": "لايت كورلا كروس 22 وارد صين مواصفات عالية ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 234000.0,
+    "price": 268000.0,
     "slug": "لايت-كورلا-كروس-22-وارد-صين-مواصفات-عالية-ايسر",
     "search_terms": [
       "لايت كورلا كروس 22 وارد صين مواصفات عالية ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9594,13 +9608,13 @@ window.search-index = [
     "name": "لايت كورلا كروس 22 وارد صين مواصفات عالية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 234000.0,
+    "price": 268000.0,
     "slug": "لايت-كورلا-كروس-22-وارد-صين-مواصفات-عالية-ايمن",
     "search_terms": [
       "لايت كورلا كروس 22 وارد صين مواصفات عالية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9608,13 +9622,13 @@ window.search-index = [
     "name": "وجه تايمن + اويل بم كوستر 17- لاند 98 -05 عكرب 1HZ",
     "category": "",
     "brand": "AISIN",
-    "price": 206000.0,
+    "price": 195000.0,
     "slug": "وجه-تايمن-+-اويل-بم-كوستر-17-لاند-98-05-عكرب-1hz",
     "search_terms": [
       "وجه تايمن + اويل بم كوستر 17- لاند 98 -05 عكرب 1HZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -9622,13 +9636,13 @@ window.search-index = [
     "name": "وجه تايمن + اويل بم كوستر 93 -16 لاند 98 -05 عكرب 1HZ",
     "category": "",
     "brand": "AISIN",
-    "price": 185000.0,
+    "price": 183000.0,
     "slug": "وجه-تايمن-+-اويل-بم-كوستر-93-16-لاند-98-05-عكرب-1hz",
     "search_terms": [
       "وجه تايمن + اويل بم كوستر 93 -16 لاند 98 -05 عكرب 1HZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -9636,13 +9650,13 @@ window.search-index = [
     "name": "واتر بم كامري 11 - 14 رف فور 12 - 20 2AR FXE كهربائي 161A0-39025",
     "category": "",
     "brand": "AISIN",
-    "price": 220000.0,
+    "price": 219000.0,
     "slug": "واتر-بم-كامري-11--14-رف-فور-12--20-2ar-fxe-كهربائي-161a0-39025",
     "search_terms": [
       "واتر بم كامري 11 - 14 رف فور 12 - 20 2AR FXE كهربائي 161A0-39025",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -9650,13 +9664,13 @@ window.search-index = [
     "name": "دعامية امامية باترول 20 - Y62 لون اسود كامله مع نيكل ",
     "category": "",
     "brand": "DAISEN",
-    "price": 187000.0,
+    "price": 209000.0,
     "slug": "دعامية-امامية-باترول-20--y62-لون-اسود-كامله-مع-نيكل",
     "search_terms": [
       "دعامية امامية باترول 20 - Y62 لون اسود كامله مع نيكل ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9664,13 +9678,13 @@ window.search-index = [
     "name": "دعامية امامية باترول 20 - Y62 لون لولوي كاملة مع نيكل ",
     "category": "",
     "brand": "DAISEN",
-    "price": 187000.0,
+    "price": 209000.0,
     "slug": "دعامية-امامية-باترول-20--y62-لون-لولوي-كاملة-مع-نيكل",
     "search_terms": [
       "دعامية امامية باترول 20 - Y62 لون لولوي كاملة مع نيكل ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -9678,13 +9692,13 @@ window.search-index = [
     "name": "كومبريسر تبريد بيكب ريفو 16 - 2GD   COMPRESSOR ASSY كاز - مع كلج ",
     "category": "",
     "brand": "Denso",
-    "price": 295000.0,
+    "price": 293000.0,
     "slug": "كومبريسر-تبريد-بيكب-ريفو-16--2gd-compressor-assy-كاز--مع-كلج",
     "search_terms": [
       "كومبريسر تبريد بيكب ريفو 16 - 2GD   COMPRESSOR ASSY كاز - مع كلج ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9692,13 +9706,13 @@ window.search-index = [
     "name": "لايت باترول 20 - ايمن ",
     "category": "",
     "brand": "GBT",
-    "price": 277000.0,
+    "price": 275000.0,
     "slug": "لايت-باترول-20--ايمن",
     "search_terms": [
       "لايت باترول 20 - ايمن ",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -9706,13 +9720,13 @@ window.search-index = [
     "name": "لايت هايلندر 21 - XLE XSE اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 213000.0,
+    "price": 254000.0,
     "slug": "لايت-هايلندر-21--xle-xse-اسود-ايسر",
     "search_terms": [
       "لايت هايلندر 21 - XLE XSE اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9720,13 +9734,13 @@ window.search-index = [
     "name": "لايت هايلندر 21 - XLE XSE اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 213000.0,
+    "price": 268000.0,
     "slug": "لايت-هايلندر-21--xle-xse-اسود-ايمن",
     "search_terms": [
       "لايت هايلندر 21 - XLE XSE اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9734,13 +9748,13 @@ window.search-index = [
     "name": "لايت هايلندر 21 - XLE XSE نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 213000.0,
+    "price": 254000.0,
     "slug": "لايت-هايلندر-21--xle-xse-نيكل-ايسر",
     "search_terms": [
       "لايت هايلندر 21 - XLE XSE نيكل ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9748,13 +9762,13 @@ window.search-index = [
     "name": "لايت هايلندر 21 - XLE XSE نيكل ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 213000.0,
+    "price": 254000.0,
     "slug": "لايت-هايلندر-21--xle-xse-نيكل-ايمن",
     "search_terms": [
       "لايت هايلندر 21 - XLE XSE نيكل ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9762,13 +9776,13 @@ window.search-index = [
     "name": "لايت رف فور 23 - امريكي HID هايلوجين SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 185000.0,
+    "price": 254000.0,
     "slug": "لايت-رف-فور-23--امريكي-hid-هايلوجين-se-ايسر",
     "search_terms": [
       "لايت رف فور 23 - امريكي HID هايلوجين SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9776,13 +9790,13 @@ window.search-index = [
     "name": "لايت رف فور 23 - امريكي HID هايلوجين SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 185000.0,
+    "price": 254000.0,
     "slug": "لايت-رف-فور-23--امريكي-hid-هايلوجين-se-ايمن",
     "search_terms": [
       "لايت رف فور 23 - امريكي HID هايلوجين SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9790,13 +9804,13 @@ window.search-index = [
     "name": "كومبريسر تبريد بيكب فيكو 2TR  - بدون كلج ",
     "category": "",
     "brand": "Denso",
-    "price": 281000.0,
+    "price": 279000.0,
     "slug": "كومبريسر-تبريد-بيكب-فيكو-2tr--بدون-كلج",
     "search_terms": [
       "كومبريسر تبريد بيكب فيكو 2TR  - بدون كلج ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9804,13 +9818,13 @@ window.search-index = [
     "name": "وجه تايمن بيكب فيكو كوستر 2TR ",
     "category": "",
     "brand": "AISIN",
-    "price": 298000.0,
+    "price": 268000.0,
     "slug": "وجه-تايمن-بيكب-فيكو-كوستر-2tr",
     "search_terms": [
       "وجه تايمن بيكب فيكو كوستر 2TR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -9818,13 +9832,13 @@ window.search-index = [
     "name": "كومبريسر تبريد بيكب هايلكس فيكو 05 - 15 2KD مع كلج COMPRESSOR HILUX 05-15 2KD W/CLTCH ",
     "category": "",
     "brand": "Denso",
-    "price": 327000.0,
+    "price": 324000.0,
     "slug": "كومبريسر-تبريد-بيكب-هايلكس-فيكو-05--15-2kd-مع-كلج-compressor-hilux-05-15-2kd-wcltch",
     "search_terms": [
       "كومبريسر تبريد بيكب هايلكس فيكو 05 - 15 2KD مع كلج COMPRESSOR HILUX 05-15 2KD W/CLTCH ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9832,13 +9846,13 @@ window.search-index = [
     "name": "لايت هايلندر 22 - XSE داخل اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 227000.0,
+    "price": 310000.0,
     "slug": "لايت-هايلندر-22--xse-داخل-اسود-ايسر",
     "search_terms": [
       "لايت هايلندر 22 - XSE داخل اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9846,13 +9860,13 @@ window.search-index = [
     "name": "لايت هايلندر 22 - XSE داخل اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 227000.0,
+    "price": 310000.0,
     "slug": "لايت-هايلندر-22--xse-داخل-اسود-ايمن",
     "search_terms": [
       "لايت هايلندر 22 - XSE داخل اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9860,13 +9874,13 @@ window.search-index = [
     "name": "لايت هايلندر 22 -XLE داخل مربع نيكل ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 241000.0,
+    "price": 310000.0,
     "slug": "لايت-هايلندر-22-xle-داخل-مربع-نيكل-ايسر",
     "search_terms": [
       "لايت هايلندر 22 -XLE داخل مربع نيكل ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9874,13 +9888,13 @@ window.search-index = [
     "name": "لايت هايلندر 22 - XLE داخل مربع نيكل ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 241000.0,
+    "price": 310000.0,
     "slug": "لايت-هايلندر-22--xle-داخل-مربع-نيكل-ايمن",
     "search_terms": [
       "لايت هايلندر 22 - XLE داخل مربع نيكل ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9888,13 +9902,13 @@ window.search-index = [
     "name": "COMPRESSOR ASSY,W/MAG CLUTCH W204  07/ W212 09 C230 C280 C300 07. W212 E300 E350 E220CDI E250CDI 09 كومبريسر مارسيدس\t",
     "category": "",
     "brand": "Denso",
-    "price": 324000.0,
+    "price": 321000.0,
     "slug": "compressor-assy,wmag-clutch-w204-07-w212-09-c230-c280-c300-07.-w212-e300-e350-e220cdi-e250cdi-09-كومبريسر-مارسيدس",
     "search_terms": [
       "COMPRESSOR ASSY,W/MAG CLUTCH W204  07/ W212 09 C230 C280 C300 07. W212 E300 E350 E220CDI E250CDI 09 كومبريسر مارسيدس\t",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9902,13 +9916,13 @@ window.search-index = [
     "name": "تريشة مسطرة تحت شباك الدعامية الامامية برادو 24 - اسفل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 113000.0,
     "slug": "تريشة-مسطرة-تحت-شباك-الدعامية-الامامية-برادو-24--اسفل",
     "search_terms": [
       "تريشة مسطرة تحت شباك الدعامية الامامية برادو 24 - اسفل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -9916,13 +9930,13 @@ window.search-index = [
     "name": "راديتر ماء لاند 08 - 21 لكزس 3UR 1UR 2UZ",
     "category": "",
     "brand": "Denso",
-    "price": 409000.0,
+    "price": 406000.0,
     "slug": "راديتر-ماء-لاند-08--21-لكزس-3ur-1ur-2uz",
     "search_terms": [
       "راديتر ماء لاند 08 - 21 لكزس 3UR 1UR 2UZ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9930,13 +9944,13 @@ window.search-index = [
     "name": "كومبريسر تبريد كورلا 11 - 14 دبل حساس 4 برغي مع كلج",
     "category": "",
     "brand": "Denso",
-    "price": 327000.0,
+    "price": 324000.0,
     "slug": "كومبريسر-تبريد-كورلا-11--14-دبل-حساس-4-برغي-مع-كلج",
     "search_terms": [
       "كومبريسر تبريد كورلا 11 - 14 دبل حساس 4 برغي مع كلج",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9944,13 +9958,13 @@ window.search-index = [
     "name": "COMPRESSOR ASSY,W/MAGNET CLUTC كومبريسر تبريد عكرب كاز ",
     "category": "",
     "brand": "Denso",
-    "price": 341000.0,
+    "price": 338000.0,
     "slug": "compressor-assy,wmagnet-clutc-كومبريسر-تبريد-عكرب-كاز",
     "search_terms": [
       "COMPRESSOR ASSY,W/MAGNET CLUTC كومبريسر تبريد عكرب كاز ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9958,13 +9972,13 @@ window.search-index = [
     "name": "راديتر تبريد سيكويا 08 - 14 - تندرا 07- 14 -",
     "category": "",
     "brand": "Denso",
-    "price": 324000.0,
+    "price": 321000.0,
     "slug": "راديتر-تبريد-سيكويا-08--14--تندرا-07-14",
     "search_terms": [
       "راديتر تبريد سيكويا 08 - 14 - تندرا 07- 14 -",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9972,13 +9986,13 @@ window.search-index = [
     "name": "كومبريسر تبريد كورلا 3 برغي 08 - 13 خليجي 1600 1800 كهربائي COMPRESSOR COROLLA 08-13 GCC YARIS 05-08 USA WITH PULLY OES ",
     "category": "",
     "brand": "Denso",
-    "price": 362000.0,
+    "price": 360000.0,
     "slug": "كومبريسر-تبريد-كورلا-3-برغي-08--13-خليجي-1600-1800-كهربائي-compressor-corolla-08-13-gcc-yaris-05-08-usa-with-pully-oes",
     "search_terms": [
       "كومبريسر تبريد كورلا 3 برغي 08 - 13 خليجي 1600 1800 كهربائي COMPRESSOR COROLLA 08-13 GCC YARIS 05-08 USA WITH PULLY OES ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -9986,13 +10000,13 @@ window.search-index = [
     "name": "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج",
     "category": "",
     "brand": "Denso",
-    "price": 369000.0,
+    "price": 367000.0,
     "slug": "كومبريسر-تبريد-كامري-18--رف-فور-19--مع-كلج-تك-حساس-اصبع-كلج",
     "search_terms": [
       "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10000,13 +10014,13 @@ window.search-index = [
     "name": "COMPRESSOR W/CLUTCH MERECEDES-BENZ 6PK (W220) (C215) ((W203) (CL203) (S203) (R230)(W211) (C209) (S211) (A209) (W639) (W639)(W639) (C219)  (W906) (W906) ",
     "category": "",
     "brand": "Denso",
-    "price": 341000.0,
+    "price": 338000.0,
     "slug": "compressor-wclutch-merecedes-benz-6pk-(w220)-(c215)-((w203)-(cl203)-(s203)-(r230)(w211)-(c209)-(s211)-(a209)-(w639)-(w639)(w639)-(c219)-(w906)-(w906)",
     "search_terms": [
       "COMPRESSOR W/CLUTCH MERECEDES-BENZ 6PK (W220) (C215) ((W203) (CL203) (S203) (R230)(W211) (C209) (S211) (A209) (W639) (W639)(W639) (C219)  (W906) (W906) ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10014,13 +10028,13 @@ window.search-index = [
     "name": "شباك لكزس LX570 - 21 ",
     "category": "",
     "brand": "GBT",
-    "price": 369000.0,
+    "price": 367000.0,
     "slug": "شباك-لكزس-lx570--21",
     "search_terms": [
       "شباك لكزس LX570 - 21 ",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -10028,13 +10042,13 @@ window.search-index = [
     "name": "كومبريسر تبريد باجيرو 08 - 20 AC COMPRESSOR PAJERO MB 7813A083",
     "category": "",
     "brand": "Denso",
-    "price": 412000.0,
+    "price": 409000.0,
     "slug": "كومبريسر-تبريد-باجيرو-08--20-ac-compressor-pajero-mb-7813a083",
     "search_terms": [
       "كومبريسر تبريد باجيرو 08 - 20 AC COMPRESSOR PAJERO MB 7813A083",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10042,13 +10056,13 @@ window.search-index = [
     "name": "كومبريسر تبريد برادو 10 -19  عام تندرا حجم 17",
     "category": "",
     "brand": "Denso",
-    "price": 405000.0,
+    "price": 402000.0,
     "slug": "كومبريسر-تبريد-برادو-10-19-عام-تندرا-حجم-17",
     "search_terms": [
       "كومبريسر تبريد برادو 10 -19  عام تندرا حجم 17",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10056,13 +10070,13 @@ window.search-index = [
     "name": "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج ",
     "category": "",
     "brand": "Denso",
-    "price": 398000.0,
+    "price": 395000.0,
     "slug": "كومبريسر-تبريد-كامري-18--رف-فور-19--مع-كلج-تك-حساس-اصبع-كلج",
     "search_terms": [
       "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10070,13 +10084,13 @@ window.search-index = [
     "name": "كومبريسر 4 برغي تبريد لاند لكزس 08 - 21 1GR 1UR 3UR 1VD / مع كلج 1UR 3UR",
     "category": "",
     "brand": "Denso",
-    "price": 440000.0,
+    "price": 437000.0,
     "slug": "كومبريسر-4-برغي-تبريد-لاند-لكزس-08--21-1gr-1ur-3ur-1vd-مع-كلج-1ur-3ur",
     "search_terms": [
       "كومبريسر 4 برغي تبريد لاند لكزس 08 - 21 1GR 1UR 3UR 1VD / مع كلج 1UR 3UR",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10084,13 +10098,13 @@ window.search-index = [
     "name": "كومبريسر 3 برغي تبريد لكزس لاند 08 - 11 2UZ مع كلج 2UZ ",
     "category": "",
     "brand": "Denso",
-    "price": 504000.0,
+    "price": 501000.0,
     "slug": "كومبريسر-3-برغي-تبريد-لكزس-لاند-08--11-2uz-مع-كلج-2uz",
     "search_terms": [
       "كومبريسر 3 برغي تبريد لكزس لاند 08 - 11 2UZ مع كلج 2UZ ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10098,13 +10112,13 @@ window.search-index = [
     "name": "بدي كت تحديث لاند 22 23 - من G و GX الى GXR VXR - مع لحية امامية + خلفية لاند 23 كويتي دون شباك لون اسود ",
     "category": "",
     "brand": "DAISEN",
-    "price": 852000.0,
+    "price": 843000.0,
     "slug": "بدي-كت-تحديث-لاند-22-23--من-g-و-gx-الى-gxr-vxr--مع-لحية-امامية-+-خلفية-لاند-23-كويتي-دون-شباك-لون-اسود",
     "search_terms": [
       "بدي كت تحديث لاند 22 23 - من G و GX الى GXR VXR - مع لحية امامية + خلفية لاند 23 كويتي دون شباك لون اسود ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -10112,13 +10126,13 @@ window.search-index = [
     "name": "بدي كت تحديث لاند 22 23 - من G و GX الى GXR VXR - مع لحية امامية + خلفية لاند 23 كويتي دون شباك لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 852000.0,
+    "price": 843000.0,
     "slug": "بدي-كت-تحديث-لاند-22-23--من-g-و-gx-الى-gxr-vxr--مع-لحية-امامية-+-خلفية-لاند-23-كويتي-دون-شباك-لولوي",
     "search_terms": [
       "بدي كت تحديث لاند 22 23 - من G و GX الى GXR VXR - مع لحية امامية + خلفية لاند 23 كويتي دون شباك لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -10126,13 +10140,13 @@ window.search-index = [
     "name": "كت تحديث داخلي لاند من 08 الى 16 - بيجي شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 966000.0,
+    "price": 959000.0,
     "slug": "كت-تحديث-داخلي-لاند-من-08-الى-16--بيجي-شامل-استيرن+قبضة-كير-مع-صاج-دشبول-ضوئي",
     "search_terms": [
       "كت تحديث داخلي لاند من 08 الى 16 - بيجي شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -10140,13 +10154,13 @@ window.search-index = [
     "name": "كت تحديث داخلي لاند من 08 الى 16 - اسود شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 966000.0,
+    "price": 959000.0,
     "slug": "كت-تحديث-داخلي-لاند-من-08-الى-16--اسود-شامل-استيرن+قبضة-كير-مع-صاج-دشبول-ضوئي",
     "search_terms": [
       "كت تحديث داخلي لاند من 08 الى 16 - اسود شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -10154,13 +10168,13 @@ window.search-index = [
     "name": "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 56000.0,
     "slug": "كفر-بلاستك-اسفل-الدعامية-الوسطية-برادو-24--ايسر",
     "search_terms": [
       "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10168,13 +10182,13 @@ window.search-index = [
     "name": "بدي كت تحديث خارجي من لاند 08 الى لاند 16 - 21 / لايت بلاك - شباك 21",
     "category": "",
     "brand": "GBT",
-    "price": 1562000.0,
+    "price": 1622000.0,
     "slug": "بدي-كت-تحديث-خارجي-من-لاند-08-الى-لاند-16--21-لايت-بلاك--شباك-21",
     "search_terms": [
       "بدي كت تحديث خارجي من لاند 08 الى لاند 16 - 21 / لايت بلاك - شباك 21",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -10182,13 +10196,13 @@ window.search-index = [
     "name": " Quick Coupler R1234yf HP Red ولف شحن عاز 1234 احمر حار ",
     "category": "",
     "brand": "ERRECOM",
-    "price": 28000.0,
+    "price": 0,
     "slug": "quick-coupler-r1234yf-hp-red-ولف-شحن-عاز-1234-احمر-حار",
     "search_terms": [
       " Quick Coupler R1234yf HP Red ولف شحن عاز 1234 احمر حار ",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -10196,13 +10210,13 @@ window.search-index = [
     "name": " Quick Coupler R1234yf LP Blue ولف شحن عاز 1234 ازرق بارد",
     "category": "",
     "brand": "ERRECOM",
-    "price": 30000.0,
+    "price": 0,
     "slug": "quick-coupler-r1234yf-lp-blue-ولف-شحن-عاز-1234-ازرق-بارد",
     "search_terms": [
       " Quick Coupler R1234yf LP Blue ولف شحن عاز 1234 ازرق بارد",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -10210,13 +10224,13 @@ window.search-index = [
     "name": " Quick Coupler R134a HP Red ولف شحن غاز 134 احمر حار ",
     "category": "",
     "brand": "ERRECOM",
-    "price": 33000.0,
+    "price": 0,
     "slug": "quick-coupler-r134a-hp-red-ولف-شحن-غاز-134-احمر-حار",
     "search_terms": [
       " Quick Coupler R134a HP Red ولف شحن غاز 134 احمر حار ",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -10224,13 +10238,13 @@ window.search-index = [
     "name": " Quick Coupler R134a LP Blue ولف شحن غاز 134 ازرق بارد",
     "category": "",
     "brand": "ERRECOM",
-    "price": 33000.0,
+    "price": 0,
     "slug": "quick-coupler-r134a-lp-blue-ولف-شحن-غاز-134-ازرق-بارد",
     "search_terms": [
       " Quick Coupler R134a LP Blue ولف شحن غاز 134 ازرق بارد",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -10244,7 +10258,7 @@ window.search-index = [
       "AISIN Bug & Tar Remover 473MLx20PCS - بخاخ تنظيف القطران و البقع 473 مل ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10258,7 +10272,7 @@ window.search-index = [
       "AISIN Car Stain Remover 473MLx20PCS- بخاخ مزيل البقع الصعبة للهيكل الخارجي 473 مل ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10272,7 +10286,7 @@ window.search-index = [
       "AISIN Car Wax 473MLx20 - واكس 473 مل ايسن",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10286,7 +10300,7 @@ window.search-index = [
       "AISIN Interior Cleane 473MLx20PCS- بخاخ منظف داخلي عام 473 مل ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10300,7 +10314,7 @@ window.search-index = [
       "AISIN Leather Conditioner 473MLx20PCS- بخاخ بلسم و واقي جلود 473 مل ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10314,7 +10328,7 @@ window.search-index = [
       "AISIN Odor Eliminator 250MLx20PCS- بخاخ معطر داخلي  250 ملم ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10328,7 +10342,7 @@ window.search-index = [
       "AISIN Scratch Remover 150MLx20PCS - مزيل خدوش 150 مل ايسن",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10342,7 +10356,7 @@ window.search-index = [
       "AISIN Tire & Trim Coating 473MLx20PCS- بخاخ ملمع اطارات و قطع سوداء 473 مل ايسن",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10350,13 +10364,13 @@ window.search-index = [
     "name": "AISIN Wash & Wax 1000MLx12PCS - شامبو غسيل و واكس 1000مل ايسن ",
     "category": "",
     "brand": "AISIN-LUB",
-    "price": 9000.0,
+    "price": 8000.0,
     "slug": "aisin-wash-and-wax-1000mlx12pcs--شامبو-غسيل-و-واكس-1000مل-ايسن",
     "search_terms": [
       "AISIN Wash & Wax 1000MLx12PCS - شامبو غسيل و واكس 1000مل ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10370,7 +10384,7 @@ window.search-index = [
       "AISIN Windshield Washer Fluid 60MLx160PCS- سائل شامبو ماء زراكة 60 مل ايسن ",
       "",
       "AISIN-LUB",
-      ""
+      "False"
     ]
   },
   {
@@ -10378,13 +10392,13 @@ window.search-index = [
     "name": "فج بريك خلفي لاند 08 - 15 ايمن",
     "category": "",
     "brand": "ADVICS",
-    "price": 128000.0,
+    "price": 0,
     "slug": "فج-بريك-خلفي-لاند-08--15-ايمن",
     "search_terms": [
       "فج بريك خلفي لاند 08 - 15 ايمن",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -10392,13 +10406,13 @@ window.search-index = [
     "name": "دبل امامي سني هندي - فيرسا 11 - 19 ايمن",
     "category": "",
     "brand": "AISIN",
-    "price": 37000.0,
+    "price": 35000.0,
     "slug": "دبل-امامي-سني-هندي--فيرسا-11--19-ايمن",
     "search_terms": [
       "دبل امامي سني هندي - فيرسا 11 - 19 ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10406,13 +10420,13 @@ window.search-index = [
     "name": "OES TO 90919-01191 IRIDIUM PLUG SK20HR11 بلك 91 ليزري لاند فيكو 3RU 1GR 2TR -\t",
     "category": "",
     "brand": "Denso",
-    "price": 13000.0,
+    "price": 0,
     "slug": "oes-to-90919-01191-iridium-plug-sk20hr11-بلك-91-ليزري-لاند-فيكو-3ru-1gr-2tr",
     "search_terms": [
       "OES TO 90919-01191 IRIDIUM PLUG SK20HR11 بلك 91 ليزري لاند فيكو 3RU 1GR 2TR -\t",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10420,13 +10434,13 @@ window.search-index = [
     "name": "دبل امامي كامري 07-11  خليجي  ايسر ",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 42000.0,
     "slug": "دبل-امامي-كامري-07-11-خليجي-ايسر",
     "search_terms": [
       "دبل امامي كامري 07-11  خليجي  ايسر ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10434,13 +10448,13 @@ window.search-index = [
     "name": "بخاخ تبريد كامري ",
     "category": "",
     "brand": "Denso",
-    "price": 21000.0,
+    "price": 0,
     "slug": "بخاخ-تبريد-كامري",
     "search_terms": [
       "بخاخ تبريد كامري ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10448,13 +10462,13 @@ window.search-index = [
     "name": "راديتر تبريد لاند ولكزس 22 - عام ",
     "category": "",
     "brand": "Denso",
-    "price": 219000.0,
+    "price": 212000.0,
     "slug": "راديتر-تبريد-لاند-ولكزس-22--عام",
     "search_terms": [
       "راديتر تبريد لاند ولكزس 22 - عام ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10462,13 +10476,13 @@ window.search-index = [
     "name": "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-بلاستك-اسفل-الدعامية-الوسطية-برادو-24--ايمن",
     "search_terms": [
       "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10476,13 +10490,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--مع-فتحة-عدسة-ايسر",
     "search_terms": [
       "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10490,13 +10504,13 @@ window.search-index = [
     "name": "كويل مجول نيسان عام محرك 8 سلندر 5.7",
     "category": "",
     "brand": "AISIN",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "كويل-مجول-نيسان-عام-محرك-8-سلندر-5.7",
     "search_terms": [
       "كويل مجول نيسان عام محرك 8 سلندر 5.7",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10510,7 +10524,7 @@ window.search-index = [
       "فريز تبريد يارس",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10518,13 +10532,13 @@ window.search-index = [
     "name": "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "بطانة-جاملغ-امامي-كورلا-20-خليجي-وارد-صين-ايسر",
     "search_terms": [
       "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10532,27 +10546,27 @@ window.search-index = [
     "name": "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "بطانة-جاملغ-امامي-كورلا-20-خليجي-وارد-صين-ايمن",
     "search_terms": [
       "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 207924,
-    "name": "دبل خلفي كامري 07-17 امريكي افلون 05-17 امريكي وخليجي ايسر ",
+    "name": "دبل خلفي كامري 12 - 17 ايسر ",
     "category": "",
     "brand": "AISIN",
-    "price": 57000.0,
-    "slug": "دبل-خلفي-كامري-07-17-امريكي-افلون-05-17-امريكي-وخليجي-ايسر",
+    "price": 45000.0,
+    "slug": "دبل-خلفي-كامري-12--17-ايسر",
     "search_terms": [
-      "دبل خلفي كامري 07-17 امريكي افلون 05-17 امريكي وخليجي ايسر ",
+      "دبل خلفي كامري 12 - 17 ايسر ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10560,13 +10574,13 @@ window.search-index = [
     "name": "بخاخ تبريد كامري 09 -  مع عازل زفت",
     "category": "",
     "brand": "Denso",
-    "price": 21000.0,
+    "price": 0,
     "slug": "بخاخ-تبريد-كامري-09--مع-عازل-زفت",
     "search_terms": [
       "بخاخ تبريد كامري 09 -  مع عازل زفت",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10574,13 +10588,13 @@ window.search-index = [
     "name": "فريز تبريد خلفي هايس 05-19 قمارة عالية CG RR EVAPORATOR HAICE 05-19 HR",
     "category": "",
     "brand": "Denso",
-    "price": 92000.0,
+    "price": 0,
     "slug": "فريز-تبريد-خلفي-هايس-05-19-قمارة-عالية-cg-rr-evaporator-haice-05-19-hr",
     "search_terms": [
       "فريز تبريد خلفي هايس 05-19 قمارة عالية CG RR EVAPORATOR HAICE 05-19 HR",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10594,7 +10608,7 @@ window.search-index = [
       "بخاخ تبريد ثلاجة لاند 08 - 21 عام",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10608,7 +10622,7 @@ window.search-index = [
       "دبل امامي فيكو 2W ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10622,7 +10636,7 @@ window.search-index = [
       "كويل مجول نيسان 6 سلندر محرك 3.5 عام التما مكسما بافندر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10630,13 +10644,13 @@ window.search-index = [
     "name": "31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3RZ عادي",
     "category": "",
     "brand": "AISIN",
-    "price": 64000.0,
+    "price": 52000.0,
     "slug": "31410-60571-عنبار-كلج-رئيسي-بيكب-تويوتا-جمرة-3rz-عادي",
     "search_terms": [
       "31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3RZ عادي",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10650,7 +10664,7 @@ window.search-index = [
       "كويل مجول التما 19 - 2.5",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10664,7 +10678,7 @@ window.search-index = [
       "دبل خلفي بيكب فيكو 2W ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10672,13 +10686,13 @@ window.search-index = [
     "name": "تريشة اسفل الدعامية امامية كورلا 23 - امريكي LE كورلا ليفان صيني 23 - ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 0,
     "slug": "تريشة-اسفل-الدعامية-امامية-كورلا-23--امريكي-le-كورلا-ليفان-صيني-23",
     "search_terms": [
       "تريشة اسفل الدعامية امامية كورلا 23 - امريكي LE كورلا ليفان صيني 23 - ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10692,7 +10706,7 @@ window.search-index = [
       "دبل امامي لاند 08 - 21 6 سلندر ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10700,13 +10714,13 @@ window.search-index = [
     "name": "راديتر تبريد كورلا 08 - 18 امريكي خليجي AC CONDENSOR COROLLA 08-18 W DRIER",
     "category": "",
     "brand": "Denso",
-    "price": 107000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كورلا-08--18-امريكي-خليجي-ac-condensor-corolla-08-18-w-drier",
     "search_terms": [
       "راديتر تبريد كورلا 08 - 18 امريكي خليجي AC CONDENSOR COROLLA 08-18 W DRIER",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10720,7 +10734,7 @@ window.search-index = [
       "كويل مجول رف فور كامري 18 - 21 A25A كورلا خليجي امريكي M20AFKS",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10728,13 +10742,13 @@ window.search-index = [
     "name": "فج بريك امامي عكرب 08 - 16 - ايسر",
     "category": "",
     "brand": "ADVICS",
-    "price": 185000.0,
+    "price": 0,
     "slug": "فج-بريك-امامي-عكرب-08--16--ايسر",
     "search_terms": [
       "فج بريك امامي عكرب 08 - 16 - ايسر",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -10748,7 +10762,7 @@ window.search-index = [
       "كويل مجول باترول 10 - Y62 ارمادا 17 - VK56 انفينيتي QX56 QX80",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10756,13 +10770,13 @@ window.search-index = [
     "name": "راديتر ماء برادو 10 - 22 1GR اوتو ",
     "category": "",
     "brand": "Denso",
-    "price": 284000.0,
+    "price": 282000.0,
     "slug": "راديتر-ماء-برادو-10--22-1gr-اوتو",
     "search_terms": [
       "راديتر ماء برادو 10 - 22 1GR اوتو ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10770,13 +10784,13 @@ window.search-index = [
     "name": "دبل امامي برادو 10 - 23 ",
     "category": "",
     "brand": "AISIN",
-    "price": 37000.0,
+    "price": 34000.0,
     "slug": "دبل-امامي-برادو-10--23",
     "search_terms": [
       "دبل امامي برادو 10 - 23 ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10790,7 +10804,7 @@ window.search-index = [
       "DXE22H11C بلك نيسان سنترا 19 -  OES 22401-6CA1C 22401-6CT1C 22401-6LB1C",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10798,13 +10812,13 @@ window.search-index = [
     "name": "دبل خلفي فورجنر 05 -15 ايمن ايسر ",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
+    "price": 23000.0,
     "slug": "دبل-خلفي-فورجنر-05-15-ايمن-ايسر",
     "search_terms": [
       "دبل خلفي فورجنر 05 -15 ايمن ايسر ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10812,13 +10826,13 @@ window.search-index = [
     "name": "دبل امامي سني ياباني 01 - 08 ايمن",
     "category": "",
     "brand": "AISIN",
-    "price": 37000.0,
+    "price": 35000.0,
     "slug": "دبل-امامي-سني-ياباني-01--08-ايمن",
     "search_terms": [
       "دبل امامي سني ياباني 01 - 08 ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10826,13 +10840,13 @@ window.search-index = [
     "name": "دبل خلفي كورلا بيكاتشو 01 - 07 ايمن ايسر",
     "category": "",
     "brand": "AISIN",
-    "price": 26000.0,
+    "price": 25000.0,
     "slug": "دبل-خلفي-كورلا-بيكاتشو-01--07-ايمن-ايسر",
     "search_terms": [
       "دبل خلفي كورلا بيكاتشو 01 - 07 ايمن ايسر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10846,7 +10860,7 @@ window.search-index = [
       "دعامية امامية كورلا 19 - خليجي لون لولوي 070 ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10854,13 +10868,13 @@ window.search-index = [
     "name": "انفيرتر ماطور واتربم كورلا 19 - 2ZRFXE هايبرد كورلا ليفان 20- 8ZR",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 0,
     "slug": "انفيرتر-ماطور-واتربم-كورلا-19--2zrfxe-هايبرد-كورلا-ليفان-20-8zr",
     "search_terms": [
       "انفيرتر ماطور واتربم كورلا 19 - 2ZRFXE هايبرد كورلا ليفان 20- 8ZR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10874,7 +10888,7 @@ window.search-index = [
       "كويل مجول نافارا QR25",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10882,13 +10896,13 @@ window.search-index = [
     "name": "دبل خلفي باترول y61 سفاري 97 - 03 ",
     "category": "",
     "brand": "AISIN",
-    "price": 28000.0,
+    "price": 25000.0,
     "slug": "دبل-خلفي-باترول-y61-سفاري-97--03",
     "search_terms": [
       "دبل خلفي باترول y61 سفاري 97 - 03 ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10896,13 +10910,13 @@ window.search-index = [
     "name": "COMP ASSY W/MG CLUTCH YARIS ECHO COROLLA 01-07 كومبريسر تبريد كورلا بيكاتشو 03 - 07",
     "category": "",
     "brand": "Denso",
-    "price": 341000.0,
+    "price": 0,
     "slug": "comp-assy-wmg-clutch-yaris-echo-corolla-01-07-كومبريسر-تبريد-كورلا-بيكاتشو-03--07",
     "search_terms": [
       "COMP ASSY W/MG CLUTCH YARIS ECHO COROLLA 01-07 كومبريسر تبريد كورلا بيكاتشو 03 - 07",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -10910,13 +10924,13 @@ window.search-index = [
     "name": "NRO شباك رئيسي كورلا كروس 22 وارد صيني - اسود\tTY-22CRL-008-B",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "nro-شباك-رئيسي-كورلا-كروس-22-وارد-صيني--اسود-ty-22crl-008-b",
     "search_terms": [
       "NRO شباك رئيسي كورلا كروس 22 وارد صيني - اسود\tTY-22CRL-008-B",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -10930,7 +10944,7 @@ window.search-index = [
       "كويل مجول باترول 10 - Y62 ارمادا 17 - VK56 انفينيتي QX56 QX80",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -10938,13 +10952,13 @@ window.search-index = [
     "name": "فج بريك خلفي لاند 08 - 15 ايسر",
     "category": "",
     "brand": "ADVICS",
-    "price": 128000.0,
+    "price": 0,
     "slug": "فج-بريك-خلفي-لاند-08--15-ايسر",
     "search_terms": [
       "فج بريك خلفي لاند 08 - 15 ايسر",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -10952,13 +10966,13 @@ window.search-index = [
     "name": "طخم واشر محرك 1GR 08-11 كامل",
     "category": "",
     "brand": "KP ",
-    "price": 142000.0,
+    "price": 141000.0,
     "slug": "طخم-واشر-محرك-1gr-08-11-كامل",
     "search_terms": [
       "طخم واشر محرك 1GR 08-11 كامل",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -10966,13 +10980,13 @@ window.search-index = [
     "name": "ماطور لو كير فور ويل فيكو ريفو ",
     "category": "",
     "brand": "ADVICS",
-    "price": 185000.0,
+    "price": 183000.0,
     "slug": "ماطور-لو-كير-فور-ويل-فيكو-ريفو",
     "search_terms": [
       "ماطور لو كير فور ويل فيكو ريفو ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -10980,13 +10994,13 @@ window.search-index = [
     "name": "طخم واشر محرك 1HZ - بدون كازكيت ",
     "category": "",
     "brand": "KP ",
-    "price": 121000.0,
+    "price": 120000.0,
     "slug": "طخم-واشر-محرك-1hz--بدون-كازكيت",
     "search_terms": [
       "طخم واشر محرك 1HZ - بدون كازكيت ",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -10994,13 +11008,13 @@ window.search-index = [
     "name": "طخم واشر محرك بافندر 4000  VK40",
     "category": "",
     "brand": "KP ",
-    "price": 128000.0,
+    "price": 127000.0,
     "slug": "طخم-واشر-محرك-بافندر-4000-vk40",
     "search_terms": [
       "طخم واشر محرك بافندر 4000  VK40",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -11008,13 +11022,13 @@ window.search-index = [
     "name": "فج بريك امامي عكرب 08 - 16 - ايمن",
     "category": "",
     "brand": "ADVICS",
-    "price": 185000.0,
+    "price": 0,
     "slug": "فج-بريك-امامي-عكرب-08--16--ايمن",
     "search_terms": [
       "فج بريك امامي عكرب 08 - 16 - ايمن",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -11022,13 +11036,13 @@ window.search-index = [
     "name": "فلتر كير لاند 98-07  2UZ",
     "category": "",
     "brand": "MassFit",
-    "price": 14000.0,
+    "price": 0,
     "slug": "فلتر-كير-لاند-98-07-2uz",
     "search_terms": [
       "فلتر كير لاند 98-07  2UZ",
       "",
       "MassFit",
-      ""
+      "False"
     ]
   },
   {
@@ -11036,13 +11050,13 @@ window.search-index = [
     "name": "دبل خلفي كامري 07 - 11 خليجي ايمن",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 45000.0,
     "slug": "دبل-خلفي-كامري-07--11-خليجي-ايمن",
     "search_terms": [
       "دبل خلفي كامري 07 - 11 خليجي ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11056,7 +11070,7 @@ window.search-index = [
       "دبل خلفي بافندر 08 - 13 ايمن ايسر ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11064,13 +11078,13 @@ window.search-index = [
     "name": "كازكيت محرك 1HZ - 1.15",
     "category": "",
     "brand": "KP ",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "كازكيت-محرك-1hz--1.15",
     "search_terms": [
       "كازكيت محرك 1HZ - 1.15",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -11078,13 +11092,13 @@ window.search-index = [
     "name": "كازكيت محرك 1HZ - 1.25",
     "category": "",
     "brand": "KP ",
-    "price": 64000.0,
+    "price": 63000.0,
     "slug": "كازكيت-محرك-1hz--1.25",
     "search_terms": [
       "كازكيت محرك 1HZ - 1.25",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -11098,7 +11112,7 @@ window.search-index = [
       "فيت بم فورجنر ريفو 16 - 1GR 6 سلندر ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -11112,7 +11126,7 @@ window.search-index = [
       "دبل امامي فيكو 2W ايسر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11120,13 +11134,13 @@ window.search-index = [
     "name": "كفر سبير برادو 11 - 18 - لون اسود",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 127000.0,
     "slug": "كفر-سبير-برادو-11--18--لون-اسود",
     "search_terms": [
       "كفر سبير برادو 11 - 18 - لون اسود",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11134,13 +11148,13 @@ window.search-index = [
     "name": "كلج مروحة كوستر كاز 22 - N04C",
     "category": "",
     "brand": "AISIN",
-    "price": 85000.0,
+    "price": 0,
     "slug": "كلج-مروحة-كوستر-كاز-22--n04c",
     "search_terms": [
       "كلج مروحة كوستر كاز 22 - N04C",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11154,21 +11168,21 @@ window.search-index = [
       "كويل مجول نيسان 4 سلندر محرك 2.5  1.8 عام سنترا روج التما مورانو",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
     "id": 209932,
-    "name": "دبل خلفي كامري 07-17 امريكي افلون 05-17 امريكي وخليجي ايمن",
+    "name": "دبل خلفي كامري 12 - 17 ايمن",
     "category": "",
     "brand": "AISIN",
-    "price": 57000.0,
-    "slug": "دبل-خلفي-كامري-07-17-امريكي-افلون-05-17-امريكي-وخليجي-ايمن",
+    "price": 51000.0,
+    "slug": "دبل-خلفي-كامري-12--17-ايمن",
     "search_terms": [
-      "دبل خلفي كامري 07-17 امريكي افلون 05-17 امريكي وخليجي ايمن",
+      "دبل خلفي كامري 12 - 17 ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11176,13 +11190,13 @@ window.search-index = [
     "name": "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 176000.0,
+    "price": 0,
     "slug": "لايت-كورلا-هايبرد-23--خليجي-صيني-كلوب-ليد-زنون-ايسر",
     "search_terms": [
       "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11190,13 +11204,13 @@ window.search-index = [
     "name": "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 176000.0,
+    "price": 0,
     "slug": "لايت-كورلا-هايبرد-23--خليجي-صيني-كلوب-ليد-زنون-ايمن",
     "search_terms": [
       "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11204,13 +11218,13 @@ window.search-index = [
     "name": "لايت كورلا 23 - ليفان وارد صين ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 196000.0,
+    "price": 0,
     "slug": "لايت-كورلا-23--ليفان-وارد-صين-ايسر",
     "search_terms": [
       "لايت كورلا 23 - ليفان وارد صين ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11218,27 +11232,13 @@ window.search-index = [
     "name": "لايت كورلا 23 - ليفان وارد صين ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 196000.0,
+    "price": 0,
     "slug": "لايت-كورلا-23--ليفان-وارد-صين-ايمن",
     "search_terms": [
       "لايت كورلا 23 - ليفان وارد صين ايمن",
       "",
       "DAISEN-HY",
-      ""
-    ]
-  },
-  {
-    "id": 210146,
-    "name": "\tدبل امامي كامري 07-11  خليجي ايمن 48510-06460,48510-09N91",
-    "category": "",
-    "brand": "AISIN",
-    "price": 43000.0,
-    "slug": "دبل-امامي-كامري-07-11-خليجي-ايمن-48510-06460,48510-09n91",
-    "search_terms": [
-      "\tدبل امامي كامري 07-11  خليجي ايمن 48510-06460,48510-09N91",
-      "",
-      "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11246,13 +11246,13 @@ window.search-index = [
     "name": "دبل خلفي كامري 07 - 11 خليجي ايسر",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 45000.0,
     "slug": "دبل-خلفي-كامري-07--11-خليجي-ايسر",
     "search_terms": [
       "دبل خلفي كامري 07 - 11 خليجي ايسر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11266,21 +11266,21 @@ window.search-index = [
       "دبل خلفي كورلا 08 - 18",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
     "id": 210241,
-    "name": "دبل امامي  بيكب فيكو ريفو فورجنر 05 - 16 -  4w ",
+    "name": "دبل امامي  فيكو ريفو فورجنر 05 - 16 -  4w ",
     "category": "",
     "brand": "AISIN",
     "price": 31000.0,
-    "slug": "دبل-امامي-بيكب-فيكو-ريفو-فورجنر-05--16--4w",
+    "slug": "دبل-امامي-فيكو-ريفو-فورجنر-05--16--4w",
     "search_terms": [
-      "دبل امامي  بيكب فيكو ريفو فورجنر 05 - 16 -  4w ",
+      "دبل امامي  فيكو ريفو فورجنر 05 - 16 -  4w ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11294,7 +11294,7 @@ window.search-index = [
       "كويل مجول لاند لكزس 22- V35  رف فور هايلندر كامري 18 - A25FX هايبرد",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11302,13 +11302,13 @@ window.search-index = [
     "name": "عنبار كلج اسفل فيكو 2KD",
     "category": "",
     "brand": "AISIN",
-    "price": 37000.0,
+    "price": 0,
     "slug": "عنبار-كلج-اسفل-فيكو-2kd",
     "search_terms": [
       "عنبار كلج اسفل فيكو 2KD",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11322,7 +11322,7 @@ window.search-index = [
       "كويل مجول نيسان 22448-1KT0A",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11330,13 +11330,13 @@ window.search-index = [
     "name": "دبل امامي ارمادا 05 - انفينيتي 05 - 10 QX56 ",
     "category": "",
     "brand": "AISIN",
-    "price": 43000.0,
+    "price": 39000.0,
     "slug": "دبل-امامي-ارمادا-05--انفينيتي-05--10-qx56",
     "search_terms": [
       "دبل امامي ارمادا 05 - انفينيتي 05 - 10 QX56 ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11344,13 +11344,13 @@ window.search-index = [
     "name": "دبل امامي سني ياباني 01 - 08 ايسر",
     "category": "",
     "brand": "AISIN",
-    "price": 37000.0,
+    "price": 35000.0,
     "slug": "دبل-امامي-سني-ياباني-01--08-ايسر",
     "search_terms": [
       "دبل امامي سني ياباني 01 - 08 ايسر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11358,13 +11358,13 @@ window.search-index = [
     "name": "انفيرتر ماطور واتربم كورلا 19 - كامري 18 - M20AFXS A25AFXE",
     "category": "",
     "brand": "AISIN",
-    "price": 107000.0,
+    "price": 106000.0,
     "slug": "انفيرتر-ماطور-واتربم-كورلا-19--كامري-18--m20afxs-a25afxe",
     "search_terms": [
       "انفيرتر ماطور واتربم كورلا 19 - كامري 18 - M20AFXS A25AFXE",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11372,13 +11372,13 @@ window.search-index = [
     "name": "دبل امامي كامري 07-11 خليجي ايمن",
     "category": "",
     "brand": "AISIN",
-    "price": 50000.0,
+    "price": 42000.0,
     "slug": "دبل-امامي-كامري-07-11-خليجي-ايمن",
     "search_terms": [
       "دبل امامي كامري 07-11 خليجي ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11386,13 +11386,13 @@ window.search-index = [
     "name": "دبل امامي كورلا 08 - 13 ايسر",
     "category": "",
     "brand": "AISIN",
-    "price": 43000.0,
+    "price": 42000.0,
     "slug": "دبل-امامي-كورلا-08--13-ايسر",
     "search_terms": [
       "دبل امامي كورلا 08 - 13 ايسر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11400,27 +11400,27 @@ window.search-index = [
     "name": "دبل خلفي بيكب فيكو 4W ",
     "category": "",
     "brand": "AISIN",
-    "price": 28000.0,
+    "price": 24000.0,
     "slug": "دبل-خلفي-بيكب-فيكو-4w",
     "search_terms": [
       "دبل خلفي بيكب فيكو 4W ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
     "id": 213205,
-    "name": "دبل خلفي برادو 05 - 09 اف جي 07 -10",
+    "name": "دبل خلفي برادو 07 - 09 اف جي 07 -10",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
-    "slug": "دبل-خلفي-برادو-05--09-اف-جي-07-10",
+    "price": 25000.0,
+    "slug": "دبل-خلفي-برادو-07--09-اف-جي-07-10",
     "search_terms": [
-      "دبل خلفي برادو 05 - 09 اف جي 07 -10",
+      "دبل خلفي برادو 07 - 09 اف جي 07 -10",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -11428,13 +11428,13 @@ window.search-index = [
     "name": "فلتر كير لاند 08 - 21 1GR 2UZ برادو عام\t",
     "category": "",
     "brand": "MassFit",
-    "price": 14000.0,
+    "price": 0,
     "slug": "فلتر-كير-لاند-08--21-1gr-2uz-برادو-عام",
     "search_terms": [
       "فلتر كير لاند 08 - 21 1GR 2UZ برادو عام\t",
       "",
       "MassFit",
-      ""
+      "False"
     ]
   },
   {
@@ -11442,13 +11442,13 @@ window.search-index = [
     "name": "دعامية امامية لاند 16 - 21 لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 125000.0,
+    "price": 0,
     "slug": "دعامية-امامية-لاند-16--21-لون-لولوي",
     "search_terms": [
       "دعامية امامية لاند 16 - 21 لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11456,13 +11456,13 @@ window.search-index = [
     "name": "بروجكتر كيكس 17 - بيكب نيسان فرونتير 22 -ليد ",
     "category": "",
     "brand": "DLAA",
-    "price": 64000.0,
+    "price": 0,
     "slug": "بروجكتر-كيكس-17--بيكب-نيسان-فرونتير-22-ليد",
     "search_terms": [
       "بروجكتر كيكس 17 - بيكب نيسان فرونتير 22 -ليد ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -11470,13 +11470,13 @@ window.search-index = [
     "name": "دعامية خلفية باترول 20 - Y62 مع سكن لون لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 187000.0,
+    "price": 0,
     "slug": "دعامية-خلفية-باترول-20--y62-مع-سكن-لون-لولوي",
     "search_terms": [
       "دعامية خلفية باترول 20 - Y62 مع سكن لون لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11484,13 +11484,13 @@ window.search-index = [
     "name": "دعامية خلفية باترول 20 - Y62 مع سكن لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 187000.0,
+    "price": 0,
     "slug": "دعامية-خلفية-باترول-20--y62-مع-سكن-لون-اسود",
     "search_terms": [
       "دعامية خلفية باترول 20 - Y62 مع سكن لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11498,13 +11498,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 114000.0,
+    "price": 0,
     "slug": "لحية-خلفية-لاند-22-23--لمتد-مع-فتحة-هوك-لولوي",
     "search_terms": [
       "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11512,13 +11512,13 @@ window.search-index = [
     "name": "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 114000.0,
+    "price": 0,
     "slug": "لحية-خلفية-لاند-22-23--لمتد-مع-فتحة-هوك-لون-اسود",
     "search_terms": [
       "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11526,13 +11526,13 @@ window.search-index = [
     "name": "set كفر لحية امامية لاند 22- 23- اسود لمتد ايمن + ايسر",
     "category": "",
     "brand": "DAISEN",
-    "price": 37000.0,
+    "price": 0,
     "slug": "set-كفر-لحية-امامية-لاند-22-23-اسود-لمتد-ايمن-+-ايسر",
     "search_terms": [
       "set كفر لحية امامية لاند 22- 23- اسود لمتد ايمن + ايسر",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11540,13 +11540,13 @@ window.search-index = [
     "name": "كفر هوك لحية خلفية لاند 22 - 23 - لمتد مع فتحة هوك لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 36000.0,
+    "price": 0,
     "slug": "كفر-هوك-لحية-خلفية-لاند-22--23--لمتد-مع-فتحة-هوك-لون-اسود",
     "search_terms": [
       "كفر هوك لحية خلفية لاند 22 - 23 - لمتد مع فتحة هوك لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11554,13 +11554,13 @@ window.search-index = [
     "name": "لحية امامية لكزس 24- lx600 ايمن + ايسر لولوي",
     "category": "",
     "brand": "GBT",
-    "price": 92000.0,
+    "price": 0,
     "slug": "لحية-امامية-لكزس-24-lx600-ايمن-+-ايسر-لولوي",
     "search_terms": [
       "لحية امامية لكزس 24- lx600 ايمن + ايسر لولوي",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -11568,13 +11568,13 @@ window.search-index = [
     "name": "لحية امامية لكزس 24- lx600 ايمن + ايسر اسود",
     "category": "",
     "brand": "GBT",
-    "price": 92000.0,
+    "price": 0,
     "slug": "لحية-امامية-لكزس-24-lx600-ايمن-+-ايسر-اسود",
     "search_terms": [
       "لحية امامية لكزس 24- lx600 ايمن + ايسر اسود",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -11582,13 +11582,13 @@ window.search-index = [
     "name": "لحية خلفية لكزس 24- LX600 ايمن+ايسر لولوي",
     "category": "",
     "brand": "GBT",
-    "price": 92000.0,
+    "price": 0,
     "slug": "لحية-خلفية-لكزس-24-lx600-ايمن+ايسر-لولوي",
     "search_terms": [
       "لحية خلفية لكزس 24- LX600 ايمن+ايسر لولوي",
       "",
       "GBT",
-      ""
+      "False"
     ]
   },
   {
@@ -11596,13 +11596,27 @@ window.search-index = [
     "name": "لحية خلفية لكزس 24 - LX600 F-SPORT ايمن + ايسر اسود ",
     "category": "",
     "brand": "GBT",
-    "price": 92000.0,
+    "price": 0,
     "slug": "لحية-خلفية-لكزس-24--lx600-f-sport-ايمن-+-ايسر-اسود",
     "search_terms": [
       "لحية خلفية لكزس 24 - LX600 F-SPORT ايمن + ايسر اسود ",
       "",
       "GBT",
-      ""
+      "False"
+    ]
+  },
+  {
+    "id": 257257,
+    "name": "سيت بستم 2ZR سايز 20",
+    "category": "",
+    "brand": "ART",
+    "price": 0,
+    "slug": "سيت-بستم-2zr-سايز-20",
+    "search_terms": [
+      "سيت بستم 2ZR سايز 20",
+      "",
+      "ART",
+      "False"
     ]
   },
   {
@@ -11610,13 +11624,13 @@ window.search-index = [
     "name": "لايت كورلا 14 - 16 امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 60000.0,
+    "price": 0,
     "slug": "لايت-كورلا-14--16-امريكي-ايسر",
     "search_terms": [
       "لايت كورلا 14 - 16 امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11624,13 +11638,13 @@ window.search-index = [
     "name": "جنح لاند 23 - ليد استوب لايت لمتد LIMITED لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 156000.0,
+    "price": 0,
     "slug": "جنح-لاند-23--ليد-استوب-لايت-لمتد-limited-لولوي",
     "search_terms": [
       "جنح لاند 23 - ليد استوب لايت لمتد LIMITED لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11638,13 +11652,13 @@ window.search-index = [
     "name": "شباك لاند 22 اسود و رصاصي",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 0,
     "slug": "شباك-لاند-22-اسود-و-رصاصي",
     "search_terms": [
       "شباك لاند 22 اسود و رصاصي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11652,13 +11666,13 @@ window.search-index = [
     "name": " قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 50000.0,
+    "price": 0,
     "slug": "قاعدة-رقم-لاند-22--من-دون-تريشة-باب-بدي-اسود",
     "search_terms": [
       " قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11666,13 +11680,13 @@ window.search-index = [
     "name": "علامة كتابة لاند كروزر بالباب الامامي لاند 22 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 17000.0,
+    "price": 0,
     "slug": "علامة-كتابة-لاند-كروزر-بالباب-الامامي-لاند-22",
     "search_terms": [
       "علامة كتابة لاند كروزر بالباب الامامي لاند 22 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11680,13 +11694,13 @@ window.search-index = [
     "name": "علامة بلاك اديشن BLACK EDITION باب بالبدي الاسفل لاند 22 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "علامة-بلاك-اديشن-black-edition-باب-بالبدي-الاسفل-لاند-22",
     "search_terms": [
       "علامة بلاك اديشن BLACK EDITION باب بالبدي الاسفل لاند 22 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11694,13 +11708,13 @@ window.search-index = [
     "name": "نيكل حاجب دعامية امامية برادو 24 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 26000.0,
+    "price": 0,
     "slug": "نيكل-حاجب-دعامية-امامية-برادو-24",
     "search_terms": [
       "نيكل حاجب دعامية امامية برادو 24 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11708,13 +11722,13 @@ window.search-index = [
     "name": "ليد دعامية امامية برادو 24 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 128000.0,
+    "price": 0,
     "slug": "ليد-دعامية-امامية-برادو-24",
     "search_terms": [
       "ليد دعامية امامية برادو 24 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11722,13 +11736,13 @@ window.search-index = [
     "name": "قاعدة رقم برادو 24 - رصاصي",
     "category": "",
     "brand": "DAISEN",
-    "price": 54000.0,
+    "price": 0,
     "slug": "قاعدة-رقم-برادو-24--رصاصي",
     "search_terms": [
       "قاعدة رقم برادو 24 - رصاصي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11736,13 +11750,13 @@ window.search-index = [
     "name": " قاعدة رقم برادو 24 - اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 50000.0,
+    "price": 0,
     "slug": "قاعدة-رقم-برادو-24--اسود",
     "search_terms": [
       " قاعدة رقم برادو 24 - اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11750,13 +11764,13 @@ window.search-index = [
     "name": "قاعدة رقم برادو 24 - نيكل",
     "category": "",
     "brand": "DAISEN",
-    "price": 54000.0,
+    "price": 0,
     "slug": "قاعدة-رقم-برادو-24--نيكل",
     "search_terms": [
       "قاعدة رقم برادو 24 - نيكل",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11764,13 +11778,13 @@ window.search-index = [
     "name": "قاعدة رقم برادو 24 - لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 50000.0,
+    "price": 0,
     "slug": "قاعدة-رقم-برادو-24--لولوي",
     "search_terms": [
       "قاعدة رقم برادو 24 - لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11778,13 +11792,13 @@ window.search-index = [
     "name": "كفر داير بك لايت برادو 18 - اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 28000.0,
+    "price": 0,
     "slug": "كفر-داير-بك-لايت-برادو-18--اسود",
     "search_terms": [
       "كفر داير بك لايت برادو 18 - اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11792,13 +11806,13 @@ window.search-index = [
     "name": "كفر داير بك لايت برادو 18 - لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 28000.0,
+    "price": 0,
     "slug": "كفر-داير-بك-لايت-برادو-18--لولوي",
     "search_terms": [
       "كفر داير بك لايت برادو 18 - لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11806,13 +11820,13 @@ window.search-index = [
     "name": " كفر + قاعدة ماسكة جوال لاند 22 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 36000.0,
+    "price": 0,
     "slug": "كفر-+-قاعدة-ماسكة-جوال-لاند-22",
     "search_terms": [
       " كفر + قاعدة ماسكة جوال لاند 22 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11820,13 +11834,13 @@ window.search-index = [
     "name": "تريشة قمارة لاند 22 - اسودSET",
     "category": "",
     "brand": "DAISEN",
-    "price": 114000.0,
+    "price": 0,
     "slug": "تريشة-قمارة-لاند-22--اسودset",
     "search_terms": [
       "تريشة قمارة لاند 22 - اسودSET",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11834,13 +11848,13 @@ window.search-index = [
     "name": "دوسة جانبية برادو 24 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 0,
     "slug": "دوسة-جانبية-برادو-24",
     "search_terms": [
       "دوسة جانبية برادو 24 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11848,13 +11862,13 @@ window.search-index = [
     "name": "تريشة قمارة برادو 24 - ",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 0,
     "slug": "تريشة-قمارة-برادو-24",
     "search_terms": [
       "تريشة قمارة برادو 24 - ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11862,13 +11876,13 @@ window.search-index = [
     "name": "جنح برادو 24 - لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 92000.0,
+    "price": 0,
     "slug": "جنح-برادو-24--لولوي",
     "search_terms": [
       "جنح برادو 24 - لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -11876,13 +11890,13 @@ window.search-index = [
     "name": "بك زاوية كامري 21 - امريكي LE SE ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 44000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-21--امريكي-le-se-ايسر",
     "search_terms": [
       "بك زاوية كامري 21 - امريكي LE SE ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11890,13 +11904,13 @@ window.search-index = [
     "name": "بك زاوية كامري 21 - امريكي LE SE ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 44000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-21--امريكي-le-se-ايمن",
     "search_terms": [
       "بك زاوية كامري 21 - امريكي LE SE ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11904,13 +11918,13 @@ window.search-index = [
     "name": "بك صندوق كامري 21 - امريكي LE SE ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 30000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-21--امريكي-le-se-ايسر",
     "search_terms": [
       "بك صندوق كامري 21 - امريكي LE SE ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11918,13 +11932,13 @@ window.search-index = [
     "name": "بك صندوق كامري 21 - امريكي LE SE ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 30000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-21--امريكي-le-se-ايمن",
     "search_terms": [
       "بك صندوق كامري 21 - امريكي LE SE ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11932,13 +11946,13 @@ window.search-index = [
     "name": "تريشة اسفل الدعامية الخلفية كورلا ليفان 23 -  سبورت  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 0,
     "slug": "تريشة-اسفل-الدعامية-الخلفية-كورلا-ليفان-23--سبورت",
     "search_terms": [
       "تريشة اسفل الدعامية الخلفية كورلا ليفان 23 -  سبورت  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11946,13 +11960,13 @@ window.search-index = [
     "name": "كفر فتحة سحب هوك خلفي لامع كورلا ليفان 23 -  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "كفر-فتحة-سحب-هوك-خلفي-لامع-كورلا-ليفان-23",
     "search_terms": [
       "كفر فتحة سحب هوك خلفي لامع كورلا ليفان 23 -  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11960,13 +11974,13 @@ window.search-index = [
     "name": "لايت كامري 21 - خليجي LE داخل عدسة+كلوب بمحولة داخلية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 0,
     "slug": "لايت-كامري-21--خليجي-le-داخل-عدسة+كلوب-بمحولة-داخلية-ايسر",
     "search_terms": [
       "لايت كامري 21 - خليجي LE داخل عدسة+كلوب بمحولة داخلية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11974,13 +11988,13 @@ window.search-index = [
     "name": "لايت كامري 21 - خليجي LE داخل عدسة+كلوب بمحولة داخلية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 0,
     "slug": "لايت-كامري-21--خليجي-le-داخل-عدسة+كلوب-بمحولة-داخلية-ايمن",
     "search_terms": [
       "لايت كامري 21 - خليجي LE داخل عدسة+كلوب بمحولة داخلية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -11988,13 +12002,13 @@ window.search-index = [
     "name": "باور بريك لاند 98-07",
     "category": "",
     "brand": "ADVICS",
-    "price": 135000.0,
+    "price": 0,
     "slug": "باور-بريك-لاند-98-07",
     "search_terms": [
       "باور بريك لاند 98-07",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -12002,13 +12016,13 @@ window.search-index = [
     "name": "عنبار بريك عكرب سيارة بنز خلفي 07-16",
     "category": "",
     "brand": "ADVICS",
-    "price": 135000.0,
+    "price": 0,
     "slug": "عنبار-بريك-عكرب-سيارة-بنز-خلفي-07-16",
     "search_terms": [
       "عنبار بريك عكرب سيارة بنز خلفي 07-16",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -12016,13 +12030,13 @@ window.search-index = [
     "name": "عنبار بريك بيكب ريفو عام 16- كير عادي",
     "category": "",
     "brand": "ADVICS",
-    "price": 71000.0,
+    "price": 0,
     "slug": "عنبار-بريك-بيكب-ريفو-عام-16-كير-عادي",
     "search_terms": [
       "عنبار بريك بيكب ريفو عام 16- كير عادي",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -12030,13 +12044,13 @@ window.search-index = [
     "name": "عنبار كلج رئيسي بيك نيسان شبوط بخاخ 98-07",
     "category": "",
     "brand": "AISIN",
-    "price": 31000.0,
+    "price": 0,
     "slug": "عنبار-كلج-رئيسي-بيك-نيسان-شبوط-بخاخ-98-07",
     "search_terms": [
       "عنبار كلج رئيسي بيك نيسان شبوط بخاخ 98-07",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -12044,13 +12058,13 @@ window.search-index = [
     "name": "فافونة كلج لاند 1UR",
     "category": "",
     "brand": "AISIN",
-    "price": 142000.0,
+    "price": 0,
     "slug": "فافونة-كلج-لاند-1ur",
     "search_terms": [
       "فافونة كلج لاند 1UR",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -12058,13 +12072,13 @@ window.search-index = [
     "name": "حساس دهن نيسان ",
     "category": "",
     "brand": "AISIN",
-    "price": 92000.0,
+    "price": 0,
     "slug": "حساس-دهن-نيسان",
     "search_terms": [
       "حساس دهن نيسان ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -12072,13 +12086,13 @@ window.search-index = [
     "name": "واتربم ريفو 15-22 2GD",
     "category": "",
     "brand": "AISIN",
-    "price": 142000.0,
+    "price": 0,
     "slug": "واتربم-ريفو-15-22-2gd",
     "search_terms": [
       "واتربم ريفو 15-22 2GD",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -12086,13 +12100,13 @@ window.search-index = [
     "name": "لايت كراند هايلندر 24- امريكي LE ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 312000.0,
+    "price": 0,
     "slug": "لايت-كراند-هايلندر-24-امريكي-le-ايسر",
     "search_terms": [
       "لايت كراند هايلندر 24- امريكي LE ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12100,13 +12114,13 @@ window.search-index = [
     "name": "لايت كراند هايلندر 24- امريكي LE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 312000.0,
+    "price": 0,
     "slug": "لايت-كراند-هايلندر-24-امريكي-le-ايمن",
     "search_terms": [
       "لايت كراند هايلندر 24- امريكي LE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12114,13 +12128,13 @@ window.search-index = [
     "name": "لايت كراند هايلندر 24- امريكي SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 298000.0,
+    "price": 0,
     "slug": "لايت-كراند-هايلندر-24-امريكي-se-ايسر",
     "search_terms": [
       "لايت كراند هايلندر 24- امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12128,13 +12142,13 @@ window.search-index = [
     "name": "لايت كراند هايلندر 24- امريكي SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 298000.0,
+    "price": 0,
     "slug": "لايت-كراند-هايلندر-24-امريكي-se-ايمن",
     "search_terms": [
       "لايت كراند هايلندر 24- امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12142,13 +12156,13 @@ window.search-index = [
     "name": "كفر بروجكتر بدون فتحة  كراند هايلندر 24- امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-بدون-فتحة-كراند-هايلندر-24-امريكي-ايسر",
     "search_terms": [
       "كفر بروجكتر بدون فتحة  كراند هايلندر 24- امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12156,13 +12170,13 @@ window.search-index = [
     "name": "كفر بروجكتر بدون فتحة  كراند هايلندر 24- امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-بدون-فتحة-كراند-هايلندر-24-امريكي-ايمن",
     "search_terms": [
       "كفر بروجكتر بدون فتحة  كراند هايلندر 24- امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12170,13 +12184,13 @@ window.search-index = [
     "name": "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-مع-فتحة-كراند-هايلندر-24-امريكي-ايسر",
     "search_terms": [
       "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12184,13 +12198,13 @@ window.search-index = [
     "name": "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-مع-فتحة-كراند-هايلندر-24-امريكي-ايمن",
     "search_terms": [
       "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12198,13 +12212,13 @@ window.search-index = [
     "name": "تريشة لحية دعامية امامي كراند هايلندر 24- امريكي LE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 60000.0,
+    "price": 0,
     "slug": "تريشة-لحية-دعامية-امامي-كراند-هايلندر-24-امريكي-le",
     "search_terms": [
       "تريشة لحية دعامية امامي كراند هايلندر 24- امريكي LE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12212,13 +12226,13 @@ window.search-index = [
     "name": "تريشة لحية دعامية امامي كراند هايلندر 24- امريكي SE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 60000.0,
+    "price": 0,
     "slug": "تريشة-لحية-دعامية-امامي-كراند-هايلندر-24-امريكي-se",
     "search_terms": [
       "تريشة لحية دعامية امامي كراند هايلندر 24- امريكي SE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12226,13 +12240,13 @@ window.search-index = [
     "name": " دعامية امامية كراند هايلندر 24- امريكي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 82000.0,
+    "price": 0,
     "slug": "دعامية-امامية-كراند-هايلندر-24-امريكي",
     "search_terms": [
       " دعامية امامية كراند هايلندر 24- امريكي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12240,13 +12254,13 @@ window.search-index = [
     "name": "شباك رئيسي اعلى كراند هايلندر 24- امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "شباك-رئيسي-اعلى-كراند-هايلندر-24-امريكي",
     "search_terms": [
       "شباك رئيسي اعلى كراند هايلندر 24- امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12254,13 +12268,13 @@ window.search-index = [
     "name": "شباك دعامية اسفل كراند هايلندر 24- امريكي بدون فتحة كامرا وحساس",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-بدون-فتحة-كامرا-وحساس",
     "search_terms": [
       "شباك دعامية اسفل كراند هايلندر 24- امريكي بدون فتحة كامرا وحساس",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12268,13 +12282,13 @@ window.search-index = [
     "name": "شباك دعامية اسفل كراند هايلندر 24- امريكي مع  فتحة كامرا وحساس",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-مع-فتحة-كامرا-وحساس",
     "search_terms": [
       "شباك دعامية اسفل كراند هايلندر 24- امريكي مع  فتحة كامرا وحساس",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12282,13 +12296,13 @@ window.search-index = [
     "name": "شباك دعامية اسفل كراند هايلندر 24- امريكي بدون  فتحة كامرا  مع  فتحة حساس اسود",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-بدون-فتحة-كامرا-مع-فتحة-حساس-اسود",
     "search_terms": [
       "شباك دعامية اسفل كراند هايلندر 24- امريكي بدون  فتحة كامرا  مع  فتحة حساس اسود",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12296,13 +12310,13 @@ window.search-index = [
     "name": "شباك دعامية اسفل كراند هايلندر 24- امريكي مع فتحة كامرا  مع  فتحة حساس ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-مع-فتحة-كامرا-مع-فتحة-حساس",
     "search_terms": [
       "شباك دعامية اسفل كراند هايلندر 24- امريكي مع فتحة كامرا  مع  فتحة حساس ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12310,13 +12324,13 @@ window.search-index = [
     "name": "شباك دعامية اسفل كراند هايلندر 24- امريكي مع  فتحة كامرا وحساس اسود",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-مع-فتحة-كامرا-وحساس-اسود",
     "search_terms": [
       "شباك دعامية اسفل كراند هايلندر 24- امريكي مع  فتحة كامرا وحساس اسود",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12324,13 +12338,13 @@ window.search-index = [
     "name": "نيكل دعامية امامية  اعلى شباك  كراند هايلندر 24- امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "نيكل-دعامية-امامية-اعلى-شباك-كراند-هايلندر-24-امريكي",
     "search_terms": [
       "نيكل دعامية امامية  اعلى شباك  كراند هايلندر 24- امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12338,13 +12352,13 @@ window.search-index = [
     "name": "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24 - ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 0,
     "slug": "نيكل-حاجب-دعامية-امامية-تحت-لايت-كراند-هايلندر24--ايمن",
     "search_terms": [
       "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24 - ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12352,13 +12366,13 @@ window.search-index = [
     "name": "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24- ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 0,
     "slug": "نيكل-حاجب-دعامية-امامية-تحت-لايت-كراند-هايلندر24-ايسر",
     "search_terms": [
       "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24- ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12366,13 +12380,13 @@ window.search-index = [
     "name": " تريشة  لحية دعامية امامية كراند هايبندر 24- امريكي  وسطية سلفر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "تريشة-لحية-دعامية-امامية-كراند-هايبندر-24-امريكي-وسطية-سلفر",
     "search_terms": [
       " تريشة  لحية دعامية امامية كراند هايبندر 24- امريكي  وسطية سلفر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12380,13 +12394,13 @@ window.search-index = [
     "name": "عدسة بروجكتر كراند هايلندر 24- امريكي ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 13000.0,
+    "price": 0,
     "slug": "عدسة-بروجكتر-كراند-هايلندر-24-امريكي-ايسر",
     "search_terms": [
       "عدسة بروجكتر كراند هايلندر 24- امريكي ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12394,13 +12408,13 @@ window.search-index = [
     "name": "عدسة بروجكتر كراند هايلندر 24- امريكي ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 13000.0,
+    "price": 0,
     "slug": "عدسة-بروجكتر-كراند-هايلندر-24-امريكي-ايمن",
     "search_terms": [
       "عدسة بروجكتر كراند هايلندر 24- امريكي ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12408,13 +12422,13 @@ window.search-index = [
     "name": "بطانة درع اسفل دعامية امامي كامري 24-25 صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 47000.0,
+    "price": 0,
     "slug": "بطانة-درع-اسفل-دعامية-امامي-كامري-24-25-صيني",
     "search_terms": [
       "بطانة درع اسفل دعامية امامي كامري 24-25 صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12422,13 +12436,13 @@ window.search-index = [
     "name": "بطانة جاملغ امامي لاند  08-15 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "بطانة-جاملغ-امامي-لاند-08-15-ايسر",
     "search_terms": [
       "بطانة جاملغ امامي لاند  08-15 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12436,13 +12450,13 @@ window.search-index = [
     "name": "بطانة جاملغ امامي لاند  08-15 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "بطانة-جاملغ-امامي-لاند-08-15-ايمن",
     "search_terms": [
       "بطانة جاملغ امامي لاند  08-15 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12450,13 +12464,13 @@ window.search-index = [
     "name": "بطانة درع اسفل دعامية امامي كامري 25- امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 0,
     "slug": "بطانة-درع-اسفل-دعامية-امامي-كامري-25-امريكي",
     "search_terms": [
       "بطانة درع اسفل دعامية امامي كامري 25- امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12464,13 +12478,13 @@ window.search-index = [
     "name": "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض صغير ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 0,
     "slug": "بك-زاوية-فرونتلاندر-23-وارد-صيني-سكن-اشارة-ابيض-صغير-ايسر",
     "search_terms": [
       "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض صغير ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12478,13 +12492,13 @@ window.search-index = [
     "name": "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض صغير ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 0,
     "slug": "بك-زاوية-فرونتلاندر-23-وارد-صيني-سكن-اشارة-ابيض-صغير-ايمن",
     "search_terms": [
       "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض صغير ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12492,13 +12506,13 @@ window.search-index = [
     "name": "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض كبيير ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 99000.0,
+    "price": 0,
     "slug": "بك-زاوية-فرونتلاندر-23-وارد-صيني-سكن-اشارة-ابيض-كبيير-ايسر",
     "search_terms": [
       "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض كبيير ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12506,13 +12520,13 @@ window.search-index = [
     "name": "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض كبيير ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 99000.0,
+    "price": 0,
     "slug": "بك-زاوية-فرونتلاندر-23-وارد-صيني-سكن-اشارة-ابيض-كبيير-ايمن",
     "search_terms": [
       "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض كبيير ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12520,13 +12534,13 @@ window.search-index = [
     "name": "بك زاوية كامري 25- امريكي LE/SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-25-امريكي-lese-ايسر",
     "search_terms": [
       "بك زاوية كامري 25- امريكي LE/SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12534,13 +12548,13 @@ window.search-index = [
     "name": "بك زاوية كامري 25- امريكي LE/SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 85000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-25-امريكي-lese-ايمن",
     "search_terms": [
       "بك زاوية كامري 25- امريكي LE/SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12548,13 +12562,13 @@ window.search-index = [
     "name": "بك زاوية كامري 25- وارد صيني مواصفات عالية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-عالية-ايسر",
     "search_terms": [
       "بك زاوية كامري 25- وارد صيني مواصفات عالية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12562,13 +12576,13 @@ window.search-index = [
     "name": "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 99000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-ناصية-ايسر",
     "search_terms": [
       "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12576,13 +12590,13 @@ window.search-index = [
     "name": "بك زاوية كامري 25- وارد صيني مواصفات عالية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-عالية-ايمن",
     "search_terms": [
       "بك زاوية كامري 25- وارد صيني مواصفات عالية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12590,13 +12604,13 @@ window.search-index = [
     "name": "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 99000.0,
+    "price": 0,
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-ناصية-ايمن",
     "search_terms": [
       "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12604,13 +12618,13 @@ window.search-index = [
     "name": "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-تك-كلوب-ايسر",
     "search_terms": [
       "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12618,13 +12632,13 @@ window.search-index = [
     "name": "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-تك-كلوب-ايمن",
     "search_terms": [
       "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12632,13 +12646,13 @@ window.search-index = [
     "name": "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 68000.0,
+    "price": 0,
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-دبل-كلوب-ايسر",
     "search_terms": [
       "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12646,13 +12660,13 @@ window.search-index = [
     "name": "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 68000.0,
+    "price": 0,
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-دبل-كلوب-ايمن",
     "search_terms": [
       "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12660,13 +12674,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- امريكي LE/SE ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 82000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-امريكي-lese-ايسر",
     "search_terms": [
       "بك صندوق كامري 25- امريكي LE/SE ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12674,13 +12688,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- امريكي LE/SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 82000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-امريكي-lese-ايمن",
     "search_terms": [
       "بك صندوق كامري 25- امريكي LE/SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12688,13 +12702,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- امريكي XLE/XSE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 99000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-امريكي-xlexse-ايسر",
     "search_terms": [
       "بك صندوق كامري 25- امريكي XLE/XSE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12702,13 +12716,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- امريكي XLE/XSE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 99000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-امريكي-xlexse-ايمن",
     "search_terms": [
       "بك صندوق كامري 25- امريكي XLE/XSE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12716,13 +12730,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- وارد صيني مواصفات عالية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-عالية-ايسر",
     "search_terms": [
       "بك صندوق كامري 25- وارد صيني مواصفات عالية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12730,13 +12744,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- وارد صيني مواصفات ناصية  ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-ناصية-ايسر",
     "search_terms": [
       "بك صندوق كامري 25- وارد صيني مواصفات ناصية  ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12744,13 +12758,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- وارد صيني مواصفات عالية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 107000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-عالية-ايمن",
     "search_terms": [
       "بك صندوق كامري 25- وارد صيني مواصفات عالية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12758,13 +12772,13 @@ window.search-index = [
     "name": "بك صندوق كامري 25- وارد صيني مواصفات ناصية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 92000.0,
+    "price": 0,
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-ناصية-ايمن",
     "search_terms": [
       "بك صندوق كامري 25- وارد صيني مواصفات ناصية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12772,13 +12786,13 @@ window.search-index = [
     "name": "بك لايت لكزس برادو ابيض 18-23 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 0,
     "slug": "بك-لايت-لكزس-برادو-ابيض-18-23-ايسر",
     "search_terms": [
       "بك لايت لكزس برادو ابيض 18-23 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12786,13 +12800,13 @@ window.search-index = [
     "name": "بك لايت لكزس برادو ابيض 18-23 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 0,
     "slug": "بك-لايت-لكزس-برادو-ابيض-18-23-ايمن",
     "search_terms": [
       "بك لايت لكزس برادو ابيض 18-23 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12800,13 +12814,13 @@ window.search-index = [
     "name": "بك لايت لكزس برادو احمر 18-23 ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 0,
     "slug": "بك-لايت-لكزس-برادو-احمر-18-23-ايسر",
     "search_terms": [
       "بك لايت لكزس برادو احمر 18-23 ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12814,13 +12828,13 @@ window.search-index = [
     "name": "بك لايت لكزس برادو احمر 18-23 ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 0,
     "slug": "بك-لايت-لكزس-برادو-احمر-18-23-ايمن",
     "search_terms": [
       "بك لايت لكزس برادو احمر 18-23 ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12828,13 +12842,13 @@ window.search-index = [
     "name": "تريشة باب امامي فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 0,
     "slug": "تريشة-باب-امامي-فرونتلاندر-23-ايسر",
     "search_terms": [
       "تريشة باب امامي فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12842,13 +12856,13 @@ window.search-index = [
     "name": "تريشة باب امامي فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 0,
     "slug": "تريشة-باب-امامي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "تريشة باب امامي فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12856,13 +12870,13 @@ window.search-index = [
     "name": "تريشة باب خلفي فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 0,
     "slug": "تريشة-باب-خلفي-فرونتلاندر-23-ايسر",
     "search_terms": [
       "تريشة باب خلفي فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12870,13 +12884,13 @@ window.search-index = [
     "name": "تريشة باب خلفي فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 0,
     "slug": "تريشة-باب-خلفي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "تريشة باب خلفي فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12884,13 +12898,13 @@ window.search-index = [
     "name": "تريشة شباك فرونتلاندر 23- وارد صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "تريشة-شباك-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
       "تريشة شباك فرونتلاندر 23- وارد صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12898,13 +12912,13 @@ window.search-index = [
     "name": "تريشة فوق دعامية امامي فرونتلاندر 23- وارد صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 0,
     "slug": "تريشة-فوق-دعامية-امامي-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
       "تريشة فوق دعامية امامي فرونتلاندر 23- وارد صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12912,13 +12926,13 @@ window.search-index = [
     "name": "تريشة لحية دعامية خلفي كامري 25- صيني خليجي امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "تريشة-لحية-دعامية-خلفي-كامري-25-صيني-خليجي-امريكي",
     "search_terms": [
       "تريشة لحية دعامية خلفي كامري 25- صيني خليجي امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12926,13 +12940,13 @@ window.search-index = [
     "name": "NRO تريشة لحية دعامية خلفية كامري 25- امريكي XLE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "nro-تريشة-لحية-دعامية-خلفية-كامري-25-امريكي-xle",
     "search_terms": [
       "NRO تريشة لحية دعامية خلفية كامري 25- امريكي XLE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12940,13 +12954,13 @@ window.search-index = [
     "name": "تريشة مسطرة دعامية خلفي فرونتلاندر 23-",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 0,
     "slug": "تريشة-مسطرة-دعامية-خلفي-فرونتلاندر-23",
     "search_terms": [
       "تريشة مسطرة دعامية خلفي فرونتلاندر 23-",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12954,13 +12968,13 @@ window.search-index = [
     "name": "حاجب دعامية خلفي فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "حاجب-دعامية-خلفي-فرونتلاندر-23-ايسر",
     "search_terms": [
       "حاجب دعامية خلفي فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12968,13 +12982,13 @@ window.search-index = [
     "name": "حاجب دعامية خلفي فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "حاجب-دعامية-خلفي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "حاجب دعامية خلفي فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12982,13 +12996,13 @@ window.search-index = [
     "name": "خرطوم كفر شوتة بدنة كورلا كروس 22- وارد صيني ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "خرطوم-كفر-شوتة-بدنة-كورلا-كروس-22-وارد-صيني",
     "search_terms": [
       "خرطوم كفر شوتة بدنة كورلا كروس 22- وارد صيني ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -12996,13 +13010,13 @@ window.search-index = [
     "name": "دعامية امامية فرونتلاندر 23- وارد صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 0,
     "slug": "دعامية-امامية-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
       "دعامية امامية فرونتلاندر 23- وارد صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13010,13 +13024,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 25- امريكي LE/XLE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "دعامية-امامية-كامري-25-امريكي-lexle",
     "search_terms": [
       "دعامية امامية كامري 25- امريكي LE/XLE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13024,13 +13038,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 25- امريكي SE/XSE ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "دعامية-امامية-كامري-25-امريكي-sexse",
     "search_terms": [
       "دعامية امامية كامري 25- امريكي SE/XSE ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13038,13 +13052,13 @@ window.search-index = [
     "name": "دعامية امامية كامري 25- صيني خليجي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "دعامية-امامية-كامري-25-صيني-خليجي",
     "search_terms": [
       "دعامية امامية كامري 25- صيني خليجي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13052,13 +13066,13 @@ window.search-index = [
     "name": "دعامية خلفي فرونتلاندر 23- وارد صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "دعامية-خلفي-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
       "دعامية خلفي فرونتلاندر 23- وارد صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13066,13 +13080,13 @@ window.search-index = [
     "name": "دعامية خلفية كامري 25- امريكي خليجي صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "دعامية-خلفية-كامري-25-امريكي-خليجي-صيني",
     "search_terms": [
       "دعامية خلفية كامري 25- امريكي خليجي صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13080,13 +13094,13 @@ window.search-index = [
     "name": "NRO SAME AS 25CMU-009 دعامية خلفية كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "nro-same-as-25cmu-009-دعامية-خلفية-كامري-25-صيني-خليجي",
     "search_terms": [
       "NRO SAME AS 25CMU-009 دعامية خلفية كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13094,13 +13108,13 @@ window.search-index = [
     "name": "شباك دعامية امامي فرونتلاندر 23- وارد صيني",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامي-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
       "شباك دعامية امامي فرونتلاندر 23- وارد صيني",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13108,13 +13122,13 @@ window.search-index = [
     "name": "شباك دعامية امامية  اسفل كامري  25- امريكي XLE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-xle",
     "search_terms": [
       "شباك دعامية امامية  اسفل كامري  25- امريكي XLE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13122,13 +13136,13 @@ window.search-index = [
     "name": "شباك دعامية امامية  كورلا ليفان 23- صيني عريض",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامية-كورلا-ليفان-23-صيني-عريض",
     "search_terms": [
       "شباك دعامية امامية  كورلا ليفان 23- صيني عريض",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13136,13 +13150,13 @@ window.search-index = [
     "name": "شباك دعامية امامية كورلا ليفان 23- صيني كصيف",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامية-كورلا-ليفان-23-صيني-كصيف",
     "search_terms": [
       "شباك دعامية امامية كورلا ليفان 23- صيني كصيف",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13150,13 +13164,13 @@ window.search-index = [
     "name": "شباك دعامية امامية اسفل كامري  25- امريكي LE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-le",
     "search_terms": [
       "شباك دعامية امامية اسفل كامري  25- امريكي LE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13164,13 +13178,13 @@ window.search-index = [
     "name": "شباك دعامية امامية اسفل كامري 25- امريكي SE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-se",
     "search_terms": [
       "شباك دعامية امامية اسفل كامري 25- امريكي SE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13178,13 +13192,13 @@ window.search-index = [
     "name": "شباك دعامية امامية اسفل كامري 25- امريكي XSE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-xse",
     "search_terms": [
       "شباك دعامية امامية اسفل كامري 25- امريكي XSE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13192,13 +13206,13 @@ window.search-index = [
     "name": "شباك رئيسي اعلى جانب لايت بدون كامرة كامري 25- امريكي ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 0,
     "slug": "شباك-رئيسي-اعلى-جانب-لايت-بدون-كامرة-كامري-25-امريكي",
     "search_terms": [
       "شباك رئيسي اعلى جانب لايت بدون كامرة كامري 25- امريكي ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13206,13 +13220,13 @@ window.search-index = [
     "name": "شباك رئيسي اعلى كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "شباك-رئيسي-اعلى-كامري-25-صيني-خليجي",
     "search_terms": [
       "شباك رئيسي اعلى كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13220,13 +13234,13 @@ window.search-index = [
     "name": "NRO SAME AS 25CMU-032 فسفورة  سكن دعامية خلفية كامري 25- صيني خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "nro-same-as-25cmu-032-فسفورة-سكن-دعامية-خلفية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
       "NRO SAME AS 25CMU-032 فسفورة  سكن دعامية خلفية كامري 25- صيني خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13234,13 +13248,13 @@ window.search-index = [
     "name": "NRO NRO SAME AS 25CMU-032فسفورة سكن دعامية خلفية كامري 25- صيني خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "nro-nro-same-as-25cmu-032فسفورة-سكن-دعامية-خلفية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "NRO NRO SAME AS 25CMU-032فسفورة سكن دعامية خلفية كامري 25- صيني خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13248,13 +13262,13 @@ window.search-index = [
     "name": "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "فسفورة-سكن-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايسر",
     "search_terms": [
       "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13262,13 +13276,13 @@ window.search-index = [
     "name": "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "فسفورة-سكن-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايمن",
     "search_terms": [
       "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13276,13 +13290,13 @@ window.search-index = [
     "name": "قاعدة رقم امامي كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "قاعدة-رقم-امامي-كامري-25-صيني-خليجي",
     "search_terms": [
       "قاعدة رقم امامي كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13290,13 +13304,13 @@ window.search-index = [
     "name": "قاعدة شباك كامري 25- امريكي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "قاعدة-شباك-كامري-25-امريكي",
     "search_terms": [
       "قاعدة شباك كامري 25- امريكي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13304,13 +13318,13 @@ window.search-index = [
     "name": "قاعدة شباك كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "قاعدة-شباك-كامري-25-صيني-خليجي",
     "search_terms": [
       "قاعدة شباك كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13318,13 +13332,13 @@ window.search-index = [
     "name": "قاعدة ظهر دعامية امامية كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
+    "price": 0,
     "slug": "قاعدة-ظهر-دعامية-امامية-كامري-25-صيني-خليجي",
     "search_terms": [
       "قاعدة ظهر دعامية امامية كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13332,13 +13346,13 @@ window.search-index = [
     "name": "كفر  درع بطانة تحت محرك فرونتلاندر 23-",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 23000.0,
+    "price": 0,
     "slug": "كفر-درع-بطانة-تحت-محرك-فرونتلاندر-23",
     "search_terms": [
       "كفر  درع بطانة تحت محرك فرونتلاندر 23-",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13346,13 +13360,13 @@ window.search-index = [
     "name": "كفر بدنة اعلى كامري 25- خليجي صيني امريكي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "كفر-بدنة-اعلى-كامري-25-خليجي-صيني-امريكي",
     "search_terms": [
       "كفر بدنة اعلى كامري 25- خليجي صيني امريكي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13360,13 +13374,13 @@ window.search-index = [
     "name": "NRO SAME AS TY-25CMU-031 كفر بدنة كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "nro-same-as-ty-25cmu-031-كفر-بدنة-كامري-25-صيني-خليجي",
     "search_terms": [
       "NRO SAME AS TY-25CMU-031 كفر بدنة كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13374,13 +13388,13 @@ window.search-index = [
     "name": "كفر بدنة  اسفل راديتر كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "كفر-بدنة-اسفل-راديتر-كامري-25-صيني-خليجي",
     "search_terms": [
       "كفر بدنة  اسفل راديتر كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13388,13 +13402,13 @@ window.search-index = [
     "name": "كفر جانب بك زاوية كامري 25- صيني خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "كفر-جانب-بك-زاوية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
       "كفر جانب بك زاوية كامري 25- صيني خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13402,13 +13416,13 @@ window.search-index = [
     "name": "كفر جانب بك زاوية كامري 25- صيني خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "كفر-جانب-بك-زاوية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "كفر جانب بك زاوية كامري 25- صيني خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13416,13 +13430,13 @@ window.search-index = [
     "name": "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-صيني-25-ايسر",
     "search_terms": [
       "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13430,13 +13444,13 @@ window.search-index = [
     "name": "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-صيني-25-ايمن",
     "search_terms": [
       "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13444,13 +13458,13 @@ window.search-index = [
     "name": "كفر حاجب اسفل دعامية امامية كامري 25- امريكي SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 13000.0,
+    "price": 0,
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-se-ايسر",
     "search_terms": [
       "كفر حاجب اسفل دعامية امامية كامري 25- امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13458,13 +13472,13 @@ window.search-index = [
     "name": "كفر حاجب اسفل دعامية امامية كامري 25- امريكي SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 13000.0,
+    "price": 0,
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-se-ايمن",
     "search_terms": [
       "كفر حاجب اسفل دعامية امامية كامري 25- امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13472,13 +13486,13 @@ window.search-index = [
     "name": "كفر حاجب اسفل دعامية امامية كامري 25- امريكي XSE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-xse-ايسر",
     "search_terms": [
       "كفر حاجب اسفل دعامية امامية كامري 25- امريكي XSE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13486,13 +13500,13 @@ window.search-index = [
     "name": "كفر حاجب اسفل دعامية امامية كامري 25- امريكي XSE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-xse-ايمن",
     "search_terms": [
       "كفر حاجب اسفل دعامية امامية كامري 25- امريكي XSE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13500,13 +13514,13 @@ window.search-index = [
     "name": "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-25-ايسر",
     "search_terms": [
       "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13514,13 +13528,13 @@ window.search-index = [
     "name": "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-25-ايمن",
     "search_terms": [
       "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13528,13 +13542,13 @@ window.search-index = [
     "name": "كفر حاجب جانب دعامية امامية كامري 25- امريكي LE/XLE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-lexle-ايسر",
     "search_terms": [
       "كفر حاجب جانب دعامية امامية كامري 25- امريكي LE/XLE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13542,13 +13556,13 @@ window.search-index = [
     "name": "كفر حاجب جانب دعامية امامية كامري 25- امريكي LE/XLE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-lexle-ايمن",
     "search_terms": [
       "كفر حاجب جانب دعامية امامية كامري 25- امريكي LE/XLE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13556,13 +13570,13 @@ window.search-index = [
     "name": "كفر حاجب جانب دعامية امامية كامري 25- امريكي SE ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-se-ايسر",
     "search_terms": [
       "كفر حاجب جانب دعامية امامية كامري 25- امريكي SE ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13570,13 +13584,13 @@ window.search-index = [
     "name": "كفر حاجب جانب دعامية امامية كامري 25- امريكي SE ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-se-ايمن",
     "search_terms": [
       "كفر حاجب جانب دعامية امامية كامري 25- امريكي SE ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13584,13 +13598,13 @@ window.search-index = [
     "name": "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانبي-دعامية-امامية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
       "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13598,13 +13612,13 @@ window.search-index = [
     "name": "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "كفر-حاجب-جانبي-دعامية-امامية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13612,13 +13626,13 @@ window.search-index = [
     "name": "كفر دعامية اسفل خلفية كورلا ليفان 23- صيني مشيف سبورت",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "كفر-دعامية-اسفل-خلفية-كورلا-ليفان-23-صيني-مشيف-سبورت",
     "search_terms": [
       "كفر دعامية اسفل خلفية كورلا ليفان 23- صيني مشيف سبورت",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13626,13 +13640,13 @@ window.search-index = [
     "name": "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 3000.0,
+    "price": 0,
     "slug": "كفر-زاوية-حاجب-الاسفل-دعامية-خلفية-فرونتلاندر-23-ايسر",
     "search_terms": [
       "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13640,13 +13654,13 @@ window.search-index = [
     "name": "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 3000.0,
+    "price": 0,
     "slug": "كفر-زاوية-حاجب-الاسفل-دعامية-خلفية-فرونتلاندر-23-ايمن",
     "search_terms": [
       "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13654,13 +13668,13 @@ window.search-index = [
     "name": "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 3000.0,
+    "price": 0,
     "slug": "كفر-زاوية-حاجب-دعامية-خلفية-فرونتلاندر-23-ايسر",
     "search_terms": [
       "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13668,13 +13682,13 @@ window.search-index = [
     "name": "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 3000.0,
+    "price": 0,
     "slug": "كفر-زاوية-حاجب-دعامية-خلفية-فرونتلاندر-23-ايمن",
     "search_terms": [
       "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13682,13 +13696,13 @@ window.search-index = [
     "name": "كفر شوتة بدنة كورلا كروس 22- وارد صيني ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "كفر-شوتة-بدنة-كورلا-كروس-22-وارد-صيني",
     "search_terms": [
       "كفر شوتة بدنة كورلا كروس 22- وارد صيني ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13696,13 +13710,13 @@ window.search-index = [
     "name": "NRO SAME AS 25CMU-013كفر كصة دعامية امامي اعلى  كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "nro-same-as-25cmu-013كفر-كصة-دعامية-امامي-اعلى-كامري-25-صيني-خليجي",
     "search_terms": [
       "NRO SAME AS 25CMU-013كفر كصة دعامية امامي اعلى  كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13710,13 +13724,13 @@ window.search-index = [
     "name": "كفر كصة دعامية امامية اعلى كامري 25- امريكي خليجي صيني ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "كفر-كصة-دعامية-امامية-اعلى-كامري-25-امريكي-خليجي-صيني",
     "search_terms": [
       "كفر كصة دعامية امامية اعلى كامري 25- امريكي خليجي صيني ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13724,13 +13738,13 @@ window.search-index = [
     "name": "كفر هوك بالدعامية امامي كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "كفر-هوك-بالدعامية-امامي-كامري-25-صيني-خليجي",
     "search_terms": [
       "كفر هوك بالدعامية امامي كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13738,13 +13752,13 @@ window.search-index = [
     "name": "لايت فرونتلاندر تك عدسة 23- وارد صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 199000.0,
+    "price": 0,
     "slug": "لايت-فرونتلاندر-تك-عدسة-23-وارد-صيني-ايسر",
     "search_terms": [
       "لايت فرونتلاندر تك عدسة 23- وارد صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13752,13 +13766,13 @@ window.search-index = [
     "name": "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 220000.0,
+    "price": 0,
     "slug": "لايت-فرونتلاندر-ليد-مسطرة-اعلى-23-وارد-صيني-ايسر",
     "search_terms": [
       "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13766,13 +13780,13 @@ window.search-index = [
     "name": "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 220000.0,
+    "price": 0,
     "slug": "لايت-فرونتلاندر-ليد-مسطرة-اعلى-23-وارد-صيني-ايمن",
     "search_terms": [
       "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13780,13 +13794,13 @@ window.search-index = [
     "name": "لايت فرونتلاندر تك عدسة 23- وارد صيني ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 199000.0,
+    "price": 0,
     "slug": "لايت-فرونتلاندر-تك-عدسة-23-وارد-صيني-ايمن",
     "search_terms": [
       "لايت فرونتلاندر تك عدسة 23- وارد صيني ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13794,13 +13808,13 @@ window.search-index = [
     "name": "لايت كامري 25- امريكي LE SE تك زنون ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 199000.0,
+    "price": 0,
     "slug": "لايت-كامري-25-امريكي-le-se-تك-زنون-ايمن",
     "search_terms": [
       "لايت كامري 25- امريكي LE SE تك زنون ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13808,13 +13822,13 @@ window.search-index = [
     "name": "لايت كامري 25- امريكي LE SE تك زنون ايسر  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 199000.0,
+    "price": 0,
     "slug": "لايت-كامري-25-امريكي-le-se-تك-زنون-ايسر",
     "search_terms": [
       "لايت كامري 25- امريكي LE SE تك زنون ايسر  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13822,13 +13836,13 @@ window.search-index = [
     "name": "لايت كامري 25- امريكي XLE دبل زنون ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 227000.0,
+    "price": 0,
     "slug": "لايت-كامري-25-امريكي-xle-دبل-زنون-ايسر",
     "search_terms": [
       "لايت كامري 25- امريكي XLE دبل زنون ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13836,13 +13850,13 @@ window.search-index = [
     "name": "لايت كامري 25- امريكي XLE دبل زنون ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 227000.0,
+    "price": 0,
     "slug": "لايت-كامري-25-امريكي-xle-دبل-زنون-ايمن",
     "search_terms": [
       "لايت كامري 25- امريكي XLE دبل زنون ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13850,13 +13864,13 @@ window.search-index = [
     "name": "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "نيكل-بدعامية-امامية-شباك-عريض-كورلا-ليفان-23-صيني-ايسر",
     "search_terms": [
       "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13864,13 +13878,13 @@ window.search-index = [
     "name": "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "نيكل-بدعامية-امامية-شباك-عريض-كورلا-ليفان-23-صيني-ايمن",
     "search_terms": [
       "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13878,13 +13892,13 @@ window.search-index = [
     "name": "ماسكة تحت بك لايت كامري 25- صيني خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "ماسكة تحت بك لايت كامري 25- صيني خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13892,13 +13906,13 @@ window.search-index = [
     "name": "ماسكة تحت بك لايت فرونتلاندر 23-  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-تحت-بك-لايت-فرونتلاندر-23-ايمن",
     "search_terms": [
       "ماسكة تحت بك لايت فرونتلاندر 23-  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13906,13 +13920,13 @@ window.search-index = [
     "name": "ماسكة تحت بك لايت فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-تحت-بك-لايت-فرونتلاندر-23-ايسر",
     "search_terms": [
       "ماسكة تحت بك لايت فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13920,13 +13934,13 @@ window.search-index = [
     "name": "ماسكة تحت بك لايت كامري 25- امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-امريكي-ايسر",
     "search_terms": [
       "ماسكة تحت بك لايت كامري 25- امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13934,13 +13948,13 @@ window.search-index = [
     "name": "ماسكة تحت بك لايت كامري 25- امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-امريكي-ايمن",
     "search_terms": [
       "ماسكة تحت بك لايت كامري 25- امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13948,13 +13962,13 @@ window.search-index = [
     "name": "ماسكة تحت بك لايت كامري 25- صيني خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
       "ماسكة تحت بك لايت كامري 25- صيني خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13962,13 +13976,13 @@ window.search-index = [
     "name": "ماسكة دعامية امامية فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-امامية-فرونتلاندر-23-ايسر",
     "search_terms": [
       "ماسكة دعامية امامية فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13976,13 +13990,13 @@ window.search-index = [
     "name": "ماسكة دعامية امامية فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-امامية-فرونتلاندر-23-ايمن",
     "search_terms": [
       "ماسكة دعامية امامية فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -13990,13 +14004,13 @@ window.search-index = [
     "name": "ماسكة دعامية امامية كامري 25- امريكي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-امامية-كامري-25-امريكي-ايسر",
     "search_terms": [
       "ماسكة دعامية امامية كامري 25- امريكي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14004,13 +14018,13 @@ window.search-index = [
     "name": "ماسكة دعامية امامية كامري 25- امريكي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-امامية-كامري-25-امريكي-ايمن",
     "search_terms": [
       "ماسكة دعامية امامية كامري 25- امريكي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14018,13 +14032,13 @@ window.search-index = [
     "name": "ماسكة دعامية امامية كامري 25- صيني خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-امامية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
       "ماسكة دعامية امامية كامري 25- صيني خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14032,13 +14046,13 @@ window.search-index = [
     "name": "ماسكة دعامية امامية كامري 25- صيني خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-امامية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "ماسكة دعامية امامية كامري 25- صيني خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14046,13 +14060,13 @@ window.search-index = [
     "name": "ماسكة دعامية خلفية فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-خلفية-فرونتلاندر-23-ايسر",
     "search_terms": [
       "ماسكة دعامية خلفية فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14060,13 +14074,13 @@ window.search-index = [
     "name": "ماسكة دعامية خلفية فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 7000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-خلفية-فرونتلاندر-23-ايمن",
     "search_terms": [
       "ماسكة دعامية خلفية فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14074,13 +14088,13 @@ window.search-index = [
     "name": "NRO SAME AS 25CMU-027 ماسكة دعامية خلفية كامري 25-  صيني امريكي خليجي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "nro-same-as-25cmu-027-ماسكة-دعامية-خلفية-كامري-25-صيني-امريكي-خليجي-ايسر",
     "search_terms": [
       "NRO SAME AS 25CMU-027 ماسكة دعامية خلفية كامري 25-  صيني امريكي خليجي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14088,13 +14102,13 @@ window.search-index = [
     "name": "NRO SAME AS 25CMU-027 ماسكة دعامية خلفية كامري 25-  صيني امريكي خليجي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "nro-same-as-25cmu-027-ماسكة-دعامية-خلفية-كامري-25-صيني-امريكي-خليجي-ايمن",
     "search_terms": [
       "NRO SAME AS 25CMU-027 ماسكة دعامية خلفية كامري 25-  صيني امريكي خليجي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14102,13 +14116,13 @@ window.search-index = [
     "name": "ماسكة دعامية خلفية كامري 25- امريكي خليجي صيني ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايسر",
     "search_terms": [
       "ماسكة دعامية خلفية كامري 25- امريكي خليجي صيني ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14116,13 +14130,13 @@ window.search-index = [
     "name": "ماسكة دعامية خلفية كامري 25- امريكي خليجي صيني ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "ماسكة-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايمن",
     "search_terms": [
       "ماسكة دعامية خلفية كامري 25- امريكي خليجي صيني ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14130,13 +14144,13 @@ window.search-index = [
     "name": "نيكلة شباك امامية كامري 25- صيني خليجي",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "نيكلة-شباك-امامية-كامري-25-صيني-خليجي",
     "search_terms": [
       "نيكلة شباك امامية كامري 25- صيني خليجي",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14144,13 +14158,13 @@ window.search-index = [
     "name": "هلال جاملغ امامي فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "هلال-جاملغ-امامي-فرونتلاندر-23-ايسر",
     "search_terms": [
       "هلال جاملغ امامي فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14158,13 +14172,13 @@ window.search-index = [
     "name": "هلال جاملغ امامي فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "هلال-جاملغ-امامي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "هلال جاملغ امامي فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14172,13 +14186,13 @@ window.search-index = [
     "name": "هلال جاملغ خلفي فرونتلاندر 23- ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "هلال-جاملغ-خلفي-فرونتلاندر-23-ايسر",
     "search_terms": [
       "هلال جاملغ خلفي فرونتلاندر 23- ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14186,13 +14200,13 @@ window.search-index = [
     "name": "هلال جاملغ خلفي فرونتلاندر 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "هلال-جاملغ-خلفي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "هلال جاملغ خلفي فرونتلاندر 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14200,13 +14214,13 @@ window.search-index = [
     "name": "نيكل لحية خلفية هايلندر 22 - وسطية ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 28000.0,
+    "price": 0,
     "slug": "نيكل-لحية-خلفية-هايلندر-22--وسطية",
     "search_terms": [
       "نيكل لحية خلفية هايلندر 22 - وسطية ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14214,13 +14228,13 @@ window.search-index = [
     "name": "نيكل لحية خلفية هايلندر 22 - زاوية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "نيكل-لحية-خلفية-هايلندر-22--زاوية-ايسر",
     "search_terms": [
       "نيكل لحية خلفية هايلندر 22 - زاوية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14228,13 +14242,13 @@ window.search-index = [
     "name": "نيكل لحية خلفية هايلندر 22 - زاوية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 17000.0,
+    "price": 0,
     "slug": "نيكل-لحية-خلفية-هايلندر-22--زاوية-ايمن",
     "search_terms": [
       "نيكل لحية خلفية هايلندر 22 - زاوية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14242,41 +14256,41 @@ window.search-index = [
     "name": "راديتر تبريد كامري 12 - 17 راديتر تبريد افلون 13 - 15 ",
     "category": "",
     "brand": "Denso",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كامري-12--17-راديتر-تبريد-افلون-13--15",
     "search_terms": [
       "راديتر تبريد كامري 12 - 17 راديتر تبريد افلون 13 - 15 ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
     "id": 258682,
-    "name": "جويتر لاند 08 -15 وبرادو 03-09 وريفو وعكرب عام 1GR",
+    "name": "جويتر 1GR عام ",
     "category": "",
     "brand": "AISAN",
-    "price": 142000.0,
-    "slug": "جويتر-لاند-08-15-وبرادو-03-09-وريفو-وعكرب-عام-1gr",
+    "price": 0,
+    "slug": "جويتر-1gr-عام",
     "search_terms": [
-      "جويتر لاند 08 -15 وبرادو 03-09 وريفو وعكرب عام 1GR",
+      "جويتر 1GR عام ",
       "",
       "AISAN",
-      ""
+      "False"
     ]
   },
   {
     "id": 258684,
-    "name": "جويتر  بيكب ريفو برادو 2TR ",
+    "name": "جويتر  ريفو برادو 2TR ",
     "category": "",
     "brand": "AISAN",
-    "price": 142000.0,
-    "slug": "جويتر-بيكب-ريفو-برادو-2tr",
+    "price": 0,
+    "slug": "جويتر-ريفو-برادو-2tr",
     "search_terms": [
-      "جويتر  بيكب ريفو برادو 2TR ",
+      "جويتر  ريفو برادو 2TR ",
       "",
       "AISAN",
-      ""
+      "False"
     ]
   },
   {
@@ -14284,13 +14298,13 @@ window.search-index = [
     "name": "كانستر برادو 11 - 1GR عكرب 1GR",
     "category": "",
     "brand": "AISAN",
-    "price": 114000.0,
+    "price": 0,
     "slug": "كانستر-برادو-11--1gr-عكرب-1gr",
     "search_terms": [
       "كانستر برادو 11 - 1GR عكرب 1GR",
       "",
       "AISAN",
-      ""
+      "False"
     ]
   },
   {
@@ -14298,13 +14312,13 @@ window.search-index = [
     "name": "كانستر برادو 05 - 09",
     "category": "",
     "brand": "AISAN",
-    "price": 64000.0,
+    "price": 0,
     "slug": "كانستر-برادو-05--09",
     "search_terms": [
       "كانستر برادو 05 - 09",
       "",
       "AISAN",
-      ""
+      "False"
     ]
   },
   {
@@ -14312,13 +14326,13 @@ window.search-index = [
     "name": "كازكيت محرك 1HZ 11115-17040-05 كاز",
     "category": "",
     "brand": "KP ",
-    "price": 64000.0,
+    "price": 0,
     "slug": "كازكيت-محرك-1hz-11115-17040-05-كاز",
     "search_terms": [
       "كازكيت محرك 1HZ 11115-17040-05 كاز",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -14326,13 +14340,13 @@ window.search-index = [
     "name": "واشر محرك كامل لاند 01 - 07  8سلندر 2UZ",
     "category": "",
     "brand": "KP ",
-    "price": 213000.0,
+    "price": 0,
     "slug": "واشر-محرك-كامل-لاند-01--07-8سلندر-2uz",
     "search_terms": [
       "واشر محرك كامل لاند 01 - 07  8سلندر 2UZ",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -14340,13 +14354,13 @@ window.search-index = [
     "name": "واشر محرك كورلا امريكي 2ZR",
     "category": "",
     "brand": "KP ",
-    "price": 128000.0,
+    "price": 0,
     "slug": "واشر-محرك-كورلا-امريكي-2zr",
     "search_terms": [
       "واشر محرك كورلا امريكي 2ZR",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -14354,13 +14368,13 @@ window.search-index = [
     "name": "واشر محرك بيكب نيسان KA24",
     "category": "",
     "brand": "KP ",
-    "price": 114000.0,
+    "price": 0,
     "slug": "واشر-محرك-بيكب-نيسان-ka24",
     "search_terms": [
       "واشر محرك بيكب نيسان KA24",
       "",
       "KP ",
-      ""
+      "False"
     ]
   },
   {
@@ -14368,13 +14382,13 @@ window.search-index = [
     "name": "قايش محرك 1UR 3UR ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-1ur-3ur",
     "search_terms": [
       "قايش محرك 1UR 3UR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14382,13 +14396,13 @@ window.search-index = [
     "name": "قايش محرك لاند 08 - 11 1GR ريفو 16- هايس 19 - 7GR ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-لاند-08--11-1gr-ريفو-16-هايس-19--7gr",
     "search_terms": [
       "قايش محرك لاند 08 - 11 1GR ريفو 16- هايس 19 - 7GR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14396,13 +14410,13 @@ window.search-index = [
     "name": "قايش محرك افلون 18 - سينا 17 - هايلندر 17 - ",
     "category": "",
     "brand": "AISIN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "قايش-محرك-افلون-18--سينا-17--هايلندر-17",
     "search_terms": [
       "قايش محرك افلون 18 - سينا 17 - هايلندر 17 - ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14410,13 +14424,13 @@ window.search-index = [
     "name": "قايش محرك افلون 2GR  ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-افلون-2gr",
     "search_terms": [
       "قايش محرك افلون 2GR  ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14424,13 +14438,13 @@ window.search-index = [
     "name": "قايش محرك لاند 12 - 22 - 1GR ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-لاند-12--22--1gr",
     "search_terms": [
       "قايش محرك لاند 12 - 22 - 1GR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14438,13 +14452,13 @@ window.search-index = [
     "name": "قايش محرك لاند 08 - 11 2UZ  ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-لاند-08--11-2uz",
     "search_terms": [
       "قايش محرك لاند 08 - 11 2UZ  ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14452,13 +14466,13 @@ window.search-index = [
     "name": "قايش محرك كوستر 2TR ",
     "category": "",
     "brand": "AISIN",
-    "price": 17000.0,
+    "price": 0,
     "slug": "قايش-محرك-كوستر-2tr",
     "search_terms": [
       "قايش محرك كوستر 2TR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14466,13 +14480,13 @@ window.search-index = [
     "name": "قايش محرك بيكب فيكو ريفو 2TR  ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-بيكب-فيكو-ريفو-2tr",
     "search_terms": [
       "قايش محرك بيكب فيكو ريفو 2TR  ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14480,13 +14494,13 @@ window.search-index = [
     "name": "قايش محرك كورلا خليجي 1ZR  2ZR 3ZR ",
     "category": "",
     "brand": "AISIN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "قايش-محرك-كورلا-خليجي-1zr-2zr-3zr",
     "search_terms": [
       "قايش محرك كورلا خليجي 1ZR  2ZR 3ZR ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14494,13 +14508,13 @@ window.search-index = [
     "name": "قايش محرك كامري 17 - رف فور - 19 - 4سلندر امريكي خليجي 2AR A25A",
     "category": "",
     "brand": "AISIN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "قايش-محرك-كامري-17--رف-فور--19--4سلندر-امريكي-خليجي-2ar-a25a",
     "search_terms": [
       "قايش محرك كامري 17 - رف فور - 19 - 4سلندر امريكي خليجي 2AR A25A",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14508,13 +14522,13 @@ window.search-index = [
     "name": "قايش محرك سني هندي 15 - 18  ",
     "category": "",
     "brand": "AISIN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "قايش-محرك-سني-هندي-15--18",
     "search_terms": [
       "قايش محرك سني هندي 15 - 18  ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14522,13 +14536,13 @@ window.search-index = [
     "name": "قايش محرك اكستيرا بافندر 4000  ",
     "category": "",
     "brand": "AISIN",
-    "price": 21000.0,
+    "price": 0,
     "slug": "قايش-محرك-اكستيرا-بافندر-4000",
     "search_terms": [
       "قايش محرك اكستيرا بافندر 4000  ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14536,13 +14550,13 @@ window.search-index = [
     "name": "دعامية امامية برادو 18 - لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 122000.0,
+    "price": 0,
     "slug": "دعامية-امامية-برادو-18--لون-لولوي",
     "search_terms": [
       "دعامية امامية برادو 18 - لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -14550,13 +14564,13 @@ window.search-index = [
     "name": "دعامية امامية برادو 18 - لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 122000.0,
+    "price": 0,
     "slug": "دعامية-امامية-برادو-18--لون-اسود",
     "search_terms": [
       "دعامية امامية برادو 18 - لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -14564,13 +14578,13 @@ window.search-index = [
     "name": "كت لحية امامية + خلفية لكزس برادو 14 - 22  دون شباك ",
     "category": "",
     "brand": "DAISEN",
-    "price": 310000.0,
+    "price": 0,
     "slug": "كت-لحية-امامية-+-خلفية-لكزس-برادو-14--22-دون-شباك",
     "search_terms": [
       "كت لحية امامية + خلفية لكزس برادو 14 - 22  دون شباك ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -14578,13 +14592,13 @@ window.search-index = [
     "name": "بدي كت تحديث لكزس 22 - 24 -  LX600 F SPORT - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون لولوي ",
     "category": "",
     "brand": "DAISEN",
-    "price": 689000.0,
+    "price": 0,
     "slug": "بدي-كت-تحديث-لكزس-22--24--lx600-f-sport--كامل-مع-نزال-جامة-باب-بدي-+-مسطرة-دوسة-جانبية-لون-لولوي",
     "search_terms": [
       "بدي كت تحديث لكزس 22 - 24 -  LX600 F SPORT - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون لولوي ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -14592,13 +14606,13 @@ window.search-index = [
     "name": "بدي كت تحديث لكزس 22 - 24 -  LX600 F SPORT - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون اسود",
     "category": "",
     "brand": "DAISEN",
-    "price": 689000.0,
+    "price": 0,
     "slug": "بدي-كت-تحديث-لكزس-22--24--lx600-f-sport--كامل-مع-نزال-جامة-باب-بدي-+-مسطرة-دوسة-جانبية-لون-اسود",
     "search_terms": [
       "بدي كت تحديث لكزس 22 - 24 -  LX600 F SPORT - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون اسود",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -14606,13 +14620,13 @@ window.search-index = [
     "name": "دبل خلفي لاند 05 - 07",
     "category": "",
     "brand": "AISIN",
-    "price": 36000.0,
+    "price": 0,
     "slug": "دبل-خلفي-لاند-05--07",
     "search_terms": [
       "دبل خلفي لاند 05 - 07",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14620,13 +14634,13 @@ window.search-index = [
     "name": "فج بريك خلفي برادو 05-18 ايمن ",
     "category": "",
     "brand": "ADVICS",
-    "price": 135000.0,
+    "price": 0,
     "slug": "فج-بريك-خلفي-برادو-05-18-ايمن",
     "search_terms": [
       "فج بريك خلفي برادو 05-18 ايمن ",
       "",
       "ADVICS",
-      ""
+      "False"
     ]
   },
   {
@@ -14634,13 +14648,13 @@ window.search-index = [
     "name": "Gift Card",
     "category": "",
     "brand": "",
-    "price": 71000.0,
+    "price": 70000.0,
     "slug": "gift-card",
     "search_terms": [
       "Gift Card",
       "",
       "",
-      ""
+      "False"
     ]
   },
   {
@@ -14648,13 +14662,13 @@ window.search-index = [
     "name": "دبل امامي كورلا 08 - 13 ايمن",
     "category": "",
     "brand": "AISIN",
-    "price": 43000.0,
+    "price": 0,
     "slug": "دبل-امامي-كورلا-08--13-ايمن",
     "search_terms": [
       "دبل امامي كورلا 08 - 13 ايمن",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14662,13 +14676,13 @@ window.search-index = [
     "name": "دبل امامي سني هندي - فيرسا 11 - 19 ايسر",
     "category": "",
     "brand": "AISIN",
-    "price": 37000.0,
+    "price": 0,
     "slug": "دبل-امامي-سني-هندي--فيرسا-11--19-ايسر",
     "search_terms": [
       "دبل امامي سني هندي - فيرسا 11 - 19 ايسر",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14676,55 +14690,55 @@ window.search-index = [
     "name": "دعامية خلفية لاند 08 - 15 لون لولوي",
     "category": "",
     "brand": "DAISEN",
-    "price": 135000.0,
+    "price": 0,
     "slug": "دعامية-خلفية-لاند-08--15-لون-لولوي",
     "search_terms": [
       "دعامية خلفية لاند 08 - 15 لون لولوي",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
     "id": 259249,
-    "name": "دعامية امامية لاند 98-07 بدون فتحة بروجكتر اسود اساس",
+    "name": "دعامية امامية لاند 98-07 بدون فتحة بروجكتر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
-    "slug": "دعامية-امامية-لاند-98-07-بدون-فتحة-بروجكتر-اسود-اساس",
+    "price": 0,
+    "slug": "دعامية-امامية-لاند-98-07-بدون-فتحة-بروجكتر",
     "search_terms": [
-      "دعامية امامية لاند 98-07 بدون فتحة بروجكتر اسود اساس",
+      "دعامية امامية لاند 98-07 بدون فتحة بروجكتر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 259250,
-    "name": "دعامية امامية لاند 98-07 مع فتحة بروجكتر اسود اساس",
+    "name": "دعامية امامية لاند 98-07 مع فتحة بروجكتر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
-    "slug": "دعامية-امامية-لاند-98-07-مع-فتحة-بروجكتر-اسود-اساس",
+    "price": 0,
+    "slug": "دعامية-امامية-لاند-98-07-مع-فتحة-بروجكتر",
     "search_terms": [
-      "دعامية امامية لاند 98-07 مع فتحة بروجكتر اسود اساس",
+      "دعامية امامية لاند 98-07 مع فتحة بروجكتر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 259251,
-    "name": "دعامية خلفية لاند 98-07  اسود اساس",
+    "name": "دعامية خلفية لاند 98-07 ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 57000.0,
-    "slug": "دعامية-خلفية-لاند-98-07-اسود-اساس",
+    "price": 0,
+    "slug": "دعامية-خلفية-لاند-98-07",
     "search_terms": [
-      "دعامية خلفية لاند 98-07  اسود اساس",
+      "دعامية خلفية لاند 98-07 ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14732,13 +14746,13 @@ window.search-index = [
     "name": "ليد دعامية كورلا  19- امريكي SE  ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 0,
     "slug": "ليد-دعامية-كورلا-19-امريكي-se-ايسر",
     "search_terms": [
       "ليد دعامية كورلا  19- امريكي SE  ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14746,13 +14760,13 @@ window.search-index = [
     "name": "ليد دعامية كورلا  19- امريكي SE  ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 0,
     "slug": "ليد-دعامية-كورلا-19-امريكي-se-ايمن",
     "search_terms": [
       "ليد دعامية كورلا  19- امريكي SE  ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14760,13 +14774,13 @@ window.search-index = [
     "name": "ليد دعامية كورلا وارد صيني و امريكي 23- ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 0,
     "slug": "ليد-دعامية-كورلا-وارد-صيني-و-امريكي-23-ايسر",
     "search_terms": [
       "ليد دعامية كورلا وارد صيني و امريكي 23- ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14774,13 +14788,13 @@ window.search-index = [
     "name": "ليد دعامية كورلا وارد صيني و امريكي 23- ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 26000.0,
+    "price": 0,
     "slug": "ليد-دعامية-كورلا-وارد-صيني-و-امريكي-23-ايمن",
     "search_terms": [
       "ليد دعامية كورلا وارد صيني و امريكي 23- ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14788,13 +14802,13 @@ window.search-index = [
     "name": "تكمله بطانه جاملغ خلفي كورلا 19- 23 USA ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "تكمله-بطانه-جاملغ-خلفي-كورلا-19-23-usa-ايسر",
     "search_terms": [
       "تكمله بطانه جاملغ خلفي كورلا 19- 23 USA ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14802,13 +14816,13 @@ window.search-index = [
     "name": "تكمله بطانه جاملغ خلفي كورلا 19- 23 USA ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "تكمله-بطانه-جاملغ-خلفي-كورلا-19-23-usa-ايمن",
     "search_terms": [
       "تكمله بطانه جاملغ خلفي كورلا 19- 23 USA ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14816,13 +14830,13 @@ window.search-index = [
     "name": "قايش محرك كورلا 08 - 13 1ZZ",
     "category": "",
     "brand": "AISIN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "قايش-محرك-كورلا-08--13-1zz",
     "search_terms": [
       "قايش محرك كورلا 08 - 13 1ZZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14830,13 +14844,13 @@ window.search-index = [
     "name": "قايش محرك هايس 05 - 18 سينا 16 - 17",
     "category": "",
     "brand": "AISIN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "قايش-محرك-هايس-05--18-سينا-16--17",
     "search_terms": [
       "قايش محرك هايس 05 - 18 سينا 16 - 17",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14844,13 +14858,13 @@ window.search-index = [
     "name": "قايش محرك كامري 07 - 11 2AZ",
     "category": "",
     "brand": "AISIN",
-    "price": 17000.0,
+    "price": 0,
     "slug": "قايش-محرك-كامري-07--11-2az",
     "search_terms": [
       "قايش محرك كامري 07 - 11 2AZ",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -14858,13 +14872,13 @@ window.search-index = [
     "name": "لايت كورلا 14-16 خليجي نيكل ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "لايت-كورلا-14-16-خليجي-نيكل-ايسر",
     "search_terms": [
       "لايت كورلا 14-16 خليجي نيكل ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14872,13 +14886,13 @@ window.search-index = [
     "name": "لايت كورلا 14-16 خليجي نيكل ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "لايت-كورلا-14-16-خليجي-نيكل-ايمن",
     "search_terms": [
       "لايت كورلا 14-16 خليجي نيكل ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14886,13 +14900,13 @@ window.search-index = [
     "name": "لايت كورلا 14-16 خليجي اسود ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 55000.0,
+    "price": 0,
     "slug": "لايت-كورلا-14-16-خليجي-اسود-ايسر",
     "search_terms": [
       "لايت كورلا 14-16 خليجي اسود ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14900,13 +14914,13 @@ window.search-index = [
     "name": "لايت كورلا 14-16 خليجي اسود ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 55000.0,
+    "price": 0,
     "slug": "لايت-كورلا-14-16-خليجي-اسود-ايمن",
     "search_terms": [
       "لايت كورلا 14-16 خليجي اسود ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -14914,13 +14928,13 @@ window.search-index = [
     "name": "بروجكتر هايلندر 24 - ليد",
     "category": "",
     "brand": "DLAA",
-    "price": 62000.0,
+    "price": 0,
     "slug": "بروجكتر-هايلندر-24--ليد",
     "search_terms": [
       "بروجكتر هايلندر 24 - ليد",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -14928,13 +14942,13 @@ window.search-index = [
     "name": "بروجكتر تاكوما 24 - ليد ",
     "category": "",
     "brand": "DLAA",
-    "price": 92000.0,
+    "price": 0,
     "slug": "بروجكتر-تاكوما-24--ليد",
     "search_terms": [
       "بروجكتر تاكوما 24 - ليد ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -14942,13 +14956,13 @@ window.search-index = [
     "name": "بروجكتر سينا 22 - ليد ",
     "category": "",
     "brand": "DLAA",
-    "price": 68000.0,
+    "price": 0,
     "slug": "بروجكتر-سينا-22--ليد",
     "search_terms": [
       "بروجكتر سينا 22 - ليد ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -14956,13 +14970,13 @@ window.search-index = [
     "name": "بروجكتر تندرا سيكويا 24 - ليد ",
     "category": "",
     "brand": "DLAA",
-    "price": 92000.0,
+    "price": 0,
     "slug": "بروجكتر-تندرا-سيكويا-24--ليد",
     "search_terms": [
       "بروجكتر تندرا سيكويا 24 - ليد ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -14970,13 +14984,13 @@ window.search-index = [
     "name": "بروجكتر شمعة برادو 24 - ليد ",
     "category": "",
     "brand": "DLAA",
-    "price": 64000.0,
+    "price": 0,
     "slug": "بروجكتر-شمعة-برادو-24--ليد",
     "search_terms": [
       "بروجكتر شمعة برادو 24 - ليد ",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -14984,13 +14998,13 @@ window.search-index = [
     "name": "بروجكتر برادو 24 - ليد",
     "category": "",
     "brand": "DLAA",
-    "price": 64000.0,
+    "price": 0,
     "slug": "بروجكتر-برادو-24--ليد",
     "search_terms": [
       "بروجكتر برادو 24 - ليد",
       "",
       "DLAA",
-      ""
+      "False"
     ]
   },
   {
@@ -14998,13 +15012,27 @@ window.search-index = [
     "name": "بروجكتر تندرا 14 - 18 ",
     "category": "",
     "brand": "DLAA",
-    "price": 43000.0,
+    "price": 0,
     "slug": "بروجكتر-تندرا-14--18",
     "search_terms": [
       "بروجكتر تندرا 14 - 18 ",
       "",
       "DLAA",
-      ""
+      "False"
+    ]
+  },
+  {
+    "id": 259625,
+    "name": "سيت بستم محرك Z24 - سايز 20",
+    "category": "",
+    "brand": "ART",
+    "price": 0,
+    "slug": "سيت-بستم-محرك-z24--سايز-20",
+    "search_terms": [
+      "سيت بستم محرك Z24 - سايز 20",
+      "",
+      "ART",
+      "False"
     ]
   },
   {
@@ -15012,13 +15040,13 @@ window.search-index = [
     "name": "لايت كامري 25- امريكي XSE دبل زنون ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 253000.0,
+    "price": 0,
     "slug": "لايت-كامري-25-امريكي-xse-دبل-زنون-ايسر",
     "search_terms": [
       "لايت كامري 25- امريكي XSE دبل زنون ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15026,41 +15054,41 @@ window.search-index = [
     "name": "لايت كامري 25- امريكي XSE دبل زنون ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 253000.0,
+    "price": 0,
     "slug": "لايت-كامري-25-امريكي-xse-دبل-زنون-ايمن",
     "search_terms": [
       "لايت كامري 25- امريكي XSE دبل زنون ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 259862,
-    "name": "لايت بيكب ريفو 22 - داخل اسود و رصاصي ايسر",
+    "name": "لايت ريفو 22 - داخل اسود و رصاصي ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
-    "slug": "لايت-بيكب-ريفو-22--داخل-اسود-و-رصاصي-ايسر",
+    "price": 0,
+    "slug": "لايت-ريفو-22--داخل-اسود-و-رصاصي-ايسر",
     "search_terms": [
-      "لايت بيكب ريفو 22 - داخل اسود و رصاصي ايسر",
+      "لايت ريفو 22 - داخل اسود و رصاصي ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 259863,
-    "name": "لايت بيكب ريفو 22 - داخل اسود و رصاصي ايمن",
+    "name": "لايت ريفو 22 - داخل اسود و رصاصي ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
-    "slug": "لايت-بيكب-ريفو-22--داخل-اسود-و-رصاصي-ايمن",
+    "price": 0,
+    "slug": "لايت-ريفو-22--داخل-اسود-و-رصاصي-ايمن",
     "search_terms": [
-      "لايت بيكب ريفو 22 - داخل اسود و رصاصي ايمن",
+      "لايت ريفو 22 - داخل اسود و رصاصي ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15068,13 +15096,13 @@ window.search-index = [
     "name": "بك لايت تندر 22 - ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 0,
     "slug": "بك-لايت-تندر-22--ايسر",
     "search_terms": [
       "بك لايت تندر 22 - ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15082,13 +15110,13 @@ window.search-index = [
     "name": "بك لايت تندر 22 - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 121000.0,
+    "price": 0,
     "slug": "بك-لايت-تندر-22--ايمن",
     "search_terms": [
       "بك لايت تندر 22 - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15096,27 +15124,27 @@ window.search-index = [
     "name": "بك لايت تندرا 22 - ليد ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 142000.0,
+    "price": 0,
     "slug": "بك-لايت-تندرا-22--ليد-ايسر",
     "search_terms": [
       "بك لايت تندرا 22 - ليد ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
     "id": 259867,
-    "name": "بك لايت تندرا 22 - ليد - ايمن",
+    "name": "بك لايت تندرا 22 ليد - ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 142000.0,
-    "slug": "بك-لايت-تندرا-22--ليد--ايمن",
+    "price": 0,
+    "slug": "بك-لايت-تندرا-22-ليد--ايمن",
     "search_terms": [
-      "بك لايت تندرا 22 - ليد - ايمن",
+      "بك لايت تندرا 22 ليد - ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15124,13 +15152,13 @@ window.search-index = [
     "name": "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 51000.0,
+    "price": 0,
     "slug": "بك-زاوية-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايمن",
     "search_terms": [
       "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15138,13 +15166,13 @@ window.search-index = [
     "name": "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 51000.0,
+    "price": 0,
     "slug": "بك-زاوية-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايسر",
     "search_terms": [
       "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15152,13 +15180,13 @@ window.search-index = [
     "name": "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايسر",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 40000.0,
+    "price": 0,
     "slug": "بك-صندوق-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايسر",
     "search_terms": [
       "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايسر",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15166,13 +15194,13 @@ window.search-index = [
     "name": "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايمن",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 40000.0,
+    "price": 0,
     "slug": "بك-صندوق-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايمن",
     "search_terms": [
       "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايمن",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15180,13 +15208,13 @@ window.search-index = [
     "name": " Total Care 100ML -peach  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ",
     "category": "",
     "brand": "ERRECOM",
-    "price": 28000.0,
+    "price": 0,
     "slug": "total-care-100ml-peach-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-خوخ",
     "search_terms": [
       " Total Care 100ML -peach  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -15194,13 +15222,13 @@ window.search-index = [
     "name": " Total Care 100ML -LEMON  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل ليمون",
     "category": "",
     "brand": "ERRECOM",
-    "price": 28000.0,
+    "price": 0,
     "slug": "total-care-100ml-lemon-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-ليمون",
     "search_terms": [
       " Total Care 100ML -LEMON  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل ليمون",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -15208,13 +15236,13 @@ window.search-index = [
     "name": " Total Care 100ML -VANILA  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل فانيلا",
     "category": "",
     "brand": "ERRECOM",
-    "price": 28000.0,
+    "price": 0,
     "slug": "total-care-100ml-vanila-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-فانيلا",
     "search_terms": [
       " Total Care 100ML -VANILA  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل فانيلا",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -15222,13 +15250,13 @@ window.search-index = [
     "name": " Total Care 100ML -OUD  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود",
     "category": "",
     "brand": "ERRECOM",
-    "price": 28000.0,
+    "price": 0,
     "slug": "total-care-100ml-oud-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-عود",
     "search_terms": [
       " Total Care 100ML -OUD  CTN 12 KIT- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود",
       "",
       "ERRECOM",
-      ""
+      "False"
     ]
   },
   {
@@ -15236,13 +15264,13 @@ window.search-index = [
     "name": "بك مسطرة صندوق افلون 19- ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 36000.0,
+    "price": 0,
     "slug": "بك-مسطرة-صندوق-افلون-19",
     "search_terms": [
       "بك مسطرة صندوق افلون 19- ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15250,13 +15278,13 @@ window.search-index = [
     "name": "تريشة لحية اسفل دعامية امامي رف فور سلفر 19- ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "تريشة-لحية-اسفل-دعامية-امامي-رف-فور-سلفر-19",
     "search_terms": [
       "تريشة لحية اسفل دعامية امامي رف فور سلفر 19- ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15264,13 +15292,13 @@ window.search-index = [
     "name": "تريشة لحية اسفل دعامية امامي رف فور اسود 19- ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 31000.0,
+    "price": 0,
     "slug": "تريشة-لحية-اسفل-دعامية-امامي-رف-فور-اسود-19",
     "search_terms": [
       "تريشة لحية اسفل دعامية امامي رف فور اسود 19- ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15278,13 +15306,13 @@ window.search-index = [
     "name": "سكن إشارة بالجاملغ بيكب عكرب 24- ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 14000.0,
+    "price": 0,
     "slug": "سكن-إشارة-بالجاملغ-بيكب-عكرب-24-ايسر",
     "search_terms": [
       "سكن إشارة بالجاملغ بيكب عكرب 24- ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15292,13 +15320,13 @@ window.search-index = [
     "name": "سكن إشارة بالجاملغ بيكب عكرب 24- ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 14000.0,
+    "price": 0,
     "slug": "سكن-إشارة-بالجاملغ-بيكب-عكرب-24-ايمن",
     "search_terms": [
       "سكن إشارة بالجاملغ بيكب عكرب 24- ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15306,13 +15334,13 @@ window.search-index = [
     "name": " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "شباك-دعامية-جانبية-مفتوح-شباك-لاند-22--gxr-ايسر",
     "search_terms": [
       " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15320,13 +15348,13 @@ window.search-index = [
     "name": " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 11000.0,
+    "price": 0,
     "slug": "شباك-دعامية-جانبية-مفتوح-شباك-لاند-22--gxr-ايمن",
     "search_terms": [
       " شباك دعامية جانبية مفتوح شباك لاند 22 - GXR ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15334,13 +15362,13 @@ window.search-index = [
     "name": "بخاخ تبريد كوستر 17 - ",
     "category": "",
     "brand": "Denso",
-    "price": 78000.0,
+    "price": 0,
     "slug": "بخاخ-تبريد-كوستر-17",
     "search_terms": [
       "بخاخ تبريد كوستر 17 - ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -15348,13 +15376,13 @@ window.search-index = [
     "name": "راديتر ماء كوستر 1HZ كاز كبيرة - PA36 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 107000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كوستر-1hz-كاز-كبيرة--pa36",
     "search_terms": [
       "راديتر ماء كوستر 1HZ كاز كبيرة - PA36 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15362,13 +15390,13 @@ window.search-index = [
     "name": " بولبرن ويل امامي لاند 08 - 15 ايمن ايسر ",
     "category": "",
     "brand": "KOYO",
-    "price": 85000.0,
+    "price": 0,
     "slug": "بولبرن-ويل-امامي-لاند-08--15-ايمن-ايسر",
     "search_terms": [
       " بولبرن ويل امامي لاند 08 - 15 ايمن ايسر ",
       "",
       "KOYO",
-      ""
+      "False"
     ]
   },
   {
@@ -15376,13 +15404,13 @@ window.search-index = [
     "name": "لحية دعامية خلفية كامري 25 - امريكي SE",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 0,
     "slug": "لحية-دعامية-خلفية-كامري-25--امريكي-se",
     "search_terms": [
       "لحية دعامية خلفية كامري 25 - امريكي SE",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -15390,13 +15418,13 @@ window.search-index = [
     "name": " راديتر ماء كورلا 19 - 20 -  LE خليجي امريكي - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 82000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كورلا-19--20--le-خليجي-امريكي--pa26",
     "search_terms": [
       " راديتر ماء كورلا 19 - 20 -  LE خليجي امريكي - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15404,13 +15432,13 @@ window.search-index = [
     "name": "راديتر تبريد ارمادا 05 - 12 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-ارمادا-05--12--c16",
     "search_terms": [
       "راديتر تبريد ارمادا 05 - 12 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15418,13 +15446,13 @@ window.search-index = [
     "name": "راديتر تبريد التيما 08 - 16 - C12 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-التيما-08--16--c12",
     "search_terms": [
       "راديتر تبريد التيما 08 - 16 - C12 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15432,13 +15460,13 @@ window.search-index = [
     "name": "راديتر تبريد باترول 10 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-باترول-10--c16",
     "search_terms": [
       "راديتر تبريد باترول 10 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15446,13 +15474,13 @@ window.search-index = [
     "name": "راديتر تبريد باترول 10 - 21 - C16 -Q56 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-باترول-10--21--c16-q56",
     "search_terms": [
       "راديتر تبريد باترول 10 - 21 - C16 -Q56 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15460,13 +15488,13 @@ window.search-index = [
     "name": "راديتر تبريد باترول سفاري عام 02 - 21 -C20 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-باترول-سفاري-عام-02--21-c20",
     "search_terms": [
       "راديتر تبريد باترول سفاري عام 02 - 21 -C20 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15474,13 +15502,13 @@ window.search-index = [
     "name": "راديتر تبريد بافندر 05 - 12 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-بافندر-05--12--c16",
     "search_terms": [
       "راديتر تبريد بافندر 05 - 12 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15488,13 +15516,13 @@ window.search-index = [
     "name": "راديتر تبريد بافندر 13 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 71000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-بافندر-13--c16",
     "search_terms": [
       "راديتر تبريد بافندر 13 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15502,27 +15530,27 @@ window.search-index = [
     "name": "راديتر تبريد برادو 05 - 09 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-برادو-05--09--c16",
     "search_terms": [
       "راديتر تبريد برادو 05 - 09 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260573,
-    "name": "راديتر تبريد برادو 10 - 21 - C16 ",
+    "name": "راديتر تبريد برادو 10 - 20 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 74000.0,
-    "slug": "راديتر-تبريد-برادو-10--21--c16",
+    "price": 0,
+    "slug": "راديتر-تبريد-برادو-10--20--c16",
     "search_terms": [
-      "راديتر تبريد برادو 10 - 21 - C16 ",
+      "راديتر تبريد برادو 10 - 20 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15530,13 +15558,13 @@ window.search-index = [
     "name": "راديتر تبريد بيكب ريفو 16 - C16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-بيكب-ريفو-16--c16",
     "search_terms": [
       "راديتر تبريد بيكب ريفو 16 - C16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15544,13 +15572,13 @@ window.search-index = [
     "name": "راديتر تبريد بيكب فيكو 05 - 15 C16 - 2TR ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-بيكب-فيكو-05--15-c16--2tr",
     "search_terms": [
       "راديتر تبريد بيكب فيكو 05 - 15 C16 - 2TR ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15558,13 +15586,13 @@ window.search-index = [
     "name": "راديتر تبريد بيكب نافارا 07 - 14 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-بيكب-نافارا-07--14--c16",
     "search_terms": [
       "راديتر تبريد بيكب نافارا 07 - 14 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15572,13 +15600,13 @@ window.search-index = [
     "name": "راديتر تبريد بيكب نيسان شبوط - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-بيكب-نيسان-شبوط--c16",
     "search_terms": [
       "راديتر تبريد بيكب نيسان شبوط - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15586,13 +15614,13 @@ window.search-index = [
     "name": "راديتر تبريد سنترا 13 - 19 - C12",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-سنترا-13--19--c12",
     "search_terms": [
       "راديتر تبريد سنترا 13 - 19 - C12",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15600,13 +15628,13 @@ window.search-index = [
     "name": "راديتر تبريد سني 01 - 09 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-سني-01--09--c16",
     "search_terms": [
       "راديتر تبريد سني 01 - 09 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15614,13 +15642,13 @@ window.search-index = [
     "name": "راديتر تبريد سني كوري 07 - 11 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-سني-كوري-07--11--c16",
     "search_terms": [
       "راديتر تبريد سني كوري 07 - 11 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15628,13 +15656,13 @@ window.search-index = [
     "name": "راديتر تبريد سني هندي 12 - 19 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-سني-هندي-12--19--c16",
     "search_terms": [
       "راديتر تبريد سني هندي 12 - 19 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15642,13 +15670,13 @@ window.search-index = [
     "name": "راديتر تبريد عكرب 07 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 71000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-عكرب-07--c16",
     "search_terms": [
       "راديتر تبريد عكرب 07 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15656,13 +15684,13 @@ window.search-index = [
     "name": "راديتر تبريد فورجنر 05 - 15 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-فورجنر-05--15--c16",
     "search_terms": [
       "راديتر تبريد فورجنر 05 - 15 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15670,13 +15698,13 @@ window.search-index = [
     "name": "راديتر تبريد كامري 12 - 17 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كامري-12--17--c16",
     "search_terms": [
       "راديتر تبريد كامري 12 - 17 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15684,13 +15712,13 @@ window.search-index = [
     "name": "راديتر تبريد كامري 18 - رف فور 19 - عادي + هايبرد  - C12",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كامري-18--رف-فور-19--عادي-+-هايبرد--c12",
     "search_terms": [
       "راديتر تبريد كامري 18 - رف فور 19 - عادي + هايبرد  - C12",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15698,13 +15726,13 @@ window.search-index = [
     "name": "راديتر تبريد كامري افلون 07 - 11 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كامري-افلون-07--11--c16",
     "search_terms": [
       "راديتر تبريد كامري افلون 07 - 11 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15712,13 +15740,13 @@ window.search-index = [
     "name": "راديتر تبريد كورلا 01 - 07 عام  - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 54000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كورلا-01--07-عام--c16",
     "search_terms": [
       "راديتر تبريد كورلا 01 - 07 عام  - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15726,13 +15754,13 @@ window.search-index = [
     "name": "راديتر تبريد كورلا 08 - 18  - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 54000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كورلا-08--18--c16",
     "search_terms": [
       "راديتر تبريد كورلا 08 - 18  - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15740,13 +15768,13 @@ window.search-index = [
     "name": "راديتر تبريد كورلا 19 - 20 - C12 - LE",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كورلا-19--20--c12--le",
     "search_terms": [
       "راديتر تبريد كورلا 19 - 20 - C12 - LE",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15754,27 +15782,27 @@ window.search-index = [
     "name": "راديتر تبريد لاند 01 - 07 - C16 -1FZ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 74000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-لاند-01--07--c16-1fz",
     "search_terms": [
       "راديتر تبريد لاند 01 - 07 - C16 -1FZ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260593,
-    "name": "راديتر تبريد لاند 08 - 21 كاز و بانزين  - C16",
+    "name": "راديتر تبريد لاند 08 - كاز و بانزين  - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 77000.0,
-    "slug": "راديتر-تبريد-لاند-08--21-كاز-و-بانزين--c16",
+    "price": 0,
+    "slug": "راديتر-تبريد-لاند-08--كاز-و-بانزين--c16",
     "search_terms": [
-      "راديتر تبريد لاند 08 - 21 كاز و بانزين  - C16",
+      "راديتر تبريد لاند 08 - كاز و بانزين  - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15782,13 +15810,13 @@ window.search-index = [
     "name": "راديتر تبريد هايلندر 14 - C16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 57000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-هايلندر-14--c16",
     "search_terms": [
       "راديتر تبريد هايلندر 14 - C16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15796,13 +15824,13 @@ window.search-index = [
     "name": "راديتر ماء افلون 05 - 10 -PA16 - 2GR",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 77000.0,
+    "price": 0,
     "slug": "راديتر-ماء-افلون-05--10-pa16--2gr",
     "search_terms": [
       "راديتر ماء افلون 05 - 10 -PA16 - 2GR",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15810,13 +15838,13 @@ window.search-index = [
     "name": "راديتر ماء افلون كامري رف فور لكزس اي اس ان اكس 18 - A25 هايبرد  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 82000.0,
+    "price": 0,
     "slug": "راديتر-ماء-افلون-كامري-رف-فور-لكزس-اي-اس-ان-اكس-18--a25-هايبرد--pa26",
     "search_terms": [
       "راديتر ماء افلون كامري رف فور لكزس اي اس ان اكس 18 - A25 هايبرد  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15824,13 +15852,13 @@ window.search-index = [
     "name": "راديتر ماء اكستيرا بيكب نيسان  4.0 - PA32 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 107000.0,
+    "price": 0,
     "slug": "راديتر-ماء-اكستيرا-بيكب-نيسان-4.0--pa32",
     "search_terms": [
       "راديتر ماء اكستيرا بيكب نيسان  4.0 - PA32 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15844,7 +15872,7 @@ window.search-index = [
       "راديتر ماء التيما 19 - PA16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15852,13 +15880,13 @@ window.search-index = [
     "name": "راديتر ماء التيما مكسما 08 - 18  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 71000.0,
+    "price": 0,
     "slug": "راديتر-ماء-التيما-مكسما-08--18--pa26",
     "search_terms": [
       "راديتر ماء التيما مكسما 08 - 18  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15866,13 +15894,13 @@ window.search-index = [
     "name": "راديتر ماء باترول 07 - سفاري اوتو  - PA36 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 107000.0,
+    "price": 0,
     "slug": "راديتر-ماء-باترول-07--سفاري-اوتو--pa36",
     "search_terms": [
       "راديتر ماء باترول 07 - سفاري اوتو  - PA36 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15880,13 +15908,13 @@ window.search-index = [
     "name": "راديتر ماء باترول 10 - PA36 - QX 20",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 128000.0,
+    "price": 0,
     "slug": "راديتر-ماء-باترول-10--pa36--qx-20",
     "search_terms": [
       "راديتر ماء باترول 10 - PA36 - QX 20",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15894,13 +15922,13 @@ window.search-index = [
     "name": "راديتر ماء باترول 97 Y60 عادي - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 85000.0,
+    "price": 0,
     "slug": "راديتر-ماء-باترول-97-y60-عادي--pa26",
     "search_terms": [
       "راديتر ماء باترول 97 Y60 عادي - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15908,13 +15936,13 @@ window.search-index = [
     "name": "راديتر ماء بافندر 13 - 17 -  PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 114000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بافندر-13--17--pa26",
     "search_terms": [
       "راديتر ماء بافندر 13 - 17 -  PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15922,13 +15950,13 @@ window.search-index = [
     "name": "راديتر ماء برادو 05 - 09 FJ عام - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-برادو-05--09-fj-عام--pa26",
     "search_terms": [
       "راديتر ماء برادو 05 - 09 FJ عام - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15936,13 +15964,13 @@ window.search-index = [
     "name": "راديتر ماء برادو 10 - 20 - 1GR 6CYL فورنر 13 - 19 - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
+    "price": 0,
     "slug": "راديتر-ماء-برادو-10--20--1gr-6cyl-فورنر-13--19--pa26",
     "search_terms": [
       "راديتر ماء برادو 10 - 20 - 1GR 6CYL فورنر 13 - 19 - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15950,13 +15978,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب ريفو 16 - 2GD كاز اوتو  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-ريفو-16--2gd-كاز-اوتو--pa26",
     "search_terms": [
       "راديتر ماء بيكب ريفو 16 - 2GD كاز اوتو  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15964,13 +15992,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب ريفو 16 - 2GD كاز عادي  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-ريفو-16--2gd-كاز-عادي--pa26",
     "search_terms": [
       "راديتر ماء بيكب ريفو 16 - 2GD كاز عادي  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15978,13 +16006,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب ريفو فورجنر 16 - 2TR اوتو - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-ريفو-فورجنر-16--2tr-اوتو--pa26",
     "search_terms": [
       "راديتر ماء بيكب ريفو فورجنر 16 - 2TR اوتو - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -15992,13 +16020,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب ريفو فورجنر 16 - 2TR عادي  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-ريفو-فورجنر-16--2tr-عادي--pa26",
     "search_terms": [
       "راديتر ماء بيكب ريفو فورجنر 16 - 2TR عادي  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16006,13 +16034,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب فيكو 05 - 15 2TR اوتو بانزين - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-فيكو-05--15-2tr-اوتو-بانزين--pa26",
     "search_terms": [
       "راديتر ماء بيكب فيكو 05 - 15 2TR اوتو بانزين - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16020,41 +16048,41 @@ window.search-index = [
     "name": "راديتر ماء بيكب فيكو 05 - 15 كاز 2KD عادي - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-فيكو-05--15-كاز-2kd-عادي--pa26",
     "search_terms": [
       "راديتر ماء بيكب فيكو 05 - 15 كاز 2KD عادي - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260612,
-    "name": "راديتر ماء بيكب فيكو 05 - 15 2TR عادي - PA26 ",
+    "name": "راديتر ماء بيكب فيكو 06 - 15 2TR عادي - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
-    "slug": "راديتر-ماء-بيكب-فيكو-05--15-2tr-عادي--pa26",
+    "price": 0,
+    "slug": "راديتر-ماء-بيكب-فيكو-06--15-2tr-عادي--pa26",
     "search_terms": [
-      "راديتر ماء بيكب فيكو 05 - 15 2TR عادي - PA26 ",
+      "راديتر ماء بيكب فيكو 06 - 15 2TR عادي - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260613,
-    "name": "راديتر ماء بيكب فيكو 05 - 15 كاز 2KD اوتو  - PA26 ",
+    "name": "راديتر ماء بيكب فيكو 06 - 15 كاز 2KD اوتو  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
-    "slug": "راديتر-ماء-بيكب-فيكو-05--15-كاز-2kd-اوتو--pa26",
+    "price": 0,
+    "slug": "راديتر-ماء-بيكب-فيكو-06--15-كاز-2kd-اوتو--pa26",
     "search_terms": [
-      "راديتر ماء بيكب فيكو 05 - 15 كاز 2KD اوتو  - PA26 ",
+      "راديتر ماء بيكب فيكو 06 - 15 كاز 2KD اوتو  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16062,13 +16090,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب نافارا 07 - 14 بانزين اوتو - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 99000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-نافارا-07--14-بانزين-اوتو--pa26",
     "search_terms": [
       "راديتر ماء بيكب نافارا 07 - 14 بانزين اوتو - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16076,13 +16104,13 @@ window.search-index = [
     "name": "راديتر ماء بيكب نافارا 15 - بيكب نيسان 4W بانزين 15 - اوتو  - PA16 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-بيكب-نافارا-15--بيكب-نيسان-4w-بانزين-15--اوتو--pa16",
     "search_terms": [
       "راديتر ماء بيكب نافارا 15 - بيكب نيسان 4W بانزين 15 - اوتو  - PA16 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16090,13 +16118,13 @@ window.search-index = [
     "name": "راديتر ماء رف فور 06 - 18  - PA22 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-ماء-رف-فور-06--18--pa22",
     "search_terms": [
       "راديتر ماء رف فور 06 - 18  - PA22 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16104,13 +16132,13 @@ window.search-index = [
     "name": "راديتر ماء سني 12 - 19  هندي - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-ماء-سني-12--19-هندي--pa26",
     "search_terms": [
       "راديتر ماء سني 12 - 19  هندي - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16118,13 +16146,13 @@ window.search-index = [
     "name": "راديتر ماء فورجنر بيكب ريفو 16 - PA26 - 6CYL 1GR ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 107000.0,
+    "price": 0,
     "slug": "راديتر-ماء-فورجنر-بيكب-ريفو-16--pa26--6cyl-1gr",
     "search_terms": [
       "راديتر ماء فورجنر بيكب ريفو 16 - PA26 - 6CYL 1GR ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16132,13 +16160,13 @@ window.search-index = [
     "name": "راديتر ماء فيرسا 12 - 17 - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 71000.0,
+    "price": 0,
     "slug": "راديتر-ماء-فيرسا-12--17--pa26",
     "search_terms": [
       "راديتر ماء فيرسا 12 - 17 - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16146,13 +16174,13 @@ window.search-index = [
     "name": "راديتر ماء كامري 07 - 11  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 74000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كامري-07--11--pa26",
     "search_terms": [
       "راديتر ماء كامري 07 - 11  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16160,13 +16188,13 @@ window.search-index = [
     "name": "راديتر ماء كامري 12 - 17  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 77000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كامري-12--17--pa26",
     "search_terms": [
       "راديتر ماء كامري 12 - 17  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16174,13 +16202,13 @@ window.search-index = [
     "name": "راديتر ماء كامري 18 - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 74000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كامري-18--pa26",
     "search_terms": [
       "راديتر ماء كامري 18 - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16188,13 +16216,13 @@ window.search-index = [
     "name": "راديتر ماء كورلا 20 - امريكي PA16 - SE",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كورلا-20--امريكي-pa16--se",
     "search_terms": [
       "راديتر ماء كورلا 20 - امريكي PA16 - SE",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16202,13 +16230,13 @@ window.search-index = [
     "name": "راديتر ماء كورلا عام 08 - 19  - PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كورلا-عام-08--19--pa26",
     "search_terms": [
       "راديتر ماء كورلا عام 08 - 19  - PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16216,27 +16244,27 @@ window.search-index = [
     "name": "راديتر ماء لاند 01 - 07 PA32  - 1FZ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 121000.0,
+    "price": 0,
     "slug": "راديتر-ماء-لاند-01--07-pa32--1fz",
     "search_terms": [
       "راديتر ماء لاند 01 - 07 PA32  - 1FZ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260626,
-    "name": "راديتر ماء لاند 08 - 21 - PA48 -1GR 6CYL   ",
+    "name": "راديتر ماء لاند 08 - 19 - PA48 -1GR 6CYL   ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 135000.0,
-    "slug": "راديتر-ماء-لاند-08--21--pa48-1gr-6cyl",
+    "price": 0,
+    "slug": "راديتر-ماء-لاند-08--19--pa48-1gr-6cyl",
     "search_terms": [
-      "راديتر ماء لاند 08 - 21 - PA48 -1GR 6CYL   ",
+      "راديتر ماء لاند 08 - 19 - PA48 -1GR 6CYL   ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16244,27 +16272,27 @@ window.search-index = [
     "name": "راديتر ماء لاند 08 - 21 - 16400-51040 1VD اوتو -  PA36  ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 135000.0,
+    "price": 0,
     "slug": "راديتر-ماء-لاند-08--21--16400-51040-1vd-اوتو--pa36",
     "search_terms": [
       "راديتر ماء لاند 08 - 21 - 16400-51040 1VD اوتو -  PA36  ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260628,
-    "name": "راديتر ماء لاند 08 - 21 - 1VD عادي كاز - PA42 ",
+    "name": "راديتر ماء لاند 08 - 21 - 1VD عادي  - PA42 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 142000.0,
-    "slug": "راديتر-ماء-لاند-08--21--1vd-عادي-كاز--pa42",
+    "price": 0,
+    "slug": "راديتر-ماء-لاند-08--21--1vd-عادي--pa42",
     "search_terms": [
-      "راديتر ماء لاند 08 - 21 - 1VD عادي كاز - PA42 ",
+      "راديتر ماء لاند 08 - 21 - 1VD عادي  - PA42 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16272,13 +16300,13 @@ window.search-index = [
     "name": "راديتر ماء لاند 98 - 07 PA32 - 2UZ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 121000.0,
+    "price": 0,
     "slug": "راديتر-ماء-لاند-98--07-pa32--2uz",
     "search_terms": [
       "راديتر ماء لاند 98 - 07 PA32 - 2UZ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16286,27 +16314,27 @@ window.search-index = [
     "name": "راديتر ماء لكزس برادو 10 - 13 - 20 - PA26  - 1UR  - GX",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 107000.0,
+    "price": 0,
     "slug": "راديتر-ماء-لكزس-برادو-10--13--20--pa26--1ur--gx",
     "search_terms": [
       "راديتر ماء لكزس برادو 10 - 13 - 20 - PA26  - 1UR  - GX",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260633,
-    "name": "راديتر ماء لكزس لاند 08 - 21 عام PA48 - 8CYL 1UR 3UR 2UZ",
+    "name": "راديتر ماء لكزس لاند 08 - عام PA48 - 8CYL 1UR 3UR 2UZ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 135000.0,
-    "slug": "راديتر-ماء-لكزس-لاند-08--21-عام-pa48--8cyl-1ur-3ur-2uz",
+    "price": 0,
+    "slug": "راديتر-ماء-لكزس-لاند-08--عام-pa48--8cyl-1ur-3ur-2uz",
     "search_terms": [
-      "راديتر ماء لكزس لاند 08 - 21 عام PA48 - 8CYL 1UR 3UR 2UZ",
+      "راديتر ماء لكزس لاند 08 - عام PA48 - 8CYL 1UR 3UR 2UZ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16314,13 +16342,13 @@ window.search-index = [
     "name": "راديتر ماء هايلندر 20- كراون كلجر 21 - A25FX هايبرد - PA16  ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-هايلندر-20-كراون-كلجر-21--a25fx-هايبرد--pa16",
     "search_terms": [
       "راديتر ماء هايلندر 20- كراون كلجر 21 - A25FX هايبرد - PA16  ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16328,13 +16356,13 @@ window.search-index = [
     "name": "راديتر ماء هايلندر 20 - PA16  - 2GR",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-هايلندر-20--pa16--2gr",
     "search_terms": [
       "راديتر ماء هايلندر 20 - PA16  - 2GR",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16342,13 +16370,13 @@ window.search-index = [
     "name": "راديتر توربو سوبر لاند 22 - F33 V35 بالبدنة ايسر  - PA48 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 97000.0,
+    "price": 0,
     "slug": "راديتر-توربو-سوبر-لاند-22--f33-v35-بالبدنة-ايسر--pa48",
     "search_terms": [
       "راديتر توربو سوبر لاند 22 - F33 V35 بالبدنة ايسر  - PA48 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16356,13 +16384,13 @@ window.search-index = [
     "name": "راديتر توربو سوبر لاند 22 - F33 V35 بالبدنة ايمن  - PA48 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 97000.0,
+    "price": 0,
     "slug": "راديتر-توربو-سوبر-لاند-22--f33-v35-بالبدنة-ايمن--pa48",
     "search_terms": [
       "راديتر توربو سوبر لاند 22 - F33 V35 بالبدنة ايمن  - PA48 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16370,13 +16398,13 @@ window.search-index = [
     "name": "رااديتر ماء لاند 22 -  V35 تون توربو  - PA36 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 185000.0,
+    "price": 0,
     "slug": "رااديتر-ماء-لاند-22--v35-تون-توربو--pa36",
     "search_terms": [
       "رااديتر ماء لاند 22 -  V35 تون توربو  - PA36 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16384,13 +16412,13 @@ window.search-index = [
     "name": "راديتر ماء لاند 22 - PA36 - 1GR",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 156000.0,
+    "price": 0,
     "slug": "راديتر-ماء-لاند-22--pa36--1gr",
     "search_terms": [
       "راديتر ماء لاند 22 - PA36 - 1GR",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16398,13 +16426,13 @@ window.search-index = [
     "name": "راديتر ماء لاند 22 - F33 كاز  - PA36 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 170000.0,
+    "price": 0,
     "slug": "راديتر-ماء-لاند-22--f33-كاز--pa36",
     "search_terms": [
       "راديتر ماء لاند 22 - F33 كاز  - PA36 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16412,13 +16440,13 @@ window.search-index = [
     "name": "راديتر مبرد توربو كراون و كراون ماجستا هايلندر 21 PA22 - A25AFXS ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-مبرد-توربو-كراون-و-كراون-ماجستا-هايلندر-21-pa22--a25afxs",
     "search_terms": [
       "راديتر مبرد توربو كراون و كراون ماجستا هايلندر 21 PA22 - A25AFXS ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16426,13 +16454,13 @@ window.search-index = [
     "name": "راديتر تبريد سينا 21 - هايبرد - 20 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-سينا-21--هايبرد--20",
     "search_terms": [
       "راديتر تبريد سينا 21 - هايبرد - 20 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16440,13 +16468,13 @@ window.search-index = [
     "name": "راديتر ماء كورلا كروس - كورلا شكل خليجي 21 - هايبرد 8ZR - PA26  ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 85000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كورلا-كروس--كورلا-شكل-خليجي-21--هايبرد-8zr--pa26",
     "search_terms": [
       "راديتر ماء كورلا كروس - كورلا شكل خليجي 21 - هايبرد 8ZR - PA26  ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16454,13 +16482,13 @@ window.search-index = [
     "name": "راديتر ماء كورلا ليفان 21 -8ZR -16",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 78000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كورلا-ليفان-21-8zr-16",
     "search_terms": [
       "راديتر ماء كورلا ليفان 21 -8ZR -16",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16468,13 +16496,13 @@ window.search-index = [
     "name": "راديتر تبريد كورلا ليفان 21 - هايبرد  - 12 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 71000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كورلا-ليفان-21--هايبرد--12",
     "search_terms": [
       "راديتر تبريد كورلا ليفان 21 - هايبرد  - 12 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16482,13 +16510,13 @@ window.search-index = [
     "name": "راديتر سوبر تندرا 22 - V35 ايسر - PA48 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 97000.0,
+    "price": 0,
     "slug": "راديتر-سوبر-تندرا-22--v35-ايسر--pa48",
     "search_terms": [
       "راديتر سوبر تندرا 22 - V35 ايسر - PA48 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16496,13 +16524,13 @@ window.search-index = [
     "name": "راديتر سوبر تندرا 22 - V35 ايمن  - PA48 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 97000.0,
+    "price": 0,
     "slug": "راديتر-سوبر-تندرا-22--v35-ايمن--pa48",
     "search_terms": [
       "راديتر سوبر تندرا 22 - V35 ايمن  - PA48 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16510,13 +16538,13 @@ window.search-index = [
     "name": "راديتر تبريد كورلا 20 - محرك 2.0 امريكي  - 12 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
+    "price": 0,
     "slug": "راديتر-تبريد-كورلا-20--محرك-2.0-امريكي--12",
     "search_terms": [
       "راديتر تبريد كورلا 20 - محرك 2.0 امريكي  - 12 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16524,27 +16552,27 @@ window.search-index = [
     "name": "راديتر ماء تندرا سيكويا 22- PA26 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 156000.0,
+    "price": 0,
     "slug": "راديتر-ماء-تندرا-سيكويا-22-pa26",
     "search_terms": [
       "راديتر ماء تندرا سيكويا 22- PA26 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260651,
-    "name": "مبرد راديتر سوبر لاند 08 - 21 PE50 -1vd",
+    "name": "مبرد راديتر سوبر لاند 08 - PE50 -16 1vd",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 525000.0,
-    "slug": "مبرد-راديتر-سوبر-لاند-08--21-pe50-1vd",
+    "price": 0,
+    "slug": "مبرد-راديتر-سوبر-لاند-08--pe50-16-1vd",
     "search_terms": [
-      "مبرد راديتر سوبر لاند 08 - 21 PE50 -1vd",
+      "مبرد راديتر سوبر لاند 08 - PE50 -16 1vd",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16552,27 +16580,27 @@ window.search-index = [
     "name": "راديتر ماء كوستر 20 - كاز - PA48 - N40 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كوستر-20--كاز--pa48--n40",
     "search_terms": [
       "راديتر ماء كوستر 20 - كاز - PA48 - N40 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
     "id": 260654,
-    "name": "راديتر ماء كوستر  1hz كاز صغيرة  - PA36 ",
+    "name": "راديتر ما كوستر  1hz كاز صفيرة  - PA36 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 64000.0,
-    "slug": "راديتر-ماء-كوستر-1hz-كاز-صغيرة--pa36",
+    "price": 0,
+    "slug": "راديتر-ما-كوستر-1hz-كاز-صفيرة--pa36",
     "search_terms": [
-      "راديتر ماء كوستر  1hz كاز صغيرة  - PA36 ",
+      "راديتر ما كوستر  1hz كاز صفيرة  - PA36 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16580,13 +16608,13 @@ window.search-index = [
     "name": "راديتر ماء كوستر 2TR عام  - PA36 ",
     "category": "",
     "brand": "DAISEN - RADS",
-    "price": 92000.0,
+    "price": 0,
     "slug": "راديتر-ماء-كوستر-2tr-عام--pa36",
     "search_terms": [
       "راديتر ماء كوستر 2TR عام  - PA36 ",
       "",
       "DAISEN - RADS",
-      ""
+      "False"
     ]
   },
   {
@@ -16594,13 +16622,13 @@ window.search-index = [
     "name": "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--مع-فتحة-عدسة-ايمن",
     "search_terms": [
       "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16608,13 +16636,13 @@ window.search-index = [
     "name": "كفر بروجكتر برادو 24 - داخل الكرن مع فتحة عدسة ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-برادو-24--داخل-الكرن-مع-فتحة-عدسة-ايسر",
     "search_terms": [
       "كفر بروجكتر برادو 24 - داخل الكرن مع فتحة عدسة ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16622,13 +16650,13 @@ window.search-index = [
     "name": "كفر بروجكتر برادو 24 - داخل الكرن مع فتحة عدسة ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 9000.0,
+    "price": 0,
     "slug": "كفر-بروجكتر-برادو-24--داخل-الكرن-مع-فتحة-عدسة-ايمن",
     "search_terms": [
       "كفر بروجكتر برادو 24 - داخل الكرن مع فتحة عدسة ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16636,13 +16664,13 @@ window.search-index = [
     "name": "شباك رئيسي برادو 24 -  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 114000.0,
+    "price": 0,
     "slug": "شباك-رئيسي-برادو-24",
     "search_terms": [
       "شباك رئيسي برادو 24 -  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16650,13 +16678,13 @@ window.search-index = [
     "name": "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايسر  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 10000.0,
+    "price": 0,
     "slug": "كفر-هوائية-كرن-دعامية-امامية-اسفل-بروجكتر-برادو-24-ايسر",
     "search_terms": [
       "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايسر  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16664,13 +16692,13 @@ window.search-index = [
     "name": "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايمن  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 10000.0,
+    "price": 0,
     "slug": "كفر-هوائية-كرن-دعامية-امامية-اسفل-بروجكتر-برادو-24-ايمن",
     "search_terms": [
       "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايمن  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16678,13 +16706,13 @@ window.search-index = [
     "name": "شباك بيكب تويوتا جمرة 01 - 04 نيكل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 37000.0,
+    "price": 0,
     "slug": "شباك-بيكب-تويوتا-جمرة-01--04-نيكل",
     "search_terms": [
       "شباك بيكب تويوتا جمرة 01 - 04 نيكل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16692,13 +16720,13 @@ window.search-index = [
     "name": "دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 58000.0,
+    "price": 0,
     "slug": "دعامية-امامية-بيكب-تويوتا-جمرة-01-04-نيكل",
     "search_terms": [
       "دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16706,13 +16734,13 @@ window.search-index = [
     "name": "دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 44000.0,
+    "price": 0,
     "slug": "دعامية-امامية-بيكب-تويوتا-جمرة-97--2000-نيكل",
     "search_terms": [
       "دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16720,13 +16748,13 @@ window.search-index = [
     "name": "بوري دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 12000.0,
+    "price": 0,
     "slug": "بوري-دعامية-امامية-بيكب-تويوتا-جمرة-01-04-نيكل",
     "search_terms": [
       "بوري دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16734,13 +16762,13 @@ window.search-index = [
     "name": "بوري دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 13000.0,
+    "price": 0,
     "slug": "بوري-دعامية-امامية-بيكب-تويوتا-جمرة-97--2000-نيكل",
     "search_terms": [
       "بوري دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16748,13 +16776,13 @@ window.search-index = [
     "name": "دعامية خلفية فيكو 05 - 15 نيكل بدون فتحة حساس  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 0,
     "slug": "دعامية-خلفية-فيكو-05--15-نيكل-بدون-فتحة-حساس",
     "search_terms": [
       "دعامية خلفية فيكو 05 - 15 نيكل بدون فتحة حساس  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16762,13 +16790,13 @@ window.search-index = [
     "name": "دعامية امامية فيكو 08 - 11 2w 4w لون ابيض ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 0,
     "slug": "دعامية-امامية-فيكو-08--11-2w-4w-لون-ابيض",
     "search_terms": [
       "دعامية امامية فيكو 08 - 11 2w 4w لون ابيض ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16776,13 +16804,13 @@ window.search-index = [
     "name": "دعامية امامية فيكو 12 - 15 2w 4w لون ابيض ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 50000.0,
+    "price": 0,
     "slug": "دعامية-امامية-فيكو-12--15-2w-4w-لون-ابيض",
     "search_terms": [
       "دعامية امامية فيكو 12 - 15 2w 4w لون ابيض ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16790,13 +16818,13 @@ window.search-index = [
     "name": "عضد مراة جانبية فيكو 12 - 15 ايمن  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "عضد-مراة-جانبية-فيكو-12--15-ايمن",
     "search_terms": [
       "عضد مراة جانبية فيكو 12 - 15 ايمن  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16804,13 +16832,13 @@ window.search-index = [
     "name": "عضد مراة جانبية فيكو 12 - 15 ايسر  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 6000.0,
+    "price": 0,
     "slug": "عضد-مراة-جانبية-فيكو-12--15-ايسر",
     "search_terms": [
       "عضد مراة جانبية فيكو 12 - 15 ايسر  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16818,13 +16846,13 @@ window.search-index = [
     "name": "دعامية خلفية ريفو 16 - نيكل ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 114000.0,
+    "price": 0,
     "slug": "دعامية-خلفية-ريفو-16--نيكل",
     "search_terms": [
       "دعامية خلفية ريفو 16 - نيكل ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16832,13 +16860,13 @@ window.search-index = [
     "name": "واقية طين ريفو 16 4W مع كتابة HILUX سيت 4 قطع ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 14000.0,
+    "price": 0,
     "slug": "واقية-طين-ريفو-16-4w-مع-كتابة-hilux-سيت-4-قطع",
     "search_terms": [
       "واقية طين ريفو 16 4W مع كتابة HILUX سيت 4 قطع ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16846,13 +16874,13 @@ window.search-index = [
     "name": "واقية طين ريفو 16 4W مع كتابة احمر TRD  سيت 4 قطع ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "واقية-طين-ريفو-16-4w-مع-كتابة-احمر-trd-سيت-4-قطع",
     "search_terms": [
       "واقية طين ريفو 16 4W مع كتابة احمر TRD  سيت 4 قطع ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16860,13 +16888,13 @@ window.search-index = [
     "name": "شباك ريفو 21 - 24 TRD  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 0,
     "slug": "شباك-ريفو-21--24-trd",
     "search_terms": [
       "شباك ريفو 21 - 24 TRD  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16874,13 +16902,13 @@ window.search-index = [
     "name": "شباك ريفو 21 - 24 GR بكتابة تويوتا  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 114000.0,
+    "price": 0,
     "slug": "شباك-ريفو-21--24-gr-بكتابة-تويوتا",
     "search_terms": [
       "شباك ريفو 21 - 24 GR بكتابة تويوتا  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16888,13 +16916,13 @@ window.search-index = [
     "name": "هلال جاملغ ريفو 21 - 24 TRD مع كفر احمر  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 64000.0,
+    "price": 0,
     "slug": "هلال-جاملغ-ريفو-21--24-trd-مع-كفر-احمر",
     "search_terms": [
       "هلال جاملغ ريفو 21 - 24 TRD مع كفر احمر  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16902,13 +16930,13 @@ window.search-index = [
     "name": "شباك عكرب 07 - 24 نيكل ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 47000.0,
+    "price": 0,
     "slug": "شباك-عكرب-07--24-نيكل",
     "search_terms": [
       "شباك عكرب 07 - 24 نيكل ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16916,13 +16944,13 @@ window.search-index = [
     "name": "بروجكتر اف جي FJ - تك عدسة  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 0,
     "slug": "بروجكتر-اف-جي-fj--تك-عدسة",
     "search_terms": [
       "بروجكتر اف جي FJ - تك عدسة  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16930,13 +16958,13 @@ window.search-index = [
     "name": "بروجكتر اف جي FJ - تك دبل عدسة   ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 128000.0,
+    "price": 0,
     "slug": "بروجكتر-اف-جي-fj--تك-دبل-عدسة",
     "search_terms": [
       "بروجكتر اف جي FJ - تك دبل عدسة   ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16944,13 +16972,13 @@ window.search-index = [
     "name": "شباك FJ اف جي نيكل  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 78000.0,
+    "price": 0,
     "slug": "شباك-fj-اف-جي-نيكل",
     "search_terms": [
       "شباك FJ اف جي نيكل  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16958,13 +16986,13 @@ window.search-index = [
     "name": "بك لايت بيكب نيسان 01 - 20 شبوط ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 14000.0,
+    "price": 0,
     "slug": "بك-لايت-بيكب-نيسان-01--20-شبوط-ايسر",
     "search_terms": [
       "بك لايت بيكب نيسان 01 - 20 شبوط ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16972,13 +17000,13 @@ window.search-index = [
     "name": "بك لايت بيكب نيسان 01 - 20 شبوط ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 14000.0,
+    "price": 0,
     "slug": "بك-لايت-بيكب-نيسان-01--20-شبوط-ايمن",
     "search_terms": [
       "بك لايت بيكب نيسان 01 - 20 شبوط ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -16986,13 +17014,13 @@ window.search-index = [
     "name": "شباك بيكب نيسان شبوط 05 -  داير نيكل داخل اسود ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "شباك-بيكب-نيسان-شبوط-05--داير-نيكل-داخل-اسود",
     "search_terms": [
       "شباك بيكب نيسان شبوط 05 -  داير نيكل داخل اسود ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -17000,13 +17028,13 @@ window.search-index = [
     "name": "لايت نافارا 05 -14 ايمن  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "لايت-نافارا-05-14-ايمن",
     "search_terms": [
       "لايت نافارا 05 -14 ايمن  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -17014,13 +17042,13 @@ window.search-index = [
     "name": "لايت نافارا 05 -14 ايمن  ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 43000.0,
+    "price": 0,
     "slug": "لايت-نافارا-05-14-ايمن",
     "search_terms": [
       "لايت نافارا 05 -14 ايمن  ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -17028,13 +17056,13 @@ window.search-index = [
     "name": "بك لايت نافارا 05 - 14 ايمن ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "بك-لايت-نافارا-05--14-ايمن",
     "search_terms": [
       "بك لايت نافارا 05 - 14 ايمن ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -17042,13 +17070,13 @@ window.search-index = [
     "name": "بك لايت نافارا 05 - 14 ايسر ",
     "category": "",
     "brand": "DAISEN-HY",
-    "price": 21000.0,
+    "price": 0,
     "slug": "بك-لايت-نافارا-05--14-ايسر",
     "search_terms": [
       "بك لايت نافارا 05 - 14 ايسر ",
       "",
       "DAISEN-HY",
-      ""
+      "False"
     ]
   },
   {
@@ -17056,13 +17084,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-5-واير-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17070,13 +17098,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-5-واير-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17084,13 +17112,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - كهرباء اشارة هيتر 8 واير ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-هيتر-8-واير-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية رف فور 19 - كهرباء اشارة هيتر 8 واير ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17098,13 +17126,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - كهرباء اشارة هيتر 8 واير ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-هيتر-8-واير-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية رف فور 19 - كهرباء اشارة هيتر 8 واير ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17112,13 +17140,13 @@ window.search-index = [
     "name": "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-سني-هندي-14--كهرباء-اشارة-عربي-5-واير-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17126,13 +17154,13 @@ window.search-index = [
     "name": "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-سني-هندي-14--كهرباء-اشارة-عربي-5-واير-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17140,13 +17168,13 @@ window.search-index = [
     "name": "مراة جانبية برادو 03 - 09 كهرباء  عربي 5 واير نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-برادو-03--09-كهرباء-عربي-5-واير-نيكل-ايسر",
     "search_terms": [
       "مراة جانبية برادو 03 - 09 كهرباء  عربي 5 واير نيكل ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17154,13 +17182,13 @@ window.search-index = [
     "name": "مراة جانبية برادو 03 - 09 كهرباء عربي 5 واير نيكل ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-برادو-03--09-كهرباء-عربي-5-واير-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية برادو 03 - 09 كهرباء عربي 5 واير نيكل ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17168,13 +17196,13 @@ window.search-index = [
     "name": "مراة جانبية بيكب فيكو 05 - 10 كهرباء عربي 3 واير نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 36000.0,
+    "price": 0,
     "slug": "مراة-جانبية-بيكب-فيكو-05--10-كهرباء-عربي-3-واير-نيكل-ايسر",
     "search_terms": [
       "مراة جانبية بيكب فيكو 05 - 10 كهرباء عربي 3 واير نيكل ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17182,13 +17210,13 @@ window.search-index = [
     "name": "مراة جانبية بيكب فيكو 05 - 10 كهرباء عربي 3 واير نيكل ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 36000.0,
+    "price": 0,
     "slug": "مراة-جانبية-بيكب-فيكو-05--10-كهرباء-عربي-3-واير-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية بيكب فيكو 05 - 10 كهرباء عربي 3 واير نيكل ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17196,13 +17224,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 12 - 17 كهرباء شفط 7 واير اشارة لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-شفط-7-واير-اشارة-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء شفط 7 واير اشارة لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17210,13 +17238,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 12 - 17 كهرباء شفط 7 واير اشارة لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-شفط-7-واير-اشارة-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء شفط 7 واير اشارة لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17224,13 +17252,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 12 - 17 كهرباء هيتر 7 واير اشارة لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 43000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-هيتر-7-واير-اشارة-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء هيتر 7 واير اشارة لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17238,13 +17266,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 12 - 17 كهرباء هيتر 7 واير اشارة لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 43000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-هيتر-7-واير-اشارة-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء هيتر 7 واير اشارة لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17252,13 +17280,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 31000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-3-واير-اشارة-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17266,41 +17294,41 @@ window.search-index = [
     "name": "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 31000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-3-واير-اشارة-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261133,
-    "name": "مراة جانبية بيكب فيكو 12 - 15 اشارة كهرباء عربي نيكل ايسر ",
+    "name": "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 40000.0,
-    "slug": "مراة-جانبية-بيكب-فيكو-12--15-اشارة-كهرباء-عربي-نيكل-ايسر",
+    "price": 0,
+    "slug": "مراة-جانبية-فيكو-12--15-اشارة-كهرباء-عربي-نيكل-ايسر",
     "search_terms": [
-      "مراة جانبية بيكب فيكو 12 - 15 اشارة كهرباء عربي نيكل ايسر ",
+      "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261134,
-    "name": "مراة جانبية بيكب فيكو 12 - 15 اشارة كهرباء عربي نيكل ايمن ",
+    "name": "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 40000.0,
-    "slug": "مراة-جانبية-بيكب-فيكو-12--15-اشارة-كهرباء-عربي-نيكل-ايمن",
+    "price": 0,
+    "slug": "مراة-جانبية-فيكو-12--15-اشارة-كهرباء-عربي-نيكل-ايمن",
     "search_terms": [
-      "مراة جانبية بيكب فيكو 12 - 15 اشارة كهرباء عربي نيكل ايمن ",
+      "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17308,13 +17336,13 @@ window.search-index = [
     "name": "مراة جانبية برادو 14 - 22 كهرباء شفط اشارة عربي لولوي 7 واير ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 78000.0,
+    "price": 0,
     "slug": "مراة-جانبية-برادو-14--22-كهرباء-شفط-اشارة-عربي-لولوي-7-واير-ايسر",
     "search_terms": [
       "مراة جانبية برادو 14 - 22 كهرباء شفط اشارة عربي لولوي 7 واير ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17322,13 +17350,13 @@ window.search-index = [
     "name": "مراة جانبية برادو 14 - 22 كهرباء شفط اشارة عربي لولوي 7 واير ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 78000.0,
+    "price": 0,
     "slug": "مراة-جانبية-برادو-14--22-كهرباء-شفط-اشارة-عربي-لولوي-7-واير-ايمن",
     "search_terms": [
       "مراة جانبية برادو 14 - 22 كهرباء شفط اشارة عربي لولوي 7 واير ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17336,13 +17364,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-12--15-كهرباء-شفط-اشارة-عربي-7-واير-لولوي-ايسر",
     "search_terms": [
       "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17350,13 +17378,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-12--15-كهرباء-شفط-اشارة-عربي-7-واير-لولوي-ايمن",
     "search_terms": [
       "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17364,13 +17392,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 43000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-اشارة-هيتر-7-واير-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17378,13 +17406,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 43000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-اشارة-هيتر-7-واير-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17392,13 +17420,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 36000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-3-واير-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17406,13 +17434,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 36000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-3-واير-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17420,13 +17448,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 36000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18--امريكي-كهرباء-ابيض-3-واير-ايسر",
     "search_terms": [
       "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17434,13 +17462,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 36000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18--امريكي-كهرباء-ابيض-3-واير-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17448,13 +17476,13 @@ window.search-index = [
     "name": "مراة جانبية ريفو 16- كهرباء اشارة عربي 5 واير نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 50000.0,
+    "price": 0,
     "slug": "مراة-جانبية-ريفو-16-كهرباء-اشارة-عربي-5-واير-نيكل-ايسر",
     "search_terms": [
       "مراة جانبية ريفو 16- كهرباء اشارة عربي 5 واير نيكل ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17462,13 +17490,13 @@ window.search-index = [
     "name": "مراة جانبية ريفو 16- كهرباء اشارة عربي 5 واير نيكل ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 50000.0,
+    "price": 0,
     "slug": "مراة-جانبية-ريفو-16-كهرباء-اشارة-عربي-5-واير-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية ريفو 16- كهرباء اشارة عربي 5 واير نيكل ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17476,13 +17504,13 @@ window.search-index = [
     "name": "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 78000.0,
+    "price": 0,
     "slug": "مراة-جانبية-ريفو-16-كهرباء-اشارة-شفط-عربي-اشارة-ترحيب-9-واير-نيكل-ايسر",
     "search_terms": [
       "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17490,13 +17518,13 @@ window.search-index = [
     "name": "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 78000.0,
+    "price": 0,
     "slug": "مراة-جانبية-ريفو-16-كهرباء-اشارة-شفط-عربي-اشارة-ترحيب-9-واير-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17504,13 +17532,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 7 واير شفط اشارة امريكي لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-7-واير-شفط-اشارة-امريكي-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير شفط اشارة امريكي لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17518,13 +17546,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 7 واير شفط اشارة امريكي لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-7-واير-شفط-اشارة-امريكي-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير شفط اشارة امريكي لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17532,13 +17560,13 @@ window.search-index = [
     "name": "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17546,13 +17574,13 @@ window.search-index = [
     "name": "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17560,13 +17588,13 @@ window.search-index = [
     "name": "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي هيتر + نقطة عمياء لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي هيتر + نقطة عمياء لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17574,13 +17602,13 @@ window.search-index = [
     "name": "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17588,13 +17616,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 5 واير اشارة امريكي لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-5-واير-اشارة-امريكي-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كامري 18- 5 واير اشارة امريكي لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17602,13 +17630,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 5 واير اشارة امريكي لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-5-واير-اشارة-امريكي-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18- 5 واير اشارة امريكي لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17616,13 +17644,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17630,13 +17658,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17644,13 +17672,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17658,13 +17686,13 @@ window.search-index = [
     "name": "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17672,13 +17700,13 @@ window.search-index = [
     "name": "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17686,13 +17714,13 @@ window.search-index = [
     "name": "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17700,13 +17728,13 @@ window.search-index = [
     "name": "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-لولوي-ايسر",
     "search_terms": [
       "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17714,97 +17742,97 @@ window.search-index = [
     "name": "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 85000.0,
+    "price": 0,
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-لولوي-ايمن",
     "search_terms": [
       "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261172,
-    "name": "مراة جانبية كورلا شكل خليجي و ليفان صيني و امريكي  21 - 5كورلا 20 -  واير كهرباء اشارة ابيض ايسر بدون كتابة",
+    "name": "مراة جانبية كورلا ليفان 21 - كورلا 20 - خليجي 5 واير كهرباء اشارة ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 50000.0,
-    "slug": "مراة-جانبية-كورلا-شكل-خليجي-و-ليفان-صيني-و-امريكي-21--5كورلا-20--واير-كهرباء-اشارة-ابيض-ايسر-بدون-كتابة",
+    "price": 0,
+    "slug": "مراة-جانبية-كورلا-ليفان-21--كورلا-20--خليجي-5-واير-كهرباء-اشارة-ابيض-ايسر",
     "search_terms": [
-      "مراة جانبية كورلا شكل خليجي و ليفان صيني و امريكي  21 - 5كورلا 20 -  واير كهرباء اشارة ابيض ايسر بدون كتابة",
+      "مراة جانبية كورلا ليفان 21 - كورلا 20 - خليجي 5 واير كهرباء اشارة ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261173,
-    "name": "مراة جانبية كورلا شكل خليجي و ليفان و صيني امريكي  21 - 5كورلا 20 -  واير كهرباء اشارة ابيض ايمن بدون كتابة",
+    "name": "مراة جانبية كورلا ليفان 21 - 5كورلا 20 - خليجي واير كهرباء اشارة ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 50000.0,
-    "slug": "مراة-جانبية-كورلا-شكل-خليجي-و-ليفان-و-صيني-امريكي-21--5كورلا-20--واير-كهرباء-اشارة-ابيض-ايمن-بدون-كتابة",
+    "price": 0,
+    "slug": "مراة-جانبية-كورلا-ليفان-21--5كورلا-20--خليجي-واير-كهرباء-اشارة-ابيض-ايمن",
     "search_terms": [
-      "مراة جانبية كورلا شكل خليجي و ليفان و صيني امريكي  21 - 5كورلا 20 -  واير كهرباء اشارة ابيض ايمن بدون كتابة",
+      "مراة جانبية كورلا ليفان 21 - 5كورلا 20 - خليجي واير كهرباء اشارة ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261174,
-    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 6 واير هيتر كهرباء اشارة ابيض ايسر ",
+    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير هيتر كهرباء اشارة ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
-    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-وليفان-6-واير-هيتر-كهرباء-اشارة-ابيض-ايسر",
+    "price": 0,
+    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-5-واير-هيتر-كهرباء-اشارة-ابيض-ايسر",
     "search_terms": [
-      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 6 واير هيتر كهرباء اشارة ابيض ايسر ",
+      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير هيتر كهرباء اشارة ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261175,
-    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 6 واير هيتر كهرباء اشارة ابيض ايمن ",
+    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير هيتر كهرباء اشارة ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 71000.0,
-    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-وليفان-6-واير-هيتر-كهرباء-اشارة-ابيض-ايمن",
+    "price": 0,
+    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-5-واير-هيتر-كهرباء-اشارة-ابيض-ايمن",
     "search_terms": [
-      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 6 واير هيتر كهرباء اشارة ابيض ايمن ",
+      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير هيتر كهرباء اشارة ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261176,
-    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 5 واير كهرباء اشارة ابيض ايسر ",
+    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير كهرباء اشارة ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
-    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-وليفان-5-واير-كهرباء-اشارة-ابيض-ايسر",
+    "price": 0,
+    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-5-واير-كهرباء-اشارة-ابيض-ايسر",
     "search_terms": [
-      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 5 واير كهرباء اشارة ابيض ايسر ",
+      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير كهرباء اشارة ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261177,
-    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 5 واير كهرباء اشارة ابيض ايمن ",
+    "name": "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير كهرباء اشارة ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
-    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-وليفان-5-واير-كهرباء-اشارة-ابيض-ايمن",
+    "price": 0,
+    "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-5-واير-كهرباء-اشارة-ابيض-ايمن",
     "search_terms": [
-      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي وليفان 5 واير كهرباء اشارة ابيض ايمن ",
+      "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير كهرباء اشارة ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17812,13 +17840,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 107000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-اسود-مع-نيكل-اشارة-ايسر",
     "search_terms": [
       "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17826,13 +17854,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 107000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-اسود-مع-نيكل-اشارة-ايمن",
     "search_terms": [
       "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17840,13 +17868,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 107000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-لولوي-مع-نيكل-اشارة-ايسر",
     "search_terms": [
       "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17854,13 +17882,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 107000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-لولوي-مع-نيكل-اشارة-ايمن",
     "search_terms": [
       "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17868,13 +17896,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--7-واير-كهرباء-اشارة-هيتر-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17882,13 +17910,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--7-واير-كهرباء-اشارة-هيتر-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17896,13 +17924,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 92000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17910,13 +17938,13 @@ window.search-index = [
     "name": "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 92000.0,
+    "price": 0,
     "slug": "مراة-جانبية-رف-فور-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17924,13 +17952,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 270000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17938,13 +17966,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 270000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17952,13 +17980,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 270000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-نيكل-ايسر",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17966,13 +17994,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 270000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17980,13 +18008,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون لولوي ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 270000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-لولوي-ايسر",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون لولوي ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -17994,13 +18022,13 @@ window.search-index = [
     "name": "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون لولوي ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 270000.0,
+    "price": 0,
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-لولوي-ايمن",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون لولوي ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18008,13 +18036,13 @@ window.search-index = [
     "name": "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 92000.0,
+    "price": 0,
     "slug": "مراة-جانبية-التما-19-8-واير-كهرباء-شفط-اشارة-هيتر-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18022,13 +18050,13 @@ window.search-index = [
     "name": "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 92000.0,
+    "price": 0,
     "slug": "مراة-جانبية-التما-19-8-واير-كهرباء-شفط-اشارة-هيتر-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18036,13 +18064,13 @@ window.search-index = [
     "name": "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 122000.0,
+    "price": 0,
     "slug": "مراة-جانبية-التما-19-12-واير-كهرباء-شفط-اشارة-هيتر-كامرة-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18050,13 +18078,13 @@ window.search-index = [
     "name": "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 122000.0,
+    "price": 0,
     "slug": "مراة-جانبية-التما-19-12-واير-كهرباء-شفط-اشارة-هيتر-كامرة-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18064,13 +18092,13 @@ window.search-index = [
     "name": "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-التما-19-6-واير-كهرباء-اشارة-هيتر-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18078,13 +18106,13 @@ window.search-index = [
     "name": "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-التما-19-6-واير-كهرباء-اشارة-هيتر-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18092,13 +18120,13 @@ window.search-index = [
     "name": "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-روج-19--5-واير-كهرباء-اشارة-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18106,13 +18134,13 @@ window.search-index = [
     "name": "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 57000.0,
+    "price": 0,
     "slug": "مراة-جانبية-روج-19--5-واير-كهرباء-اشارة-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18120,13 +18148,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 51000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-20--امريكي-5-واير-كهرباء-اشارة-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18134,13 +18162,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 51000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-20--امريكي-5-واير-كهرباء-اشارة-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18148,13 +18176,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-20--امريكي-7-واير-شفط-كهرباء-اشارة-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18162,13 +18190,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 64000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-20--امريكي-7-واير-شفط-كهرباء-اشارة-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18176,13 +18204,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 20 - امريكي 3 واير  كهرباء لون ابيض ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 37000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-20--امريكي-3-واير-كهرباء-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كورلا 20 - امريكي 3 واير  كهرباء لون ابيض ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18190,13 +18218,13 @@ window.search-index = [
     "name": "مراة جانبية كورلا 20 - امريكي 3 واير كهرباء لون ابيض ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 37000.0,
+    "price": 0,
     "slug": "مراة-جانبية-كورلا-20--امريكي-3-واير-كهرباء-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كورلا 20 - امريكي 3 واير كهرباء لون ابيض ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18204,13 +18232,13 @@ window.search-index = [
     "name": "جامة مراة جانبية لاند 08 - 21 برادو 10 - 19 ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 11000.0,
+    "price": 0,
     "slug": "جامة-مراة-جانبية-لاند-08--21-برادو-10--19-ايمن",
     "search_terms": [
       "جامة مراة جانبية لاند 08 - 21 برادو 10 - 19 ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18218,13 +18246,13 @@ window.search-index = [
     "name": "جامة مراة جانبية لاند 08 - 21 برادو 10 - 19 ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 11000.0,
+    "price": 0,
     "slug": "جامة-مراة-جانبية-لاند-08--21-برادو-10--19-ايسر",
     "search_terms": [
       "جامة مراة جانبية لاند 08 - 21 برادو 10 - 19 ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18232,13 +18260,13 @@ window.search-index = [
     "name": "اشارة مراة لكزس 12 - 21 LX570 لكزس برادو ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 21000.0,
+    "price": 0,
     "slug": "اشارة-مراة-لكزس-12--21-lx570-لكزس-برادو-ايمن",
     "search_terms": [
       "اشارة مراة لكزس 12 - 21 LX570 لكزس برادو ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18246,41 +18274,41 @@ window.search-index = [
     "name": "اشارة مراة لكزس 12 - 21 LX570 لكزس برادو ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 21000.0,
+    "price": 0,
     "slug": "اشارة-مراة-لكزس-12--21-lx570-لكزس-برادو-ايسر",
     "search_terms": [
       "اشارة مراة لكزس 12 - 21 LX570 لكزس برادو ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261219,
-    "name": "اشارة مراة جانبية لاند 22- ايمن ",
+    "name": "اشارة مراة جانبية لكزس 22- ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
-    "slug": "اشارة-مراة-جانبية-لاند-22-ايمن",
+    "price": 0,
+    "slug": "اشارة-مراة-جانبية-لكزس-22-ايمن",
     "search_terms": [
-      "اشارة مراة جانبية لاند 22- ايمن ",
+      "اشارة مراة جانبية لكزس 22- ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
     "id": 261220,
-    "name": "اشارة مراة جانبية لاند 22- ايسر ",
+    "name": "اشارة مراة جانبية لكزس 22- ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
-    "slug": "اشارة-مراة-جانبية-لاند-22-ايسر",
+    "price": 0,
+    "slug": "اشارة-مراة-جانبية-لكزس-22-ايسر",
     "search_terms": [
-      "اشارة مراة جانبية لاند 22- ايسر ",
+      "اشارة مراة جانبية لكزس 22- ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18288,13 +18316,13 @@ window.search-index = [
     "name": "اشارة مراة جانبية رف فور 19 - ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
+    "price": 0,
     "slug": "اشارة-مراة-جانبية-رف-فور-19--ايمن",
     "search_terms": [
       "اشارة مراة جانبية رف فور 19 - ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18302,13 +18330,13 @@ window.search-index = [
     "name": "اشارة مراة جانبية رف فور 19 - ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
+    "price": 0,
     "slug": "اشارة-مراة-جانبية-رف-فور-19--ايسر",
     "search_terms": [
       "اشارة مراة جانبية رف فور 19 - ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18316,13 +18344,13 @@ window.search-index = [
     "name": "اشارة مراة جانبية كورلا 20 - ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
+    "price": 0,
     "slug": "اشارة-مراة-جانبية-كورلا-20--ايمن",
     "search_terms": [
       "اشارة مراة جانبية كورلا 20 - ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18330,13 +18358,13 @@ window.search-index = [
     "name": "اشارة مراة جانبية كورلا 20 - ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
+    "price": 0,
     "slug": "اشارة-مراة-جانبية-كورلا-20--ايسر",
     "search_terms": [
       "اشارة مراة جانبية كورلا 20 - ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18344,13 +18372,13 @@ window.search-index = [
     "name": "اشارة مراة جانبية بيكب ريفو 16 ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
+    "price": 0,
     "slug": "اشارة-مراة-جانبية-بيكب-ريفو-16-ايمن",
     "search_terms": [
       "اشارة مراة جانبية بيكب ريفو 16 ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18358,13 +18386,13 @@ window.search-index = [
     "name": "اشارة مراة جانبية بيكب ريفو 16 ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 14000.0,
+    "price": 0,
     "slug": "اشارة-مراة-جانبية-بيكب-ريفو-16-ايسر",
     "search_terms": [
       "اشارة مراة جانبية بيكب ريفو 16 ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18372,13 +18400,13 @@ window.search-index = [
     "name": "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 21000.0,
+    "price": 0,
     "slug": "جامة-مراة-جانبية-لاند-22--بدون-هيتر-عربي-ايمن",
     "search_terms": [
       "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18386,13 +18414,13 @@ window.search-index = [
     "name": "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 21000.0,
+    "price": 0,
     "slug": "جامة-مراة-جانبية-لاند-22--بدون-هيتر-عربي-ايسر",
     "search_terms": [
       "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18400,13 +18428,13 @@ window.search-index = [
     "name": "جامة مراة جانبية لاند 22 -  هيتر عربي ايمن ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 26000.0,
+    "price": 0,
     "slug": "جامة-مراة-جانبية-لاند-22--هيتر-عربي-ايمن",
     "search_terms": [
       "جامة مراة جانبية لاند 22 -  هيتر عربي ايمن ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18414,13 +18442,13 @@ window.search-index = [
     "name": "جامة مراة جانبية لاند 22 -  هيتر عربي ايسر ",
     "category": "",
     "brand": "DAISEN-M",
-    "price": 26000.0,
+    "price": 0,
     "slug": "جامة-مراة-جانبية-لاند-22--هيتر-عربي-ايسر",
     "search_terms": [
       "جامة مراة جانبية لاند 22 -  هيتر عربي ايسر ",
       "",
       "DAISEN-M",
-      ""
+      "False"
     ]
   },
   {
@@ -18428,13 +18456,13 @@ window.search-index = [
     "name": "ماشة كلج كوستر فيكو هايس 2tr 3rz",
     "category": "",
     "brand": "AISIN",
-    "price": 16000.0,
+    "price": 0,
     "slug": "ماشة-كلج-كوستر-فيكو-هايس-2tr-3rz",
     "search_terms": [
       "ماشة كلج كوستر فيكو هايس 2tr 3rz",
       "",
       "AISIN",
-      ""
+      "False"
     ]
   },
   {
@@ -18442,27 +18470,27 @@ window.search-index = [
     "name": "سيت علامة بلاك اديشن black edition لاند 22 - / 5 قطع ",
     "category": "",
     "brand": "DAISEN",
-    "price": 78000.0,
+    "price": 0,
     "slug": "سيت-علامة-بلاك-اديشن-black-edition-لاند-22--5-قطع",
     "search_terms": [
       "سيت علامة بلاك اديشن black edition لاند 22 - / 5 قطع ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
     "id": 261716,
-    "name": "يدة قفل باب ثلاجة فرس لاند 08 - 21 ",
+    "name": "يدة قفل باب جكمجة لاند 08 - 21 ",
     "category": "",
     "brand": "DAISEN",
-    "price": 21000.0,
-    "slug": "يدة-قفل-باب-ثلاجة-فرس-لاند-08--21",
+    "price": 0,
+    "slug": "يدة-قفل-باب-جكمجة-لاند-08--21",
     "search_terms": [
-      "يدة قفل باب ثلاجة فرس لاند 08 - 21 ",
+      "يدة قفل باب جكمجة لاند 08 - 21 ",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -18470,13 +18498,13 @@ window.search-index = [
     "name": "بروجكتر استقبال اسفل الابواب الامامية برادو 24 - شكل برادو 24",
     "category": "",
     "brand": "DAISEN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "بروجكتر-استقبال-اسفل-الابواب-الامامية-برادو-24--شكل-برادو-24",
     "search_terms": [
       "بروجكتر استقبال اسفل الابواب الامامية برادو 24 - شكل برادو 24",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -18484,13 +18512,13 @@ window.search-index = [
     "name": "بروجكتر استقبال اسفل الابواب الامامية كورلا عام بعلامة تويوتا و كورولا",
     "category": "",
     "brand": "DAISEN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "بروجكتر-استقبال-اسفل-الابواب-الامامية-كورلا-عام-بعلامة-تويوتا-و-كورولا",
     "search_terms": [
       "بروجكتر استقبال اسفل الابواب الامامية كورلا عام بعلامة تويوتا و كورولا",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -18498,13 +18526,13 @@ window.search-index = [
     "name": "بروجكتر استقبال اسفل الابواب الامامية هايلندر بعلامة تويوتا وهايلندر",
     "category": "",
     "brand": "DAISEN",
-    "price": 14000.0,
+    "price": 0,
     "slug": "بروجكتر-استقبال-اسفل-الابواب-الامامية-هايلندر-بعلامة-تويوتا-وهايلندر",
     "search_terms": [
       "بروجكتر استقبال اسفل الابواب الامامية هايلندر بعلامة تويوتا وهايلندر",
       "",
       "DAISEN",
-      ""
+      "False"
     ]
   },
   {
@@ -18518,7 +18546,7 @@ window.search-index = [
       "فريز تبريد امامي نافارا 15 - CG ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -18532,7 +18560,7 @@ window.search-index = [
       "ماطور بوابة تبريد سيرفو برادو 10 - 17 لاند لكزس 08 - 21 خلفي",
       "",
       "Denso",
-      ""
+      "False"
     ]
   },
   {
@@ -18546,7 +18574,7 @@ window.search-index = [
       "بخاخ تبريد خلفي هايس 13 - 20 ",
       "",
       "Denso",
-      ""
+      "False"
     ]
   }
 ];

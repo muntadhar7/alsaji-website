@@ -1,0 +1,5 @@
+<data>
+             <xpath expr="//field[@name='user_id']" position="after">
+                    <field name="compute_po"/>
+                </xpath>
+            </data>

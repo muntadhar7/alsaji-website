@@ -1,5 +1,5 @@
 // filtering.js - Client-side filtering functionality
-class AlSajiFilter {
+    class AlSajiFilter {
     constructor() {
         this.filters = {
             categories: [],
@@ -11,14 +11,13 @@ class AlSajiFilter {
     }
 
     async init() {
-        // Load data (assuming it's available as window.filterData and window.searchIndex)
         if (window.filterData && window.searchIndex) {
             this.filterData = window.filterData;
             this.searchIndex = window.searchIndex;
             this.setupFilters();
             this.applyFilters();
         } else {
-            console.error('Filter data not found. Make sure filter-data.js and search-index.js are loaded.');
+            console.error('Filter data not found.');
         }
     }
 
@@ -66,21 +65,18 @@ class AlSajiFilter {
     }
 
     setupEventListeners() {
-        // Category and brand filters
         document.addEventListener('change', (e) => {
             if (e.target.matches('[data-type="category"], [data-type="brand"]')) {
                 this.updateFilters();
             }
         });
 
-        // Price range filters
         document.addEventListener('change', (e) => {
             if (e.target.matches('[name="price-range"]')) {
                 this.updatePriceFilter(e.target.value);
             }
         });
 
-        // Search input
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
             searchInput.addEventListener('input', (e) => {
@@ -91,11 +87,9 @@ class AlSajiFilter {
     }
 
     updateFilters() {
-        // Get selected categories
         const categoryCheckboxes = document.querySelectorAll('[data-type="category"]:checked');
         this.filters.categories = Array.from(categoryCheckboxes).map(cb => cb.value);
 
-        // Get selected brands
         const brandCheckboxes = document.querySelectorAll('[data-type="brand"]:checked');
         this.filters.brands = Array.from(brandCheckboxes).map(cb => cb.value);
 
@@ -114,7 +108,6 @@ class AlSajiFilter {
 
     applyFilters() {
         const filteredProducts = this.searchIndex.filter(product => {
-            // Category filter
             if (this.filters.categories.length > 0) {
                 const productCategorySlug = this.slugify(product.category);
                 if (!this.filters.categories.includes(productCategorySlug)) {
@@ -122,7 +115,6 @@ class AlSajiFilter {
                 }
             }
 
-            // Brand filter
             if (this.filters.brands.length > 0) {
                 const productBrandSlug = this.slugify(product.brand);
                 if (!this.filters.brands.includes(productBrandSlug)) {
@@ -130,7 +122,6 @@ class AlSajiFilter {
                 }
             }
 
-            // Price filter
             if (this.filters.priceRange) {
                 if (product.price < this.filters.priceRange.min || 
                     product.price > this.filters.priceRange.max) {
@@ -138,7 +129,6 @@ class AlSajiFilter {
                 }
             }
 
-            // Search filter
             if (this.filters.searchQuery) {
                 const searchTerm = this.filters.searchQuery.toLowerCase();
                 const matchesSearch = product.search_terms.some(term => 
@@ -197,17 +187,13 @@ class AlSajiFilter {
     }
 }
 
-// Clear filters function
 function clearFilters() {
-    // Uncheck all checkboxes
     document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
     document.querySelectorAll('input[type="radio"]').forEach(rb => rb.checked = false);
 
-    // Clear search
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = '';
 
-    // Reset filters and reapply
     if (window.alsajiFilter) {
         window.alsajiFilter.filters = {
             categories: [],
@@ -219,7 +205,6 @@ function clearFilters() {
     }
 }
 
-// Initialize filter when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     window.alsajiFilter = new AlSajiFilter();
 });

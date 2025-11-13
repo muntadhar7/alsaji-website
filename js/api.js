@@ -1,385 +1,92 @@
+// api.js - Complete fixed version
 class AlSajiAPI {
     constructor() {
-        this.baseURL = 'https://alsajigroup-staging-24665929.dev.odoo.com/';
-        this.useMockData = false;
-        this.mockDelay = 100;
-        this.cache = new Map();
-        this.cacheExpiry = new Map();
-
-        // Static data storage
-        this.staticData = {
-            products: null,
-            categories: null,
-            brands: null,
-            branches: null
+        this.useStaticData = true;
+        this.liveAPI = {
+            baseURL: 'https://alsajigroup-staging-24665929.dev.odoo.com',
+            dbName: 'alsajigroup-staging-24665929'
         };
+        this.uid = null;
+        this.sessionInfo = null;
+        this.cartCache = null;
+        this.cartCacheTime = null;
+        this.CART_CACHE_DURATION = 30000;
 
-        // Cache durations in milliseconds
-        this.CACHE_DURATIONS = {
-            PRODUCTS: 5 * 60 * 1000, // 5 minutes
-            CATEGORIES: 30 * 60 * 1000, // 30 minutes
-            BRANDS: 30 * 60 * 1000, // 30 minutes
-            BRANCHES: 60 * 60 * 1000, // 60 minutes
-            SEARCH: 2 * 60 * 1000, // 2 minutes
-            CART: 10 * 1000, // 10 seconds (short for cart)
-            SUGGESTIONS: 1 * 60 * 1000 // 1 minute
-        };
+        // 🔥 ADD THIS: Authentication coordination properties
+        this.authPromise = null;
+        this.authAttempts = 0;
+        this.MAX_AUTH_ATTEMPTS = 2;
+
+        this.checkStaticData();
     }
 
-    // Load static data from JSON files
-    async loadStaticData() {
+    // Add this method to set credentials
+    setCredentials(username, password) {
+        this.username = username;
+        this.password = password;
+        this.uid = null; // Reset UID to force re-authentication
+        localStorage.removeItem('alsaji_session'); // Clear old session
+        console.log('🔐 Credentials set, will authenticate on next API call');
+    }
+    // Add this method to create Odoo orders
+    async createOdooOrder(orderData) {
         try {
-            console.log('📁 Loading static data from /data folder...');
+            console.log('🔄 Creating sales order in Odoo...', orderData);
 
-            const [products, categories, brands, branches] = await Promise.all([
-                this.fetchJSON('/alsaji-website/data/json/products.json'),
-                this.fetchJSON('/alsaji-website/data/json/categories.json'),
-                this.fetchJSON('/alsaji-website/data/json/brands.json'),
-                this.fetchJSON('/alsaji-website/data/json/branches.json')
+            // First, find or create customer
+            const partnerId = await this.findOrCreateCustomer(orderData.customer);
+
+            // Prepare order lines
+            const orderLines = orderData.items.map(item => [
+                0, 0, { // (0, 0, {values}) means create new line
+                    'product_id': item.product_id,
+                    'product_uom_qty': item.quantity,
+                    'price_unit': item.unit_price,
+                    'name': item.name,
+                    'tax_id': false
+                }
             ]);
 
-            this.staticData = {
-                products: products || [],
-                categories: categories || [],
-                brands: brands || [],
-                branches: branches || []
+            // Create sales order values
+            const orderValues = {
+                'partner_id': partnerId,
+                'partner_invoice_id': partnerId,
+                'partner_shipping_id': partnerId,
+                'order_line': orderLines,
+                'client_order_ref': orderData.order_number,
+                'note': this.formatOrderNotes(orderData),
+                'state': 'draft', // Keep as draft (quotation)
+                'require_payment': false,
+                'require_signature': false,
             };
 
-            console.log('✅ Static data loaded:', {
-                products: this.staticData.products.length,
-                categories: this.staticData.categories.length,
-                brands: this.staticData.brands.length,
-                branches: this.staticData.branches.length
-            });
+            console.log('📦 Order values:', orderValues);
 
-            return this.staticData;
-        } catch (error) {
-            console.error('❌ Failed to load static data:', error);
-            // Return empty data if files can't be loaded
-            return {
-                products: [],
-                categories: [],
-                brands: [],
-                branches: []
-            };
-        }
-    }
+            // Create the sales order in Odoo
+            const orderResult = await this.executeOdooMethod(
+                'sale.order',
+                'create',
+                [orderValues]
+            );
 
-    // Helper to fetch JSON files
-    async fetchJSON(url) {
-        try {
-            const response = await fetch(url);
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            return await response.json();
-        } catch (error) {
-            console.warn(`Could not load ${url}:`, error.message);
-            return null;
-        }
-    }
+            if (orderResult && orderResult.result) {
+                const orderId = orderResult.result;
+                console.log(`✅ Sales order created in Odoo with ID: ${orderId}`);
 
-    // Client-side filtering for products
-    filterProducts(products, filters = {}) {
-        if (!products || !Array.isArray(products)) return [];
+                // Mark as "Request Sent" by updating notes
+                await this.markAsRequestSent(orderId, orderData);
 
-        return products.filter(product => {
-            // Brand filter
-            if (filters.brand) {
-                const productBrand = this.getFieldValue(product, 'brand');
-                if (productBrand !== filters.brand) return false;
+                return {
+                    success: true,
+                    odoo_order_id: orderId,
+                    message: 'Order created successfully in Odoo'
+                };
+            } else {
+                throw new Error('Failed to create order in Odoo');
             }
-
-            // Category filter
-            if (filters.category) {
-                const productCategory = this.getFieldValue(product, 'category');
-                if (productCategory !== filters.category) return false;
-            }
-
-            // Search filter
-            if (filters.search) {
-                const searchTerm = filters.search.toLowerCase();
-                const searchableText = [
-                    product.name,
-                    this.getFieldValue(product, 'brand'),
-                    this.getFieldValue(product, 'category'),
-                    product.description || ''
-                ].join(' ').toLowerCase();
-
-                if (!searchableText.includes(searchTerm)) return false;
-            }
-
-            // In stock filter
-            if (filters.in_stock !== undefined && filters.in_stock !== '') {
-                if (Boolean(product.in_stock) !== Boolean(filters.in_stock)) return false;
-            }
-
-            return true;
-        });
-    }
-
-    // Helper to safely get field values (handles both objects and strings)
-    getFieldValue(item, field) {
-        const value = item[field];
-        if (typeof value === 'object' && value !== null) {
-            return value.name || String(value);
-        }
-        return String(value || '');
-    }
-
-    // Paginate results
-    paginateResults(results, limit = 12, offset = 0) {
-        if (!results || !Array.isArray(results)) return [];
-        return results.slice(offset, offset + limit);
-    }
-
-    // Generate search suggestions
-    generateSearchSuggestions(products, query) {
-        if (!query || query.length < 2) return [];
-
-        const searchTerms = new Set();
-        const lowerQuery = query.toLowerCase();
-
-        products.forEach(product => {
-            const fields = [
-                product.name,
-                this.getFieldValue(product, 'brand'),
-                this.getFieldValue(product, 'category')
-            ];
-
-            fields.forEach(field => {
-                if (field.toLowerCase().includes(lowerQuery)) {
-                    searchTerms.add(field);
-                }
-            });
-        });
-
-        return Array.from(searchTerms).slice(0, 10); // Limit to 10 suggestions
-    }
-
-    // Cache management methods (kept for compatibility)
-    _getCacheKey(endpoint, params = {}) {
-        return `${endpoint}:${JSON.stringify(params)}`;
-    }
-
-    _setCache(key, data, duration) {
-        const expiry = Date.now() + duration;
-        this.cache.set(key, data);
-        this.cacheExpiry.set(key, expiry);
-    }
-
-    _getCache(key) {
-        const expiry = this.cacheExpiry.get(key);
-        if (expiry && Date.now() > expiry) {
-            this.cache.delete(key);
-            this.cacheExpiry.delete(key);
-            return null;
-        }
-        return this.cache.get(key) || null;
-    }
-
-    _clearCacheByPrefix(prefix) {
-        for (const key of this.cache.keys()) {
-            if (key.startsWith(prefix)) {
-                this.cache.delete(key);
-                this.cacheExpiry.delete(key);
-            }
-        }
-    }
-
-    // Main request method - now works with static data for products, real API for cart
-    async request(endpoint, params = {}, cacheDuration = null) {
-        // Ensure static data is loaded for product-related endpoints
-        if (endpoint.includes('/products') || endpoint.includes('/categories') ||
-            endpoint.includes('/brands') || endpoint.includes('/branches') ||
-            endpoint.includes('/search')) {
-
-            if (!this.staticData.products) {
-                await this.loadStaticData();
-            }
-        }
-
-        // Check cache first
-        if (cacheDuration) {
-            const cacheKey = this._getCacheKey(endpoint, params);
-            const cached = this._getCache(cacheKey);
-            if (cached) {
-                console.log(`📦 Cache HIT: ${endpoint}`);
-                return cached;
-            }
-        }
-
-        if (this.useMockData) {
-            await this.delay();
-            return this.mockRequest(endpoint, params);
-        }
-
-        try {
-            console.log(`🔄 Processing: ${endpoint}`, params);
-
-            let result;
-
-            // Handle different endpoints - static data for products, real API for cart
-            switch (endpoint) {
-                case '/api/alsaji/products':
-                    const filteredProducts = this.filterProducts(this.staticData.products, params);
-                    const totalCount = filteredProducts.length;
-                    const limit = parseInt(params.limit) || 12;
-                    const offset = parseInt(params.offset) || 0;
-                    const paginatedProducts = this.paginateResults(filteredProducts, limit, offset);
-
-                    result = {
-                        success: true,
-                        products: paginatedProducts,
-                        total_count: totalCount,
-                        count: paginatedProducts.length,
-                        filters_used: params
-                    };
-                    break;
-
-                case '/api/alsaji/categories':
-                    result = {
-                        success: true,
-                        categories: this.staticData.categories
-                    };
-                    break;
-
-                case '/api/alsaji/brands':
-                    result = {
-                        success: true,
-                        brands: this.staticData.brands
-                    };
-                    break;
-
-                case '/api/alsaji/branches':
-                    result = {
-                        success: true,
-                        branches: this.staticData.branches
-                    };
-                    break;
-
-                case '/api/alsaji/search/suggest':
-                    const suggestions = this.generateSearchSuggestions(this.staticData.products, params.q);
-                    result = {
-                        success: true,
-                        suggestions: suggestions
-                    };
-                    break;
-
-                default:
-                    // For cart endpoints, use real API
-                    return await this.makeRealAPIRequest(endpoint, params, cacheDuration);
-            }
-
-            console.log(`✅ Processed: ${endpoint}`, {
-                resultCount: result.products ? result.products.length :
-                           result.categories ? result.categories.length :
-                           result.brands ? result.brands.length :
-                           result.branches ? result.branches.length :
-                           result.suggestions ? result.suggestions.length : 0
-            });
-
-            // Cache the response
-            if (cacheDuration) {
-                const cacheKey = this._getCacheKey(endpoint, params);
-                this._setCache(cacheKey, result, cacheDuration);
-            }
-
-            return result;
 
         } catch (error) {
-            console.error('❌ Request failed:', error);
-            // Return empty result instead of throwing to maintain compatibility
-            return {
-                success: false,
-                error: error.message,
-                products: [],
-                categories: [],
-                brands: [],
-                branches: [],
-                suggestions: []
-            };
-        }
-    }
-
-    // Real API request for cart and other dynamic endpoints
-    async makeRealAPIRequest(endpoint, params = {}, cacheDuration = null) {
-        try {
-            const url = new URL(`${this.baseURL}${endpoint}`);
-            Object.keys(params).forEach(key => {
-                if (params[key] !== undefined && params[key] !== null) {
-                    url.searchParams.append(key, params[key]);
-                }
-                url.searchParams.append('db', 'alsaji_copy');
-            });
-
-            console.log(`🌐 Real API Request: ${url.toString()}`);
-
-            const response = await fetch(url, {
-                credentials: 'include',
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/json'
-                },
-                mode: 'cors'
-            });
-
-            if (!response.ok) {
-                throw new Error(`API error: ${response.status} ${response.statusText}`);
-            }
-
-            const data = await response.json();
-            console.log(`🌐 Real API Response:`, data);
-
-            // Cache the response
-            if (cacheDuration) {
-                const cacheKey = this._getCacheKey(endpoint, params);
-                this._setCache(cacheKey, data, cacheDuration);
-            }
-
-            return data;
-        } catch (error) {
-            console.error('Real API Request failed:', error);
-            throw error;
-        }
-    }
-
-    // POST requests - real API for cart, static for others
-    async postRequest(endpoint, data = {}, invalidateCache = []) {
-        // Invalidate cache for specified endpoints
-        invalidateCache.forEach(prefix => {
-            this._clearCacheByPrefix(prefix);
-        });
-
-        if (this.useMockData) {
-            await this.delay();
-            return this.mockPostRequest(endpoint, data);
-        }
-
-        // Use real API for cart operations
-        if (endpoint.includes('/cart') || endpoint.includes('/order')) {
-            return await this.makeRealAPIPostRequest(endpoint, data, invalidateCache);
-        }
-
-        // For non-cart endpoints, use simulation
-        try {
-            console.log(`🔄 POST Processing: ${endpoint}`, data);
-
-            let result;
-
-            // Simulate POST operations for non-cart endpoints
-            switch (endpoint) {
-                // Add other non-cart endpoints here if needed
-                default:
-                    result = {
-                        success: true,
-                        message: `Operation completed for ${endpoint} (simulated)`
-                    };
-            }
-
-            console.log(`✅ POST Processed: ${endpoint}`, result);
-            return result;
-
-        } catch (error) {
-            console.error('❌ POST Request failed:', error);
+            console.error('❌ Failed to create Odoo order:', error);
             return {
                 success: false,
                 error: error.message
@@ -387,266 +94,982 @@ class AlSajiAPI {
         }
     }
 
-    // Real API POST request for cart operations
-    async makeRealAPIPostRequest(endpoint, data = {}, invalidateCache = []) {
-    try {
-        const url = `${this.baseURL}${endpoint}`;
-
-        console.log(`🌐 Real API POST Request: ${url}`, data);
-
-        // First, check if we need to handle OPTIONS preflight
-        await this.handlePreflightRequest(url);
-
-        const response = await fetch(url, {
-            method: 'POST',
-            credentials: 'include',
-            headers: {
-                'Accept': 'application/json',
-                'Cookie': 'db=alsaji_copy'
-            },
-            body: JSON.stringify(data)
-        });
-
-        console.log(`🌐 Response status: ${response.status} ${response.statusText}`);
-
-        // Handle CORS and network errors
-        if (response.type === 'opaque' || response.status === 0) {
-            throw new Error('CORS policy blocked the request. Check server CORS configuration.');
-        }
-
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(`HTTP ${response.status}: ${errorText}`);
-        }
-
-        const result = await response.json();
-        console.log(`✅ Real API POST Success:`, result);
-        return result;
-
-    } catch (error) {
-        console.error('❌ Real API POST Request failed:', error);
-
-        // More specific error handling
-        if (error.message.includes('CORS') || error.message.includes('Failed to fetch')) {
-            throw new Error(`CORS Error: Cannot connect to API. Make sure the server is running and CORS is configured. Details: ${error.message}`);
-        }
-
-        throw error;
-    }
-}
-
-    async handlePreflightRequest(url) {
-    // Check if we need to handle OPTIONS preflight
-    try {
-        const optionsResponse = await fetch(url, {
-            method: 'OPTIONS',
-            credentials: 'include',
-            headers: {
-                'Access-Control-Request-Method': 'POST',
-                'Access-Control-Request-Headers': 'Content-Type',
+    async findOrCreateCustomer(customerData) {
+        try {
+            if (!customerData || !customerData.email) {
+                return 1; // Default public partner
             }
-        });
 
-        if (!optionsResponse.ok) {
-            console.warn('⚠️ OPTIONS preflight failed, but continuing with POST...');
+            // Search for existing customer by email
+            const searchResult = await this.executeOdooMethod(
+                'res.partner',
+                'search_read',
+                [],
+                {
+                    domain: [['email', '=', customerData.email]],
+                    fields: ['id'],
+                    limit: 1
+                }
+            );
+
+            if (searchResult && searchResult.result && searchResult.result.length > 0) {
+                console.log(`✅ Found existing customer: ${searchResult.result[0].id}`);
+                return searchResult.result[0].id;
+            }
+
+            // Create new customer
+            const customerValues = {
+                'name': customerData.fullName || 'Website Customer',
+                'email': customerData.email || '',
+                'phone': customerData.phone || '',
+                'street': customerData.address || '',
+                'city': customerData.city || '',
+                'type': 'invoice',
+                'company_type': 'person',
+            };
+
+            const createResult = await this.executeOdooMethod(
+                'res.partner',
+                'create',
+                [customerValues]
+            );
+
+            if (createResult && createResult.result) {
+                console.log(`✅ Created new customer: ${createResult.result}`);
+                return createResult.result;
+            } else {
+                throw new Error('Failed to create customer');
+            }
+
+        } catch (error) {
+            console.error('❌ Customer lookup/creation failed:', error);
+            return 1; // Default public partner
         }
-    } catch (preflightError) {
-        console.warn('⚠️ OPTIONS preflight error:', preflightError);
-        // Continue with POST anyway
     }
-}
 
-    // Product methods with caching (static data)
+    async markAsRequestSent(orderId, orderData) {
+        try {
+            const noteContent = this.formatRequestSentNotes(orderData);
+
+            const updateResult = await this.executeOdooMethod(
+                'sale.order',
+                'write',
+                [
+                    [orderId], // Array of IDs to update
+                    {
+                        'note': noteContent,
+                        // If you have a custom field for request status, add it here
+                        // 'x_studio_request_sent': true,
+                    }
+                ]
+            );
+
+            if (updateResult && updateResult.result) {
+                console.log(`✅ Order ${orderId} marked as 'Request Sent'`);
+            } else {
+                console.log('⚠️ Could not update order notes');
+            }
+
+        } catch (error) {
+            console.error('⚠️ Could not mark order as request sent:', error);
+        }
+    }
+
+    formatOrderNotes(orderData) {
+        const customer = orderData.customer || {};
+        return `Website Order - ${orderData.order_number}
+    Customer: ${customer.fullName || 'N/A'}
+    Payment: ${orderData.payment || 'N/A'}`;
+    }
+
+    formatRequestSentNotes(orderData) {
+        const customer = orderData.customer || {};
+        const itemsText = orderData.items.map(item =>
+            `- ${item.name} (Qty: ${item.quantity}) - IQD ${item.unit_price.toLocaleString()} each`
+        ).join('\n');
+
+        return `WEBSITE ORDER - REQUEST SENT
+    =================================
+    Order Number: ${orderData.order_number}
+    Customer: ${customer.fullName || 'N/A'}
+    Email: ${customer.email || 'N/A'}
+    Phone: ${customer.phone || 'N/A'}
+    Shipping Address: ${customer.address || 'N/A'}
+    City: ${customer.city || 'N/A'} | Area: ${customer.area || 'N/A'}
+    Payment Method: ${orderData.payment || 'N/A'}
+    Customer Notes: ${customer.notes || 'None'}
+
+    ORDER ITEMS:
+    ${itemsText}
+
+    ORDER TOTALS:
+    Subtotal: IQD ${orderData.total.toLocaleString()}
+    Shipping: IQD ${orderData.shipping.toLocaleString()}
+    Tax: IQD ${orderData.tax.toLocaleString()}
+    Grand Total: IQD ${(orderData.total + orderData.shipping + orderData.tax).toLocaleString()}
+
+    STATUS: REQUEST SENT - Awaiting manual processing
+    Created: ${new Date().toLocaleString()}`;
+    }
+
+    // In your api.js, update the executeOdooMethod method:
+    async executeOdooMethod(model, method, args = [], kwargs = {}) {
+        try {
+            await this.ensureAuthenticated();
+
+            if (!this.uid || !this.password) {
+                throw new Error('Not authenticated with Odoo');
+            }
+
+            const requestData = {
+                jsonrpc: "2.0",
+                method: "call",
+                params: {
+                    service: "object",
+                    method: "execute_kw",
+                    args: [
+                        this.liveAPI.dbName,
+                        this.uid,
+                        this.password,
+                        model,
+                        method,
+                        args,
+                        kwargs
+                    ]
+                },
+                id: Math.floor(Math.random() * 1000000)
+            };
+
+            console.log(`🌐 Odoo API Call: ${model}.${method}`);
+
+            // Use your BlueHost proxy
+            const response = await fetch('https://alsaji.com/proxy.php/https://alsaji.com/proxy.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+                // Add any other headers your proxy might need
+                // 'Authorization': 'Bearer your-token' // if you add security later
+                // 'X-API-Key': 'your-api-key'
+            },
+                body: JSON.stringify(requestData)
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const result = await response.json();
+
+            if (result.error) {
+                console.error('❌ Odoo API Error:', result.error);
+                throw new Error(result.error.data?.message || result.error.message || 'Odoo API error');
+            }
+
+            console.log(`✅ Odoo API Success: ${model}.${method}`, result.result);
+            return result;
+
+        } catch (error) {
+            console.error(`❌ Odoo method execution failed (${model}.${method}):`, error);
+            throw error;
+        }
+    }
+
+    checkStaticData() {
+        if (typeof window.staticAPI === 'undefined') {
+            console.warn('❌ staticAPI not found. Make sure static_api.js is loaded.');
+            this.useStaticData = false;
+        } else if (window.staticAPI.products && window.staticAPI.products.length === 0) {
+            console.warn('⚠️ Static API has no products. Data may not be loaded yet.');
+        } else {
+            console.log('✅ Static API available:', {
+                products: window.staticAPI.products ? window.staticAPI.products.length : 0,
+                categories: window.staticAPI.categories ? window.staticAPI.categories.length : 0,
+                brands: window.staticAPI.brands ? window.staticAPI.brands.length : 0
+            });
+        }
+    }
+
+    // ==================== STATIC DATA METHODS ====================
+
     async getProducts(filters = {}) {
-        return this.request('/api/alsaji/products', filters, this.CACHE_DURATIONS.PRODUCTS);
+        console.log('🔄 Getting products with filters:', filters);
+
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                const result = window.staticAPI.getProducts(filters);
+                console.log(`✅ Static API returned ${result.products.length} products`);
+                return result;
+            } catch (error) {
+                console.error('❌ Static API failed:', error);
+                return await this.getFallbackProducts(filters);
+            }
+        }
+        return await this.getFallbackProducts(filters);
+    }
+
+    async getCategories() {
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                return window.staticAPI.getCategories();
+            } catch (error) {
+                console.error('Static categories failed:', error);
+                return await this.getFallbackCategories();
+            }
+        }
+        return await this.getFallbackCategories();
+    }
+
+    async getBrands() {
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                return window.staticAPI.getBrands();
+            } catch (error) {
+                console.error('Static brands failed:', error);
+                return await this.getFallbackBrands();
+            }
+        }
+        return await this.getFallbackBrands();
+    }
+
+    async getSearchSuggestions(query) {
+        if (!query || query.length < 2) {
+            return { success: true, suggestions: [] };
+        }
+
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                return {
+                    success: true,
+                    suggestions: window.staticAPI.searchSuggestions(query)
+                };
+            } catch (error) {
+                console.error('Static suggestions failed:', error);
+                return await this.getFallbackSuggestions(query);
+            }
+        }
+        return await this.getFallbackSuggestions(query);
     }
 
     async getFeaturedProducts(limit = 8) {
         return this.getProducts({ limit });
     }
 
-    async getCategories() {
-        return this.request('/api/alsaji/categories', {}, this.CACHE_DURATIONS.CATEGORIES);
+    // Add this method to your AlSajiAPI class in api.js
+    async getProductById(productId) {
+        if (!this.useStaticData || !window.staticAPI || !window.staticAPI.products) {
+            console.log('Static API not available for product lookup');
+            return null;
+        }
+
+        // Convert to number and try different matching strategies
+        const id = parseInt(productId);
+        console.log(`🔍 Looking for product ID: ${id} (original: ${productId})`);
+
+        // Try multiple lookup strategies
+        let product = window.staticAPI.products.find(p => p.id === id);
+        if (product) return product;
+
+        product = window.staticAPI.products.find(p => p.id == id);
+        if (product) return product;
+
+        product = window.staticAPI.products.find(p => p.id.toString() === productId.toString());
+        if (product) return product;
+
+        console.log(`❌ Product ${productId} not found in ${window.staticAPI.products.length} products`);
+        return null;
     }
 
-    async getBrands() {
-        return this.request('/api/alsaji/brands', {}, this.CACHE_DURATIONS.BRANDS);
+    // ==================== FALLBACK METHODS ====================
+
+    async getFallbackProducts(filters = {}) {
+        console.log('🔄 Using fallback products method');
+
+        // Try to load from JSON file directly
+        try {
+            const response = await fetch('/data/json/products.json');
+            if (response.ok) {
+                const products = await response.json();
+
+                // Simple filtering
+                let filtered = [...products];
+
+                if (filters.search) {
+                    const searchTerm = filters.search.toLowerCase();
+                    filtered = filtered.filter(p =>
+                        p.name && p.name.toLowerCase().includes(searchTerm)
+                    );
+                }
+
+                const limit = parseInt(filters.limit) || 12;
+                const offset = parseInt(filters.offset) || 0;
+                const paginated = filtered.slice(offset, offset + limit);
+
+                return {
+                    success: true,
+                    products: paginated,
+                    total_count: filtered.length,
+                    count: paginated.length,
+                    source: 'json-file'
+                };
+            }
+        } catch (error) {
+            console.log('Could not load products.json:', error);
+        }
+
+        // Ultimate fallback
+        return {
+            success: false,
+            error: 'No product data available',
+            products: [],
+            total_count: 0,
+            count: 0,
+            source: 'fallback'
+        };
     }
 
-    async getBranches() {
-        return this.request('/api/alsaji/branches', {}, this.CACHE_DURATIONS.BRANCHES);
+    async getFallbackCategories() {
+        try {
+            const response = await fetch('/data/json/categories.json');
+            if (response.ok) {
+                const categories = await response.json();
+                return {
+                    success: true,
+                    categories: categories,
+                    source: 'json-file'
+                };
+            }
+        } catch (error) {
+            console.log('Could not load categories.json:', error);
+        }
+
+        return {
+            success: false,
+            error: 'No categories available',
+            categories: [],
+            source: 'fallback'
+        };
     }
 
-    async searchProducts(query) {
-        if (!query) return this.getProducts();
-        return this.request('/api/alsaji/products', { search: query }, this.CACHE_DURATIONS.SEARCH);
+    async getFallbackBrands() {
+        try {
+            const response = await fetch('/data/json/brands.json');
+            if (response.ok) {
+                const brands = await response.json();
+                return {
+                    success: true,
+                    brands: brands,
+                    source: 'json-file'
+                };
+            }
+        } catch (error) {
+            console.log('Could not load brands.json:', error);
+        }
+
+        return {
+            success: false,
+            error: 'No brands available',
+            brands: [],
+            source: 'fallback'
+        };
     }
 
-    async getSearchSuggestions(query) {
-        if (query.length < 2) return [];
-        return this.request('/api/alsaji/search/suggest', { q: query }, this.CACHE_DURATIONS.SUGGESTIONS);
+    async getFallbackSuggestions(query) {
+        return {
+            success: true,
+            suggestions: [],
+            source: 'fallback'
+        };
+    }
+
+    // ==================== CART & AUTH METHODS ====================
+
+
+
+    // 🔥 NEW: Coordinated authentication method
+    async ensureAuthenticated() {
+        // If already authenticated, return immediately
+        if (this.uid && this.password) {
+            console.log('✅ Already authenticated, UID:', this.uid);
+            return true;
+        }
+
+        // Try to get session from localStorage first (fast path)
+        const savedSession = localStorage.getItem('alsaji_session');
+        if (savedSession) {
+            try {
+                const session = JSON.parse(savedSession);
+                if (session.uid && session.password && session.expires > Date.now()) {
+                    this.uid = session.uid;
+                    this.password = session.password;
+                    this.sessionInfo = session;
+                    console.log('✅ Restored session from storage, UID:', this.uid);
+                    return true;
+                }
+            } catch (e) {
+                console.log('❌ Invalid saved session format');
+            }
+        }
+
+        // If no credentials, skip authentication (cart will work locally)
+        if (!this.username || !this.password) {
+            console.log('🔐 No credentials set, using local mode');
+            return false;
+        }
+
+        // 🔥 NEW: Coordinate authentication attempts
+        if (this.authPromise) {
+            console.log('🔐 Waiting for existing auth attempt...');
+            return await this.authPromise;
+        }
+
+        // Limit authentication attempts
+        if (this.authAttempts >= this.MAX_AUTH_ATTEMPTS) {
+            console.log('🔐 Max auth attempts reached, using local mode');
+            return false;
+        }
+
+        this.authAttempts++;
+        console.log(`🔐 Starting authentication attempt ${this.authAttempts}`);
+
+        this.authPromise = this.authenticate();
+        try {
+            const result = await this.authPromise;
+            return result;
+        } finally {
+            this.authPromise = null;
+        }
+    }
+
+    // Update the authenticate method to be more efficient
+    async authenticate() {
+        try {
+            console.log('🔐 Attempting Odoo authentication...');
+
+            const authData = {
+                jsonrpc: "2.0",
+                method: "call",
+                params: {
+                    service: "common",
+                    method: "login",
+                    args: [
+                        this.liveAPI.dbName,
+                        this.username,
+                        this.password
+                    ]
+                },
+                id: 1
+            };
+
+            // Add timeout to authentication
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+
+            const proxyUrl = 'https://alsaji.com/proxy.php';
+
+            const response = await fetch(proxyUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                signal: controller.signal,
+                body: JSON.stringify(authData)
+            });
+
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            console.log('🔐 Auth response:', result);
+
+            if (result.result) {
+                this.uid = result.result;
+
+                // Save session to localStorage
+                const sessionData = {
+                    uid: this.uid,
+                    password: this.password,
+                    username: this.username,
+                    expires: Date.now() + (60 * 60 * 1000), // 1 hour
+                };
+
+                localStorage.setItem('alsaji_session', JSON.stringify(sessionData));
+
+                console.log('✅ Authentication successful. User ID:', this.uid);
+                return true;
+            } else {
+                console.error('❌ Authentication failed');
+                return false;
+            }
+
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                console.error('❌ Authentication timeout');
+            } else {
+                console.error('❌ Authentication error:', error);
+            }
+            return false;
+        }
+    }
+
+    async login(username, password) {
+        try {
+            console.log('🔐 Attempting login via proxy...');
+
+            // Use proxy URL instead of direct Odoo URL
+            const proxyUrl = 'https://alsaji.com/proxy.php';
+
+            const authData = {
+                jsonrpc: "2.0",
+                method: "call",
+                params: {
+                    service: "common",
+                    method: "login",
+                    args: [
+                        this.liveAPI.dbName,
+                        username,
+                        password
+                    ]
+                },
+                id: 1
+            };
+
+            console.log('🔐 Auth request via proxy:', authData);
+
+            const response = await fetch(proxyUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(authData)
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            console.log('🔐 Auth response:', result);
+
+            if (result.result) {
+                this.uid = result.result;
+                this.username = username;
+                this.password = password;
+
+                // Save session to localStorage
+                const sessionData = {
+                    uid: this.uid,
+                    username: username,
+                    password: password,
+                    expires: Date.now() + (60 * 60 * 1000), // 1 hour
+                };
+
+                localStorage.setItem('alsaji_session', JSON.stringify(sessionData));
+                localStorage.setItem('alsaji_username', username);
+
+                console.log('✅ Login successful, UID:', this.uid);
+                return {
+                    success: true,
+                    user: { uid: this.uid, username: username }
+                };
+            } else {
+                console.error('❌ Login failed:', result.error);
+                return {
+                    success: false,
+                    error: result.error?.data?.message || result.error?.message || 'Login failed'
+                };
+            }
+        } catch (error) {
+            console.error('❌ Login error:', error);
+            return {
+                success: false,
+                error: 'Network error during login: ' + error.message
+            };
+        }
+    }
+
+    async logout() {
+        try {
+            // Use proxy for logout if authenticated
+            if (this.uid) {
+                const proxyUrl = 'https://alsaji.com/proxy.php';
+                const logoutData = {
+                    jsonrpc: "2.0",
+                    method: "call",
+                    params: {
+                        service: "common",
+                        method: "logout",
+                        args: [this.liveAPI.dbName, this.uid]
+                    },
+                    id: 1
+                };
+
+                await fetch(proxyUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(logoutData)
+                });
+            }
+        } catch (error) {
+            console.log('Logout request failed (may be expected):', error);
+        }
+
+        // Clear local session
+        this.uid = null;
+        this.username = null;
+        this.password = null;
+        this.sessionInfo = null;
+        this.cartCache = null;
+        localStorage.removeItem('alsaji_session');
+        localStorage.removeItem('alsaji_username');
+        localStorage.removeItem('alsaji_cart');
+
+        console.log('✅ Logged out successfully');
+        return { success: true };
+    }
+
+    async getCart(forceRefresh = false) {
+        // Check cache first (fast path)
+        if (!forceRefresh && this.cartCache && this.cartCacheTime &&
+            (Date.now() - this.cartCacheTime) < this.CART_CACHE_DURATION) {
+            console.log('📦 Returning cached cart');
+            return this.cartCache;
+        }
+
+        // 🔥 NEW: Don't wait for authentication - use local cart immediately
+        try {
+            // Try Odoo API in background if authenticated
+            if (this.uid && this.password) {
+                const cart = await this.liveGetCart();
+                if (cart.success) {
+                    this.cartCache = cart;
+                    this.cartCacheTime = Date.now();
+                    return cart;
+                }
+            }
+        } catch (error) {
+            console.log('Odoo cart failed, using local:', error);
+        }
+
+        // Use local cart (fast path)
+        return await this.getLocalCart();
+    }
+
+    async liveGetCart() {
+        try {
+            // This would call Odoo's cart API
+            // For now, we'll use localStorage as fallback
+            throw new Error('Odoo cart API not implemented');
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    async getLocalCart() {
+        try {
+            const cartJson = localStorage.getItem('alsaji_cart');
+            if (cartJson) {
+                const cart = JSON.parse(cartJson);
+                // 🔥 FIX: Ensure cart has the required structure
+                if (!cart.items) cart.items = [];
+                if (!cart.item_count) cart.item_count = 0;
+                if (!cart.total) cart.total = 0;
+
+                return {
+                    success: true,
+                    cart: cart,
+                    source: 'local'
+                };
+            }
+
+            // Return empty cart with proper structure
+            return {
+                success: true,
+                cart: {
+                    items: [],
+                    item_count: 0,
+                    total: 0
+                },
+                source: 'local'
+            };
+        } catch (error) {
+            // Return empty cart on error
+            return {
+                success: true,
+                cart: {
+                    items: [],
+                    item_count: 0,
+                    total: 0
+                },
+                source: 'local'
+            };
+        }
+    }
+    updateCartTotals(cart) {
+        cart.item_count = cart.items.reduce((sum, item) => sum + item.quantity, 0);
+        cart.total = cart.items.reduce((sum, item) => sum + item.subtotal, 0);
     }
 
     async addToCart(productId, quantity = 1) {
-        // Get cart ID from localStorage
-        let cartId = localStorage.getItem('cart_id');
-        
-        // Only include cart_id if it exists and is valid
-        const requestData = {
-            product_id: parseInt(productId),
-            quantity: parseInt(quantity)
-        };
-        
-        // Only add cart_id if it exists and is a valid number
-        if (cartId && cartId !== 'null' && cartId !== 'undefined' && !isNaN(cartId)) {
-            requestData.cart_id = parseInt(cartId);
-        }
-        
-        console.log('Sending cart request:', requestData);
-        
-        const response = await this.postRequest('/api/alsaji/cart/add', requestData, ['/api/alsaji/cart']);
-        
-        // Parse response and save cart ID
-        if (response) {
-            try {
-                const result = typeof response === 'string' ? JSON.parse(response) : response;
-                if (result.order_id) {
-                    localStorage.setItem('cart_id', result.order_id.toString());
-                    console.log('✅ Saved cart ID:', result.order_id);
-                }
-            } catch (e) {
-                console.error('Error parsing response:', e);
+        try {
+            console.log(`🛒 Adding to cart: product ${productId}, quantity ${quantity}`);
+
+            // Validate product ID
+            if (!this.validateProductId(productId)) {
+                throw new Error('Invalid product ID');
             }
+
+            // Get current cart
+            const cartResult = await this.getCart();
+            const cart = cartResult.cart; // 🔥 FIX: Extract cart from result
+
+            // Find existing item
+            const existingItemIndex = cart.items.findIndex(item => item.product_id == productId);
+
+            if (existingItemIndex >= 0) {
+                // Update quantity
+                cart.items[existingItemIndex].quantity += quantity;
+                cart.items[existingItemIndex].subtotal = cart.items[existingItemIndex].unit_price * cart.items[existingItemIndex].quantity;
+            } else {
+                // Get product info from static data
+                const product = await this.getProductById(productId);
+                if (!product) {
+                    throw new Error('Product not found');
+                }
+
+                // Add new item
+                cart.items.push({
+                    id: Date.now(), // Temporary ID
+                    product_id: parseInt(productId),
+                    name: product.name,
+                    quantity: parseInt(quantity),
+                    unit_price: product.price,
+                    subtotal: product.price * quantity,
+                    image: product.image_url,
+                    product_data: product
+                });
+            }
+
+            // Recalculate totals
+            this.updateCartTotals(cart);
+
+            // Save to localStorage
+            localStorage.setItem('alsaji_cart', JSON.stringify(cart));
+
+            // Clear cache and trigger global update
+            this.cartCache = null;
+            if (window.AlSajiCartEvents) {
+                window.AlSajiCartEvents.updateCartCount(cart.item_count);
+            }
+
+            console.log('✅ Added to cart successfully');
+            return {
+                success: true,
+                message: 'Product added to cart',
+                cart_count: cart.item_count,
+                cart: cart
+            };
+
+        } catch (error) {
+            console.error('❌ Add to cart failed:', error);
+            return {
+                success: false,
+                error: error.message
+            };
         }
-        
-        return response;
-    }
-    
-    async getCart() {
-        let cartId = localStorage.getItem('cart_id');
-        console.log('Sending cart ID to get:', cartId);
-        return this.getRequest('/api/alsaji/cart/get', { cart_id: cartId });
     }
 
     async updateCart(lineId, quantity) {
-        return this.postRequest('/api/alsaji/cart/update', {
-            line_id: lineId,
-            quantity: quantity
-        }, ['/api/alsaji/cart']);
+        try {
+            // ... existing update logic ...
+
+            localStorage.setItem('alsaji_cart', JSON.stringify(cart));
+            this.cartCache = null;
+
+            // Trigger global update
+            if (window.AlSajiCartEvents) {
+                window.AlSajiCartEvents.updateCartCount(cart.item_count);
+            }
+
+            return {
+                success: true,
+                message: 'Cart updated',
+                cart: cart
+            };
+
+        } catch (error) {
+            return {
+                success: false,
+                error: error.message
+            };
+        }
     }
 
     async removeFromCart(lineId) {
-        return this.postRequest('/api/alsaji/cart/remove', {
-            line_id: lineId
-        }, ['/api/alsaji/cart']);
+        try {
+            // ... existing remove logic ...
+
+            this.updateCartTotals(cart);
+            localStorage.setItem('alsaji_cart', JSON.stringify(cart));
+            this.cartCache = null;
+
+            // Trigger global update
+            if (window.AlSajiCartEvents) {
+                window.AlSajiCartEvents.updateCartCount(cart.item_count);
+            }
+
+            return {
+                success: true,
+                message: 'Item removed from cart',
+                cart: cart
+            };
+
+        } catch (error) {
+            return {
+                success: false,
+                error: error.message
+            };
+        }
     }
 
     async clearCart() {
-        return this.postRequest('/api/alsaji/cart/clear', {}, ['/api/alsaji/cart']);
+        try {
+            localStorage.removeItem('alsaji_cart');
+            this.cartCache = null;
+
+            // Trigger global update
+            if (window.AlSajiCartEvents) {
+                window.AlSajiCartEvents.updateCartCount(0);
+            }
+
+            return {
+                success: true,
+                message: 'Cart cleared'
+            };
+        } catch (error) {
+            return {
+                success: false,
+                error: error.message
+            };
+        }
     }
 
-    async placeOrder(orderData) {
-        return this.postRequest('/api/alsaji/order/place', orderData, [
-            '/api/alsaji/cart',
-            '/api/alsaji/order'
-        ]);
+    validateProductId(productId) {
+        if (!productId || productId === '' || productId === null || productId === undefined) {
+            return false;
+        }
+        const id = parseInt(productId);
+        return !isNaN(id) && id > 0;
     }
 
-    // Cache management methods
-    clearAllCache() {
-        this.cache.clear();
-        this.cacheExpiry.clear();
-        console.log('🗑️ All cache cleared');
+    // ==================== UTILITY METHODS ====================
+
+    isLoggedIn() {
+        return this.uid !== null;
     }
 
-    clearProductCache() {
-        this._clearCacheByPrefix('/api/alsaji/products');
-        this._clearCacheByPrefix('/api/alsaji/categories');
-        this._clearCacheByPrefix('/api/alsaji/brands');
-        console.log('🗑️ Product cache cleared');
+    getUsername() {
+        try {
+            const session = localStorage.getItem('alsaji_session');
+            if (session) {
+                const sessionData = JSON.parse(session);
+                return sessionData.username || null;
+            }
+            return localStorage.getItem('alsaji_username');
+        } catch (error) {
+            return localStorage.getItem('alsaji_username');
+        }
     }
 
-    clearCartCache() {
-        this._clearCacheByPrefix('/api/alsaji/cart');
-        console.log('🗑️ Cart cache cleared');
+    getLastSyncTime() {
+        if (window.staticAPI && window.staticAPI.lastUpdated) {
+            return new Date(window.staticAPI.lastUpdated);
+        }
+        return null;
     }
 
-    getCacheStats() {
-        return {
-            totalCached: this.cache.size,
-            keys: Array.from(this.cache.keys())
-        };
-    }
-
-    // Static data management
-    async reloadStaticData() {
-        console.log('🔄 Reloading static data...');
-        this.staticData = {
-            products: null,
-            categories: null,
-            brands: null,
-            branches: null
-        };
-        this.clearAllCache();
-        return await this.loadStaticData();
-    }
-
-    getStaticDataStats() {
-        return {
-            products: this.staticData.products ? this.staticData.products.length : 0,
-            categories: this.staticData.categories ? this.staticData.categories.length : 0,
-            brands: this.staticData.brands ? this.staticData.brands.length : 0,
-            branches: this.staticData.branches ? this.staticData.branches.length : 0
-        };
-    }
-
-    // Mock data methods
-    delay() {
-        return new Promise(resolve => setTimeout(resolve, this.mockDelay));
-    }
-
-    mockRequest(endpoint, params) {
-        console.log('Mock request:', endpoint, params);
-        return Promise.resolve({ mock: true, endpoint, params });
-    }
-
-    mockPostRequest(endpoint, data) {
-        console.log('Mock POST request:', endpoint, data);
-        return Promise.resolve({ success: true, mock: true, endpoint, data });
+    // Force refresh cart cache
+    refreshCart() {
+        this.cartCache = null;
+        this.cartCacheTime = null;
+        return this.getCart(true);
     }
 }
 
 // Create global instance
-const alsajiAPI = new AlSajiAPI();
+window.alsajiAPI = new AlSajiAPI();
 
-// Auto-load static data when the API is created
-alsajiAPI.loadStaticData().then(() => {
-    console.log('🚀 AlSajiAPI ready with static data + real cart API');
-}).catch(error => {
-    console.error('❌ Failed to initialize AlSajiAPI:', error);
+// Auto-initialize session on load
+document.addEventListener('DOMContentLoaded', function() {
+    window.alsajiAPI.ensureAuthenticated().then(authenticated => {
+        if (authenticated) {
+            console.log('✅ Auto-login successful');
+        }
+    });
 });
 
-async function testJSSession() {
-  console.log('Testing JavaScript session...');
+// ==================== GLOBAL CART SYNCHRONIZATION ====================
 
-  try {
-    const response = await fetch('http://localhost:8069/api/alsaji/debug-routes', {
-      credentials: 'include'
-    });
+// Global cart event system
+window.AlSajiCartEvents = {
+    // Update cart count everywhere
+    updateCartCount: function(count) {
+        // Update all cart count elements
+        const cartCountElements = document.querySelectorAll('#cartCount');
+        cartCountElements.forEach(element => {
+            element.textContent = count;
+        });
 
-    console.log('Response status:', response.status);
-    console.log('Response headers:', response.headers);
+        // Dispatch event for other components
+        const event = new CustomEvent('cartCountUpdated', {
+            detail: { count: count }
+        });
+        document.dispatchEvent(event);
 
-    if (response.ok) {
-      const data = await response.json();
-      console.log('SUCCESS:', data);
-      return true;
-    } else {
-      console.error('FAILED:', response.status, await response.text());
-      return false;
+        console.log('🔄 Cart count updated globally:', count);
+    },
+
+    // Force refresh cart count from storage
+    refreshCartCount: async function() {
+        try {
+            const cartResult = await window.alsajiAPI.getCart(true); // Force refresh
+            const count = cartResult.cart?.item_count || 0;
+            this.updateCartCount(count);
+        } catch (error) {
+            console.error('Failed to refresh cart count:', error);
+        }
     }
-  } catch (error) {
-    console.error('ERROR:', error);
-    return false;
-  }
-}
+};
+
+// Listen for storage events (when cart changes in other tabs)
+window.addEventListener('storage', function(e) {
+    if (e.key === 'alsaji_cart') {
+        console.log('🔄 Cart changed in another tab, updating count...');
+        AlSajiCartEvents.refreshCartCount();
+    }
+});
+
+// Listen for cart updates on this page
+document.addEventListener('cartUpdated', function(e) {
+    AlSajiCartEvents.refreshCartCount();
+});
+
+// Auto-initialize cart count on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for the header to load
+    setTimeout(() => {
+        AlSajiCartEvents.refreshCartCount();
+    }, 500);
+
+    // Also update when page becomes visible
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+            AlSajiCartEvents.refreshCartCount();
+        }
+    });
+});

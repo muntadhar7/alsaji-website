@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Proxy</title>
+</head>
+<body>
+    <h1>Testing Odoo Proxy</h1>
+    <button onclick="testProxy()">Test Proxy</button>
+    <div id="result"></div>
+
+    <script>
+    async function testProxy() {
+        try {
+            const testData = {
+                jsonrpc: "2.0",
+                method: "call",
+                params: {
+                    service: "common",
+                    method: "version",
+                    args: []
+                },
+                id: 1
+            };
+
+            const response = await fetch('/proxy.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(testData)
+            });
+
+            const result = await response.json();
+            document.getElementById('result').innerHTML =
+                '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+
+            console.log('✅ Proxy test successful:', result);
+        } catch (error) {
+            document.getElementById('result').innerHTML =
+                '❌ Error: ' + error.message;
+            console.error('❌ Proxy test failed:', error);
+        }
+    }
+    </script>
+</body>
+</html>

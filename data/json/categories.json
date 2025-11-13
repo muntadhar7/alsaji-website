@@ -1,14 +1,53 @@
 [
   {
-    "id": 1,
-    "name": "Motor Oil - زيوت المحرك",
-    "product_count": 1,
-    "image_url": "web/image?model=product.public.category&id=1&field=image_1024"
+    "id": 22,
+    "name": "اجزاء المحرك",
+    "parent": null,
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=22&field=image_1920"
   },
   {
-    "id": 2,
-    "name": "Car Care - العناية",
-    "product_count": 1,
-    "image_url": "web/image?model=product.public.category&id=2&field=image_1024"
+    "id": 26,
+    "name": "Lubricants - زيوت",
+    "parent": null,
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=26&field=image_1920"
+  },
+  {
+    "id": 28,
+    "name": "ناقل الحركة",
+    "parent": null,
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=28&field=image_1920"
+  },
+  {
+    "id": 29,
+    "name": "نظام التعليق",
+    "parent": null,
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=29&field=image_1920"
+  },
+  {
+    "id": 32,
+    "name": "شمعات احتراق",
+    "parent": {
+      "id": 22,
+      "name": "اجزاء المحرك"
+    },
+    "image_url": null
+  },
+  {
+    "id": 33,
+    "name": "Cae care",
+    "parent": null,
+    "image_url": null
+  },
+  {
+    "id": 34,
+    "name": "Lubricants -   الزيوت والسوائل",
+    "parent": null,
+    "image_url": null
+  },
+  {
+    "id": 35,
+    "name": "الاكسسوار -Accessories",
+    "parent": null,
+    "image_url": null
   }
 ]

@@ -11,19 +11,507 @@ from urllib3.util.retry import Retry
 
 
 class AlSajiDataExporter:
-    def __init__(self, base_url="http://localhost:8069", db_name="alsaji_copy"):
-        self.base_url = base_url
+    def __init__(self, base_url="https://alsajigroup-staging-24665929.dev.odoo.com",
+                 db_name="alsajigroup-staging-24665929",
+                 username="mntr59@gmail.com", password="0212"):
+        self.base_url = base_url.rstrip('/')  # Remove trailing slash
         self.db_name = db_name
+        self.username = username
+        self.password = password
         self.output_dir = "data"
         self.json_dir = os.path.join(self.output_dir, "json")
         self.html_dir = os.path.join(self.output_dir, "html")
         self.cache_file = os.path.join(self.output_dir, "data_hash.txt")
+        self.uid = None  # User ID after authentication
 
         # Create session with retry strategy
         self.session = requests.Session()
         self.setup_session()
         self.setup_directories()
 
+    def authenticate(self):
+        """Authenticate with Odoo and get user ID"""
+        print("Authenticating with Odoo...")
+        try:
+            auth_url = f"{self.base_url}/web/session/authenticate"
+            auth_data = {
+                'jsonrpc': '2.0',
+                'params': {
+                    'db': self.db_name,
+                    'login': self.username,
+                    'password': self.password,
+                },
+                'id': 1
+            }
+
+            print(f"Auth URL: {auth_url}")
+            print(f"Database: {self.db_name}")
+            print(f"Username: {self.username}")
+
+            response = self.session.post(auth_url, json=auth_data, timeout=30)
+            print(f"Auth Response Status: {response.status_code}")
+
+            result = response.json()
+
+            if result.get('result'):
+                user_data = result['result']
+                self.uid = user_data.get('uid')
+                print(f"Authentication successful. User ID: {self.uid}")
+                return True
+            else:
+                error = result.get('error', {})
+                print(f"Authentication failed: {error.get('message', 'Unknown error')}")
+                print(f"Error data: {error.get('data', {})}")
+                return False
+
+        except Exception as e:
+            print(f"Authentication error: {e}")
+            return False
+
+    def call_odoo_api(self, model, method, domain=None, fields=None, limit=100, offset=0):
+        """Make Odoo JSON-RPC API call"""
+        try:
+            url = f"{self.base_url}/jsonrpc"
+
+            # Build the arguments based on the method
+            if method == 'search_read':
+                # For search_read, we need to pass domain, fields, offset, limit as keyword arguments
+                kwargs = {
+                    'domain': domain or [],
+                    'fields': fields or [],
+                    'offset': offset,
+                    'limit': limit,
+                    'order': 'id'
+                }
+                args = [
+                    self.db_name,
+                    self.uid,
+                    self.password,
+                    model,
+                    method,
+                    [],  # empty domain in args since we use kwargs
+                    kwargs
+                ]
+            else:
+                # For other methods
+                args = [
+                    self.db_name,
+                    self.uid,
+                    self.password,
+                    model,
+                    method,
+                    domain or [],
+                    fields or {}
+                ]
+
+            data = {
+                'jsonrpc': '2.0',
+                'method': 'call',
+                'params': {
+                    'service': 'object',
+                    'method': 'execute_kw',
+                    'args': args
+                },
+                'id': 1
+            }
+
+            print(f"API Call - Model: {model}, Method: {method}")
+            print(f"Domain: {domain}")
+            print(f"Fields: {fields}")
+            print(f"Limit: {limit}, Offset: {offset}")
+
+            response = self.session.post(url, json=data, timeout=30)
+            print(f"API Response Status: {response.status_code}")
+
+            result = response.json()
+
+            if 'error' in result:
+                print(f"API Error: {result['error']}")
+                return None
+
+            return result.get('result')
+
+        except Exception as e:
+            print(f"API call error: {e}")
+            import traceback
+            traceback.print_exc()
+            return None
+
+    def fetch_products(self, limit=1000):
+        """Fetch all products using Odoo product.template model with proper pricing"""
+        print("Fetching products from Odoo...")
+
+        if not self.initialize_session():
+            print("Failed to initialize session")
+            return []
+
+        all_products = []
+        offset = 0
+        page_size = 1000
+
+        # First, get the public pricelist
+        print("Fetching public pricelist...")
+        pricelist_data = self.call_odoo_api(
+            model='product.pricelist',
+            method='search_read',
+            domain=[('name', 'ilike', 'public')],  # Get public pricelist
+            fields=['id', 'name'],
+            limit=1
+        )
+
+        pricelist_id = 1  # Default fallback
+        if pricelist_data:
+            pricelist_id = pricelist_data[0]['id']
+            print(f"Using pricelist: {pricelist_data[0]['name']} (ID: {pricelist_id})")
+        else:
+            print("Using default pricelist ID: 1")
+
+        # Define fields to fetch
+        fields = [
+            'id', 'name', 'default_code', 'list_price', 'standard_price',
+            'public_categ_ids', 'description', 'description_sale',
+            'qty_available', 'image_128', 'brand_id'
+        ]
+
+        while True:
+            print(f"Fetching products with offset {offset}, limit {page_size}")
+
+            products_data = self.call_odoo_api(
+                model='product.template',
+                method='search_read',
+                domain=["&", "&", "&", ("sale_ok", "=", True), ("product_variant_id.is_vehicle", "=", False), ("categ_id", "!=", 5), ("is_published", "=", True)],  # Only products that can be sold
+                fields=fields,
+                limit=page_size,
+                offset=offset
+            )
+
+            if products_data is None:
+                print("No products data returned (None)")
+                break
+
+            if not products_data:
+                print("Empty products list returned")
+                break
+
+            print(f"Received {len(products_data)} products")
+
+            # Get prices using pricelist for all products
+            product_ids = [product['id'] for product in products_data]
+            print(f"Getting prices for {len(product_ids)} products from pricelist...")
+
+            # Use pricelist to get actual prices
+            prices_data = self.call_odoo_api(
+                model='product.pricelist',
+                method='get_products_price',
+                domain=[],
+                fields={
+                    'products': [{'id': pid, 'quantity': 1.0} for pid in product_ids],
+                    'pricelist_id': pricelist_id
+                }
+            )
+
+            # Transform Odoo product data to your expected format with proper pricing
+            transformed_products = self.transform_products(products_data, prices_data, pricelist_id)
+            all_products.extend(transformed_products)
+
+            print(f"Fetched {len(products_data)} products (offset: {offset})")
+
+            if len(products_data) < page_size:
+                print("Reached end of product list")
+                break
+
+            offset += len(products_data)
+            time.sleep(0.5)
+
+        print(f"Total products fetched: {len(all_products)}")
+        return all_products
+
+    def transform_products(self, odoo_products, prices_data=None, pricelist_id=1):
+        """Transform Odoo product data to your expected format with proper pricing"""
+        transformed = []
+
+        for product in odoo_products:
+            print(f"Transforming product: {product.get('id')} - {product.get('name')}")
+
+            # Get the price from pricelist if available, otherwise use list_price
+            price = product.get('list_price', 0.0)
+
+            if prices_data and isinstance(prices_data, list) and len(prices_data) > 0:
+                # Find the price for this product in the prices_data
+                product_id = product.get('id')
+                # prices_data should be a list of prices in the same order as product_ids
+                product_index = [p['id'] for p in odoo_products].index(product_id)
+                if product_index < len(prices_data):
+                    price = prices_data[product_index]
+                    print(f"  Using pricelist price: {price}")
+
+            # Apply the IQD rounding logic: price_iqd = int(round(price / 1000.0) * 1000)
+            try:
+                price_iqd = int(round(float(price*1410) / 1000.0) * 1000)
+                print(f"  Original price: {price}, IQD price: {price_iqd}")
+            except (ValueError, TypeError):
+                price_iqd = 0
+                print(f"  Price conversion error, using 0")
+
+            # Handle category (many2one field)
+            category = None
+            categ_id = product.get('public_categ_ids')
+            if categ_id and isinstance(categ_id, (list, tuple)) and len(categ_id) > 1:
+                category = {
+                    'id': categ_id[0],
+                    'name': categ_id[1]
+                }
+                print(f"  Category: {category['name']}")
+            else:
+                print(f"  No category found: {categ_id}")
+
+            # Handle brand_id (many2one field)
+            brand = None
+            brand_id = product.get('brand_id')
+            if brand_id and isinstance(brand_id, (list, tuple)) and len(brand_id) > 1:
+                brand = {
+                    'id': brand_id[0],
+                    'name': brand_id[1]
+                }
+                print(f"  Brand: {brand['name']}")
+            else:
+                print(f"  No brand found: {brand_id}")
+
+            transformed_product = {
+                'id': product.get('id'),
+                'name': product.get('name', ''),
+                'default_code': product.get('default_code', ''),
+                'price': price_iqd,  # Use the calculated IQD price
+                'original_price': price,  # Keep original for reference
+                'cost_price': product.get('standard_price', 0.0),
+                'category': category,
+                'brand': brand,
+                'brand_id': product.get('brand_id'),
+                'description': product.get('description', '') or product.get('description_sale', ''),
+                'quantity_available': product.get('qty_available', 0),
+                'in_stock': product.get('qty_available', 0) > 0,  # Boolean field for stock availability
+                'image_url': f"{self.base_url}/web/image?model=product.template&field=image_1920&id={product['id']}" if product.get(
+                    'image_128') else None,
+                'branches': [],  # Default empty branches
+                'pricelist_id': pricelist_id
+            }
+            transformed.append(transformed_product)
+
+        return transformed
+
+    def fetch_categories(self):
+        """Fetch product categories using Odoo product.category model"""
+        print("Fetching categories from Odoo...")
+
+        if not self.uid:
+            if not self.initialize_session():
+                return []
+
+        categories_data = self.call_odoo_api(
+            model='product.public.category',
+            method='search_read',
+            domain=[],  # Get all categories
+            fields=['id', 'name', 'parent_id','image_128']
+        )
+
+        if categories_data is None:
+            print("No categories data returned (None)")
+            return []
+
+        if not categories_data:
+            print("Empty categories list returned")
+            return []
+
+        transformed_categories = []
+        for category in categories_data:
+            parent = None
+            image_url = None
+            parent_id = category.get('parent_id')
+            if parent_id and isinstance(parent_id, (list, tuple)) and len(parent_id) > 1:
+                parent = {
+                    'id': parent_id[0],
+                    'name': parent_id[1]
+                }
+            if category.get('image_128'):
+                image_url = f"{self.base_url}/web/image?model=product.public.category&id={category.get('id')}&field=image_1920"
+
+
+            transformed_categories.append({
+                'id': category['id'],
+                'name': category.get('complete_name', category.get('name', '')),
+                'parent': parent,
+                'image_url': image_url
+            })
+
+        return transformed_categories
+
+    def fetch_brands(self):
+        """Fetch branches/companies using Odoo res.company model"""
+        print("Fetching brands from Odoo...")
+
+        if not self.uid:
+            if not self.initialize_session():
+                return []
+
+        brands_data = self.call_odoo_api(
+            model='product.productbrand',
+            method='search_read',
+            domain=[('is_published','=',True)],
+            fields=['id', 'name', 'logo', ]
+        )
+
+        if brands_data is None:
+            print("No brands data returned (None)")
+            return []
+
+        if not brands_data:
+            print("Empty brands list returned")
+            return []
+
+        transformed_brands = []
+        for brand in brands_data:
+            logo_url = ''
+            logo = brand.get('logo')
+            if logo:
+                logo_url = f"{self.base_url}/web/image?model=product.productbrand&field=logo&id={brand['id']}" if brand.get(
+                    'logo') else None,
+
+
+            transformed_brands.append({
+                'id': brand['id'],
+                'name': brand.get('name', ''),
+                'logo': logo_url,
+
+            })
+
+        return transformed_brands
+
+    def fetch_vehicle_brands(self):
+        """Fetch branches using Odoo  model"""
+        print("Fetching brands from Odoo...")
+
+        if not self.uid:
+            if not self.initialize_session():
+                return []
+
+        brands_data = self.call_odoo_api(
+            model='vehicle.brand',
+            method='search_read',
+            domain=[('is_published','=',True)],
+            fields=['id', 'name', 'logo', ]
+        )
+
+        if brands_data is None:
+            print("No brands data returned (None)")
+            return []
+
+        if not brands_data:
+            print("Empty brands list returned")
+            return []
+
+        transformed_brands = []
+        for brand in brands_data:
+            logo_url = ''
+            logo = brand.get('logo')
+            if logo:
+                logo_url = f"{self.base_url}/web/image?model=product.productbrand&field=logo&id={brand['id']}" if brand.get(
+                    'logo') else None,
+
+
+            transformed_brands.append({
+                'id': brand['id'],
+                'name': brand.get('name', ''),
+                'logo': logo_url,
+
+            })
+
+        return transformed_brands
+
+    def fetch_vehicle_models(self):
+        """Fetch models using Odoo  model"""
+        print("Fetching models from Odoo...")
+
+        if not self.uid:
+            if not self.initialize_session():
+                return []
+
+        models_data = self.call_odoo_api(
+            model='vehicle.model',
+            method='search_read',
+            domain=[('is_published','=',True)],
+            fields=['id', 'name', 'image', ]
+        )
+
+        if models_data is None:
+            print("No models data returned (None)")
+            return []
+
+        if not models_data:
+            print("Empty models list returned")
+            return []
+
+        transformed_models = []
+        for model in models_data:
+            logo_url = ''
+            logo = model.get('logo')
+            if logo:
+                logo_url = f"{self.base_url}/web/image?model=product.vehicle&field=logo&id={logo['id']}" if model.get(
+                    'image') else None,
+
+
+            transformed_models.append({
+                'id': model['id'],
+                'name': model.get('name', ''),
+                'logo': logo_url,
+
+            })
+
+        return transformed_models
+
+    def fetch_branches(self):
+        """Fetch branches/companies using Odoo res.company model"""
+        print("Fetching branches from Odoo...")
+
+        if not self.uid:
+            if not self.initialize_session():
+                return []
+
+        branches_data = self.call_odoo_api(
+            model='res.company',
+            method='search_read',
+            domain=[],
+            fields=['id', 'name', 'street', 'city', 'country_id', 'phone', 'email']
+        )
+
+        if branches_data is None:
+            print("No branches data returned (None)")
+            return []
+
+        if not branches_data:
+            print("Empty branches list returned")
+            return []
+
+        transformed_branches = []
+        for branch in branches_data:
+            country = None
+            country_id = branch.get('country_id')
+            if country_id and isinstance(country_id, (list, tuple)) and len(country_id) > 1:
+                country = {
+                    'id': country_id[0],
+                    'name': country_id[1]
+                }
+
+            transformed_branches.append({
+                'id': branch['id'],
+                'name': branch.get('name', ''),
+                'address': branch.get('street', ''),
+                'city': branch.get('city', ''),
+                'country': country,
+                'phone': branch.get('phone', ''),
+                'email': branch.get('email', '')
+            })
+
+        return transformed_branches
 
     def get_data_hash(self, data):
         """Generate hash of data to check for changes"""
@@ -56,18 +544,18 @@ class AlSajiDataExporter:
         retry_strategy = Retry(
             total=3,
             status_forcelist=[429, 500, 502, 503, 504],
-            allowed_methods=["HEAD", "GET", "OPTIONS"],
+            allowed_methods=["HEAD", "GET", "POST", "OPTIONS"],
             backoff_factor=1
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         self.session.mount("http://", adapter)
         self.session.mount("https://", adapter)
 
-        # Set headers to mimic browser
+        # Set headers
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'application/json, text/plain, */*',
-            'Accept-Language': 'en-US,en;q=0.9',
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
             'Connection': 'keep-alive',
         })
 
@@ -78,148 +566,35 @@ class AlSajiDataExporter:
         os.makedirs(self.html_dir, exist_ok=True)
 
     def initialize_session(self):
-        """Initialize session by visiting Odoo web interface first"""
-        print("Initializing session...")
-        try:
-            # First, access the web interface to establish session with database
-            init_url = f"{self.base_url}/web"
-            params = {'db': self.db_name}
-            response = self.session.get(init_url, params=params, timeout=10)
-            print(f"Session initialization: {response.status_code}")
+        """Initialize session by authenticating with Odoo"""
+        print("Initializing Odoo session...")
+        if self.authenticate():
+            print("Session initialized successfully")
+            return True
+        else:
+            print("Failed to initialize session")
+            return False
 
-            # If we get a session cookie, we're good
-            if 'session_id' in self.session.cookies:
-                print("Session cookie obtained successfully")
-            else:
-                print("No session cookie received, trying alternative approach...")
-                # Try logging in as public user
-                self._try_public_login()
-
-        except Exception as e:
-            print(f"Session initialization failed: {e}")
-
-    def _try_public_login(self):
-        """Alternative: Try to simulate public user access"""
-        try:
-            # Access the website sale page to get session
-            login_url = f"{self.base_url}/web/login"
-            data = {
-                'login': '',
-                'password': '',
-                'redirect': '/shop'
-            }
-            response = self.session.post(login_url, data=data, timeout=10)
-            print(f"Public access attempt: {response.status_code}")
-        except Exception as e:
-            print(f"Public access failed: {e}")
-
-    def make_request(self, endpoint, params=None):
-        """Make API request with session"""
-        try:
-            url = f"{self.base_url}{endpoint}"
-
-            # Add database to params for initial requests
-            if params is None:
-                params = {}
-
-            # Only add db param if we don't have a session yet
-            if 'session_id' not in self.session.cookies:
-                params['db'] = self.db_name
-
-            response = self.session.get(url, params=params, timeout=30)
-
-            # If we get redirected to login, we need to reinitialize session
-            if response.status_code == 303 or '/web/login' in response.url:
-                print("Session expired, reinitializing...")
-                self.initialize_session()
-                # Retry the request
-                response = self.session.get(url, params=params, timeout=30)
-
-            response.raise_for_status()
-            return response.json()
-
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching {endpoint}: {e}")
-            return None
-
-    def fetch_products(self, limit=1000):
-        """Fetch all products with pagination"""
-        print("Fetching products...")
-
-        # Ensure session is initialized
-        if 'session_id' not in self.session.cookies:
-            self.initialize_session()
-
-        all_products = []
-        page = 1
-        page_size = 1000
-        offset = 0
-
-        while True:
-            params = {
-                'page': page,
-                'limit': page_size,
-                'offset': offset
-            }
-            data = self.make_request('/api/alsaji/products', params)
-
-            if not data or 'products' not in data or not data['products']:
-                break
-
-            all_products.extend(data['products'])
-            print(f"Fetched page {page} with {len(data['products'])} products")
-
-            if len(data['products']) < page_size:
-                break
-
-            page += 1
-            offset += len(data['products'])
-            time.sleep(0.1)
-
-        print(f"Total products fetched: {len(all_products)}")
-        return all_products
-
-    # ... rest of your methods (fetch_categories, fetch_brands, etc.) stay the same
-
-    def fetch_categories(self):
-        """Fetch categories"""
-        print("Fetching categories...")
-        return self.make_request('/api/alsaji/categories') or []
-
-    def fetch_brands(self):
-        """Fetch brands"""
-        print("Fetching brands...")
-        return self.make_request('/api/alsaji/brands') or []
-
-    def fetch_branches(self):
-        """Fetch branches"""
-        print("Fetching branches...")
-        return self.make_request('/api/alsaji/branches') or []
-
-    def generate_filter_data(self, products, categories, brands, branches):
-        """Generate JSON data for filtering - FIXED VERSION"""
+    def generate_filter_data(self, products, categories, brands, vehicle_brands, branches):
+        """Generate JSON data for filtering"""
         print("Generating filter data...")
 
         # Extract unique values for filtering
         filter_data = {
             "categories": [],
             "brands": [],
+            "vehicle_brands": [],
             "price_ranges": self.calculate_price_ranges(products),
             "branches": [],
             "last_updated": datetime.now().isoformat()
         }
 
-        # Process categories - FIXED: Handle both string and object categories
+        # Process categories
         category_count = {}
         for product in products:
             category = product.get('category')
-            if category:
-                # Handle both string and object formats
-                if isinstance(category, dict):
-                    category_name = category.get('name', 'Unknown')
-                else:
-                    category_name = str(category)
-
+            if category and isinstance(category, dict):
+                category_name = category.get('name', 'Unknown')
                 category_count[category_name] = category_count.get(category_name, 0) + 1
 
         filter_data["categories"] = [
@@ -231,39 +606,16 @@ class AlSajiDataExporter:
             for name, count in category_count.items()
         ]
 
-        # Process brands - FIXED: Handle both string and object brands
-        brand_count = {}
-        for product in products:
-            brand = product.get('brand')
-            if brand:
-                # Handle both string and object formats
-                if isinstance(brand, dict):
-                    brand_name = brand.get('name', 'Unknown')
-                else:
-                    brand_name = str(brand)
+        # Process brands (empty for now since Odoo doesn't have built-in brands)
+        filter_data["brands"] = []
 
-                brand_count[brand_name] = brand_count.get(brand_name, 0) + 1
-
-        filter_data["brands"] = [
-            {
-                "name": name,
-                "count": count,
-                "slug": self.slugify(name)
-            }
-            for name, count in brand_count.items()
-        ]
-
-        # Process branches - FIXED: Handle branch data structure
+        # Process branches
         branch_count = {}
         for product in products:
             branches_data = product.get('branches', [])
-            if branches_data:
-                for branch in branches_data:
-                    if isinstance(branch, dict):
-                        branch_name = branch.get('name', 'Unknown')
-                    else:
-                        branch_name = str(branch)
-
+            for branch in branches_data:
+                if isinstance(branch, dict):
+                    branch_name = branch.get('name', 'Unknown')
                     branch_count[branch_name] = branch_count.get(branch_name, 0) + 1
 
         filter_data["branches"] = [
@@ -297,7 +649,6 @@ class AlSajiDataExporter:
         # Create price ranges
         ranges = []
         if min_price == max_price:
-            # All prices are the same
             ranges.append({
                 "min": min_price,
                 "max": max_price,
@@ -320,7 +671,7 @@ class AlSajiDataExporter:
                         "label": f"${current:.2f} - ${range_max:.2f}"
                     })
 
-                current = range_max + 0.01  # Small increment to avoid overlaps
+                current = range_max + 0.01
 
         return ranges
 
@@ -330,21 +681,10 @@ class AlSajiDataExporter:
 
         search_index = []
         for product in products:
-            # Handle category name extraction safely
-            category = product.get('category')
-            if isinstance(category, dict):
-                category_name = category.get('name', '')
-            else:
-                category_name = str(category) if category else ''
+            category_name = product.get('category', {}).get('name', '') if isinstance(product.get('category'),
+                                                                                      dict) else ''
+            brand_name = product.get('brand', {}).get('name', '') if isinstance(product.get('brand'), dict) else ''
 
-            # Handle brand name extraction safely
-            brand = product.get('brand')
-            if isinstance(brand, dict):
-                brand_name = brand.get('name', '')
-            else:
-                brand_name = str(brand) if brand else ''
-
-            # Handle price safely
             try:
                 price = float(product.get('price', 0)) if product.get('price') else 0
             except (ValueError, TypeError):
@@ -368,6 +708,7 @@ class AlSajiDataExporter:
 
         return search_index
 
+    # ... (Keep all the HTML generation methods the same as before)
     def generate_html_pages(self, products, categories, brands):
         """Generate HTML pages for products, categories, and brands"""
         print("Generating HTML pages...")
@@ -385,9 +726,8 @@ class AlSajiDataExporter:
         self.generate_individual_product_pages(products[:20])
 
     def generate_products_page(self, products):
-        """Generate main products page - FIXED FORMATTING"""
+        """Generate main products page"""
 
-        # Safely extract category and brand names
         def get_safe_value(product, field):
             value = product.get(field)
             if isinstance(value, dict):
@@ -395,15 +735,13 @@ class AlSajiDataExporter:
             return str(value) if value else 'N/A'
 
         def format_price(price):
-            """Safely format price"""
             try:
                 return f"${float(price):.2f}"
             except (ValueError, TypeError):
                 return "$0.00"
 
-        # Build product cards HTML
         product_cards_html = ""
-        for product in products[:50]:  # Limit to first 50 for performance
+        for product in products[:50]:
             category_name = get_safe_value(product, 'category')
             brand_name = get_safe_value(product, 'brand')
             price = product.get('price', 0)
@@ -542,20 +880,18 @@ class AlSajiDataExporter:
         for product in products:
             product_slug = self.slugify(product.get('name', f"product-{product.get('id')}"))
 
-            # Safely extract category and brand names
-            category_name = product.get('category')
+            category_name = product.get('category', {})
             if isinstance(category_name, dict):
                 category_name = category_name.get('name', 'N/A')
             else:
                 category_name = str(category_name) if category_name else 'N/A'
 
-            brand_name = product.get('brand')
+            brand_name = product.get('brand', {})
             if isinstance(brand_name, dict):
                 brand_name = brand_name.get('name', 'N/A')
             else:
                 brand_name = str(brand_name) if brand_name else 'N/A'
 
-            # Safely format price
             try:
                 formatted_price = f"${float(product.get('price', 0)):.2f}"
             except (ValueError, TypeError):
@@ -586,31 +922,18 @@ class AlSajiDataExporter:
         filepath = os.path.join(self.json_dir, filename)
 
         if as_js_module:
-            # Save as JavaScript module for direct inclusion in HTML
             js_content = f"window.{filename.replace('.js', '')} = {json.dumps(data, indent=2, ensure_ascii=False)};"
             with open(filepath, "w", encoding="utf-8") as f:
                 f.write(js_content)
         else:
-            # Save as regular JSON
             with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
-
     def safe_filename(self, name):
-        """
-        Convert a string into a safe filename by:
-        - Replacing whitespace and tabs with '-'
-        - Removing invalid characters for Windows filenames
-        """
-        # Replace any whitespace (space, tab, newline) with a dash
+        """Convert a string into a safe filename"""
         name = re.sub(r'\s+', '-', name)
-
-        # Remove invalid characters for Windows filenames: \ / : * ? " < > |
         name = re.sub(r'[\\/:*?"<>|]', '', name)
-
-        # Optionally, lowercase everything
         name = name.lower()
-
         return name
 
     def slugify(self, text):
@@ -631,24 +954,30 @@ class AlSajiDataExporter:
 
     def export_all_data(self, force_update=False):
         """Main method to export all data"""
-        print("Starting Al Saji data export...")
+        print("Starting Al Saji data export using Odoo API...")
 
-        # Fetch data from API
+        # Fetch data from Odoo API
         products = self.fetch_products()
-        categories = self.fetch_categories()
-        brands = self.fetch_brands()
-        branches = self.fetch_branches()
 
         if not products:
             print("No products fetched. Exiting.")
             return
 
+        # Fetch other data
+        categories = self.fetch_categories()
+        brands = self.fetch_brands()
+        vehicle_brands = self.fetch_vehicle_brands()
+        vehicle_models = self.fetch_vehicle_models()
+        branches = self.fetch_branches()
+
         # Combine all data for change detection
         all_data = {
             "products": products,
-            "categories": categories,
-            "brands": brands,
-            "branches": branches
+            "categories": categories or [],
+            "brands": brands or [],
+            "vehicle_brands" : vehicle_brands or [],
+            "vehicle_models" : vehicle_models or [],
+            "branches": branches or []
         }
 
         # Check if data has changed
@@ -657,13 +986,15 @@ class AlSajiDataExporter:
             return
 
         # Generate filter data and search index
-        filter_data = self.generate_filter_data(products, categories, brands, branches)
+        filter_data = self.generate_filter_data(products, categories, brands, vehicle_brands, branches)
         search_index = self.generate_search_index(products)
 
         # Save JSON files
         self.save_json_data(products, "products.json")
         self.save_json_data(categories, "categories.json")
         self.save_json_data(brands, "brands.json")
+        self.save_json_data(vehicle_brands, "vehicle_brands.json")
+        self.save_json_data(vehicle_models, "vehicle_models.json")
         self.save_json_data(branches, "branches.json")
         self.save_json_data(filter_data, "filter-data.json")
         self.save_json_data(search_index, "search-index.json")
@@ -677,14 +1008,15 @@ class AlSajiDataExporter:
 
         # Save filtering JavaScript
         self.save_filtering_js()
+        self.generate_static_api_js()
 
         # Generate metadata
         metadata = {
             "export_date": datetime.now().isoformat(),
             "total_products": len(products),
-            "total_categories": len(categories),
-            "total_brands": len(brands),
-            "total_branches": len(branches),
+            "total_categories": len(categories) if categories else 0,
+            "total_brands": len(brands) if brands else 0,
+            "total_branches": len(branches) if branches else 0,
             "data_hash": self.get_data_hash(all_data)
         }
 
@@ -698,14 +1030,15 @@ class AlSajiDataExporter:
         print(f"✓ JSON files saved to: {self.json_dir}")
         print(f"✓ HTML pages saved to: {self.html_dir}")
         print(f"✓ Total products: {len(products)}")
-        print(f"✓ Total categories: {len(categories)}")
-        print(f"✓ Total brands: {len(brands)}")
+        print(f"✓ Total categories: {len(categories) if categories else 0}")
+        print(f"✓ Total brands: {len(brands) if brands else 0}")
+        print(f"✓ Total branches: {len(branches) if branches else 0}")
         print(f"✓ Data hash saved for change detection")
 
     def save_filtering_js(self):
         """Save the filtering JavaScript file"""
         filtering_js = """// filtering.js - Client-side filtering functionality
-class AlSajiFilter {
+    class AlSajiFilter {
     constructor() {
         this.filters = {
             categories: [],
@@ -717,14 +1050,13 @@ class AlSajiFilter {
     }
 
     async init() {
-        // Load data (assuming it's available as window.filterData and window.searchIndex)
         if (window.filterData && window.searchIndex) {
             this.filterData = window.filterData;
             this.searchIndex = window.searchIndex;
             this.setupFilters();
             this.applyFilters();
         } else {
-            console.error('Filter data not found. Make sure filter-data.js and search-index.js are loaded.');
+            console.error('Filter data not found.');
         }
     }
 
@@ -772,21 +1104,18 @@ class AlSajiFilter {
     }
 
     setupEventListeners() {
-        // Category and brand filters
         document.addEventListener('change', (e) => {
             if (e.target.matches('[data-type="category"], [data-type="brand"]')) {
                 this.updateFilters();
             }
         });
 
-        // Price range filters
         document.addEventListener('change', (e) => {
             if (e.target.matches('[name="price-range"]')) {
                 this.updatePriceFilter(e.target.value);
             }
         });
 
-        // Search input
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
             searchInput.addEventListener('input', (e) => {
@@ -797,11 +1126,9 @@ class AlSajiFilter {
     }
 
     updateFilters() {
-        // Get selected categories
         const categoryCheckboxes = document.querySelectorAll('[data-type="category"]:checked');
         this.filters.categories = Array.from(categoryCheckboxes).map(cb => cb.value);
 
-        // Get selected brands
         const brandCheckboxes = document.querySelectorAll('[data-type="brand"]:checked');
         this.filters.brands = Array.from(brandCheckboxes).map(cb => cb.value);
 
@@ -820,7 +1147,6 @@ class AlSajiFilter {
 
     applyFilters() {
         const filteredProducts = this.searchIndex.filter(product => {
-            // Category filter
             if (this.filters.categories.length > 0) {
                 const productCategorySlug = this.slugify(product.category);
                 if (!this.filters.categories.includes(productCategorySlug)) {
@@ -828,7 +1154,6 @@ class AlSajiFilter {
                 }
             }
 
-            // Brand filter
             if (this.filters.brands.length > 0) {
                 const productBrandSlug = this.slugify(product.brand);
                 if (!this.filters.brands.includes(productBrandSlug)) {
@@ -836,7 +1161,6 @@ class AlSajiFilter {
                 }
             }
 
-            // Price filter
             if (this.filters.priceRange) {
                 if (product.price < this.filters.priceRange.min || 
                     product.price > this.filters.priceRange.max) {
@@ -844,7 +1168,6 @@ class AlSajiFilter {
                 }
             }
 
-            // Search filter
             if (this.filters.searchQuery) {
                 const searchTerm = this.filters.searchQuery.toLowerCase();
                 const matchesSearch = product.search_terms.some(term => 
@@ -903,17 +1226,13 @@ class AlSajiFilter {
     }
 }
 
-// Clear filters function
 function clearFilters() {
-    // Uncheck all checkboxes
     document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
     document.querySelectorAll('input[type="radio"]').forEach(rb => rb.checked = false);
 
-    // Clear search
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = '';
 
-    // Reset filters and reapply
     if (window.alsajiFilter) {
         window.alsajiFilter.filters = {
             categories: [],
@@ -925,7 +1244,6 @@ function clearFilters() {
     }
 }
 
-// Initialize filter when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     window.alsajiFilter = new AlSajiFilter();
 });
@@ -934,13 +1252,148 @@ document.addEventListener('DOMContentLoaded', () => {
         with open(os.path.join(self.html_dir, "filtering.js"), "w", encoding="utf-8") as f:
             f.write(filtering_js)
 
+    # Add this method to your AlSajiDataExporter class
+    def generate_static_api_js(self):
+        """Generate static_api.js file for frontend"""
+        print("📁 Generating static_api.js...")
 
-# Usage with options
+        try:
+            # Load the JSON data
+            with open(os.path.join(self.json_dir, 'products.json'), 'r', encoding='utf-8') as f:
+                products = json.load(f)
+
+            with open(os.path.join(self.json_dir, 'categories.json'), 'r', encoding='utf-8') as f:
+                categories = json.load(f)
+
+            with open(os.path.join(self.json_dir, 'brands.json'), 'r', encoding='utf-8') as f:
+                brands = json.load(f)
+
+            # Create the static API JavaScript content
+            static_api_content = f"""
+    // Static API - Auto-generated {datetime.now().isoformat()}
+    window.staticAPI = {{
+        products: {json.dumps(products, ensure_ascii=False)},
+        categories: {json.dumps(categories, ensure_ascii=False)},
+        brands: {json.dumps(brands, ensure_ascii =False)},
+        lastUpdated: "{datetime.now().isoformat()}",
+
+        getProducts(filters = {{}}) {{
+            let filtered = [...this.products];
+
+            // Search filter
+            if (filters.search) {{
+                const searchTerm = filters.search.toLowerCase();
+                filtered = filtered.filter(p => 
+                    p.name && p.name.toLowerCase().includes(searchTerm) ||
+                    (p.description && p.description.toLowerCase().includes(searchTerm))
+                );
+            }}
+
+            // Category filter
+            if (filters.category) {{
+                filtered = filtered.filter(p => {{
+                    const cat = p.category;
+                    return cat && cat.name && cat.name.toString().toLowerCase().includes(filters.category.toLowerCase());
+                }});
+            }}
+
+            // Brand filter
+            if (filters.brand) {{
+                filtered = filtered.filter(p => {{
+                    const brand = p.brand;
+                    return brand && brand.name && brand.name.toString().toLowerCase().includes(filters.brand.toLowerCase());
+                }});
+            }}
+
+            // In stock filter
+            if (filters.in_stock !== undefined && filters.in_stock !== '') {{
+                const inStock = filters.in_stock === 'true' || filters.in_stock === true;
+                filtered = filtered.filter(p => p.in_stock === inStock);
+            }}
+
+            // Price range filters
+            if (filters.price_min) {{
+                const minPrice = parseFloat(filters.price_min);
+                if (!isNaN(minPrice)) {{
+                    filtered = filtered.filter(p => p.price >= minPrice);
+                }}
+            }}
+
+            if (filters.price_max) {{
+                const maxPrice = parseFloat(filters.price_max);
+                if (!isNaN(maxPrice)) {{
+                    filtered = filtered.filter(p => p.price <= maxPrice);
+                }}
+            }}
+
+            // Pagination
+            const limit = parseInt(filters.limit) || 12;
+            const offset = parseInt(filters.offset) || 0;
+            const paginated = filtered.slice(offset, offset + limit);
+
+            return {{
+                success: true,
+                products: paginated,
+                total_count: filtered.length,
+                count: paginated.length
+            }};
+        }},
+
+        getCategories() {{
+            return {{ success: true, categories: this.categories }};
+        }},
+
+        getBrands() {{
+            return {{ success: true, brands: this.brands }};
+        }},
+
+        searchSuggestions(query) {{
+            if (!query || query.length < 2) return [];
+            const suggestions = new Set();
+            const q = query.toLowerCase();
+
+            this.products.forEach(product => {{
+                if (product.name && product.name.toLowerCase().includes(q)) {{
+                    suggestions.add(product.name);
+                }}
+                if (product.category && product.category.name && product.category.name.toLowerCase().includes(q)) {{
+                    suggestions.add(product.category.name);
+                }}
+                if (product.brand && product.brand.name && product.brand.name.toLowerCase().includes(q)) {{
+                    suggestions.add(product.brand.name);
+                }}
+            }});
+
+            return Array.from(suggestions).slice(0, 8);
+        }},
+
+        getProductById(id) {{
+            return this.products.find(p => p.id == id);
+        }}
+    }};
+
+    console.log('✅ Static API loaded:', {{
+        products: window.staticAPI.products.length,
+        categories: window.staticAPI.categories.length,
+        brands: window.staticAPI.brands.length,
+        lastUpdated: window.staticAPI.lastUpdated
+    }});
+    """
+
+            # Save the static_api.js file
+            static_api_path = os.path.join(self.output_dir, 'static_api.js')
+            with open(static_api_path, 'w', encoding='utf-8') as f:
+                f.write(static_api_content)
+
+            print(
+                f"✅ Generated static_api.js with {len(products)} products, {len(categories)} categories, {len(brands)} brands")
+
+        except Exception as e:
+            print(f"❌ Error generating static_api.js: {e}")
+            import traceback
+            traceback.print_exc()
+
+# Usage with your Odoo.sh credentials
 if __name__ == "__main__":
     exporter = AlSajiDataExporter()
-
-    # Export with change detection (default)
     exporter.export_all_data()
-
-    # Or force update regardless of changes
-    # exporter.export_all_data(force_update=True)

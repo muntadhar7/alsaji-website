@@ -1,186 +1,416 @@
 [
   {
-    "id": 27,
-    "name": "TW",
-    "image_url": "/web/image?model=product.brand&id=27&field=logo",
-    "categories": []
-  },
-  {
-    "id": 21,
-    "name": "AISIN",
-    "image_url": "/web/image?model=product.brand&id=21&field=logo",
-    "categories": []
-  },
-  {
-    "id": 20,
-    "name": "Toyota",
-    "image_url": "/web/image?model=product.brand&id=20&field=logo",
-    "categories": []
-  },
-  {
     "id": 18,
     "name": "Denso",
-    "image_url": "/web/image?model=product.brand&id=18&field=logo",
-    "categories": []
-  },
-  {
-    "id": 22,
-    "name": "ADVICS",
-    "image_url": "/web/image?model=product.brand&id=22&field=logo",
-    "categories": []
-  },
-  {
-    "id": 23,
-    "name": "Taiho",
-    "image_url": "/web/image?model=product.brand&id=23&field=logo",
-    "categories": []
-  },
-  {
-    "id": 414,
-    "name": "NDC",
-    "image_url": "/web/image?model=product.brand&id=414&field=logo",
-    "categories": []
-  },
-  {
-    "id": 24,
-    "name": "DENSO-X",
-    "image_url": "/web/image?model=product.brand&id=24&field=logo",
-    "categories": []
-  },
-  {
-    "id": 25,
-    "name": "ERRECOM",
-    "image_url": "/web/image?model=product.brand&id=25&field=logo",
-    "categories": [
-      "Car Care - العناية"
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=18"
     ]
-  },
-  {
-    "id": 392,
-    "name": "FPI",
-    "image_url": "/web/image?model=product.brand&id=392&field=logo",
-    "categories": []
-  },
-  {
-    "id": 29,
-    "name": "DLAA",
-    "image_url": "/web/image?model=product.brand&id=29&field=logo",
-    "categories": []
-  },
-  {
-    "id": 30,
-    "name": "DAISEN",
-    "image_url": "/web/image?model=product.brand&id=30&field=logo",
-    "categories": []
-  },
-  {
-    "id": 31,
-    "name": "Energizer",
-    "image_url": "/web/image?model=product.brand&id=31&field=logo",
-    "categories": []
-  },
-  {
-    "id": 368,
-    "name": "AISIN-Battries",
-    "image_url": "/web/image?model=product.brand&id=368&field=logo",
-    "categories": []
-  },
-  {
-    "id": 28,
-    "name": "DAISEN-HY",
-    "image_url": "/web/image?model=product.brand&id=28&field=logo",
-    "categories": []
-  },
-  {
-    "id": 1158,
-    "name": "KOYO",
-    "image_url": "/web/image?model=product.brand&id=1158&field=logo",
-    "categories": []
-  },
-  {
-    "id": 413,
-    "name": "NA",
-    "image_url": "/web/image?model=product.brand&id=413&field=logo",
-    "categories": []
-  },
-  {
-    "id": 1159,
-    "name": "DAISEN - RADS",
-    "image_url": "/web/image?model=product.brand&id=1159&field=logo",
-    "categories": []
-  },
-  {
-    "id": 1076,
-    "name": "SekiCool",
-    "image_url": "/web/image?model=product.brand&id=1076&field=logo",
-    "categories": []
-  },
-  {
-    "id": 365,
-    "name": "555",
-    "image_url": "/web/image?model=product.brand&id=365&field=logo",
-    "categories": []
-  },
-  {
-    "id": 371,
-    "name": "ART",
-    "image_url": "/web/image?model=product.brand&id=371&field=logo",
-    "categories": []
-  },
-  {
-    "id": 380,
-    "name": "DA JUANE",
-    "image_url": "/web/image?model=product.brand&id=380&field=logo",
-    "categories": []
   },
   {
     "id": 19,
     "name": "Nissan ",
-    "image_url": "/web/image?model=product.brand&id=19&field=logo",
-    "categories": []
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=19"
+    ]
   },
   {
-    "id": 384,
-    "name": "DK-SKI",
-    "image_url": "/web/image?model=product.brand&id=384&field=logo",
-    "categories": []
+    "id": 20,
+    "name": "Toyota",
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=20"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "AISIN",
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=21"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "ADVICS",
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=22"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Taiho",
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=23"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "DENSO-X",
+    "logo": ""
+  },
+  {
+    "id": 25,
+    "name": "ERRECOM",
+    "logo": ""
   },
   {
     "id": 26,
     "name": "CASP",
-    "image_url": "/web/image?model=product.brand&id=26&field=logo",
-    "categories": []
+    "logo": ""
   },
   {
-    "id": 1058,
-    "name": "YTM",
-    "image_url": "/web/image?model=product.brand&id=1058&field=logo",
-    "categories": []
+    "id": 27,
+    "name": "TW",
+    "logo": ""
   },
   {
-    "id": 1060,
-    "name": "Veedol",
-    "image_url": "/web/image?model=product.brand&id=1060&field=logo",
-    "categories": []
+    "id": 28,
+    "name": "DAISEN-HY",
+    "logo": ""
   },
   {
-    "id": 1161,
-    "name": "TAMA",
-    "image_url": "/web/image?model=product.brand&id=1161&field=logo",
-    "categories": []
+    "id": 29,
+    "name": "DLAA",
+    "logo": ""
+  },
+  {
+    "id": 30,
+    "name": "DAISEN",
+    "logo": ""
+  },
+  {
+    "id": 31,
+    "name": "Energizer",
+    "logo": ""
+  },
+  {
+    "id": 365,
+    "name": "555",
+    "logo": ""
+  },
+  {
+    "id": 366,
+    "name": "ACDelco",
+    "logo": ""
+  },
+  {
+    "id": 367,
+    "name": "AISAN",
+    "logo": ""
+  },
+  {
+    "id": 368,
+    "name": "AISIN-Battries",
+    "logo": ""
   },
   {
     "id": 369,
     "name": "AISIN-LUB",
-    "image_url": "/web/image?model=product.brand&id=369&field=logo",
-    "categories": [
-      "Motor Oil - زيوت المحرك"
+    "logo": ""
+  },
+  {
+    "id": 370,
+    "name": "AN TAI",
+    "logo": ""
+  },
+  {
+    "id": 371,
+    "name": "ART",
+    "logo": [
+      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=371"
     ]
+  },
+  {
+    "id": 372,
+    "name": "BANDO",
+    "logo": ""
+  },
+  {
+    "id": 373,
+    "name": "BeFirst",
+    "logo": ""
+  },
+  {
+    "id": 374,
+    "name": "BOSCH",
+    "logo": ""
+  },
+  {
+    "id": 375,
+    "name": "Brembo",
+    "logo": ""
+  },
+  {
+    "id": 376,
+    "name": "Bridgestone",
+    "logo": ""
+  },
+  {
+    "id": 377,
+    "name": "Carri",
+    "logo": ""
+  },
+  {
+    "id": 378,
+    "name": "Chase",
+    "logo": ""
+  },
+  {
+    "id": 379,
+    "name": "CTR",
+    "logo": ""
+  },
+  {
+    "id": 380,
+    "name": "DA JUANE",
+    "logo": ""
+  },
+  {
+    "id": 381,
+    "name": "DENKI",
+    "logo": ""
+  },
+  {
+    "id": 382,
+    "name": "DEPO",
+    "logo": ""
+  },
+  {
+    "id": 383,
+    "name": "DK ",
+    "logo": ""
+  },
+  {
+    "id": 384,
+    "name": "DK-SKI",
+    "logo": ""
+  },
+  {
+    "id": 385,
+    "name": "Dobinsons",
+    "logo": ""
+  },
+  {
+    "id": 386,
+    "name": "DoubleHorse",
+    "logo": ""
+  },
+  {
+    "id": 387,
+    "name": "DUNLOP",
+    "logo": ""
+  },
+  {
+    "id": 388,
+    "name": "Eristic",
+    "logo": ""
+  },
+  {
+    "id": 389,
+    "name": "ERRECOM-EX",
+    "logo": ""
+  },
+  {
+    "id": 390,
+    "name": "FORD",
+    "logo": ""
+  },
+  {
+    "id": 391,
+    "name": "Formula",
+    "logo": ""
+  },
+  {
+    "id": 392,
+    "name": "FPI",
+    "logo": ""
+  },
+  {
+    "id": 393,
+    "name": "GBT",
+    "logo": ""
+  },
+  {
+    "id": 394,
+    "name": "GCR",
+    "logo": ""
+  },
+  {
+    "id": 395,
+    "name": "HANSA",
+    "logo": ""
+  },
+  {
+    "id": 396,
+    "name": "HYUNDAI",
+    "logo": ""
+  },
+  {
+    "id": 397,
+    "name": "IHI",
+    "logo": ""
+  },
+  {
+    "id": 398,
+    "name": "IR.",
+    "logo": ""
+  },
+  {
+    "id": 399,
+    "name": "IRONMAN",
+    "logo": ""
+  },
+  {
+    "id": 400,
+    "name": "KIA",
+    "logo": ""
+  },
+  {
+    "id": 401,
+    "name": "KOITO",
+    "logo": ""
+  },
+  {
+    "id": 402,
+    "name": "KP ",
+    "logo": ""
+  },
+  {
+    "id": 403,
+    "name": "KUMHO",
+    "logo": ""
+  },
+  {
+    "id": 404,
+    "name": "KYB",
+    "logo": ""
+  },
+  {
+    "id": 405,
+    "name": "Land Rover",
+    "logo": ""
   },
   {
     "id": 406,
     "name": "MassFit",
-    "image_url": "/web/image?model=product.brand&id=406&field=logo",
-    "categories": []
+    "logo": ""
+  },
+  {
+    "id": 407,
+    "name": "MERCEDES BENZ",
+    "logo": ""
+  },
+  {
+    "id": 408,
+    "name": "MICHIBA",
+    "logo": ""
+  },
+  {
+    "id": 409,
+    "name": "MOBIL1",
+    "logo": ""
+  },
+  {
+    "id": 410,
+    "name": "MOBIS",
+    "logo": ""
+  },
+  {
+    "id": 411,
+    "name": "MOPPAR",
+    "logo": ""
+  },
+  {
+    "id": 412,
+    "name": "MULLER",
+    "logo": ""
+  },
+  {
+    "id": 413,
+    "name": "NA",
+    "logo": ""
+  },
+  {
+    "id": 414,
+    "name": "NDC",
+    "logo": ""
+  },
+  {
+    "id": 415,
+    "name": "NDG",
+    "logo": ""
+  },
+  {
+    "id": 416,
+    "name": "NGK",
+    "logo": ""
+  },
+  {
+    "id": 469,
+    "name": "PACO",
+    "logo": ""
+  },
+  {
+    "id": 470,
+    "name": "PARAUT",
+    "logo": ""
+  },
+  {
+    "id": 471,
+    "name": "Polar",
+    "logo": ""
+  },
+  {
+    "id": 472,
+    "name": "Polarge",
+    "logo": ""
+  },
+  {
+    "id": 473,
+    "name": "RBI",
+    "logo": ""
+  },
+  {
+    "id": 474,
+    "name": "RDA",
+    "logo": ""
+  },
+  {
+    "id": 475,
+    "name": "RIK ",
+    "logo": ""
+  },
+  {
+    "id": 476,
+    "name": "S.H",
+    "logo": ""
+  },
+  {
+    "id": 477,
+    "name": "SCHMACO",
+    "logo": ""
+  },
+  {
+    "id": 478,
+    "name": "SSS",
+    "logo": ""
+  },
+  {
+    "id": 479,
+    "name": "Tenacity",
+    "logo": ""
+  },
+  {
+    "id": 480,
+    "name": "Terada",
+    "logo": ""
+  },
+  {
+    "id": 481,
+    "name": "TOKICO",
+    "logo": ""
+  },
+  {
+    "id": 482,
+    "name": "TOYO",
+    "logo": ""
   }
 ]

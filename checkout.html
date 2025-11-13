@@ -7,19 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <script src="data/static_api.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/cart-manager.js"></script>
+
   <header class="util">
     <div class="wrap row between">
+      <div class="row" style="gap:12px"></div>
       <div class="row" style="gap:12px">
-        <span style="color:var(--navy1);font-size:14px">Branch</span>
-        <div class="relative">
-          <button class="chip" id="branchBtn">Baghdad - Palestine St.</button>
-        </div>
-      </div>
-      <div class="row" style="gap:12px">
-        <div class="search">
-          <span>🔎</span>
-          <input id="searchInput" placeholder="Search by OE, name, or brand">
-        </div>
         <button class="chip" id="langBtn">AR</button>
         <a class="chip" href="account.html">Account</a>
         <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
@@ -31,359 +26,591 @@
         <a class="tab" href="shop.html">Shop</a>
         <a class="tab" href="services.html">Services</a>
         <a class="tab" href="brands.html">Brands & Partners</a>
-        <a class="tab" href="news.html">News & Guides</a>
         <a class="tab" href="branches.html">Branches</a>
+        <a class="tab" href="news.html">News & Guides</a>
         <a class="tab" href="support.html">Support</a>
-        <a class="tab" href="account.html">Account</a>
         <a class="tab" href="trade.html">Trade Portal</a>
-        <span style="margin-left:auto" class="muted">Live Chat available</span>
       </div>
     </nav>
   </header>
 
   <main class="wrap">
-    <div class="grid" style="grid-template-columns:2fr 1fr;gap:24px;align-items:start">
-      <!-- Checkout Form -->
-      <div>
-        <h1>Checkout</h1>
+    <h1>Checkout</h1>
 
-        <!-- Customer Information -->
-        <div class="card">
-          <h3>Customer Information</h3>
-          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-            <div>
-              <label>First Name *</label>
-              <input type="text" id="firstName" placeholder="First Name" required>
+    <!-- Empty Cart State -->
+    <div id="emptyCart" class="card" style="display: none; text-align: center; padding: 60px 20px;">
+      <div style="font-size: 48px; margin-bottom: 20px;">🛒</div>
+      <h2 style="margin-bottom: 12px;">Your cart is empty</h2>
+      <p class="muted" style="margin-bottom: 24px;">Add some products to checkout</p>
+      <a href="shop.html" class="btn">Continue Shopping</a>
+    </div>
+
+    <!-- Checkout Form -->
+    <div id="checkoutForm" style="display: none;">
+      <div class="grid" style="grid-template-columns: 2fr 1fr; gap: 24px;">
+
+        <!-- Left Column: Customer Information -->
+        <div>
+          <div class="card">
+            <h3>Shipping Information</h3>
+
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" required placeholder="Enter your full name">
             </div>
-            <div>
-              <label>Last Name *</label>
-              <input type="text" id="lastName" placeholder="Last Name" required>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" required placeholder="Enter your email">
             </div>
-            <div style="grid-column:span 2">
-              <label>Email *</label>
-              <input type="email" id="email" placeholder="email@example.com" required>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" required placeholder="Enter your phone number">
             </div>
-            <div style="grid-column:span 2">
-              <label>Phone Number *</label>
-              <input type="tel" id="phone" placeholder="+964 XXX XXX XXXX" required>
+
+            <div class="form-group">
+              <label for="address">Shipping Address *</label>
+              <textarea id="address" required placeholder="Enter your complete address" rows="3"></textarea>
+            </div>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" required placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="area">Area *</label>
+                <input type="text" id="area" required placeholder="Area">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Order Notes (Optional)</label>
+              <textarea id="notes" placeholder="Any special instructions for delivery" rows="2"></textarea>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Payment Method</h3>
+
+            <div class="payment-methods">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="cash" checked>
+                <div class="payment-content">
+                  <div style="font-weight: 600;">Cash on Delivery</div>
+                  <div class="muted" style="font-size: 14px;">Pay when you receive your order</div>
+                </div>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="card">
+                <div class="payment-content">
+                  <div style="font-weight: 600;">Credit/Debit Card</div>
+                  <div class="muted" style="font-size: 14px;">Pay securely with your card</div>
+                </div>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="transfer">
+                <div class="payment-content">
+                  <div style="font-weight: 600;">Bank Transfer</div>
+                  <div class="muted" style="font-size: 14px;">Transfer money to our bank account</div>
+                </div>
+              </label>
+            </div>
+
+            <!-- Card Payment Fields (Hidden by default) -->
+            <div id="cardFields" style="display: none; margin-top: 16px; padding: 16px; background: var(--w2); border-radius: 8px;">
+              <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+              </div>
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div class="form-group">
+                  <label for="expiry">Expiry Date</label>
+                  <input type="text" id="expiry" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="123">
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Shipping Address -->
-        <div class="card">
-          <h3>Shipping Address</h3>
-          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-            <div style="grid-column:span 2">
-              <label>Address *</label>
-              <input type="text" id="address" placeholder="Street Address" required>
-            </div>
-            <div>
-              <label>City *</label>
-              <input type="text" id="city" placeholder="City" required>
-            </div>
-            <div>
-              <label>Region *</label>
-              <select id="region" required>
-                <option value="">Select Region</option>
-                <option value="baghdad">Baghdad</option>
-                <option value="basra">Basra</option>
-                <option value="erbil">Erbil</option>
-                <option value="sulaymaniyah">Sulaymaniyah</option>
-                <option value="mosul">Mosul</option>
-                <option value="kirkuk">Kirkuk</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div>
-              <label>Additional Info</label>
-              <input type="text" id="additionalInfo" placeholder="Apartment, suite, etc.">
-            </div>
-          </div>
-        </div>
+        <!-- Right Column: Order Summary -->
+        <div>
+          <div class="card">
+            <h3>Order Summary</h3>
 
-        <!-- Payment Method -->
-        <div class="card">
-          <h3>Payment Method</h3>
-          <div class="radio-group">
-            <label class="radio">
-              <input type="radio" name="payment" value="cash" checked>
-              <span>Cash on Delivery</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="payment" value="card">
-              <span>Credit/Debit Card</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="payment" value="transfer">
-              <span>Bank Transfer</span>
-            </label>
-          </div>
-        </div>
+            <div id="checkoutItems">
+              <!-- Cart items will be loaded here -->
+            </div>
 
-        <!-- Card Details (Hidden by default) -->
-        <div class="card" id="cardDetails" style="display:none">
-          <h3>Card Details</h3>
-          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-            <div style="grid-column:span 2">
-              <label>Card Number</label>
-              <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+            <div style="border-top: 1px solid var(--w1); padding-top: 16px;">
+              <div class="row between" style="margin-bottom: 8px;">
+                <div class="muted">Subtotal</div>
+                <div id="checkoutSubtotal">IQD 0</div>
+              </div>
+              <div class="row between" style="margin-bottom: 8px;">
+                <div class="muted">Shipping</div>
+                <div id="checkoutShipping">IQD 5,000</div>
+              </div>
+              <div class="row between" style="margin-bottom: 12px;">
+                <div class="muted">Tax</div>
+                <div id="checkoutTax">IQD 0</div>
+              </div>
+              <div class="row between" style="padding-top: 12px; border-top: 1px solid var(--w1); font-weight: 600;">
+                <div>Total</div>
+                <div id="checkoutTotal" style="color: var(--red);">IQD 0</div>
+              </div>
             </div>
-            <div>
-              <label>Expiry Date</label>
-              <input type="text" id="expiryDate" placeholder="MM/YY">
-            </div>
-            <div>
-              <label>CVV</label>
-              <input type="text" id="cvv" placeholder="123">
-            </div>
-            <div style="grid-column:span 2">
-              <label>Cardholder Name</label>
-              <input type="text" id="cardholderName" placeholder="Full Name">
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Order Summary -->
-      <div>
-        <div class="card sticky" style="top:100px">
-          <h3>Order Summary</h3>
-          <div id="checkoutItems">
-            <!-- Cart items will be loaded here -->
-          </div>
-          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--w1)">
+            <button class="btn" style="width: 100%; margin-top: 20px;" id="placeOrderBtn">
+              Place Order
+            </button>
 
-            <div class="row between" style="margin:8px 0">
-              <div class="muted">Subtotal</div>
-              <div id="checkoutSubtotal">IQD 0</div>
-            </div>
-            <div class="row between" style="margin:8px 0">
-              <div class="muted">Shipping</div>
-              <div id="checkoutShipping">IQD 5,000</div>
-            </div>
-            <div class="row between" style="margin:12px 0;padding-top:12px;border-top:1px solid var(--w1)">
-              <div style="font-weight:600">Total</div>
-              <div id="checkoutTotal" style="font-weight:600;color:var(--red)">IQD 0</div>
-            </div>
+            <a href="cart.html" class="btn secondary" style="width: 100%; margin-top: 8px; text-align: center; display: block; text-decoration: none;">
+              Back to Cart
+            </a>
           </div>
-          <button class="btn" style="width:100%;margin-top:16px" id="placeOrderBtn">
-            Place Order
-          </button>
-          <a href="cart.html" class="btn secondary" style="width:100%;margin-top:8px;text-align:center;display:block;text-decoration:none">
-            Back to Cart
-          </a>
         </div>
       </div>
     </div>
   </main>
 
-  <script src="js/api.js"></script>
+  <style>
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--w3);
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .payment-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .payment-option {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--w3);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .payment-option:hover {
+      border-color: var(--primary);
+    }
+
+    .payment-option input[type="radio"] {
+      margin-right: 12px;
+    }
+
+    .payment-content {
+      flex: 1;
+    }
+
+    .checkout-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--w1);
+    }
+
+    .checkout-item:last-child {
+      border-bottom: none;
+    }
+
+    .checkout-item-image {
+      width: 60px;
+      height: 60px;
+      background: var(--w2);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .checkout-item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .checkout-item-details {
+      flex: 1;
+    }
+
+    .checkout-item-name {
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .checkout-item-price {
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    .checkout-item-quantity {
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+
   <script>
-    class CheckoutManager {
+  class CheckoutPage {
       constructor() {
-        this.api = new AlSajiAPI();
-        this.cartData = null;
-        this.init();
+          this.cart = null;
+          this.init();
       }
 
       async init() {
-        await this.loadCart();
-        this.setupEventListeners();
-        this.updateCartCount();
+          console.log('🛒 Initializing checkout page...');
+          await this.loadCart();
+          this.setupEventListeners();
+          this.updateCartCount();
       }
 
       async loadCart() {
-        try {
-          const result = await this.api.getCart();
-          if (result.success && result.cart.lines.length > 0) {
-            this.cartData = result.cart;
-            this.renderCheckoutItems();
-            this.updateTotals();
-          } else {
-            this.showEmptyCart();
+          try {
+              // Wait for API to be available
+              if (typeof alsajiAPI === 'undefined') {
+                  console.log('Waiting for API...');
+                  setTimeout(() => this.loadCart(), 100);
+                  return;
+              }
+
+              const cartResult = await alsajiAPI.getCart();
+              if (cartResult.success && cartResult.cart.items.length > 0) {
+                  this.cart = cartResult.cart;
+                  this.showCheckoutForm();
+                  this.renderOrderSummary();
+              } else {
+                  this.showEmptyCart();
+              }
+          } catch (error) {
+              console.error('Failed to load cart:', error);
+              this.showEmptyCart();
           }
-        } catch (error) {
-          console.error('Error loading cart:', error);
-          this.showEmptyCart();
-        }
       }
 
-      renderCheckoutItems() {
-        const container = document.getElementById('checkoutItems');
-        container.innerHTML = '';
-
-        this.cartData.lines.forEach(item => {
-          const itemElement = document.createElement('div');
-          itemElement.className = 'row between';
-          itemElement.style.cssText = 'padding:8px 0;border-bottom:1px solid var(--w1);align-items:center';
-
-          itemElement.innerHTML = `
-            <div style="flex:1">
-              <div style="font-weight:500;font-size:14px">${this.escapeHtml(item.product_name)}</div>
-              <div class="muted" style="font-size:12px">Qty: ${item.quantity}</div>
-            </div>
-            <div style="font-weight:600;font-size:14px">IQD ${this.formatPrice(item.total)}</div>
-          `;
-
-          container.appendChild(itemElement);
-        });
-      }
-
-      updateTotals() {
-        if (!this.cartData) return;
-
-        const subtotal = this.cartData.total_amount || 0;
-        const shipping = 5000;
-        const total = subtotal + shipping;
-
-        document.getElementById('checkoutSubtotal').textContent = `IQD ${this.formatPrice(subtotal)}`;
-        document.getElementById('checkoutTotal').textContent = `IQD ${this.formatPrice(total)}`;
-      }
-
-      updateCartCount() {
-        const count = this.cartData ? this.cartData.cart_count : 0;
-        document.getElementById('cartCount').textContent = count;
+      showCheckoutForm() {
+          document.getElementById('emptyCart').style.display = 'none';
+          document.getElementById('checkoutForm').style.display = 'block';
       }
 
       showEmptyCart() {
-        alert('Your cart is empty! Please add some items before checkout.');
-        window.location.href = 'shop.html';
+          document.getElementById('emptyCart').style.display = 'block';
+          document.getElementById('checkoutForm').style.display = 'none';
+      }
+
+      renderOrderSummary() {
+          if (!this.cart) return;
+
+          const itemsContainer = document.getElementById('checkoutItems');
+          itemsContainer.innerHTML = this.cart.items.map(item => `
+              <div class="checkout-item">
+                  <div class="checkout-item-image">
+                      ${item.image ?
+                          `<img src="${item.image}" alt="${item.name}">` :
+                          '<div class="muted" style="font-size:12px">No Image</div>'
+                      }
+                  </div>
+                  <div class="checkout-item-details">
+                      <div class="checkout-item-name">${this.escapeHtml(item.name)}</div>
+                      <div class="checkout-item-quantity">Qty: ${item.quantity}</div>
+                  </div>
+                  <div class="checkout-item-price">IQD ${(item.subtotal || 0).toLocaleString()}</div>
+              </div>
+          `).join('');
+
+          this.updateTotals();
+      }
+
+      updateTotals() {
+          if (!this.cart) return;
+
+          const subtotal = this.cart.total || 0;
+          const shipping = 5000; // Fixed shipping cost
+          const tax = Math.round(subtotal * 0.05); // 5% tax
+          const total = subtotal + shipping + tax;
+
+          document.getElementById('checkoutSubtotal').textContent = `IQD ${subtotal.toLocaleString()}`;
+          document.getElementById('checkoutShipping').textContent = `IQD ${shipping.toLocaleString()}`;
+          document.getElementById('checkoutTax').textContent = `IQD ${tax.toLocaleString()}`;
+          document.getElementById('checkoutTotal').textContent = `IQD ${total.toLocaleString()}`;
       }
 
       setupEventListeners() {
-        // Payment method toggle
-        document.querySelectorAll('input[name="payment"]').forEach(radio => {
-          radio.addEventListener('change', (e) => {
-            const cardDetails = document.getElementById('cardDetails');
-            cardDetails.style.display = e.target.value === 'card' ? 'block' : 'none';
+          // Payment method changes
+          document.querySelectorAll('input[name="payment"]').forEach(radio => {
+              radio.addEventListener('change', (e) => {
+                  this.toggleCardFields(e.target.value === 'card');
+              });
           });
-        });
 
-        // Place order button
-        document.getElementById('placeOrderBtn').addEventListener('click', () => {
-          this.placeOrder();
-        });
+          // Place order button
+          document.getElementById('placeOrderBtn').addEventListener('click', () => {
+              this.placeOrder();
+          });
+
+          // Update cart count
+          this.updateCartCount();
       }
 
-      async placeOrder() {
-        // Validate form
-        if (!this.validateForm()) {
-          return;
-        }
+      toggleCardFields(show) {
+          const cardFields = document.getElementById('cardFields');
+          cardFields.style.display = show ? 'block' : 'none';
 
-        const orderData = this.collectOrderData();
+          // Toggle required attribute for card fields
+          const cardInputs = cardFields.querySelectorAll('input');
+          cardInputs.forEach(input => {
+              input.required = show;
+          });
+      }
 
-        try {
+  async placeOrder() {
+      try {
+          // Validate form
+          if (!this.validateForm()) {
+              return;
+          }
+
+          // Get form data
+          const formData = this.getFormData();
+          const orderNumber = 'ALS' + Date.now().toString().slice(-8);
+
           // Show loading state
           const btn = document.getElementById('placeOrderBtn');
+          const originalText = btn.textContent;
+          btn.textContent = 'Creating Order...';
           btn.disabled = true;
-          btn.textContent = 'Processing...';
 
-          // Process order
-          const result = await this.processOrder(orderData);
+          // Process order (this now sends to Odoo)
+          const orderResult = await this.processOrder({
+              ...formData,
+              order_number: orderNumber
+          });
 
-          if (result.success) {
-            this.showSuccess(result.order_id);
+          if (orderResult.success) {
+              // Clear cart
+              await alsajiAPI.clearCart();
+
+              // Redirect to confirmation page
+              const totalAmount = this.cart.total + 5000 + Math.round(this.cart.total * 0.05);
+              const urlParams = new URLSearchParams({
+                  order: orderNumber,
+                  total: totalAmount,
+                  odoo_id: orderResult.odoo_order_id || 'manual'
+              });
+
+              window.location.href = `order-confirmed.html?${urlParams.toString()}`;
           } else {
-            alert('Failed to place order: ' + result.error);
-            btn.disabled = false;
-            btn.textContent = 'Place Order';
+              throw new Error(orderResult.error);
           }
-        } catch (error) {
-          console.error('Order placement error:', error);
-          alert('Error placing order. Please try again.');
+
+      } catch (error) {
+          console.error('Order failed:', error);
+          alert('Failed to place order: ' + error.message);
+
+          // Reset button
           const btn = document.getElementById('placeOrderBtn');
-          btn.disabled = false;
           btn.textContent = 'Place Order';
-        }
+          btn.disabled = false;
       }
-
+  }
       validateForm() {
-        const required = ['firstName', 'lastName', 'email', 'phone', 'address', 'city', 'region'];
+          const requiredFields = ['fullName', 'email', 'phone', 'address', 'city', 'area'];
+          let isValid = true;
 
-        for (const field of required) {
-          const element = document.getElementById(field);
-          if (!element.value.trim()) {
-            alert(`Please fill in ${field.replace(/([A-Z])/g, ' $1').toLowerCase()}`);
-            element.focus();
-            return false;
+          requiredFields.forEach(fieldId => {
+              const field = document.getElementById(fieldId);
+              if (!field.value.trim()) {
+                  field.style.borderColor = 'var(--red)';
+                  isValid = false;
+              } else {
+                  field.style.borderColor = '';
+              }
+          });
+
+          // Email validation
+          const email = document.getElementById('email');
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (email.value && !emailRegex.test(email.value)) {
+              email.style.borderColor = 'var(--red)';
+              isValid = false;
+              alert('Please enter a valid email address');
           }
-        }
 
-        // Email validation
-        const email = document.getElementById('email').value;
-        if (!this.isValidEmail(email)) {
-          alert('Please enter a valid email address');
-          return false;
-        }
-
-        return true;
-      }
-
-      collectOrderData() {
-        const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
-
-        return {
-          customer: {
-            first_name: document.getElementById('firstName').value,
-            last_name: document.getElementById('lastName').value,
-            email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value
-          },
-          shipping: {
-            address: document.getElementById('address').value,
-            city: document.getElementById('city').value,
-            region: document.getElementById('region').value,
-            additional_info: document.getElementById('additionalInfo').value
-          },
-          payment: {
-            method: paymentMethod,
-            ...(paymentMethod === 'card' ? {
-              card_number: document.getElementById('cardNumber').value,
-              expiry_date: document.getElementById('expiryDate').value,
-              cvv: document.getElementById('cvv').value,
-              cardholder_name: document.getElementById('cardholderName').value
-            } : {})
+          if (!isValid) {
+              alert('Please fill in all required fields correctly.');
           }
-        };
+
+          return isValid;
       }
 
-      async processOrder(orderData) {
-        // This will call your Odoo API to create the actual order
-        return await this.api.placeOrder(orderData);
+      getFormData() {
+          const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+
+          return {
+              customer: {
+                  fullName: document.getElementById('fullName').value,
+                  email: document.getElementById('email').value,
+                  phone: document.getElementById('phone').value,
+                  address: document.getElementById('address').value,
+                  city: document.getElementById('city').value,
+                  area: document.getElementById('area').value,
+                  notes: document.getElementById('notes').value
+              },
+              payment: paymentMethod,
+              cardDetails: paymentMethod === 'card' ? {
+                  cardNumber: document.getElementById('cardNumber').value,
+                  expiry: document.getElementById('expiry').value,
+                  cvv: document.getElementById('cvv').value
+              } : null,
+              order: this.cart,
+              timestamp: new Date().toISOString()
+          };
       }
 
-      showSuccess(orderId) {
-        // Redirect to success page or show confirmation
-        alert(`Order placed successfully! Order ID: ${orderId}`);
-        // Clear cart and redirect
-        this.api.clearCart();
-        window.location.href = 'order-success.html?order=' + orderId;
+  async processOrder(formData) {
+      // Prepare order data for Odoo
+      const orderData = {
+          order_number: formData.order_number || 'ALS' + Date.now().toString().slice(-8),
+          customer: formData.customer,
+          payment: formData.payment,
+          items: this.cart.items.map(item => ({
+              product_id: item.product_id,
+              name: item.name,
+              quantity: item.quantity,
+              unit_price: item.unit_price,
+              subtotal: item.subtotal
+          })),
+          total: this.cart.total,
+          shipping: 5000,
+          tax: Math.round(this.cart.total * 0.05),
+          timestamp: formData.timestamp
+      };
+
+      try {
+          // Send order to Odoo
+          const odooResult = await alsajiAPI.createOdooOrder(orderData);
+
+          if (odooResult.success) {
+              console.log('✅ Order created in Odoo:', odooResult.odoo_order_id);
+              return {
+                  success: true,
+                  odoo_order_id: odooResult.odoo_order_id,
+                  message: 'Order created successfully in Odoo'
+              };
+          } else {
+              throw new Error(odooResult.error || 'Failed to create order in Odoo');
+          }
+
+      } catch (error) {
+          console.error('❌ Odoo order creation failed:', error);
+
+          // Fallback: Save order for manual processing
+          this.saveOrderForManualProcessing(orderData);
+
+          return {
+              success: true,
+              fallback: true,
+              message: 'Order saved for manual processing (Odoo unavailable)'
+          };
+      }
+  }
+
+  saveOrderForManualProcessing(orderData) {
+      try {
+          let pendingOrders = JSON.parse(localStorage.getItem('alsaji_pending_orders') || '[]');
+          pendingOrders.push({
+              ...orderData,
+              created_at: new Date().toISOString(),
+              status: 'pending'
+          });
+          localStorage.setItem('alsaji_pending_orders', JSON.stringify(pendingOrders));
+          console.log('📋 Order saved for manual processing');
+      } catch (error) {
+          console.error('Failed to save order for manual processing:', error);
+      }
+  }
+
+      async updateCartCount() {
+          try {
+              if (typeof alsajiAPI === 'undefined') return;
+
+              const cartResult = await alsajiAPI.getCart();
+              const count = cartResult.cart.item_count || 0;
+
+              const cartCountElement = document.getElementById('cartCount');
+              if (cartCountElement) {
+                  cartCountElement.textContent = count;
+              }
+          } catch (error) {
+              console.error('Failed to update cart count:', error);
+          }
       }
 
-      isValidEmail(email) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      escapeHtml(text) {
+          if (!text) return '';
+          const div = document.createElement('div');
+          div.textContent = text;
+          return div.innerHTML;
       }
+  }
 
-      formatPrice(price) {
-        return new Intl.NumberFormat().format(price);
-      }
+  // Initialize checkout page
+  document.addEventListener('DOMContentLoaded', () => {
+      window.checkoutPage = new CheckoutPage();
+  });
 
-      escapeHtml(unsafe) {
-        return unsafe
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/"/g, "&quot;")
-          .replace(/'/g, "&#039;");
-      }
-    }
+    // In your main app.js or wherever you initialize the API
+document.addEventListener('DOMContentLoaded', function() {
+    // Set Odoo credentials
+    alsajiAPI.setCredentials('mntr59@gmail.com', '0212');
 
-    // Initialize checkout manager
-    document.addEventListener('DOMContentLoaded', () => {
-      new CheckoutManager();
+    // This will automatically authenticate when needed
+    alsajiAPI.ensureAuthenticated().then(authenticated => {
+        if (authenticated) {
+            console.log('✅ Auto-login successful');
+        } else {
+            console.error('❌ Auto-login failed');
+        }
     });
+});
   </script>
+
 </body>
 </html>

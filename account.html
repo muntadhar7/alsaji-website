@@ -5,74 +5,441 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Account - AlSaji Auto Parts</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .login-section, .account-section { display: none; }
+    .login-section.active, .account-section.active { display: block; }
+    .user-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--red);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .account-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding: 20px;
+      background: linear-gradient(135deg, var(--ink1), var(--navy1));
+      border-radius: 16px;
+      color: white;
+    }
+    .account-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--w2);
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--w1);
+      transition: all 0.3s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .stat-number {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--red);
+      display: block;
+    }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: var(--ink1);
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--w1);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--red);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(188,20,44,0.1);
+    }
+    .feature-card {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid var(--w1);
+    }
+    .feature-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--red);
+      box-shadow: 0 4px 12px rgba(188,20,44,0.1);
+    }
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .section-content {
+      display: none;
+    }
+    .section-content.active {
+      display: block;
+    }
+    .order-item, .vehicle-item, .address-item {
+      border: 1px solid var(--w1);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      background: white;
+    }
+    .order-status {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .status-pending { background: #fff3cd; color: #856404; }
+    .status-confirmed { background: #d1ecf1; color: #0c5460; }
+    .status-shipped { background: #d4edda; color: #155724; }
+    .status-delivered { background: #e2e3e5; color: #383d41; }
+    .btn-small {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  </style>
 </head>
-<body style="visibility:hidden;">
+<body>
 
   <main class="wrap">
-    <h1>My Account</h1>
-    <div class="row" style="gap:8px;margin-bottom:16px">
-      <button class="chip active" id="acctRetail">Retail</button>
-      <button class="chip" id="acctTrade">Trade</button>
-    </div>
+    <!-- Login Section -->
+    <div class="login-section active" id="loginSection">
+      <div class="card" style="max-width: 400px; margin: 40px auto; text-align: center;">
+        <h1>Welcome Back</h1>
+        <p class="muted" style="margin-bottom: 24px;">Sign in to your AlSaji account</p>
 
-    <div class="card" id="acctRetailView">
-      <h2>Retail Account</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <div class="muted">Orders</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>View order history and track shipments</div>
-        </div>
-        <div class="card">
-          <div class="muted">Returns</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>Manage returns and refunds</div>
-        </div>
-        <div class="card">
-          <div class="muted">Saved Vehicles</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>Your saved vehicle configurations</div>
-        </div>
-        <div class="card">
-          <div class="muted">Addresses</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>Manage shipping addresses</div>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" required placeholder="your@email.com" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="password" required placeholder="Enter your password" autocomplete="current-password">
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%; margin-bottom: 16px;">
+            Sign In
+          </button>
+
+          <div class="row between" style="margin-bottom: 16px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-size: 14px;">
+              <input type="checkbox" name="remember"> Remember me
+            </label>
+            <a href="#" class="muted" style="font-size: 14px;">Forgot password?</a>
+          </div>
+        </form>
+
+        <div style="border-top: 1px solid var(--w1); padding-top: 16px;">
+          <p class="muted" style="margin-bottom: 12px;">Don't have an account?</p>
+          <button class="btn secondary" id="showRegister" style="width: 100%;">
+            Create Trade Account
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="card" id="acctTradeView" style="display:none">
-      <h2>Trade Account</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <div class="muted">Users & Roles</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>Manage team members and permissions</div>
+    <!-- Account Dashboard -->
+    <div class="account-section" id="accountSection">
+      <!-- Account Header -->
+      <div class="account-header">
+        <div class="user-avatar" id="userAvatar">U</div>
+        <div style="flex: 1;">
+          <h1 id="userName" style="margin: 0; color: white;">Loading...</h1>
+          <p class="muted" id="userEmail" style="color: rgba(255,255,255,0.8); margin: 4px 0;">Loading...</p>
+          <p id="accountType" style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">
+            <span id="accountTypeBadge" class="chip" style="background: rgba(255,255,255,0.2); color: white;">Account Type</span>
+          </p>
         </div>
-        <div class="card">
-          <div class="muted">Price Lists</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>View trade-specific pricing</div>
+        <button class="btn secondary" id="logoutBtn" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">Sign Out</button>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="account-stats">
+        <div class="stat-card">
+          <span class="stat-number" id="ordersCount">0</span>
+          <span class="muted">Total Orders</span>
         </div>
-        <div class="card">
-          <div class="muted">Statements</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>Account statements and invoices</div>
+        <div class="stat-card">
+          <span class="stat-number" id="vehiclesCount">0</span>
+          <span class="muted">Saved Vehicles</span>
         </div>
-        <div class="card">
-          <div class="muted">Approvals</div>
-          <div class="image" style="height:40px;margin:8px 0"></div>
-          <div>Purchase approvals workflow</div>
+        <div class="stat-card">
+          <span class="stat-number" id="tradeDiscount">0%</span>
+          <span class="muted">Trade Discount</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="accountSince">2024</span>
+          <span class="muted">Member Since</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="row" style="gap:8px;margin-bottom:16px; flex-wrap: wrap;">
+        <button class="chip active" id="acctRetail">📦 Orders & Returns</button>
+        <button class="chip" id="acctTrade">🚗 My Vehicles</button>
+        <button class="chip" id="acctAddresses">🏠 Addresses</button>
+        <button class="chip" id="acctProfile">👤 Profile</button>
+      </div>
+
+      <!-- Orders & Returns View -->
+      <div class="account-section active" id="acctRetailView">
+        <div class="row between" style="margin-bottom: 16px;">
+          <h2>Order History</h2>
+          <button class="btn secondary" onclick="loadSampleOrders()">Load Sample Data</button>
+        </div>
+
+        <div id="ordersContent" class="section-content active">
+          <div class="card">
+            <div id="ordersList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">📦</div>
+                <h3>No orders yet</h3>
+                <p>Your order history will appear here</p>
+                <button class="btn" onclick="window.location.href='shop.html'">Start Shopping</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="returnsContent" class="section-content">
+          <div class="card">
+            <h3>Returns & Refunds</h3>
+            <p class="muted">Manage your returns and refund requests</p>
+            <div id="returnsList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🔄</div>
+                <h3>No returns</h3>
+                <p>You haven't requested any returns yet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vehicles View -->
+      <div class="account-section" id="acctTradeView">
+        <div class="row between" style="margin-bottom: 16px;">
+          <h2>Saved Vehicles</h2>
+          <button class="btn" onclick="showAddVehicleForm()">+ Add Vehicle</button>
+        </div>
+
+        <div id="vehiclesContent" class="section-content active">
+          <div class="card">
+            <div id="vehiclesList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🚗</div>
+                <h3>No vehicles saved</h3>
+                <p>Add your vehicles to get personalized part recommendations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="addVehicleContent" class="section-content">
+          <div class="card">
+            <h3>Add New Vehicle</h3>
+            <form id="addVehicleForm">
+              <div class="grid cols-3" style="gap: 12px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="vehicleMake">Make</label>
+                  <select id="vehicleMake" name="make" required>
+                    <option value="">Select Make</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="kia">Kia</option>
+                    <option value="mitsubishi">Mitsubishi</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="vehicleModel">Model</label>
+                  <input type="text" id="vehicleModel" name="model" required placeholder="e.g., Camry">
+                </div>
+                <div class="form-group">
+                  <label for="vehicleYear">Year</label>
+                  <select id="vehicleYear" name="year" required>
+                    <option value="">Select Year</option>
+                    <!-- Years will be populated by JavaScript -->
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="vehicleNickname">Nickname (Optional)</label>
+                <input type="text" id="vehicleNickname" name="nickname" placeholder="e.g., My Daily Driver">
+              </div>
+              <div class="row" style="gap: 8px;">
+                <button type="submit" class="btn">Save Vehicle</button>
+                <button type="button" class="btn secondary" onclick="showVehiclesList()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Addresses View -->
+      <div class="account-section" id="acctAddressesView">
+        <div class="row between" style="margin-bottom: 16px;">
+          <h2>Shipping Addresses</h2>
+          <button class="btn" onclick="showAddAddressForm()">+ Add Address</button>
+        </div>
+
+        <div id="addressesContent" class="section-content active">
+          <div class="card">
+            <div id="addressesList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🏠</div>
+                <h3>No addresses saved</h3>
+                <p>Add your shipping addresses for faster checkout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="addAddressContent" class="section-content">
+          <div class="card">
+            <h3>Add New Address</h3>
+            <form id="addAddressForm">
+              <div class="grid cols-2" style="gap: 12px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="addressName">Full Name</label>
+                  <input type="text" id="addressName" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="addressPhone">Phone</label>
+                  <input type="tel" id="addressPhone" name="phone" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="addressStreet">Street Address</label>
+                <input type="text" id="addressStreet" name="street" required>
+              </div>
+              <div class="grid cols-3" style="gap: 12px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="addressCity">City</label>
+                  <input type="text" id="addressCity" name="city" required>
+                </div>
+                <div class="form-group">
+                  <label for="addressArea">Area</label>
+                  <input type="text" id="addressArea" name="area" required>
+                </div>
+                <div class="form-group">
+                  <label for="addressType">Address Type</label>
+                  <select id="addressType" name="type" required>
+                    <option value="home">Home</option>
+                    <option value="work">Work</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row" style="gap: 8px;">
+                <button type="submit" class="btn">Save Address</button>
+                <button type="button" class="btn secondary" onclick="showAddressesList()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile View -->
+      <div class="account-section" id="acctProfileView">
+        <h2>Profile Settings</h2>
+        <div class="grid cols-2" style="gap: 24px;">
+          <div class="card">
+            <h3>Personal Information</h3>
+            <form id="profileForm">
+              <div class="grid cols-2" style="gap: 12px;">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+
+              <button type="submit" class="btn">Update Profile</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Account Settings</h3>
+            <div class="form-group">
+              <label>Account Type</label>
+              <div style="padding: 12px; background: var(--w2); border-radius: 8px;">
+                <strong id="displayAccountType">Retail Customer</strong>
+                <p class="muted" style="margin: 4px 0 0 0; font-size: 12px;">
+                  <span id="displayBenefits">Standard pricing and features</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <button class="btn secondary" style="width: 100%;" onclick="showChangePassword()">
+                Change Password
+              </button>
+            </div>
+
+            <div class="form-group">
+              <label>Notifications</label>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="display: flex; align-items: center; gap: 8px;">
+                  <input type="checkbox" checked> Order updates
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px;">
+                  <input type="checkbox" checked> Promotional offers
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px;">
+                  <input type="checkbox"> Price drop alerts
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
-
-
   <script src="js/layout.js"></script>
+  <script src="data/static_api.js"></script>
   <script src="js/api.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/account.js"></script>
 </body>
 </html>

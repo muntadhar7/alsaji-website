@@ -1,150 +1,33 @@
 window.filter-data = {
-  "categories": [
-    {
-      "name": "Car Care - العناية",
-      "count": 1,
-      "slug": "car-care--العناية"
-    },
-    {
-      "name": "Motor Oil - زيوت المحرك",
-      "count": 1,
-      "slug": "motor-oil--زيوت-المحرك"
-    }
-  ],
-  "brands": [
-    {
-      "name": "Denso",
-      "count": 97,
-      "slug": "denso"
-    },
-    {
-      "name": "DAISEN-HY",
-      "count": 627,
-      "slug": "daisen-hy"
-    },
-    {
-      "name": "DAISEN",
-      "count": 114,
-      "slug": "daisen"
-    },
-    {
-      "name": "AISIN-LUB",
-      "count": 36,
-      "slug": "aisin-lub"
-    },
-    {
-      "name": "MassFit",
-      "count": 3,
-      "slug": "massfit"
-    },
-    {
-      "name": "ERRECOM",
-      "count": 15,
-      "slug": "errecom"
-    },
-    {
-      "name": "Toyota",
-      "count": 13,
-      "slug": "toyota"
-    },
-    {
-      "name": "Veedol",
-      "count": 10,
-      "slug": "veedol"
-    },
-    {
-      "name": "AISIN",
-      "count": 113,
-      "slug": "aisin"
-    },
-    {
-      "name": "ADVICS",
-      "count": 37,
-      "slug": "advics"
-    },
-    {
-      "name": "DLAA",
-      "count": 34,
-      "slug": "dlaa"
-    },
-    {
-      "name": "Nissan ",
-      "count": 4,
-      "slug": "nissan"
-    },
-    {
-      "name": "Uncle",
-      "count": 1,
-      "slug": "uncle"
-    },
-    {
-      "name": "GBT",
-      "count": 14,
-      "slug": "gbt"
-    },
-    {
-      "name": "AISAN",
-      "count": 6,
-      "slug": "aisan"
-    },
-    {
-      "name": "Vstar",
-      "count": 5,
-      "slug": "vstar"
-    },
-    {
-      "name": "KP ",
-      "count": 9,
-      "slug": "kp"
-    },
-    {
-      "name": "DAISEN - RADS",
-      "count": 87,
-      "slug": "daisen--rads"
-    },
-    {
-      "name": "KOYO",
-      "count": 1,
-      "slug": "koyo"
-    },
-    {
-      "name": "DAISEN-M",
-      "count": 98,
-      "slug": "daisen-m"
-    }
-  ],
+  "categories": [],
+  "brands": [],
+  "vehicle_brands": [],
   "price_ranges": [
     {
       "min": 0.0,
-      "max": 312400.0,
-      "count": 1300,
-      "label": "$0.00 - $312400.00"
+      "max": 324400.0,
+      "count": 1311,
+      "label": "$0.00 - $324400.00"
     },
     {
-      "min": 312400.01,
-      "max": 624800.01,
-      "count": 18,
-      "label": "$312400.01 - $624800.01"
+      "min": 324400.01,
+      "max": 648800.01,
+      "count": 11,
+      "label": "$324400.01 - $648800.01"
     },
     {
-      "min": 624800.02,
-      "max": 937200.02,
+      "min": 648800.02,
+      "max": 973200.02,
       "count": 4,
-      "label": "$624800.02 - $937200.02"
+      "label": "$648800.02 - $973200.02"
     },
     {
-      "min": 937200.03,
-      "max": 1249600.03,
-      "count": 2,
-      "label": "$937200.03 - $1249600.03"
-    },
-    {
-      "min": 1249600.04,
-      "max": 1562000.04,
+      "min": 1297600.04,
+      "max": 1622000.04,
       "count": 1,
-      "label": "$1249600.04 - $1562000.04"
+      "label": "$1297600.04 - $1622000.04"
     }
   ],
   "branches": [],
-  "last_updated": "2025-11-10T16:27:32.105576"
+  "last_updated": "2025-11-13T20:00:29.216162"
 };

@@ -103,9 +103,9 @@ function getBrandImageUrl(brand) {
     // Handle both object and string formats
     const brandObj = typeof brand === 'object' ? brand : { name: String(brand) };
 
-    if (brandObj.image_url) {
-        const imageUrl = brandObj.image_url;
-        return imageUrl.startsWith('http') ? imageUrl : `http://localhost:8888${imageUrl}`;
+    if (brandObj.logo) {
+        const imageUrl = brandObj.logo;
+        return imageUrl
     }
 
     // Fallback to placeholder
