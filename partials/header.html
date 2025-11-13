@@ -49,6 +49,31 @@
       <a class="tab" href="trade.html">Trade Portal</a>
     </div>
   </nav>
+
+
+
+    <script>
+        // Fix paths automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const isGitHub = window.location.hostname.includes('github.io');
+            if (!isGitHub) return;
+            
+            // Fix all local absolute paths
+            document.querySelectorAll('a[href^="/"]').forEach(el => {
+                el.href = '/alsaji-website' + el.getAttribute('href');
+            });
+            document.querySelectorAll('link[href^="/"]').forEach(el => {
+                el.href = '/alsaji-website' + el.getAttribute('href');
+            });
+            document.querySelectorAll('script[src^="/"]').forEach(el => {
+                el.src = '/alsaji-website' + el.getAttribute('src');
+            });
+            document.querySelectorAll('img[src^="/"]').forEach(el => {
+                el.src = '/alsaji-website' + el.getAttribute('src');
+            });
+        });
+    </script>
+
 </header>
 
 <style>
