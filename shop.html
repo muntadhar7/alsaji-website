@@ -92,6 +92,8 @@
 </head>
 <body style="visibility:hidden;">
 <!-- Load static data FIRST -->
+    <script src="js/main.js"></script>
+
     <script src="data/static_api.js"></script>
 
     <!-- Then load API -->
@@ -107,13 +109,20 @@
   <main class="wrap">
     <div class="grid shop">
       <aside class="card">
-        <div class="muted" id="resultsCount">Loading products...</div>
-        <h2 class="bold" style="margin-bottom:6px">Your vehicle</h2>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding: 8px 8px">
+          <div class="muted" id="resultsCount">Loading products...</div>
+          <h2 class="bold" style="margin: 0">Your vehicle</h2>
+        </div>
         <div id="vehBox" class="card" style="background:#f9f7f9">
           <div class="muted">No vehicle selected</div>
         </div>
-        <h2 style="margin-top:12px">Filters</h2>
-        <div class="card" style="margin-top:8px">
+        <div class="row between" style="align-items: center; padding: 8px 8px">
+          <h2 style="margin: 0 0 0 0;">Filters</h2>
+          <button class="btn clear-filters" style="white-space: nowrap;">
+            Clear Filters
+          </button>
+        </div>
+        <div class="card" >
           <div class="muted">Brand</div>
           <select class="select" id="filterBrand">
             <option value="">All Brands</option>
@@ -189,7 +198,6 @@
     </div>
   </main>
 
-  <script src="js/layout.js"></script>
   <script src="data/json/vehicle_compatibility_index.js"></script>
   <script src="js/shop.js"></script>
 

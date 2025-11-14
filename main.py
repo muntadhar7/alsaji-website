@@ -1212,8 +1212,8 @@ class AlSajiDataExporter:
         Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
     </div>
 
-    <script src="../json/filter-data.js"></script>
-    <script src="../json/search-index.js"></script>
+    <script src="..json/filter-data.js"></script>
+    <script src="..json/search-index.js"></script>
     <script src="filtering.js"></script>
 </body>
 </html>"""

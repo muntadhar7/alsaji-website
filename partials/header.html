@@ -49,41 +49,16 @@
       <a class="tab" href="trade.html">Trade Portal</a>
     </div>
   </nav>
-
-
-
-    <script>
-        // Fix paths automatically
-        document.addEventListener('DOMContentLoaded', function() {
-            const isGitHub = window.location.hostname.includes('github.io');
-            if (!isGitHub) return;
-            
-            // Fix all local absolute paths
-            document.querySelectorAll('a[href^="/"]').forEach(el => {
-                el.href = '/alsaji-website' + el.getAttribute('href');
-            });
-            document.querySelectorAll('link[href^="/"]').forEach(el => {
-                el.href = '/alsaji-website' + el.getAttribute('href');
-            });
-            document.querySelectorAll('script[src^="/"]').forEach(el => {
-                el.src = '/alsaji-website' + el.getAttribute('src');
-            });
-            document.querySelectorAll('img[src^="/"]').forEach(el => {
-                el.src = '/alsaji-website' + el.getAttribute('src');
-            });
-        });
-    </script>
-
 </header>
 
 <style>
+  /* Your existing CSS styles here - keep all the CSS */
   /* Prevent horizontal scrolling globally */
   html, body {
     overflow-x: hidden;
     max-width: 100%;
   }
 
-  /* Cart Chip Styling for mobile */
   .cart-chip {
     display: flex;
     align-items: center;
@@ -95,7 +70,6 @@
     font-size: 16px;
   }
 
-  /* Hamburger Button - Hidden on desktop */
   .hamburger-btn {
     display: none;
     flex-direction: column;
@@ -117,7 +91,6 @@
     transition: all 0.3s ease;
   }
 
-  /* Mobile Navigation - Hidden on desktop */
   .mobile-nav {
     display: none;
     position: fixed;
@@ -146,7 +119,6 @@
     box-sizing: border-box;
   }
 
-  /* Close button inside mobile nav */
   .mobile-nav-close {
     position: absolute;
     top: 20px;
@@ -190,17 +162,14 @@
       display: flex;
     }
 
-    /* Hide original nav on mobile */
     .nav {
       display: none;
     }
 
-    /* Show mobile nav */
     .mobile-nav {
       display: block;
     }
 
-    /* Mobile header layout - Two rows: logo row and actions row */
     .util .wrap.row.between {
       display: flex;
       flex-direction: column;
@@ -212,7 +181,6 @@
       overflow: hidden;
     }
 
-    /* First row: Logo centered */
     .util .wrap.row.between > .row:first-child {
       width: 100%;
       display: flex;
@@ -221,7 +189,6 @@
       max-width: 100%;
     }
 
-    /* Second row: Actions aligned to right */
     .header-actions {
       width: 100%;
       display: flex;
@@ -232,13 +199,11 @@
       flex-wrap: wrap;
     }
 
-    /* Ensure logo is properly sized on mobile */
     .logo img {
       height: 32px !important;
       max-width: 100%;
     }
 
-    /* Adjust chip sizes for mobile */
     .chip {
       padding: 6px 10px;
       font-size: 13px;
@@ -246,14 +211,12 @@
       box-sizing: border-box;
     }
 
-    /* Ensure header doesn't overflow */
     .util {
       overflow: hidden;
       max-width: 100%;
     }
   }
 
-  /* For very small screens */
   @media (max-width: 480px) {
     .util .wrap.row.between {
       gap: 10px;
@@ -269,8 +232,6 @@
       font-size: 12px;
     }
 
-
-    /* On very small screens, make sure chips don't overflow */
     .header-actions .chip {
       flex-shrink: 0;
     }
@@ -280,7 +241,6 @@
     }
   }
 
-  /* Hamburger animation */
   .hamburger-btn.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
   }
@@ -293,131 +253,7 @@
     transform: rotate(-45deg) translate(6px, -6px);
   }
 
-  /* Ensure no horizontal scroll on body when menu is open */
   body.menu-open {
     overflow: hidden;
   }
 </style>
-
-<script>
-// Wait for both AlSajiAPI and DOM to be ready
-function initializeCartManager() {
-    // Check if AlSajiAPI is available
-    if (typeof AlSajiAPI === 'undefined') {
-        console.log('AlSajiAPI not ready, retrying...');
-        setTimeout(initializeCartManager, 100);
-        return;
-    }
-
-    // Check if cart count element exists
-    const cartCountElement = document.getElementById('cartCount');
-    if (!cartCountElement) {
-        console.log('Cart count element not found, retrying...');
-        setTimeout(initializeCartManager, 100);
-        return;
-    }
-
-    console.log('Initializing HeaderCartManager...');
-    new HeaderCartManager();
-}
-
-// Header Cart Manager Class
-class HeaderCartManager {
-    constructor() {
-        this.api = new AlSajiAPI(); // Create new instance
-        this.init();
-    }
-
-    async init() {
-        console.log('HeaderCartManager started');
-        await this.updateCartCount();
-
-        // Update every 10 seconds
-        setInterval(() => this.updateCartCount(), 10000);
-
-        // Update when page becomes visible
-        document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible') {
-                this.updateCartCount();
-            }
-        });
-    }
-
-    async updateCartCount() {
-        try {
-            const result = await this.api.getCart();
-            if (result.success) {
-                const count = result.cart_count || 0;
-                const cartCount = document.getElementById('cartCount');
-                if (cartCount) {
-                    console.log('Updating cart count to:', count);
-                    cartCount.textContent = count;
-                } else {
-                    console.log('Cart count element not found during update');
-                }
-            } else {
-                console.log('Cart API returned unsuccessful:', result);
-            }
-        } catch (error) {
-            console.error('Error updating cart count:', error);
-        }
-    }
-}
-
-// Hamburger menu functionality
-function initializeHamburgerMenu() {
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    const mobileNavClose = document.getElementById('mobileNavClose');
-
-    if (hamburgerBtn && mobileNav && mobileNavClose) {
-        // Open menu
-        hamburgerBtn.addEventListener('click', function() {
-            mobileNav.classList.add('active');
-            document.body.classList.add('menu-open');
-        });
-
-        // Close menu with close button
-        mobileNavClose.addEventListener('click', function() {
-            mobileNav.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        });
-
-        // Close when clicking on mobile tabs
-        const mobileTabs = mobileNav.querySelectorAll('.mobile-tab');
-        mobileTabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                mobileNav.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-        });
-
-        // Close when clicking outside the nav content
-        mobileNav.addEventListener('click', function(e) {
-            if (e.target === this) {
-                mobileNav.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            }
-        });
-
-        // Close with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            }
-        });
-    }
-}
-
-// Start the initialization when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-        initializeCartManager();
-        initializeHamburgerMenu();
-    });
-} else {
-    initializeCartManager();
-    initializeHamburgerMenu();
-}
-</script>

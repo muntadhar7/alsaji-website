@@ -94,93 +94,68 @@ footer ul li:hover{color:var(--red);cursor:pointer}
 /* Badge with red background */
 .badge{background:var(--red);color:#fff;padding:4px 8px;border-radius:6px;font-size:12px;font-weight:500}
 
-/* layout grids */
-@media(min-width:768px){
-  .hero{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .cols-2{grid-template-columns:repeat(2,1fr)}
-  .cols-3{grid-template-columns:repeat(3,1fr)}
-  .cols-4{grid-template-columns:repeat(4,1fr)}
-  .cols-6{grid-template-columns:repeat(6,1fr)}
-  .shop{grid-template-columns:280px 1fr}
-  .plp{grid-template-columns:repeat(3,1fr)}
-}
-
-/* RTL basics */
-[dir="rtl"] .row{flex-direction:row-reverse}
-[dir="rtl"] .between{flex-direction:row-reverse}
-[dir="rtl"] .sticky-support{left:20px;right:auto}
-[dir="rtl"] .hero::before{left:auto;right:0}
-
-/* Loading states */
-.loading{opacity:0.6;pointer-events:none}
-
-    /* Additional styles for the search bar */
-    .search-container {
-      display: flex;
-      align-items: center;
-      margin-right: 12px;
-    }
-
-    .search-input {
-      padding: 8px 12px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 14px;
-      width: 200px;
-      transition: border-color 0.2s;
-    }
-
-    .search-input:focus {
-      outline: none;
-      border-color: var(--ink1);
-    }
-
-    .search-button {
-      background: var(--red);
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 8px 12px;
-      margin-left: 6px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.2s;
-    }
-
-    .search-button:hover {
-      background: #3a7bc8;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .row.between {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .search-container {
-        margin-top: 8px;
-        margin-right: 0;
-        width: 100%;
-      }
-
-      .search-input {
-        width: 100%;
-      }
-    }
-
-/* Add these media queries to your existing CSS */
-
+/* UPDATED: Grid columns for mobile - show fewer elements AND rows */
 /* Mobile styles (default) */
 .grid.cols-2,
-.grid.cols-3,
-.grid.cols-4,
-.grid.cols-6 {
+.grid.cols-3 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+/* Show only 2 columns for cols-4 on mobile */
+.grid.cols-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Show only 3 columns for cols-6 on mobile (instead of 6) */
+.grid.cols-6 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .plp {
   grid-template-columns: repeat(2, 1fr);
+}
+
+/* Limit to specific number of items on mobile */
+@media (max-width: 767px) {
+  /* For 2-column grids: show max 4 items (2 rows) */
+  .grid.cols-2 > *:nth-child(n+5),
+  .grid.cols-3 > *:nth-child(n+5),
+  .grid.cols-4 > *:nth-child(n+5) {
+    display: none;
+  }
+
+  /* For 3-column grids: show max 6 items (2 rows) */
+  .grid.cols-6 > *:nth-child(n+7) {
+    display: none;
+  }
+
+
+}
+
+/* Remove limits on desktop */
+@media (min-width: 768px) {
+  .grid > * {
+    display: block !important;
+  }
+}
+
+/* NEW: Keep row.between in one line on mobile */
+@media (max-width: 768px) {
+  .row.between {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .row.between h2 {
+    white-space: nowrap;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .row.between .btn.ghost {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
 
 /* Tablet styles */
@@ -241,5 +216,77 @@ main {
   .util {
     position: sticky;
     top: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+    .util .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+  .stats-row {
+    display: none;
+  }
+}
+
+/* RTL basics */
+[dir="rtl"] .row{flex-direction:row-reverse}
+[dir="rtl"] .between{flex-direction:row-reverse}
+[dir="rtl"] .sticky-support{left:20px;right:auto}
+[dir="rtl"] .hero::before{left:auto;right:0}
+
+/* Loading states */
+.loading{opacity:0.6;pointer-events:none}
+
+/* Additional styles for the search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--ink1);
+}
+
+.search-button {
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background: #3a7bc8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-container {
+    margin-top: 8px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
   }
 }

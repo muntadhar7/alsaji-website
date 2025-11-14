@@ -228,3 +228,131 @@ window.refreshCartCount = function() {
         cartCountManager.refreshCartCount();
     }
 };
+
+async function loadLayout() {
+  try {
+    // Load header and footer in parallel
+    const [headerRes, footerRes] = await Promise.all([
+      fetch('partials/header.html'),
+      fetch('partials/footer.html')
+    ]);
+
+    const [headerHtml, footerHtml] = await Promise.all([
+      headerRes.text(),
+      footerRes.text()
+    ]);
+
+    document.body.insertAdjacentHTML('afterbegin', headerHtml);
+    document.body.insertAdjacentHTML('beforeend', footerHtml);
+
+    // Show page immediately
+    document.body.style.visibility = 'visible';
+
+    // Initialize hamburger menu AFTER header is inserted
+    initializeHamburgerMenu();
+
+    // Initialize cart in background
+    setTimeout(() => {
+      initializeCartManager();
+    }, 100);
+
+    // Highlight active tab
+    highlightActiveTab();
+
+  } catch (err) {
+    console.error('Failed to load header/footer:', err);
+    document.body.style.visibility = 'visible';
+  }
+}
+
+// Hamburger menu functionality
+function initializeHamburgerMenu() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavClose = document.getElementById('mobileNavClose');
+
+    console.log('Hamburger menu elements:', { hamburgerBtn, mobileNav, mobileNavClose });
+
+    if (hamburgerBtn && mobileNav && mobileNavClose) {
+        // Remove any existing event listeners
+        hamburgerBtn.replaceWith(hamburgerBtn.cloneNode(true));
+        mobileNavClose.replaceWith(mobileNavClose.cloneNode(true));
+
+        // Get fresh references after clone
+        const freshHamburgerBtn = document.getElementById('hamburgerBtn');
+        const freshMobileNavClose = document.getElementById('mobileNavClose');
+        const freshMobileNav = document.getElementById('mobileNav');
+
+        // Open menu
+        freshHamburgerBtn.addEventListener('click', function() {
+            console.log('Opening mobile menu');
+            freshMobileNav.classList.add('active');
+            freshHamburgerBtn.classList.add('active');
+            document.body.classList.add('menu-open');
+        });
+
+        // Close menu with close button
+        freshMobileNavClose.addEventListener('click', function() {
+            console.log('Closing mobile menu');
+            freshMobileNav.classList.remove('active');
+            freshHamburgerBtn.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+
+        // Close when clicking on mobile tabs
+        const mobileTabs = freshMobileNav.querySelectorAll('.mobile-tab');
+        mobileTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                freshMobileNav.classList.remove('active');
+                freshHamburgerBtn.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // Close when clicking outside the nav content
+        freshMobileNav.addEventListener('click', function(e) {
+            if (e.target === this) {
+                freshMobileNav.classList.remove('active');
+                freshHamburgerBtn.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && freshMobileNav.classList.contains('active')) {
+                freshMobileNav.classList.remove('active');
+                freshHamburgerBtn.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+
+        console.log('Hamburger menu initialized successfully');
+    } else {
+        console.error('Hamburger menu elements not found');
+    }
+}
+
+// Active tab highlighting
+function highlightActiveTab() {
+    const tabs = document.querySelectorAll('header .tab, header .mobile-tab');
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+    tabs.forEach(tab => {
+        const tabHref = tab.getAttribute('href');
+        const isActive = tabHref === currentPath;
+        tab.classList.toggle('active', isActive);
+    });
+}
+
+// Initialize cart manager (your existing function)
+function initializeCartManager() {
+    // Your existing cart manager code here
+    if (typeof AlSajiAPI !== 'undefined') {
+        console.log('Initializing cart manager...');
+        // Your cart initialization code
+    }
+}
+
+// Start everything when DOM is ready
+document.addEventListener('DOMContentLoaded', loadLayout);
