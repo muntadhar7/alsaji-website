@@ -1,33 +1,705 @@
 window.filter-data = {
-  "categories": [],
-  "brands": [],
-  "vehicle_brands": [],
-  "price_ranges": [
+  "categories": [
     {
-      "min": 0.0,
-      "max": 324400.0,
-      "count": 1311,
-      "label": "$0.00 - $324400.00"
+      "id": 22,
+      "name": "اجزاء المحرك",
+      "slug": "اجزاء-المحرك",
+      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=22&field=image_1920",
+      "product_count": 0
     },
     {
-      "min": 324400.01,
-      "max": 648800.01,
-      "count": 11,
-      "label": "$324400.01 - $648800.01"
+      "id": 26,
+      "name": "Lubricants - زيوت",
+      "slug": "lubricants--زيوت",
+      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=26&field=image_1920",
+      "product_count": 0
     },
     {
-      "min": 648800.02,
-      "max": 973200.02,
-      "count": 4,
-      "label": "$648800.02 - $973200.02"
+      "id": 28,
+      "name": "ناقل الحركة",
+      "slug": "ناقل-الحركة",
+      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=28&field=image_1920",
+      "product_count": 0
     },
     {
-      "min": 1297600.04,
-      "max": 1622000.04,
-      "count": 1,
-      "label": "$1297600.04 - $1622000.04"
+      "id": 29,
+      "name": "نظام التعليق",
+      "slug": "نظام-التعليق",
+      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=29&field=image_1920",
+      "product_count": 0
+    },
+    {
+      "id": 32,
+      "name": "شمعات احتراق",
+      "slug": "شمعات-احتراق",
+      "image_url": null,
+      "product_count": 0
+    },
+    {
+      "id": 33,
+      "name": "Cae care",
+      "slug": "cae-care",
+      "image_url": null,
+      "product_count": 0
+    },
+    {
+      "id": 34,
+      "name": "Lubricants -   الزيوت والسوائل",
+      "slug": "lubricants--الزيوت-والسوائل",
+      "image_url": null,
+      "product_count": 0
+    },
+    {
+      "id": 35,
+      "name": "الاكسسوار -Accessories",
+      "slug": "الاكسسوار-accessories",
+      "image_url": null,
+      "product_count": 0
     }
   ],
-  "branches": [],
-  "last_updated": "2025-11-13T20:00:29.216162"
+  "brands": [
+    {
+      "id": 28,
+      "name": "DAISEN-HY",
+      "slug": "daisen-hy",
+      "logo": "",
+      "product_count": 627
+    },
+    {
+      "id": 30,
+      "name": "DAISEN",
+      "slug": "daisen",
+      "logo": "",
+      "product_count": 114
+    },
+    {
+      "id": 21,
+      "name": "AISIN",
+      "slug": "aisin",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=21"
+      ],
+      "product_count": 113
+    },
+    {
+      "id": 18,
+      "name": "Denso",
+      "slug": "denso",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=18"
+      ],
+      "product_count": 97
+    },
+    {
+      "id": 22,
+      "name": "ADVICS",
+      "slug": "advics",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=22"
+      ],
+      "product_count": 37
+    },
+    {
+      "id": 369,
+      "name": "AISIN-LUB",
+      "slug": "aisin-lub",
+      "logo": "",
+      "product_count": 36
+    },
+    {
+      "id": 29,
+      "name": "DLAA",
+      "slug": "dlaa",
+      "logo": "",
+      "product_count": 34
+    },
+    {
+      "id": 25,
+      "name": "ERRECOM",
+      "slug": "errecom",
+      "logo": "",
+      "product_count": 15
+    },
+    {
+      "id": 393,
+      "name": "GBT",
+      "slug": "gbt",
+      "logo": "",
+      "product_count": 14
+    },
+    {
+      "id": 20,
+      "name": "Toyota",
+      "slug": "toyota",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=20"
+      ],
+      "product_count": 13
+    },
+    {
+      "id": 402,
+      "name": "KP ",
+      "slug": "kp",
+      "logo": "",
+      "product_count": 9
+    },
+    {
+      "id": 367,
+      "name": "AISAN",
+      "slug": "aisan",
+      "logo": "",
+      "product_count": 6
+    },
+    {
+      "id": 19,
+      "name": "Nissan ",
+      "slug": "nissan",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=19"
+      ],
+      "product_count": 4
+    },
+    {
+      "id": 406,
+      "name": "MassFit",
+      "slug": "massfit",
+      "logo": "",
+      "product_count": 3
+    },
+    {
+      "id": 371,
+      "name": "ART",
+      "slug": "art",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=371"
+      ],
+      "product_count": 2
+    },
+    {
+      "id": 23,
+      "name": "Taiho",
+      "slug": "taiho",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=23"
+      ],
+      "product_count": 0
+    },
+    {
+      "id": 24,
+      "name": "DENSO-X",
+      "slug": "denso-x",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 26,
+      "name": "CASP",
+      "slug": "casp",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 27,
+      "name": "TW",
+      "slug": "tw",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 31,
+      "name": "Energizer",
+      "slug": "energizer",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 365,
+      "name": "555",
+      "slug": "555",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 366,
+      "name": "ACDelco",
+      "slug": "acdelco",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 368,
+      "name": "AISIN-Battries",
+      "slug": "aisin-battries",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 370,
+      "name": "AN TAI",
+      "slug": "an-tai",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 372,
+      "name": "BANDO",
+      "slug": "bando",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 373,
+      "name": "BeFirst",
+      "slug": "befirst",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 374,
+      "name": "BOSCH",
+      "slug": "bosch",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 375,
+      "name": "Brembo",
+      "slug": "brembo",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 376,
+      "name": "Bridgestone",
+      "slug": "bridgestone",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 377,
+      "name": "Carri",
+      "slug": "carri",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 378,
+      "name": "Chase",
+      "slug": "chase",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 379,
+      "name": "CTR",
+      "slug": "ctr",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 380,
+      "name": "DA JUANE",
+      "slug": "da-juane",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 381,
+      "name": "DENKI",
+      "slug": "denki",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 382,
+      "name": "DEPO",
+      "slug": "depo",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 383,
+      "name": "DK ",
+      "slug": "dk",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 384,
+      "name": "DK-SKI",
+      "slug": "dk-ski",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 385,
+      "name": "Dobinsons",
+      "slug": "dobinsons",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 386,
+      "name": "DoubleHorse",
+      "slug": "doublehorse",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 387,
+      "name": "DUNLOP",
+      "slug": "dunlop",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 388,
+      "name": "Eristic",
+      "slug": "eristic",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 389,
+      "name": "ERRECOM-EX",
+      "slug": "errecom-ex",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 390,
+      "name": "FORD",
+      "slug": "ford",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 391,
+      "name": "Formula",
+      "slug": "formula",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 392,
+      "name": "FPI",
+      "slug": "fpi",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 394,
+      "name": "GCR",
+      "slug": "gcr",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 395,
+      "name": "HANSA",
+      "slug": "hansa",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 396,
+      "name": "HYUNDAI",
+      "slug": "hyundai",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 397,
+      "name": "IHI",
+      "slug": "ihi",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 398,
+      "name": "IR.",
+      "slug": "ir.",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 399,
+      "name": "IRONMAN",
+      "slug": "ironman",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 400,
+      "name": "KIA",
+      "slug": "kia",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 401,
+      "name": "KOITO",
+      "slug": "koito",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 403,
+      "name": "KUMHO",
+      "slug": "kumho",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 404,
+      "name": "KYB",
+      "slug": "kyb",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 405,
+      "name": "Land Rover",
+      "slug": "land-rover",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 407,
+      "name": "MERCEDES BENZ",
+      "slug": "mercedes-benz",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 408,
+      "name": "MICHIBA",
+      "slug": "michiba",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 409,
+      "name": "MOBIL1",
+      "slug": "mobil1",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 410,
+      "name": "MOBIS",
+      "slug": "mobis",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 411,
+      "name": "MOPPAR",
+      "slug": "moppar",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 412,
+      "name": "MULLER",
+      "slug": "muller",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 413,
+      "name": "NA",
+      "slug": "na",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 414,
+      "name": "NDC",
+      "slug": "ndc",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 415,
+      "name": "NDG",
+      "slug": "ndg",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 416,
+      "name": "NGK",
+      "slug": "ngk",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 469,
+      "name": "PACO",
+      "slug": "paco",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 470,
+      "name": "PARAUT",
+      "slug": "paraut",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 471,
+      "name": "Polar",
+      "slug": "polar",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 472,
+      "name": "Polarge",
+      "slug": "polarge",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 473,
+      "name": "RBI",
+      "slug": "rbi",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 474,
+      "name": "RDA",
+      "slug": "rda",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 475,
+      "name": "RIK ",
+      "slug": "rik",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 476,
+      "name": "S.H",
+      "slug": "s.h",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 477,
+      "name": "SCHMACO",
+      "slug": "schmaco",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 478,
+      "name": "SSS",
+      "slug": "sss",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 479,
+      "name": "Tenacity",
+      "slug": "tenacity",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 480,
+      "name": "Terada",
+      "slug": "terada",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 481,
+      "name": "TOKICO",
+      "slug": "tokico",
+      "logo": "",
+      "product_count": 0
+    },
+    {
+      "id": 482,
+      "name": "TOYO",
+      "slug": "toyo",
+      "logo": "",
+      "product_count": 0
+    }
+  ],
+  "vehicle_brands": [
+    {
+      "id": 1787,
+      "name": "Toyota",
+      "slug": "toyota",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=1787"
+      ]
+    }
+  ],
+  "vehicle_models": [
+    {
+      "id": 252042,
+      "name": "Land Cruiser",
+      "slug": "land-cruiser",
+      "logo": [
+        "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.vehicle&field=logo&id=252042"
+      ]
+    }
+  ],
+  "price_ranges": [
+    {
+      "min": 0,
+      "max": 50000,
+      "count": 955,
+      "label": "IQD 0 - 50,000"
+    },
+    {
+      "min": 50000,
+      "max": 100000,
+      "count": 182,
+      "label": "IQD 50,000 - 100,000"
+    },
+    {
+      "min": 100000,
+      "max": 250000,
+      "count": 153,
+      "label": "IQD 100,000 - 250,000"
+    },
+    {
+      "min": 250000,
+      "max": 500000,
+      "count": 31,
+      "label": "IQD 250,000 - 500,000"
+    },
+    {
+      "min": 500000,
+      "max": 1000000,
+      "count": 5,
+      "label": "IQD 500,000 - 1,000,000"
+    },
+    {
+      "min": 1000000,
+      "max": Infinity,
+      "count": 1,
+      "label": "IQD 1,000,000+"
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "name": "ALSAJI Group",
+      "slug": "alsaji-group",
+      "address": "",
+      "city": false,
+      "phone": false
+    }
+  ],
+  "last_updated": "2025-11-14T17:04:10.271765"
 };

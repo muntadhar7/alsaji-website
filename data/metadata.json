@@ -1,8 +1,11 @@
 {
-  "export_date": "2025-11-13T20:00:29.279725",
+  "export_date": "2025-11-14T17:04:10.376835",
   "total_products": 1327,
   "total_categories": 8,
   "total_brands": 80,
+  "total_vehicle_brands": 1,
+  "total_vehicle_models": 1,
   "total_branches": 1,
-  "data_hash": "b4affc1a7686b06f59cdb6e9539876c1"
+  "total_compatibility_records": 4,
+  "data_hash": "9cf8048fa058c5c5d7fd82a597ebe9b5"
 }

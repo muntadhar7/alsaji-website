@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "product_id": 195575,
+    "product_name": "A1N156 / دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان / OEM-بلادي / ADVICS / JAPAN / العراق",
+    "product_template_id": 195623,
+    "product_template_name": "A1N156 / دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان / OEM-بلادي / ADVICS / JAPAN / العراق",
+    "vehicle_model_id": 252042,
+    "vehicle_model_name": "Land Cruiser",
+    "brand_id": 1787,
+    "brand_name": "Toyota",
+    "from_year": 2008,
+    "to_year": 2021,
+    "year_range": "2008-2021",
+    "engine_ids": [],
+    "import_type_ids": [
+      1
+    ],
+    "category": [
+      2,
+      "All / Saleable"
+    ],
+    "create_date": "2024-12-24 22:15:56",
+    "write_date": "2025-10-23 10:32:40"
+  },
+  {
+    "id": 2,
+    "product_id": 195575,
+    "product_name": "A1N156 / دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان / OEM-بلادي / ADVICS / JAPAN / العراق",
+    "product_template_id": null,
+    "product_template_name": null,
+    "vehicle_model_id": 249781,
+    "vehicle_model_name": "Sequoia 4WD FFV",
+    "brand_id": 1787,
+    "brand_name": "Toyota",
+    "from_year": 2008,
+    "to_year": 2021,
+    "year_range": "2008-2021",
+    "engine_ids": [
+      1
+    ],
+    "import_type_ids": [
+      1
+    ],
+    "category": [
+      2,
+      "All / Saleable"
+    ],
+    "create_date": "2024-12-24 22:15:56",
+    "write_date": "2025-03-11 11:52:28"
+  },
+  {
+    "id": 3,
+    "product_id": 258584,
+    "product_name": "11115-17010-05-KA103168 / كازكيت محرك 1HZ 11115-17040-05 كاز / Aftermarket / KP  / JAPAN / ACTIVE",
+    "product_template_id": null,
+    "product_template_name": null,
+    "vehicle_model_id": null,
+    "vehicle_model_name": null,
+    "brand_id": null,
+    "brand_name": null,
+    "from_year": 2000,
+    "to_year": 2010,
+    "year_range": "2000-2010",
+    "engine_ids": [],
+    "import_type_ids": [],
+    "category": [
+      1,
+      "All"
+    ],
+    "create_date": "2025-02-13 11:38:22",
+    "write_date": "2025-03-11 11:52:28"
+  },
+  {
+    "id": 4,
+    "product_id": 258626,
+    "product_name": "AVB-6PK1150 / قايش محرك كامري 17 - رف فور - 19 - 4سلندر امريكي خليجي 2AR A25A / OEM-بلادي / AISIN / China / JPN-DXB",
+    "product_template_id": null,
+    "product_template_name": null,
+    "vehicle_model_id": null,
+    "vehicle_model_name": null,
+    "brand_id": null,
+    "brand_name": null,
+    "from_year": 2000,
+    "to_year": 2010,
+    "year_range": "2000-2010",
+    "engine_ids": [],
+    "import_type_ids": [],
+    "category": [
+      1,
+      "All"
+    ],
+    "create_date": "2025-02-25 10:26:54",
+    "write_date": "2025-03-11 11:52:28"
+  }
+]

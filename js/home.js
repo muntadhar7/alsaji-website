@@ -28,7 +28,9 @@ async function loadHomepageData() {
         renderCategories(categories);
         renderBrandsHome(brands);
         renderFeaturedProducts(products);
-        loadVehicleMakes();
+
+        // Initialize vehicle selection after content is loaded
+        initializeVehicleSelection();
 
         console.log('✅ Homepage data loaded successfully');
 
@@ -37,6 +39,248 @@ async function loadHomepageData() {
         showNotification('Failed to load homepage content', 'error');
     }
 }
+
+function initializeVehicleSelection() {
+    const makeSelect = document.getElementById('make');
+    const modelSelect = document.getElementById('model');
+    const yearSelect = document.getElementById('year');
+    const applyBtn = document.getElementById('applyFitment');
+    const clearBtn = document.getElementById('clearFitment');
+
+    if (!makeSelect || !modelSelect || !yearSelect || !applyBtn || !clearBtn) {
+        console.error('❌ Vehicle selection elements not found');
+        return;
+    }
+
+    console.log('🚗 Initializing vehicle selection...');
+
+    // ✅ ADD THIS LINE - Load the vehicle makes when initializing
+    loadVehicleMakes();
+
+    // Apply fitment button event
+    applyBtn.addEventListener('click', function() {
+        const selectedMake = makeSelect.options[makeSelect.selectedIndex];
+        const selectedModel = modelSelect.options[modelSelect.selectedIndex];
+        const selectedYear = yearSelect.value;
+
+        if (makeSelect.value && modelSelect.value && yearSelect.value) {
+            const vehicle = {
+                makeId: makeSelect.value,
+                makeName: selectedMake.text,
+                modelId: modelSelect.value,
+                modelName: selectedModel.text,
+                year: yearSelect.value
+            };
+
+            console.log('🚗 Vehicle selected:', vehicle);
+
+            // Save vehicle and navigate to shop
+            vehicleManager.saveVehicle(vehicle);
+            vehicleManager.goToShopWithVehicle();
+        } else {
+            alert('Please select make, model, and year');
+        }
+    });
+
+    // Clear fitment button event
+    clearBtn.addEventListener('click', function() {
+        makeSelect.value = '';
+        modelSelect.innerHTML = '<option value="">Select Model</option>';
+        modelSelect.disabled = true;
+        yearSelect.innerHTML = '<option value="">Select Year</option>';
+        yearSelect.disabled = true;
+
+        // Clear any displayed logo
+        const existingLogo = document.getElementById('selectedBrandLogo');
+        if (existingLogo) {
+            existingLogo.remove();
+        }
+
+        vehicleManager.clearVehicle();
+        console.log('🚗 Vehicle selection cleared');
+    });
+
+    // Make selection event - load models
+    makeSelect.addEventListener('change', function() {
+        const makeId = this.value;
+        const selectedOption = this.options[this.selectedIndex];
+        const logoUrl = selectedOption.getAttribute('data-logo');
+
+        showSelectedBrandLogo(logoUrl);
+
+        if (makeId) {
+            loadVehicleModels(makeId);
+            modelSelect.disabled = false;
+        } else {
+            modelSelect.innerHTML = '<option value="">Select Model</option>';
+            modelSelect.disabled = true;
+            yearSelect.innerHTML = '<option value="">Select Year</option>';
+            yearSelect.disabled = true;
+        }
+    });
+
+    // Model selection event - load years
+    modelSelect.addEventListener('change', function() {
+        const modelId = this.value;
+        if (modelId) {
+            loadVehicleYears();
+            yearSelect.disabled = false;
+        } else {
+            yearSelect.innerHTML = '<option value="">Select Year</option>';
+            yearSelect.disabled = true;
+        }
+    });
+}
+
+function loadVehicleYears() {
+    const yearSelect = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    const startYear = 1990;
+
+    let yearOptions = '<option value="">Select Year</option>';
+    for (let year = currentYear; year >= startYear; year--) {
+        yearOptions += `<option value="${year}">${year}</option>`;
+    }
+
+    yearSelect.innerHTML = yearOptions;
+}
+
+async function loadVehicleMakes() {
+    try {
+        const response = await fetch('data/json/vehicle_brands.json');
+
+        if (response.ok) {
+            const brandsData = await response.json();
+            console.log('🚗 Loaded vehicle brands from JSON:', brandsData);
+
+            const makeSelect = document.getElementById('make');
+            if (makeSelect) {
+                makeSelect.innerHTML = '<option value="">Select Make</option>' +
+                    brandsData.map(brand => {
+                        const brandName = brand.name;
+                        const brandId = brand.id;
+                        const logoUrl = brand.logo && brand.logo.length > 0 ? brand.logo[0] : '';
+
+                        return `<option value="${brandId}" data-logo="${logoUrl}">${brandName}</option>`;
+                    }).join('');
+            }
+        } else {
+            await loadVehicleMakesFromAPI();
+        }
+    } catch (error) {
+        console.error('❌ Failed to load vehicle brands from JSON:', error);
+        await loadVehicleMakesFromAPI();
+    }
+}
+
+async function loadVehicleModels(makeId) {
+    try {
+        const response = await fetch('data/json/vehicle_models.json');
+
+        if (response.ok) {
+            const modelsData = await response.json();
+            console.log('🚙 Loaded vehicle models from JSON:', modelsData);
+
+            const modelSelect = document.getElementById('model');
+            if (modelSelect) {
+                modelSelect.innerHTML = '<option value="">Select Model</option>' +
+                    modelsData.map(model => {
+                        const modelName = model.name;
+                        const modelId = model.id;
+                        const logoUrl = model.logo && model.logo.length > 0 ? model.logo[0] : '';
+
+                        return `<option value="${modelId}" data-logo="${logoUrl}">${modelName}</option>`;
+                    }).join('');
+            }
+        } else {
+            await loadVehicleModelsFromAPI(makeId);
+        }
+    } catch (error) {
+        console.error('❌ Failed to load vehicle models from JSON:', error);
+        await loadVehicleModelsFromAPI(makeId);
+    }
+}
+
+// Function to display selected brand logo
+function showSelectedBrandLogo(logoUrl) {
+    // Remove any existing logo display
+    const existingLogo = document.getElementById('selectedBrandLogo');
+    if (existingLogo) {
+        existingLogo.remove();
+    }
+
+    if (logoUrl) {
+        const makeSelect = document.getElementById('make');
+        const logoContainer = document.createElement('div');
+        logoContainer.id = 'selectedBrandLogo';
+        logoContainer.style.cssText = `
+            margin-top: 8px;
+            text-align: center;
+            padding: 8px;
+            background: var(--w2);
+            border-radius: 8px;
+        `;
+
+        logoContainer.innerHTML = `
+            <img src="${logoUrl}"
+                 alt="Brand Logo"
+                 style="max-height: 40px; max-width: 100px; object-fit: contain;"
+                 onerror="this.style.display='none'">
+        `;
+
+        makeSelect.parentNode.appendChild(logoContainer);
+    }
+}
+
+function setupHomepageEvents() {
+    console.log('🛠️ Setting up homepage events...');
+
+    // Enhanced add to cart buttons with validation
+    document.addEventListener('click', function(e) {
+        const addToCartBtn = e.target.closest('.add-to-cart-btn');
+        if (addToCartBtn && !addToCartBtn.disabled) {
+            const productId = addToCartBtn.dataset.productId;
+
+            console.log('🛒 Homepage add to cart clicked:', {
+                productId: productId,
+                element: addToCartBtn,
+                dataset: addToCartBtn.dataset
+            });
+
+            // Add loading state to button
+            const originalText = addToCartBtn.textContent;
+            addToCartBtn.textContent = 'Adding...';
+            addToCartBtn.disabled = true;
+
+            addToCart(productId).finally(() => {
+                // Restore button state
+                addToCartBtn.textContent = originalText;
+                addToCartBtn.disabled = false;
+            });
+        }
+    });
+
+    console.log('✅ Homepage events setup complete');
+}
+
+// API fallback functions (add these if they don't exist)
+async function loadVehicleMakesFromAPI() {
+    console.log('📡 Loading vehicle makes from API...');
+    // Implement your API fallback here
+}
+
+async function loadVehicleModelsFromAPI(makeId) {
+    console.log('📡 Loading vehicle models from API for make:', makeId);
+    // Implement your API fallback here
+}
+
+
+
+
+
+
+
+
 
 function renderCategories(categories) {
     const container = document.getElementById('popularCategories');
@@ -187,234 +431,14 @@ function renderFeaturedProducts(products) {
     }).join('');
 }
 
-async function loadVehicleMakes() {
-    try {
-        const response = await fetch('data/json/vehicle_brands.json');
 
-        if (response.ok) {
-            const brandsData = await response.json();
-            console.log('🚗 Loaded vehicle brands from JSON:', brandsData);
 
-            const makeSelect = document.getElementById('make');
-            if (makeSelect) {
-                makeSelect.innerHTML = '<option value="">Select Make</option>' +
-                    brandsData.map(brand => {
-                        const brandName = brand.name;
-                        const brandId = brand.id;
-                        const logoUrl = brand.logo && brand.logo.length > 0 ? brand.logo[0] : '';
 
-                        // Option with logo data attribute
-                        return `<option value="${brandId}" data-logo="${logoUrl}">${brandName}</option>`;
-                    }).join('');
 
-                // Optional: Add event listener to show logo when selected
-                makeSelect.addEventListener('change', function() {
-                    const selectedOption = this.options[this.selectedIndex];
-                    const logoUrl = selectedOption.getAttribute('data-logo');
-                    showSelectedBrandLogo(logoUrl);
-                });
-            }
-        } else {
-            await loadVehicleMakesFromAPI();
-        }
-    } catch (error) {
-        console.error('❌ Failed to load vehicle brands from JSON:', error);
-        await loadVehicleMakesFromAPI();
-    }
-}
 
-// Function to display selected brand logo
-function showSelectedBrandLogo(logoUrl) {
-    // Remove any existing logo display
-    const existingLogo = document.getElementById('selectedBrandLogo');
-    if (existingLogo) {
-        existingLogo.remove();
-    }
 
-    if (logoUrl) {
-        const makeSelect = document.getElementById('make');
-        const logoContainer = document.createElement('div');
-        logoContainer.id = 'selectedBrandLogo';
-        logoContainer.style.cssText = `
-            margin-top: 8px;
-            text-align: center;
-            padding: 8px;
-            background: var(--w2);
-            border-radius: 8px;
-        `;
 
-        logoContainer.innerHTML = `
-            <img src="${logoUrl}"
-                 alt="Brand Logo"
-                 style="max-height: 40px; max-width: 100px; object-fit: contain;"
-                 onerror="this.style.display='none'">
-        `;
 
-        makeSelect.parentNode.appendChild(logoContainer);
-    }
-}
-
-function setupHomepageEvents() {
-    console.log('🛠️ Setting up homepage events...');
-
-    // Make selection change
-    const makeSelect = document.getElementById('make');
-    if (makeSelect) {
-        makeSelect.addEventListener('change', async function(e) {
-            const makeId = e.target.value;
-            const modelSelect = document.getElementById('model');
-            const yearSelect = document.getElementById('year');
-
-            if (makeId) {
-                modelSelect.disabled = false;
-                yearSelect.disabled = true;
-                yearSelect.innerHTML = '<option value="">Select Year</option>';
-
-                try {
-                    const models = await getSimulatedVehicleModels(makeId);
-                    modelSelect.innerHTML = '<option value="">Select Model</option>' +
-                        models.map(model => `<option value="${model.id}">${model.name}</option>`).join('');
-                } catch (error) {
-                    console.error('Failed to load models:', error);
-                    modelSelect.innerHTML = '<option value="">Select Model</option>';
-                }
-            } else {
-                modelSelect.disabled = true;
-                yearSelect.disabled = true;
-                modelSelect.innerHTML = '<option value="">Select Model</option>';
-                yearSelect.innerHTML = '<option value="">Select Year</option>';
-            }
-        });
-    }
-
-    // Model selection change
-    const modelSelect = document.getElementById('model');
-    if (modelSelect) {
-        modelSelect.addEventListener('change', function(e) {
-            const yearSelect = document.getElementById('year');
-            if (e.target.value) {
-                yearSelect.disabled = false;
-                // Generate years (2010-2025)
-                const years = Array.from({length: 16}, (_, i) => 2025 - i);
-                yearSelect.innerHTML = '<option value="">Select Year</option>' +
-                    years.map(year => `<option value="${year}">${year}</option>`).join('');
-            } else {
-                yearSelect.disabled = true;
-                yearSelect.innerHTML = '<option value="">Select Year</option>';
-            }
-        });
-    }
-
-    // Apply fitment
-    const applyBtn = document.getElementById('applyFitment');
-    if (applyBtn) {
-        applyBtn.addEventListener('click', function() {
-            const make = document.getElementById('make');
-            const model = document.getElementById('model');
-            const year = document.getElementById('year');
-
-            const makeValue = make.value;
-            const modelValue = model.value;
-            const yearValue = year.value;
-
-            if (makeValue && modelValue && yearValue) {
-                const makeText = make.options[make.selectedIndex].text;
-                const modelText = model.options[model.selectedIndex].text;
-
-                showNotification(`Vehicle fitment applied: ${makeText} ${modelText} ${yearValue}`, 'success');
-                // In real app, this would filter products by vehicle compatibility
-            } else {
-                showNotification('Please select make, model, and year', 'error');
-            }
-        });
-    }
-
-    // Clear fitment
-    const clearBtn = document.getElementById('clearFitment');
-    if (clearBtn) {
-        clearBtn.addEventListener('click', function() {
-            document.getElementById('make').value = '';
-            document.getElementById('model').value = '';
-            document.getElementById('model').disabled = true;
-            document.getElementById('model').innerHTML = '<option value="">Select Model</option>';
-            document.getElementById('year').value = '';
-            document.getElementById('year').disabled = true;
-            document.getElementById('year').innerHTML = '<option value="">Select Year</option>';
-            showNotification('Fitment cleared', 'info');
-        });
-    }
-
-    // Enhanced add to cart buttons with validation
-    document.addEventListener('click', function(e) {
-        const addToCartBtn = e.target.closest('.add-to-cart-btn');
-        if (addToCartBtn && !addToCartBtn.disabled) {
-            const productId = addToCartBtn.dataset.productId;
-
-            console.log('🛒 Homepage add to cart clicked:', {
-                productId: productId,
-                element: addToCartBtn,
-                dataset: addToCartBtn.dataset
-            });
-
-            // Add loading state to button
-            const originalText = addToCartBtn.textContent;
-            addToCartBtn.textContent = 'Adding...';
-            addToCartBtn.disabled = true;
-
-            addToCart(productId).finally(() => {
-                // Restore button state
-                addToCartBtn.textContent = originalText;
-                addToCartBtn.disabled = false;
-            });
-        }
-    });
-
-    console.log('✅ Homepage events setup complete');
-}
-
-// Simulate vehicle models for static data
-async function getSimulatedVehicleModels(makeId) {
-    const makeModels = {
-        'toyota': [
-            { id: 'camry', name: 'Camry' },
-            { id: 'corolla', name: 'Corolla' },
-            { id: 'rav4', name: 'RAV4' },
-            { id: 'hilux', name: 'Hilux' },
-            { id: 'land-cruiser', name: 'Land Cruiser' }
-        ],
-        'nissan': [
-            { id: 'altima', name: 'Altima' },
-            { id: 'sunny', name: 'Sunny' },
-            { id: 'patrol', name: 'Patrol' },
-            { id: 'xterra', name: 'X-Terra' }
-        ],
-        'mitsubishi': [
-            { id: 'lancer', name: 'Lancer' },
-            { id: 'pajero', name: 'Pajero' },
-            { id: 'outlander', name: 'Outlander' }
-        ],
-        'hyundai': [
-            { id: 'elantra', name: 'Elantra' },
-            { id: 'tucson', name: 'Tucson' },
-            { id: 'santa-fe', name: 'Santa Fe' }
-        ],
-        'kia': [
-            { id: 'optima', name: 'Optima' },
-            { id: 'sportage', name: 'Sportage' },
-            { id: 'sorento', name: 'Sorento' }
-        ]
-    };
-
-    // Get make name from ID
-    const makeName = makeId.toLowerCase();
-
-    // Return models for the make, or empty array if not found
-    return makeModels[makeName] || [
-        { id: 'model-1', name: 'Model 1' },
-        { id: 'model-2', name: 'Model 2' },
-        { id: 'model-3', name: 'Model 3' }
-    ];
-}
 
 // Enhanced addToCart with comprehensive validation (same as shop.js)
 async function addToCart(productId, quantity = 1) {

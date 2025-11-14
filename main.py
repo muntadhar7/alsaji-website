@@ -453,9 +453,10 @@ class AlSajiDataExporter:
         transformed_models = []
         for model in models_data:
             logo_url = ''
-            logo = model.get('logo')
+            logo = model.get('image')
+            logo_id = model.get('id')
             if logo:
-                logo_url = f"{self.base_url}/web/image?model=product.vehicle&field=logo&id={logo['id']}" if model.get(
+                logo_url = f"{self.base_url}/web/image?model=product.vehicle&field=logo&id={logo_id}" if model.get(
                     'image') else None,
 
 
@@ -467,6 +468,240 @@ class AlSajiDataExporter:
             })
 
         return transformed_models
+
+    def fetch_part_compatibility(self, filters=None, limit=10000):
+        """Fetch part compatibility data from Odoo part.compatibility model"""
+        print("🚗 Fetching part compatibility data from Odoo...")
+
+        if not self.uid:
+            if not self.initialize_session():
+                return []
+
+        # Define fields to fetch
+        fields = [
+            'id', 'product_id', 'product_template_id', 'model', 'brand_id',
+            'from_year', 'to_year', 'engine_ids', 'import_type_ids',
+            'create_date', 'write_date', 'x_studio_category'
+        ]
+
+        # Use provided filters or default to empty
+        domain = filters or []
+
+        all_compatibility = []
+        offset = 0
+        page_size = 1000
+
+        while True:
+            print(f"📋 Fetching part compatibility with offset {offset}, limit {page_size}")
+
+            compatibility_data = self.call_odoo_api(
+                model='part.compatibility',
+                method='search_read',
+                domain=domain,
+                fields=fields,
+                limit=page_size,
+                offset=offset
+            )
+
+            if compatibility_data is None:
+                print("❌ No compatibility data returned (None)")
+                break
+
+            if not compatibility_data:
+                print("✅ Reached end of compatibility list")
+                break
+
+            print(f"✅ Received {len(compatibility_data)} compatibility records")
+
+            # Transform the data
+            transformed_compatibility = self.transform_compatibility_data(compatibility_data)
+            all_compatibility.extend(transformed_compatibility)
+
+            if len(compatibility_data) < page_size:
+                print("✅ Reached end of compatibility data")
+                break
+
+            offset += len(compatibility_data)
+            time.sleep(0.5)  # Be nice to the API
+
+        print(f"🚗 Total compatibility records fetched: {len(all_compatibility)}")
+        return all_compatibility
+
+    def transform_compatibility_data(self, compatibility_data):
+        """Transform Odoo compatibility data to a more usable format"""
+        transformed = []
+
+        for comp in compatibility_data:
+            # Extract product information
+            product_id = None
+            product_name = None
+            if comp.get('product_id') and isinstance(comp['product_id'], (list, tuple)) and len(comp['product_id']) > 1:
+                product_id = comp['product_id'][0]
+                product_name = comp['product_id'][1]
+
+            product_template_id = None
+            product_template_name = None
+            if comp.get('product_template_id') and isinstance(comp['product_template_id'], (list, tuple)) and len(
+                    comp['product_template_id']) > 1:
+                product_template_id = comp['product_template_id'][0]
+                product_template_name = comp['product_template_id'][1]
+
+            # Extract vehicle model information
+            vehicle_model_id = None
+            vehicle_model_name = None
+            if comp.get('model') and isinstance(comp['model'], (list, tuple)) and len(comp['model']) > 1:
+                vehicle_model_id = comp['model'][0]
+                vehicle_model_name = comp['model'][1]
+
+            # Extract brand information
+            brand_id = None
+            brand_name = None
+            if comp.get('brand_id') and isinstance(comp['brand_id'], (list, tuple)) and len(comp['brand_id']) > 1:
+                brand_id = comp['brand_id'][0]
+                brand_name = comp['brand_id'][1]
+
+            # Extract engine information
+            engines = []
+            if comp.get('engine_ids') and isinstance(comp['engine_ids'], list):
+                engines = comp['engine_ids']
+
+            # Extract import type information
+            import_types = []
+            if comp.get('import_type_ids') and isinstance(comp['import_type_ids'], list):
+                import_types = comp['import_type_ids']
+
+            transformed_comp = {
+                'id': comp.get('id'),
+                'product_id': product_id,
+                'product_name': product_name,
+                'product_template_id': product_template_id,
+                'product_template_name': product_template_name,
+                'vehicle_model_id': vehicle_model_id,
+                'vehicle_model_name': vehicle_model_name,
+                'brand_id': brand_id,
+                'brand_name': brand_name,
+                'from_year': comp.get('from_year'),
+                'to_year': comp.get('to_year'),
+                'year_range': f"{comp.get('from_year', '')}-{comp.get('to_year', '')}" if comp.get(
+                    'from_year') and comp.get('to_year') else None,
+                'engine_ids': engines,
+                'import_type_ids': import_types,
+                'category': comp.get('x_studio_category'),
+                'create_date': comp.get('create_date'),
+                'write_date': comp.get('write_date')
+            }
+            transformed.append(transformed_comp)
+
+        return transformed
+
+    def generate_vehicle_compatibility_index(self, compatibility_data, products_data):
+        """Generate a search index for vehicle compatibility"""
+        print("🔧 Generating vehicle compatibility index...")
+
+        compatibility_index = {}
+
+        for comp in compatibility_data:
+            product_id = comp.get('product_template_id') or comp.get('product_id')
+            vehicle_model_id = comp.get('vehicle_model_id')
+            brand_id = comp.get('brand_id')
+
+            if not product_id or not vehicle_model_id:
+                continue
+
+            # Create entry for vehicle model
+            if vehicle_model_id not in compatibility_index:
+                compatibility_index[vehicle_model_id] = {
+                    'vehicle_model_id': vehicle_model_id,
+                    'vehicle_model_name': comp.get('vehicle_model_name'),
+                    'brand_id': brand_id,
+                    'brand_name': comp.get('brand_name'),
+                    'compatible_products': [],
+                    'year_range': comp.get('year_range'),
+                    'from_year': comp.get('from_year'),
+                    'to_year': comp.get('to_year')
+                }
+
+            # Find product details from products data
+            product_details = None
+            for product in products_data:
+                if product['id'] == product_id:
+                    product_details = product
+                    break
+
+            if product_details:
+                compatibility_index[vehicle_model_id]['compatible_products'].append({
+                    'product_id': product_id,
+                    'product_name': product_details.get('name'),
+                    'product_code': product_details.get('default_code'),
+                    'price': product_details.get('price'),
+                    'in_stock': product_details.get('in_stock'),
+                    'image_url': product_details.get('image_url')
+                })
+
+        # Convert to list and filter empty entries
+        compatibility_list = [item for item in compatibility_index.values() if item['compatible_products']]
+
+        print(f"✅ Generated compatibility index with {len(compatibility_list)} vehicle models")
+        return compatibility_list
+
+    def get_products_by_vehicle(self, make_id=None, model_id=None, year=None):
+        """Get products compatible with specific vehicle"""
+        print(f"🔍 Getting products for vehicle - Make: {make_id}, Model: {model_id}, Year: {year}")
+
+        # Load compatibility data if not already loaded
+        if not hasattr(self, 'compatibility_data'):
+            self.compatibility_data = self.fetch_part_compatibility()
+
+        # Load products data if not already loaded
+        if not hasattr(self, 'products_data'):
+            products_file = os.path.join(self.json_dir, "products.json")
+            if os.path.exists(products_file):
+                with open(products_file, 'r', encoding='utf-8') as f:
+                    self.products_data = json.load(f)
+            else:
+                print("❌ Products data not found")
+                return []
+
+        compatible_products = []
+
+        for comp in self.compatibility_data:
+            # Filter by model
+            if model_id and comp.get('vehicle_model_id') != model_id:
+                continue
+
+            # Filter by brand/make (if available)
+            if make_id and comp.get('brand_id') != make_id:
+                continue
+
+            # Filter by year
+            if year:
+                from_year = comp.get('from_year')
+                to_year = comp.get('to_year')
+                if from_year and to_year:
+                    if not (from_year <= year <= to_year):
+                        continue
+                elif from_year and year < from_year:
+                    continue
+                elif to_year and year > to_year:
+                    continue
+
+            # Find product in products data
+            product_id = comp.get('product_template_id') or comp.get('product_id')
+            for product in self.products_data:
+                if product['id'] == product_id:
+                    # Add compatibility info to product
+                    product_with_compatibility = product.copy()
+                    product_with_compatibility['compatibility_info'] = {
+                        'vehicle_model': comp.get('vehicle_model_name'),
+                        'from_year': comp.get('from_year'),
+                        'to_year': comp.get('to_year'),
+                        'year_range': comp.get('year_range')
+                    }
+                    compatible_products.append(product_with_compatibility)
+                    break
+
+        print(f"✅ Found {len(compatible_products)} compatible products")
+        return compatible_products
 
     def fetch_branches(self):
         """Fetch branches/companies using Odoo res.company model"""
@@ -575,7 +810,7 @@ class AlSajiDataExporter:
             print("Failed to initialize session")
             return False
 
-    def generate_filter_data(self, products, categories, brands, vehicle_brands, branches):
+    def generate_filter_data(self, products, categories, brands, vehicle_brands, vehicle_models, branches):
         """Generate JSON data for filtering"""
         print("Generating filter data...")
 
@@ -584,50 +819,158 @@ class AlSajiDataExporter:
             "categories": [],
             "brands": [],
             "vehicle_brands": [],
+            "vehicle_models": [],
             "price_ranges": self.calculate_price_ranges(products),
             "branches": [],
             "last_updated": datetime.now().isoformat()
         }
 
-        # Process categories
-        category_count = {}
-        for product in products:
-            category = product.get('category')
-            if category and isinstance(category, dict):
-                category_name = category.get('name', 'Unknown')
-                category_count[category_name] = category_count.get(category_name, 0) + 1
+        # Process categories - use actual categories from fetched data
+        if categories:
+            filter_data["categories"] = [
+                {
+                    "id": cat.get('id'),
+                    "name": cat.get('name', 'Unknown'),
+                    "slug": self.slugify(cat.get('name', '')),
+                    "image_url": cat.get('image_url'),
+                    "product_count": self.count_products_in_category(products, cat.get('id'))
+                }
+                for cat in categories
+                if cat.get('name')
+            ]
+        else:
+            # Fallback: extract categories from products
+            category_count = {}
+            for product in products:
+                category = product.get('category')
+                if category and isinstance(category, dict):
+                    category_id = category.get('id')
+                    category_name = category.get('name', 'Unknown')
+                    if category_id and category_name:
+                        key = f"{category_id}-{category_name}"
+                        category_count[key] = {
+                            'id': category_id,
+                            'name': category_name,
+                            'count': category_count.get(key, {}).get('count', 0) + 1
+                        }
 
-        filter_data["categories"] = [
-            {
-                "name": name,
-                "count": count,
-                "slug": self.slugify(name)
-            }
-            for name, count in category_count.items()
-        ]
+            filter_data["categories"] = [
+                {
+                    "id": cat_data['id'],
+                    "name": cat_data['name'],
+                    "slug": self.slugify(cat_data['name']),
+                    "product_count": cat_data['count']
+                }
+                for cat_data in category_count.values()
+            ]
 
-        # Process brands (empty for now since Odoo doesn't have built-in brands)
-        filter_data["brands"] = []
+        # Process brands - use actual brands from fetched data
+        if brands:
+            filter_data["brands"] = [
+                {
+                    "id": brand.get('id'),
+                    "name": brand.get('name', 'Unknown'),
+                    "slug": self.slugify(brand.get('name', '')),
+                    "logo": brand.get('logo'),
+                    "product_count": self.count_products_in_brand(products, brand.get('id'))
+                }
+                for brand in brands
+                if brand.get('name')
+            ]
+        else:
+            # Fallback: extract brands from products
+            brand_count = {}
+            for product in products:
+                brand = product.get('brand')
+                if brand and isinstance(brand, dict):
+                    brand_id = brand.get('id')
+                    brand_name = brand.get('name', 'Unknown')
+                    if brand_id and brand_name:
+                        key = f"{brand_id}-{brand_name}"
+                        brand_count[key] = {
+                            'id': brand_id,
+                            'name': brand_name,
+                            'count': brand_count.get(key, {}).get('count', 0) + 1
+                        }
+
+            filter_data["brands"] = [
+                {
+                    "id": brand_data['id'],
+                    "name": brand_data['name'],
+                    "slug": self.slugify(brand_data['name']),
+                    "product_count": brand_data['count']
+                }
+                for brand_data in brand_count.values()
+            ]
+
+        # Process vehicle brands
+        if vehicle_brands:
+            filter_data["vehicle_brands"] = [
+                {
+                    "id": vb.get('id'),
+                    "name": vb.get('name', 'Unknown'),
+                    "slug": self.slugify(vb.get('name', '')),
+                    "logo": vb.get('logo')
+                }
+                for vb in vehicle_brands
+                if vb.get('name')
+            ]
+
+        # Process vehicle models
+        if vehicle_models:
+            filter_data["vehicle_models"] = [
+                {
+                    "id": vm.get('id'),
+                    "name": vm.get('name', 'Unknown'),
+                    "slug": self.slugify(vm.get('name', '')),
+                    "logo": vm.get('logo')
+                }
+                for vm in vehicle_models
+                if vm.get('name')
+            ]
 
         # Process branches
-        branch_count = {}
-        for product in products:
-            branches_data = product.get('branches', [])
-            for branch in branches_data:
-                if isinstance(branch, dict):
-                    branch_name = branch.get('name', 'Unknown')
-                    branch_count[branch_name] = branch_count.get(branch_name, 0) + 1
+        if branches:
+            filter_data["branches"] = [
+                {
+                    "id": branch.get('id'),
+                    "name": branch.get('name', 'Unknown'),
+                    "slug": self.slugify(branch.get('name', '')),
+                    "address": branch.get('address'),
+                    "city": branch.get('city'),
+                    "phone": branch.get('phone')
+                }
+                for branch in branches
+                if branch.get('name')
+            ]
 
-        filter_data["branches"] = [
-            {
-                "name": name,
-                "count": count,
-                "slug": self.slugify(name)
-            }
-            for name, count in branch_count.items()
-        ]
+        # Sort categories and brands by product count (descending)
+        filter_data["categories"].sort(key=lambda x: x.get('product_count', 0), reverse=True)
+        filter_data["brands"].sort(key=lambda x: x.get('product_count', 0), reverse=True)
 
+        print(
+            f"✅ Generated filter data: {len(filter_data['categories'])} categories, {len(filter_data['brands'])} brands")
         return filter_data
+
+    def count_products_in_category(self, products, category_id):
+        """Count products in a specific category"""
+        count = 0
+        for product in products:
+            product_category = product.get('category')
+            if product_category and isinstance(product_category, dict):
+                if product_category.get('id') == category_id:
+                    count += 1
+        return count
+
+    def count_products_in_brand(self, products, brand_id):
+        """Count products in a specific brand"""
+        count = 0
+        for product in products:
+            product_brand = product.get('brand')
+            if product_brand and isinstance(product_brand, dict):
+                if product_brand.get('id') == brand_id:
+                    count += 1
+        return count
 
     def calculate_price_ranges(self, products):
         """Calculate price ranges for filtering"""
@@ -646,69 +989,127 @@ class AlSajiDataExporter:
         min_price = min(prices)
         max_price = max(prices)
 
-        # Create price ranges
+        # Create meaningful price ranges based on actual data distribution
         ranges = []
+
         if min_price == max_price:
             ranges.append({
                 "min": min_price,
                 "max": max_price,
                 "count": len(prices),
-                "label": f"${min_price:.2f}"
+                "label": f"IQD {min_price:,.0f}"
             })
         else:
-            step = max(1, (max_price - min_price) // 5)
-            current = min_price
+            # Use logarithmic ranges for better distribution
+            if max_price > 1000000:  # For high price ranges
+                steps = [0, 50000, 100000, 250000, 500000, 1000000, float('inf')]
+            elif max_price > 100000:  # For medium price ranges
+                steps = [0, 25000, 50000, 100000, 250000, 500000, float('inf')]
+            else:  # For low price ranges
+                steps = [0, 10000, 25000, 50000, 100000, 250000, float('inf')]
 
-            while current <= max_price:
-                range_max = current + step
-                count = len([p for p in prices if current <= p <= range_max])
+            for i in range(len(steps) - 1):
+                range_min = steps[i]
+                range_max = steps[i + 1]
+
+                count = len([p for p in prices if range_min <= p < range_max])
 
                 if count > 0:
+                    if range_max == float('inf'):
+                        label = f"IQD {range_min:,.0f}+"
+                    else:
+                        label = f"IQD {range_min:,.0f} - {range_max:,.0f}"
+
                     ranges.append({
-                        "min": current,
+                        "min": range_min,
                         "max": range_max,
                         "count": count,
-                        "label": f"${current:.2f} - ${range_max:.2f}"
+                        "label": label
                     })
-
-                current = range_max + 0.01
 
         return ranges
 
     def generate_search_index(self, products):
         """Generate search index for quick client-side search"""
-        print("Generating search index...")
+        print("🔍 Generating search index...")
 
         search_index = []
-        for product in products:
-            category_name = product.get('category', {}).get('name', '') if isinstance(product.get('category'),
-                                                                                      dict) else ''
-            brand_name = product.get('brand', {}).get('name', '') if isinstance(product.get('brand'), dict) else ''
 
+        for product in products:
+            # Safely extract category name
+            category_name = ""
+            category_id = None
+            if product.get('category') and isinstance(product.get('category'), dict):
+                category_name = product.get('category', {}).get('name', '')
+                category_id = product.get('category', {}).get('id')
+
+            # Safely extract brand name
+            brand_name = ""
+            brand_id = None
+            if product.get('brand') and isinstance(product.get('brand'), dict):
+                brand_name = product.get('brand', {}).get('name', '')
+                brand_id = product.get('brand', {}).get('id')
+
+            # Handle price safely
             try:
-                price = float(product.get('price', 0)) if product.get('price') else 0
+                price = float(product.get('price', 0)) if product.get('price') is not None else 0
             except (ValueError, TypeError):
                 price = 0
+
+            # Handle stock status
+            in_stock = product.get('in_stock', False)
+            quantity = product.get('quantity_available', 0)
+
+            # Create search terms array
+            search_terms = []
+
+            # Add product name
+            if product.get('name'):
+                search_terms.append(product.get('name').lower())
+
+            # Add product code
+            if product.get('default_code'):
+                search_terms.append(product.get('default_code').lower())
+
+            # Add category name
+            if category_name:
+                search_terms.append(category_name.lower())
+
+            # Add brand name
+            if brand_name:
+                search_terms.append(brand_name.lower())
+
+            # Add description (first 200 chars)
+            if product.get('description'):
+                desc = product.get('description')[:200].lower()
+                search_terms.append(desc)
+
+            # Remove duplicates and empty terms
+            search_terms = list(set([term for term in search_terms if term.strip()]))
 
             search_item = {
                 "id": product.get('id'),
                 "name": product.get('name', ''),
-                "category": category_name,
-                "brand": brand_name,
+                "default_code": product.get('default_code', ''),
+                "category_id": category_id,
+                "category_name": category_name,
+                "brand_id": brand_id,
+                "brand_name": brand_name,
                 "price": price,
+                "in_stock": in_stock,
+                "quantity_available": quantity,
+                "image_url": product.get('image_url'),
                 "slug": self.slugify(product.get('name', '')),
-                "search_terms": [
-                    product.get('name', ''),
-                    category_name,
-                    brand_name,
-                    str(product.get('description', ''))[:100]
-                ]
+                "search_terms": search_terms,
+                "description_preview": (product.get('description') or '')[:100] + '...' if product.get(
+                    'description') else ''
             }
             search_index.append(search_item)
 
+        print(f"✅ Generated search index with {len(search_index)} products")
         return search_index
 
-    # ... (Keep all the HTML generation methods the same as before)
+    # HTML generation methods
     def generate_html_pages(self, products, categories, brands):
         """Generate HTML pages for products, categories, and brands"""
         print("Generating HTML pages...")
@@ -970,14 +1371,18 @@ class AlSajiDataExporter:
         vehicle_models = self.fetch_vehicle_models()
         branches = self.fetch_branches()
 
+        # ✅ ADD PART COMPATIBILITY DATA
+        part_compatibility = self.fetch_part_compatibility()
+
         # Combine all data for change detection
         all_data = {
             "products": products,
             "categories": categories or [],
             "brands": brands or [],
-            "vehicle_brands" : vehicle_brands or [],
-            "vehicle_models" : vehicle_models or [],
-            "branches": branches or []
+            "vehicle_brands": vehicle_brands or [],
+            "vehicle_models": vehicle_models or [],
+            "branches": branches or [],
+            "part_compatibility": part_compatibility or []
         }
 
         # Check if data has changed
@@ -985,9 +1390,20 @@ class AlSajiDataExporter:
             print("Data has not changed since last export. Use force_update=True to force export.")
             return
 
-        # Generate filter data and search index
-        filter_data = self.generate_filter_data(products, categories, brands, vehicle_brands, branches)
+        # ✅ FIXED: Pass all required parameters to generate_filter_data
+        filter_data = self.generate_filter_data(
+            products=products,
+            categories=categories,
+            brands=brands,
+            vehicle_brands=vehicle_brands,
+            vehicle_models=vehicle_models,  # ✅ ADD THIS
+            branches=branches
+        )
+
         search_index = self.generate_search_index(products)
+
+        # ✅ GENERATE VEHICLE COMPATIBILITY INDEX
+        vehicle_compatibility_index = self.generate_vehicle_compatibility_index(part_compatibility, products)
 
         # Save JSON files
         self.save_json_data(products, "products.json")
@@ -998,10 +1414,13 @@ class AlSajiDataExporter:
         self.save_json_data(branches, "branches.json")
         self.save_json_data(filter_data, "filter-data.json")
         self.save_json_data(search_index, "search-index.json")
+        self.save_json_data(part_compatibility, "part_compatibility.json")
+        self.save_json_data(vehicle_compatibility_index, "vehicle_compatibility_index.json")
 
         # Save as JS modules for direct browser use
         self.save_json_data(filter_data, "filter-data.js", as_js_module=True)
         self.save_json_data(search_index, "search-index.js", as_js_module=True)
+        self.save_json_data(vehicle_compatibility_index, "vehicle_compatibility_index.js", as_js_module=True)
 
         # Generate HTML pages
         self.generate_html_pages(products, categories, brands)
@@ -1010,13 +1429,19 @@ class AlSajiDataExporter:
         self.save_filtering_js()
         self.generate_static_api_js()
 
+        # ✅ UPDATE STATIC API TO INCLUDE VEHICLE COMPATIBILITY
+        self.update_static_api_with_compatibility()
+
         # Generate metadata
         metadata = {
             "export_date": datetime.now().isoformat(),
             "total_products": len(products),
             "total_categories": len(categories) if categories else 0,
             "total_brands": len(brands) if brands else 0,
+            "total_vehicle_brands": len(vehicle_brands) if vehicle_brands else 0,
+            "total_vehicle_models": len(vehicle_models) if vehicle_models else 0,
             "total_branches": len(branches) if branches else 0,
+            "total_compatibility_records": len(part_compatibility),
             "data_hash": self.get_data_hash(all_data)
         }
 
@@ -1032,7 +1457,10 @@ class AlSajiDataExporter:
         print(f"✓ Total products: {len(products)}")
         print(f"✓ Total categories: {len(categories) if categories else 0}")
         print(f"✓ Total brands: {len(brands) if brands else 0}")
+        print(f"✓ Total vehicle brands: {len(vehicle_brands) if vehicle_brands else 0}")
+        print(f"✓ Total vehicle models: {len(vehicle_models) if vehicle_models else 0}")
         print(f"✓ Total branches: {len(branches) if branches else 0}")
+        print(f"✓ Total compatibility records: {len(part_compatibility)}")
         print(f"✓ Data hash saved for change detection")
 
     def save_filtering_js(self):
@@ -1252,148 +1680,187 @@ document.addEventListener('DOMContentLoaded', () => {
         with open(os.path.join(self.html_dir, "filtering.js"), "w", encoding="utf-8") as f:
             f.write(filtering_js)
 
-    # Add this method to your AlSajiDataExporter class
     def generate_static_api_js(self):
         """Generate static_api.js file for frontend"""
         print("📁 Generating static_api.js...")
 
         try:
-            # Load the JSON data
-            with open(os.path.join(self.json_dir, 'products.json'), 'r', encoding='utf-8') as f:
-                products = json.load(f)
+            # Load the JSON data and validate them
+            def fetch_json_file(file_name):
+                file_path = os.path.join(self.json_dir, file_name)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        return data
+                except Exception as e:
+                    print(f"❌ Failed to load {file_name}: {e}")
+                    return []
 
-            with open(os.path.join(self.json_dir, 'categories.json'), 'r', encoding='utf-8') as f:
-                categories = json.load(f)
+            products = fetch_json_file('products.json')  # Products data
+            categories = fetch_json_file('categories.json')  # Categories data
+            brands = fetch_json_file('brands.json')  # Brands data
 
-            with open(os.path.join(self.json_dir, 'brands.json'), 'r', encoding='utf-8') as f:
-                brands = json.load(f)
+            # Create the valid static API
+            static_api_data = {
+                "products": products,
+                "categories": categories,
+                "brands": brands,
+                "lastUpdated": datetime.now().isoformat()
+            }
 
-            # Create the static API JavaScript content
-            static_api_content = f"""
-    // Static API - Auto-generated {datetime.now().isoformat()}
-    window.staticAPI = {{
-        products: {json.dumps(products, ensure_ascii=False)},
-        categories: {json.dumps(categories, ensure_ascii=False)},
-        brands: {json.dumps(brands, ensure_ascii =False)},
-        lastUpdated: "{datetime.now().isoformat()}",
-
-        getProducts(filters = {{}}) {{
-            let filtered = [...this.products];
-
-            // Search filter
-            if (filters.search) {{
-                const searchTerm = filters.search.toLowerCase();
-                filtered = filtered.filter(p => 
-                    p.name && p.name.toLowerCase().includes(searchTerm) ||
-                    (p.description && p.description.toLowerCase().includes(searchTerm))
-                );
-            }}
-
-            // Category filter
-            if (filters.category) {{
-                filtered = filtered.filter(p => {{
-                    const cat = p.category;
-                    return cat && cat.name && cat.name.toString().toLowerCase().includes(filters.category.toLowerCase());
-                }});
-            }}
-
-            // Brand filter
-            if (filters.brand) {{
-                filtered = filtered.filter(p => {{
-                    const brand = p.brand;
-                    return brand && brand.name && brand.name.toString().toLowerCase().includes(filters.brand.toLowerCase());
-                }});
-            }}
-
-            // In stock filter
-            if (filters.in_stock !== undefined && filters.in_stock !== '') {{
-                const inStock = filters.in_stock === 'true' || filters.in_stock === true;
-                filtered = filtered.filter(p => p.in_stock === inStock);
-            }}
-
-            // Price range filters
-            if (filters.price_min) {{
-                const minPrice = parseFloat(filters.price_min);
-                if (!isNaN(minPrice)) {{
-                    filtered = filtered.filter(p => p.price >= minPrice);
-                }}
-            }}
-
-            if (filters.price_max) {{
-                const maxPrice = parseFloat(filters.price_max);
-                if (!isNaN(maxPrice)) {{
-                    filtered = filtered.filter(p => p.price <= maxPrice);
-                }}
-            }}
-
-            // Pagination
-            const limit = parseInt(filters.limit) || 12;
-            const offset = parseInt(filters.offset) || 0;
-            const paginated = filtered.slice(offset, offset + limit);
-
-            return {{
-                success: true,
-                products: paginated,
-                total_count: filtered.length,
-                count: paginated.length
-            }};
-        }},
-
-        getCategories() {{
-            return {{ success: true, categories: this.categories }};
-        }},
-
-        getBrands() {{
-            return {{ success: true, brands: this.brands }};
-        }},
-
-        searchSuggestions(query) {{
-            if (!query || query.length < 2) return [];
-            const suggestions = new Set();
-            const q = query.toLowerCase();
-
-            this.products.forEach(product => {{
-                if (product.name && product.name.toLowerCase().includes(q)) {{
-                    suggestions.add(product.name);
-                }}
-                if (product.category && product.category.name && product.category.name.toLowerCase().includes(q)) {{
-                    suggestions.add(product.category.name);
-                }}
-                if (product.brand && product.brand.name && product.brand.name.toLowerCase().includes(q)) {{
-                    suggestions.add(product.brand.name);
-                }}
-            }});
-
-            return Array.from(suggestions).slice(0, 8);
-        }},
-
-        getProductById(id) {{
-            return this.products.find(p => p.id == id);
-        }}
-    }};
-
-    console.log('✅ Static API loaded:', {{
-        products: window.staticAPI.products.length,
-        categories: window.staticAPI.categories.length,
-        brands: window.staticAPI.brands.length,
-        lastUpdated: window.staticAPI.lastUpdated
-    }});
+            # Format JavaScript output with proper syntax
+            static_api_content = f"""// Static API - Auto-generated {datetime.now().isoformat()}
+    window.staticAPI = {json.dumps(static_api_data, ensure_ascii=False, indent=2)};
     """
 
-            # Save the static_api.js file
-            static_api_path = os.path.join(self.output_dir, 'static_api.js')
-            with open(static_api_path, 'w', encoding='utf-8') as f:
-                f.write(static_api_content)
+            # Save to the static_api.js file
+            output_file_path = os.path.join(self.output_dir, 'static_api.js')
 
-            print(
-                f"✅ Generated static_api.js with {len(products)} products, {len(categories)} categories, {len(brands)} brands")
+            with open(output_file_path, 'w', encoding='utf-8') as file:
+                file.write(static_api_content)
+
+            print(f"✅ static_api.js successfully generated: {output_file_path}")
 
         except Exception as e:
             print(f"❌ Error generating static_api.js: {e}")
+
+    def update_static_api_with_compatibility(self):
+        """Update static_api.js to include vehicle compatibility functions"""
+        print("🔄 Updating static API with vehicle compatibility...")
+
+        try:
+            # Load the existing static_api.js
+            static_api_path = os.path.join(self.output_dir, 'static_api.js')
+            with open(static_api_path, 'r', encoding='utf-8') as f:
+                static_api_content = f.read()
+
+            # Load compatibility data
+            compatibility_file = os.path.join(self.json_dir, 'vehicle_compatibility_index.json')
+            with open(compatibility_file, 'r', encoding='utf-8') as f:
+                compatibility_data = json.load(f)
+
+            # Add compatibility functions to the static API - FIXED SYNTAX
+            compatibility_functions = f""",
+        // Vehicle Compatibility Functions
+        getProductsByVehicle(vehicleData) {{
+            const {{ makeId, modelId, year }} = vehicleData;
+            let compatibleProducts = [];
+
+            // Find compatible products from compatibility index
+            this.vehicleCompatibilityIndex.forEach(vehicle => {{
+                if (modelId && vehicle.vehicle_model_id == modelId) {{
+                    // Filter by year if provided
+                    let yearCompatible = true;
+                    if (year) {{
+                        const fromYear = vehicle.from_year;
+                        const toYear = vehicle.to_year;
+                        if (fromYear && toYear) {{
+                            yearCompatible = (year >= fromYear && year <= toYear);
+                        }} else if (fromYear) {{
+                            yearCompatible = (year >= fromYear);
+                        }} else if (toYear) {{
+                            yearCompatible = (year <= toYear);
+                        }}
+                    }}
+
+                    if (yearCompatible) {{
+                        compatibleProducts = [...compatibleProducts, ...vehicle.compatible_products];
+                    }}
+                }}
+            }});
+
+            // Remove duplicates and get full product details
+            const uniqueProducts = [];
+            const seenIds = new Set();
+
+            compatibleProducts.forEach(compProduct => {{
+                if (!seenIds.has(compProduct.product_id)) {{
+                    const fullProduct = this.getProductById(compProduct.product_id);
+                    if (fullProduct) {{
+                        uniqueProducts.push({{
+                            ...fullProduct,
+                            compatibility_info: {{
+                                vehicle_model: compProduct.vehicle_model_name,
+                                from_year: compProduct.from_year,
+                                to_year: compProduct.to_year
+                            }}
+                        }});
+                        seenIds.add(compProduct.product_id);
+                    }}
+                }}
+            }});
+
+            return {{
+                success: true,
+                products: uniqueProducts,
+                total_count: uniqueProducts.length,
+                vehicle_info: vehicleData
+            }};
+        }},
+
+        getVehicleCompatibilityIndex() {{
+            return {{ success: true, compatibility_index: this.vehicleCompatibilityIndex }};
+        }},
+
+        getCompatibleVehicles(productId) {{
+            const compatibleVehicles = [];
+
+            this.vehicleCompatibilityIndex.forEach(vehicle => {{
+                const isCompatible = vehicle.compatible_products.some(
+                    product => product.product_id == productId
+                );
+                if (isCompatible) {{
+                    compatibleVehicles.push({{
+                        vehicle_model_id: vehicle.vehicle_model_id,
+                        vehicle_model_name: vehicle.vehicle_model_name,
+                        brand_id: vehicle.brand_id,
+                        brand_name: vehicle.brand_name,
+                        from_year: vehicle.from_year,
+                        to_year: vehicle.to_year,
+                        year_range: vehicle.year_range
+                    }});
+                }}
+            }});
+
+            return compatibleVehicles;
+        }}"""
+
+            # Find where to insert the compatibility data
+            # Look for the end of the main object (before the last closing brace)
+            last_brace_pos = static_api_content.rfind('}')
+            if last_brace_pos == -1:
+                raise Exception("Could not find the main object closing brace")
+
+            # Find the position before the last brace and any trailing content
+            insert_pos = last_brace_pos
+
+            # Check if there are functions already defined
+            if 'getProductById' in static_api_content:
+                # If functions exist, insert before the last function's closing brace
+                last_function_brace = static_api_content.rfind('    }', 0, last_brace_pos)
+                if last_function_brace != -1:
+                    insert_pos = last_function_brace + 5  # Position after the function closing brace
+
+            # Insert compatibility data and functions
+            updated_content = (
+                    static_api_content[:insert_pos] +
+                    f',\n    vehicleCompatibilityIndex: {json.dumps(compatibility_data, ensure_ascii=False)}' +
+                    compatibility_functions +
+                    static_api_content[insert_pos:]
+            )
+
+            # Save the updated static API
+            with open(static_api_path, 'w', encoding='utf-8') as f:
+                f.write(updated_content)
+
+            print("✅ Updated static API with vehicle compatibility functions")
+
+        except Exception as e:
+            print(f"❌ Error updating static API with compatibility: {e}")
             import traceback
             traceback.print_exc()
 
 # Usage with your Odoo.sh credentials
 if __name__ == "__main__":
     exporter = AlSajiDataExporter()
-    exporter.export_all_data()
+    exporter.export_all_data(force_update=True)

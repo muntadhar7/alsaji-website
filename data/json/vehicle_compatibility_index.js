@@ -1,0 +1,21 @@
+window.vehicle_compatibility_index = [
+  {
+    "vehicle_model_id": 252042,
+    "vehicle_model_name": "Land Cruiser",
+    "brand_id": 1787,
+    "brand_name": "Toyota",
+    "compatible_products": [
+      {
+        "product_id": 195623,
+        "product_name": "دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان",
+        "product_code": "A1N156",
+        "price": 56000,
+        "in_stock": true,
+        "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195623"
+      }
+    ],
+    "year_range": "2008-2021",
+    "from_year": 2008,
+    "to_year": 2021
+  }
+];
