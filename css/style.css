@@ -59,7 +59,7 @@ h3{font-size:16px;margin:0;color:var(--ink2)}
 .image{background:var(--w2);border-radius:12px;width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;color:var(--navy2);font-size:24px}
 .row{display:flex;gap:8px}
 .between{justify-content:space-between;align-items:center}
-.select{width:100%;padding:10px;border:1px solid var(--w1);border-radius:12px;background:#fff;font-size:14px;transition:all 0.2s ease}
+.select{width:100%;padding:14px 10px;border:1px solid var(--w1);border-radius:12px;background:#fff;font-size:14px;transition:all 0.2s ease}
 .select:focus{border-color:var(--red);outline:none;box-shadow:0 0 0 3px rgba(188,20,44,0.1)}
 
 /* Hero section with red accent */
@@ -290,3 +290,8 @@ main {
     width: 100%;
   }
 }
+
+
+@media(min-width:768px){
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+

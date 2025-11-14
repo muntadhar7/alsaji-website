@@ -969,7 +969,10 @@ function setupShopEvents() {
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', loadMoreProducts);
     }
-
+    const clearFiltersButton = document.getElementById('clearButton');
+    if (clearFiltersButton) {
+        clearFiltersButton.addEventListener('click', clearFilters);
+    }
     setupInfiniteScroll();
     console.log('✅ Shop events setup complete');
 }

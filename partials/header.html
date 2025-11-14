@@ -256,4 +256,26 @@
   body.menu-open {
     overflow: hidden;
   }
+
+  /* Make all chips uniform */
+.header-actions .chip {
+    display: inline-flex;          /* Use flex for centering */
+    justify-content: center;       /* Center horizontally */
+    align-items: center;           /* Center vertically */
+    width: 80px;                   /* Set a fixed width */
+    height: 36px;                  /* Set a fixed height */
+    padding: 0 12px;               /* Optional padding inside */
+    box-sizing: border-box;        /* Include padding in width/height */
+    text-align: center;
+    white-space: nowrap;           /* Prevent text wrap */
+}
+
+/* Optional: adjust cart chip if it has numbers */
+.header-actions .cart-chip {
+    width: auto;                    /* Let it expand if needed */
+    min-width: 80px;                /* Keep minimum width */
+    justify-content: center;
+    gap: 4px;                       /* Space between icon and number */
+}
+
 </style>
