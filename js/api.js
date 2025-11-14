@@ -387,7 +387,7 @@ class AlSajiAPI {
 
         // Try to load from JSON file directly
         try {
-            const response = await fetch('/data/json/products.json');
+            const response = await fetch('data/json/products.json');
             if (response.ok) {
                 const products = await response.json();
 
@@ -430,7 +430,7 @@ class AlSajiAPI {
 
     async getFallbackCategories() {
         try {
-            const response = await fetch('/data/json/categories.json');
+            const response = await fetch('data/json/categories.json');
             if (response.ok) {
                 const categories = await response.json();
                 return {
@@ -453,7 +453,7 @@ class AlSajiAPI {
 
     async getFallbackBrands() {
         try {
-            const response = await fetch('/data/json/brands.json');
+            const response = await fetch('data/json/brands.json');
             if (response.ok) {
                 const brands = await response.json();
                 return {
