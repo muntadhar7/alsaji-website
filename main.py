@@ -28,6 +28,8 @@ class AlSajiDataExporter:
         self.session = requests.Session()
         self.setup_session()
         self.setup_directories()
+        self.cached_products = None  # Add this line
+
 
     def authenticate(self):
         """Authenticate with Odoo and get user ID"""
@@ -236,6 +238,11 @@ class AlSajiDataExporter:
             offset += len(products_data)
             time.sleep(0.5)
 
+        # Store the products for later use
+        self.cached_products = all_products
+        print(f"Total products fetched and cached: {len(all_products)}")
+        return all_products
+
         print(f"Total products fetched: {len(all_products)}")
         return all_products
 
@@ -369,45 +376,151 @@ class AlSajiDataExporter:
         return transformed_categories
 
     def fetch_brands(self):
-        """Fetch branches/companies using Odoo res.company model"""
-        print("Fetching brands from Odoo...")
+        """Fetch brands using cached products data - FAST VERSION"""
+        print("Fetching brands from Odoo (using cached products)...")
 
         if not self.uid:
             if not self.initialize_session():
                 return []
 
-        brands_data = self.call_odoo_api(
-            model='product.productbrand',
-            method='search_read',
-            domain=[('is_published','=',True)],
-            fields=['id', 'name', 'logo', ]
-        )
+        try:
+            # Step 1: Fetch all brands in one call
+            brands_data = self.call_odoo_api(
+                model='product.productbrand',
+                method='search_read',
+                domain=[('is_published', '=', True)],
+                fields=['id', 'name', 'logo']
+            )
 
-        if brands_data is None:
-            print("No brands data returned (None)")
+            if not brands_data:
+                print("No brands found")
+                return []
+
+            print(f"Found {len(brands_data)} brands")
+
+            # Step 2: Use cached products data instead of fetching again
+            if self.cached_products is None:
+                print("No cached products found, fetching products first...")
+                self.fetch_products()
+
+            all_products = self.cached_products or []
+            print(f"Using {len(all_products)} cached products for category mapping")
+
+            # Step 3: Build brand-category mapping from cached products
+            brand_categories_map = {}
+            brand_product_count = {}
+
+            for product in all_products:
+                brand_id = product.get('brand_id')
+
+                # FIX: Handle brand_id whether it's a single ID or [id, name] list
+                actual_brand_id = None
+                if isinstance(brand_id, (list, tuple)) and len(brand_id) > 0:
+                    actual_brand_id = brand_id[0]  # Extract the ID from [id, name]
+                elif isinstance(brand_id, int):
+                    actual_brand_id = brand_id
+                elif brand_id is None:
+                    continue  # Skip products without brands
+
+                if actual_brand_id:
+                    # Initialize brand in maps
+                    if actual_brand_id not in brand_categories_map:
+                        brand_categories_map[actual_brand_id] = set()
+                        brand_product_count[actual_brand_id] = 0
+
+                    # Count product
+                    brand_product_count[actual_brand_id] += 1
+
+                    # Add categories - FIX: Also handle category ID extraction
+                    category = product.get('category')
+                    if category and isinstance(category, dict):
+                        category_id = category.get('id')
+                        if category_id:
+                            brand_categories_map[actual_brand_id].add(category_id)
+                    # Alternative: if you have direct category IDs in products
+                    elif product.get('public_categ_ids'):
+                        categ_ids = product.get('public_categ_ids', [])
+                        if isinstance(categ_ids, list):
+                            # Extract IDs if they're in [id, name] format
+                            for categ_id in categ_ids:
+                                if isinstance(categ_id, (list, tuple)) and len(categ_id) > 0:
+                                    brand_categories_map[actual_brand_id].add(categ_id[0])
+                                elif isinstance(categ_id, int):
+                                    brand_categories_map[actual_brand_id].add(categ_id)
+
+            # Step 4: Get all unique category IDs
+            all_category_ids = set()
+            for category_ids in brand_categories_map.values():
+                all_category_ids.update(category_ids)
+
+            # Step 5: Fetch category details in one call
+            categories_map = {}
+            if all_category_ids:
+                print(f"Fetching {len(all_category_ids)} categories...")
+                categories_data = self.call_odoo_api(
+                    model='product.public.category',
+                    method='search_read',
+                    domain=[('id', 'in', list(all_category_ids))],
+                    fields=['id', 'name', 'parent_id', 'image_128']
+                ) or []
+
+                categories_map = {cat['id']: cat for cat in categories_data}
+
+            # Step 6: Transform brands
+            transformed_brands = []
+            for brand in brands_data:
+                brand_id = brand['id']
+                categories = []
+
+                if brand_id in brand_categories_map:
+                    for categ_id in brand_categories_map[brand_id]:
+                        if categ_id in categories_map:
+                            category_data = categories_map[categ_id]
+
+                            parent = None
+                            parent_id = category_data.get('parent_id')
+                            if parent_id and isinstance(parent_id, (list, tuple)) and len(parent_id) > 1:
+                                parent = {
+                                    'id': parent_id[0],
+                                    'name': parent_id[1]
+                                }
+
+                            image_url = None
+                            if category_data.get('image_128'):
+                                image_url = f"{self.base_url}/web/image?model=product.public.category&id={categ_id}&field=image_1920"
+
+                            categories.append({
+                                'id': categ_id,
+                                'name': category_data.get('name', ''),
+                                'parent': parent,
+                                'image_url': image_url
+                            })
+
+                # Handle logo URL
+                logo_url = ""
+                logo_data = brand.get('logo')
+                if logo_data:
+                    if isinstance(logo_data, list) and len(logo_data) > 0:
+                        logo_url = logo_data[0]
+                    elif isinstance(logo_data, str):
+                        logo_url = logo_data
+
+                transformed_brands.append({
+                    'id': brand_id,
+                    'name': brand.get('name', ''),
+                    'logo': logo_url,
+                    'categories': categories,
+                    'product_count': brand_product_count.get(brand_id, 0)
+                })
+
+            print(f"Successfully processed {len(transformed_brands)} brands with categories")
+            return transformed_brands
+
+        except Exception as e:
+            print(f"Error fetching brands: {str(e)}")
+            import traceback
+            traceback.print_exc()
             return []
-
-        if not brands_data:
-            print("Empty brands list returned")
-            return []
-
-        transformed_brands = []
-        for brand in brands_data:
-            logo_url = ''
-            logo = brand.get('logo')
-            if logo:
-                logo_url = f"{self.base_url}/web/image?model=product.productbrand&field=logo&id={brand['id']}" if brand.get(
-                    'logo') else None,
-
-
-            transformed_brands.append({
-                'id': brand['id'],
-                'name': brand.get('name', ''),
-                'logo': logo_url,
-
-            })
-
-        return transformed_brands
 
     def fetch_vehicle_brands(self):
         """Fetch branches using Odoo  model"""

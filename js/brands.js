@@ -11,6 +11,18 @@ async function loadBrandsData() {
         allBrands = Array.isArray(brands) ? brands : []; // Save for search filter
 
         console.log("Processed brands:", allBrands);
+
+        // Debug: Check if categories are present
+        if (allBrands.length > 0) {
+            const brandWithCategories = allBrands.find(brand => brand.categories && brand.categories.length > 0);
+            if (brandWithCategories) {
+                console.log("Brand with categories example:", brandWithCategories);
+                console.log("Categories array:", brandWithCategories.categories);
+            } else {
+                console.log("No brands with categories found");
+            }
+        }
+
         renderBrands(allBrands);
     } catch (error) {
         console.error('Failed to load brands:', error);
@@ -29,20 +41,27 @@ function renderBrands(brands) {
 
     container.innerHTML = brands.map(brand => {
         // Safely extract brand data
-        const brandName = typeof brand === 'object' ? brand.name : String(brand);
-        const brandDescription = brand.description || "High-quality automotive products.";
+        const brandName = brand.name || 'Unnamed Brand';
+        const brandDescription = `Available in ${brand.product_count || 0} products`;
+
+        // Handle categories - they should now be present in the data
         const brandCategories = brand.categories || [];
 
-        // Handle image URL safely
-        const imageUrl = getBrandImageUrl(brand);
+        console.log(`Rendering brand: ${brandName}, Categories count: ${brandCategories.length}`); // Debug
 
-        // Category chips become clickable filters
+        // Handle image URL safely
+        const imageUrl = brand.logo || './assets/images/placeholder-brand.jpg';
+
+        // Category chips - only render if categories exist
         const chipsHTML = brandCategories
             .map(cat => {
-                const categoryName = typeof cat === 'object' ? cat.name : String(cat);
+                const categoryName = cat.name || 'Unnamed Category';
+                const categoryId = cat.id;
+
                 return `
                 <span class="chip"
-                      onclick="event.stopPropagation(); window.location.href='shop.html?brand=${encodeURIComponent(brandName)}&category=${encodeURIComponent(categoryName)}'">
+                      onclick="event.stopPropagation(); filterByCategory('${categoryName}')"
+                      style="cursor: pointer;">
                     ${categoryName}
                 </span>
             `;
@@ -87,7 +106,7 @@ function renderBrands(brands) {
                             ? `<div class="row" style="gap:8px; margin-top:12px; flex-wrap:wrap;">
                                    ${chipsHTML}
                                </div>`
-                            : ''
+                            : '<p class="muted" style="margin-top:12px;font-size:14px;">No categories available</p>'
                         }
                     </div>
 
@@ -95,6 +114,14 @@ function renderBrands(brands) {
             </div>
         </section>`;
     }).join('');
+}
+
+// Add this helper function for category filtering
+function filterByCategory(categoryName) {
+    event.stopPropagation();
+    console.log(`Filtering by category: ${categoryName}`);
+    // Navigate to shop page with category filter
+    window.location.href = `shop.html?category=${encodeURIComponent(categoryName)}`;
 }
 
 function getBrandImageUrl(brand) {

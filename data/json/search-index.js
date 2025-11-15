@@ -13,9 +13,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=184414",
     "slug": "قبغ-دبة-فضلة-رف-فور-19--كورلا-بيكاتشو",
     "search_terms": [
-      " قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو ",
+      "denso",
       "022512-2150",
-      "denso"
+      " قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو "
     ],
     "description_preview": ""
   },
@@ -53,9 +53,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=184483",
     "slug": "كفر-فتحة-سحب-هوك-دعامية-خلفية-اعلى-كورلا-كروس-20--ايسر",
     "search_terms": [
+      "ty-22crl-015 52162-0a040",
       "كفر فتحة سحب هوك دعامية خلفية اعلى كورلا كروس 20 - ايسر",
-      "daisen-hy",
-      "ty-22crl-015 52162-0a040"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -73,8 +73,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=184494",
     "slug": "كفر-فتحة-سحب-هوك-دعامية-خلفية-كورلا-20--خليجي-مربع",
     "search_terms": [
-      "كفر فتحة سحب هوك دعامية خلفية كورلا 20 - خليجي مربع ",
       "ty-19crl-016",
+      "كفر فتحة سحب هوك دعامية خلفية كورلا 20 - خليجي مربع ",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -94,8 +94,8 @@ window.search-index = [
     "slug": "كفر-فتحة-سحب-هوك-دعامية-امامية-كورلا-كروس-22--ايسر",
     "search_terms": [
       "ty-22crl-010-l",
-      "daisen-hy",
-      "كفر فتحة سحب هوك دعامية امامية كورلا كروس 22 - ايسر"
+      "كفر فتحة سحب هوك دعامية امامية كورلا كروس 22 - ايسر",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -114,8 +114,8 @@ window.search-index = [
     "slug": "كفر-فتحة-سحب-هوك-دعامية-امامية-كورلا-كروس-22--ايمن",
     "search_terms": [
       "ty-22crl-010-r",
-      "كفر فتحة سحب هوك دعامية امامية كورلا كروس 22 - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر فتحة سحب هوك دعامية امامية كورلا كروس 22 - ايمن"
     ],
     "description_preview": ""
   },
@@ -174,8 +174,8 @@ window.search-index = [
     "slug": "بك-زاوية-هايلندر-21--امريكي-ايسر",
     "search_terms": [
       "daisen-hy",
-      "بك زاوية هايلندر 21 - امريكي ايسر",
-      "ty-21hld-004a-l"
+      "ty-21hld-004a-l",
+      "بك زاوية هايلندر 21 - امريكي ايسر"
     ],
     "description_preview": ""
   },
@@ -193,9 +193,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=184936",
     "slug": "فلتر-دهن-كورلا-حديد-عام",
     "search_terms": [
-      "260340-0500",
+      "denso",
       "فلتر دهن كورلا حديد عام",
-      "denso"
+      "260340-0500"
     ],
     "description_preview": ""
   },
@@ -213,8 +213,8 @@ window.search-index = [
     "image_url": null,
     "slug": "ماسحة-حديد-conventional-u-hook-up-wiper-blade-26-inch-aisin-wiper-(650mm)",
     "search_terms": [
-      "aisin",
       "awbsh-6261",
+      "aisin",
       " ماسحة حديد conventional u-hook up wiper blade 26 inch aisin wiper (650mm)"
     ],
     "description_preview": ""
@@ -234,8 +234,8 @@ window.search-index = [
     "slug": "بلك-عادي-2tr-1gr-11--08-فحمي-spark-plug-spanner-16-k20hru11-oes-to-90919-01235",
     "search_terms": [
       "denso",
-      "mw267700-28803l",
-      "بلك عادي 2tr 1gr 11 - 08 فحمي spark plug spanner : 16 k20hru11 oes to 90919-01235"
+      "بلك عادي 2tr 1gr 11 - 08 فحمي spark plug spanner : 16 k20hru11 oes to 90919-01235",
+      "mw267700-28803l"
     ],
     "description_preview": ""
   },
@@ -253,9 +253,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185056",
     "slug": "ماسكة-بك-لايت-كورلا-20--خليجي-صيني-ايسر",
     "search_terms": [
-      "ty-19crl-025-l",
+      "ماسكة بك لايت كورلا 20 - خليجي صيني ايسر",
       "daisen-hy",
-      "ماسكة بك لايت كورلا 20 - خليجي صيني ايسر"
+      "ty-19crl-025-l"
     ],
     "description_preview": ""
   },
@@ -293,9 +293,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185078",
     "slug": "فلتر-دهن-نيسان-عام-محرك-3700",
     "search_terms": [
-      "فلتر دهن نيسان عام محرك 3700<",
+      "260340-0700",
       "denso",
-      "260340-0700"
+      "فلتر دهن نيسان عام محرك 3700<"
     ],
     "description_preview": ""
   },
@@ -313,9 +313,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185092",
     "slug": "قبغ-راديتر-رف-فور-كامري-18--23-عام-كورلا-14--23-عام-a25",
     "search_terms": [
-      "022510-5980",
       "denso",
-      "قبغ راديتر رف فور كامري 18 - 23 عام كورلا 14 - 23 عام a25 "
+      "قبغ راديتر رف فور كامري 18 - 23 عام كورلا 14 - 23 عام a25 ",
+      "022510-5980"
     ],
     "description_preview": ""
   },
@@ -333,9 +333,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185115",
     "slug": "حاجب-زاوية-دعامية-امامية-كورلا-20-امريكي-le-كورلا-ليفان-23-وارد-صين-ايمن",
     "search_terms": [
-      "حاجب زاوية دعامية امامية كورلا 20 امريكي le / كورلا ليفان 23- وارد صين  ايمن",
       "ty-19crlu-012-r",
-      "daisen-hy"
+      "daisen-hy",
+      "حاجب زاوية دعامية امامية كورلا 20 امريكي le / كورلا ليفان 23- وارد صين  ايمن"
     ],
     "description_preview": ""
   },
@@ -353,9 +353,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185116",
     "slug": "حاجب-زاوية-دعامية-امامية-كورلا-20-امريكي-le-كورلا-ليفان-23-وارد-صين-ايسر",
     "search_terms": [
+      "daisen-hy",
       "حاجب زاوية دعامية امامية كورلا 20 امريكي le / كورلا ليفان 23- وارد صين ايسر",
-      "ty-19crlu-012-l",
-      "daisen-hy"
+      "ty-19crlu-012-l"
     ],
     "description_preview": ""
   },
@@ -374,8 +374,8 @@ window.search-index = [
     "slug": "فلتر-دهن-نيسان-سنترا-سني-عام",
     "search_terms": [
       "فلتر دهن نيسان سنترا سني عام",
-      "denso",
-      "260340-0790"
+      "260340-0790",
+      "denso"
     ],
     "description_preview": ""
   },
@@ -414,8 +414,8 @@ window.search-index = [
     "slug": "كفر-فتحت-سحب-هوك-دعامية-خلفية-كورلا-20--امريكي-كورلا-ليفان-23-وارد-صين-مربع",
     "search_terms": [
       "ty-19crlu-011",
-      "كفر فتحت سحب هوك دعامية خلفية كورلا 20 - امريكي كورلا ليفان 23- وارد صين مربع ",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر فتحت سحب هوك دعامية خلفية كورلا 20 - امريكي كورلا ليفان 23- وارد صين مربع "
     ],
     "description_preview": ""
   },
@@ -454,8 +454,8 @@ window.search-index = [
     "slug": "فلتر-دهن-لاند-08-1vd-كاز-8-سلندر-بانزين-1ur-3ur-ب-04152-38020",
     "search_terms": [
       "denso",
-      "260340-0570",
-      "فلتر دهن لاند 08 1vd كاز 8 سلندر بانزين 1ur 3ur ب 04152-38020"
+      "فلتر دهن لاند 08 1vd كاز 8 سلندر بانزين 1ur 3ur ب 04152-38020",
+      "260340-0570"
     ],
     "description_preview": ""
   },
@@ -473,9 +473,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185294",
     "slug": "قبغ-دبة-فضلة-لاند-08--21-1vd-لاند-22--v35-f33--كورلا-19--عام-كامري-12--18",
     "search_terms": [
+      "denso",
       "قبغ دبة فضلة لاند 08 - 21 1vd لاند 22 - v35 f33 - كورلا 19 - عام كامري 12 - 18 -  ",
-      "022510-6060",
-      "denso"
+      "022510-6060"
     ],
     "description_preview": ""
   },
@@ -494,8 +494,8 @@ window.search-index = [
     "slug": "فلتر-دهن-موبس-كوري-عام-4-سلندر-01--19",
     "search_terms": [
       "denso",
-      "260340-0680",
-      "فلتر دهن موبس كوري عام 4 سلندر 01 - 19"
+      "فلتر دهن موبس كوري عام 4 سلندر 01 - 19",
+      "260340-0680"
     ],
     "description_preview": ""
   },
@@ -513,9 +513,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185325",
     "slug": "فلتر-بطل-تبريد-تويوتا-عام-dryer-filter-toyota",
     "search_terms": [
-      "denso",
       "445910-1150",
-      "فلتر بطل تبريد تويوتا  عام dryer filter toyota"
+      "فلتر بطل تبريد تويوتا  عام dryer filter toyota",
+      "denso"
     ],
     "description_preview": ""
   },
@@ -533,9 +533,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185334",
     "slug": "هوائية-دعامية-خلفية-كامري-18--se-امريكي-ايسر",
     "search_terms": [
-      "هوائية دعامية خلفية كامري 18 - se امريكي ايسر",
       "ty-18cmu-027-l",
-      "daisen-hy"
+      "daisen-hy",
+      "هوائية دعامية خلفية كامري 18 - se امريكي ايسر"
     ],
     "description_preview": ""
   },
@@ -554,8 +554,8 @@ window.search-index = [
     "slug": "هوائية-دعامية-خلفية-كامري-18--se-امريكي-ايمن",
     "search_terms": [
       "ty-18cmu-027-r",
-      "هوائية دعامية خلفية كامري 18 - se امريكي ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "هوائية دعامية خلفية كامري 18 - se امريكي ايمن"
     ],
     "description_preview": ""
   },
@@ -573,9 +573,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185415",
     "slug": "قبغ-راديتر-لاند-08--عام-برادو-03--10--عام-سيكويا-تندرا-فيكو-ريفو-عام-كامري-افلون-05--17-باجيرو-عام-كوستر-108kpa",
     "search_terms": [
+      "denso",
       "022510-4170",
-      "قبغ راديتر لاند 08 - عام برادو 03 - 10 - عام سيكويا تندرا فيكو ريفو عام كامري افلون 05 - 17 باجيرو عام كوستر 108kpa",
-      "denso"
+      "قبغ راديتر لاند 08 - عام برادو 03 - 10 - عام سيكويا تندرا فيكو ريفو عام كامري افلون 05 - 17 باجيرو عام كوستر 108kpa"
     ],
     "description_preview": ""
   },
@@ -613,9 +613,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185452",
     "slug": "مسطرة-دعامية-امامية-رف-فور-19-ايمن",
     "search_terms": [
-      "ty-20rav4-020-r",
+      "daisen-hy",
       "مسطرة دعامية امامية رف فور 19- ايمن",
-      "daisen-hy"
+      "ty-20rav4-020-r"
     ],
     "description_preview": ""
   },
@@ -633,9 +633,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185464",
     "slug": "كفر-بروجكتر-رف-فور-19--ايسر",
     "search_terms": [
-      "كفر بروجكتر رف فور 19 - ايسر",
+      "ty-20rav4-018-l",
       "daisen-hy",
-      "ty-20rav4-018-l"
+      "كفر بروجكتر رف فور 19 - ايسر"
     ],
     "description_preview": ""
   },
@@ -653,9 +653,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185466",
     "slug": "سكن-دعامية-خلفية-كورلا-كروس-22--ايسر",
     "search_terms": [
+      "daisen-hy",
       "سكن دعامية خلفية كورلا كروس 22 - ايسر",
-      "ty-22crl-026-l",
-      "daisen-hy"
+      "ty-22crl-026-l"
     ],
     "description_preview": ""
   },
@@ -673,8 +673,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185467",
     "slug": "سكن-دعامية-خلفية-كورلا-كروس-22--ايمن",
     "search_terms": [
-      "daisen-hy",
       "سكن دعامية خلفية كورلا كروس 22 - ايمن",
+      "daisen-hy",
       "ty-22crl-026-r"
     ],
     "description_preview": ""
@@ -713,8 +713,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185518",
     "slug": "مسطرة-دعامية-امامية-رف-فور-19-ايسر",
     "search_terms": [
-      "daisen-hy",
       "مسطرة دعامية امامية رف فور 19- ايسر",
+      "daisen-hy",
       "ty-20rav4-020-l"
     ],
     "description_preview": ""
@@ -733,9 +733,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185533",
     "slug": "ماء-راديتر-اخضر-ايسن-20-1ltx20",
     "search_terms": [
+      "aisin-lub",
       "ماء راديتر اخضر ايسن 20% 1ltx20",
-      "lcpm20a1lg",
-      "aisin-lub"
+      "lcpm20a1lg"
     ],
     "description_preview": ""
   },
@@ -753,8 +753,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185540",
     "slug": "فلتر-دهن-لاند-1fz",
     "search_terms": [
-      "فلتر دهن لاند 1fz",
       "denso",
+      "فلتر دهن لاند 1fz",
       "260340-0540"
     ],
     "description_preview": ""
@@ -773,9 +773,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185544",
     "slug": "تكملة-شباك-رئيسي-كامري-18--le-اعلى-ايسر",
     "search_terms": [
+      "تكملة شباك رئيسي كامري 18 - le اعلى ايسر",
       "daisen-hy",
-      "ty-18cmu-032-l",
-      "تكملة شباك رئيسي كامري 18 - le اعلى ايسر"
+      "ty-18cmu-032-l"
     ],
     "description_preview": ""
   },
@@ -793,8 +793,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185545",
     "slug": "تكملة-شباك-رئيسي-كامري-18--le-اعلى-ايمن",
     "search_terms": [
-      "daisen-hy",
       "تكملة شباك رئيسي كامري 18 - le اعلى ايمن",
+      "daisen-hy",
       "ty-18cmu-032-r"
     ],
     "description_preview": ""
@@ -813,9 +813,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185574",
     "slug": "تريشة-تحت-لايت-كامري-21--امريكي-xse-se-اسود-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-21cmu-026-l",
-      "تريشة تحت لايت كامري 21 - امريكي xse se اسود ايسر",
-      "daisen-hy"
+      "تريشة تحت لايت كامري 21 - امريكي xse se اسود ايسر"
     ],
     "description_preview": ""
   },
@@ -833,9 +833,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185575",
     "slug": "تريشة-تحت-لايت-كامري-21--امريكي-xse-se-اسود-ايمن",
     "search_terms": [
-      "ty-21cmu-026-r",
       "daisen-hy",
-      "تريشة تحت لايت كامري 21 - امريكي xse se اسود ايمن"
+      "تريشة تحت لايت كامري 21 - امريكي xse se اسود ايمن",
+      "ty-21cmu-026-r"
     ],
     "description_preview": ""
   },
@@ -853,9 +853,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185576",
     "slug": "جعب-بلاستك-اسفل-هلال-الجاملغ-الامامي-رف-فور-20--ايسر",
     "search_terms": [
-      "جعب بلاستك اسفل هلال الجاملغ الامامي رف فور 20 - ايسر",
+      "daisen-hy",
       "ty-20rav4-037-l",
-      "daisen-hy"
+      "جعب بلاستك اسفل هلال الجاملغ الامامي رف فور 20 - ايسر"
     ],
     "description_preview": ""
   },
@@ -873,9 +873,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185577",
     "slug": "جعب-بلاستك-اسفل-هلال-الجاملغ-الامامي-رف-فور-20--ايمن",
     "search_terms": [
-      "ty-20rav4-037-r",
+      "daisen-hy",
       "جعب بلاستك اسفل هلال الجاملغ الامامي رف فور 20 - ايمن",
-      "daisen-hy"
+      "ty-20rav4-037-r"
     ],
     "description_preview": ""
   },
@@ -893,10 +893,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185610",
     "slug": "دبل-بند-برادو-10--18-ايسر-+-ايمن",
     "search_terms": [
-      "massfit",
-      "دبل بند برادو 10 - 18 ايسر + ايمن",
       "نظام التعليق",
-      "53450-0w180"
+      "massfit",
+      "53450-0w180",
+      "دبل بند برادو 10 - 18 ايسر + ايمن"
     ],
     "description_preview": ""
   },
@@ -914,10 +914,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185637",
     "slug": "pag-46-80ml-+-uv-dye-ctn-24-pcs--زيت-دهن-كومبريسر-+-كاشف-تسريب-48-مل",
     "search_terms": [
+      "lubricants - زيوت",
       "pag 46 80ml + uv dye-ctn 24 pcs - زيت دهن كومبريسر + كاشف تسريب 48 مل",
       "ol6006.ef.p2.mde",
-      "errecom",
-      "lubricants - زيوت"
+      "errecom"
     ],
     "description_preview": ""
   },
@@ -935,9 +935,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185660",
     "slug": "spark-plug-pkh16tt",
     "search_terms": [
-      "spark plug : pkh16tt",
       "267700-6340",
-      "denso"
+      "denso",
+      "spark plug : pkh16tt"
     ],
     "description_preview": ""
   },
@@ -955,9 +955,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185661",
     "slug": "فلتر-تبريد-كورلا-20--خليجي-امريكي-رف-فور-19--عام-لاند-22-كامري-18--عام-ريفو-16--هاليندر-19",
     "search_terms": [
-      "di145520-4020",
       "denso",
-      "فلتر تبريد كورلا 20 - خليجي امريكي رف فور 19 - عام لاند 22- كامري 18 - عام ريفو 16 - هاليندر 19 - "
+      "فلتر تبريد كورلا 20 - خليجي امريكي رف فور 19 - عام لاند 22- كامري 18 - عام ريفو 16 - هاليندر 19 - ",
+      "di145520-4020"
     ],
     "description_preview": ""
   },
@@ -975,9 +975,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185755",
     "slug": "كفر-بالشباك-جانبي-ايسر-كورلا-23-امريكي-sexse-هايبرد",
     "search_terms": [
+      "daisen-hy",
       "كفر بالشباك جانبي ايسر كورلا 23- امريكي se/xse هايبرد",
-      "ty-23crlu-009 - 53128-12900",
-      "daisen-hy"
+      "ty-23crlu-009 - 53128-12900"
     ],
     "description_preview": ""
   },
@@ -995,9 +995,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185756",
     "slug": "قاعدة-رقم-امامي-برادو-14--17",
     "search_terms": [
-      "قاعدة رقم امامي برادو 14 - 17 ",
+      "daisen-hy",
       "ty-14prd-010",
-      "daisen-hy"
+      "قاعدة رقم امامي برادو 14 - 17 "
     ],
     "description_preview": ""
   },
@@ -1015,9 +1015,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185781",
     "slug": "حاجب-زاوية-دعامية-امامية-كورلا-20-امريكي-se-ايسر",
     "search_terms": [
+      "ty-19crlu-021-l",
       "حاجب زاوية دعامية امامية كورلا 20 امريكي se ايسر",
-      "daisen-hy",
-      "ty-19crlu-021-l"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -1055,9 +1055,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185785",
     "slug": "كفر-بروجكتر-بدون-فتحة-رف-فور-23--ايسر",
     "search_terms": [
-      "كفر بروجكتر بدون فتحة رف فور 23 -  ايسر ",
+      "daisen-hy",
       "ty-23rv4u-006-l - 53128-0r280",
-      "daisen-hy"
+      "كفر بروجكتر بدون فتحة رف فور 23 -  ايسر "
     ],
     "description_preview": ""
   },
@@ -1095,9 +1095,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185790",
     "slug": "هوائية-دعامية-امامية-افلون-19--ايسر",
     "search_terms": [
-      "ty-19azl-019-l",
+      "daisen-hy",
       "هوائية دعامية امامية افلون 19 - ايسر",
-      "daisen-hy"
+      "ty-19azl-019-l"
     ],
     "description_preview": ""
   },
@@ -1116,8 +1116,8 @@ window.search-index = [
     "slug": "هوائية-دعامية-امامية-افلون-19--ايمن",
     "search_terms": [
       "ty-19azl-019-r",
-      "هوائية دعامية امامية افلون 19 - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "هوائية دعامية امامية افلون 19 - ايمن"
     ],
     "description_preview": ""
   },
@@ -1155,9 +1155,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185817",
     "slug": "عدسة-بروجكتر-كورلا-كامري-افلون-ريفو-عام-ايمن",
     "search_terms": [
-      "عدسة بروجكتر كورلا كامري افلون ريفو عام ايمن",
       "daisen-hy",
-      "ty-07cm-010-r"
+      "ty-07cm-010-r",
+      "عدسة بروجكتر كورلا كامري افلون ريفو عام ايمن"
     ],
     "description_preview": ""
   },
@@ -1195,9 +1195,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185819",
     "slug": "ردادة-طين-رف-فور-بطانة-جاملغ-امامي-رف-فور-19--ايمن",
     "search_terms": [
-      "ty-20rav4-024-r",
       "daisen-hy",
-      "ردادة طين رف فور بطانة جاملغ امامي رف فور 19 - ايمن "
+      "ردادة طين رف فور بطانة جاملغ امامي رف فور 19 - ايمن ",
+      "ty-20rav4-024-r"
     ],
     "description_preview": ""
   },
@@ -1215,10 +1215,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185822",
     "slug": "20w50-sn-ty-زيت-محرك-تويوتا-اسود-بلاستك-1ltx24",
     "search_terms": [
-      "20w50 sn ty زيت محرك تويوتا اسود بلاستك 1ltx24 ",
-      "08880-83223",
       "lubricants - زيوت",
-      "toyota"
+      "toyota",
+      "08880-83223",
+      "20w50 sn ty زيت محرك تويوتا اسود بلاستك 1ltx24 "
     ],
     "description_preview": ""
   },
@@ -1236,9 +1236,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185929",
     "slug": "تريشة-حاجب-اسفل-الدعامية-الامامية-كامري-21-امريكي-xse-رصاصي-ايسر",
     "search_terms": [
-      "ty-21cmu-023-l",
       "تريشة حاجب اسفل الدعامية الامامية كامري 21 امريكي xse رصاصي ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21cmu-023-l"
     ],
     "description_preview": ""
   },
@@ -1256,9 +1256,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185930",
     "slug": "تريشة-حاجب-اسفل-الدعامية-الامامية-كامري-21-امريكي-xse-رصاصي-ايمن",
     "search_terms": [
-      "تريشة حاجب اسفل الدعامية الامامية كامري 21 امريكي xse رصاصي ايمن",
+      "daisen-hy",
       "ty-21cmu-023-r",
-      "daisen-hy"
+      "تريشة حاجب اسفل الدعامية الامامية كامري 21 امريكي xse رصاصي ايمن"
     ],
     "description_preview": ""
   },
@@ -1276,9 +1276,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185944",
     "slug": "سكن-دعامية-خلفية-افلون-19--ايسر",
     "search_terms": [
-      "سكن دعامية خلفية افلون 19 - ايسر ",
       "ty-19azl-005-l",
-      "daisen-hy"
+      "daisen-hy",
+      "سكن دعامية خلفية افلون 19 - ايسر "
     ],
     "description_preview": ""
   },
@@ -1296,9 +1296,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185945",
     "slug": "سكن-دعامية-خلفية-افلون-19--ايمن",
     "search_terms": [
-      "ty-19azl-005-r",
       "سكن دعامية خلفية افلون 19 - ايمن ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-19azl-005-r"
     ],
     "description_preview": ""
   },
@@ -1316,9 +1316,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185946",
     "slug": "قاعدة-رقم-كامري-21--عام",
     "search_terms": [
-      "daisen-hy",
       "ty-21cm-012",
-      "قاعدة رقم كامري 21 - عام "
+      "قاعدة رقم كامري 21 - عام ",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -1336,9 +1336,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185949",
     "slug": "كفر-هلال-داير-بروجكتر-كورلا-20-خليجي-اسود-ايسر",
     "search_terms": [
-      "كفر هلال داير بروجكتر كورلا 20  خليجي اسود ايسر",
+      "daisen-hy",
       "ty-19crl-013-l",
-      "daisen-hy"
+      "كفر هلال داير بروجكتر كورلا 20  خليجي اسود ايسر"
     ],
     "description_preview": ""
   },
@@ -1356,9 +1356,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185950",
     "slug": "كفر-هلال-داير-بروجكتر-كورلا-20-خليجي-اسود-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-19crl-013-r",
-      "كفر هلال داير بروجكتر كورلا 20  خليجي اسود ايمن ",
-      "daisen-hy"
+      "كفر هلال داير بروجكتر كورلا 20  خليجي اسود ايمن "
     ],
     "description_preview": ""
   },
@@ -1376,8 +1376,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185951",
     "slug": "ماسكة-خلفية-بك-لايت-رف-فور-19--ايسر",
     "search_terms": [
-      "ty-20rav4-023-l",
       "ماسكة خلفية بك لايت رف فور 19 - ايسر",
+      "ty-20rav4-023-l",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -1396,9 +1396,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185952",
     "slug": "ماسكة-خلفية-بك-لايت-رف-فور-19--ايمن",
     "search_terms": [
-      "ty-20rav4-023-r",
       "daisen-hy",
-      "ماسكة خلفية بك لايت رف فور 19 - ايمن"
+      "ماسكة خلفية بك لايت رف فور 19 - ايمن",
+      "ty-20rav4-023-r"
     ],
     "description_preview": ""
   },
@@ -1416,11 +1416,11 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=185991",
     "slug": "evaporator-cleaner-foam-100ml-ctn-30-pcs--فوم-تنظيف-قنواة-التبريد-و-الفريز-100-مل",
     "search_terms": [
-      "evaporator cleaner foam 100ml ctn 30 pcs - -فوم تنظيف قنواة التبريد و الفريز 100 مل",
-      "ab1049.f.01.mde",
-      "errecom",
       "فوم تنظيف قنواة التبريد و الفريز 100 مل",
-      "cae care"
+      "errecom",
+      "evaporator cleaner foam 100ml ctn 30 pcs - -فوم تنظيف قنواة التبريد و الفريز 100 مل",
+      "cae care",
+      "ab1049.f.01.mde"
     ],
     "description_preview": "فوم تنظيف قنواة التبريد و الفريز 100 مل..."
   },
@@ -1438,10 +1438,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186132",
     "slug": "زيت-محرك-20w50-sl-veedol-elite-12-x-1lt",
     "search_terms": [
-      "71101u15p00",
-      "زيت محرك 20w50 sl veedol elite 12 x 1lt",
+      "lubricants - زيوت",
       "veedol",
-      "lubricants - زيوت"
+      "زيت محرك 20w50 sl veedol elite 12 x 1lt",
+      "71101u15p00"
     ],
     "description_preview": ""
   },
@@ -1459,9 +1459,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186181",
     "slug": "تريشة-زاوية-دعامية-امامية-كامري-18--امريكي-se-ايسر",
     "search_terms": [
-      "تريشة زاوية دعامية امامية كامري 18 - امريكي se ايسر",
       "daisen-hy",
-      "ty-18cmu-029-l"
+      "ty-18cmu-029-l",
+      "تريشة زاوية دعامية امامية كامري 18 - امريكي se ايسر"
     ],
     "description_preview": ""
   },
@@ -1479,9 +1479,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186182",
     "slug": "تريشة-زاوية-دعامية-امامية-كامري-18--امريكي-se-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-18cmu-029-r",
-      "تريشة زاوية دعامية امامية كامري 18 - امريكي se ايمن",
-      "daisen-hy"
+      "تريشة زاوية دعامية امامية كامري 18 - امريكي se ايمن"
     ],
     "description_preview": ""
   },
@@ -1499,9 +1499,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186215",
     "slug": "كفر-بروجكتر-كامري-21--امريكي-حصيرة-بدون-فتحة-ايمن",
     "search_terms": [
-      "كفر بروجكتر كامري 21 - امريكي حصيرة بدون فتحة ايمن",
+      "ty-21cmu-020-rh",
       "daisen-hy",
-      "ty-21cmu-020-rh"
+      "كفر بروجكتر كامري 21 - امريكي حصيرة بدون فتحة ايمن"
     ],
     "description_preview": ""
   },
@@ -1519,9 +1519,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186253",
     "slug": "تريشة-تحت-ال-لايت-كامري-18--امريكي-se-ايمن",
     "search_terms": [
-      "تريشة تحت ال لايت كامري 18 - امريكي se ايمن",
       "daisen-hy",
-      "ty-18cmu-028-r"
+      "ty-18cmu-028-r",
+      "تريشة تحت ال لايت كامري 18 - امريكي se ايمن"
     ],
     "description_preview": ""
   },
@@ -1539,9 +1539,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186291",
     "slug": "تريشة-تحت-ال-لايت-كامري-18--امريكي-se-ايسر",
     "search_terms": [
-      "ty-18cmu-028-l",
+      "daisen-hy",
       "تريشة تحت ال لايت كامري 18 - امريكي se ايسر",
-      "daisen-hy"
+      "ty-18cmu-028-l"
     ],
     "description_preview": ""
   },
@@ -1560,8 +1560,8 @@ window.search-index = [
     "slug": "كفر-بروجكتر-كامري-21--امريكي-حصيرة-بدون-فتحة-ايسر",
     "search_terms": [
       "daisen-hy",
-      "ty-21cmu-020-lh",
-      "كفر بروجكتر كامري 21 - امريكي حصيرة بدون فتحة ايسر"
+      "كفر بروجكتر كامري 21 - امريكي حصيرة بدون فتحة ايسر",
+      "ty-21cmu-020-lh"
     ],
     "description_preview": ""
   },
@@ -1600,8 +1600,8 @@ window.search-index = [
     "slug": "كفر-بروجكتر-كامري-21--امريكي-حصيرة-مع-فتحة-بروجكتر-ايمن",
     "search_terms": [
       "daisen-hy",
-      "كفر بروجكتر كامري 21 - امريكي حصيرة مع فتحة بروجكتر ايمن",
-      "ty-21cmu-021-rh"
+      "ty-21cmu-021-rh",
+      "كفر بروجكتر كامري 21 - امريكي حصيرة مع فتحة بروجكتر ايمن"
     ],
     "description_preview": ""
   },
@@ -1619,9 +1619,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186341",
     "slug": "فلتر-شوتة-بيكب-ميتسيوبيشي-بيكب-l200-05",
     "search_terms": [
+      "denso",
       "260300-0310",
-      "فلتر شوتة بيكب ميتسيوبيشي بيكب l200 05 -",
-      "denso"
+      "فلتر شوتة بيكب ميتسيوبيشي بيكب l200 05 -"
     ],
     "description_preview": ""
   },
@@ -1659,9 +1659,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186425",
     "slug": "جعب-بلاستك-اسفل-هلال-داير-الباب-الخلفي-رف-فور-19--ايمن",
     "search_terms": [
-      "ty-20rav4-034-r",
+      "جعب بلاستك اسفل هلال داير الباب الخلفي رف فور 19 - ايمن",
       "daisen-hy",
-      "جعب بلاستك اسفل هلال داير الباب الخلفي رف فور 19 - ايمن"
+      "ty-20rav4-034-r"
     ],
     "description_preview": ""
   },
@@ -1680,8 +1680,8 @@ window.search-index = [
     "slug": "فلتر-شوتة-لاند-08--11-1gr-برادو-03--09-fj",
     "search_terms": [
       "denso",
-      "260300-0910",
-      "فلتر شوتة لاند 08 - 11 1gr برادو 03 - 09 fj"
+      "فلتر شوتة لاند 08 - 11 1gr برادو 03 - 09 fj",
+      "260300-0910"
     ],
     "description_preview": ""
   },
@@ -1700,9 +1700,9 @@ window.search-index = [
     "slug": "5w30-sn-ty-زيت-محرك-تويوتا-بلاستك-e-1ltx24",
     "search_terms": [
       "lubricants - زيوت",
+      "08880-83713e",
       "toyota",
-      "5w30 sn ty زيت محرك تويوتا بلاستك e 1ltx24",
-      "08880-83713e"
+      "5w30 sn ty زيت محرك تويوتا بلاستك e 1ltx24"
     ],
     "description_preview": ""
   },
@@ -1721,9 +1721,9 @@ window.search-index = [
     "slug": "20w50-sn-زيت-محرك-ايسن-1ltx12",
     "search_terms": [
       "lubricants - زيوت",
+      "essn2051p",
       "20w50 sn زيت محرك ايسن 1ltx12",
-      "aisin-lub",
-      "essn2051p"
+      "aisin-lub"
     ],
     "description_preview": ""
   },
@@ -1741,9 +1741,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186624",
     "slug": "مصدة-هوائية-صفاحية-راديتر-رف-فور-19--ايسر",
     "search_terms": [
+      "daisen-hy",
       "مصدة هوائية صفاحية راديتر رف فور 19 - ايسر",
-      "ty-20rav4-026-l",
-      "daisen-hy"
+      "ty-20rav4-026-l"
     ],
     "description_preview": ""
   },
@@ -1761,8 +1761,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186644",
     "slug": "فلتر-شوتة-افلون-13--هايلندر-15--سينا-12--20--جيب-شيروكي-10--دورنكو-11",
     "search_terms": [
-      "260300-0890",
       "denso",
+      "260300-0890",
       "فلتر شوتة افلون 13 - هايلندر 15 - سينا 12 - 20 - جيب شيروكي 10 - دورنكو 11- "
     ],
     "description_preview": ""
@@ -1781,9 +1781,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186655",
     "slug": "مصدة-هوائية-صفاحية-راديتر-رف-فور-19--ايمن",
     "search_terms": [
-      "ty-20rav4-026-r",
+      "مصدة هوائية صفاحية راديتر رف فور 19 - ايمن",
       "daisen-hy",
-      "مصدة هوائية صفاحية راديتر رف فور 19 - ايمن"
+      "ty-20rav4-026-r"
     ],
     "description_preview": ""
   },
@@ -1801,9 +1801,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186657",
     "slug": "شباك-دعامية-امامية-لاند-22--جانبي-مغلق-ايسر-gxr",
     "search_terms": [
-      "شباك دعامية امامية لاند 22 - جانبي مغلق ايسر gxr ",
       "ty-21lc-009-l",
-      "daisen-hy"
+      "daisen-hy",
+      "شباك دعامية امامية لاند 22 - جانبي مغلق ايسر gxr "
     ],
     "description_preview": ""
   },
@@ -1821,8 +1821,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186658",
     "slug": "شباك-دعامية-امامية-لاند-22--جانبي-مغلق-ايمن-gxr",
     "search_terms": [
-      "daisen-hy",
       "شباك دعامية امامية لاند 22 - جانبي مغلق ايمن gxr",
+      "daisen-hy",
       "ty-21lc-009-r"
     ],
     "description_preview": ""
@@ -1841,10 +1841,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186665",
     "slug": "5w40-sn-lex-زيت-محرك-لكزس-بلاستك-1ltx24",
     "search_terms": [
-      "lubricants - زيوت",
-      "08880-83716e",
+      "5w40 sn lex زيت محرك لكزس بلاستك 1ltx24",
       "toyota",
-      "5w40 sn lex زيت محرك لكزس بلاستك 1ltx24"
+      "08880-83716e",
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -1863,9 +1863,9 @@ window.search-index = [
     "slug": "10w30-sn-زيت-محرك-ايسن-1ltx12",
     "search_terms": [
       "10w30 sn زيت محرك ايسن 1ltx12",
+      "aisin-lub",
       "essn1031p",
-      "lubricants - زيوت",
-      "aisin-lub"
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -1885,8 +1885,8 @@ window.search-index = [
     "search_terms": [
       "lubricants - زيوت",
       "5w40 sn زيت محرك ايسن 1ltx12",
-      "esfnp0541p",
-      "aisin-lub"
+      "aisin-lub",
+      "esfnp0541p"
     ],
     "description_preview": ""
   },
@@ -1904,9 +1904,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186695",
     "slug": "egr-valve-cleaner-400ml--منظف-منظمة-كونترول-هواء-(اي-جي-ار-egr)-400-مل",
     "search_terms": [
-      "errecom",
+      "tr1149.n.01.mde",
       "egr valve cleaner 400ml - منظف منظمة كونترول هواء (اي جي ار egr) 400 مل",
-      "tr1149.n.01.mde"
+      "errecom"
     ],
     "description_preview": ""
   },
@@ -1924,9 +1924,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186696",
     "slug": "بلك-spark-plug-ixuh22i",
     "search_terms": [
+      "denso",
       "بلك spark plug ixuh22i ",
-      "267700-7370",
-      "denso"
+      "267700-7370"
     ],
     "description_preview": ""
   },
@@ -1945,9 +1945,9 @@ window.search-index = [
     "slug": "15w40-ci4-زيت-كاز-ايسن-1ltx12",
     "search_terms": [
       "lubricants - زيوت",
-      "15w40 ci4 زيت كاز ايسن 1ltx12",
+      "aisin-lub",
       "ecsi1541p",
-      "aisin-lub"
+      "15w40 ci4 زيت كاز ايسن 1ltx12"
     ],
     "description_preview": ""
   },
@@ -1965,9 +1965,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186718",
     "slug": "كفر-فتحية-ليد-بروجكتر-كورلا-23-se--ايسر",
     "search_terms": [
-      "كفر فتحية ليد بروجكتر كورلا 23 se - ايسر",
+      "daisen-hy",
       "ty-23crlu-005 - 81482-02901",
-      "daisen-hy"
+      "كفر فتحية ليد بروجكتر كورلا 23 se - ايسر"
     ],
     "description_preview": ""
   },
@@ -1986,8 +1986,8 @@ window.search-index = [
     "slug": "كفر-فتحية-ليد-بروجكتر-كورلا-23-se--ايمن",
     "search_terms": [
       "ty-23crlu-006 - 81481-02901",
-      "كفر فتحية ليد بروجكتر كورلا 23 se - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر فتحية ليد بروجكتر كورلا 23 se - ايمن"
     ],
     "description_preview": ""
   },
@@ -2005,9 +2005,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186753",
     "slug": "سي-اويل-اكسل-1-لتر-90-80w",
     "search_terms": [
-      "سي اويل اكسل 1 لتر 90-80w ",
+      "gsl58091p",
       "aisin-lub",
-      "gsl58091p"
+      "سي اويل اكسل 1 لتر 90-80w "
     ],
     "description_preview": ""
   },
@@ -2046,8 +2046,8 @@ window.search-index = [
     "slug": "نيكل-حاجب-دعامية-امامية-كامري-21--xle-le-امريكي-ايمن",
     "search_terms": [
       "ty-21cmu-019-rh",
-      "نيكل حاجب دعامية امامية كامري 21 - xle le امريكي ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "نيكل حاجب دعامية امامية كامري 21 - xle le امريكي ايمن"
     ],
     "description_preview": ""
   },
@@ -2066,9 +2066,9 @@ window.search-index = [
     "slug": "0w20-sn-زيت-محرك-ايسن-1ltx12",
     "search_terms": [
       "lubricants - زيوت",
-      "0w20 sn زيت محرك ايسن 1ltx12",
+      "esfn0021p",
       "aisin-lub",
-      "esfn0021p"
+      "0w20 sn زيت محرك ايسن 1ltx12"
     ],
     "description_preview": ""
   },
@@ -2086,10 +2086,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=186989",
     "slug": "+5w20-sn-syntech-زيت-محرك-ايسن-1ltx12",
     "search_terms": [
+      "lubricants - زيوت",
       "+5w20 sn syntech زيت محرك ايسن 1ltx12",
-      "esfn0521p",
       "aisin-lub",
-      "lubricants - زيوت"
+      "esfn0521p"
     ],
     "description_preview": ""
   },
@@ -2127,9 +2127,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187081",
     "slug": "فلتر-شوتة-برادو-10--18-6-سلندر--fj--فورنر-ولكزس-برادو",
     "search_terms": [
-      "فلتر شوتة برادو 10 - 18 6 سلندر - fj - فورنر ولكزس برادو ",
       "denso",
-      "260300-0730"
+      "260300-0730",
+      "فلتر شوتة برادو 10 - 18 6 سلندر - fj - فورنر ولكزس برادو "
     ],
     "description_preview": ""
   },
@@ -2147,9 +2147,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187131",
     "slug": "فلتر-شوتة-لاند-01--07-2uz-برادو-01--06-2tr",
     "search_terms": [
+      "260300-0180",
       "denso",
-      "فلتر شوتة لاند 01 - 07 2uz برادو 01 - 06 2tr",
-      "260300-0180"
+      "فلتر شوتة لاند 01 - 07 2uz برادو 01 - 06 2tr"
     ],
     "description_preview": ""
   },
@@ -2167,10 +2167,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187197",
     "slug": "0w16-sp-زيت-محرك-ايسن-1ltx12",
     "search_terms": [
-      "0w16 sp زيت محرك ايسن 1ltx12",
-      "aisin-lub",
       "lubricants - زيوت",
-      "esfp0161p"
+      "aisin-lub",
+      "esfp0161p",
+      "0w16 sp زيت محرك ايسن 1ltx12"
     ],
     "description_preview": ""
   },
@@ -2188,9 +2188,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187209",
     "slug": "بلك-2tr-ليزري-oes-to-90919-01266-sk20hra11-iridium-plug-sk20hr-a11",
     "search_terms": [
-      "بلك 2tr ليزري oes to 90919-01266 sk20hra11 iridium plug sk20hr-a11",
       "denso",
-      "267600-0560"
+      "267600-0560",
+      "بلك 2tr ليزري oes to 90919-01266 sk20hra11 iridium plug sk20hr-a11"
     ],
     "description_preview": ""
   },
@@ -2209,8 +2209,8 @@ window.search-index = [
     "slug": "بروجكتر-استقبال-تحت-الابواب-الامامية-لاند-22--علامة-gr",
     "search_terms": [
       "lc300 - gr welcome light",
-      "daisen",
-      "بروجكتر استقبال تحت الابواب الامامية لاند 22 - علامة gr"
+      "بروجكتر استقبال تحت الابواب الامامية لاند 22 - علامة gr",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -2229,8 +2229,8 @@ window.search-index = [
     "slug": "بروجكتر-استقبال-تحت-الابواب-الامامية-لاند-بشعار-تويوتا-احمر-و-سلفر",
     "search_terms": [
       "under door welcome light toyota red and logo",
-      "daisen",
-      "بروجكتر استقبال تحت الابواب الامامية لاند بشعار تويوتا احمر و سلفر "
+      "بروجكتر استقبال تحت الابواب الامامية لاند بشعار تويوتا احمر و سلفر ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -2249,8 +2249,8 @@ window.search-index = [
     "slug": "فلتر-دهن-لاند-كوستر-عكرب-1hzكاز",
     "search_terms": [
       "فلتر دهن لاند كوستر عكرب 1hzكاز ",
-      "denso",
-      "260340-0560"
+      "260340-0560",
+      "denso"
     ],
     "description_preview": ""
   },
@@ -2268,9 +2268,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187270",
     "slug": "شباك-دعامية-امامية-برادو-14--17",
     "search_terms": [
-      "شباك دعامية امامية برادو 14 - 17 ",
+      "ty-14prd-006",
       "daisen-hy",
-      "ty-14prd-006"
+      "شباك دعامية امامية برادو 14 - 17 "
     ],
     "description_preview": ""
   },
@@ -2309,8 +2309,8 @@ window.search-index = [
     "slug": "علامة-twin-turbo-تون-توربو-باب-بدي-لاند-22",
     "search_terms": [
       "علامة twin turbo تون توربو باب بدي لاند 22 - ",
-      "daisen",
-      "twin tubro logo lc300"
+      "twin tubro logo lc300",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -2348,9 +2348,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187316",
     "slug": "تريشة-زاوية-دعامية-امامية-هايلندر-22--ايمن",
     "search_terms": [
-      "daisen-hy",
+      "تريشة زاوية دعامية امامية هايلندر 22 - ايمن",
       "ty-22lf-016-r",
-      "تريشة زاوية دعامية امامية هايلندر 22 - ايمن"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -2368,9 +2368,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187382",
     "slug": "فلتر-شوتة-لاند-لكزس-8سلندر-عام-لاند-12--21-1gr",
     "search_terms": [
-      "260300-0920",
       "denso",
-      "فلتر شوتة لاند لكزس 8سلندر عام لاند 12 - 21 1gr"
+      "فلتر شوتة لاند لكزس 8سلندر عام لاند 12 - 21 1gr",
+      "260300-0920"
     ],
     "description_preview": ""
   },
@@ -2408,9 +2408,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187677",
     "slug": "هلال-داير-جاملغ-امامي-كورلا-كروس-22--ايسر",
     "search_terms": [
+      "daisen-hy",
       "هلال داير جاملغ امامي كورلا كروس 22 - ايسر",
-      "ty-22crl-023-l",
-      "daisen-hy"
+      "ty-22crl-023-l"
     ],
     "description_preview": ""
   },
@@ -2428,9 +2428,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187678",
     "slug": "هلال-داير-جاملغ-امامي-كورلا-كروس-22--ايمن",
     "search_terms": [
-      "ty-22crl-023-r",
       "هلال داير جاملغ امامي كورلا كروس 22 - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22crl-023-r"
     ],
     "description_preview": ""
   },
@@ -2448,8 +2448,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187692",
     "slug": "بخاخ-تبريد-امامي-ريفو-فورجنر-16--كامري-18--كورلا-20-valve-expansion-hilux-fortuner",
     "search_terms": [
-      "tg447500-4860",
       "denso",
+      "tg447500-4860",
       "بخاخ تبريد امامي ريفو فورجنر 16 - كامري 18 - كورلا 20- valve expansion hilux fortuner "
     ],
     "description_preview": ""
@@ -2468,9 +2468,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187718",
     "slug": "نيكل-حاجب-لايت-لاند-12--15",
     "search_terms": [
+      "dsn-fj200-h.lamp trimp",
       "نيكل حاجب لايت لاند 12 - 15 ",
-      "daisen",
-      "dsn-fj200-h.lamp trimp"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -2488,9 +2488,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187746",
     "slug": "قاعدة-شباك-كورلا-20--امريكي-se",
     "search_terms": [
-      "قاعدة شباك كورلا 20 - امريكي se",
+      "ty-19crlu-009a",
       "daisen-hy",
-      "ty-19crlu-009a"
+      "قاعدة شباك كورلا 20 - امريكي se"
     ],
     "description_preview": ""
   },
@@ -2508,9 +2508,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187811",
     "slug": "كفر-بروجكتر-هلال-دعامية-امامية-هايلندر-22-xse-اسفل-اللايت-لون-اسود-ايسر",
     "search_terms": [
-      "daisen-hy",
       "كفر بروجكتر هلال دعامية امامية هايلندر 22 -xse اسفل اللايت لون اسود ايسر",
-      "ty-22lf-017-l"
+      "ty-22lf-017-l",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -2528,8 +2528,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=187812",
     "slug": "كفر-بروجكتر-هلال-دعامية-امامية-هايلندر-22-xse-اسفل-اللايت-لون-اسود-ايمن",
     "search_terms": [
-      "كفر بروجكتر هلال دعامية امامية هايلندر 22 -xse اسفل اللايت لون اسود ايمن",
       "daisen-hy",
+      "كفر بروجكتر هلال دعامية امامية هايلندر 22 -xse اسفل اللايت لون اسود ايمن",
       "ty-22lf-017-r"
     ],
     "description_preview": ""
@@ -2549,8 +2549,8 @@ window.search-index = [
     "slug": "iridium-plug-oes-sk20r11-90919-01210-spanner-16-بلك-كامري-09--2az--لاند-08-2uz",
     "search_terms": [
       "067700-83403l - shiffted to mw267600-08603r",
-      "denso",
-      "iridium plug oes sk20r11 90919-01210  spanner: 16 بلك كامري 09 - 2az - لاند 08 2uz"
+      "iridium plug oes sk20r11 90919-01210  spanner: 16 بلك كامري 09 - 2az - لاند 08 2uz",
+      "denso"
     ],
     "description_preview": ""
   },
@@ -2568,9 +2568,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188041",
     "slug": "تريشة-باب-جانبية-امامية-رف-فور-20--ايسر",
     "search_terms": [
-      "ty-20rav4-035-l",
+      "تريشة باب جانبية امامية رف فور 20 - ايسر",
       "daisen-hy",
-      "تريشة باب جانبية امامية رف فور 20 - ايسر"
+      "ty-20rav4-035-l"
     ],
     "description_preview": ""
   },
@@ -2588,9 +2588,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188042",
     "slug": "تريشة-باب-جانبية-امامية-رف-فور-20--ايمن",
     "search_terms": [
+      "ty-20rav4-035-r",
       "daisen-hy",
-      "تريشة باب جانبية امامية رف فور 20 - ايمن",
-      "ty-20rav4-035-r"
+      "تريشة باب جانبية امامية رف فور 20 - ايمن"
     ],
     "description_preview": ""
   },
@@ -2608,9 +2608,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188043",
     "slug": "تريشة-باب-جانبية-خلفية-رف-فور-20--ايسر",
     "search_terms": [
+      "تريشة باب جانبية خلفية رف فور 20 - ايسر",
       "daisen-hy",
-      "ty-20rav4-036-l",
-      "تريشة باب جانبية خلفية رف فور 20 - ايسر"
+      "ty-20rav4-036-l"
     ],
     "description_preview": ""
   },
@@ -2628,9 +2628,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188065",
     "slug": "قاعدة-شباك-رئيسي-كورلا-20-le-كورلا-ليفان-23-وارد-صين",
     "search_terms": [
-      "ty-19crlu-009",
       "daisen-hy",
-      "قاعدة شباك رئيسي كورلا 20- le / كورلا ليفان 23- وارد صين "
+      "قاعدة شباك رئيسي كورلا 20- le / كورلا ليفان 23- وارد صين ",
+      "ty-19crlu-009"
     ],
     "description_preview": ""
   },
@@ -2648,8 +2648,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188117",
     "slug": "تريشة-باب-جانبية-خلفية-رف-فور-20--ايمن",
     "search_terms": [
-      "تريشة باب جانبية خلفية رف فور 20 - ايمن",
       "daisen-hy",
+      "تريشة باب جانبية خلفية رف فور 20 - ايمن",
       "ty-20rav4-036-r"
     ],
     "description_preview": ""
@@ -2688,9 +2688,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188260",
     "slug": "بلك-افلون-2gr-iridium-plug-fk20hr11-oes-to-90919-01247-phased-out",
     "search_terms": [
-      "بلك افلون 2gr iridium plug fk20hr11 oes to 90919-01247 phased out ",
+      "267700-42303r",
       "denso",
-      "267700-42303r"
+      "بلك افلون 2gr iridium plug fk20hr11 oes to 90919-01247 phased out "
     ],
     "description_preview": ""
   },
@@ -2708,9 +2708,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188341",
     "slug": "iridium-plug-sc20hr11-بلك-كورلا-امريكي-2zr-oes-90919-01253",
     "search_terms": [
-      "jk267700-5581",
+      "denso",
       "iridium plug sc20hr11 بلك كورلا امريكي 2zr oes 90919-01253",
-      "denso"
+      "jk267700-5581"
     ],
     "description_preview": ""
   },
@@ -2728,9 +2728,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188397",
     "slug": "تريشة-اسفل-الدعامية-الامامية-كورلا-كروس-22",
     "search_terms": [
+      "ty-22crl-007",
       "daisen-hy",
-      "تريشة اسفل الدعامية الامامية كورلا كروس 22- ",
-      "ty-22crl-007"
+      "تريشة اسفل الدعامية الامامية كورلا كروس 22- "
     ],
     "description_preview": ""
   },
@@ -2749,8 +2749,8 @@ window.search-index = [
     "slug": "كفر-دعامية-خلفية-كورلا-20--امريكي-se-صغير",
     "search_terms": [
       "ty-19crlu-023",
-      "daisen-hy",
-      "كفر دعامية خلفية كورلا 20 - امريكي se  صغير"
+      "كفر دعامية خلفية كورلا 20 - امريكي se  صغير",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -2768,9 +2768,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188492",
     "slug": "كفر-محرك-بلاستك-كامري-18--اسفل-الدعامية-امريكي",
     "search_terms": [
-      "اجزاء المحرك",
       "كفر محرك بلاستك كامري 18 - اسفل الدعامية امريكي ",
       "daisen-hy",
+      "اجزاء المحرك",
       "ty-18cmu-034"
     ],
     "description_preview": ""
@@ -2789,9 +2789,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188501",
     "slug": "تريشة-اسفل-الدعامية-الامامية-هايلندر-22",
     "search_terms": [
-      "daisen-hy",
+      "ty-22lf-024",
       "تريشة اسفل الدعامية الامامية هايلندر 22-",
-      "ty-22lf-024"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -2809,9 +2809,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188504",
     "slug": "هلال-داير-باب-خلفي-رف-فور-23--ادفنجر-ايسر",
     "search_terms": [
-      "هلال داير باب خلفي رف فور 23 - ادفنجر ايسر",
+      "daisen-hy",
       "ty-19rv4tu-019-l - 75062-0r030",
-      "daisen-hy"
+      "هلال داير باب خلفي رف فور 23 - ادفنجر ايسر"
     ],
     "description_preview": ""
   },
@@ -2829,9 +2829,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188505",
     "slug": "هلال-داير-باب-خلفي-رف-فور-23--ادفنجر-ايمن",
     "search_terms": [
-      "ty-19rv4tu-019-r - 75061-0r030",
       "هلال داير باب خلفي رف فور 23 - ادفنجر ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-19rv4tu-019-r - 75061-0r030"
     ],
     "description_preview": ""
   },
@@ -2849,9 +2849,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188533",
     "slug": "total-care-100ml--mint-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-نعناع",
     "search_terms": [
-      "rkab46.s1.mde",
       "errecom",
-      " total care 100ml - mint ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل نعناع"
+      " total care 100ml - mint ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل نعناع",
+      "rkab46.s1.mde"
     ],
     "description_preview": ""
   },
@@ -2869,8 +2869,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188548",
     "slug": "بخاخ-تبريد-كوول-كيير-نيسان-اكستريل-قشقاي-سني-جوك-expansion-valve-mirca-cg",
     "search_terms": [
-      "بخاخ تبريد كوول كيير  نيسان اكستريل قشقاي سني جوك expansion valve mirca cg ",
       "denso",
+      "بخاخ تبريد كوول كيير  نيسان اكستريل قشقاي سني جوك expansion valve mirca cg ",
       "di261411-0010"
     ],
     "description_preview": ""
@@ -2910,9 +2910,9 @@ window.search-index = [
     "slug": "زيت-فلاش-تنظيف-محرك-تويوتا-400ml",
     "search_terms": [
       "lubricants - زيوت",
+      "toyota",
       "08814-80070",
-      "زيت فلاش تنظيف محرك تويوتا 400ml",
-      "toyota"
+      "زيت فلاش تنظيف محرك تويوتا 400ml"
     ],
     "description_preview": ""
   },
@@ -2930,9 +2930,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188580",
     "slug": "زاوية-لحية-امامية-هايلندر-22--رصاصي-ايسر",
     "search_terms": [
-      "ty-22lf-022-l",
       "زاوية لحية امامية هايلندر 22 - رصاصي ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22lf-022-l"
     ],
     "description_preview": ""
   },
@@ -2951,8 +2951,8 @@ window.search-index = [
     "slug": "زاوية-لحية-امامية-هايلندر-22--رصاصي-ايمن",
     "search_terms": [
       "daisen-hy",
-      "زاوية لحية امامية هايلندر 22 - رصاصي ايمن",
-      "ty-22lf-022-r"
+      "ty-22lf-022-r",
+      "زاوية لحية امامية هايلندر 22 - رصاصي ايمن"
     ],
     "description_preview": ""
   },
@@ -2970,9 +2970,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188670",
     "slug": "بخاخ-تبريد-هايس-13--18-خليجي-expansion-valve-haice-13-18",
     "search_terms": [
+      "denso",
       "447500-3880",
-      "بخاخ تبريد هايس 13 - 18 خليجي expansion valve haice 13 -18 ",
-      "denso"
+      "بخاخ تبريد هايس 13 - 18 خليجي expansion valve haice 13 -18 "
     ],
     "description_preview": ""
   },
@@ -3010,9 +3010,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188718",
     "slug": "كفر-بلاستك-اعلى-الدعامية-الامامية-كامري-21--le-امريكي",
     "search_terms": [
-      "ty-21cmu-013",
+      "daisen-hy",
       "كفر بلاستك اعلى الدعامية الامامية كامري 21 - le امريكي  ",
-      "daisen-hy"
+      "ty-21cmu-013"
     ],
     "description_preview": ""
   },
@@ -3070,9 +3070,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188829",
     "slug": "بخاخ-تبريد-برادو-10--22-عام",
     "search_terms": [
-      "بخاخ تبريد برادو 10 - 22 عام ",
       "denso",
-      "447500-4220"
+      "447500-4220",
+      "بخاخ تبريد برادو 10 - 22 عام "
     ],
     "description_preview": ""
   },
@@ -3090,9 +3090,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188939",
     "slug": "كفر-تريشة-قمارة-برادو-10--17-اسود-set-4-pcs",
     "search_terms": [
-      "daisen",
       "fj150 roof rack cover black",
-      "كفر تريشة قمارة برادو 10 - 17 اسود set 4 pcs"
+      "كفر تريشة قمارة برادو 10 - 17 اسود set 4 pcs",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -3150,9 +3150,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188946",
     "slug": "بطانة-جاملغ-امامي-هايلندر-21--مخمل-ايمن",
     "search_terms": [
-      "بطانة جاملغ امامي هايلندر 21 - مخمل ايمن",
+      "daisen-hy",
       "ty-21hld-029-rh",
-      "daisen-hy"
+      "بطانة جاملغ امامي هايلندر 21 - مخمل ايمن"
     ],
     "description_preview": ""
   },
@@ -3190,9 +3190,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188960",
     "slug": "كفر-بلاستك-داير-باب-خلفي-رف-فور-19--ايمن",
     "search_terms": [
-      "كفر بلاستك داير باب خلفي رف فور 19 - ايمن",
+      "ty-20rav4-033-r 67857-42100",
       "daisen-hy",
-      "ty-20rav4-033-r 67857-42100"
+      "كفر بلاستك داير باب خلفي رف فور 19 - ايمن"
     ],
     "description_preview": ""
   },
@@ -3210,9 +3210,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188961",
     "slug": "كفر-بلاستيك-داير-جاملغ-خلفي-رف-فور-19--ايسر",
     "search_terms": [
-      "كفر بلاستيك داير جاملغ خلفي رف فور 19 - ايسر",
+      "daisen-hy",
       "ty-20rav4-032-l 75874-42010",
-      "daisen-hy"
+      "كفر بلاستيك داير جاملغ خلفي رف فور 19 - ايسر"
     ],
     "description_preview": ""
   },
@@ -3230,9 +3230,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188962",
     "slug": "كفر-بلاستيك-داير-جاملغ-خلفي-رف-فور-19--ايمن",
     "search_terms": [
+      "كفر بلاستيك داير جاملغ خلفي رف فور 19 - ايمن",
       "daisen-hy",
-      "ty-20rav4-032-r 75873-42010",
-      "كفر بلاستيك داير جاملغ خلفي رف فور 19 - ايمن"
+      "ty-20rav4-032-r 75873-42010"
     ],
     "description_preview": ""
   },
@@ -3250,9 +3250,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188965",
     "slug": "قاعدة-شباك-افلون-19",
     "search_terms": [
-      "ty-19azl-014",
+      "قاعدة شباك افلون 19 - ",
       "daisen-hy",
-      "قاعدة شباك افلون 19 - "
+      "ty-19azl-014"
     ],
     "description_preview": ""
   },
@@ -3270,9 +3270,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188980",
     "slug": "بك-لايت-بيكب-فيكو-12--15-ايسر",
     "search_terms": [
-      "ty-11hlx-002-l",
+      "بك لايت بيكب فيكو 12 - 15 ايسر",
       "daisen-hy",
-      "بك لايت بيكب فيكو 12 - 15 ايسر"
+      "ty-11hlx-002-l"
     ],
     "description_preview": ""
   },
@@ -3290,9 +3290,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=188981",
     "slug": "بك-لايت-بيكب-فيكو-12--15-ايمن",
     "search_terms": [
-      "daisen-hy",
+      "بك لايت بيكب فيكو 12 - 15 ايمن",
       "ty-11hlx-002-r",
-      "بك لايت بيكب فيكو 12 - 15 ايمن"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -3310,9 +3310,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189014",
     "slug": "ماء-راديتر-اخضر-ايسن-20-4ltx6",
     "search_terms": [
+      "aisin-lub",
       "ماء راديتر اخضر ايسن 20% 4ltx6",
-      "lcpm20a4lg",
-      "aisin-lub"
+      "lcpm20a4lg"
     ],
     "description_preview": ""
   },
@@ -3330,9 +3330,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189134",
     "slug": "درع-تحت-دعامية-امامي-رف-فور-19--21",
     "search_terms": [
+      "ty-20rav4-028",
       "درع تحت دعامية امامي رف فور 19 - 21",
-      "daisen-hy",
-      "ty-20rav4-028"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -3351,8 +3351,8 @@ window.search-index = [
     "slug": "spanner-size-14-ec22hpr-d7-oes-to-90919-01295بلك-لاند-لكزس-22--توربو-v35",
     "search_terms": [
       "spanner size: 14: ec22hpr-d7 oes to 90919-01295بلك لاند لكزس 22 - توربو v35",
-      "267600-0490",
-      "denso"
+      "denso",
+      "267600-0490"
     ],
     "description_preview": ""
   },
@@ -3390,9 +3390,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189285",
     "slug": "شباك-دعامية-امامية-رف-فور-19--اسفل",
     "search_terms": [
+      "daisen-hy",
       "ty-20rav4-014",
-      "شباك دعامية امامية رف فور 19 - اسفل",
-      "daisen-hy"
+      "شباك دعامية امامية رف فور 19 - اسفل"
     ],
     "description_preview": ""
   },
@@ -3411,8 +3411,8 @@ window.search-index = [
     "slug": "نيكل-اشارة-مراة-لاند-22--كروم",
     "search_terms": [
       "daisen",
-      "نيكل اشارة مراة لاند 22 - كروم ",
-      "mirror molding lc300"
+      "mirror molding lc300",
+      "نيكل اشارة مراة لاند 22 - كروم "
     ],
     "description_preview": ""
   },
@@ -3430,9 +3430,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189348",
     "slug": "كفر-بدنة-افلون-19-اسفل-الدعامية-الامامية",
     "search_terms": [
-      "ty-19azl-024",
+      "daisen-hy",
       "كفر بدنة افلون 19- اسفل الدعامية الامامية  ",
-      "daisen-hy"
+      "ty-19azl-024"
     ],
     "description_preview": ""
   },
@@ -3450,9 +3450,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189353",
     "slug": "تريشة-باب-بدي-رف-فور-19--اسفل",
     "search_terms": [
+      "daisen-hy",
       "تريشة باب بدي رف فور 19 - اسفل ",
-      "ty-20rav4-030",
-      "daisen-hy"
+      "ty-20rav4-030"
     ],
     "description_preview": ""
   },
@@ -3470,9 +3470,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189614",
     "slug": "ماطور-بوابة-تبريد-فان-لكزس-عام-لاند-عام",
     "search_terms": [
+      "denso",
       "ماطور بوابة تبريد فان لكزس عام لاند عام ",
-      "063800-2110",
-      "denso"
+      "063800-2110"
     ],
     "description_preview": ""
   },
@@ -3490,8 +3490,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189658",
     "slug": "كفر-بدنة-افلون-19-اعلى",
     "search_terms": [
-      "daisen-hy",
       "كفر بدنة افلون 19- اعلى ",
+      "daisen-hy",
       "ty-19azl-023"
     ],
     "description_preview": ""
@@ -3510,9 +3510,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189718",
     "slug": "كفر-بدنة-كامري-18--اسفل",
     "search_terms": [
-      "ty-18cm-020-52618-06050",
       "كفر بدنة كامري 18 - اسفل  ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-18cm-020-52618-06050"
     ],
     "description_preview": ""
   },
@@ -3530,9 +3530,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189720",
     "slug": "هلال-داير-باب-خلفي-هايلندر-21-24-ايمن",
     "search_terms": [
-      "daisen-hy",
+      "هلال داير باب خلفي هايلندر 21-24 ايمن",
       "ty-21hld-017-r",
-      "هلال داير باب خلفي هايلندر 21-24 ايمن"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -3550,9 +3550,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189721",
     "slug": "هلال-داير-باب-خلفي-هايلندر-21-24-ايسر",
     "search_terms": [
-      "ty-21hld-017-l",
       "هلال داير باب خلفي هايلندر 21 -24 ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21hld-017-l"
     ],
     "description_preview": ""
   },
@@ -3570,8 +3570,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189722",
     "slug": "هلال-داير-جاملغ-امامي-رف-فور-20--ايسر",
     "search_terms": [
-      "ty-20rav4-038-l",
       "daisen-hy",
+      "ty-20rav4-038-l",
       "هلال داير جاملغ امامي رف فور 20 - ايسر"
     ],
     "description_preview": ""
@@ -3591,8 +3591,8 @@ window.search-index = [
     "slug": "هلال-داير-جاملغ-امامي-رف-فور-20--ايمن",
     "search_terms": [
       "ty-20rav4-038-r",
-      "هلال داير جاملغ امامي رف فور 20 - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "هلال داير جاملغ امامي رف فور 20 - ايمن"
     ],
     "description_preview": ""
   },
@@ -3610,8 +3610,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189726",
     "slug": "هلال-داير-جاملغ-خلفي-هايلندر-21-24-ايمن",
     "search_terms": [
-      "ty-21hld-018-r",
       "daisen-hy",
+      "ty-21hld-018-r",
       "هلال داير جاملغ خلفي هايلندر 21-24 ايمن"
     ],
     "description_preview": ""
@@ -3630,9 +3630,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189727",
     "slug": "هلال-داير-جاملغ-خلفي-هايلندر-21-24-ايسر",
     "search_terms": [
+      "هلال داير جاملغ خلفي هايلندر 21 -24 ايسر",
       "daisen-hy",
-      "ty-21hld-018-l ",
-      "هلال داير جاملغ خلفي هايلندر 21 -24 ايسر"
+      "ty-21hld-018-l "
     ],
     "description_preview": ""
   },
@@ -3650,9 +3650,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189789",
     "slug": "مثلث-كرن-دعامية-خلفية-رف-فور-19-ايسر",
     "search_terms": [
-      "ty-20rav4-019-l",
+      "daisen-hy",
       "مثلث كرن دعامية خلفية رف فور 19- ايسر",
-      "daisen-hy"
+      "ty-20rav4-019-l"
     ],
     "description_preview": ""
   },
@@ -3670,9 +3670,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189790",
     "slug": "مثلث-كرن-دعامية-خلفية-رف-فور-19-ايمن",
     "search_terms": [
-      "ty-20rav4-019-r",
       "daisen-hy",
-      "مثلث كرن دعامية خلفية رف فور 19- ايمن"
+      "مثلث كرن دعامية خلفية رف فور 19- ايمن",
+      "ty-20rav4-019-r"
     ],
     "description_preview": ""
   },
@@ -3690,9 +3690,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=189860",
     "slug": "كفر-اعلى-البدنة-رف-فور-19",
     "search_terms": [
-      "ty-20rav4-027",
       "كفر اعلى البدنة رف فور 19-  ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-20rav4-027"
     ],
     "description_preview": ""
   },
@@ -3710,9 +3710,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190152",
     "slug": "كفر-تريشة-قمارة-لاند-08--21-رصاصي-set-4-pcs",
     "search_terms": [
+      "lc200 roof rack cover - silver ",
       "كفر تريشة قمارة لاند 08 - 21 رصاصي set 4 pcs ",
-      "daisen",
-      "lc200 roof rack cover - silver "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -3730,9 +3730,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190183",
     "slug": "بلك-كورلا-2zr-خليجي-امريكي-عام-كورلا-19--خليجي-sc16hr11",
     "search_terms": [
+      "toyota",
       "90919-01275",
-      "بلك كورلا 2zr خليجي امريكي عام كورلا 19 - خليجي sc16hr11 ",
-      "toyota"
+      "بلك كورلا 2zr خليجي امريكي عام كورلا 19 - خليجي sc16hr11 "
     ],
     "description_preview": ""
   },
@@ -3751,8 +3751,8 @@ window.search-index = [
     "slug": "مروحة-لاند-98--07-1fz",
     "search_terms": [
       "aisin",
-      "fnt-004",
-      "مروحة لاند 98 - 07 1fz"
+      "مروحة لاند 98 - 07 1fz",
+      "fnt-004"
     ],
     "description_preview": ""
   },
@@ -3771,8 +3771,8 @@ window.search-index = [
     "slug": "بك-صندوق-كامري-07--09-خليجي-ايسر",
     "search_terms": [
       "بك صندوق كامري 07 - 09 خليجي ايسر",
-      "ty-07cm-004-l",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-07cm-004-l"
     ],
     "description_preview": ""
   },
@@ -3790,9 +3790,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190282",
     "slug": "بك-صندوق-كامري-07--09-خليجي-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-07cm-004-r",
-      "بك صندوق كامري 07 - 09 خليجي ايمن",
-      "daisen-hy"
+      "بك صندوق كامري 07 - 09 خليجي ايمن"
     ],
     "description_preview": ""
   },
@@ -3810,8 +3810,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190284",
     "slug": "بك-لايت-بيكب-ريفو-16--ايسر",
     "search_terms": [
-      "بك لايت بيكب ريفو 16 - ايسر  ",
       "daisen-hy",
+      "بك لايت بيكب ريفو 16 - ايسر  ",
       "ty-16hlx-003-w fl red-l"
     ],
     "description_preview": ""
@@ -3831,8 +3831,8 @@ window.search-index = [
     "slug": "بك-لايت-بيكب-ريفو-16--ايمن",
     "search_terms": [
       "بك لايت بيكب ريفو 16 - ايمن",
-      "ty-16hlx-003-r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-16hlx-003-r"
     ],
     "description_preview": ""
   },
@@ -3851,8 +3851,8 @@ window.search-index = [
     "slug": "كفر-دعامية-امامية-هايلندر-22--اعلى",
     "search_terms": [
       "daisen-hy",
-      "ty-22lf-032",
-      "كفر دعامية امامية هايلندر 22 - اعلى "
+      "كفر دعامية امامية هايلندر 22 - اعلى ",
+      "ty-22lf-032"
     ],
     "description_preview": ""
   },
@@ -3870,9 +3870,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190446",
     "slug": "بك-صندوق-هايلندر-21--امريكي-ايمن",
     "search_terms": [
-      "ty-21hld-004b-r",
       "بك صندوق هايلندر 21 - امريكي ايمن ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21hld-004b-r"
     ],
     "description_preview": ""
   },
@@ -3890,8 +3890,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190725",
     "slug": "شباك-دعامية-امامية-كورلا-20--خليجي-بدون-حساس",
     "search_terms": [
-      "ty-19crl-011",
       "daisen-hy",
+      "ty-19crl-011",
       "شباك دعامية امامية كورلا 20 - خليجي بدون حساس"
     ],
     "description_preview": ""
@@ -3910,8 +3910,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190757",
     "slug": "ماء-راديتر-ازرق-ايسن-50-4ltx6",
     "search_terms": [
-      "ماء راديتر ازرق ايسن 50% 4ltx6",
       "sllc-blue-4l",
+      "ماء راديتر ازرق ايسن 50% 4ltx6",
       "aisin-lub"
     ],
     "description_preview": ""
@@ -3930,8 +3930,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190781",
     "slug": "كفر-اعلى-بدنة-هايلندر-21-24",
     "search_terms": [
-      "daisen-hy",
       "كفر اعلى بدنة هايلندر 21-24",
+      "daisen-hy",
       "ty-22lf-023"
     ],
     "description_preview": ""
@@ -3971,8 +3971,8 @@ window.search-index = [
     "slug": "كرن-زاوية-دعامية-خلفية-كورلا-كروس-22--ايمن",
     "search_terms": [
       "ty-22crl-011-r",
-      "كرن زاوية دعامية خلفية كورلا كروس 22 - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "كرن زاوية دعامية خلفية كورلا كروس 22 - ايمن"
     ],
     "description_preview": ""
   },
@@ -3990,8 +3990,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=190879",
     "slug": "iridium-plug-fk20hbr8-spanner-16-oes-to-90919-01263--بلك-2gr-افلون-19",
     "search_terms": [
-      "denso",
       "iridium plug  fk20hbr8 spanner 16 oes to 90919-01263\t- بلك 2gr افلون 19 -",
+      "denso",
       "267700-7770"
     ],
     "description_preview": ""
@@ -4010,10 +4010,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191010",
     "slug": "زيت-محرك-hdc-50-veedol-cf-3x5lt",
     "search_terms": [
+      "lubricants - زيوت",
       "71311u29p00",
       "زيت محرك  hdc 50 veedol cf- 3x5lt",
-      "veedol",
-      "lubricants - زيوت"
+      "veedol"
     ],
     "description_preview": ""
   },
@@ -4031,9 +4031,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191043",
     "slug": "زيت-محرك-20w50-sl-veedol-elite-3-x-5lt",
     "search_terms": [
+      "زيت محرك 20w50 sl veedol elite 3 x 5lt",
       "71101u29p00",
       "veedol",
-      "زيت محرك 20w50 sl veedol elite 3 x 5lt",
       "lubricants - زيوت"
     ],
     "description_preview": ""
@@ -4053,9 +4053,9 @@ window.search-index = [
     "slug": "20w50-sn-ty-زيت-محرك-تويوتا-اسود-بلاستك-4ltx6",
     "search_terms": [
       "lubricants - زيوت",
-      "20w50 sn ty زيت محرك تويوتا اسود بلاستك 4ltx6",
+      "toyota",
       "08880-83224",
-      "toyota"
+      "20w50 sn ty زيت محرك تويوتا اسود بلاستك 4ltx6"
     ],
     "description_preview": ""
   },
@@ -4073,9 +4073,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191144",
     "slug": "لحية-خلفية-كامري-18--xle-امريكي",
     "search_terms": [
-      "ty-18cmu-022",
+      "لحية خلفية كامري 18 -  xle امريكي ",
       "daisen-hy",
-      "لحية خلفية كامري 18 -  xle امريكي "
+      "ty-18cmu-022"
     ],
     "description_preview": ""
   },
@@ -4093,9 +4093,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191218",
     "slug": "كرن-زاوية-دعامية-امامية-كورلا-كروس-22--ايسر",
     "search_terms": [
-      "ty-22crl-005-l",
       "daisen-hy",
-      "كرن زاوية دعامية امامية كورلا كروس 22 - ايسر"
+      "كرن زاوية دعامية امامية كورلا كروس 22 - ايسر",
+      "ty-22crl-005-l"
     ],
     "description_preview": ""
   },
@@ -4113,9 +4113,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191219",
     "slug": "كرن-زاوية-دعامية-امامية-كورلا-كروس-22--ايمن",
     "search_terms": [
-      "كرن زاوية دعامية امامية كورلا كروس 22 - ايمن",
+      "daisen-hy",
       "ty-22crl-005-r",
-      "daisen-hy"
+      "كرن زاوية دعامية امامية كورلا كروس 22 - ايمن"
     ],
     "description_preview": ""
   },
@@ -4153,9 +4153,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191222",
     "slug": "هلال-داير-جاملغ-امامي-هايلندر-21-24-ايسر",
     "search_terms": [
+      "ty-21hld-016-l",
       "هلال داير جاملغ امامي هايلندر 21 -24 ايسر",
-      "daisen-hy",
-      "ty-21hld-016-l"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -4173,9 +4173,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191259",
     "slug": "واقية-طين-خلفي-لاند-12--15-ام-لحية-لون-لولوي",
     "search_terms": [
-      "daisen",
+      "واقية طين خلفي لاند 12 - 15 ام لحية لون لولوي ",
       "dsn-lc200 pw mudflap 12-",
-      "واقية طين خلفي لاند 12 - 15 ام لحية لون لولوي "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -4193,8 +4193,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191272",
     "slug": "تريشة-باب-جانبية-خلفية-هايلندر-21--ايسر",
     "search_terms": [
-      "daisen-hy",
       "تريشة باب جانبية خلفية هايلندر 21 - ايسر",
+      "daisen-hy",
       "ty-21hld-015-l"
     ],
     "description_preview": ""
@@ -4214,9 +4214,9 @@ window.search-index = [
     "slug": "زيت-محرك-10w30-sl-veedol-elite-3-x-5lt",
     "search_terms": [
       "lubricants - زيوت",
-      "زيت محرك 10w30 sl veedol elite 3 x 5lt",
+      "71104u29p00",
       "veedol",
-      "71104u29p00"
+      "زيت محرك 10w30 sl veedol elite 3 x 5lt"
     ],
     "description_preview": ""
   },
@@ -4236,8 +4236,8 @@ window.search-index = [
     "search_terms": [
       "lubricants - زيوت",
       "veedol",
-      "71322u29p00",
-      "زيت محرك 15w40 veedol max pro ci-4 3x5lt "
+      "زيت محرك 15w40 veedol max pro ci-4 3x5lt ",
+      "71322u29p00"
     ],
     "description_preview": ""
   },
@@ -4255,9 +4255,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191318",
     "slug": "تريشة-باب-جانبية-امامية-هايلندر-21--ايسر",
     "search_terms": [
+      "تريشة باب جانبية امامية هايلندر 21 - ايسر",
       "ty-21hld-014-l",
-      "daisen-hy",
-      "تريشة باب جانبية امامية هايلندر 21 - ايسر"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -4276,8 +4276,8 @@ window.search-index = [
     "slug": "زيت-محرك-10w40-sl-veedol-elite-3-x-5lt",
     "search_terms": [
       "lubricants - زيوت",
-      "veedol",
       "زيت محرك 10w40 sl veedol elite 3 x 5lt",
+      "veedol",
       "71103u29p00"
     ],
     "description_preview": ""
@@ -4296,10 +4296,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191397",
     "slug": "10w40-sn-ultrasyntech-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
+      "lubricants - زيوت",
       "10w40 sn ultrasyntech زيت محرك ايسن 4ltx4",
       "essnp1044p",
-      "aisin-lub",
-      "lubricants - زيوت"
+      "aisin-lub"
     ],
     "description_preview": ""
   },
@@ -4317,9 +4317,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191448",
     "slug": "تريشة-باب-جانبية-امامية-هايلندر-21--ايمن",
     "search_terms": [
-      "تريشة باب جانبية امامية هايلندر 21 - ايمن",
       "daisen-hy",
-      "ty-21hld-014-r"
+      "ty-21hld-014-r",
+      "تريشة باب جانبية امامية هايلندر 21 - ايمن"
     ],
     "description_preview": ""
   },
@@ -4337,10 +4337,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191558",
     "slug": "20w50-sn-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
-      "essn2054p",
       "20w50 sn زيت محرك ايسن 4ltx4",
-      "lubricants - زيوت",
-      "aisin-lub"
+      "aisin-lub",
+      "essn2054p",
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -4358,9 +4358,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191563",
     "slug": "تريشة-باب-جانبية-خلفية-هايلندر-21--ايمن",
     "search_terms": [
-      "تريشة باب جانبية خلفية هايلندر 21 - ايمن",
       "daisen-hy",
-      "ty-21hld-015-r"
+      "ty-21hld-015-r",
+      "تريشة باب جانبية خلفية هايلندر 21 - ايمن"
     ],
     "description_preview": ""
   },
@@ -4378,8 +4378,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191570",
     "slug": "بخاخ-تبريد-خلفي-لاند-01--07-برادو-فورجنر-05--09-كهربائي",
     "search_terms": [
-      "447510-0020",
       "denso",
+      "447510-0020",
       "بخاخ تبريد خلفي لاند 01 - 07 برادو فورجنر 05 - 09 كهربائي "
     ],
     "description_preview": ""
@@ -4418,9 +4418,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191620",
     "slug": "عنبار-ويل-خلفي-هايس-05-13-ايمن-ايسر",
     "search_terms": [
+      "wct-173",
       "عنبار ويل خلفي هايس 05- 13- ايمن ايسر",
-      "advics",
-      "wct-173"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -4438,9 +4438,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191635",
     "slug": "كفر-تريشة-قمارة-لكزس-08--21-lx570-رصاصي-set-4-pcs",
     "search_terms": [
-      "roof rack cover lx570 gray",
       "daisen",
-      "كفر تريشة قمارة لكزس 08 - 21 lx570 رصاصي set 4 pcs "
+      "كفر تريشة قمارة لكزس 08 - 21 lx570 رصاصي set 4 pcs ",
+      "roof rack cover lx570 gray"
     ],
     "description_preview": ""
   },
@@ -4458,8 +4458,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191639",
     "slug": "هلال-داير-باب-خلفي-كورلا-كروس-22--ايسر",
     "search_terms": [
-      "ty-22crl-025-l",
       "daisen-hy",
+      "ty-22crl-025-l",
       "هلال داير باب خلفي كورلا كروس 22 - ايسر"
     ],
     "description_preview": ""
@@ -4479,8 +4479,8 @@ window.search-index = [
     "slug": "مروحة-لاند-برادو-اف-جي-فورجنر-1gr-عام--16361-31060-هايس-20-7grf",
     "search_terms": [
       "aisin",
-      "مروحة لاند  برادو  اف جي فورجنر  1gr عام - -16361-31060 هايس 20- 7grf",
-      "fnt-007"
+      "fnt-007",
+      "مروحة لاند  برادو  اف جي فورجنر  1gr عام - -16361-31060 هايس 20- 7grf"
     ],
     "description_preview": ""
   },
@@ -4498,10 +4498,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191713",
     "slug": "5w30-sn-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
-      "lubricants - زيوت",
-      "esfn0534p",
       "5w30 sn زيت محرك ايسن 4ltx4",
-      "aisin-lub"
+      "esfn0534p",
+      "aisin-lub",
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -4519,9 +4519,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191716",
     "slug": "كويل-مجول-كورلا-يارس-فيوس-1nz-2nz",
     "search_terms": [
-      " كويل مجول كورلا يارس فيوس 1nz 2nz",
       "denso",
-      "099700-2550"
+      "099700-2550",
+      " كويل مجول كورلا يارس فيوس 1nz 2nz"
     ],
     "description_preview": ""
   },
@@ -4540,8 +4540,8 @@ window.search-index = [
     "slug": "واقية-طين-امامية-+-خلفية-برادو-14--18--اسود-اساس-4-قطعة",
     "search_terms": [
       "واقية طين امامية + خلفية برادو 14 - 18 - اسود اساس 4 قطعة ",
-      "daisen",
-      "fj150-14-17 mud guard"
+      "fj150-14-17 mud guard",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -4560,8 +4560,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-07--09-خليجي-ايسر",
     "search_terms": [
       "ty-07cm-003-l",
-      "بك زاوية كامري 07 - 09 خليجي ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "بك زاوية كامري 07 - 09 خليجي ايسر"
     ],
     "description_preview": ""
   },
@@ -4579,9 +4579,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191840",
     "slug": "بك-زاوية-كامري-07--09-خليجي-ايمن",
     "search_terms": [
-      "ty-07cm-003-r",
       "بك زاوية كامري 07 - 09 خليجي ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-07cm-003-r"
     ],
     "description_preview": ""
   },
@@ -4599,9 +4599,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191841",
     "slug": "لحية-دعامية-امامية-هايلندر-21",
     "search_terms": [
+      "daisen-hy",
       "لحية دعامية امامية هايلندر 21 - ",
-      "ty-21hld-012",
-      "daisen-hy"
+      "ty-21hld-012"
     ],
     "description_preview": ""
   },
@@ -4619,10 +4619,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191863",
     "slug": "15w40-ci4-زيت-كاز-ايسن-4ltx4",
     "search_terms": [
-      "lubricants - زيوت",
-      "ecsi1544p",
+      "15w40 ci4 زيت كاز ايسن 4ltx4",
       "aisin-lub",
-      "15w40 ci4 زيت كاز ايسن 4ltx4"
+      "ecsi1544p",
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -4640,10 +4640,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191883",
     "slug": "10w30-sn-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
-      "lubricants - زيوت",
+      "essn1034p",
       "10w30 sn زيت محرك ايسن 4ltx4",
       "aisin-lub",
-      "essn1034p"
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -4661,10 +4661,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191963",
     "slug": "زيت-محرك-5w20-veedol-syntron-sn+-gf-5-3x-5lt",
     "search_terms": [
-      "زيت محرك 5w20 veedol syntron sn+ -gf-5 3x 5lt ",
-      "veedol",
       "lubricants - زيوت",
-      "73115u29p00"
+      "73115u29p00",
+      "veedol",
+      "زيت محرك 5w20 veedol syntron sn+ -gf-5 3x 5lt "
     ],
     "description_preview": ""
   },
@@ -4683,8 +4683,8 @@ window.search-index = [
     "slug": "شباك-دعامية-امامية-الاعلى-لاند-22--gxr-vxr",
     "search_terms": [
       "ty-21lc-019",
-      "شباك دعامية امامية الاعلى لاند 22 - gxr vxr",
-      "daisen-hy"
+      "daisen-hy",
+      "شباك دعامية امامية الاعلى لاند 22 - gxr vxr"
     ],
     "description_preview": ""
   },
@@ -4702,8 +4702,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191986",
     "slug": "هلال-داير-جاملغ-خلفي-كورلا-كروس-22--ايسر",
     "search_terms": [
-      "هلال داير جاملغ خلفي كورلا كروس 22 - ايسر",
       "ty-22crl-024-l",
+      "هلال داير جاملغ خلفي كورلا كروس 22 - ايسر",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -4722,9 +4722,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=191987",
     "slug": "هلال-داير-جاملغ-خلفي-كورلا-كروس-22--ايمن",
     "search_terms": [
+      "هلال داير جاملغ خلفي كورلا كروس 22 - ايمن",
       "daisen-hy",
-      "ty-22crl-024-r",
-      "هلال داير جاملغ خلفي كورلا كروس 22 - ايمن"
+      "ty-22crl-024-r"
     ],
     "description_preview": ""
   },
@@ -4743,9 +4743,9 @@ window.search-index = [
     "slug": "5w40-sn-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
       "lubricants - زيوت",
-      "5w40 sn زيت محرك ايسن 4ltx4",
+      "aisin-lub",
       "esfn0544p",
-      "aisin-lub"
+      "5w40 sn زيت محرك ايسن 4ltx4"
     ],
     "description_preview": ""
   },
@@ -4764,9 +4764,9 @@ window.search-index = [
     "slug": "زيت-محرك-5w30-veedol-syntron-sn+-gf-5-3x-5lt",
     "search_terms": [
       "lubricants - زيوت",
-      "veedol",
+      "73116u29p00",
       "زيت محرك 5w30 veedol syntron sn+ -gf-5 3x 5lt",
-      "73116u29p00"
+      "veedol"
     ],
     "description_preview": ""
   },
@@ -4786,8 +4786,8 @@ window.search-index = [
     "search_terms": [
       "lubricants - زيوت",
       "esfn0524p",
-      "+5w20 sn syntech زيت محرك ايسن 4ltx4",
-      "aisin-lub"
+      "aisin-lub",
+      "+5w20 sn syntech زيت محرك ايسن 4ltx4"
     ],
     "description_preview": ""
   },
@@ -4806,8 +4806,8 @@ window.search-index = [
     "slug": "لحية-خلفية-هايلندر-21--ثانوي-اسفل-الدعامية",
     "search_terms": [
       "ty-22lf-008",
-      "لحية خلفية هايلندر 21 - ثانوي اسفل الدعامية  ",
-      "daisen-hy"
+      "daisen-hy",
+      "لحية خلفية هايلندر 21 - ثانوي اسفل الدعامية  "
     ],
     "description_preview": ""
   },
@@ -4825,9 +4825,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192142",
     "slug": "لحية-دعامية-امامية-رف-فور-19--وسطية",
     "search_terms": [
+      "daisen-hy",
       "ty-20rav4-008",
-      "لحية دعامية امامية رف فور 19 - وسطية ",
-      "daisen-hy"
+      "لحية دعامية امامية رف فور 19 - وسطية "
     ],
     "description_preview": ""
   },
@@ -4847,8 +4847,8 @@ window.search-index = [
     "search_terms": [
       "lubricants - زيوت",
       "0w20 sn زيت محرك ايسن 4ltx4",
-      "aisin-lub",
-      "esfnp0024pb"
+      "esfnp0024pb",
+      "aisin-lub"
     ],
     "description_preview": ""
   },
@@ -4866,9 +4866,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192210",
     "slug": "كويل-مجول-2tr-1gr--لبلك-فحمي",
     "search_terms": [
-      "كويل مجول 2tr 1gr - لبلك فحمي ",
       "denso",
-      "099700-2530"
+      "099700-2530",
+      "كويل مجول 2tr 1gr - لبلك فحمي "
     ],
     "description_preview": ""
   },
@@ -4886,8 +4886,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192219",
     "slug": "اويل-بم-رف-كامري-03--11-2az",
     "search_terms": [
-      "optr-110",
       "aisin",
+      "optr-110",
       "اويل بم رف كامري 03 - 11 2az"
     ],
     "description_preview": ""
@@ -4947,8 +4947,8 @@ window.search-index = [
     "slug": "بك-صندوق-كامري-22--خليجي-عادي-دخاني-ايمن",
     "search_terms": [
       "ty-22cmm-006-rh",
-      " بك صندوق كامري 22 - خليجي عادي دخاني  ايمن ",
-      "daisen-hy"
+      "daisen-hy",
+      " بك صندوق كامري 22 - خليجي عادي دخاني  ايمن "
     ],
     "description_preview": ""
   },
@@ -4986,9 +4986,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192404",
     "slug": "شباك-رئيسي-كامري-18--20-امريكي-se",
     "search_terms": [
+      "daisen-hy",
       "شباك رئيسي كامري 18 - 20 امريكي  se",
-      "ty-18cmu-021",
-      "daisen-hy"
+      "ty-18cmu-021"
     ],
     "description_preview": ""
   },
@@ -5006,9 +5006,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192414",
     "slug": "نيكل-داير-شباك-دعامية-امامية-افلون-19--اسفل",
     "search_terms": [
-      "نيكل داير شباك دعامية امامية افلون 19 - اسفل",
+      "ty-19azl-013",
       "daisen-hy",
-      "ty-19azl-013"
+      "نيكل داير شباك دعامية امامية افلون 19 - اسفل"
     ],
     "description_preview": ""
   },
@@ -5026,10 +5026,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192482",
     "slug": "15w40-ci4-زيت-محرك-تويوتا-كاز-4ltx6",
     "search_terms": [
-      "lubricants - زيوت",
-      "08880-83461",
       "15w40 ci4 زيت محرك تويوتا كاز 4ltx6",
-      "toyota"
+      "toyota",
+      "08880-83461",
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -5048,8 +5048,8 @@ window.search-index = [
     "slug": "بك-صندوق-لاند-12--15-ايسر",
     "search_terms": [
       "ty-12lc-003-l 81591-60310",
-      "بك صندوق لاند 12 - 15 ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "بك صندوق لاند 12 - 15 ايسر"
     ],
     "description_preview": ""
   },
@@ -5067,9 +5067,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192494",
     "slug": "coolshot-2pcs-x30ml--ctn-30-pair--محسن-اداء-التبريد-(كوول-شوت)-30-مل--عدد-2",
     "search_terms": [
-      "errecom",
+      "coolshot 2pcs x30ml - ctn 30 pair - محسن اداء التبريد (كوول شوت) 30 مل - عدد 2",
       "tr1122c2h4s2.mde",
-      "coolshot 2pcs x30ml - ctn 30 pair - محسن اداء التبريد (كوول شوت) 30 مل - عدد 2"
+      "errecom"
     ],
     "description_preview": ""
   },
@@ -5087,9 +5087,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192573",
     "slug": "لايت-برادو-24--مستطيل-بدون-عدسات-ايمن",
     "search_terms": [
-      "ty-24prd-001b-r-r:81145-60s50",
       "لايت برادو 24 - مستطيل بدون عدسات ايمن ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-24prd-001b-r-r:81145-60s50"
     ],
     "description_preview": ""
   },
@@ -5107,9 +5107,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192614",
     "slug": "بك-صندوق-لاند-12--15-ايمن",
     "search_terms": [
-      "بك صندوق لاند 12 - 15 ايمن ",
+      "ty-12lc-003-r 81581-60280",
       "daisen-hy",
-      "ty-12lc-003-r 81581-60280"
+      "بك صندوق لاند 12 - 15 ايمن "
     ],
     "description_preview": ""
   },
@@ -5128,9 +5128,9 @@ window.search-index = [
     "slug": "5w40-sn-lex-زيت-محرك-لكزس-بلاستك-4ltx6",
     "search_terms": [
       "lubricants - زيوت",
-      "08880-83717",
+      "toyota",
       "5w40 sn lex زيت محرك لكزس بلاستك 4ltx6",
-      "toyota"
+      "08880-83717"
     ],
     "description_preview": ""
   },
@@ -5148,9 +5148,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192674",
     "slug": "لايت-برادو-24--مستطيل-بدون-عدسات-ايسر",
     "search_terms": [
+      "daisen-hy",
       "لايت برادو 24 - مستطيل بدون عدسات ايسر ",
-      "ty-24prd-001b-l l:81185-60s50",
-      "daisen-hy"
+      "ty-24prd-001b-l l:81185-60s50"
     ],
     "description_preview": ""
   },
@@ -5168,9 +5168,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192692",
     "slug": "كفر-بروجكتر-بالحية-لمتيد-امامي-لاند-22",
     "search_terms": [
-      "كفر بروجكتر بالحية لمتيد امامي لاند 22 ",
       "0",
-      "daisen"
+      "daisen",
+      "كفر بروجكتر بالحية لمتيد امامي لاند 22 "
     ],
     "description_preview": ""
   },
@@ -5189,8 +5189,8 @@ window.search-index = [
     "slug": "دعامية-امامية-كورلا-20--خليجي",
     "search_terms": [
       "ty-19crl-009",
-      "دعامية امامية كورلا 20 - خليجي ",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية امامية كورلا 20 - خليجي "
     ],
     "description_preview": ""
   },
@@ -5209,8 +5209,8 @@ window.search-index = [
     "slug": "0w16-sp-زيت-محرك-ايسن-4ltx4",
     "search_terms": [
       "lubricants - زيوت",
-      "0w16 sp زيت محرك ايسن 4ltx4",
       "aisin-lub",
+      "0w16 sp زيت محرك ايسن 4ltx4",
       "esfp0164p"
     ],
     "description_preview": ""
@@ -5230,8 +5230,8 @@ window.search-index = [
     "slug": "عنبار-ويل-خلفي-لاند-98--07-47550-60120",
     "search_terms": [
       "عنبار ويل خلفي لاند 98 - 07 -47550-60120",
-      "advics",
-      "wct-011"
+      "wct-011",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -5249,8 +5249,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192966",
     "slug": "بك-صندوك-كورلا-20--امريكي-le-ايسر",
     "search_terms": [
-      "ty-19crlu-002dl-81590-02750",
       "بك صندوك كورلا 20 - امريكي le ايسر",
+      "ty-19crlu-002dl-81590-02750",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -5269,9 +5269,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192967",
     "slug": "بك-صندوك-كورلا-20--امريكي-le-ايمن",
     "search_terms": [
-      "بك صندوك كورلا 20 - امريكي le ايمن",
       "ty-19crlu-002dr-81580-02b60",
-      "daisen-hy"
+      "daisen-hy",
+      "بك صندوك كورلا 20 - امريكي le ايمن"
     ],
     "description_preview": ""
   },
@@ -5289,9 +5289,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=192998",
     "slug": "حافظة-متعلقات-لاند-16--21-بجانب-مقعد-السائق-بيجي",
     "search_terms": [
+      "fj200-16 consoles box",
       "daisen",
-      "حافظة متعلقات لاند 16 - 21 بجانب مقعد السائق بيجي ",
-      "fj200-16 consoles box"
+      "حافظة متعلقات لاند 16 - 21 بجانب مقعد السائق بيجي "
     ],
     "description_preview": ""
   },
@@ -5309,9 +5309,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193032",
     "slug": "شباك-دعامية-امامية-كورلا-20--امريكي-le-اسود",
     "search_terms": [
+      "daisen-hy",
       "ty-19crlu-018",
-      "شباك  دعامية امامية كورلا 20 - امريكي le اسود",
-      "daisen-hy"
+      "شباك  دعامية امامية كورلا 20 - امريكي le اسود"
     ],
     "description_preview": ""
   },
@@ -5369,9 +5369,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193199",
     "slug": "شباك-دعامية-امامية-بدون-فتحة-كامرة-كامري-21-خليجي-صيني-le",
     "search_terms": [
+      "شباك دعامية امامية بدون فتحة كامرة كامري 21 خليجي صيني le",
       "ty-21cm-007b",
-      "daisen-hy",
-      "شباك دعامية امامية بدون فتحة كامرة كامري 21 خليجي صيني le"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -5389,9 +5389,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193205",
     "slug": "بدنة-او-دعامية-امامية-بلاستك-برادو-24",
     "search_terms": [
-      "ty-24prd-003-52119-0g100",
+      "بدنة او دعامية امامية بلاستك برادو 24 -  ",
       "daisen-hy",
-      "بدنة او دعامية امامية بلاستك برادو 24 -  "
+      "ty-24prd-003-52119-0g100"
     ],
     "description_preview": ""
   },
@@ -5409,9 +5409,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193210",
     "slug": "دعامية-امامية-كورلا-20--le-امريكي-كورلا-ليفان-23-وارد-صين",
     "search_terms": [
-      "ty-19crlu-004",
+      "daisen-hy",
       "دعامية امامية كورلا 20  - le امريكي  / كورلا ليفان 23- وارد صين ",
-      "daisen-hy"
+      "ty-19crlu-004"
     ],
     "description_preview": ""
   },
@@ -5429,9 +5429,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193211",
     "slug": "دعامية-خلفية-كورلا-20--امريكي-le-se--كورلا-ليفان-23--وارد-صين",
     "search_terms": [
+      "daisen-hy",
       "ty-19crlu-005",
-      "دعامية خلفية كورلا 20 - امريكي le se - كورلا ليفان 23 - وارد صين",
-      "daisen-hy"
+      "دعامية خلفية كورلا 20 - امريكي le se - كورلا ليفان 23 - وارد صين"
     ],
     "description_preview": ""
   },
@@ -5449,9 +5449,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193252",
     "slug": "عنبار-كلج-بيكب-فيكو-2kd-اسفل-كاز-31470-0k110",
     "search_terms": [
+      "عنبار كلج بيكب فيكو 2kd اسفل كاز-31470-0k110",
       "crts-017 / crts-003",
-      "aisin",
-      "عنبار كلج بيكب فيكو 2kd اسفل كاز-31470-0k110"
+      "aisin"
     ],
     "description_preview": ""
   },
@@ -5469,8 +5469,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193284",
     "slug": "شباك-رئيسي-كامري-18--20-امريكي-le",
     "search_terms": [
-      "شباك رئيسي كامري 18 - 20 امريكي  le",
       "daisen-hy",
+      "شباك رئيسي كامري 18 - 20 امريكي  le",
       "ty-18cmu-020"
     ],
     "description_preview": ""
@@ -5489,9 +5489,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193290",
     "slug": "دعامية-امامية-كامري-21--امريكي-le-خليجي-عام",
     "search_terms": [
-      "ty-21cmu-010",
+      "daisen-hy",
       "دعامية امامية كامري 21 - امريكي le خليجي عام ",
-      "daisen-hy"
+      "ty-21cmu-010"
     ],
     "description_preview": ""
   },
@@ -5509,9 +5509,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193291",
     "slug": "دعامية-امامية-كامري-21--امريكي-se",
     "search_terms": [
-      "daisen-hy",
       "دعامية امامية كامري 21 - امريكي se ",
-      "ty-21cmu-009"
+      "ty-21cmu-009",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -5529,9 +5529,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193292",
     "slug": "دعامية-امامية-كورلا-20--se-امريكي",
     "search_terms": [
-      "دعامية امامية كورلا 20  - se امريكي ",
       "ty-19crlu-004a",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية امامية كورلا 20  - se امريكي "
     ],
     "description_preview": ""
   },
@@ -5549,9 +5549,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193293",
     "slug": "دعامية-امامية-كورلا-كروس-22",
     "search_terms": [
-      "دعامية امامية كورلا كروس 22 - ",
+      "ty-22crl-006",
       "daisen-hy",
-      "ty-22crl-006"
+      "دعامية امامية كورلا كروس 22 - "
     ],
     "description_preview": ""
   },
@@ -5569,9 +5569,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193294",
     "slug": "دعامية-خلفية-كورلا-20--خليجي",
     "search_terms": [
-      "daisen-hy",
       "ty-19crl-010",
-      "دعامية خلفية كورلا 20 - خليجي "
+      "دعامية خلفية كورلا 20 - خليجي ",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -5589,9 +5589,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193371",
     "slug": "ماطور-مروحة-تبريد-كامري-12--17-2ar-لكزس-es350-07-fan-motor",
     "search_terms": [
-      "168000-1060",
       "denso",
-      "ماطور مروحة تبريد كامري 12 - 17 2ar  لكزس es350 07- fan motor "
+      "ماطور مروحة تبريد كامري 12 - 17 2ar  لكزس es350 07- fan motor ",
+      "168000-1060"
     ],
     "description_preview": ""
   },
@@ -5629,9 +5629,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193399",
     "slug": "دعامية-امامية-وسطية-برادو-24",
     "search_terms": [
-      "ty-24prd-004-52119-0g100",
+      "daisen-hy",
       "دعامية امامية وسطية برادو 24 -  ",
-      "daisen-hy"
+      "ty-24prd-004-52119-0g100"
     ],
     "description_preview": ""
   },
@@ -5649,9 +5649,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193411",
     "slug": "شباك-دعامية-امامية-كامري-21--امريكي-se",
     "search_terms": [
-      "ty-21cmu-016",
       "شباك دعامية امامية كامري 21 - امريكي se",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21cmu-016"
     ],
     "description_preview": ""
   },
@@ -5669,9 +5669,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193412",
     "slug": "شباك-رئيسي-كامري-21--خليجي-امريكي-le",
     "search_terms": [
-      "شباك رئيسي كامري 21 -  خليجي امريكي le",
+      "daisen-hy",
       "ty-21cmu-012",
-      "daisen-hy"
+      "شباك رئيسي كامري 21 -  خليجي امريكي le"
     ],
     "description_preview": ""
   },
@@ -5709,9 +5709,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193434",
     "slug": "extereme-sl-2pcsx30ml-ctn-30-pair--مانع-تسريب-(-ستوب-ليك-)-لمنظمومة-التبريد-30-مل--عدد-2",
     "search_terms": [
-      "errecom",
+      "tr1062c2h4s2.mde",
       "extereme sl 2pcsx30ml ctn 30 pair - مانع تسريب ( ستوب ليك )  لمنظمومة التبريد 30 مل - عدد 2 ",
-      "tr1062c2h4s2.mde"
+      "errecom"
     ],
     "description_preview": ""
   },
@@ -5729,9 +5729,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193444",
     "slug": "شباك-دعامية-امامية-كامري-21-امريكي-بدون-فتحة-حساس-و-نيكل-اسفل-الشباك-xse",
     "search_terms": [
-      "ty-21cmu-015",
       "شباك دعامية امامية كامري 21- امريكي بدون فتحة حساس و نيكل اسفل الشباك xse",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21cmu-015"
     ],
     "description_preview": ""
   },
@@ -5749,9 +5749,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193478",
     "slug": "دسك-خلفي-لاند-98--07--يابان-jp-04466-60030",
     "search_terms": [
+      "دسك خلفي لاند 98 - 07  - يابان jp 04466-60030",
       "a2n004",
-      "advics",
-      "دسك خلفي لاند 98 - 07  - يابان jp 04466-60030"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -5769,9 +5769,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193489",
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--اسفل-بروجكتر-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-24prd-006-l 52113-0g010",
-      "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايسر ",
-      "daisen-hy"
+      "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايسر "
     ],
     "description_preview": ""
   },
@@ -5789,9 +5789,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193519",
     "slug": "كفر-بلاستك-باب-بدي-رف-فور-19",
     "search_terms": [
-      "ty-20rav4-029",
       "كفر بلاستك باب بدي رف فور 19 - ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-20rav4-029"
     ],
     "description_preview": ""
   },
@@ -5829,9 +5829,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193555",
     "slug": "بك-زاوية-لاند-12--15-ايمن",
     "search_terms": [
-      "ty-12lc-002-r 81551-60a80",
       "بك زاوية لاند 12 - 15 ايمن ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-12lc-002-r 81551-60a80"
     ],
     "description_preview": ""
   },
@@ -5849,9 +5849,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193556",
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--اسفل-بروجكتر-ايمن",
     "search_terms": [
+      "daisen-hy",
       "كرن زاوية دعامية امامية برادو 24 - اسفل بروجكتر ايمن ",
-      "ty-24prd-006- r 52112-0g010",
-      "daisen-hy"
+      "ty-24prd-006- r 52112-0g010"
     ],
     "description_preview": ""
   },
@@ -5870,8 +5870,8 @@ window.search-index = [
     "slug": "شباك-دعامية-امامية-كورلا-20--امريكي-le-رصاصي",
     "search_terms": [
       "شباك دعامية امامية كورلا 20 - امريكي le رصاصي",
-      "ty-19crlu-019",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-19crlu-019"
     ],
     "description_preview": ""
   },
@@ -5889,9 +5889,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193563",
     "slug": "شباك-دعامية-امامية-كورلا-20--امريكي-le-نيكل",
     "search_terms": [
+      "daisen-hy",
       "شباك دعامية امامية كورلا 20 - امريكي le نيكل",
-      "ty-19crlu-020",
-      "daisen-hy"
+      "ty-19crlu-020"
     ],
     "description_preview": ""
   },
@@ -5909,9 +5909,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193582",
     "slug": "هلال-جاملغ-امامي-برادو-24--ايسر",
     "search_terms": [
-      "هلال جاملغ امامي برادو 24 - ايسر ",
       "ty-24prd-011-l 75602-0g010",
-      "daisen-hy"
+      "daisen-hy",
+      "هلال جاملغ امامي برادو 24 - ايسر "
     ],
     "description_preview": ""
   },
@@ -5931,8 +5931,8 @@ window.search-index = [
     "search_terms": [
       "atfmt4s",
       "aisin-lub",
-      "ناقل الحركة",
-      "هايدروليك كير ايسن atf multi puls aisin  4l x 4"
+      "هايدروليك كير ايسن atf multi puls aisin  4l x 4",
+      "ناقل الحركة"
     ],
     "description_preview": ""
   },
@@ -5950,9 +5950,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193610",
     "slug": "بك-صندوق-لاند-08--11-ايسر",
     "search_terms": [
-      "ty-07lc-004-l 81591-60210",
+      "daisen-hy",
       "بك صندوق لاند 08 - 11 ايسر",
-      "daisen-hy"
+      "ty-07lc-004-l 81591-60210"
     ],
     "description_preview": ""
   },
@@ -5970,8 +5970,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193611",
     "slug": "بك-صندوق-لاند-08--11-ايمن",
     "search_terms": [
-      "ty-07lc-004-r 81581-60180",
       "daisen-hy",
+      "ty-07lc-004-r 81581-60180",
       "بك صندوق لاند 08 - 11 ايمن "
     ],
     "description_preview": ""
@@ -5990,9 +5990,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193612",
     "slug": "بك-صندوق-لاند-16--21-ايسر",
     "search_terms": [
+      "ty-16lc-005-l 81591-60360",
       "بك صندوق لاند 16 - 21 ايسر",
-      "daisen-hy",
-      "ty-16lc-005-l 81591-60360"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -6010,9 +6010,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193613",
     "slug": "بك-صندوق-لاند-16--21-ايمن",
     "search_terms": [
-      "بك صندوق لاند 16 - 21 ايمن",
       "ty-16lc-005-r 81581-60360",
-      "daisen-hy"
+      "daisen-hy",
+      "بك صندوق لاند 16 - 21 ايمن"
     ],
     "description_preview": ""
   },
@@ -6030,10 +6030,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193615",
     "slug": "5w30-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
     "search_terms": [
-      "lubricants - زيوت",
-      "klan5-05304",
+      "5w30 sn ns زيت محرك نيسان ياباني 4ltx6",
       "nissan ",
-      "5w30 sn ns زيت محرك نيسان ياباني 4ltx6"
+      "lubricants - زيوت",
+      "klan5-05304"
     ],
     "description_preview": ""
   },
@@ -6051,9 +6051,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193618",
     "slug": "دعامية-امامية-كامري-18--20-بدون-فتحة-كامرة-امريكي-xse",
     "search_terms": [
-      "دعامية امامية كامري 18 - 20 بدون فتحة كامرة امريكي xse ",
+      "daisen-hy",
       "ty-18cmu-013",
-      "daisen-hy"
+      "دعامية امامية كامري 18 - 20 بدون فتحة كامرة امريكي xse "
     ],
     "description_preview": ""
   },
@@ -6072,8 +6072,8 @@ window.search-index = [
     "slug": "بك-زاوية-كورلا-20--امريكي-le-ايسر",
     "search_terms": [
       "daisen-hy",
-      "بك زاوية كورلا 20 - امريكي le ايسر",
-      "ty-19crlu-002bl-81560-02c10"
+      "ty-19crlu-002bl-81560-02c10",
+      "بك زاوية كورلا 20 - امريكي le ايسر"
     ],
     "description_preview": ""
   },
@@ -6092,8 +6092,8 @@ window.search-index = [
     "slug": "بك-زاوية-كورلا-20--امريكي-le-ايمن",
     "search_terms": [
       "daisen-hy",
-      "بك زاوية كورلا 20 - امريكي le ايمن",
-      "ty-19crlu-002br-81550-02c60"
+      "ty-19crlu-002br-81550-02c60",
+      "بك زاوية كورلا 20 - امريكي le ايمن"
     ],
     "description_preview": ""
   },
@@ -6111,9 +6111,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193629",
     "slug": "لايت-بيكب-فيكو-09--11-ايسر",
     "search_terms": [
-      "لايت بيكب فيكو 09 - 11 ايسر",
       "daisen-hy",
-      "ty-08hlx-001-l"
+      "ty-08hlx-001-l",
+      "لايت بيكب فيكو 09 - 11 ايسر"
     ],
     "description_preview": ""
   },
@@ -6132,8 +6132,8 @@ window.search-index = [
     "slug": "لايت-بيكب-فيكو-09--11-ايمن",
     "search_terms": [
       "لايت بيكب فيكو 09 - 11 ايمن",
-      "ty-08hlx-001-r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-08hlx-001-r"
     ],
     "description_preview": ""
   },
@@ -6151,9 +6151,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193686",
     "slug": "شباك-دعامية-امامية-كامري-18--21-xle-بدون-فتحة-امريكي",
     "search_terms": [
+      "ty-18cmu-017",
       "daisen-hy",
-      "شباك دعامية امامية كامري 18 - 21 xle بدون فتحة امريكي ",
-      "ty-18cmu-017"
+      "شباك دعامية امامية كامري 18 - 21 xle بدون فتحة امريكي "
     ],
     "description_preview": ""
   },
@@ -6171,8 +6171,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193692",
     "slug": "ماطور-مروحة-تبريد-كورلا-08--19--2zr-fan-motor-corolla-08-19",
     "search_terms": [
-      "denso",
       "ماطور مروحة تبريد كورلا 08 - 19 - 2zr fan motor corolla 08-19",
+      "denso",
       "168000-2560"
     ],
     "description_preview": ""
@@ -6191,9 +6191,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193736",
     "slug": "لايت-بيكب-فيكو-05--07-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-04hlx-001-l",
-      "لايت بيكب فيكو 05 - 07 ايسر",
-      "daisen-hy"
+      "لايت بيكب فيكو 05 - 07 ايسر"
     ],
     "description_preview": ""
   },
@@ -6211,8 +6211,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193737",
     "slug": "لايت-بيكب-فيكو-05--07-ايمن",
     "search_terms": [
-      "ty-04hlx-001-r",
       "لايت بيكب فيكو 05 - 07 ايمن",
+      "ty-04hlx-001-r",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -6231,9 +6231,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193744",
     "slug": "هلال-جاملغ-امامي-برادو-24--ايمن",
     "search_terms": [
-      "ty-24prd-011-r 75601-0g010",
       "هلال جاملغ امامي برادو 24 - ايمن  ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-24prd-011-r 75601-0g010"
     ],
     "description_preview": ""
   },
@@ -6251,9 +6251,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193778",
     "slug": "شباك-دعامية-امامية-كامري-21-امريكي-بفتحة-حساس-و-نيكل-اسفل-الشباك-xse",
     "search_terms": [
-      "شباك دعامية امامية كامري 21- امريكي بفتحة حساس و نيكل اسفل الشباك xse",
       "ty-21cmu-014",
-      "daisen-hy"
+      "daisen-hy",
+      "شباك دعامية امامية كامري 21- امريكي بفتحة حساس و نيكل اسفل الشباك xse"
     ],
     "description_preview": ""
   },
@@ -6291,9 +6291,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193851",
     "slug": "بروجكتر-باترول-سفاري-05--09",
     "search_terms": [
-      "dlaa",
       "بروجكتر باترول سفاري 05 - 09",
-      "ns075"
+      "ns075",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -6311,9 +6311,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193852",
     "slug": "شباك-دعامية-امامية-كورلا-ليفان-23--وارد-صين",
     "search_terms": [
+      "ty-23lv-007",
       "شباك دعامية امامية كورلا ليفان 23 - وارد صين ",
-      "daisen-hy",
-      "ty-23lv-007"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -6331,9 +6331,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193854",
     "slug": "بك-صندوق-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-22crl-003-l",
-      "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايسر",
-      "daisen-hy"
+      "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايسر"
     ],
     "description_preview": ""
   },
@@ -6351,8 +6351,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193855",
     "slug": "بك-صندوق-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-22crl-003-r",
+      "daisen-hy",
       "بك صندوق كورلا كروس 20 - وارد صين مواصفات عالية ايمن"
     ],
     "description_preview": ""
@@ -6371,8 +6371,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193858",
     "slug": "دعامية-امامية-كامري-18--20-se-امريكي",
     "search_terms": [
-      "ty-18cmu-012",
       "daisen-hy",
+      "ty-18cmu-012",
       "دعامية امامية كامري 18 - 20 se امريكي "
     ],
     "description_preview": ""
@@ -6391,8 +6391,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193859",
     "slug": "دعامية-خلفية-كامري-18--امريكي-le",
     "search_terms": [
-      "ty-18cmu-015",
       "daisen-hy",
+      "ty-18cmu-015",
       "دعامية خلفية كامري 18 - امريكي le "
     ],
     "description_preview": ""
@@ -6411,9 +6411,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193892",
     "slug": "بروجكتر-بيكب-فيكو-12-13",
     "search_terms": [
-      "dlaa",
+      "بروجكتر بيكب فيكو 12-13 ",
       "ty517-p",
-      "بروجكتر بيكب فيكو 12-13 "
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -6431,9 +6431,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193895",
     "slug": "شباك-بيكب-فيكو-12--15-رصاصي-+-نيكل",
     "search_terms": [
+      "daisen-hy",
       "ty-11hlx-004g",
-      "شباك بيكب فيكو 12 - 15 رصاصي + نيكل ",
-      "daisen-hy"
+      "شباك بيكب فيكو 12 - 15 رصاصي + نيكل "
     ],
     "description_preview": ""
   },
@@ -6451,9 +6451,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193946",
     "slug": "بك-صندوق-كامري-امريكي-xle-ليد-21-ايسر",
     "search_terms": [
-      "daisen-hy",
       "ty-21cmu-006-l",
-      "بك صندوق كامري امريكي xle ليد 21- ايسر "
+      "بك صندوق كامري امريكي xle ليد 21- ايسر ",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -6471,8 +6471,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193947",
     "slug": "بك-صندوق-كامري-امريكي-xle-ليد-21-ايمن",
     "search_terms": [
-      "بك صندوق كامري امريكي xle ليد 21- ايمن",
       "ty-21cmu-006-r",
+      "بك صندوق كامري امريكي xle ليد 21- ايمن",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -6491,9 +6491,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193948",
     "slug": "بك-زاوية-كورلا-كروس-22--امريكي-le-ايسر",
     "search_terms": [
-      "ty-22crlu-005-l",
+      "بك زاوية كورلا كروس 22 - امريكي le ايسر",
       "daisen-hy",
-      "بك زاوية كورلا كروس 22 - امريكي le ايسر"
+      "ty-22crlu-005-l"
     ],
     "description_preview": ""
   },
@@ -6511,8 +6511,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193949",
     "slug": "بك-زاوية-كورلا-كروس-22--امريكي-le-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-22crlu-005-r",
+      "daisen-hy",
       "بك زاوية كورلا كروس 22 - امريكي le ايمن"
     ],
     "description_preview": ""
@@ -6531,9 +6531,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193959",
     "slug": "دعامية-خلفية-كامري-18--امريكي-se",
     "search_terms": [
+      "daisen-hy",
       "ty-18cmu-016",
-      "دعامية خلفية كامري 18 - امريكي se ",
-      "daisen-hy"
+      "دعامية خلفية كامري 18 - امريكي se "
     ],
     "description_preview": ""
   },
@@ -6551,10 +6551,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=193961",
     "slug": "15w40-ci4-زيت-كاز-ايسن-6-لتر-6ltx3",
     "search_terms": [
-      "lubricants - زيوت",
       "15w40 ci4 زيت كاز ايسن 6 لتر  6ltx3\t",
-      "ecsi1546p",
-      "aisin-lub"
+      "aisin-lub",
+      "lubricants - زيوت",
+      "ecsi1546p"
     ],
     "description_preview": ""
   },
@@ -6573,9 +6573,9 @@ window.search-index = [
     "slug": "5w30-sn-ty-زيت-ياباني-اسود-4ltx6",
     "search_terms": [
       "lubricants - زيوت",
-      "08880-83322",
       "5w30 sn ty زيت ياباني اسود 4ltx6",
-      "toyota"
+      "toyota",
+      "08880-83322"
     ],
     "description_preview": ""
   },
@@ -6594,8 +6594,8 @@ window.search-index = [
     "slug": "لايت-بيكب-فيكو-12--15-ايسر",
     "search_terms": [
       "ty-11hlx-001-l",
-      "لايت بيكب فيكو 12 - 15 ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت بيكب فيكو 12 - 15 ايسر"
     ],
     "description_preview": ""
   },
@@ -6613,9 +6613,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194025",
     "slug": "لايت-بيكب-فيكو-12--15-ايمن",
     "search_terms": [
-      "لايت بيكب فيكو 12 - 15 ايمن",
+      "daisen-hy",
       "ty-11hlx-001-r",
-      "daisen-hy"
+      "لايت بيكب فيكو 12 - 15 ايمن"
     ],
     "description_preview": ""
   },
@@ -6633,9 +6633,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194044",
     "slug": "دعامية-امامية-كامري-18--20-فتحة-كامرة-امريكي-xse",
     "search_terms": [
-      "دعامية امامية كامري 18 - 20  فتحة كامرة امريكي xse ",
       "ty-18cmu-014",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية امامية كامري 18 - 20  فتحة كامرة امريكي xse "
     ],
     "description_preview": ""
   },
@@ -6653,8 +6653,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194056",
     "slug": "عنبار-كلج-هايس-05-19-اعلى-كاز-بانزين",
     "search_terms": [
-      "عنبار كلج هايس 05-19 اعلى كاز بانزين ",
       "aisin",
+      "عنبار كلج هايس 05-19 اعلى كاز بانزين ",
       "cmt-142"
     ],
     "description_preview": ""
@@ -6674,8 +6674,8 @@ window.search-index = [
     "slug": "دعامية-خلفية-كورلا-كروس-22",
     "search_terms": [
       "ty-22crl-012",
-      "دعامية خلفية كورلا كروس 22 - ",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية خلفية كورلا كروس 22 - "
     ],
     "description_preview": ""
   },
@@ -6693,9 +6693,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194065",
     "slug": "بروجكتر-برادو-05--09",
     "search_terms": [
-      "dlaa",
       "بروجكتر برادو 05 - 09",
-      "ty040"
+      "ty040",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -6713,9 +6713,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194153",
     "slug": "بروجكتر-سيكويا-07--12",
     "search_terms": [
+      "بروجكتر سيكويا 07 - 12",
       "ty376",
-      "dlaa",
-      "بروجكتر سيكويا 07 - 12"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -6734,8 +6734,8 @@ window.search-index = [
     "slug": "عنبار-كلج-كوستر-كاز-بانزين-اسفل-31470-36291",
     "search_terms": [
       "crt-046",
-      "عنبار كلج كوستر كاز بانزين اسفل  -31470-36291",
-      "aisin"
+      "aisin",
+      "عنبار كلج كوستر كاز بانزين اسفل  -31470-36291"
     ],
     "description_preview": ""
   },
@@ -6753,9 +6753,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194155",
     "slug": "دعامية-امامية-كامري-18--20-le-امريكي",
     "search_terms": [
+      "daisen-hy",
       "ty-18cmu-011",
-      "دعامية امامية كامري 18 - 20 le امريكي",
-      "daisen-hy"
+      "دعامية امامية كامري 18 - 20 le امريكي"
     ],
     "description_preview": ""
   },
@@ -6774,8 +6774,8 @@ window.search-index = [
     "slug": "بروجكتر-سني-سنترا-04--08-داير-نيكل",
     "search_terms": [
       "ns700e",
-      "dlaa",
-      "بروجكتر سني سنترا 04 - 08 داير نيكل"
+      "بروجكتر سني سنترا 04 - 08 داير نيكل",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -6813,9 +6813,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194177",
     "slug": "بك-زاوية-لاند-16-21-ايسر",
     "search_terms": [
-      "daisen-hy",
       "بك زاوية لاند 16 -21 ايسر",
-      "ty-16lc-004-l 81561-60b70"
+      "ty-16lc-004-l 81561-60b70",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -6834,8 +6834,8 @@ window.search-index = [
     "slug": "نيكل-سيف-تريشة-باب-بدي-لاند-22--24",
     "search_terms": [
       "daisen",
-      "نيكل سيف تريشة باب بدي لاند 22 - 24 -",
-      "lc300-24 rr door chrome "
+      "lc300-24 rr door chrome ",
+      "نيكل سيف تريشة باب بدي لاند 22 - 24 -"
     ],
     "description_preview": ""
   },
@@ -6853,9 +6853,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194201",
     "slug": "بروجكتر-تاكوما-16",
     "search_terms": [
-      "dlaa",
       "بروجكتر تاكوما 16 -",
-      "ty831"
+      "ty831",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -6893,9 +6893,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194244",
     "slug": "دعامية-خلفية-هايلندر-21-le",
     "search_terms": [
-      "دعامية خلفية هايلندر 21  le",
+      "daisen-hy",
       "ty-21hld-006",
-      "daisen-hy"
+      "دعامية خلفية هايلندر 21  le"
     ],
     "description_preview": ""
   },
@@ -6913,9 +6913,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194246",
     "slug": "شباك-دعامية-امامية-كورلا-23--امريكي-le-كورلا-ليفان-صيني-23",
     "search_terms": [
-      "شباك دعامية امامية كورلا 23 - امريكي le كورلا ليفان صيني 23 - ",
+      "ty-23crlu-010 - 53102-02640",
       "daisen-hy",
-      "ty-23crlu-010 - 53102-02640"
+      "شباك دعامية امامية كورلا 23 - امريكي le كورلا ليفان صيني 23 - "
     ],
     "description_preview": ""
   },
@@ -6933,9 +6933,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194247",
     "slug": "دعامية-امامية-رف-فور-19--رئيسية",
     "search_terms": [
+      "دعامية امامية رف فور 19 - رئيسية ",
       "ty-20rav4-007",
-      "daisen-hy",
-      "دعامية امامية رف فور 19 - رئيسية "
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -6954,8 +6954,8 @@ window.search-index = [
     "slug": "دعامية-خلفية-رف-فور-19--وارد-صيني-فرقة-سكن-دعامية",
     "search_terms": [
       "daisen-hy",
-      "دعامية خلفية رف فور 19 - وارد صيني فرقة سكن دعامية ",
-      "ty-20rav4-009"
+      "ty-20rav4-009",
+      "دعامية خلفية رف فور 19 - وارد صيني فرقة سكن دعامية "
     ],
     "description_preview": ""
   },
@@ -6974,8 +6974,8 @@ window.search-index = [
     "slug": "عنبار-كلج-برادو-05--17-اسفل-2tr",
     "search_terms": [
       "aisin",
-      "عنبار كلج برادو 05 - 17 اسفل 2tr",
-      "crt-111"
+      "crt-111",
+      "عنبار كلج برادو 05 - 17 اسفل 2tr"
     ],
     "description_preview": ""
   },
@@ -6993,9 +6993,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194373",
     "slug": "بك-صندوق-كامري-22--خليجي-ليد-ايسر",
     "search_terms": [
-      "ty-22cmm-004-lh",
+      "daisen-hy",
       " بك صندوق كامري 22 - خليجي ليد ايسر",
-      "daisen-hy"
+      "ty-22cmm-004-lh"
     ],
     "description_preview": ""
   },
@@ -7013,9 +7013,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194374",
     "slug": "بك-صندوق-كامري-22--خليجي-ليد-ايمن",
     "search_terms": [
-      " بك صندوق كامري 22 - خليجي ليد ايمن ",
+      "daisen-hy",
       "ty-22cmm-004-rh",
-      "daisen-hy"
+      " بك صندوق كامري 22 - خليجي ليد ايمن "
     ],
     "description_preview": ""
   },
@@ -7053,9 +7053,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194387",
     "slug": "هايدروليك-كير-ايسن-دكسرون-6--atf-dexron-vi-aisin--4l-x-4",
     "search_terms": [
-      "atfdvi4s",
-      "هايدروليك كير ايسن دكسرون 6 - atf dexron vi aisin - 4l x 4",
       "aisin-lub",
+      "هايدروليك كير ايسن دكسرون 6 - atf dexron vi aisin - 4l x 4",
+      "atfdvi4s",
       "ناقل الحركة"
     ],
     "description_preview": ""
@@ -7074,9 +7074,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194399",
     "slug": "فلنجة-دسك-امامية-بيكب-فيكو-09--15-2w-43512-0k120",
     "search_terms": [
-      "a6f261",
+      "فلنجة دسك امامية بيكب فيكو 09 - 15 2w 43512-0k120",
       "advics",
-      "فلنجة دسك امامية بيكب فيكو 09 - 15 2w 43512-0k120"
+      "a6f261"
     ],
     "description_preview": ""
   },
@@ -7094,9 +7094,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194611",
     "slug": "واقية-طين-خلفية-هايلندر-22--ايسر",
     "search_terms": [
-      "daisen-hy",
       "واقية طين خلفية هايلندر 22 - ايسر",
-      "ty-22lf-012-l"
+      "ty-22lf-012-l",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -7114,9 +7114,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194623",
     "slug": "شباك-بيكب-ريفو-16-21",
     "search_terms": [
-      "ty-16hlx-004",
       "daisen-hy",
-      "شباك بيكب ريفو 16- 21 "
+      "شباك بيكب ريفو 16- 21 ",
+      "ty-16hlx-004"
     ],
     "description_preview": ""
   },
@@ -7154,9 +7154,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194645",
     "slug": "لايت-كورلا-11-13-خليجي-ايمن",
     "search_terms": [
+      "daisen-hy",
       "لايت كورلا 11- 13 خليجي ايمن",
-      "ty-11crl-003-r",
-      "daisen-hy"
+      "ty-11crl-003-r"
     ],
     "description_preview": ""
   },
@@ -7174,8 +7174,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194827",
     "slug": "فيت-بم-لبة-طويلة-لاند-08--15-1gr-فيشة-خشنة",
     "search_terms": [
-      "فيت بم لبة طويلة لاند 08 - 15 1gr فيشة خشنة",
       "195131-9510",
+      "فيت بم لبة طويلة لاند 08 - 15 1gr فيشة خشنة",
       "denso"
     ],
     "description_preview": ""
@@ -7195,8 +7195,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-22--خليجي-عادي-دخاني-ايمن",
     "search_terms": [
       "daisen-hy",
-      " بك زاوية كامري 22 - خليجي عادي دخاني  ايمن ",
-      "ty-22cmm-005-rh"
+      "ty-22cmm-005-rh",
+      " بك زاوية كامري 22 - خليجي عادي دخاني  ايمن "
     ],
     "description_preview": ""
   },
@@ -7214,9 +7214,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194832",
     "slug": "بك-زاوية-كامري-22--خليجي-عادي-دخاني-ايسر",
     "search_terms": [
+      "ty-22cmm-005-lh",
       "daisen-hy",
-      "بك زاوية كامري 22 - خليجي عادي دخاني ايسر",
-      "ty-22cmm-005-lh"
+      "بك زاوية كامري 22 - خليجي عادي دخاني ايسر"
     ],
     "description_preview": ""
   },
@@ -7234,9 +7234,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194856",
     "slug": "قاعدة-رقم-خلفي-لاند-لمتيد-22-لولوي-مع-نيكلة-باب-بدي",
     "search_terms": [
+      "قاعدة رقم خلفي لاند لمتيد 22- لولوي مع نيكلة باب بدي ",
       "rr lisence film pw lc300",
-      "daisen",
-      "قاعدة رقم خلفي لاند لمتيد 22- لولوي مع نيكلة باب بدي "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -7274,8 +7274,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194887",
     "slug": "200609-201206-عنبار-كلج-اعلى-رئيسي-كوستر-2tr-1hz-عام-93--17",
     "search_terms": [
-      "200609-201206 عنبار كلج اعلى رئيسي كوستر 2tr-1hz عام 93 - 17",
       "aisin",
+      "200609-201206 عنبار كلج اعلى رئيسي كوستر 2tr-1hz عام 93 - 17",
       "cmt-078"
     ],
     "description_preview": ""
@@ -7294,9 +7294,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=194895",
     "slug": "بك-زاوية-لاند-08--11-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-07lc-003-r 81551-60280",
-      "بك زاوية لاند 08 - 11 ايمن ",
-      "daisen-hy"
+      "بك زاوية لاند 08 - 11 ايمن "
     ],
     "description_preview": ""
   },
@@ -7315,8 +7315,8 @@ window.search-index = [
     "slug": "بك-زاوية-لاند-08-11-ايسر",
     "search_terms": [
       "بك زاوية لاند 08 -11 ايسر",
-      "ty-07lc-003-l 81561-60750",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-07lc-003-l 81561-60750"
     ],
     "description_preview": ""
   },
@@ -7335,8 +7335,8 @@ window.search-index = [
     "slug": "هايدروليك-كير-cvt-ايسن-atf-cvt-aisin-4ltx4",
     "search_terms": [
       "aisin-lub",
-      "cvtf004s",
       "هايدروليك كير cvt ايسن atf cvt aisin 4ltx4",
+      "cvtf004s",
       "ناقل الحركة"
     ],
     "description_preview": ""
@@ -7355,9 +7355,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195060",
     "slug": "بروجكتر-كورلا-كروس-خليجي-وصيني20--led",
     "search_terms": [
+      "بروجكتر كورلا كروس خليجي وصيني20 - led",
       "ty9477-led",
-      "dlaa",
-      "بروجكتر كورلا كروس خليجي وصيني20 - led"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -7375,9 +7375,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195062",
     "slug": "بروجكتر-باترول-14-16",
     "search_terms": [
-      "dlaa",
+      "ns698",
       "بروجكتر باترول 14-16",
-      "ns698"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -7396,8 +7396,8 @@ window.search-index = [
     "slug": "فيت-بم-لبة-لاند-لكزس-08--21-8-سلندر-1ur-3ur",
     "search_terms": [
       "denso",
-      "فيت بم لبة لاند لكزس 08 - 21 8 سلندر  1ur 3ur ",
-      "195131-9520"
+      "195131-9520",
+      "فيت بم لبة لاند لكزس 08 - 21 8 سلندر  1ur 3ur "
     ],
     "description_preview": ""
   },
@@ -7415,9 +7415,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195072",
     "slug": "دعامية-امامية-افلون-19",
     "search_terms": [
+      "دعامية امامية افلون 19 - ",
       "ty-19azl-006",
-      "daisen-hy",
-      "دعامية امامية افلون 19 - "
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -7436,8 +7436,8 @@ window.search-index = [
     "slug": "دعامية-خلفية-افلون-19",
     "search_terms": [
       "ty-19azl-007",
-      "دعامية خلفية افلون 19 - ",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية خلفية افلون 19 - "
     ],
     "description_preview": ""
   },
@@ -7455,9 +7455,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195132",
     "slug": "فلنجة-دسك-امامية-كامري-18--رف-فور-19--امريكي-خليجي--43512-33150",
     "search_terms": [
-      "advics",
+      "a6f828",
       "فلنجة دسك امامية كامري 18 - رف فور 19 - امريكي خليجي - 43512-33150 ",
-      "a6f828"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -7475,9 +7475,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195171",
     "slug": "لايت-بيكب-ريفو-16-20-نيكل-ايمن",
     "search_terms": [
-      "لايت بيكب ريفو 16 -20 نيكل ايمن",
       "ty-16hlx-002-r",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت بيكب ريفو 16 -20 نيكل ايمن"
     ],
     "description_preview": ""
   },
@@ -7495,9 +7495,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195198",
     "slug": "تريشة-باب-جانبية-برادو-24--اسود-اساس-ايمن",
     "search_terms": [
-      "ty-24prd-012-r 75601-0g010",
+      "daisen-hy",
       "تريشة باب جانبية برادو 24 - اسود اساس ايمن  ",
-      "daisen-hy"
+      "ty-24prd-012-r 75601-0g010"
     ],
     "description_preview": ""
   },
@@ -7557,8 +7557,8 @@ window.search-index = [
     "slug": "ليد-لحية-امامية-لكزس-10--11-لولوي",
     "search_terms": [
       "ty669-led-pw",
-      "dlaa",
-      "ليد لحية امامية لكزس 10 - 11 لولوي"
+      "ليد لحية امامية لكزس 10 - 11 لولوي",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -7578,8 +7578,8 @@ window.search-index = [
     "search_terms": [
       "lubricants - زيوت",
       "toyota",
-      "08880-10705",
-      "5w30 sn gf5 ty زيت محرك تويوتا ياباني 4ltx6"
+      "5w30 sn gf5 ty زيت محرك تويوتا ياباني 4ltx6",
+      "08880-10705"
     ],
     "description_preview": ""
   },
@@ -7597,9 +7597,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195386",
     "slug": "نيكل-لحية-خلفية-لاند-16",
     "search_terms": [
+      "703am-fj200-17",
       "uncle",
-      "نيكل لحية خلفية لاند 16",
-      "703am-fj200-17"
+      "نيكل لحية خلفية لاند 16"
     ],
     "description_preview": ""
   },
@@ -7618,8 +7618,8 @@ window.search-index = [
     "slug": "فيت-بم-بيكب-ريفو-كورلا-15--كامري-16",
     "search_terms": [
       "denso",
-      "291100-9050",
-      "فيت بم بيكب ريفو كورلا 15 - كامري 16 -"
+      "فيت بم بيكب ريفو كورلا 15 - كامري 16 -",
+      "291100-9050"
     ],
     "description_preview": ""
   },
@@ -7637,9 +7637,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195402",
     "slug": "ليد-دعامية-امامية-لاند-12-لولوي-جهتين-عدل-زاوية",
     "search_terms": [
-      "dlaa",
+      "ty670-led-pw",
       "ليد دعامية امامية لاند 12 لولوي جهتين عدل زاوية",
-      "ty670-led-pw"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -7657,9 +7657,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195403",
     "slug": "واتر-بم-كورلا-1zz-خليجي-29415-16100",
     "search_terms": [
-      "wpt-106",
+      "aisin",
       "واتر بم كورلا 1zz خليجي -29415-16100",
-      "aisin"
+      "wpt-106"
     ],
     "description_preview": ""
   },
@@ -7677,9 +7677,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195413",
     "slug": "ليد-دعامية-امامية-باترول-11-لولوي",
     "search_terms": [
+      "ns667-led-pw",
       "ليد دعامية امامية باترول 11 لولوي",
-      "dlaa",
-      "ns667-led-pw"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -7697,9 +7697,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195414",
     "slug": "ليد-لحية-امامية-لكزس-10--11-اسود",
     "search_terms": [
-      "dlaa",
+      "ty669-led-bk",
       "ليد لحية امامية لكزس 10 - 11 اسود",
-      "ty669-led-bk"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -7717,9 +7717,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195454",
     "slug": "لايت-كامري-07--09-خليجي-ايسر",
     "search_terms": [
-      "ty-07cm-001-l",
+      "daisen-hy",
       "لايت كامري 07 - 09 خليجي ايسر",
-      "daisen-hy"
+      "ty-07cm-001-l"
     ],
     "description_preview": ""
   },
@@ -7737,9 +7737,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195455",
     "slug": "لايت-كامري-07--09-خليجي-ايمن",
     "search_terms": [
-      "ty-07cm-001-r",
+      "daisen-hy",
       "لايت كامري 07 - 09 خليجي ايمن ",
-      "daisen-hy"
+      "ty-07cm-001-r"
     ],
     "description_preview": ""
   },
@@ -7758,8 +7758,8 @@ window.search-index = [
     "slug": "بك-صندوق-كورلا-20--هايبرد-led-خليجي-صين-ايمن",
     "search_terms": [
       "ty-19crl-004-r",
-      "daisen-hy",
-      "بك صندوق كورلا 20 - هايبرد led خليجي صين ايمن"
+      "بك صندوق كورلا 20 - هايبرد led خليجي صين ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -7777,9 +7777,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195537",
     "slug": "لايت-لاند-05-07-بدون-زنون--ايسر",
     "search_terms": [
-      "ty-05lc-001-l",
+      "daisen-hy",
       "لايت لاند 05 -07 بدون زنون - ايسر ",
-      "daisen-hy"
+      "ty-05lc-001-l"
     ],
     "description_preview": ""
   },
@@ -7797,9 +7797,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195538",
     "slug": "لايت-لاند-05-07-بدون-زنون--ايمن",
     "search_terms": [
-      "لايت لاند 05 -07 بدون زنون - ايمن",
       "ty-05lc-001-r",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت لاند 05 -07 بدون زنون - ايمن"
     ],
     "description_preview": ""
   },
@@ -7817,9 +7817,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195539",
     "slug": "فلنجة-دسك-امامية-بيكب-ريفو-16--4w-فورجنر",
     "search_terms": [
+      "فلنجة دسك امامية بيكب ريفو 16 - 4w فورجنر -",
       "a6f227b",
-      "advics",
-      "فلنجة دسك امامية بيكب ريفو 16 - 4w فورجنر -"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -7837,9 +7837,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195562",
     "slug": "0w20-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
     "search_terms": [
-      "klan0-00204",
-      "nissan ",
       "lubricants - زيوت",
+      "nissan ",
+      "klan0-00204",
       "0w20 sn ns زيت محرك نيسان ياباني 4ltx6"
     ],
     "description_preview": ""
@@ -7878,9 +7878,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195634",
     "slug": "لايت-لاند-05-07-زنون--ايسر",
     "search_terms": [
-      "ty-05lc-002-l",
       "لايت لاند 05 -07 زنون - ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-05lc-002-l"
     ],
     "description_preview": ""
   },
@@ -7898,9 +7898,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195635",
     "slug": "لايت-لاند-05-07-زنون--ايمن",
     "search_terms": [
-      "ty-05lc-002-r",
       "لايت لاند 05 -07 زنون - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-05lc-002-r"
     ],
     "description_preview": ""
   },
@@ -7918,9 +7918,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195644",
     "slug": "بروجكتر-بيكب-نافارا-16--18-داير-نيكل",
     "search_terms": [
-      "بروجكتر بيكب نافارا 16 - 18 داير نيكل",
+      "ns722",
       "dlaa",
-      "ns722"
+      "بروجكتر بيكب نافارا 16 - 18 داير نيكل"
     ],
     "description_preview": ""
   },
@@ -7938,9 +7938,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195654",
     "slug": "بك-صندوق-كورلا-20--هايبرد-led-خليجي-صيني-ايسر",
     "search_terms": [
-      "بك صندوق كورلا 20 - هايبرد led خليجي صيني ايسر",
+      "daisen-hy",
       "ty-19crl-004-l",
-      "daisen-hy"
+      "بك صندوق كورلا 20 - هايبرد led خليجي صيني ايسر"
     ],
     "description_preview": ""
   },
@@ -7958,8 +7958,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195671",
     "slug": "شباك-دعامية-كورلا-23--امريكي-se-xse-كورلا-ليفان-23--صيني-بدون-فتحة-هوك",
     "search_terms": [
-      "شباك دعامية كورلا 23 -  امريكي  se xse كورلا ليفان 23 - صيني بدون فتحة  هوك ",
       "daisen-hy",
+      "شباك دعامية كورلا 23 -  امريكي  se xse كورلا ليفان 23 - صيني بدون فتحة  هوك ",
       "ty-23crlu-004 - 53112-02e10"
     ],
     "description_preview": ""
@@ -7978,9 +7978,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195812",
     "slug": "شباك-برادو-05--09-نيكل",
     "search_terms": [
-      "ty-03prd-006",
       "شباك برادو 05 - 09 نيكل ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-03prd-006"
     ],
     "description_preview": ""
   },
@@ -7998,9 +7998,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195828",
     "slug": "واتر-بم-كامري-رفور-12-17-18--2ar",
     "search_terms": [
-      "wpt-194",
       "aisin",
-      "واتر بم كامري رفور 12- 17  18 - 2ar "
+      "واتر بم كامري رفور 12- 17  18 - 2ar ",
+      "wpt-194"
     ],
     "description_preview": ""
   },
@@ -8018,9 +8018,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195845",
     "slug": "بك-زاوية-كورلا-20--هايبرد-led-خليجي-صيني-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-19crl-003-l",
-      "بك زاوية كورلا 20 -  هايبرد led خليجي صيني ايسر",
-      "daisen-hy"
+      "بك زاوية كورلا 20 -  هايبرد led خليجي صيني ايسر"
     ],
     "description_preview": ""
   },
@@ -8058,9 +8058,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195892",
     "slug": "لايت-كامري-10--11-خليجي-ايسر",
     "search_terms": [
-      "لايت كامري 10 - 11 خليجي ايسر",
       "ty-10cm-001-l",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كامري 10 - 11 خليجي ايسر"
     ],
     "description_preview": ""
   },
@@ -8079,8 +8079,8 @@ window.search-index = [
     "slug": "لايت-كامري-10--11-خليجي-ايمن",
     "search_terms": [
       "ty-10cm-001-r",
-      "لايت كامري 10 - 11 خليجي ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كامري 10 - 11 خليجي ايمن"
     ],
     "description_preview": ""
   },
@@ -8098,9 +8098,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195901",
     "slug": "بروجكتر-لاند-22--gx-gr",
     "search_terms": [
-      "dlaa",
       "بروجكتر لاند 22 - gx- gr",
-      "ty2198-led"
+      "ty2198-led",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -8118,8 +8118,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195924",
     "slug": "بك-زاوية-كورلا-كروس-20--وارد-صين-مواصفات-عالية-ايسر",
     "search_terms": [
-      "ty-22crl-002-l",
       "daisen-hy",
+      "ty-22crl-002-l",
       "بك زاوية كورلا كروس 20 - وارد صين مواصفات عالية ايسر"
     ],
     "description_preview": ""
@@ -8138,9 +8138,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195969",
     "slug": "دسك-امامي-افلون-كامري-18--20-رف-فور-19--سي-اج-ار-16",
     "search_terms": [
+      "a1n286",
       "دسك امامي افلون كامري 18 - 20 رف فور 19 - سي اج ار 16 - ",
-      "advics",
-      "a1n286"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -8158,9 +8158,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195987",
     "slug": "بك-زاوية-كورلا-20--هايبرد-led-خليجي-صيني-ايمن",
     "search_terms": [
-      "بك زاوية كورلا 20 - هايبرد led خليجي صيني ايمن",
+      "daisen-hy",
       "ty-19crl-003-r",
-      "daisen-hy"
+      "بك زاوية كورلا 20 - هايبرد led خليجي صيني ايمن"
     ],
     "description_preview": ""
   },
@@ -8198,9 +8198,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196110",
     "slug": "شباك-رئيسي-هايلندر-22",
     "search_terms": [
+      "daisen-hy",
       "شباك رئيسي هايلندر 22 - ",
-      "ty-22lf-028",
-      "daisen-hy"
+      "ty-22lf-028"
     ],
     "description_preview": ""
   },
@@ -8219,8 +8219,8 @@ window.search-index = [
     "slug": "بك-زاوية-كورلا-20--خليجي-ايسر",
     "search_terms": [
       "daisen-hy",
-      "بك زاوية كورلا 20 - خليجي  ايسر",
-      "ty-20crlm-002-lh "
+      "ty-20crlm-002-lh ",
+      "بك زاوية كورلا 20 - خليجي  ايسر"
     ],
     "description_preview": ""
   },
@@ -8238,8 +8238,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196112",
     "slug": "بك-زاوية-كورلا-20--خليجي-ايمن",
     "search_terms": [
-      "ty-20crlm-002-rh",
       "بك زاوية كورلا 20 - خليجي ايمن",
+      "ty-20crlm-002-rh",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -8279,8 +8279,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-امريكي-xle-ليد-21-ايسر",
     "search_terms": [
       "بك زاوية كامري امريكي xle ليد 21- ايسر ",
-      "ty-21cmu-005-l",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21cmu-005-l"
     ],
     "description_preview": ""
   },
@@ -8298,8 +8298,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196162",
     "slug": "بك-زاوية-كامري-امريكي-xle-ليد-21-ايمن",
     "search_terms": [
-      "daisen-hy",
       "بك زاوية كامري امريكي xle ليد 21- ايمن",
+      "daisen-hy",
       "ty-21cmu-005-r"
     ],
     "description_preview": ""
@@ -8318,9 +8318,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196171",
     "slug": "بروجكتر-بيكب-نافارا-16",
     "search_terms": [
-      "dlaa",
       "بروجكتر بيكب نافارا 16",
-      "ns722"
+      "ns722",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -8339,8 +8339,8 @@ window.search-index = [
     "slug": "بروجكتر-رف-فور-22",
     "search_terms": [
       "بروجكتر رف فور 22- ",
-      "dlaa",
-      "'ty9407-led"
+      "'ty9407-led",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -8358,9 +8358,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196283",
     "slug": "دسك-امامي-كورلا-08--15-امريكي-خليجي-رف-فور-08--12-jp-04465-12630",
     "search_terms": [
+      "advics",
       "دسك امامي كورلا 08 - 15 امريكي خليجي  رف فور 08 - 12 jp -04465-12630",
-      "a1n128",
-      "advics"
+      "a1n128"
     ],
     "description_preview": ""
   },
@@ -8378,10 +8378,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196338",
     "slug": "هايدروليك-كير-تويوتا-cvt-tc",
     "search_terms": [
-      "08886-02105",
       "هايدروليك كير تويوتا  cvt-tc ",
-      "ناقل الحركة",
-      "toyota"
+      "toyota",
+      "08886-02105",
+      "ناقل الحركة"
     ],
     "description_preview": ""
   },
@@ -8419,9 +8419,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196352",
     "slug": "ماطور-فان-تبريد-كوستر-93--14b-24v",
     "search_terms": [
-      "ماطور فان تبريد كوستر 93 - 14b 24v",
+      "282500-0110",
       "denso",
-      "282500-0110"
+      "ماطور فان تبريد كوستر 93 - 14b 24v"
     ],
     "description_preview": ""
   },
@@ -8439,8 +8439,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196378",
     "slug": "شباك-رف-فور-23--ادفنجر-مع-فتحة-كامرة-و-حساس",
     "search_terms": [
-      "شباك رف فور 23 -  ادفنجر مع فتحة كامرة و حساس ",
       "ty-19rv4tu-015 - 53111-0r140",
+      "شباك رف فور 23 -  ادفنجر مع فتحة كامرة و حساس ",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -8459,9 +8459,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196407",
     "slug": "بك-زاوية-كورلا-كروس-22--امريكي-le-ايسر",
     "search_terms": [
-      "ty-22crlu-004-l",
       "daisen-hy",
-      "بك زاوية كورلا كروس 22 - امريكي le ايسر"
+      "بك زاوية كورلا كروس 22 - امريكي le ايسر",
+      "ty-22crlu-004-l"
     ],
     "description_preview": ""
   },
@@ -8479,9 +8479,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196413",
     "slug": "عنبار-كلج-كوستر-عام-pso",
     "search_terms": [
-      "aisin",
+      "cmt-064",
       "عنبار كلج كوستر عام pso",
-      "cmt-064"
+      "aisin"
     ],
     "description_preview": ""
   },
@@ -8499,9 +8499,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196424",
     "slug": "بك-لايت-بيكب-ريفو-22--ايمن",
     "search_terms": [
-      "ty-22hlx-002-r",
       "بك لايت بيكب ريفو 22 - ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22hlx-002-r"
     ],
     "description_preview": ""
   },
@@ -8519,9 +8519,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196432",
     "slug": "بك-لايت-بيكب-ريفو-22--ايسر",
     "search_terms": [
-      "ty-22hlx-002-l",
+      "daisen-hy",
       "بك لايت بيكب ريفو 22 - ايسر",
-      "daisen-hy"
+      "ty-22hlx-002-l"
     ],
     "description_preview": ""
   },
@@ -8539,9 +8539,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196445",
     "slug": "شباك-برادو-14--17-نيكل-واسود",
     "search_terms": [
-      "daisen",
+      "dsn-1735-058",
       "شباك برادو 14 - 17 نيكل واسود",
-      "dsn-1735-058"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -8579,9 +8579,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196583",
     "slug": "عنبار-كلج-اعلى-بيكب-تويوتا-جمرة-3rz",
     "search_terms": [
+      "cmt-073",
       "عنبار كلج اعلى بيكب تويوتا جمرة 3rz",
-      "advics",
-      "cmt-073"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -8599,9 +8599,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196600",
     "slug": "بك-لايت-برادو-14--17-ايسر",
     "search_terms": [
-      "بك لايت برادو 14 - 17 ايسر",
+      "ty-14prd-002-l 81561-60b30",
       "daisen-hy",
-      "ty-14prd-002-l 81561-60b30"
+      "بك لايت برادو 14 - 17 ايسر"
     ],
     "description_preview": ""
   },
@@ -8640,9 +8640,9 @@ window.search-index = [
     "slug": "0w16-sn-ns-زيت-محرك-نيسان-ياباني-4ltx6",
     "search_terms": [
       "lubricants - زيوت",
+      "nissan ",
       "0w16 sn ns زيت محرك نيسان ياباني 4ltx6",
-      "klan0-01604",
-      "nissan "
+      "klan0-01604"
     ],
     "description_preview": ""
   },
@@ -8661,8 +8661,8 @@ window.search-index = [
     "slug": "عنبار-كلج-بيكب-فيكو-2kd-رئيسي-كاز-31420-0k030",
     "search_terms": [
       "aisin",
-      "عنبار كلج بيكب فيكو 2kd رئيسي كاز 31420-0k030",
-      "cmts-009"
+      "cmts-009",
+      "عنبار كلج بيكب فيكو 2kd رئيسي كاز 31420-0k030"
     ],
     "description_preview": ""
   },
@@ -8680,9 +8680,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196688",
     "slug": "واتر-بم-1zr-2zr-كورلا-رف-فور-عام-16100-39465",
     "search_terms": [
-      "واتر بم 1zr 2zr كورلا رف فور  عام -16100-39465",
       "aisin",
-      "wpt-140"
+      "wpt-140",
+      "واتر بم 1zr 2zr كورلا رف فور  عام -16100-39465"
     ],
     "description_preview": ""
   },
@@ -8700,9 +8700,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196697",
     "slug": "عدسة-بروجكتر-ليد-لاند-12--15",
     "search_terms": [
-      "dlaa",
+      "ty568-led",
       "عدسة بروجكتر ليد لاند 12 - 15",
-      "ty568-led"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -8720,8 +8720,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196705",
     "slug": "عنبار-كلج-عكرب-عام-رئيسي",
     "search_terms": [
-      "عنبار كلج عكرب عام رئيسي",
       "aisin",
+      "عنبار كلج عكرب عام رئيسي",
       "cmt-202"
     ],
     "description_preview": ""
@@ -8740,9 +8740,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196725",
     "slug": "دعامية-امامية-لاند-16--21-اساس",
     "search_terms": [
-      "دعامية امامية لاند 16 - 21 اساس",
+      "daisen-hy",
       "ty-16lc-011",
-      "daisen-hy"
+      "دعامية امامية لاند 16 - 21 اساس"
     ],
     "description_preview": ""
   },
@@ -8760,9 +8760,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196732",
     "slug": "ماطور-بوابة-تبريد-فان-كامري-رف-فور-18--افلون-18--هايلندر-20--سينا-20--كورلا-20",
     "search_terms": [
+      "denso",
       "063800-9000",
-      "ماطور بوابة تبريد فان كامري رف فور 18 - افلون 18 - هايلندر 20 - سينا 20 - كورلا 20-",
-      "denso"
+      "ماطور بوابة تبريد فان كامري رف فور 18 - افلون 18 - هايلندر 20 - سينا 20 - كورلا 20-"
     ],
     "description_preview": ""
   },
@@ -8780,9 +8780,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196751",
     "slug": "شباك-برادو-14--17-رصاصي-وكروم",
     "search_terms": [
-      "شباك برادو 14 - 17 رصاصي وكروم",
       "daisen-hy",
-      "ty-14prd-005"
+      "ty-14prd-005",
+      "شباك برادو 14 - 17 رصاصي وكروم"
     ],
     "description_preview": ""
   },
@@ -8800,9 +8800,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196755",
     "slug": "دعامية-خلفية-برادو-24--اسود-اساس",
     "search_terms": [
-      "دعامية خلفية برادو 24 - اسود اساس ",
       "ty-24prd-014-52159-0g080",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية خلفية برادو 24 - اسود اساس "
     ],
     "description_preview": ""
   },
@@ -8841,8 +8841,8 @@ window.search-index = [
     "slug": "فلنجة-امامية-باترول-سفاري-17",
     "search_terms": [
       "advics",
-      "فلنجة امامية باترول سفاري 17 -",
-      "b6f150b"
+      "b6f150b",
+      "فلنجة امامية باترول سفاري 17 -"
     ],
     "description_preview": ""
   },
@@ -8880,8 +8880,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196819",
     "slug": "نيكل-قاعدة-رقم-لاند-23--لولوي",
     "search_terms": [
-      "نيكل قاعدة رقم لاند 23 - لولوي ",
       "lc300-23 rr liecense film pw ",
+      "نيكل قاعدة رقم لاند 23 - لولوي ",
       "daisen"
     ],
     "description_preview": ""
@@ -8900,9 +8900,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196838",
     "slug": "تريشة-باب-جانبية-برادو-18--اسود-بلاك-اديشن",
     "search_terms": [
-      "prado 20-side moulding black edition",
       "daisen",
-      "تريشة باب جانبية برادو 18 - اسود بلاك اديشن"
+      "تريشة باب جانبية برادو 18 - اسود بلاك اديشن",
+      "prado 20-side moulding black edition"
     ],
     "description_preview": ""
   },
@@ -8920,9 +8920,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196911",
     "slug": "واتر-بم-بيكب-فيكو-2tr-م-16100-79445",
     "search_terms": [
-      "واتر بم بيكب فيكو 2tr م 16100-79445",
       "aisin",
-      "wpt-044"
+      "wpt-044",
+      "واتر بم بيكب فيكو 2tr م 16100-79445"
     ],
     "description_preview": ""
   },
@@ -8940,9 +8940,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196918",
     "slug": "حافظة-متعلقات-لاند-22--بجانب-مقعد-السائق-بيجي-set",
     "search_terms": [
-      "daisen",
+      "حافظة متعلقات لاند 22 - بجانب مقعد السائق بيجي set",
       "lc300-cup hold",
-      "حافظة متعلقات لاند 22 - بجانب مقعد السائق بيجي set"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -8960,9 +8960,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196924",
     "slug": "شباك-رئيسي-كورلا-كروس-22--امريكي-صيني-اسود",
     "search_terms": [
+      "ty-22crl-008-b",
       "شباك رئيسي كورلا كروس 22 -  امريكي صيني اسود ",
-      "daisen-hy",
-      "ty-22crl-008-b"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -8981,8 +8981,8 @@ window.search-index = [
     "slug": "باب-تجوة-كجمجة-وسطية-لاند-08--15-بيجي",
     "search_terms": [
       "باب تجوة كجمجة وسطية لاند 08 - 15 بيجي ",
-      "daisen",
-      "lc200 consule box beige"
+      "lc200 consule box beige",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -9000,9 +9000,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=196991",
     "slug": "بروجكتر-بافندر-23--مع-واير-+-كفر",
     "search_terms": [
-      "dlaa",
+      "بروجكتر بافندر 23 - مع واير + كفر ",
       "ns1875-led",
-      "بروجكتر بافندر 23 - مع واير + كفر "
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -9041,8 +9041,8 @@ window.search-index = [
     "slug": "شباك-لاند-12--15-نيكل-ورصاصي-vx",
     "search_terms": [
       "daisen",
-      "fj200-12 grille gray + chrome ",
-      "شباك لاند 12 - 15 نيكل ورصاصي vx"
+      "شباك لاند 12 - 15 نيكل ورصاصي vx",
+      "fj200-12 grille gray + chrome "
     ],
     "description_preview": ""
   },
@@ -9080,9 +9080,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197285",
     "slug": "بك-زاوية-كامري-22--خليجي-ليد-ايمن",
     "search_terms": [
-      " بك زاوية كامري 22 - خليجي ليد ايمن ",
       "ty-22cmm-003-rh",
-      "daisen-hy"
+      "daisen-hy",
+      " بك زاوية كامري 22 - خليجي ليد ايمن "
     ],
     "description_preview": ""
   },
@@ -9100,9 +9100,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197286",
     "slug": "بك-زاوية-كامري-22--خليجي-ليد-ايسر",
     "search_terms": [
-      "ty-22cmm-003-lh",
+      "بك زاوية كامري 22 - خليجي ليد ايسر",
       "daisen-hy",
-      "بك زاوية كامري 22 - خليجي ليد ايسر"
+      "ty-22cmm-003-lh"
     ],
     "description_preview": ""
   },
@@ -9120,9 +9120,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197327",
     "slug": "فلنجة-دسك-امامية-برادو-10--18-43512-60191",
     "search_terms": [
-      "a6f159",
       "فلنجة دسك امامية برادو 10 - 18 43512-60191",
-      "advics"
+      "advics",
+      "a6f159"
     ],
     "description_preview": ""
   },
@@ -9140,9 +9140,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197405",
     "slug": "بروجكتر-باترول-20--le--se--xe",
     "search_terms": [
+      "بروجكتر باترول 20 - le - se - xe",
       "ns1891-led",
-      "dlaa",
-      "بروجكتر باترول 20 - le - se - xe"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -9181,9 +9181,9 @@ window.search-index = [
     "slug": "5w40-sn-ty-زيت-محرك-تويوتا-ياباني-4ltx6",
     "search_terms": [
       "5w40 sn ty زيت محرك تويوتا ياباني 4ltx6",
+      "toyota",
       "08880-83324",
-      "lubricants - زيوت",
-      "toyota"
+      "lubricants - زيوت"
     ],
     "description_preview": ""
   },
@@ -9201,9 +9201,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197476",
     "slug": "بخاخ-تبريد-بالفريز-كوستر-عام",
     "search_terms": [
-      "441510-1080",
+      "بخاخ تبريد بالفريز كوستر عام",
       "denso",
-      "بخاخ تبريد بالفريز كوستر عام"
+      "441510-1080"
     ],
     "description_preview": ""
   },
@@ -9222,9 +9222,9 @@ window.search-index = [
     "slug": "حساس-دبل-موازنة-امامي-لكزس-12-ايمن",
     "search_terms": [
       "حساس دبل موازنة امامي لكزس 12 ايمن",
-      "advics",
       "نظام التعليق",
-      "ast-030"
+      "ast-030",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -9242,10 +9242,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197510",
     "slug": "حساس-دبل-موازنة-امامي-لكزس-12-ايسر",
     "search_terms": [
+      "نظام التعليق",
       "ast-022",
       "حساس دبل موازنة امامي لكزس 12 ايسر",
-      "advics",
-      "نظام التعليق"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -9263,9 +9263,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197558",
     "slug": "شباك-برادو-18",
     "search_terms": [
+      "daisen-hy",
       "ty-18prd-003",
-      "شباك برادو 18- ",
-      "daisen-hy"
+      "شباك برادو 18- "
     ],
     "description_preview": ""
   },
@@ -9283,8 +9283,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197608",
     "slug": "فريز-تبريد-امامي-بيكب-ريفو-16--21",
     "search_terms": [
-      "tg447610-9510",
       "denso",
+      "tg447610-9510",
       "فريز تبريد امامي بيكب ريفو 16 - 21"
     ],
     "description_preview": ""
@@ -9303,9 +9303,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197642",
     "slug": "لايت-تاكوما-16--19-ايسر",
     "search_terms": [
-      "لايت تاكوما 16 - 19 ايسر",
+      "daisen-hy",
       "ty-tal-003-l - 81150-04270",
-      "daisen-hy"
+      "لايت تاكوما 16 - 19 ايسر"
     ],
     "description_preview": ""
   },
@@ -9364,8 +9364,8 @@ window.search-index = [
     "slug": "لايت-كورلا-14--16-امريكي-ايمن",
     "search_terms": [
       "daisen-hy",
-      "لايت كورلا 14 - 16 امريكي ايمن",
-      "ty-14crlu-001-r"
+      "ty-14crlu-001-r",
+      "لايت كورلا 14 - 16 امريكي ايمن"
     ],
     "description_preview": ""
   },
@@ -9383,9 +9383,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197670",
     "slug": "شباك-بيكب-ريفو-داخل-اسود-وعطر-نيكل-22",
     "search_terms": [
+      "ty-22hlx-003",
       "شباك بيكب ريفو  داخل اسود وعطر نيكل 22 - ",
-      "daisen-hy",
-      "ty-22hlx-003"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -9404,8 +9404,8 @@ window.search-index = [
     "slug": "عنبار-ويل-خلفي-اسفل-كوستر-03--17--ايسر-pso",
     "search_terms": [
       "wct-208",
-      "advics",
-      " عنبار ويل خلفي اسفل كوستر 03 - 17 - ايسر pso"
+      " عنبار ويل خلفي اسفل كوستر 03 - 17 - ايسر pso",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -9424,8 +9424,8 @@ window.search-index = [
     "slug": "عنبار-ويل-خلفي-اسفل-كوستر-03--17--ايمن-pso",
     "search_terms": [
       "wct-194",
-      "advics",
-      "عنبار ويل خلفي اسفل كوستر 03 - 17 - ايمن pso"
+      "عنبار ويل خلفي اسفل كوستر 03 - 17 - ايمن pso",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -9444,8 +9444,8 @@ window.search-index = [
     "slug": "درع-دعامية-امامية-برادو-05--09-لولوي",
     "search_terms": [
       "درع دعامية امامية برادو 05 - 09 لولوي ",
-      "ty-03prd-011-pw",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-03prd-011-pw"
     ],
     "description_preview": ""
   },
@@ -9484,8 +9484,8 @@ window.search-index = [
     "slug": "هايدروليك-كير-نيسان-ns2-cvt",
     "search_terms": [
       "nissan ",
-      "هايدروليك كير نيسان  ns2-cvt",
       "kle52-0004",
+      "هايدروليك كير نيسان  ns2-cvt",
       "ناقل الحركة"
     ],
     "description_preview": ""
@@ -9504,9 +9504,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197736",
     "slug": "عنبار-ويل-خلفي-اعلى-كوستر-03--17--ايسر-pso",
     "search_terms": [
-      "wct-201",
       "advics",
-      "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايسر pso"
+      "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايسر pso",
+      "wct-201"
     ],
     "description_preview": ""
   },
@@ -9524,8 +9524,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=197737",
     "slug": "عنبار-ويل-خلفي-اعلى-كوستر-03--17--ايمن-pso",
     "search_terms": [
-      "wct-180",
       "عنبار ويل خلفي اعلى كوستر 03 - 17 - ايمن pso",
+      "wct-180",
       "advics"
     ],
     "description_preview": ""
@@ -9545,8 +9545,8 @@ window.search-index = [
     "slug": "فريز-تبريد-كوول-كيير-فيكو-+-فورجنر-05--15-عام-كورلا-08--19-evaporator-hilux-vigo-furtuner-corolla-08-19-cg",
     "search_terms": [
       "فريز تبريد كوول كيير  فيكو + فورجنر 05 - 15 عام كورلا 08 - 19 evaporator hilux vigo furtuner corolla 08 -19 cg  ",
-      "denso",
-      "tg447610-0850"
+      "tg447610-0850",
+      "denso"
     ],
     "description_preview": ""
   },
@@ -9565,8 +9565,8 @@ window.search-index = [
     "slug": "تريشة-باب-جانبية-برادو-18-نيكل",
     "search_terms": [
       "daisen",
-      "تريشة باب جانبية برادو 18- نيكل",
-      "dsn-fj150-18-side moulding chr"
+      "dsn-fj150-18-side moulding chr",
+      "تريشة باب جانبية برادو 18- نيكل"
     ],
     "description_preview": ""
   },
@@ -9604,9 +9604,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198045",
     "slug": "شباك-رئيسي-كورلا-كروس-22--داير-نيكل",
     "search_terms": [
-      "ty-22crl-008 chrome",
       "شباك رئيسي كورلا كروس 22 - داير نيكل ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22crl-008 chrome"
     ],
     "description_preview": ""
   },
@@ -9624,10 +9624,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198163",
     "slug": "دبل-امامي-لاند-98--01",
     "search_terms": [
-      "دبل امامي لاند 98 - 01\t",
       "aisin",
+      "نظام التعليق",
       "sabt-0089",
-      "نظام التعليق"
+      "دبل امامي لاند 98 - 01\t"
     ],
     "description_preview": ""
   },
@@ -9645,9 +9645,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198171",
     "slug": "فريز-تبريد-امامي-برادو-03--09-1gr",
     "search_terms": [
-      "فريز تبريد امامي برادو 03 - 09 1gr",
       "denso",
-      "447610-3830"
+      "447610-3830",
+      "فريز تبريد امامي برادو 03 - 09 1gr"
     ],
     "description_preview": ""
   },
@@ -9665,8 +9665,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198201",
     "slug": "عينة-كلج-بيكب-فيكو-2tr-31210-35200",
     "search_terms": [
-      "عينة كلج بيكب فيكو 2tr 31210-35200 ",
       "aisin",
+      "عينة كلج بيكب فيكو 2tr 31210-35200 ",
       "ctx-106"
     ],
     "description_preview": ""
@@ -9686,9 +9686,9 @@ window.search-index = [
     "slug": "فريز-تبريد-خلفي-لاند-08--21-برادو-10--22-مع-بطل-زيت-تبريد",
     "search_terms": [
       "lubricants - زيوت",
-      "446600-6880",
+      "denso",
       "فريز تبريد خلفي لاند 08 - 21 برادو 10 - 22 مع بطل زيت تبريد ",
-      "denso"
+      "446600-6880"
     ],
     "description_preview": ""
   },
@@ -9706,9 +9706,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198278",
     "slug": "يدة-ابواب-جانبية-لاند-08--15-نيكل-شكل-لاند-16--set-بصمتين",
     "search_terms": [
-      "daisen",
       "fj200-door handl cover 2008  design 2016",
-      "يدة ابواب جانبية لاند 08 - 15 نيكل شكل لاند 16 - set بصمتين "
+      "يدة ابواب جانبية لاند 08 - 15 نيكل شكل لاند 16 - set بصمتين ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -9727,8 +9727,8 @@ window.search-index = [
     "slug": "بروجكتر-بيكب-ريفو-22--+-كفر-مع-ليد-اعلى-الكفر",
     "search_terms": [
       "daisen",
-      "revo22 - drl fog lamb",
-      "بروجكتر بيكب ريفو 22 - + كفر مع ليد اعلى الكفر "
+      "بروجكتر بيكب ريفو 22 - + كفر مع ليد اعلى الكفر ",
+      "revo22 - drl fog lamb"
     ],
     "description_preview": ""
   },
@@ -9746,8 +9746,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198289",
     "slug": "شباك-لكزس-es-اي-اس-18",
     "search_terms": [
-      "lx-18es-009 53101-33670",
       "شباك لكزس es اي اس 18 -",
+      "lx-18es-009 53101-33670",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -9766,8 +9766,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198296",
     "slug": "تريشة-باب-جانبية-لاند-22--بكتابة-تويوتا-عراق-اسود-twin-turbo",
     "search_terms": [
-      "تريشة باب جانبية لاند 22 - بكتابة تويوتا عراق اسود twin turbo",
       "lc300 toyota iraq side moulding bk ch",
+      "تريشة باب جانبية لاند 22 - بكتابة تويوتا عراق اسود twin turbo",
       "daisen"
     ],
     "description_preview": ""
@@ -9787,8 +9787,8 @@ window.search-index = [
     "slug": "درع-دعامية-امامية-لاند-13-لولوي",
     "search_terms": [
       "daisen",
-      "درع دعامية امامية لاند 13 لولوي",
-      "tdcy-lc200-001-pw"
+      "tdcy-lc200-001-pw",
+      "درع دعامية امامية لاند 13 لولوي"
     ],
     "description_preview": ""
   },
@@ -9806,9 +9806,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198446",
     "slug": "صينية-كلج-داينا-11b-14b",
     "search_terms": [
-      "صينية كلج داينا 11b 14b ",
       "dt-094l",
-      "aisin"
+      "aisin",
+      "صينية كلج داينا 11b 14b "
     ],
     "description_preview": ""
   },
@@ -9826,8 +9826,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198467",
     "slug": "عنبار-بريك-لاند-98--07-1fz-2uz-1hd-47201-60720",
     "search_terms": [
-      "bmt-238",
       "عنبار بريك لاند 98 - 07 1fz 2uz 1hd 47201-60720",
+      "bmt-238",
       "advics"
     ],
     "description_preview": ""
@@ -9846,9 +9846,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198501",
     "slug": "بك-صندوق-هايلندر-21--امريكي-ايسر",
     "search_terms": [
-      "ty-21hld-004b-l",
+      "بك صندوق هايلندر 21 - امريكي ايسر",
       "daisen-hy",
-      "بك صندوق هايلندر 21 - امريكي ايسر"
+      "ty-21hld-004b-l"
     ],
     "description_preview": ""
   },
@@ -9867,8 +9867,8 @@ window.search-index = [
     "slug": "بروجكتر-مورانو-19-f190n",
     "search_terms": [
       "ns4047-led",
-      "dlaa",
-      "بروجكتر مورانو 19 f190n"
+      "بروجكتر مورانو 19 f190n",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -9906,8 +9906,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198606",
     "slug": "لايت-لاند-08--11-زنون-ايسر",
     "search_terms": [
-      "ty-07lc-002-lh",
       "لايت لاند 08 - 11 زنون ايسر",
+      "ty-07lc-002-lh",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -9926,9 +9926,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198611",
     "slug": "كلج-مروحة-2tr-3rz-عام-بيكب-فيكو-ريفو-كوستر-16210-75100",
     "search_terms": [
-      "كلج مروحة 2tr 3rz عام بيكب فيكو ريفو كوستر -16210-75100",
       "aisin",
-      "fct-085"
+      "fct-085",
+      "كلج مروحة 2tr 3rz عام بيكب فيكو ريفو كوستر -16210-75100"
     ],
     "description_preview": ""
   },
@@ -9946,8 +9946,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198657",
     "slug": "دعامية-امامية-لكزس-es-اي-اس-18--خليجي",
     "search_terms": [
-      "دعامية امامية لكزس es اي اس 18 - خليجي",
       "daisen-hy",
+      "دعامية امامية لكزس es اي اس 18 - خليجي",
       "lx-18es-004 52119-3t943"
     ],
     "description_preview": ""
@@ -9986,9 +9986,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198745",
     "slug": "لحية-خلفية-لاند-12-اسود",
     "search_terms": [
-      "daisen",
       "لحية خلفية لاند 12 اسود",
-      "tdcmy-lc200-002r-bk"
+      "tdcmy-lc200-002r-bk",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -10006,9 +10006,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198782",
     "slug": "بك-لايت-برادو-18--اسود-ايسر",
     "search_terms": [
-      "ty-18prd-002-l",
       "بك لايت برادو 18 - اسود ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-18prd-002-l"
     ],
     "description_preview": ""
   },
@@ -10026,9 +10026,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198783",
     "slug": "بك-لايت-برادو-18--اسود-ايمن",
     "search_terms": [
+      "بك لايت برادو 18 - اسود ايمن",
       "daisen-hy",
-      "ty-18prd-002-r ",
-      "بك لايت برادو 18 - اسود ايمن"
+      "ty-18prd-002-r "
     ],
     "description_preview": ""
   },
@@ -10046,9 +10046,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198822",
     "slug": "بروجكتر-مع-كرن-اسود-بيكب-ريفو-22--ليد-وgr",
     "search_terms": [
-      "dlaa",
       "بروجكتر مع كرن اسود بيكب ريفو 22 - ليد وgr",
-      "'ty1117-led"
+      "'ty1117-led",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -10066,9 +10066,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198851",
     "slug": "لايت-كورلا-19-20-خليجي-3-عدسة-ايمن",
     "search_terms": [
-      "ty-20crlm-001a-r",
+      "daisen-hy",
       "لايت كورلا 19 20- خليجي 3 عدسة  ايمن",
-      "daisen-hy"
+      "ty-20crlm-001a-r"
     ],
     "description_preview": ""
   },
@@ -10086,9 +10086,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=198977",
     "slug": "لحية-امامية-لاند-12-اسود",
     "search_terms": [
-      "daisen",
       "لحية امامية لاند 12 اسود",
-      "tdcmy-lc200-002f-bk"
+      "tdcmy-lc200-002f-bk",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -10106,9 +10106,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199082",
     "slug": "47201-3d460-عنبار-بريك-بيكب-تويوتا-فيكو-3rz-عادي-اوتو",
     "search_terms": [
-      "bmt-293",
       "aisin",
-      "47201-3d460 عنبار بريك بيكب تويوتا فيكو 3rz عادي اوتو"
+      "47201-3d460 عنبار بريك بيكب تويوتا فيكو 3rz عادي اوتو",
+      "bmt-293"
     ],
     "description_preview": ""
   },
@@ -10126,8 +10126,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199091",
     "slug": "كفر-سبير-برادو-11--18--لولوي-بدون-كفر-قاعدة",
     "search_terms": [
-      "كفر سبير برادو 11 - 18 - لولوي بدون كفر قاعدة",
       "daisen-hy",
+      "كفر سبير برادو 11 - 18 - لولوي بدون كفر قاعدة",
       "ty-10prd-012"
     ],
     "description_preview": ""
@@ -10146,9 +10146,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199094",
     "slug": "واتر-بم-لاند-لكزس-3ur-16100-39496",
     "search_terms": [
+      "aisin",
       "wpt-196",
-      "واتر بم لاند لكزس 3ur 16100-39496",
-      "aisin"
+      "واتر بم لاند لكزس 3ur 16100-39496"
     ],
     "description_preview": ""
   },
@@ -10186,9 +10186,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199135",
     "slug": "دوسة-جانبية-لاند-08--15-لولوي-ايمن",
     "search_terms": [
-      "دوسة جانبية لاند 08 - 15 لولوي ايمن",
       "daisen",
-      "lc200-08-070-right side"
+      "lc200-08-070-right side",
+      "دوسة جانبية لاند 08 - 15 لولوي ايمن"
     ],
     "description_preview": ""
   },
@@ -10206,8 +10206,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199184",
     "slug": "واتر-بم-لاند-08--11-1gr-16100-39406",
     "search_terms": [
-      "aisin",
       "واتر بم لاند 08 - 11 1gr -16100-39406",
+      "aisin",
       "wpt-136"
     ],
     "description_preview": ""
@@ -10227,8 +10227,8 @@ window.search-index = [
     "slug": "تريشة-قمارة-لاند-16--21-مسح-نيكل",
     "search_terms": [
       "daisen",
-      "dsn-fj200-16 roof rack alam",
-      "تريشة قمارة لاند 16 - 21 مسح نيكل"
+      "تريشة قمارة لاند 16 - 21 مسح نيكل",
+      "dsn-fj200-16 roof rack alam"
     ],
     "description_preview": ""
   },
@@ -10266,8 +10266,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199300",
     "slug": "لحية-خلفية-لاند-12-لولوي-+-واقيات",
     "search_terms": [
-      "lc200 2012 rr down spoiler pw",
       "gbt",
+      "lc200 2012 rr down spoiler pw",
       "لحية خلفية لاند 12 لولوي + واقيات"
     ],
     "description_preview": ""
@@ -10307,8 +10307,8 @@ window.search-index = [
     "slug": "كلج-مروحة-لاند-98--07-1fz-16210-66040",
     "search_terms": [
       "aisin",
-      "كلج مروحة لاند 98 - 07 1fz -16210-66040",
-      "fct-004"
+      "fct-004",
+      "كلج مروحة لاند 98 - 07 1fz -16210-66040"
     ],
     "description_preview": ""
   },
@@ -10326,9 +10326,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199450",
     "slug": "لايت-كورلا-20--وارد-صين-هايبرد-شكل-الخليجي-تك-عدسة-كلوب-ايسر",
     "search_terms": [
-      "ty-19crl-002-l",
       "daisen-hy",
-      "لايت كورلا 20 - وارد صين هايبرد شكل الخليجي تك عدسة كلوب ايسر"
+      "لايت كورلا 20 - وارد صين هايبرد شكل الخليجي تك عدسة كلوب ايسر",
+      "ty-19crl-002-l"
     ],
     "description_preview": ""
   },
@@ -10346,8 +10346,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199451",
     "slug": "لايت-كورلا-20--وارد-صين-هايبرد-شكل-الخليجي-تك-عدسة-كلوب-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-19crl-002-r",
+      "daisen-hy",
       "لايت كورلا 20 - وارد صين هايبرد شكل الخليجي تك عدسة كلوب ايمن"
     ],
     "description_preview": ""
@@ -10386,9 +10386,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199533",
     "slug": "تريشة-قمارة-لاند-08--21-بدي-كروم-كفر-سلفر-set",
     "search_terms": [
-      "تريشة قمارة لاند 08 - 21 بدي كروم كفر سلفر set",
+      "dsn-rf racks lc200 slv cov-bdy chm",
       "daisen",
-      "dsn-rf racks lc200 slv cov-bdy chm"
+      "تريشة قمارة لاند 08 - 21 بدي كروم كفر سلفر set"
     ],
     "description_preview": ""
   },
@@ -10407,8 +10407,8 @@ window.search-index = [
     "slug": "لحية-امامية-برادو-18--لولوي-فيلي",
     "search_terms": [
       "لحية امامية برادو 18 - لولوي فيلي ",
-      "daisen",
-      "tdcmy-fj150-034-pw"
+      "tdcmy-fj150-034-pw",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -10426,9 +10426,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199549",
     "slug": "لايت-كورلا-19-20-خليجي-3-عدسة-ايسر",
     "search_terms": [
-      "لايت كورلا 19 20- خليجي 3 عدسة ايسر",
+      "daisen-hy",
       "ty-20crlm-001a-l",
-      "daisen-hy"
+      "لايت كورلا 19 20- خليجي 3 عدسة ايسر"
     ],
     "description_preview": ""
   },
@@ -10466,8 +10466,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199654",
     "slug": "كلج-مروحة-لاند-12--21-1gr-16210-31040-هايس-20-7grf",
     "search_terms": [
-      "كلج مروحة لاند 12 - 21 1gr -16210-31040 هايس 20- 7grf",
       "aisin",
+      "كلج مروحة لاند 12 - 21 1gr -16210-31040 هايس 20- 7grf",
       "fct-086"
     ],
     "description_preview": ""
@@ -10506,9 +10506,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199668",
     "slug": "لايت-لاند-12--15-زنون-polar-ايسر",
     "search_terms": [
-      "لايت لاند 12 - 15 زنون polar ايسر",
+      "ty-12lc-001-l",
       "daisen-hy",
-      "ty-12lc-001-l"
+      "لايت لاند 12 - 15 زنون polar ايسر"
     ],
     "description_preview": ""
   },
@@ -10526,9 +10526,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199698",
     "slug": "بروجكتر-مكسما-20",
     "search_terms": [
-      "dlaa",
+      "بروجكتر مكسما 20 - ",
       "ns1384-led",
-      "بروجكتر مكسما 20 - "
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -10546,9 +10546,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199707",
     "slug": "بخاخ-تبريد-خلفي-لاند-لكزس-سيكويا-08--21-عام",
     "search_terms": [
-      "447510-0180",
+      "بخاخ تبريد خلفي لاند لكزس سيكويا 08 - 21 عام ",
       "denso",
-      "بخاخ تبريد خلفي لاند لكزس سيكويا 08 - 21 عام "
+      "447510-0180"
     ],
     "description_preview": ""
   },
@@ -10587,8 +10587,8 @@ window.search-index = [
     "slug": "بك-صندوق-لكزس-es-اي-اس-18--خليجي-ايمن",
     "search_terms": [
       "daisen-hy",
-      "بك صندوق لكزس es اي اس 18 - خليجي ايمن",
-      "lx-18es-003-r 81580-33471"
+      "lx-18es-003-r 81580-33471",
+      "بك صندوق لكزس es اي اس 18 - خليجي ايمن"
     ],
     "description_preview": ""
   },
@@ -10606,8 +10606,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199776",
     "slug": "دعامية-خلفية-لكزس-es-اي-اس-18--خليجي",
     "search_terms": [
-      "lx-18es-005 52159-33978",
       "daisen-hy",
+      "lx-18es-005 52159-33978",
       "دعامية خلفية لكزس es اي اس 18 - خليجي"
     ],
     "description_preview": ""
@@ -10626,9 +10626,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199779",
     "slug": "بروجكتر-لاند-16--21-مع-كفر-صغير-دائري-كامل",
     "search_terms": [
-      "dlaa",
+      "بروجكتر لاند 16 - 21 مع كفر صغير دائري كامل",
       "ty908b-led-3",
-      "بروجكتر لاند 16 - 21 مع كفر صغير دائري كامل"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -10646,9 +10646,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199788",
     "slug": "فلنجة-دسك-امامية-باترول-10--17-40206-1lb1a",
     "search_terms": [
+      "فلنجة دسك امامية باترول 10 - 17 -40206-1lb1a",
       "b6f191",
-      "advics",
-      "فلنجة دسك امامية باترول 10 - 17 -40206-1lb1a"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -10666,9 +10666,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199831",
     "slug": "لحية-امامية-لاند-19--20-grand-turning-ام-كلبس-لولوي",
     "search_terms": [
-      "لحية امامية لاند 19 - 20 grand turning ام كلبس لولوي ",
+      "tdcmy-lc200-079",
       "daisen",
-      "tdcmy-lc200-079"
+      "لحية امامية لاند 19 - 20 grand turning ام كلبس لولوي "
     ],
     "description_preview": ""
   },
@@ -10686,9 +10686,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199837",
     "slug": "راديتر-تبريد-بيكب-ريفو-16-21-كاز-بانزين",
     "search_terms": [
-      "tg447770-2740)",
       "راديتر تبريد بيكب ريفو 16-21 كاز بانزين",
-      "denso"
+      "denso",
+      "tg447770-2740)"
     ],
     "description_preview": ""
   },
@@ -10707,8 +10707,8 @@ window.search-index = [
     "slug": "كلج-مروحة-لاند-08--11-2uz-16210-50110",
     "search_terms": [
       "aisin",
-      "fct-091",
-      "كلج مروحة لاند 08 - 11 2uz -16210-50110"
+      "كلج مروحة لاند 08 - 11 2uz -16210-50110",
+      "fct-091"
     ],
     "description_preview": ""
   },
@@ -10726,9 +10726,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199857",
     "slug": "هلال-جاملغ-خلفي-برادو-24--ايسر",
     "search_terms": [
-      "daisen-hy",
       "ty-24prd-016-l 75606-0g010",
-      "هلال جاملغ خلفي برادو 24 - ايسر "
+      "هلال جاملغ خلفي برادو 24 - ايسر ",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -10786,9 +10786,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199882",
     "slug": "ماسكة-دعامية-خلفية-برادو-24--اعلى-الدعامية-الخلفية-ايسر",
     "search_terms": [
+      "ty-24prd-017-l 52166-0g010",
       "daisen-hy",
-      "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايسر ",
-      "ty-24prd-017-l 52166-0g010"
+      "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايسر "
     ],
     "description_preview": ""
   },
@@ -10806,9 +10806,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199891",
     "slug": "لايت-رف-فور-20--22-امريكي-se-ايمن",
     "search_terms": [
-      "ty-20rav4u-002-r",
       "daisen-hy",
-      "لايت رف فور 20 - 22 امريكي se ايمن"
+      "لايت رف فور 20 - 22 امريكي se ايمن",
+      "ty-20rav4u-002-r"
     ],
     "description_preview": ""
   },
@@ -10846,9 +10846,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199944",
     "slug": "ماسكة-دعامية-خلفية-برادو-24--اعلى-الدعامية-الخلفية-ايمن",
     "search_terms": [
-      "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايمن ",
       "daisen-hy",
-      "ty-24prd-017-r 52165-0g010"
+      "ty-24prd-017-r 52165-0g010",
+      "ماسكة دعامية خلفية برادو 24 - اعلى الدعامية الخلفية ايمن "
     ],
     "description_preview": ""
   },
@@ -10866,9 +10866,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199946",
     "slug": "لايت-كورلا-17--19-امريكي-le-ايسر",
     "search_terms": [
-      "ty-17crlu-001-l",
       "daisen-hy",
-      "لايت كورلا 17 - 19 امريكي le ايسر"
+      "لايت كورلا 17 - 19 امريكي le ايسر",
+      "ty-17crlu-001-l"
     ],
     "description_preview": ""
   },
@@ -10887,8 +10887,8 @@ window.search-index = [
     "slug": "لايت-كورلا-17--19-امريكي-le-ايمن",
     "search_terms": [
       "لايت كورلا 17 - 19 امريكي le ايمن",
-      "ty-17crlu-001-r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-17crlu-001-r"
     ],
     "description_preview": ""
   },
@@ -10906,8 +10906,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199990",
     "slug": "واتربم-كوستر-لاند-عكرب-1hz-كاز",
     "search_terms": [
-      "aisin",
       "واتربم كوستر لاند عكرب 1hz كاز ",
+      "aisin",
       "wpt-141"
     ],
     "description_preview": ""
@@ -10926,9 +10926,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=199993",
     "slug": "لايت-كامري-21--داخل-اسود-se-امريكي-ايسر",
     "search_terms": [
-      "ty-21cmu-003-l",
       "لايت كامري 21 - داخل اسود se امريكي ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21cmu-003-l"
     ],
     "description_preview": ""
   },
@@ -10966,9 +10966,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200023",
     "slug": "شباك-دعامية-امامية-هايلندر-22--xse",
     "search_terms": [
-      "شباك دعامية امامية هايلندر 22 - xse ",
+      "daisen-hy",
       "ty-22lf-033",
-      "daisen-hy"
+      "شباك دعامية امامية هايلندر 22 - xse "
     ],
     "description_preview": ""
   },
@@ -10986,9 +10986,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200033",
     "slug": "motor-assy-fan-ماطور-فان-دشبول-كوستر-22--عام-12v-مع-سربس",
     "search_terms": [
+      "motor assy / fan ماطور فان دشبول كوستر 22 - عام -12v مع سربس ",
       "denso",
-      "116360-8090 ",
-      "motor assy / fan ماطور فان دشبول كوستر 22 - عام -12v مع سربس "
+      "116360-8090 "
     ],
     "description_preview": ""
   },
@@ -11006,9 +11006,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200049",
     "slug": "كفر-دعامية-خلفية-برادو-24--اسفل-البك-لايت-اسود-اساس-مع-فتحة-سكن-ايسر",
     "search_terms": [
-      "ty-24prd-019-l 52553-0g900",
+      "daisen-hy",
       "كفر دعامية خلفية برادو 24 - اسفل البك لايت اسود اساس مع فتحة سكن ايسر ",
-      "daisen-hy"
+      "ty-24prd-019-l 52553-0g900"
     ],
     "description_preview": ""
   },
@@ -11066,9 +11066,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200084",
     "slug": "تريشة-باب-جانبية-لاند-16--مع-كتابة-لاند-كروزر-اسود-بلاك-اديشن",
     "search_terms": [
-      "fj200-16 side moudling black",
       "تريشة باب جانبية لاند 16 - مع كتابة لاند كروزر اسود بلاك اديشن",
-      "daisen"
+      "daisen",
+      "fj200-16 side moudling black"
     ],
     "description_preview": ""
   },
@@ -11086,8 +11086,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200129",
     "slug": "كلج-مروحة-لاند-01--07-2uz",
     "search_terms": [
-      "كلج مروحة لاند 01 - 07 2uz",
       "aisin",
+      "كلج مروحة لاند 01 - 07 2uz",
       "fct-005"
     ],
     "description_preview": ""
@@ -11106,9 +11106,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200147",
     "slug": "هلال-باب-خلفي-برادو-24--اسود-اساس-ايسر",
     "search_terms": [
-      "ty-24prd-021-l 75062-0g020",
+      "هلال باب خلفي برادو 24 - اسود اساس ايسر ",
       "daisen-hy",
-      "هلال باب خلفي برادو 24 - اسود اساس ايسر "
+      "ty-24prd-021-l 75062-0g020"
     ],
     "description_preview": ""
   },
@@ -11127,8 +11127,8 @@ window.search-index = [
     "slug": "لايت-كامري-21--le-امريكي-ايسر",
     "search_terms": [
       "daisen-hy",
-      "ty-21cmu-004-l",
-      "لايت كامري 21 - le امريكي ايسر"
+      "لايت كامري 21 - le امريكي ايسر",
+      "ty-21cmu-004-l"
     ],
     "description_preview": ""
   },
@@ -11146,9 +11146,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200149",
     "slug": "لايت-كامري-21--le-امريكي-ايمن",
     "search_terms": [
-      "ty-21cmu-004-r",
+      "daisen-hy",
       "لايت كامري 21 - le امريكي ايمن",
-      "daisen-hy"
+      "ty-21cmu-004-r"
     ],
     "description_preview": ""
   },
@@ -11186,9 +11186,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200188",
     "slug": "واتر-بم-لاند-08--11-8سلندر-2uz-16100-59276",
     "search_terms": [
+      "aisin",
       "wpt-125",
-      "واتر بم لاند  08 - 11 8سلندر 2uz -16100-59276",
-      "aisin"
+      "واتر بم لاند  08 - 11 8سلندر 2uz -16100-59276"
     ],
     "description_preview": ""
   },
@@ -11206,8 +11206,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200210",
     "slug": "لايت-رف-فور-20--22-امريكي-se-ايسر",
     "search_terms": [
-      "daisen-hy",
       "لايت رف فور 20 - 22 امريكي se ايسر",
+      "daisen-hy",
       "ty-20rav4u-002-l"
     ],
     "description_preview": ""
@@ -11226,9 +11226,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200217",
     "slug": "لحية-خلفية-لاند-19--20-ام-كلبس-لون-اسود",
     "search_terms": [
+      "tdcmy-lc200-079-bk",
       "لحية خلفية لاند 19 - 20 ام كلبس لون اسود ",
-      "daisen",
-      "tdcmy-lc200-079-bk"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -11246,9 +11246,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200223",
     "slug": "اشارة-لايت-لاند-16--led-سحب",
     "search_terms": [
+      "dsn-lc200-067",
       "daisen",
-      "اشارة لايت لاند 16 - led سحب",
-      "dsn-lc200-067"
+      "اشارة لايت لاند 16 - led سحب"
     ],
     "description_preview": ""
   },
@@ -11266,8 +11266,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200239",
     "slug": "لحية-امامية-لاند-16--17-عريض-ام-كلبس-لولوي",
     "search_terms": [
-      "لحية امامية لاند 16 - 17 عريض ام كلبس لولوي",
       "daisen",
+      "لحية امامية لاند 16 - 17 عريض ام كلبس لولوي",
       "dsn-014-1-/16lc200-pw"
     ],
     "description_preview": ""
@@ -11287,9 +11287,9 @@ window.search-index = [
     "slug": "لايت-كامري-18--20-امريكي-le-se-دبل-عدسة-داخل-اسود-ايسر",
     "search_terms": [
       "نظام التعليق",
+      "daisen-hy",
       "ty-18cmu-001b-l",
-      "لايت كامري 18 - 20 امريكي le se دبل عدسة داخل اسود ايسر",
-      "daisen-hy"
+      "لايت كامري 18 - 20 امريكي le se دبل عدسة داخل اسود ايسر"
     ],
     "description_preview": ""
   },
@@ -11308,9 +11308,9 @@ window.search-index = [
     "slug": "لايت-كامري-18--20-امريكي-le-se-دبل-عدسة-داخل-اسود-ايمن",
     "search_terms": [
       "نظام التعليق",
-      "ty-18cmu-001b-r",
       "لايت كامري 18 - 20 امريكي le se دبل عدسة داخل اسود ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-18cmu-001b-r"
     ],
     "description_preview": ""
   },
@@ -11368,9 +11368,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200447",
     "slug": "كلج-مروحة-فورجنر-فيكو-05--15-كوستر-08--17--2tr",
     "search_terms": [
-      "fct-078",
       "aisin",
-      "كلج مروحة فورجنر فيكو 05 - 15 كوستر 08 - 17 - 2tr"
+      "كلج مروحة فورجنر فيكو 05 - 15 كوستر 08 - 17 - 2tr",
+      "fct-078"
     ],
     "description_preview": ""
   },
@@ -11388,9 +11388,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200498",
     "slug": "لحية-امامية-لاند-2021-لون-اسود",
     "search_terms": [
+      "dsn- frt dowm spoiler lc200 2021 bk",
       "daisen",
-      "لحية امامية لاند 2021 لون اسود",
-      "dsn- frt dowm spoiler lc200 2021 bk"
+      "لحية امامية لاند 2021 لون اسود"
     ],
     "description_preview": ""
   },
@@ -11448,9 +11448,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200553",
     "slug": "كفر-سبير-برادو-03-09-نيكل-اسود",
     "search_terms": [
-      "كفر سبير برادو 03 -09 نيكل اسود",
       "daisen-hy",
-      "ty-03prd-013"
+      "ty-03prd-013",
+      "كفر سبير برادو 03 -09 نيكل اسود"
     ],
     "description_preview": ""
   },
@@ -11468,8 +11468,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200564",
     "slug": "evaporator-sub-assy-15-13-فريز-تبريد-يارس-10--13",
     "search_terms": [
-      "denso",
       "evaporator sub assy 15-13 فريز تبريد يارس 10 - 13",
+      "denso",
       "tg446600-37403d rip tg447610-4790 "
     ],
     "description_preview": ""
@@ -11488,9 +11488,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200601",
     "slug": "هلال-باب-خلفي-برادو-24--اسود-اساس-ايمن",
     "search_terms": [
-      "هلال باب خلفي برادو 24 - اسود اساس ايمن ",
       "daisen-hy",
-      "ty-24prd-021-r 75061-0g020"
+      "ty-24prd-021-r 75061-0g020",
+      "هلال باب خلفي برادو 24 - اسود اساس ايمن "
     ],
     "description_preview": ""
   },
@@ -11508,8 +11508,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200632",
     "slug": "فريز-تبريد-امامي-لاند-08--21",
     "search_terms": [
-      "denso",
       "447610-4190",
+      "denso",
       "فريز تبريد امامي لاند 08 - 21"
     ],
     "description_preview": ""
@@ -11548,9 +11548,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200704",
     "slug": "عينة-كلج-لاند-1gr-31210-60340-وهايس-7gr-19",
     "search_terms": [
-      "ctx-180",
       "aisin",
-      "عينة كلج لاند 1gr -31210-60340 وهايس 7gr 19-"
+      "عينة كلج لاند 1gr -31210-60340 وهايس 7gr 19-",
+      "ctx-180"
     ],
     "description_preview": ""
   },
@@ -11569,9 +11569,9 @@ window.search-index = [
     "slug": "زيت-محرك-hdc-50-veedol-cf-25-lt",
     "search_terms": [
       "lubricants - زيوت",
+      "71311u31p00",
       "زيت محرك  hdc 50 veedol cf- 25 lt",
-      "veedol",
-      "71311u31p00"
+      "veedol"
     ],
     "description_preview": ""
   },
@@ -11590,8 +11590,8 @@ window.search-index = [
     "slug": "دعامية-امامية-لاند-12--15-لولوي",
     "search_terms": [
       "دعامية امامية لاند 12 - 15 لولوي",
-      "daisen",
-      "front bumper lc200 12-pw"
+      "front bumper lc200 12-pw",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -11609,9 +11609,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200764",
     "slug": "لايت-كورلا-20--امريكي-le-ايسر",
     "search_terms": [
+      "لايت كورلا 20 - امريكي le ايسر",
       "daisen-hy",
-      "ty-19crlu-002-l",
-      "لايت كورلا 20 - امريكي le ايسر"
+      "ty-19crlu-002-l"
     ],
     "description_preview": ""
   },
@@ -11630,8 +11630,8 @@ window.search-index = [
     "slug": "لايت-كورلا-20--امريكي-le-ايمن",
     "search_terms": [
       "ty-19crlu-002-r",
-      "لايت كورلا 20 - امريكي le ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كورلا 20 - امريكي le ايمن"
     ],
     "description_preview": ""
   },
@@ -11649,9 +11649,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200788",
     "slug": "دعامية-خلفية-لاند-16--21-لون-لولوي",
     "search_terms": [
-      "daisen",
+      "rear bumper lc200 16-pw",
       "دعامية خلفية لاند 16 - 21 لون لولوي",
-      "rear bumper lc200 16-pw"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -11669,9 +11669,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200808",
     "slug": "فريز-تبريد-امامي-كامري-08--17-افلون-08--17--dic",
     "search_terms": [
-      "447610-2560",
       "denso",
-      "فريز تبريد امامي كامري 08 - 17 افلون 08 - 17 - dic"
+      "فريز تبريد امامي كامري 08 - 17 افلون 08 - 17 - dic",
+      "447610-2560"
     ],
     "description_preview": ""
   },
@@ -11710,8 +11710,8 @@ window.search-index = [
     "slug": "باور-بريك-بيكب-تويوتا-جمرة-3rz",
     "search_terms": [
       "باور بريك بيكب تويوتا جمرة 3rz",
-      "advics",
-      "bbt-010"
+      "bbt-010",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -11729,9 +11729,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200840",
     "slug": "جنح-لاند-23--ليد-استوب-لايت-لمتد-limited-اسود",
     "search_terms": [
+      "lc300- spoiler w led bk",
       "daisen",
-      "جنح لاند 23 - ليد استوب لايت لمتد limited اسود ",
-      "lc300- spoiler w led bk"
+      "جنح لاند 23 - ليد استوب لايت لمتد limited اسود "
     ],
     "description_preview": ""
   },
@@ -11749,9 +11749,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200882",
     "slug": "فريز-تبريد-دشبول-بيكاتشو-كورلا-06--08-امريكي-رفيع-evaporator-sub-assy",
     "search_terms": [
-      "447610-3880",
+      "فريز تبريد دشبول بيكاتشو كورلا 06 - 08 امريكي رفيع evaporator sub assy",
       "denso",
-      "فريز تبريد دشبول بيكاتشو كورلا 06 - 08 امريكي رفيع evaporator sub assy"
+      "447610-3880"
     ],
     "description_preview": ""
   },
@@ -11769,8 +11769,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200884",
     "slug": "دعامية-خلفية-لاند-08--15-لون-اسود",
     "search_terms": [
-      "دعامية خلفية لاند 08 - 15 لون اسود ",
       "rear bumper lc200 12-bk",
+      "دعامية خلفية لاند 08 - 15 لون اسود ",
       "daisen"
     ],
     "description_preview": ""
@@ -11789,9 +11789,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200885",
     "slug": "لايت-كورلا-17--19-امريكي-se-ايسر",
     "search_terms": [
-      "لايت كورلا 17 - 19 امريكي se ايسر",
       "ty-17crlu-002-l",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كورلا 17 - 19 امريكي se ايسر"
     ],
     "description_preview": ""
   },
@@ -11809,9 +11809,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200886",
     "slug": "لايت-كورلا-17--19-امريكي-se-ايمن",
     "search_terms": [
-      "ty-17crlu-002-r",
       "daisen-hy",
-      "لايت كورلا 17 - 19 امريكي se ايمن"
+      "لايت كورلا 17 - 19 امريكي se ايمن",
+      "ty-17crlu-002-r"
     ],
     "description_preview": ""
   },
@@ -11829,9 +11829,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200905",
     "slug": "دعامية-خلفية-لاند-16--21-لون-اسود",
     "search_terms": [
-      "daisen",
+      "دعامية خلفية لاند 16 - 21 لون اسود",
       "rear bumper lc200 16-bk",
-      "دعامية خلفية لاند 16 - 21 لون اسود"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -11849,9 +11849,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200911",
     "slug": "بروجكتر-+-كفر-كامري-21--se-شبكي",
     "search_terms": [
-      "dlaa",
       "ty1129-led-3",
-      "بروجكتر + كفر كامري 21 - se شبكي"
+      "بروجكتر + كفر كامري 21 - se شبكي",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -11869,8 +11869,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200912",
     "slug": "لايت-رف-فور-20--22-امريكي-le-xle-ايسر",
     "search_terms": [
-      "daisen-hy",
       "ty-20rav4u-001-l",
+      "daisen-hy",
       "لايت رف فور 20 - 22 امريكي le-xle ايسر"
     ],
     "description_preview": ""
@@ -11890,8 +11890,8 @@ window.search-index = [
     "slug": "لايت-رف-فور-20--22-امريكي-le-xle-ايمن",
     "search_terms": [
       "daisen-hy",
-      "ty-20rav4u-001-r",
-      "لايت رف فور 20 - 22 امريكي le-xle ايمن"
+      "لايت رف فور 20 - 22 امريكي le-xle ايمن",
+      "ty-20rav4u-001-r"
     ],
     "description_preview": ""
   },
@@ -11909,9 +11909,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=200987",
     "slug": "صينية-كلج-كوستر-2tr-فايبرة-ابيض-31250-60500",
     "search_terms": [
+      "dtx-189 ",
       "aisin",
-      "صينية كلج كوستر 2tr فايبرة ابيض 31250-60500",
-      "dtx-189 "
+      "صينية كلج كوستر 2tr فايبرة ابيض 31250-60500"
     ],
     "description_preview": ""
   },
@@ -11929,9 +11929,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201006",
     "slug": "تريشة-قمارة-لاند-22-عالية-اسود",
     "search_terms": [
-      "daisen",
+      "تريشة قمارة لاند 22 عالية اسود ",
       "lc 300 roof racks gr bk ",
-      "تريشة قمارة لاند 22 عالية اسود "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -11949,8 +11949,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201049",
     "slug": "كانستر-لاند-لكزس-12--15",
     "search_terms": [
-      "cand-60500 77740-60500",
       "كانستر لاند لكزس 12 - 15",
+      "cand-60500 77740-60500",
       "aisan"
     ],
     "description_preview": ""
@@ -11969,10 +11969,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201050",
     "slug": "زيت-محرك-15w40-veedol-max-pro-ci-4-25lt",
     "search_terms": [
-      "زيت محرك 15w40 veedol max pro ci-4 25lt ",
-      "veedol",
       "lubricants - زيوت",
-      "71322u31p00"
+      "71322u31p00",
+      "veedol",
+      "زيت محرك 15w40 veedol max pro ci-4 25lt "
     ],
     "description_preview": ""
   },
@@ -11990,9 +11990,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201061",
     "slug": "صينية-كلج-لاند-1hz-كاز",
     "search_terms": [
+      "aisin",
       "dtx-133",
-      "صينية كلج لاند 1hz كاز",
-      "aisin"
+      "صينية كلج لاند 1hz كاز"
     ],
     "description_preview": ""
   },
@@ -12010,9 +12010,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201067",
     "slug": "فريز-تبريد-ميتسيوبيشي-باجيرو-07--19",
     "search_terms": [
+      "447610-5860",
       "denso",
-      "فريز تبريد ميتسيوبيشي باجيرو 07 - 19 ",
-      "447610-5860"
+      "فريز تبريد ميتسيوبيشي باجيرو 07 - 19 "
     ],
     "description_preview": ""
   },
@@ -12030,9 +12030,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201069",
     "slug": "كانستر-لاند-08--15",
     "search_terms": [
-      "cand-60480 77740-60480",
+      "aisan",
       "كانستر لاند 08 - 15",
-      "aisan"
+      "cand-60480 77740-60480"
     ],
     "description_preview": ""
   },
@@ -12050,8 +12050,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201096",
     "slug": "بك-زاوية-لكزس-es-اي-اس-18--خليجي-ايسر",
     "search_terms": [
-      "daisen-hy",
       "بك زاوية لكزس es اي اس 18 - خليجي ايسر",
+      "daisen-hy",
       "lx-18es-002-l 81561-33591"
     ],
     "description_preview": ""
@@ -12070,9 +12070,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201097",
     "slug": "بك-زاوية-لكزس-es-اي-اس-18--خليجي-ايمن",
     "search_terms": [
-      "lx-18es-002-r 81551-33591",
+      "بك زاوية لكزس es اي اس 18 - خليجي ايمن",
       "daisen-hy",
-      "بك زاوية لكزس es اي اس 18 - خليجي ايمن"
+      "lx-18es-002-r 81551-33591"
     ],
     "description_preview": ""
   },
@@ -12090,8 +12090,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201161",
     "slug": "pso-عنبار-بريك-داينا-97--02-14b-15b-4y-3rz",
     "search_terms": [
-      "advics",
       "bmt-288",
+      "advics",
       "pso عنبار بريك داينا 97 - 02 14b 15b 4y 3rz "
     ],
     "description_preview": ""
@@ -12111,8 +12111,8 @@ window.search-index = [
     "slug": "لحية-امامية-لاند-08--11-لولوي",
     "search_terms": [
       "fjth021",
-      "vstar",
-      "لحية امامية لاند 08 - 11 لولوي"
+      "لحية امامية لاند 08 - 11 لولوي",
+      "vstar"
     ],
     "description_preview": ""
   },
@@ -12130,9 +12130,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201203",
     "slug": "لحية-خلفية-لاند-08--11-لولوي-+-واقيات",
     "search_terms": [
-      "fjty009-070",
+      "لحية خلفية لاند 08 - 11 لولوي + واقيات",
       "vstar",
-      "لحية خلفية لاند 08 - 11 لولوي + واقيات"
+      "fjty009-070"
     ],
     "description_preview": ""
   },
@@ -12150,8 +12150,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201209",
     "slug": "لايت-كامري-21--داخل-نيكل-xle-امريكي-3-خطوط-ليد-ايسر",
     "search_terms": [
-      "لايت كامري 21 - داخل نيكل  xle امريكي  3 خطوط ليد ايسر",
       "daisen-hy",
+      "لايت كامري 21 - داخل نيكل  xle امريكي  3 خطوط ليد ايسر",
       "ty-21cmu-002-l"
     ],
     "description_preview": ""
@@ -12171,8 +12171,8 @@ window.search-index = [
     "slug": "لايت-كامري-18--20-امريكي-xse-داخل-صفحة-نيكل-3-خطوط-ليد-ايسر",
     "search_terms": [
       "لايت كامري 18 - 20 امريكي xse داخل صفحة نيكل 3 خطوط ليد ايسر",
-      "ty-18cmu-001a-l",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-18cmu-001a-l"
     ],
     "description_preview": ""
   },
@@ -12190,9 +12190,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201211",
     "slug": "لايت-كامري-18--20-امريكي-xse-داخل-صفحة-نيكل-3-خطوط-ليد-ايمن",
     "search_terms": [
-      "ty-18cmu-001a-r",
       "لايت كامري 18 - 20 امريكي xse داخل صفحة نيكل 3 خطوط ليد ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-18cmu-001a-r"
     ],
     "description_preview": ""
   },
@@ -12250,9 +12250,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201222",
     "slug": "تريشة-باب-خلفية-برادو-24--اسود-اساس-ايسر",
     "search_terms": [
-      "تريشة باب خلفية برادو 24 - اسود اساس ايسر ",
       "ty-24prd-022-l 75078-0g020",
-      "daisen-hy"
+      "daisen-hy",
+      "تريشة باب خلفية برادو 24 - اسود اساس ايسر "
     ],
     "description_preview": ""
   },
@@ -12270,8 +12270,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201282",
     "slug": "واقية-طين-خلفية-هايلندر-22--ايمن",
     "search_terms": [
-      "واقية طين خلفية هايلندر 22 - ايمن",
       "ty-22lf-012-r",
+      "واقية طين خلفية هايلندر 22 - ايمن",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -12291,8 +12291,8 @@ window.search-index = [
     "slug": "47201-36432-عنبار-بريك-كوستر-عام-2tr-1hz-pso",
     "search_terms": [
       "bmt-254",
-      "advics",
-      "47201-36432 عنبار بريك كوستر عام 2tr 1hz pso"
+      "47201-36432 عنبار بريك كوستر عام 2tr 1hz pso",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -12310,9 +12310,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201290",
     "slug": "لايت-كامري-21--داخل-نيكل-xle-امريكي-3-خطوط-ليد-ايمن",
     "search_terms": [
+      "لايت كامري 21 - داخل نيكل  xle امريكي  3 خطوط ليد  ايمن",
       "daisen-hy",
-      "ty-21cmu-002-r",
-      "لايت كامري 21 - داخل نيكل  xle امريكي  3 خطوط ليد  ايمن"
+      "ty-21cmu-002-r"
     ],
     "description_preview": ""
   },
@@ -12330,8 +12330,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201301",
     "slug": "لحية-امامية-لاند-08--11-لون-اسود",
     "search_terms": [
-      "fjth021-202",
       "لحية امامية لاند 08 - 11 لون اسود ",
+      "fjth021-202",
       "vstar"
     ],
     "description_preview": ""
@@ -12371,8 +12371,8 @@ window.search-index = [
     "slug": "لحية-امامية-لاند-22--23--لمتد-كويتي-بريمي-لولوي",
     "search_terms": [
       "لحية امامية لاند 22 - 23 - لمتد كويتي بريمي لولوي ",
-      "daisen",
-      "lc300 22 - m bumper lip front - p w "
+      "lc300 22 - m bumper lip front - p w ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -12390,9 +12390,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201493",
     "slug": "كلج-مروحة-كوستر-1hz-16210-17080-كاز",
     "search_terms": [
-      "كلج مروحة كوستر 1hz -16210-17080 كاز",
       "aisin",
-      "fct-074"
+      "fct-074",
+      "كلج مروحة كوستر 1hz -16210-17080 كاز"
     ],
     "description_preview": ""
   },
@@ -12410,9 +12410,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201516",
     "slug": "راديتر-تبريد-كامري-18--رف-فور-19",
     "search_terms": [
-      "راديتر تبريد كامري 18 - رف فور 19 -",
       "denso",
-      "446100-4280"
+      "446100-4280",
+      "راديتر تبريد كامري 18 - رف فور 19 -"
     ],
     "description_preview": ""
   },
@@ -12450,8 +12450,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201626",
     "slug": "تريشة-باب-خلفية-برادو-24--اسود-اساس-ايمن",
     "search_terms": [
-      "ty-24prd-022-r 75077-0g020",
       "تريشة باب خلفية برادو 24 - اسود اساس ايمن ",
+      "ty-24prd-022-r 75077-0g020",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -12471,8 +12471,8 @@ window.search-index = [
     "slug": "دوسة-جانبية-لاند-16--21-لولوي-set",
     "search_terms": [
       "دوسة جانبية لاند 16 - 21 لولوي set",
-      "daisen",
-      "dsn-ty0112rb-074"
+      "dsn-ty0112rb-074",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -12510,8 +12510,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201686",
     "slug": "لايت-كامري-18--خليجي-عام-ايسر",
     "search_terms": [
-      "ty-18cmm-001-l",
       "لايت كامري 18 - خليجي  عام ايسر",
+      "ty-18cmm-001-l",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -12530,9 +12530,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201687",
     "slug": "لايت-كامري-18--خليجي-عام-ايمن",
     "search_terms": [
-      "لايت كامري 18 - خليجي عام ايمن ",
+      "daisen-hy",
       "ty-18cmm-001-r",
-      "daisen-hy"
+      "لايت كامري 18 - خليجي عام ايمن "
     ],
     "description_preview": ""
   },
@@ -12590,9 +12590,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201915",
     "slug": "لحية-خلفية-لاند-08--11-اسود-+-واقيات",
     "search_terms": [
+      "لحية خلفية لاند 08 - 11 اسود + واقيات",
       "fjty009-202",
-      "vstar",
-      "لحية خلفية لاند 08 - 11 اسود + واقيات"
+      "vstar"
     ],
     "description_preview": ""
   },
@@ -12610,9 +12610,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201930",
     "slug": "لايت-بيكب-ريفو-22--داخل-اسود-ونيكل-ليد-ايسر",
     "search_terms": [
-      "ty-22hlx-001-l",
       "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22hlx-001-l"
     ],
     "description_preview": ""
   },
@@ -12630,9 +12630,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201931",
     "slug": "لايت-بيكب-ريفو-22--داخل-اسود-ونيكل-ليد-ايمن",
     "search_terms": [
+      "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايمن",
       "ty-22hlx-001-r",
-      "daisen-hy",
-      "لايت بيكب ريفو 22 - داخل اسود ونيكل ليد ايمن"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -12650,9 +12650,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201964",
     "slug": "دوسة-جانبية-لاند-08--15-لولوي",
     "search_terms": [
+      "running board-lc200-070em",
       "دوسة جانبية لاند 08 - 15 لولوي",
-      "daisen",
-      "running board-lc200-070em"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -12690,9 +12690,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=201981",
     "slug": "عنبار-بريك-كورلا-08--12--برغي-10",
     "search_terms": [
-      "advics",
       "عنبار بريك كورلا 08 - 12 - برغي 10 ",
-      "bmt-389"
+      "bmt-389",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -12750,9 +12750,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202067",
     "slug": "لايت-لكزس-es-اي-اس-18--خليجي-ايسر",
     "search_terms": [
-      "lx-18es-001-l 81185-33j51",
+      "لايت لكزس es اي اس 18 - خليجي ايسر",
       "daisen-hy",
-      "لايت لكزس es اي اس 18 - خليجي ايسر"
+      "lx-18es-001-l 81185-33j51"
     ],
     "description_preview": ""
   },
@@ -12850,8 +12850,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202313",
     "slug": "سيت-تريشة-باب-جانبية-+-جاملغات-برادو-03--09-8-قطعة",
     "search_terms": [
-      "سيت تريشة باب جانبية + جاملغات برادو 03 - 09 8 قطعة ",
       "ty-03prd-012",
+      "سيت تريشة باب جانبية + جاملغات برادو 03 - 09 8 قطعة ",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -12910,9 +12910,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202444",
     "slug": "لايت-كامري-22-خليجي-le-هايبرد-عام-ايسر-ty-22cmm-002a",
     "search_terms": [
-      "ty-22cmm-007-l 81185-33k10",
       "daisen-hy",
-      "لايت كامري 22- خليجي le هايبرد عام ايسر ty-22cmm-002a"
+      "لايت كامري 22- خليجي le هايبرد عام ايسر ty-22cmm-002a",
+      "ty-22cmm-007-l 81185-33k10"
     ],
     "description_preview": ""
   },
@@ -12931,8 +12931,8 @@ window.search-index = [
     "slug": "لايت-كامري-22-خليجي-le-هايبرد-عام-ايمن-ty-22cmm-002a",
     "search_terms": [
       "daisen-hy",
-      "\"ty-22cmm-007-r 81145-33k10",
-      "لايت كامري 22- خليجي le هايبرد عام ايمن  ty-22cmm-002a"
+      "لايت كامري 22- خليجي le هايبرد عام ايمن  ty-22cmm-002a",
+      "\"ty-22cmm-007-r 81145-33k10"
     ],
     "description_preview": ""
   },
@@ -12950,8 +12950,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202451",
     "slug": "دعامية-امامية-لاند-22--عليا-لون-اسود",
     "search_terms": [
-      "دعامية امامية لاند 22 - عليا لون اسود",
       "22lc300 upgrade front bumper-black",
+      "دعامية امامية لاند 22 - عليا لون اسود",
       "daisen"
     ],
     "description_preview": ""
@@ -12970,9 +12970,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202452",
     "slug": "دعامية-امامية-لاند-22--عليا-لون-لولوي",
     "search_terms": [
+      "daisen",
       "دعامية امامية لاند 22 - عليا لون لولوي ",
-      "22lc300 upgrade front bumper-pw",
-      "daisen"
+      "22lc300 upgrade front bumper-pw"
     ],
     "description_preview": ""
   },
@@ -12990,9 +12990,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202456",
     "slug": "راديتر-تبريد-كوستر-17--رقم-3-صغيرة--ظهر-السائق",
     "search_terms": [
-      "راديتر تبريد كوستر 17 - رقم 3 صغيرة - ظهر السائق",
+      "denso",
       "447780-5120",
-      "denso"
+      "راديتر تبريد كوستر 17 - رقم 3 صغيرة - ظهر السائق"
     ],
     "description_preview": ""
   },
@@ -13011,8 +13011,8 @@ window.search-index = [
     "slug": "لايت-كامري-22-خليجي-glx-ليد-3-عدسات-ايسر",
     "search_terms": [
       "ty-21cm-001-l",
-      "daisen-hy",
-      "لايت كامري 22 خليجي glx ليد 3 عدسات ايسر"
+      "لايت كامري 22 خليجي glx ليد 3 عدسات ايسر",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13030,9 +13030,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202476",
     "slug": "لايت-كامري-22-خليجي-glx-ليد-3-عدسات-ايمن",
     "search_terms": [
-      "لايت كامري 22 خليجي glx ليد 3 عدسات ايمن",
       "ty-21cm-001-r",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كامري 22 خليجي glx ليد 3 عدسات ايمن"
     ],
     "description_preview": ""
   },
@@ -13050,9 +13050,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202482",
     "slug": "بك-زاوية-لكزس-16--21-lx-بلاك-اديشن-كورو-ايسر",
     "search_terms": [
-      "ty-lx570-004-lh",
       "بك زاوية لكزس 16 - 21 lx بلاك اديشن كورو ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-lx570-004-lh"
     ],
     "description_preview": ""
   },
@@ -13070,9 +13070,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202483",
     "slug": "بك-زاوية-لكزس-16--21-lx-بلاك-اديشن-كورو-ايمن",
     "search_terms": [
-      "daisen-hy",
+      "ty-lx570-004-rh",
       "بك زاوية لكزس 16 - 21 lx بلاك اديشن كورو ايمن ",
-      "ty-lx570-004-rh"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13110,9 +13110,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202545",
     "slug": "بك-زاوية-لكزس-16--21-lx-احمر-ايسر",
     "search_terms": [
-      "daisen-hy",
+      "ty-lx570-002-lh",
       "بك زاوية لكزس 16 - 21 lx احمر ايسر",
-      "ty-lx570-002-lh"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13131,8 +13131,8 @@ window.search-index = [
     "slug": "تريشة-باب-جانبية-لكزس-22--oem-اسود-set",
     "search_terms": [
       "daisen",
-      "تريشة باب جانبية لكزس 22 - oem اسود set",
-      "lx600 side moudling oem bk"
+      "lx600 side moudling oem bk",
+      "تريشة باب جانبية لكزس 22 - oem اسود set"
     ],
     "description_preview": ""
   },
@@ -13150,8 +13150,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202624",
     "slug": "دوسة-جانبية-لاند-22--اسود-set",
     "search_terms": [
-      "دوسة جانبية لاند 22 - اسود set",
       "daisen",
+      "دوسة جانبية لاند 22 - اسود set",
       "side step lc300 bk"
     ],
     "description_preview": ""
@@ -13190,9 +13190,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202785",
     "slug": "دوسة-جانبية-لاند-22--لولوي",
     "search_terms": [
-      "دوسة جانبية لاند 22 - لولوي ",
+      "gbt",
       "2022 lc 300 running board - pearl white ",
-      "gbt"
+      "دوسة جانبية لاند 22 - لولوي "
     ],
     "description_preview": ""
   },
@@ -13230,9 +13230,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202850",
     "slug": "دوسة-جانبية-لاند-22--اسود",
     "search_terms": [
-      "2022 lc 300 running board - black",
+      "gbt",
       "دوسة جانبية لاند 22 - اسود ",
-      "gbt"
+      "2022 lc 300 running board - black"
     ],
     "description_preview": ""
   },
@@ -13250,9 +13250,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202932",
     "slug": "لايت-برادو-14--17-اسود-زنون-هايلوجين-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-14prd-001-l",
-      "لايت برادو 14 - 17 اسود زنون هايلوجين ايسر",
-      "daisen-hy"
+      "لايت برادو 14 - 17 اسود زنون هايلوجين ايسر"
     ],
     "description_preview": ""
   },
@@ -13270,9 +13270,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202933",
     "slug": "لايت-برادو-14--17-اسود-زنون-هايلوجين-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-14prd-001-r",
-      "لايت برادو 14 - 17 اسود زنون هايلوجين ايمن"
+      "لايت برادو 14 - 17 اسود زنون هايلوجين ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13290,9 +13290,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202946",
     "slug": "دعامية-امامية-لكزس-12--15-لولوي",
     "search_terms": [
-      "دعامية امامية لكزس 12 - 15 لولوي ",
+      "gbt",
       "dsn-front bumper lx 12-15 pw",
-      "gbt"
+      "دعامية امامية لكزس 12 - 15 لولوي "
     ],
     "description_preview": ""
   },
@@ -13310,8 +13310,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=202947",
     "slug": "دعامية-امامية-لكزس-12--15-لون-اسود",
     "search_terms": [
-      "دعامية امامية لكزس 12 - 15 لون اسود",
       "gbt",
+      "دعامية امامية لكزس 12 - 15 لون اسود",
       "dsn- front bumper lx 12-15 bk"
     ],
     "description_preview": ""
@@ -13330,8 +13330,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203004",
     "slug": "يدة-ابواب-كاملة-جانبية-لاند-16--كروم",
     "search_terms": [
-      "dsn-door handle set lc200 16 ch",
       "يدة ابواب كاملة جانبية لاند 16 - كروم ",
+      "dsn-door handle set lc200 16 ch",
       "daisen"
     ],
     "description_preview": ""
@@ -13350,9 +13350,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203186",
     "slug": "دوسة-جانبية-لاند-08--15-لون-اسود-set",
     "search_terms": [
+      "دوسة جانبية لاند 08 - 15 لون اسود set",
       "fjtc009-202",
-      "vstar",
-      "دوسة جانبية لاند 08 - 15 لون اسود set"
+      "vstar"
     ],
     "description_preview": ""
   },
@@ -13390,9 +13390,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203275",
     "slug": "لايت-افلون-19--بدون-كتف-زنون-ايسر",
     "search_terms": [
-      "ty-19azl-001 wo-r",
       "لايت افلون 19 - بدون كتف زنون ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-19azl-001 wo-r"
     ],
     "description_preview": ""
   },
@@ -13451,8 +13451,8 @@ window.search-index = [
     "slug": "لايت-رف-فور-19--21-امريكي-هايبرد-ايمن",
     "search_terms": [
       "ty-20rav4u-001a-r",
-      "لايت رف فور 19 - 21 امريكي هايبرد ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت رف فور 19 - 21 امريكي هايبرد ايمن"
     ],
     "description_preview": ""
   },
@@ -13470,9 +13470,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203320",
     "slug": "لايت-رف-فور-23--امريكي-le-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-23rav4u-001-l",
-      "لايت رف فور 23 - امريكي le ايسر",
-      "daisen-hy"
+      "لايت رف فور 23 - امريكي le ايسر"
     ],
     "description_preview": ""
   },
@@ -13490,9 +13490,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203343",
     "slug": "لايت-لاند-16--21-اسود-تك-زنون-ايمن",
     "search_terms": [
+      "daisen-hy",
       "لايت لاند 16 - 21 اسود تك زنون ايمن",
-      "ty-16lc-001b-r",
-      "daisen-hy"
+      "ty-16lc-001b-r"
     ],
     "description_preview": ""
   },
@@ -13530,9 +13530,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203434",
     "slug": "دعامية-خلفية-لاند-22--gxr-vxr-لون-اسود",
     "search_terms": [
-      "22lc300 upgrade rear bumper-black",
+      "daisen",
       "دعامية خلفية لاند 22 - gxr vxr لون اسود",
-      "daisen"
+      "22lc300 upgrade rear bumper-black"
     ],
     "description_preview": ""
   },
@@ -13550,9 +13550,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203435",
     "slug": "دعامية-خلفية-لاند-22--gxr-vxr-لون-لولوي",
     "search_terms": [
-      "daisen",
       "22lc300 upgrade rear bumper-pw",
-      "دعامية خلفية لاند 22 - gxr vxr لون لولوي "
+      "دعامية خلفية لاند 22 - gxr vxr لون لولوي ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -13570,8 +13570,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203489",
     "slug": "وجه-تايمن-كيس-مع-اويل-بم-لاند-98--07-1fz-11310-66020",
     "search_terms": [
-      "aisin",
       "tct-073",
+      "aisin",
       "وجه تايمن كيس مع اويل بم لاند 98 - 07 1fz -11310-66020"
     ],
     "description_preview": ""
@@ -13590,9 +13590,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203607",
     "slug": "لايت-هايلندر-21--امريكي-le-ايسر",
     "search_terms": [
-      "ty-21hld-002b-l",
+      "لايت هايلندر 21 - امريكي le ايسر",
       "daisen-hy",
-      "لايت هايلندر 21 - امريكي le ايسر"
+      "ty-21hld-002b-l"
     ],
     "description_preview": ""
   },
@@ -13630,10 +13630,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203802",
     "slug": "لايت-لاند-16--21-دبل-زنون-اسود-ايسر",
     "search_terms": [
-      "ty-16lc-002b-l",
-      "لايت لاند 16 - 21 دبل زنون اسود ايسر",
       "نظام التعليق",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-16lc-002b-l",
+      "لايت لاند 16 - 21 دبل زنون اسود ايسر"
     ],
     "description_preview": ""
   },
@@ -13651,9 +13651,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203818",
     "slug": "لايت-لاند-16--21-نيكل-تك-زنون-ايمن",
     "search_terms": [
-      "daisen-hy",
+      "ty-16lc-001c-r",
       "لايت لاند 16 - 21 نيكل تك زنون ايمن",
-      "ty-16lc-001c-r"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13673,8 +13673,8 @@ window.search-index = [
     "search_terms": [
       "ty-16lc-002b-r",
       "نظام التعليق",
-      "daisen-hy",
-      "لايت لاند 16 - 21 دبل زنون اسود ايمن"
+      "لايت لاند 16 - 21 دبل زنون اسود ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13693,8 +13693,8 @@ window.search-index = [
     "slug": "لايت-كورلا-23-امريكي-se-ايسر",
     "search_terms": [
       "لايت كورلا 23 امريكي se ايسر",
-      "ty-23crlu-002-l",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-23crlu-002-l"
     ],
     "description_preview": ""
   },
@@ -13712,9 +13712,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=203888",
     "slug": "لايت-كورلا-23-امريكي-se-ايمن",
     "search_terms": [
-      "ty-23crlu-002-r",
+      "لايت كورلا 23 امريكي se ايمن",
       "daisen-hy",
-      "لايت كورلا 23 امريكي se ايمن"
+      "ty-23crlu-002-r"
     ],
     "description_preview": ""
   },
@@ -13793,8 +13793,8 @@ window.search-index = [
     "slug": "لايت-كورلا-كروس-22-وارد-صين-مواصفات-عالية-ايمن",
     "search_terms": [
       "لايت كورلا كروس 22 وارد صين مواصفات عالية ايمن",
-      "ty-22crl-001-r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22crl-001-r"
     ],
     "description_preview": ""
   },
@@ -13813,8 +13813,8 @@ window.search-index = [
     "slug": "وجه-تايمن-+-اويل-بم-كوستر-17-لاند-98-05-عكرب-1hz",
     "search_terms": [
       "aisin",
-      "tct-003",
-      "وجه تايمن + اويل بم كوستر 17- لاند 98 -05 عكرب 1hz"
+      "وجه تايمن + اويل بم كوستر 17- لاند 98 -05 عكرب 1hz",
+      "tct-003"
     ],
     "description_preview": ""
   },
@@ -13832,8 +13832,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204277",
     "slug": "وجه-تايمن-+-اويل-بم-كوستر-93-16-لاند-98-05-عكرب-1hz",
     "search_terms": [
-      "tct-002",
       "aisin",
+      "tct-002",
       "وجه تايمن + اويل بم كوستر 93 -16 لاند 98 -05 عكرب 1hz"
     ],
     "description_preview": ""
@@ -13853,8 +13853,8 @@ window.search-index = [
     "slug": "واتر-بم-كامري-11--14-رف-فور-12--20-2ar-fxe-كهربائي-161a0-39025",
     "search_terms": [
       "aisin",
-      "wpt-191",
-      "واتر بم كامري 11 - 14 رف فور 12 - 20 2ar fxe كهربائي 161a0-39025"
+      "واتر بم كامري 11 - 14 رف فور 12 - 20 2ar fxe كهربائي 161a0-39025",
+      "wpt-191"
     ],
     "description_preview": ""
   },
@@ -13872,9 +13872,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204303",
     "slug": "دعامية-امامية-باترول-20--y62-لون-اسود-كامله-مع-نيكل",
     "search_terms": [
+      "frt bumper patrol 20- bk",
       "دعامية امامية باترول 20 - y62 لون اسود كامله مع نيكل ",
-      "daisen",
-      "frt bumper patrol 20- bk"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -13892,9 +13892,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204317",
     "slug": "دعامية-امامية-باترول-20--y62-لون-لولوي-كاملة-مع-نيكل",
     "search_terms": [
-      "دعامية امامية باترول 20 - y62 لون لولوي كاملة مع نيكل ",
+      "frt bumper patrol 20- pw",
       "daisen",
-      "frt bumper patrol 20- pw"
+      "دعامية امامية باترول 20 - y62 لون لولوي كاملة مع نيكل "
     ],
     "description_preview": ""
   },
@@ -13912,9 +13912,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204533",
     "slug": "كومبريسر-تبريد-بيكب-ريفو-16--2gd-compressor-assy-كاز--مع-كلج",
     "search_terms": [
+      "denso",
       "كومبريسر تبريد بيكب ريفو 16 - 2gd   compressor assy كاز - مع كلج ",
-      "xi447160-8530",
-      "denso"
+      "xi447160-8530"
     ],
     "description_preview": ""
   },
@@ -13932,8 +13932,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204728",
     "slug": "لايت-باترول-20--ايمن",
     "search_terms": [
-      "h lamp patrol 2020 - rh ",
       "لايت باترول 20 - ايمن ",
+      "h lamp patrol 2020 - rh ",
       "gbt"
     ],
     "description_preview": ""
@@ -13952,9 +13952,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204764",
     "slug": "لايت-هايلندر-21--xle-xse-اسود-ايسر",
     "search_terms": [
-      "daisen-hy",
+      "ty-21hld-002u-l81150-0e660",
       "لايت هايلندر 21 - xle xse اسود ايسر",
-      "ty-21hld-002u-l81150-0e660"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -13972,9 +13972,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204765",
     "slug": "لايت-هايلندر-21--xle-xse-اسود-ايمن",
     "search_terms": [
+      "daisen-hy",
       "لايت هايلندر 21 - xle xse اسود ايمن",
-      "ty-21hld-002u-r",
-      "daisen-hy"
+      "ty-21hld-002u-r"
     ],
     "description_preview": ""
   },
@@ -13992,9 +13992,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204766",
     "slug": "لايت-هايلندر-21--xle-xse-نيكل-ايسر",
     "search_terms": [
+      "daisen-hy",
       "لايت هايلندر 21 - xle xse نيكل ايسر ",
-      "ty-21hld-002a-l-81150-0e0660",
-      "daisen-hy"
+      "ty-21hld-002a-l-81150-0e0660"
     ],
     "description_preview": ""
   },
@@ -14012,8 +14012,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204767",
     "slug": "لايت-هايلندر-21--xle-xse-نيكل-ايمن",
     "search_terms": [
-      "ty-21hld-002a-r8110-0e660",
       "daisen-hy",
+      "ty-21hld-002a-r8110-0e660",
       "لايت هايلندر 21 - xle xse نيكل ايمن"
     ],
     "description_preview": ""
@@ -14032,9 +14032,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204874",
     "slug": "لايت-رف-فور-23--امريكي-hid-هايلوجين-se-ايسر",
     "search_terms": [
-      "daisen-hy",
       "لايت رف فور 23 - امريكي hid هايلوجين se ايسر",
-      "ty-23rav4u-002-l"
+      "ty-23rav4u-002-l",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -14052,9 +14052,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=204875",
     "slug": "لايت-رف-فور-23--امريكي-hid-هايلوجين-se-ايمن",
     "search_terms": [
-      "لايت رف فور 23 - امريكي hid هايلوجين se ايمن",
       "daisen-hy",
-      "ty-23rav4u-002-r"
+      "ty-23rav4u-002-r",
+      "لايت رف فور 23 - امريكي hid هايلوجين se ايمن"
     ],
     "description_preview": ""
   },
@@ -14072,9 +14072,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205022",
     "slug": "كومبريسر-تبريد-بيكب-فيكو-2tr--بدون-كلج",
     "search_terms": [
-      "كومبريسر تبريد بيكب فيكو 2tr  - بدون كلج ",
       "denso",
-      "xi447280-2340"
+      "xi447280-2340",
+      "كومبريسر تبريد بيكب فيكو 2tr  - بدون كلج "
     ],
     "description_preview": ""
   },
@@ -14132,9 +14132,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205269",
     "slug": "لايت-هايلندر-22--xse-داخل-اسود-ايسر",
     "search_terms": [
+      "ty-21hldu-002-l - 81150-0e420",
       "daisen-hy",
-      "لايت هايلندر 22 - xse داخل اسود ايسر",
-      "ty-21hldu-002-l - 81150-0e420"
+      "لايت هايلندر 22 - xse داخل اسود ايسر"
     ],
     "description_preview": ""
   },
@@ -14152,8 +14152,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205270",
     "slug": "لايت-هايلندر-22--xse-داخل-اسود-ايمن",
     "search_terms": [
-      "ty-21hldu-002-r - 81110-0e420",
       "daisen-hy",
+      "ty-21hldu-002-r - 81110-0e420",
       "لايت هايلندر 22 - xse داخل اسود ايمن"
     ],
     "description_preview": ""
@@ -14172,9 +14172,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205271",
     "slug": "لايت-هايلندر-22-xle-داخل-مربع-نيكل-ايسر",
     "search_terms": [
+      "لايت هايلندر 22 -xle داخل مربع نيكل ايسر",
       "daisen-hy",
-      "ty-21hldu-004-l - 81150-0e530",
-      "لايت هايلندر 22 -xle داخل مربع نيكل ايسر"
+      "ty-21hldu-004-l - 81150-0e530"
     ],
     "description_preview": ""
   },
@@ -14192,9 +14192,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205272",
     "slug": "لايت-هايلندر-22--xle-داخل-مربع-نيكل-ايمن",
     "search_terms": [
-      "ty-21hldu-004-r - 81110-0e530",
       "daisen-hy",
-      "لايت هايلندر 22 - xle داخل مربع نيكل ايمن"
+      "لايت هايلندر 22 - xle داخل مربع نيكل ايمن",
+      "ty-21hldu-004-r - 81110-0e530"
     ],
     "description_preview": ""
   },
@@ -14212,9 +14212,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205321",
     "slug": "compressor-assy,wmag-clutch-w204-07-w212-09-c230-c280-c300-07.-w212-e300-e350-e220cdi-e250cdi-09-كومبريسر-مارسيدس",
     "search_terms": [
+      "denso",
       "compressor assy,w/mag clutch w204  07/ w212 09 c230 c280 c300 07. w212 e300 e350 e220cdi e250cdi 09 كومبريسر مارسيدس\t",
-      "437100-6170",
-      "denso"
+      "437100-6170"
     ],
     "description_preview": ""
   },
@@ -14252,8 +14252,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205426",
     "slug": "راديتر-ماء-لاند-08--21-لكزس-3ur-1ur-2uz",
     "search_terms": [
-      "راديتر ماء لاند 08 - 21 لكزس 3ur 1ur 2uz",
       "denso",
+      "راديتر ماء لاند 08 - 21 لكزس 3ur 1ur 2uz",
       "drm50074"
     ],
     "description_preview": ""
@@ -14272,10 +14272,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205511",
     "slug": "كومبريسر-تبريد-كورلا-11--14-دبل-حساس-4-برغي-مع-كلج",
     "search_terms": [
-      "denso",
-      "447150-4840",
       "نظام التعليق",
-      "كومبريسر تبريد كورلا 11 - 14 دبل حساس 4 برغي مع كلج"
+      "كومبريسر تبريد كورلا 11 - 14 دبل حساس 4 برغي مع كلج",
+      "denso",
+      "447150-4840"
     ],
     "description_preview": ""
   },
@@ -14294,8 +14294,8 @@ window.search-index = [
     "slug": "compressor-assy,wmagnet-clutc-كومبريسر-تبريد-عكرب-كاز",
     "search_terms": [
       "437100-7910",
-      "denso",
-      "compressor assy,w/magnet clutc كومبريسر تبريد عكرب كاز "
+      "compressor assy,w/magnet clutc كومبريسر تبريد عكرب كاز ",
+      "denso"
     ],
     "description_preview": ""
   },
@@ -14333,9 +14333,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205591",
     "slug": "كومبريسر-تبريد-كورلا-3-برغي-08--13-خليجي-1600-1800-كهربائي-compressor-corolla-08-13-gcc-yaris-05-08-usa-with-pully-oes",
     "search_terms": [
-      "كومبريسر تبريد كورلا 3 برغي 08 - 13 خليجي 1600 1800 كهربائي compressor corolla 08-13 gcc yaris 05-08 usa with pully oes ",
       "denso",
-      "447150-2380"
+      "447150-2380",
+      "كومبريسر تبريد كورلا 3 برغي 08 - 13 خليجي 1600 1800 كهربائي compressor corolla 08-13 gcc yaris 05-08 usa with pully oes "
     ],
     "description_preview": ""
   },
@@ -14353,9 +14353,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205672",
     "slug": "كومبريسر-تبريد-كامري-18--رف-فور-19--مع-كلج-تك-حساس-اصبع-كلج",
     "search_terms": [
-      "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج",
       "denso",
-      "447150-4150"
+      "447150-4150",
+      "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج"
     ],
     "description_preview": ""
   },
@@ -14373,8 +14373,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205700",
     "slug": "compressor-wclutch-merecedes-benz-6pk-(w220)-(c215)-((w203)-(cl203)-(s203)-(r230)(w211)-(c209)-(s211)-(a209)-(w639)-(w639)(w639)-(c219)-(w906)-(w906)",
     "search_terms": [
-      "437100-6370",
       "compressor w/clutch merecedes-benz 6pk (w220) (c215) ((w203) (cl203) (s203) (r230)(w211) (c209) (s211) (a209) (w639) (w639)(w639) (c219)  (w906) (w906) ",
+      "437100-6370",
       "denso"
     ],
     "description_preview": ""
@@ -14393,9 +14393,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=205751",
     "slug": "شباك-لكزس-lx570--21",
     "search_terms": [
+      "gbt",
       "lx570 2021 grille",
-      "شباك لكزس lx570 - 21 ",
-      "gbt"
+      "شباك لكزس lx570 - 21 "
     ],
     "description_preview": ""
   },
@@ -14433,9 +14433,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=206032",
     "slug": "كومبريسر-تبريد-برادو-10-19-عام-تندرا-حجم-17",
     "search_terms": [
-      "كومبريسر تبريد برادو 10 -19  عام تندرا حجم 17",
       "denso",
-      "471-1011"
+      "471-1011",
+      "كومبريسر تبريد برادو 10 -19  عام تندرا حجم 17"
     ],
     "description_preview": ""
   },
@@ -14453,9 +14453,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=206041",
     "slug": "كومبريسر-تبريد-كامري-18--رف-فور-19--مع-كلج-تك-حساس-اصبع-كلج",
     "search_terms": [
-      "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج ",
+      "denso",
       "447150-7370",
-      "denso"
+      "كومبريسر تبريد كامري 18 - رف فور 19 - مع كلج تك حساس اصبع كلج "
     ],
     "description_preview": ""
   },
@@ -14493,8 +14493,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=206545",
     "slug": "كومبريسر-3-برغي-تبريد-لكزس-لاند-08--11-2uz-مع-كلج-2uz",
     "search_terms": [
-      "denso",
       "447160-0040",
+      "denso",
       "كومبريسر 3 برغي تبريد لكزس لاند 08 - 11 2uz مع كلج 2uz "
     ],
     "description_preview": ""
@@ -14513,9 +14513,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=206961",
     "slug": "بدي-كت-تحديث-لاند-22-23--من-g-و-gx-الى-gxr-vxr--مع-لحية-امامية-+-خلفية-لاند-23-كويتي-دون-شباك-لون-اسود",
     "search_terms": [
-      "daisen",
       "بدي كت تحديث لاند 22 23 - من g و gx الى gxr vxr - مع لحية امامية + خلفية لاند 23 كويتي دون شباك لون اسود ",
-      "2022 low to high kit - bk - w/o grille"
+      "2022 low to high kit - bk - w/o grille",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -14533,9 +14533,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=206982",
     "slug": "بدي-كت-تحديث-لاند-22-23--من-g-و-gx-الى-gxr-vxr--مع-لحية-امامية-+-خلفية-لاند-23-كويتي-دون-شباك-لولوي",
     "search_terms": [
-      "daisen",
+      "2022 low to high kit - pw - w/o grille ",
       "بدي كت تحديث لاند 22 23 - من g و gx الى gxr vxr - مع لحية امامية + خلفية لاند 23 كويتي دون شباك لولوي ",
-      "2022 low to high kit - pw - w/o grille "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -14553,8 +14553,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207069",
     "slug": "كت-تحديث-داخلي-لاند-من-08-الى-16--بيجي-شامل-استيرن+قبضة-كير-مع-صاج-دشبول-ضوئي",
     "search_terms": [
-      "كت تحديث داخلي لاند من 08 الى 16 - بيجي شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
       "daisen",
+      "كت تحديث داخلي لاند من 08 الى 16 - بيجي شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
       "fj200-16-inside upgrade kit biege",
       "ناقل الحركة"
     ],
@@ -14574,10 +14574,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207070",
     "slug": "كت-تحديث-داخلي-لاند-من-08-الى-16--اسود-شامل-استيرن+قبضة-كير-مع-صاج-دشبول-ضوئي",
     "search_terms": [
-      "كت تحديث داخلي لاند من 08 الى 16 - اسود شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
       "daisen",
-      "interior upgrade kit lc200 08 to 16 black",
-      "ناقل الحركة"
+      "كت تحديث داخلي لاند من 08 الى 16 - اسود شامل استيرن+قبضة كير مع صاج دشبول ضوئي ",
+      "ناقل الحركة",
+      "interior upgrade kit lc200 08 to 16 black"
     ],
     "description_preview": ""
   },
@@ -14595,9 +14595,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207219",
     "slug": "كفر-بلاستك-اسفل-الدعامية-الوسطية-برادو-24--ايسر",
     "search_terms": [
-      "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايسر ",
       "ty-24prd-027-l 53117-0g010",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايسر "
     ],
     "description_preview": ""
   },
@@ -14635,9 +14635,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207419",
     "slug": "quick-coupler-r1234yf-hp-red-ولف-شحن-عاز-1234-احمر-حار",
     "search_terms": [
+      " quick coupler r1234yf hp red ولف شحن عاز 1234 احمر حار ",
       "rk1463.s1",
-      "errecom",
-      " quick coupler r1234yf hp red ولف شحن عاز 1234 احمر حار "
+      "errecom"
     ],
     "description_preview": ""
   },
@@ -14655,9 +14655,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207420",
     "slug": "quick-coupler-r1234yf-lp-blue-ولف-شحن-عاز-1234-ازرق-بارد",
     "search_terms": [
+      " quick coupler r1234yf lp blue ولف شحن عاز 1234 ازرق بارد",
       "errecom",
-      "rk1464.s1",
-      " quick coupler r1234yf lp blue ولف شحن عاز 1234 ازرق بارد"
+      "rk1464.s1"
     ],
     "description_preview": ""
   },
@@ -14676,8 +14676,8 @@ window.search-index = [
     "slug": "quick-coupler-r134a-hp-red-ولف-شحن-غاز-134-احمر-حار",
     "search_terms": [
       "errecom",
-      "rk1376.s1",
-      " quick coupler r134a hp red ولف شحن غاز 134 احمر حار "
+      " quick coupler r134a hp red ولف شحن غاز 134 احمر حار ",
+      "rk1376.s1"
     ],
     "description_preview": ""
   },
@@ -14696,8 +14696,8 @@ window.search-index = [
     "slug": "quick-coupler-r134a-lp-blue-ولف-شحن-غاز-134-ازرق-بارد",
     "search_terms": [
       "errecom",
-      "rk1377.s1",
-      " quick coupler r134a lp blue ولف شحن غاز 134 ازرق بارد"
+      " quick coupler r134a lp blue ولف شحن غاز 134 ازرق بارد",
+      "rk1377.s1"
     ],
     "description_preview": ""
   },
@@ -14715,9 +14715,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207435",
     "slug": "aisin-bug-and-tar-remover-473mlx20pcs--بخاخ-تنظيف-القطران-و-البقع-473-مل-ايسن",
     "search_terms": [
-      "aisin bug & tar remover 473mlx20pcs - بخاخ تنظيف القطران و البقع 473 مل ايسن ",
       "adpaz-4009",
-      "aisin-lub"
+      "aisin-lub",
+      "aisin bug & tar remover 473mlx20pcs - بخاخ تنظيف القطران و البقع 473 مل ايسن "
     ],
     "description_preview": ""
   },
@@ -14735,9 +14735,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207436",
     "slug": "aisin-car-stain-remover-473mlx20pcs-بخاخ-مزيل-البقع-الصعبة-للهيكل-الخارجي-473-مل-ايسن",
     "search_terms": [
+      "aisin-lub",
       "adpaz-4015",
-      "aisin car stain remover 473mlx20pcs- بخاخ مزيل البقع الصعبة للهيكل الخارجي 473 مل ايسن ",
-      "aisin-lub"
+      "aisin car stain remover 473mlx20pcs- بخاخ مزيل البقع الصعبة للهيكل الخارجي 473 مل ايسن "
     ],
     "description_preview": ""
   },
@@ -14755,9 +14755,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207437",
     "slug": "aisin-car-wax-473mlx20--واكس-473-مل-ايسن",
     "search_terms": [
-      "aisin car wax 473mlx20 - واكس 473 مل ايسن",
       "aisin-lub",
-      "adpaz-4008"
+      "adpaz-4008",
+      "aisin car wax 473mlx20 - واكس 473 مل ايسن"
     ],
     "description_preview": ""
   },
@@ -14775,9 +14775,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207438",
     "slug": "aisin-interior-cleane-473mlx20pcs-بخاخ-منظف-داخلي-عام-473-مل-ايسن",
     "search_terms": [
-      "aisin interior cleane 473mlx20pcs- بخاخ منظف داخلي عام 473 مل ايسن ",
+      "aisin-lub",
       "adpaz-4011",
-      "aisin-lub"
+      "aisin interior cleane 473mlx20pcs- بخاخ منظف داخلي عام 473 مل ايسن "
     ],
     "description_preview": ""
   },
@@ -14795,9 +14795,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207439",
     "slug": "aisin-leather-conditioner-473mlx20pcs-بخاخ-بلسم-و-واقي-جلود-473-مل-ايسن",
     "search_terms": [
+      "aisin leather conditioner 473mlx20pcs- بخاخ بلسم و واقي جلود 473 مل ايسن ",
       "adpaz-4012",
-      "aisin-lub",
-      "aisin leather conditioner 473mlx20pcs- بخاخ بلسم و واقي جلود 473 مل ايسن "
+      "aisin-lub"
     ],
     "description_preview": ""
   },
@@ -14816,8 +14816,8 @@ window.search-index = [
     "slug": "aisin-odor-eliminator-250mlx20pcs-بخاخ-معطر-داخلي-250-ملم-ايسن",
     "search_terms": [
       "adpaz-4013",
-      "aisin-lub",
-      "aisin odor eliminator 250mlx20pcs- بخاخ معطر داخلي  250 ملم ايسن "
+      "aisin odor eliminator 250mlx20pcs- بخاخ معطر داخلي  250 ملم ايسن ",
+      "aisin-lub"
     ],
     "description_preview": ""
   },
@@ -14855,9 +14855,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207442",
     "slug": "aisin-tire-and-trim-coating-473mlx20pcs-بخاخ-ملمع-اطارات-و-قطع-سوداء-473-مل-ايسن",
     "search_terms": [
+      "adpaz-4010",
       "aisin-lub",
-      "aisin tire & trim coating 473mlx20pcs- بخاخ ملمع اطارات و قطع سوداء 473 مل ايسن",
-      "adpaz-4010"
+      "aisin tire & trim coating 473mlx20pcs- بخاخ ملمع اطارات و قطع سوداء 473 مل ايسن"
     ],
     "description_preview": ""
   },
@@ -14875,9 +14875,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207443",
     "slug": "aisin-wash-and-wax-1000mlx12pcs--شامبو-غسيل-و-واكس-1000مل-ايسن",
     "search_terms": [
-      "aisin wash & wax 1000mlx12pcs - شامبو غسيل و واكس 1000مل ايسن ",
       "adpaz-4005",
-      "aisin-lub"
+      "aisin-lub",
+      "aisin wash & wax 1000mlx12pcs - شامبو غسيل و واكس 1000مل ايسن "
     ],
     "description_preview": ""
   },
@@ -14895,9 +14895,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207445",
     "slug": "aisin-windshield-washer-fluid-60mlx160pcs-سائل-شامبو-ماء-زراكة-60-مل-ايسن",
     "search_terms": [
+      "aisin-lub",
       "aisin windshield washer fluid 60mlx160pcs- سائل شامبو ماء زراكة 60 مل ايسن ",
-      "adpaz-4014",
-      "aisin-lub"
+      "adpaz-4014"
     ],
     "description_preview": ""
   },
@@ -14916,8 +14916,8 @@ window.search-index = [
     "slug": "فج-بريك-خلفي-لاند-08--15-ايمن",
     "search_terms": [
       "a5r048",
-      "advics",
-      "فج بريك خلفي لاند 08 - 15 ايمن"
+      "فج بريك خلفي لاند 08 - 15 ايمن",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -14935,10 +14935,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207637",
     "slug": "دبل-امامي-سني-هندي--فيرسا-11--19-ايمن",
     "search_terms": [
-      "دبل امامي سني هندي - فيرسا 11 - 19 ايمن",
-      "sabn-0008",
+      "aisin",
       "نظام التعليق",
-      "aisin"
+      "sabn-0008",
+      "دبل امامي سني هندي - فيرسا 11 - 19 ايمن"
     ],
     "description_preview": ""
   },
@@ -14956,9 +14956,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207647",
     "slug": "oes-to-90919-01191-iridium-plug-sk20hr11-بلك-91-ليزري-لاند-فيكو-3ru-1gr-2tr",
     "search_terms": [
-      "oes to 90919-01191 iridium plug sk20hr11 بلك 91 ليزري لاند فيكو 3ru 1gr 2tr -\t",
       "denso",
-      "mw267600-0810"
+      "mw267600-0810",
+      "oes to 90919-01191 iridium plug sk20hr11 بلك 91 ليزري لاند فيكو 3ru 1gr 2tr -\t"
     ],
     "description_preview": ""
   },
@@ -14976,10 +14976,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207653",
     "slug": "دبل-امامي-كامري-07-11-خليجي-ايسر",
     "search_terms": [
-      "sabt-0037",
       "دبل امامي كامري 07-11  خليجي  ايسر ",
       "نظام التعليق",
-      "aisin"
+      "aisin",
+      "sabt-0037"
     ],
     "description_preview": ""
   },
@@ -15017,9 +15017,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207740",
     "slug": "راديتر-تبريد-لاند-ولكزس-22--عام",
     "search_terms": [
-      "راديتر تبريد لاند ولكزس 22 - عام ",
+      "446100-6340",
       "denso",
-      "446100-6340"
+      "راديتر تبريد لاند ولكزس 22 - عام "
     ],
     "description_preview": ""
   },
@@ -15037,8 +15037,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207836",
     "slug": "كفر-بلاستك-اسفل-الدعامية-الوسطية-برادو-24--ايمن",
     "search_terms": [
-      "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايمن ",
       "ty-24prd-027-r 53116-0g040",
+      "كفر بلاستك اسفل الدعامية الوسطية برادو 24 - ايمن ",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -15057,9 +15057,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207849",
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--مع-فتحة-عدسة-ايسر",
     "search_terms": [
+      "ty-24prd-032-l 52116-0g900",
       "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايسر ",
-      "daisen-hy",
-      "ty-24prd-032-l 52116-0g900"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -15077,10 +15077,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207908",
     "slug": "كويل-مجول-نيسان-عام-محرك-8-سلندر-5.7",
     "search_terms": [
-      "escn-0146",
-      "كويل مجول نيسان عام محرك 8 سلندر 5.7",
       "aisin",
-      "اجزاء المحرك"
+      "كويل مجول نيسان عام محرك 8 سلندر 5.7",
+      "اجزاء المحرك",
+      "escn-0146"
     ],
     "description_preview": ""
   },
@@ -15098,9 +15098,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207912",
     "slug": "فريز-تبريد-يارس",
     "search_terms": [
-      "447610-4790",
       "denso",
-      "فريز تبريد يارس"
+      "فريز تبريد يارس",
+      "447610-4790"
     ],
     "description_preview": ""
   },
@@ -15118,9 +15118,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207913",
     "slug": "بطانة-جاملغ-امامي-كورلا-20-خليجي-وارد-صين-ايسر",
     "search_terms": [
+      "ty-19crl-024-l",
       "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايسر",
-      "daisen-hy",
-      "ty-19crl-024-l"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -15138,8 +15138,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207914",
     "slug": "بطانة-جاملغ-امامي-كورلا-20-خليجي-وارد-صين-ايمن",
     "search_terms": [
-      "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايمن",
       "daisen-hy",
+      "بطانة جاملغ امامي كورلا 20 -خليجي وارد صين ايمن",
       "ty-19crl-024-r"
     ],
     "description_preview": ""
@@ -15158,9 +15158,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=207924",
     "slug": "دبل-خلفي-كامري-12--17-ايسر",
     "search_terms": [
-      "aisin",
-      "نظام التعليق",
       "sabt-0047",
+      "نظام التعليق",
+      "aisin",
       "دبل خلفي كامري 12 - 17 ايسر "
     ],
     "description_preview": ""
@@ -15200,8 +15200,8 @@ window.search-index = [
     "slug": "فريز-تبريد-خلفي-هايس-05-19-قمارة-عالية-cg-rr-evaporator-haice-05-19-hr",
     "search_terms": [
       "فريز تبريد خلفي هايس 05-19 قمارة عالية cg rr evaporator haice 05-19 hr",
-      "di261416-0250",
-      "denso"
+      "denso",
+      "di261416-0250"
     ],
     "description_preview": ""
   },
@@ -15219,9 +15219,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208061",
     "slug": "بخاخ-تبريد-ثلاجة-لاند-08--21-عام",
     "search_terms": [
-      "443310-1060",
       "denso",
-      "بخاخ تبريد ثلاجة لاند 08 - 21 عام"
+      "بخاخ تبريد ثلاجة لاند 08 - 21 عام",
+      "443310-1060"
     ],
     "description_preview": ""
   },
@@ -15262,8 +15262,8 @@ window.search-index = [
     "search_terms": [
       "aisin",
       "escn-0010",
-      "كويل مجول نيسان 6 سلندر محرك 3.5 عام التما مكسما بافندر",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "كويل مجول نيسان 6 سلندر محرك 3.5 عام التما مكسما بافندر"
     ],
     "description_preview": ""
   },
@@ -15281,9 +15281,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208196",
     "slug": "31410-60571-عنبار-كلج-رئيسي-بيكب-تويوتا-جمرة-3rz-عادي",
     "search_terms": [
+      "aisin",
       "cmt-073",
-      "31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3rz عادي",
-      "aisin"
+      "31410-60571 عنبار كلج رئيسي بيكب تويوتا جمرة 3rz عادي"
     ],
     "description_preview": ""
   },
@@ -15302,8 +15302,8 @@ window.search-index = [
     "slug": "كويل-مجول-التما-19--2.5",
     "search_terms": [
       "aisin",
-      "escn-0147",
-      "كويل مجول التما 19 - 2.5"
+      "كويل مجول التما 19 - 2.5",
+      "escn-0147"
     ],
     "description_preview": ""
   },
@@ -15321,10 +15321,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208296",
     "slug": "دبل-خلفي-بيكب-فيكو-2w",
     "search_terms": [
-      "aisin",
       "دبل خلفي بيكب فيكو 2w ",
       "نظام التعليق",
-      "sabt-0069"
+      "sabt-0069",
+      "aisin"
     ],
     "description_preview": ""
   },
@@ -15342,9 +15342,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208310",
     "slug": "تريشة-اسفل-الدعامية-امامية-كورلا-23--امريكي-le-كورلا-ليفان-صيني-23",
     "search_terms": [
+      "daisen-hy",
       "ty-23crlu-012 - ",
-      "تريشة اسفل الدعامية امامية كورلا 23 - امريكي le كورلا ليفان صيني 23 - ",
-      "daisen-hy"
+      "تريشة اسفل الدعامية امامية كورلا 23 - امريكي le كورلا ليفان صيني 23 - "
     ],
     "description_preview": ""
   },
@@ -15362,10 +15362,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208364",
     "slug": "دبل-امامي-لاند-08--21-6-سلندر",
     "search_terms": [
-      "aisin",
+      "sabt-0075",
       "نظام التعليق",
-      "دبل امامي لاند 08 - 21 6 سلندر ",
-      "sabt-0075"
+      "aisin",
+      "دبل امامي لاند 08 - 21 6 سلندر "
     ],
     "description_preview": ""
   },
@@ -15383,9 +15383,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208420",
     "slug": "راديتر-تبريد-كورلا-08--18-امريكي-خليجي-ac-condensor-corolla-08-18-w-drier",
     "search_terms": [
-      "tg447760-1330",
       "denso",
-      "راديتر تبريد كورلا 08 - 18 امريكي خليجي ac condensor corolla 08-18 w drier"
+      "راديتر تبريد كورلا 08 - 18 امريكي خليجي ac condensor corolla 08-18 w drier",
+      "tg447760-1330"
     ],
     "description_preview": ""
   },
@@ -15403,9 +15403,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208421",
     "slug": "كويل-مجول-رف-فور-كامري-18--21-a25a-كورلا-خليجي-امريكي-m20afks",
     "search_terms": [
+      "esct-0112",
       "aisin",
-      "كويل مجول رف فور كامري 18 - 21 a25a كورلا خليجي امريكي m20afks",
-      "esct-0112"
+      "كويل مجول رف فور كامري 18 - 21 a25a كورلا خليجي امريكي m20afks"
     ],
     "description_preview": ""
   },
@@ -15423,9 +15423,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208423",
     "slug": "فج-بريك-امامي-عكرب-08--16--ايسر",
     "search_terms": [
+      "a5r082",
       "فج بريك امامي عكرب 08 - 16 - ايسر",
-      "advics",
-      "a5r082"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -15444,8 +15444,8 @@ window.search-index = [
     "slug": "كويل-مجول-باترول-10--y62-ارمادا-17--vk56-انفينيتي-qx56-qx80",
     "search_terms": [
       "aisin",
-      "escn-0149",
-      "كويل مجول باترول 10 - y62 ارمادا 17 - vk56 انفينيتي qx56 qx80"
+      "كويل مجول باترول 10 - y62 ارمادا 17 - vk56 انفينيتي qx56 qx80",
+      "escn-0149"
     ],
     "description_preview": ""
   },
@@ -15463,9 +15463,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208487",
     "slug": "راديتر-ماء-برادو-10--22-1gr-اوتو",
     "search_terms": [
-      "221-9279",
+      "راديتر ماء برادو 10 - 22 1gr اوتو ",
       "denso",
-      "راديتر ماء برادو 10 - 22 1gr اوتو "
+      "221-9279"
     ],
     "description_preview": ""
   },
@@ -15483,10 +15483,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208501",
     "slug": "دبل-امامي-برادو-10--23",
     "search_terms": [
-      "sabt-0030",
-      "دبل امامي برادو 10 - 23 ",
+      "aisin",
       "نظام التعليق",
-      "aisin"
+      "sabt-0030",
+      "دبل امامي برادو 10 - 23 "
     ],
     "description_preview": ""
   },
@@ -15504,9 +15504,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208549",
     "slug": "dxe22h11c-بلك-نيسان-سنترا-19--oes-22401-6ca1c-22401-6ct1c-22401-6lb1c",
     "search_terms": [
-      "267700-96403r",
       "dxe22h11c بلك نيسان سنترا 19 -  oes 22401-6ca1c 22401-6ct1c 22401-6lb1c",
-      "denso"
+      "denso",
+      "267700-96403r"
     ],
     "description_preview": ""
   },
@@ -15524,9 +15524,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208558",
     "slug": "دبل-خلفي-فورجنر-05-15-ايمن-ايسر",
     "search_terms": [
-      "دبل خلفي فورجنر 05 -15 ايمن ايسر ",
       "sabt-0081",
       "نظام التعليق",
+      "دبل خلفي فورجنر 05 -15 ايمن ايسر ",
       "aisin"
     ],
     "description_preview": ""
@@ -15546,9 +15546,9 @@ window.search-index = [
     "slug": "دبل-امامي-سني-ياباني-01--08-ايمن",
     "search_terms": [
       "aisin",
-      "دبل امامي سني ياباني 01 - 08 ايمن",
       "نظام التعليق",
-      "sabn-0011"
+      "sabn-0011",
+      "دبل امامي سني ياباني 01 - 08 ايمن"
     ],
     "description_preview": ""
   },
@@ -15566,10 +15566,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208748",
     "slug": "دبل-خلفي-كورلا-بيكاتشو-01--07-ايمن-ايسر",
     "search_terms": [
-      "sabt-0034",
       "aisin",
       "نظام التعليق",
-      "دبل خلفي كورلا بيكاتشو 01 - 07 ايمن ايسر"
+      "دبل خلفي كورلا بيكاتشو 01 - 07 ايمن ايسر",
+      "sabt-0034"
     ],
     "description_preview": ""
   },
@@ -15587,9 +15587,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208832",
     "slug": "دعامية-امامية-كورلا-19--خليجي-لون-لولوي-070",
     "search_terms": [
-      "ty-19crl-009",
       "دعامية امامية كورلا 19 - خليجي لون لولوي 070 ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-19crl-009"
     ],
     "description_preview": ""
   },
@@ -15607,9 +15607,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208863",
     "slug": "انفيرتر-ماطور-واتربم-كورلا-19--2zrfxe-هايبرد-كورلا-ليفان-20-8zr",
     "search_terms": [
-      "wqt-003",
+      "aisin",
       "انفيرتر ماطور واتربم كورلا 19 - 2zrfxe هايبرد كورلا ليفان 20- 8zr",
-      "aisin"
+      "wqt-003"
     ],
     "description_preview": ""
   },
@@ -15647,10 +15647,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=208948",
     "slug": "دبل-خلفي-باترول-y61-سفاري-97--03",
     "search_terms": [
-      "sabn-0025",
+      "aisin",
       "نظام التعليق",
       "دبل خلفي باترول y61 سفاري 97 - 03 ",
-      "aisin"
+      "sabn-0025"
     ],
     "description_preview": ""
   },
@@ -15668,9 +15668,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209182",
     "slug": "comp-assy-wmg-clutch-yaris-echo-corolla-01-07-كومبريسر-تبريد-كورلا-بيكاتشو-03--07",
     "search_terms": [
-      "447180-9230",
+      "comp assy w/mg clutch yaris echo corolla 01-07 كومبريسر تبريد كورلا بيكاتشو 03 - 07",
       "denso",
-      "comp assy w/mg clutch yaris echo corolla 01-07 كومبريسر تبريد كورلا بيكاتشو 03 - 07"
+      "447180-9230"
     ],
     "description_preview": ""
   },
@@ -15688,8 +15688,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209198",
     "slug": "nro-شباك-رئيسي-كورلا-كروس-22-وارد-صيني--اسود-ty-22crl-008-b",
     "search_terms": [
-      "daisen-hy",
       "nro شباك رئيسي كورلا كروس 22 وارد صيني - اسود\tty-22crl-008-b",
+      "daisen-hy",
       "nro ty-22crl-008b"
     ],
     "description_preview": ""
@@ -15709,8 +15709,8 @@ window.search-index = [
     "slug": "كويل-مجول-باترول-10--y62-ارمادا-17--vk56-انفينيتي-qx56-qx80",
     "search_terms": [
       "aisin",
-      "escn-0148",
-      "كويل مجول باترول 10 - y62 ارمادا 17 - vk56 انفينيتي qx56 qx80"
+      "كويل مجول باترول 10 - y62 ارمادا 17 - vk56 انفينيتي qx56 qx80",
+      "escn-0148"
     ],
     "description_preview": ""
   },
@@ -15729,8 +15729,8 @@ window.search-index = [
     "slug": "فج-بريك-خلفي-لاند-08--15-ايسر",
     "search_terms": [
       "a5l048",
-      "advics",
-      "فج بريك خلفي لاند 08 - 15 ايسر"
+      "فج بريك خلفي لاند 08 - 15 ايسر",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -15748,9 +15748,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209419",
     "slug": "طخم-واشر-محرك-1gr-08-11-كامل",
     "search_terms": [
-      "اجزاء المحرك",
       "kp ",
       "طخم واشر محرك 1gr 08-11 كامل",
+      "اجزاء المحرك",
       "kfs101425 - 04111-31712 "
     ],
     "description_preview": ""
@@ -15769,9 +15769,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209422",
     "slug": "ماطور-لو-كير-فور-ويل-فيكو-ريفو",
     "search_terms": [
-      "ماطور لو كير فور ويل فيكو ريفو ",
-      "aat-018",
       "advics",
+      "aat-018",
+      "ماطور لو كير فور ويل فيكو ريفو ",
       "ناقل الحركة"
     ],
     "description_preview": ""
@@ -15790,10 +15790,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209423",
     "slug": "طخم-واشر-محرك-1hz--بدون-كازكيت",
     "search_terms": [
-      "اجزاء المحرك",
       "طخم واشر محرك 1hz - بدون كازكيت ",
       "kp ",
-      "kfs101180 - 04111-17011"
+      "kfs101180 - 04111-17011",
+      "اجزاء المحرك"
     ],
     "description_preview": ""
   },
@@ -15813,8 +15813,8 @@ window.search-index = [
     "search_terms": [
       "kp ",
       "طخم واشر محرك بافندر 4000  vk40",
-      "kfs201272 - 10101-ea225",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "kfs201272 - 10101-ea225"
     ],
     "description_preview": ""
   },
@@ -15833,8 +15833,8 @@ window.search-index = [
     "slug": "فج-بريك-امامي-عكرب-08--16--ايمن",
     "search_terms": [
       "فج بريك امامي عكرب 08 - 16 - ايمن",
-      "a5l082",
-      "advics"
+      "advics",
+      "a5l082"
     ],
     "description_preview": ""
   },
@@ -15852,9 +15852,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209545",
     "slug": "فلتر-كير-لاند-98-07-2uz",
     "search_terms": [
-      "massfit",
       "فلتر كير لاند 98-07  2uz",
       "35330-60040",
+      "massfit",
       "ناقل الحركة"
     ],
     "description_preview": ""
@@ -15895,9 +15895,9 @@ window.search-index = [
     "slug": "دبل-خلفي-بافندر-08--13-ايمن-ايسر",
     "search_terms": [
       "aisin",
-      "sabn-0006",
+      "نظام التعليق",
       "دبل خلفي بافندر 08 - 13 ايمن ايسر ",
-      "نظام التعليق"
+      "sabn-0006"
     ],
     "description_preview": ""
   },
@@ -15915,10 +15915,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209639",
     "slug": "كازكيت-محرك-1hz--1.15",
     "search_terms": [
-      "kp ",
-      "كازكيت محرك 1hz - 1.15",
       "ka103166 - 11115-17010-01",
-      "اجزاء المحرك"
+      "kp ",
+      "اجزاء المحرك",
+      "كازكيت محرك 1hz - 1.15"
     ],
     "description_preview": ""
   },
@@ -15936,10 +15936,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209640",
     "slug": "كازكيت-محرك-1hz--1.25",
     "search_terms": [
-      "اجزاء المحرك",
       "kp ",
+      "ka103167 - 11115-17010-03",
       "كازكيت محرك 1hz - 1.25",
-      "ka103167 - 11115-17010-03"
+      "اجزاء المحرك"
     ],
     "description_preview": ""
   },
@@ -15957,9 +15957,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209736",
     "slug": "فيت-بم-فورجنر-ريفو-16--1gr-6-سلندر",
     "search_terms": [
+      "denso",
       "291100-9070",
-      "فيت بم فورجنر ريفو 16 - 1gr 6 سلندر ",
-      "denso"
+      "فيت بم فورجنر ريفو 16 - 1gr 6 سلندر "
     ],
     "description_preview": ""
   },
@@ -15977,9 +15977,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209749",
     "slug": "دبل-امامي-فيكو-2w-ايسر",
     "search_terms": [
-      "aisin",
       "نظام التعليق",
       "sabt-0062",
+      "aisin",
       "دبل امامي فيكو 2w ايسر"
     ],
     "description_preview": ""
@@ -15998,9 +15998,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209773",
     "slug": "كفر-سبير-برادو-11--18--لون-اسود",
     "search_terms": [
-      "ty-10prd-012 black painted ",
+      "كفر سبير برادو 11 - 18 - لون اسود",
       "daisen-hy",
-      "كفر سبير برادو 11 - 18 - لون اسود"
+      "ty-10prd-012 black painted "
     ],
     "description_preview": ""
   },
@@ -16018,8 +16018,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=209818",
     "slug": "كلج-مروحة-كوستر-كاز-22--n04c",
     "search_terms": [
-      "كلج مروحة كوستر كاز 22 - n04c",
       "fcr-016",
+      "كلج مروحة كوستر كاز 22 - n04c",
       "aisin"
     ],
     "description_preview": ""
@@ -16039,9 +16039,9 @@ window.search-index = [
     "slug": "كويل-مجول-نيسان-4-سلندر-محرك-2.5-1.8-عام-سنترا-روج-التما-مورانو",
     "search_terms": [
       "كويل مجول نيسان 4 سلندر محرك 2.5  1.8 عام سنترا روج التما مورانو",
-      "escn-0033",
       "aisin",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "escn-0033"
     ],
     "description_preview": ""
   },
@@ -16060,9 +16060,9 @@ window.search-index = [
     "slug": "دبل-خلفي-كامري-12--17-ايمن",
     "search_terms": [
       "aisin",
+      "نظام التعليق",
       "دبل خلفي كامري 12 - 17 ايمن",
-      "sabt-0047r",
-      "نظام التعليق"
+      "sabt-0047r"
     ],
     "description_preview": ""
   },
@@ -16081,8 +16081,8 @@ window.search-index = [
     "slug": "لايت-كورلا-هايبرد-23--خليجي-صيني-كلوب-ليد-زنون-ايسر",
     "search_terms": [
       "daisen-hy",
-      "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايسر",
-      "ty-23crl-001-l 81150-02w80"
+      "ty-23crl-001-l 81150-02w80",
+      "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايسر"
     ],
     "description_preview": ""
   },
@@ -16100,9 +16100,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=210128",
     "slug": "لايت-كورلا-هايبرد-23--خليجي-صيني-كلوب-ليد-زنون-ايمن",
     "search_terms": [
-      "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايمن ",
+      "daisen-hy",
       "ty-23crl-001-r 81110-02w80",
-      "daisen-hy"
+      "لايت كورلا هايبرد 23 - خليجي صيني كلوب ليد زنون ايمن "
     ],
     "description_preview": ""
   },
@@ -16120,9 +16120,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=210129",
     "slug": "لايت-كورلا-23--ليفان-وارد-صين-ايسر",
     "search_terms": [
-      "ty-23lv-001-l",
+      "لايت كورلا 23 - ليفان وارد صين ايسر",
       "daisen-hy",
-      "لايت كورلا 23 - ليفان وارد صين ايسر"
+      "ty-23lv-001-l"
     ],
     "description_preview": ""
   },
@@ -16140,9 +16140,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=210130",
     "slug": "لايت-كورلا-23--ليفان-وارد-صين-ايمن",
     "search_terms": [
+      "daisen-hy",
       "لايت كورلا 23 - ليفان وارد صين ايمن",
-      "ty-23lv-001-r",
-      "daisen-hy"
+      "ty-23lv-001-r"
     ],
     "description_preview": ""
   },
@@ -16161,8 +16161,8 @@ window.search-index = [
     "slug": "دبل-خلفي-كامري-07--11-خليجي-ايسر",
     "search_terms": [
       "دبل خلفي كامري 07 - 11 خليجي ايسر",
-      "aisin",
       "نظام التعليق",
+      "aisin",
       "sabt-0039"
     ],
     "description_preview": ""
@@ -16181,10 +16181,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=210214",
     "slug": "دبل-خلفي-كورلا-08--18",
     "search_terms": [
-      "دبل خلفي كورلا 08 - 18",
       "aisin",
+      "نظام التعليق",
       "sabt-0031",
-      "نظام التعليق"
+      "دبل خلفي كورلا 08 - 18"
     ],
     "description_preview": ""
   },
@@ -16224,8 +16224,8 @@ window.search-index = [
     "slug": "كويل-مجول-لاند-لكزس-22-v35-رف-فور-هايلندر-كامري-18--a25fx-هايبرد",
     "search_terms": [
       "aisin",
-      "كويل مجول لاند لكزس 22- v35  رف فور هايلندر كامري 18 - a25fx هايبرد",
-      "esct-0155"
+      "esct-0155",
+      "كويل مجول لاند لكزس 22- v35  رف فور هايلندر كامري 18 - a25fx هايبرد"
     ],
     "description_preview": ""
   },
@@ -16244,8 +16244,8 @@ window.search-index = [
     "slug": "عنبار-كلج-اسفل-فيكو-2kd",
     "search_terms": [
       "aisin",
-      "عنبار كلج اسفل فيكو 2kd",
-      "crt-073"
+      "crt-073",
+      "عنبار كلج اسفل فيكو 2kd"
     ],
     "description_preview": ""
   },
@@ -16263,9 +16263,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=212764",
     "slug": "كويل-مجول-نيسان-22448-1kt0a",
     "search_terms": [
+      "escn-0150",
       "aisin",
-      "كويل مجول نيسان 22448-1kt0a",
-      "escn-0150"
+      "كويل مجول نيسان 22448-1kt0a"
     ],
     "description_preview": ""
   },
@@ -16283,10 +16283,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=212923",
     "slug": "دبل-امامي-ارمادا-05--انفينيتي-05--10-qx56",
     "search_terms": [
-      "sabn-0026",
-      "aisin",
+      "نظام التعليق",
       "دبل امامي ارمادا 05 - انفينيتي 05 - 10 qx56 ",
-      "نظام التعليق"
+      "sabn-0026",
+      "aisin"
     ],
     "description_preview": ""
   },
@@ -16304,10 +16304,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=212936",
     "slug": "دبل-امامي-سني-ياباني-01--08-ايسر",
     "search_terms": [
-      "sabn-0010",
-      "aisin",
       "دبل امامي سني ياباني 01 - 08 ايسر",
-      "نظام التعليق"
+      "نظام التعليق",
+      "aisin",
+      "sabn-0010"
     ],
     "description_preview": ""
   },
@@ -16345,8 +16345,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=212997",
     "slug": "دبل-امامي-كامري-07-11-خليجي-ايمن",
     "search_terms": [
-      "نظام التعليق",
       "aisin",
+      "نظام التعليق",
       "دبل امامي كامري 07-11 خليجي ايمن",
       "sabt-0038"
     ],
@@ -16368,8 +16368,8 @@ window.search-index = [
     "search_terms": [
       "aisin",
       "نظام التعليق",
-      "sabt-0067",
-      "دبل امامي كورلا 08 - 13 ايسر"
+      "دبل امامي كورلا 08 - 13 ايسر",
+      "sabt-0067"
     ],
     "description_preview": ""
   },
@@ -16389,8 +16389,8 @@ window.search-index = [
     "search_terms": [
       "aisin",
       "نظام التعليق",
-      "sabt-0084",
-      "دبل خلفي بيكب فيكو 4w "
+      "دبل خلفي بيكب فيكو 4w ",
+      "sabt-0084"
     ],
     "description_preview": ""
   },
@@ -16408,9 +16408,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=213205",
     "slug": "دبل-خلفي-برادو-07--09-اف-جي-07-10",
     "search_terms": [
-      "دبل خلفي برادو 07 - 09 اف جي 07 -10",
       "aisin",
       "نظام التعليق",
+      "دبل خلفي برادو 07 - 09 اف جي 07 -10",
       "sabt-0027"
     ],
     "description_preview": ""
@@ -16450,9 +16450,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256419",
     "slug": "دعامية-امامية-لاند-16--21-لون-لولوي",
     "search_terms": [
-      "daisen",
       "دعامية امامية لاند 16 - 21 لون لولوي ",
-      "16lc front bumper pw with net and fog lamp cover"
+      "16lc front bumper pw with net and fog lamp cover",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16470,9 +16470,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256501",
     "slug": "بروجكتر-كيكس-17--بيكب-نيسان-فرونتير-22-ليد",
     "search_terms": [
-      "dlaa",
+      "بروجكتر كيكس 17 - بيكب نيسان فرونتير 22 -ليد ",
       "ns332-led",
-      "بروجكتر كيكس 17 - بيكب نيسان فرونتير 22 -ليد "
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -16510,9 +16510,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256587",
     "slug": "دعامية-خلفية-باترول-20--y62-مع-سكن-لون-اسود",
     "search_terms": [
-      "daisen",
       "دعامية خلفية باترول 20 - y62 مع سكن لون اسود",
-      "rr bumper y62 2020 pw"
+      "rr bumper y62 2020 pw",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16530,9 +16530,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256588",
     "slug": "لحية-خلفية-لاند-22-23--لمتد-مع-فتحة-هوك-لولوي",
     "search_terms": [
+      "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لولوي ",
       "rr down soiler lc300 23- pw with hock hole",
-      "daisen",
-      "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لولوي "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16550,9 +16550,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256589",
     "slug": "لحية-خلفية-لاند-22-23--لمتد-مع-فتحة-هوك-لون-اسود",
     "search_terms": [
-      "daisen",
+      "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لون اسود",
       "rr down soiler lc300 23- bk with hock hole",
-      "لحية خلفية لاند 22- 23 - لمتد مع فتحة هوك لون اسود"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16570,9 +16570,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256592",
     "slug": "set-كفر-لحية-امامية-لاند-22-23-اسود-لمتد-ايمن-+-ايسر",
     "search_terms": [
-      "daisen",
       "set كفر لحية امامية لاند 22- 23- اسود لمتد ايمن + ايسر",
-      "22lc300 kuawit front foglamp cover"
+      "22lc300 kuawit front foglamp cover",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16591,8 +16591,8 @@ window.search-index = [
     "slug": "كفر-هوك-لحية-خلفية-لاند-22--23--لمتد-مع-فتحة-هوك-لون-اسود",
     "search_terms": [
       "كفر هوك لحية خلفية لاند 22 - 23 - لمتد مع فتحة هوك لون اسود",
-      "daisen",
-      "lc300 kuwait rr spoiler cover with hole bk"
+      "lc300 kuwait rr spoiler cover with hole bk",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16630,9 +16630,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256742",
     "slug": "لحية-امامية-لكزس-24-lx600-ايمن-+-ايسر-اسود",
     "search_terms": [
+      "gbt",
       "fr spoiler lx600 24- black",
-      "لحية امامية لكزس 24- lx600 ايمن + ايسر اسود",
-      "gbt"
+      "لحية امامية لكزس 24- lx600 ايمن + ايسر اسود"
     ],
     "description_preview": ""
   },
@@ -16670,9 +16670,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=256744",
     "slug": "لحية-خلفية-لكزس-24--lx600-f-sport-ايمن-+-ايسر-اسود",
     "search_terms": [
+      "gbt",
       "rr spoiler lx600 24- bk",
-      "لحية خلفية لكزس 24 - lx600 f-sport ايمن + ايسر اسود ",
-      "gbt"
+      "لحية خلفية لكزس 24 - lx600 f-sport ايمن + ايسر اسود "
     ],
     "description_preview": ""
   },
@@ -16691,8 +16691,8 @@ window.search-index = [
     "slug": "سيت-بستم-2zr-سايز-20",
     "search_terms": [
       "art",
-      "سيت بستم 2zr سايز 20",
-      "tog75wn-050"
+      "tog75wn-050",
+      "سيت بستم 2zr سايز 20"
     ],
     "description_preview": ""
   },
@@ -16710,9 +16710,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257262",
     "slug": "لايت-كورلا-14--16-امريكي-ايسر",
     "search_terms": [
+      "ty-14crlu-001-l",
       "لايت كورلا 14 - 16 امريكي ايسر",
-      "daisen-hy",
-      "ty-14crlu-001-l"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -16730,9 +16730,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257284",
     "slug": "جنح-لاند-23--ليد-استوب-لايت-لمتد-limited-لولوي",
     "search_terms": [
-      "جنح لاند 23 - ليد استوب لايت لمتد limited لولوي",
       "daisen",
-      "lc300- spoiler w led pw"
+      "lc300- spoiler w led pw",
+      "جنح لاند 23 - ليد استوب لايت لمتد limited لولوي"
     ],
     "description_preview": ""
   },
@@ -16750,9 +16750,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257285",
     "slug": "شباك-لاند-22-اسود-و-رصاصي",
     "search_terms": [
-      "daisen",
       "شباك لاند 22 اسود و رصاصي",
-      "front grille bk"
+      "front grille bk",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16770,8 +16770,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257291",
     "slug": "قاعدة-رقم-لاند-22--من-دون-تريشة-باب-بدي-اسود",
     "search_terms": [
-      " قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود",
       "rr lisence fil bk- down type lc300",
+      " قاعدة رقم لاند 22 - من دون تريشة باب بدي اسود",
       "daisen"
     ],
     "description_preview": ""
@@ -16790,9 +16790,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257296",
     "slug": "علامة-كتابة-لاند-كروزر-بالباب-الامامي-لاند-22",
     "search_terms": [
-      "land cruiser writing front doors lc300",
+      "daisen",
       "علامة كتابة لاند كروزر بالباب الامامي لاند 22 - ",
-      "daisen"
+      "land cruiser writing front doors lc300"
     ],
     "description_preview": ""
   },
@@ -16810,9 +16810,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257298",
     "slug": "علامة-بلاك-اديشن-black-edition-باب-بالبدي-الاسفل-لاند-22",
     "search_terms": [
-      "daisen",
       "black edition logo - lc300",
-      "علامة بلاك اديشن black edition باب بالبدي الاسفل لاند 22 - "
+      "علامة بلاك اديشن black edition باب بالبدي الاسفل لاند 22 - ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16830,9 +16830,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257306",
     "slug": "نيكل-حاجب-دعامية-امامية-برادو-24",
     "search_terms": [
-      "daisen",
       "fj250-bumper chrom",
-      "نيكل حاجب دعامية امامية برادو 24 - "
+      "نيكل حاجب دعامية امامية برادو 24 - ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16850,9 +16850,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257307",
     "slug": "ليد-دعامية-امامية-برادو-24",
     "search_terms": [
-      "daisen",
+      "ليد دعامية امامية برادو 24 - ",
       "fj250-drl",
-      "ليد دعامية امامية برادو 24 - "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16871,8 +16871,8 @@ window.search-index = [
     "slug": "قاعدة-رقم-برادو-24--رصاصي",
     "search_terms": [
       "قاعدة رقم برادو 24 - رصاصي",
-      "daisen",
-      "fj250-rr license silver"
+      "fj250-rr license silver",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16890,9 +16890,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257313",
     "slug": "قاعدة-رقم-برادو-24--اسود",
     "search_terms": [
+      "fj250-rr license black",
       " قاعدة رقم برادو 24 - اسود",
-      "daisen",
-      "fj250-rr license black"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16911,8 +16911,8 @@ window.search-index = [
     "slug": "قاعدة-رقم-برادو-24--نيكل",
     "search_terms": [
       "daisen",
-      "قاعدة رقم برادو 24 - نيكل",
-      "fj250-rr license chrome"
+      "fj250-rr license chrome",
+      "قاعدة رقم برادو 24 - نيكل"
     ],
     "description_preview": ""
   },
@@ -16930,9 +16930,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257316",
     "slug": "قاعدة-رقم-برادو-24--لولوي",
     "search_terms": [
-      "daisen",
       "fj250-rr license pw",
-      "قاعدة رقم برادو 24 - لولوي"
+      "قاعدة رقم برادو 24 - لولوي",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -16950,9 +16950,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257320",
     "slug": "كفر-داير-بك-لايت-برادو-18--اسود",
     "search_terms": [
+      "كفر داير بك لايت برادو 18 - اسود",
       "daisen",
-      "fj150-18 tail lamo cover bk",
-      "كفر داير بك لايت برادو 18 - اسود"
+      "fj150-18 tail lamo cover bk"
     ],
     "description_preview": ""
   },
@@ -16970,8 +16970,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257322",
     "slug": "كفر-داير-بك-لايت-برادو-18--لولوي",
     "search_terms": [
-      "كفر داير بك لايت برادو 18 - لولوي",
       "fj150-18 tail lamo cover pw",
+      "كفر داير بك لايت برادو 18 - لولوي",
       "daisen"
     ],
     "description_preview": ""
@@ -16990,9 +16990,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257326",
     "slug": "كفر-+-قاعدة-ماسكة-جوال-لاند-22",
     "search_terms": [
-      "daisen",
       "lc300-screen mobile holder",
-      " كفر + قاعدة ماسكة جوال لاند 22 - "
+      " كفر + قاعدة ماسكة جوال لاند 22 - ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -17010,9 +17010,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257329",
     "slug": "تريشة-قمارة-لاند-22--اسودset",
     "search_terms": [
-      "تريشة قمارة لاند 22 - اسودset",
+      "lc300 slim roof racks 22- black",
       "daisen",
-      "lc300 slim roof racks 22- black"
+      "تريشة قمارة لاند 22 - اسودset"
     ],
     "description_preview": ""
   },
@@ -17030,9 +17030,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257335",
     "slug": "دوسة-جانبية-برادو-24",
     "search_terms": [
-      "daisen",
+      "دوسة جانبية برادو 24 - ",
       "fj250-side step",
-      "دوسة جانبية برادو 24 - "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -17050,9 +17050,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257336",
     "slug": "تريشة-قمارة-برادو-24",
     "search_terms": [
+      "daisen",
       "fj250-roof racks",
-      "تريشة قمارة برادو 24 - ",
-      "daisen"
+      "تريشة قمارة برادو 24 - "
     ],
     "description_preview": ""
   },
@@ -17070,9 +17070,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257338",
     "slug": "جنح-برادو-24--لولوي",
     "search_terms": [
+      "fj250-spoiler pw",
       "جنح برادو 24 - لولوي",
-      "daisen",
-      "fj250-spoiler pw"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -17090,9 +17090,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257352",
     "slug": "بك-زاوية-كامري-21--امريكي-le-se-ايسر",
     "search_terms": [
+      "daisen-hy",
       "بك زاوية كامري 21 - امريكي le se ايسر ",
-      "ty-21cmu-007-l",
-      "daisen-hy"
+      "ty-21cmu-007-l"
     ],
     "description_preview": ""
   },
@@ -17110,9 +17110,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257353",
     "slug": "بك-زاوية-كامري-21--امريكي-le-se-ايمن",
     "search_terms": [
-      "daisen-hy",
       "بك زاوية كامري 21 - امريكي le se ايمن ",
-      "ty-21cmu-007-r"
+      "ty-21cmu-007-r",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -17130,9 +17130,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257354",
     "slug": "بك-صندوق-كامري-21--امريكي-le-se-ايسر",
     "search_terms": [
-      "بك صندوق كامري 21 - امريكي le se ايسر ",
       "daisen-hy",
-      "ty-21cmu-008-l"
+      "ty-21cmu-008-l",
+      "بك صندوق كامري 21 - امريكي le se ايسر "
     ],
     "description_preview": ""
   },
@@ -17150,9 +17150,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257355",
     "slug": "بك-صندوق-كامري-21--امريكي-le-se-ايمن",
     "search_terms": [
-      "ty-21cmu-008-r",
       "daisen-hy",
-      "بك صندوق كامري 21 - امريكي le se ايمن "
+      "بك صندوق كامري 21 - امريكي le se ايمن ",
+      "ty-21cmu-008-r"
     ],
     "description_preview": ""
   },
@@ -17170,9 +17170,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257356",
     "slug": "تريشة-اسفل-الدعامية-الخلفية-كورلا-ليفان-23--سبورت",
     "search_terms": [
+      "ty-21lv-004",
       "daisen-hy",
-      "تريشة اسفل الدعامية الخلفية كورلا ليفان 23 -  سبورت  ",
-      "ty-21lv-004"
+      "تريشة اسفل الدعامية الخلفية كورلا ليفان 23 -  سبورت  "
     ],
     "description_preview": ""
   },
@@ -17190,9 +17190,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257357",
     "slug": "كفر-فتحة-سحب-هوك-خلفي-لامع-كورلا-ليفان-23",
     "search_terms": [
-      "ty-21lv-009",
       "كفر فتحة سحب هوك خلفي لامع كورلا ليفان 23 -  ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-21lv-009"
     ],
     "description_preview": ""
   },
@@ -17211,8 +17211,8 @@ window.search-index = [
     "slug": "لايت-كامري-21--خليجي-le-داخل-عدسة+كلوب-بمحولة-داخلية-ايسر",
     "search_terms": [
       "لايت كامري 21 - خليجي le داخل عدسة+كلوب بمحولة داخلية ايسر",
-      "ty-22cmm-002a-l",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22cmm-002a-l"
     ],
     "description_preview": ""
   },
@@ -17230,9 +17230,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257363",
     "slug": "لايت-كامري-21--خليجي-le-داخل-عدسة+كلوب-بمحولة-داخلية-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-22cmm-002a-r",
-      "لايت كامري 21 - خليجي le داخل عدسة+كلوب بمحولة داخلية ايمن",
-      "daisen-hy"
+      "لايت كامري 21 - خليجي le داخل عدسة+كلوب بمحولة داخلية ايمن"
     ],
     "description_preview": ""
   },
@@ -17250,9 +17250,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257568",
     "slug": "باور-بريك-لاند-98-07",
     "search_terms": [
+      "باور بريك لاند 98-07",
       "bbt-058",
-      "advics",
-      "باور بريك لاند 98-07"
+      "advics"
     ],
     "description_preview": ""
   },
@@ -17270,9 +17270,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257570",
     "slug": "عنبار-بريك-عكرب-سيارة-بنز-خلفي-07-16",
     "search_terms": [
+      "عنبار بريك عكرب سيارة بنز خلفي 07-16",
       "advics",
-      "bmt-423",
-      "عنبار بريك عكرب سيارة بنز خلفي 07-16"
+      "bmt-423"
     ],
     "description_preview": ""
   },
@@ -17292,8 +17292,8 @@ window.search-index = [
     "search_terms": [
       "bmtp-a90",
       "عنبار بريك بيكب ريفو عام 16- كير عادي",
-      "advics",
-      "ناقل الحركة"
+      "ناقل الحركة",
+      "advics"
     ],
     "description_preview": ""
   },
@@ -17312,8 +17312,8 @@ window.search-index = [
     "slug": "عنبار-كلج-رئيسي-بيك-نيسان-شبوط-بخاخ-98-07",
     "search_terms": [
       "aisin",
-      "cmn-620a",
-      "عنبار كلج رئيسي بيك نيسان شبوط بخاخ 98-07"
+      "عنبار كلج رئيسي بيك نيسان شبوط بخاخ 98-07",
+      "cmn-620a"
     ],
     "description_preview": ""
   },
@@ -17331,9 +17331,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257588",
     "slug": "فافونة-كلج-لاند-1ur",
     "search_terms": [
-      "fbt-015",
       "aisin",
-      "فافونة كلج لاند 1ur"
+      "فافونة كلج لاند 1ur",
+      "fbt-015"
     ],
     "description_preview": ""
   },
@@ -17352,8 +17352,8 @@ window.search-index = [
     "slug": "حساس-دهن-نيسان",
     "search_terms": [
       "aisin",
-      "حساس دهن نيسان ",
-      "ocv-001"
+      "ocv-001",
+      "حساس دهن نيسان "
     ],
     "description_preview": ""
   },
@@ -17371,9 +17371,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257600",
     "slug": "واتربم-ريفو-15-22-2gd",
     "search_terms": [
-      "wpt-202",
       "aisin",
-      "واتربم ريفو 15-22 2gd"
+      "واتربم ريفو 15-22 2gd",
+      "wpt-202"
     ],
     "description_preview": ""
   },
@@ -17391,9 +17391,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257829",
     "slug": "لايت-كراند-هايلندر-24-امريكي-le-ايسر",
     "search_terms": [
+      "ty-23gh-001-l-81150-0e760",
       "daisen-hy",
-      "لايت كراند هايلندر 24- امريكي le ايسر ",
-      "ty-23gh-001-l-81150-0e760"
+      "لايت كراند هايلندر 24- امريكي le ايسر "
     ],
     "description_preview": ""
   },
@@ -17411,9 +17411,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257830",
     "slug": "لايت-كراند-هايلندر-24-امريكي-le-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-23gh-001-r-81110-0e760",
-      "لايت كراند هايلندر 24- امريكي le ايمن",
-      "daisen-hy"
+      "لايت كراند هايلندر 24- امريكي le ايمن"
     ],
     "description_preview": ""
   },
@@ -17432,8 +17432,8 @@ window.search-index = [
     "slug": "لايت-كراند-هايلندر-24-امريكي-se-ايسر",
     "search_terms": [
       "daisen-hy",
-      "لايت كراند هايلندر 24- امريكي se ايسر",
-      "ty-23gh-002-l-81150-0e770"
+      "ty-23gh-002-l-81150-0e770",
+      "لايت كراند هايلندر 24- امريكي se ايسر"
     ],
     "description_preview": ""
   },
@@ -17451,9 +17451,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257832",
     "slug": "لايت-كراند-هايلندر-24-امريكي-se-ايمن",
     "search_terms": [
-      "daisen-hy",
+      "ty-23gh-002-r-81110-0e770",
       "لايت كراند هايلندر 24- امريكي se ايمن",
-      "ty-23gh-002-r-81110-0e770"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -17471,8 +17471,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257837",
     "slug": "كفر-بروجكتر-بدون-فتحة-كراند-هايلندر-24-امريكي-ايسر",
     "search_terms": [
-      "daisen-hy",
       "كفر بروجكتر بدون فتحة  كراند هايلندر 24- امريكي ايسر",
+      "daisen-hy",
       "ty-23gh-005-l-52128-0e240"
     ],
     "description_preview": ""
@@ -17492,8 +17492,8 @@ window.search-index = [
     "slug": "كفر-بروجكتر-بدون-فتحة-كراند-هايلندر-24-امريكي-ايمن",
     "search_terms": [
       "كفر بروجكتر بدون فتحة  كراند هايلندر 24- امريكي ايمن",
-      "ty-23gh-005-r-52127-0e240",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-23gh-005-r-52127-0e240"
     ],
     "description_preview": ""
   },
@@ -17511,9 +17511,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257839",
     "slug": "كفر-بروجكتر-مع-فتحة-كراند-هايلندر-24-امريكي-ايسر",
     "search_terms": [
+      "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايسر",
       "daisen-hy",
-      "ty-23gh-006-l-52128-0e250",
-      "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايسر"
+      "ty-23gh-006-l-52128-0e250"
     ],
     "description_preview": ""
   },
@@ -17531,9 +17531,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257840",
     "slug": "كفر-بروجكتر-مع-فتحة-كراند-هايلندر-24-امريكي-ايمن",
     "search_terms": [
-      "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايمن",
+      "daisen-hy",
       "ty-23gh-006-r-52127-0e250",
-      "daisen-hy"
+      "كفر بروجكتر مع فتحة  كراند هايلندر 24- امريكي ايمن"
     ],
     "description_preview": ""
   },
@@ -17552,8 +17552,8 @@ window.search-index = [
     "slug": "تريشة-لحية-دعامية-امامي-كراند-هايلندر-24-امريكي-le",
     "search_terms": [
       "تريشة لحية دعامية امامي كراند هايلندر 24- امريكي le ",
-      "daisen-hy",
-      "ty-23gh-009-52129-0e080"
+      "ty-23gh-009-52129-0e080",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -17571,8 +17571,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257844",
     "slug": "تريشة-لحية-دعامية-امامي-كراند-هايلندر-24-امريكي-se",
     "search_terms": [
-      "ty-23gh-010-52129-0e090",
       "تريشة لحية دعامية امامي كراند هايلندر 24- امريكي se",
+      "ty-23gh-010-52129-0e090",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -17591,9 +17591,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257845",
     "slug": "دعامية-امامية-كراند-هايلندر-24-امريكي",
     "search_terms": [
-      "ty-23gh-011-52119-0e971",
+      " دعامية امامية كراند هايلندر 24- امريكي",
       "daisen-hy",
-      " دعامية امامية كراند هايلندر 24- امريكي"
+      "ty-23gh-011-52119-0e971"
     ],
     "description_preview": ""
   },
@@ -17611,8 +17611,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257846",
     "slug": "شباك-رئيسي-اعلى-كراند-هايلندر-24-امريكي",
     "search_terms": [
-      "ty-23gh-012-53111-0e250",
       "شباك رئيسي اعلى كراند هايلندر 24- امريكي ",
+      "ty-23gh-012-53111-0e250",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -17631,9 +17631,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257847",
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-بدون-فتحة-كامرا-وحساس",
     "search_terms": [
-      "ty-23gh-013-53112-0e330",
+      "daisen-hy",
       "شباك دعامية اسفل كراند هايلندر 24- امريكي بدون فتحة كامرا وحساس",
-      "daisen-hy"
+      "ty-23gh-013-53112-0e330"
     ],
     "description_preview": ""
   },
@@ -17671,9 +17671,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257849",
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-بدون-فتحة-كامرا-مع-فتحة-حساس-اسود",
     "search_terms": [
-      "ty-23gh-014-a-53112-0e340",
+      "daisen-hy",
       "شباك دعامية اسفل كراند هايلندر 24- امريكي بدون  فتحة كامرا  مع  فتحة حساس اسود",
-      "daisen-hy"
+      "ty-23gh-014-a-53112-0e340"
     ],
     "description_preview": ""
   },
@@ -17692,8 +17692,8 @@ window.search-index = [
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-مع-فتحة-كامرا-مع-فتحة-حساس",
     "search_terms": [
       "شباك دعامية اسفل كراند هايلندر 24- امريكي مع فتحة كامرا  مع  فتحة حساس ",
-      "ty-23gh-014-b-53112-0e360",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-23gh-014-b-53112-0e360"
     ],
     "description_preview": ""
   },
@@ -17711,9 +17711,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257851",
     "slug": "شباك-دعامية-اسفل-كراند-هايلندر-24-امريكي-مع-فتحة-كامرا-وحساس-اسود",
     "search_terms": [
-      "شباك دعامية اسفل كراند هايلندر 24- امريكي مع  فتحة كامرا وحساس اسود",
+      "daisen-hy",
       "ty-23gh-014-c-53112-0e350",
-      "daisen-hy"
+      "شباك دعامية اسفل كراند هايلندر 24- امريكي مع  فتحة كامرا وحساس اسود"
     ],
     "description_preview": ""
   },
@@ -17751,9 +17751,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257853",
     "slug": "نيكل-حاجب-دعامية-امامية-تحت-لايت-كراند-هايلندر24--ايمن",
     "search_terms": [
+      "ty-23gh-016-53123-0e290",
       "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24 - ايمن ",
-      "daisen-hy",
-      "ty-23gh-016-53123-0e290"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -17771,9 +17771,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257854",
     "slug": "نيكل-حاجب-دعامية-امامية-تحت-لايت-كراند-هايلندر24-ايسر",
     "search_terms": [
-      "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24- ايسر ",
       "ty-23gh-017-53124-0e140",
-      "daisen-hy"
+      "daisen-hy",
+      "نيكل حاجب دعامية امامية تحت لايت  كراند هايلندر24- ايسر "
     ],
     "description_preview": ""
   },
@@ -17791,8 +17791,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257861",
     "slug": "تريشة-لحية-دعامية-امامية-كراند-هايبندر-24-امريكي-وسطية-سلفر",
     "search_terms": [
-      "daisen-hy",
       " تريشة  لحية دعامية امامية كراند هايبندر 24- امريكي  وسطية سلفر ",
+      "daisen-hy",
       "ty-23gh-022-52711-0e210"
     ],
     "description_preview": ""
@@ -17811,8 +17811,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257864",
     "slug": "عدسة-بروجكتر-كراند-هايلندر-24-امريكي-ايسر",
     "search_terms": [
-      "عدسة بروجكتر كراند هايلندر 24- امريكي ايسر ",
       "ty-23gh-024-l",
+      "عدسة بروجكتر كراند هايلندر 24- امريكي ايسر ",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -17831,9 +17831,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=257865",
     "slug": "عدسة-بروجكتر-كراند-هايلندر-24-امريكي-ايمن",
     "search_terms": [
-      "عدسة بروجكتر كراند هايلندر 24- امريكي ايمن ",
+      "ty-23gh-024-r",
       "daisen-hy",
-      "ty-23gh-024-r"
+      "عدسة بروجكتر كراند هايلندر 24- امريكي ايمن "
     ],
     "description_preview": ""
   },
@@ -17871,8 +17871,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258200",
     "slug": "بطانة-جاملغ-امامي-لاند-08-15-ايسر",
     "search_terms": [
-      "daisen-hy",
       "ty-07lc-015-l",
+      "daisen-hy",
       "بطانة جاملغ امامي لاند  08-15 ايسر"
     ],
     "description_preview": ""
@@ -17891,9 +17891,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258201",
     "slug": "بطانة-جاملغ-امامي-لاند-08-15-ايمن",
     "search_terms": [
-      "بطانة جاملغ امامي لاند  08-15 ايمن",
+      "ty-07lc-015-r",
       "daisen-hy",
-      "ty-07lc-015-r"
+      "بطانة جاملغ امامي لاند  08-15 ايمن"
     ],
     "description_preview": ""
   },
@@ -17912,8 +17912,8 @@ window.search-index = [
     "slug": "بطانة-درع-اسفل-دعامية-امامي-كامري-25-امريكي",
     "search_terms": [
       "daisen-hy",
-      "بطانة درع اسفل دعامية امامي كامري 25- امريكي ",
-      "ty-25cmu-030"
+      "ty-25cmu-030",
+      "بطانة درع اسفل دعامية امامي كامري 25- امريكي "
     ],
     "description_preview": ""
   },
@@ -17931,9 +17931,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258207",
     "slug": "بك-زاوية-فرونتلاندر-23-وارد-صيني-سكن-اشارة-ابيض-صغير-ايسر",
     "search_terms": [
-      "ty-22fld-005-l",
       "daisen-hy",
-      "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض صغير ايسر"
+      "بك زاوية فرونتلاندر 23- وارد صيني سكن اشارة ابيض صغير ايسر",
+      "ty-22fld-005-l"
     ],
     "description_preview": ""
   },
@@ -18012,8 +18012,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-25-امريكي-lese-ايسر",
     "search_terms": [
       "بك زاوية كامري 25- امريكي le/se ايسر",
-      "ty-25cmu-003-l-81560-aq010",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-25cmu-003-l-81560-aq010"
     ],
     "description_preview": ""
   },
@@ -18032,8 +18032,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-25-امريكي-lese-ايمن",
     "search_terms": [
       "بك زاوية كامري 25- امريكي le/se ايمن",
-      "ty-25cmu-003-r-81550-aq010",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-25cmu-003-r-81550-aq010"
     ],
     "description_preview": ""
   },
@@ -18051,9 +18051,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258219",
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-عالية-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-24cm-003-l",
-      "بك زاوية كامري 25- وارد صيني مواصفات عالية ايسر",
-      "daisen-hy"
+      "بك زاوية كامري 25- وارد صيني مواصفات عالية ايسر"
     ],
     "description_preview": ""
   },
@@ -18072,8 +18072,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-ناصية-ايسر",
     "search_terms": [
       "daisen-hy",
-      "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايسر",
-      "ty-24cm-004-l"
+      "ty-24cm-004-l",
+      "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايسر"
     ],
     "description_preview": ""
   },
@@ -18092,8 +18092,8 @@ window.search-index = [
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-عالية-ايمن",
     "search_terms": [
       "daisen-hy",
-      "ty-24cm-003-r",
-      "بك زاوية كامري 25- وارد صيني مواصفات عالية ايمن"
+      "بك زاوية كامري 25- وارد صيني مواصفات عالية ايمن",
+      "ty-24cm-003-r"
     ],
     "description_preview": ""
   },
@@ -18111,8 +18111,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258222",
     "slug": "بك-زاوية-كامري-25-وارد-صيني-مواصفات-ناصية-ايمن",
     "search_terms": [
-      "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايمن",
       "daisen-hy",
+      "بك زاوية كامري 25- وارد صيني مواصفات ناصية ايمن",
       "ty-24cm-004-r"
     ],
     "description_preview": ""
@@ -18131,9 +18131,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258225",
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-تك-كلوب-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-22fld-006-l",
-      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايسر",
-      "daisen-hy"
+      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايسر"
     ],
     "description_preview": ""
   },
@@ -18152,8 +18152,8 @@ window.search-index = [
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-تك-كلوب-ايمن",
     "search_terms": [
       "daisen-hy",
-      "ty-22fld-006-r",
-      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايمن"
+      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك تك كلوب ايمن",
+      "ty-22fld-006-r"
     ],
     "description_preview": ""
   },
@@ -18171,10 +18171,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258227",
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-دبل-كلوب-ايسر",
     "search_terms": [
-      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايسر",
       "نظام التعليق",
+      "daisen-hy",
       "ty-22fld-004-l",
-      "daisen-hy"
+      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايسر"
     ],
     "description_preview": ""
   },
@@ -18192,10 +18192,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258228",
     "slug": "بك-صندوق-فرونتلاندر-23-وارد-صيني-سكن-بك-دبل-كلوب-ايمن",
     "search_terms": [
-      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايمن",
+      "ty-22fld-004-r",
       "نظام التعليق",
       "daisen-hy",
-      "ty-22fld-004-r"
+      "بك صندوق فرونتلاندر 23- وارد صيني سكن بك دبل كلوب ايمن"
     ],
     "description_preview": ""
   },
@@ -18213,9 +18213,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258229",
     "slug": "بك-صندوق-كامري-25-امريكي-lese-ايسر",
     "search_terms": [
-      "بك صندوق كامري 25- امريكي le/se ايسر ",
       "daisen-hy",
-      "ty-25cmu-004-l-81590-aq010"
+      "ty-25cmu-004-l-81590-aq010",
+      "بك صندوق كامري 25- امريكي le/se ايسر "
     ],
     "description_preview": ""
   },
@@ -18234,8 +18234,8 @@ window.search-index = [
     "slug": "بك-صندوق-كامري-25-امريكي-lese-ايمن",
     "search_terms": [
       "ty-25cmu-004-r-81580-aq010",
-      "بك صندوق كامري 25- امريكي le/se ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "بك صندوق كامري 25- امريكي le/se ايمن"
     ],
     "description_preview": ""
   },
@@ -18253,9 +18253,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258231",
     "slug": "بك-صندوق-كامري-25-امريكي-xlexse-ايسر",
     "search_terms": [
-      "بك صندوق كامري 25- امريكي xle/xse ايسر",
       "daisen-hy",
-      "ty-25cmu-006-l     "
+      "ty-25cmu-006-l     ",
+      "بك صندوق كامري 25- امريكي xle/xse ايسر"
     ],
     "description_preview": ""
   },
@@ -18274,8 +18274,8 @@ window.search-index = [
     "slug": "بك-صندوق-كامري-25-امريكي-xlexse-ايمن",
     "search_terms": [
       "daisen-hy",
-      "بك صندوق كامري 25- امريكي xle/xse ايمن",
-      "ty-25cmu-006-r"
+      "ty-25cmu-006-r",
+      "بك صندوق كامري 25- امريكي xle/xse ايمن"
     ],
     "description_preview": ""
   },
@@ -18293,9 +18293,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258235",
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-عالية-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-24cm-005-l",
-      "بك صندوق كامري 25- وارد صيني مواصفات عالية ايسر",
-      "daisen-hy"
+      "بك صندوق كامري 25- وارد صيني مواصفات عالية ايسر"
     ],
     "description_preview": ""
   },
@@ -18313,9 +18313,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258236",
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-ناصية-ايسر",
     "search_terms": [
-      "ty-24cm-006-l",
+      "daisen-hy",
       "بك صندوق كامري 25- وارد صيني مواصفات ناصية  ايسر",
-      "daisen-hy"
+      "ty-24cm-006-l"
     ],
     "description_preview": ""
   },
@@ -18333,8 +18333,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258237",
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-عالية-ايمن",
     "search_terms": [
-      "ty-24cm-005-r",
       "daisen-hy",
+      "ty-24cm-005-r",
       "بك صندوق كامري 25- وارد صيني مواصفات عالية ايمن"
     ],
     "description_preview": ""
@@ -18353,9 +18353,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258238",
     "slug": "بك-صندوق-كامري-25-وارد-صيني-مواصفات-ناصية-ايمن",
     "search_terms": [
+      "daisen-hy",
       "بك صندوق كامري 25- وارد صيني مواصفات ناصية ايمن",
-      "ty-24cm-006-r",
-      "daisen-hy"
+      "ty-24cm-006-r"
     ],
     "description_preview": ""
   },
@@ -18374,8 +18374,8 @@ window.search-index = [
     "slug": "بك-لايت-لكزس-برادو-ابيض-18-23-ايسر",
     "search_terms": [
       "lx-20gx-004-u-l",
-      "daisen-hy",
-      "بك لايت لكزس برادو ابيض 18-23 ايسر"
+      "بك لايت لكزس برادو ابيض 18-23 ايسر",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -18393,8 +18393,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258240",
     "slug": "بك-لايت-لكزس-برادو-ابيض-18-23-ايمن",
     "search_terms": [
-      "lx-20gx-004-u-r",
       "بك لايت لكزس برادو ابيض 18-23 ايمن",
+      "lx-20gx-004-u-r",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -18413,8 +18413,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258241",
     "slug": "بك-لايت-لكزس-برادو-احمر-18-23-ايسر",
     "search_terms": [
-      "lx-20gx-003-u-l",
       "daisen-hy",
+      "lx-20gx-003-u-l",
       "بك لايت لكزس برادو احمر 18-23 ايسر"
     ],
     "description_preview": ""
@@ -18474,8 +18474,8 @@ window.search-index = [
     "slug": "تريشة-باب-امامي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "daisen-hy",
-      "تريشة باب امامي فرونتلاندر 23- ايمن",
-      "ty-22fld-021-r"
+      "ty-22fld-021-r",
+      "تريشة باب امامي فرونتلاندر 23- ايمن"
     ],
     "description_preview": ""
   },
@@ -18493,9 +18493,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258245",
     "slug": "تريشة-باب-خلفي-فرونتلاندر-23-ايسر",
     "search_terms": [
-      "daisen-hy",
+      "ty-22fld-022-l",
       "تريشة باب خلفي فرونتلاندر 23- ايسر",
-      "ty-22fld-022-l"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -18513,9 +18513,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258246",
     "slug": "تريشة-باب-خلفي-فرونتلاندر-23-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-22fld-022-r",
-      "تريشة باب خلفي فرونتلاندر 23- ايمن"
+      "تريشة باب خلفي فرونتلاندر 23- ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -18533,9 +18533,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258247",
     "slug": "تريشة-شباك-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
-      "ty-22fld-016",
+      "تريشة شباك فرونتلاندر 23- وارد صيني",
       "daisen-hy",
-      "تريشة شباك فرونتلاندر 23- وارد صيني"
+      "ty-22fld-016"
     ],
     "description_preview": ""
   },
@@ -18574,8 +18574,8 @@ window.search-index = [
     "slug": "تريشة-لحية-دعامية-خلفي-كامري-25-صيني-خليجي-امريكي",
     "search_terms": [
       "ty-24cm-030 ty-25cmu-024 57628-06190",
-      "تريشة لحية دعامية خلفي كامري 25- صيني خليجي امريكي ",
-      "daisen-hy"
+      "daisen-hy",
+      "تريشة لحية دعامية خلفي كامري 25- صيني خليجي امريكي "
     ],
     "description_preview": ""
   },
@@ -18593,9 +18593,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258250",
     "slug": "nro-تريشة-لحية-دعامية-خلفية-كامري-25-امريكي-xle",
     "search_terms": [
+      "nro تريشة لحية دعامية خلفية كامري 25- امريكي xle",
       "daisen-hy",
-      "nro ty-25cmu-024",
-      "nro تريشة لحية دعامية خلفية كامري 25- امريكي xle"
+      "nro ty-25cmu-024"
     ],
     "description_preview": ""
   },
@@ -18613,9 +18613,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258251",
     "slug": "تريشة-مسطرة-دعامية-خلفي-فرونتلاندر-23",
     "search_terms": [
-      "تريشة مسطرة دعامية خلفي فرونتلاندر 23-",
+      "daisen-hy",
       "ty-22fld-013",
-      "daisen-hy"
+      "تريشة مسطرة دعامية خلفي فرونتلاندر 23-"
     ],
     "description_preview": ""
   },
@@ -18633,9 +18633,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258252",
     "slug": "حاجب-دعامية-خلفي-فرونتلاندر-23-ايسر",
     "search_terms": [
+      "ty-22fld-012-l",
       "حاجب دعامية خلفي فرونتلاندر 23- ايسر",
-      "daisen-hy",
-      "ty-22fld-012-l"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -18673,9 +18673,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258254",
     "slug": "خرطوم-كفر-شوتة-بدنة-كورلا-كروس-22-وارد-صيني",
     "search_terms": [
-      "ty-22crls-003-17752-f2120",
       "خرطوم كفر شوتة بدنة كورلا كروس 22- وارد صيني ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22crls-003-17752-f2120"
     ],
     "description_preview": ""
   },
@@ -18693,8 +18693,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258255",
     "slug": "دعامية-امامية-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
-      "daisen-hy",
       "دعامية امامية فرونتلاندر 23- وارد صيني",
+      "daisen-hy",
       "ty-22fld-007"
     ],
     "description_preview": ""
@@ -18753,9 +18753,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258258",
     "slug": "دعامية-امامية-كامري-25-صيني-خليجي",
     "search_terms": [
-      "دعامية امامية كامري 25- صيني خليجي ",
       "ty-24cm-007-52119-06j80",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية امامية كامري 25- صيني خليجي "
     ],
     "description_preview": ""
   },
@@ -18773,8 +18773,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258259",
     "slug": "دعامية-خلفي-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
-      "daisen-hy",
       "ty-22fld-008",
+      "daisen-hy",
       "دعامية خلفي فرونتلاندر 23- وارد صيني"
     ],
     "description_preview": ""
@@ -18793,9 +18793,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258260",
     "slug": "دعامية-خلفية-كامري-25-امريكي-خليجي-صيني",
     "search_terms": [
+      "دعامية خلفية كامري 25- امريكي خليجي صيني",
       "ty-25cmu-009  sm ty-24cm-029-52159-aq900",
-      "daisen-hy",
-      "دعامية خلفية كامري 25- امريكي خليجي صيني"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -18813,9 +18813,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258261",
     "slug": "nro-same-as-25cmu-009-دعامية-خلفية-كامري-25-صيني-خليجي",
     "search_terms": [
-      "nro same as 25cmu-009 دعامية خلفية كامري 25- صيني خليجي",
+      "daisen-hy",
       "nro ty-24cm-029  52159-06a40",
-      "daisen-hy"
+      "nro same as 25cmu-009 دعامية خلفية كامري 25- صيني خليجي"
     ],
     "description_preview": ""
   },
@@ -18833,9 +18833,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258262",
     "slug": "شباك-دعامية-امامي-فرونتلاندر-23-وارد-صيني",
     "search_terms": [
-      "شباك دعامية امامي فرونتلاندر 23- وارد صيني",
+      "daisen-hy",
       "ty-22fld-009",
-      "daisen-hy"
+      "شباك دعامية امامي فرونتلاندر 23- وارد صيني"
     ],
     "description_preview": ""
   },
@@ -18854,8 +18854,8 @@ window.search-index = [
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-xle",
     "search_terms": [
       "daisen-hy",
-      "ty-25cmu-015",
-      "شباك دعامية امامية  اسفل كامري  25- امريكي xle"
+      "شباك دعامية امامية  اسفل كامري  25- امريكي xle",
+      "ty-25cmu-015"
     ],
     "description_preview": ""
   },
@@ -18873,9 +18873,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258264",
     "slug": "شباك-دعامية-امامية-كورلا-ليفان-23-صيني-عريض",
     "search_terms": [
-      "ty-23lv-017-53112-02e80",
       "شباك دعامية امامية  كورلا ليفان 23- صيني عريض",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-23lv-017-53112-02e80"
     ],
     "description_preview": ""
   },
@@ -18893,8 +18893,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258265",
     "slug": "شباك-دعامية-امامية-كورلا-ليفان-23-صيني-كصيف",
     "search_terms": [
-      "شباك دعامية امامية كورلا ليفان 23- صيني كصيف",
       "ty-23lv-008-52714-02060",
+      "شباك دعامية امامية كورلا ليفان 23- صيني كصيف",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -18913,8 +18913,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258266",
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-le",
     "search_terms": [
-      "شباك دعامية امامية اسفل كامري  25- امريكي le",
       "ty-25cmu-014",
+      "شباك دعامية امامية اسفل كامري  25- امريكي le",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -18933,9 +18933,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258267",
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-se",
     "search_terms": [
-      "daisen-hy",
+      "ty-25cmu-016",
       "شباك دعامية امامية اسفل كامري 25- امريكي se",
-      "ty-25cmu-016"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -18953,9 +18953,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258268",
     "slug": "شباك-دعامية-امامية-اسفل-كامري-25-امريكي-xse",
     "search_terms": [
+      "daisen-hy",
       "شباك دعامية امامية اسفل كامري 25- امريكي xse",
-      "ty-25cmu-017",
-      "daisen-hy"
+      "ty-25cmu-017"
     ],
     "description_preview": ""
   },
@@ -18973,9 +18973,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258270",
     "slug": "شباك-رئيسي-اعلى-جانب-لايت-بدون-كامرة-كامري-25-امريكي",
     "search_terms": [
-      "ty-25cmu-010-53141-aq020",
       "شباك رئيسي اعلى جانب لايت بدون كامرة كامري 25- امريكي ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-25cmu-010-53141-aq020"
     ],
     "description_preview": ""
   },
@@ -18993,9 +18993,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258271",
     "slug": "شباك-رئيسي-اعلى-كامري-25-صيني-خليجي",
     "search_terms": [
-      "ty-24cm-008-53101-06c06",
+      "daisen-hy",
       "شباك رئيسي اعلى كامري 25- صيني خليجي",
-      "daisen-hy"
+      "ty-24cm-008-53101-06c06"
     ],
     "description_preview": ""
   },
@@ -19013,9 +19013,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258272",
     "slug": "nro-same-as-25cmu-032-فسفورة-سكن-دعامية-خلفية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
+      "nro same as 25cmu-032 فسفورة  سكن دعامية خلفية كامري 25- صيني خليجي ايسر",
       "daisen-hy",
-      "nro ty-24cm-028-l",
-      "nro same as 25cmu-032 فسفورة  سكن دعامية خلفية كامري 25- صيني خليجي ايسر"
+      "nro ty-24cm-028-l"
     ],
     "description_preview": ""
   },
@@ -19034,8 +19034,8 @@ window.search-index = [
     "slug": "nro-nro-same-as-25cmu-032فسفورة-سكن-دعامية-خلفية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "nro nro same as 25cmu-032فسفورة سكن دعامية خلفية كامري 25- صيني خليجي ايمن",
-      "nro ty-24cm-028-r",
-      "daisen-hy"
+      "daisen-hy",
+      "nro ty-24cm-028-r"
     ],
     "description_preview": ""
   },
@@ -19054,8 +19054,8 @@ window.search-index = [
     "slug": "فسفورة-سكن-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايسر",
     "search_terms": [
       "ty-25cmu-032-l ty-24cm-028",
-      "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايسر ",
-      "daisen-hy"
+      "daisen-hy",
+      "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايسر "
     ],
     "description_preview": ""
   },
@@ -19073,9 +19073,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258275",
     "slug": "فسفورة-سكن-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايمن",
     "search_terms": [
-      "daisen-hy",
       "فسفورة سكن دعامية خلفية كامري 25- امريكي خليجي صيني ايمن",
-      "ty-25cmu-032-r ty-24cm-028"
+      "ty-25cmu-032-r ty-24cm-028",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -19093,9 +19093,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258276",
     "slug": "قاعدة-رقم-امامي-كامري-25-صيني-خليجي",
     "search_terms": [
-      "ty-24cm-022-52114-06620",
+      "daisen-hy",
       "قاعدة رقم امامي كامري 25- صيني خليجي",
-      "daisen-hy"
+      "ty-24cm-022-52114-06620"
     ],
     "description_preview": ""
   },
@@ -19113,9 +19113,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258277",
     "slug": "قاعدة-شباك-كامري-25-امريكي",
     "search_terms": [
-      "ty-25cmu-012",
+      "daisen-hy",
       "قاعدة شباك كامري 25- امريكي",
-      "daisen-hy"
+      "ty-25cmu-012"
     ],
     "description_preview": ""
   },
@@ -19133,8 +19133,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258278",
     "slug": "قاعدة-شباك-كامري-25-صيني-خليجي",
     "search_terms": [
-      "daisen-hy",
       "ty-24cm-011-53114-06150",
+      "daisen-hy",
       "قاعدة شباك كامري 25- صيني خليجي"
     ],
     "description_preview": ""
@@ -19153,8 +19153,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258279",
     "slug": "قاعدة-ظهر-دعامية-امامية-كامري-25-صيني-خليجي",
     "search_terms": [
-      "ty-24cm-010-53113-06070",
       "daisen-hy",
+      "ty-24cm-010-53113-06070",
       "قاعدة ظهر دعامية امامية كامري 25- صيني خليجي"
     ],
     "description_preview": ""
@@ -19173,10 +19173,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258280",
     "slug": "كفر-درع-بطانة-تحت-محرك-فرونتلاندر-23",
     "search_terms": [
-      "ty-22fld-020",
-      "كفر  درع بطانة تحت محرك فرونتلاندر 23-",
       "daisen-hy",
-      "اجزاء المحرك"
+      "ty-22fld-020",
+      "اجزاء المحرك",
+      "كفر  درع بطانة تحت محرك فرونتلاندر 23-"
     ],
     "description_preview": ""
   },
@@ -19194,9 +19194,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258281",
     "slug": "كفر-بدنة-اعلى-كامري-25-خليجي-صيني-امريكي",
     "search_terms": [
+      "daisen-hy",
       "كفر بدنة اعلى كامري 25- خليجي صيني امريكي",
-      "ty-25cmu-031-53295-06180 = ty-24cm-013-53295-06250",
-      "daisen-hy"
+      "ty-25cmu-031-53295-06180 = ty-24cm-013-53295-06250"
     ],
     "description_preview": ""
   },
@@ -19215,8 +19215,8 @@ window.search-index = [
     "slug": "nro-same-as-ty-25cmu-031-كفر-بدنة-كامري-25-صيني-خليجي",
     "search_terms": [
       "nro same as ty-25cmu-031 كفر بدنة كامري 25- صيني خليجي",
-      "nro ty-24cm-013-53295-06250",
-      "daisen-hy"
+      "daisen-hy",
+      "nro ty-24cm-013-53295-06250"
     ],
     "description_preview": ""
   },
@@ -19254,9 +19254,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258284",
     "slug": "كفر-جانب-بك-زاوية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
-      "ty-24cm-018-l-81962-06060",
+      "daisen-hy",
       "كفر جانب بك زاوية كامري 25- صيني خليجي ايسر",
-      "daisen-hy"
+      "ty-24cm-018-l-81962-06060"
     ],
     "description_preview": ""
   },
@@ -19274,9 +19274,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258285",
     "slug": "كفر-جانب-بك-زاوية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-24cm-018-r-81952-06060",
-      "كفر جانب بك زاوية كامري 25- صيني خليجي ايمن",
-      "daisen-hy"
+      "كفر جانب بك زاوية كامري 25- صيني خليجي ايمن"
     ],
     "description_preview": ""
   },
@@ -19294,9 +19294,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258286",
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-صيني-25-ايسر",
     "search_terms": [
-      "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايسر",
       "ty-24cm-019-l-81498-06060 ty-25cmu-029",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايسر"
     ],
     "description_preview": ""
   },
@@ -19314,9 +19314,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258287",
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-صيني-25-ايمن",
     "search_terms": [
+      "daisen-hy",
       "كفر حاجب جانب بك زاوية كامري امريكي خليجي صيني 25- ايمن",
-      "ty-24cm-019-r-1497-06060 ty-25cmu-029",
-      "daisen-hy"
+      "ty-24cm-019-r-1497-06060 ty-25cmu-029"
     ],
     "description_preview": ""
   },
@@ -19335,8 +19335,8 @@ window.search-index = [
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-se-ايسر",
     "search_terms": [
       "ty-25cmu-022-l-52713-aq040",
-      "كفر حاجب اسفل دعامية امامية كامري 25- امريكي se ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر حاجب اسفل دعامية امامية كامري 25- امريكي se ايسر"
     ],
     "description_preview": ""
   },
@@ -19354,8 +19354,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258289",
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-se-ايمن",
     "search_terms": [
-      "daisen-hy",
       "كفر حاجب اسفل دعامية امامية كامري 25- امريكي se ايمن",
+      "daisen-hy",
       "ty-25cmu-022-r-52712-aq040"
     ],
     "description_preview": ""
@@ -19375,8 +19375,8 @@ window.search-index = [
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-xse-ايسر",
     "search_terms": [
       "ty-25cmu-023-l-52713-aq050-c0",
-      "كفر حاجب اسفل دعامية امامية كامري 25- امريكي xse ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر حاجب اسفل دعامية امامية كامري 25- امريكي xse ايسر"
     ],
     "description_preview": ""
   },
@@ -19394,8 +19394,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258291",
     "slug": "كفر-حاجب-اسفل-دعامية-امامية-كامري-25-امريكي-xse-ايمن",
     "search_terms": [
-      "daisen-hy",
       "كفر حاجب اسفل دعامية امامية كامري 25- امريكي xse ايمن",
+      "daisen-hy",
       "ty-25cmu-023-r-52712-aq050-c0"
     ],
     "description_preview": ""
@@ -19414,9 +19414,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258292",
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-25-ايسر",
     "search_terms": [
-      "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايسر",
       "nro ty-25cmu-029-l",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايسر"
     ],
     "description_preview": ""
   },
@@ -19435,8 +19435,8 @@ window.search-index = [
     "slug": "كفر-حاجب-جانب-بك-زاوية-كامري-امريكي-خليجي-25-ايمن",
     "search_terms": [
       "daisen-hy",
-      "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايمن",
-      "nro ty-25cmu-029-r"
+      "nro ty-25cmu-029-r",
+      "كفر حاجب جانب بك زاوية كامري امريكي خليجي 25- ايمن"
     ],
     "description_preview": ""
   },
@@ -19454,9 +19454,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258294",
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-lexle-ايسر",
     "search_terms": [
-      "كفر حاجب جانب دعامية امامية كامري 25- امريكي le/xle ايسر",
       "daisen-hy",
-      "ty-25cmu-019-l-52713-aq010"
+      "ty-25cmu-019-l-52713-aq010",
+      "كفر حاجب جانب دعامية امامية كامري 25- امريكي le/xle ايسر"
     ],
     "description_preview": ""
   },
@@ -19474,8 +19474,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258295",
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-lexle-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-25cmu-019-r-52712-aq010",
+      "daisen-hy",
       "كفر حاجب جانب دعامية امامية كامري 25- امريكي le/xle ايمن"
     ],
     "description_preview": ""
@@ -19494,9 +19494,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258296",
     "slug": "كفر-حاجب-جانب-دعامية-امامية-كامري-25-امريكي-se-ايسر",
     "search_terms": [
+      "ty-25cmu-020-l-52713-aq020",
       "daisen-hy",
-      "كفر حاجب جانب دعامية امامية كامري 25- امريكي se ايسر",
-      "ty-25cmu-020-l-52713-aq020"
+      "كفر حاجب جانب دعامية امامية كامري 25- امريكي se ايسر"
     ],
     "description_preview": ""
   },
@@ -19534,8 +19534,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258298",
     "slug": "كفر-حاجب-جانبي-دعامية-امامية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
-      "ty-24cm-016-l-52128-06720",
       "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايسر",
+      "ty-24cm-016-l-52128-06720",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -19554,9 +19554,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258299",
     "slug": "كفر-حاجب-جانبي-دعامية-امامية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
-      "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايمن",
       "ty-24cm-016-r-52127-06570",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر حاجب جانبي دعامية امامية كامري 25- صيني خليجي ايمن"
     ],
     "description_preview": ""
   },
@@ -19574,8 +19574,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258300",
     "slug": "كفر-دعامية-اسفل-خلفية-كورلا-ليفان-23-صيني-مشيف-سبورت",
     "search_terms": [
-      "ty-23lv-018 -52169-02240",
       "daisen-hy",
+      "ty-23lv-018 -52169-02240",
       "كفر دعامية اسفل خلفية كورلا ليفان 23- صيني مشيف سبورت"
     ],
     "description_preview": ""
@@ -19594,9 +19594,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258301",
     "slug": "كفر-زاوية-حاجب-الاسفل-دعامية-خلفية-فرونتلاندر-23-ايسر",
     "search_terms": [
+      "daisen-hy",
       "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايسر",
-      "ty-22fld-015-l",
-      "daisen-hy"
+      "ty-22fld-015-l"
     ],
     "description_preview": ""
   },
@@ -19614,9 +19614,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258302",
     "slug": "كفر-زاوية-حاجب-الاسفل-دعامية-خلفية-فرونتلاندر-23-ايمن",
     "search_terms": [
-      "ty-22fld-015-r",
       "daisen-hy",
-      "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايمن"
+      "كفر زاوية حاجب الاسفل دعامية خلفية فرونتلاندر 23- ايمن",
+      "ty-22fld-015-r"
     ],
     "description_preview": ""
   },
@@ -19634,8 +19634,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258303",
     "slug": "كفر-زاوية-حاجب-دعامية-خلفية-فرونتلاندر-23-ايسر",
     "search_terms": [
-      "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايسر",
       "daisen-hy",
+      "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايسر",
       "ty-22fld-014-l"
     ],
     "description_preview": ""
@@ -19654,9 +19654,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258304",
     "slug": "كفر-زاوية-حاجب-دعامية-خلفية-فرونتلاندر-23-ايمن",
     "search_terms": [
+      "ty-22fld-014-r",
       "كفر زاوية حاجب دعامية خلفية فرونتلاندر 23- ايمن",
-      "daisen-hy",
-      "ty-22fld-014-r"
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -19674,9 +19674,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258305",
     "slug": "كفر-شوتة-بدنة-كورلا-كروس-22-وارد-صيني",
     "search_terms": [
-      "ty-22crls-002-17751-f2150",
       "كفر شوتة بدنة كورلا كروس 22- وارد صيني ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22crls-002-17751-f2150"
     ],
     "description_preview": ""
   },
@@ -19694,9 +19694,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258306",
     "slug": "nro-same-as-25cmu-013كفر-كصة-دعامية-امامي-اعلى-كامري-25-صيني-خليجي",
     "search_terms": [
-      "daisen-hy",
       "nro same as 25cmu-013كفر كصة دعامية امامي اعلى  كامري 25- صيني خليجي",
-      "ty-24cm-009-52111-06904"
+      "ty-24cm-009-52111-06904",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -19714,9 +19714,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258307",
     "slug": "كفر-كصة-دعامية-امامية-اعلى-كامري-25-امريكي-خليجي-صيني",
     "search_terms": [
-      "ty-25cmu-013-52111-aq010 ty-24cm-009-52111-06904",
       "كفر كصة دعامية امامية اعلى كامري 25- امريكي خليجي صيني ",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-25cmu-013-52111-aq010 ty-24cm-009-52111-06904"
     ],
     "description_preview": ""
   },
@@ -19734,9 +19734,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258308",
     "slug": "كفر-هوك-بالدعامية-امامي-كامري-25-صيني-خليجي",
     "search_terms": [
+      "daisen-hy",
       "كفر هوك بالدعامية امامي كامري 25- صيني خليجي",
-      "ty-24cm-023-53128-06300",
-      "daisen-hy"
+      "ty-24cm-023-53128-06300"
     ],
     "description_preview": ""
   },
@@ -19754,9 +19754,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258311",
     "slug": "لايت-فرونتلاندر-تك-عدسة-23-وارد-صيني-ايسر",
     "search_terms": [
-      "ty-22fld-002-l",
       "لايت فرونتلاندر تك عدسة 23- وارد صيني ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22fld-002-l"
     ],
     "description_preview": ""
   },
@@ -19774,9 +19774,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258312",
     "slug": "لايت-فرونتلاندر-ليد-مسطرة-اعلى-23-وارد-صيني-ايسر",
     "search_terms": [
-      "ty-22fld-001-l",
+      "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايسر",
       "daisen-hy",
-      "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايسر"
+      "ty-22fld-001-l"
     ],
     "description_preview": ""
   },
@@ -19794,9 +19794,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258313",
     "slug": "لايت-فرونتلاندر-ليد-مسطرة-اعلى-23-وارد-صيني-ايمن",
     "search_terms": [
+      "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايمن",
       "daisen-hy",
-      "ty-22fld-001-r",
-      "لايت فرونتلاندر ليد مسطرة اعلى 23- وارد صيني ايمن"
+      "ty-22fld-001-r"
     ],
     "description_preview": ""
   },
@@ -19814,9 +19814,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258314",
     "slug": "لايت-فرونتلاندر-تك-عدسة-23-وارد-صيني-ايمن",
     "search_terms": [
-      "لايت فرونتلاندر تك عدسة 23- وارد صيني ايمن",
+      "daisen-hy",
       "ty-22fld-002-r",
-      "daisen-hy"
+      "لايت فرونتلاندر تك عدسة 23- وارد صيني ايمن"
     ],
     "description_preview": ""
   },
@@ -19834,8 +19834,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258315",
     "slug": "لايت-كامري-25-امريكي-le-se-تك-زنون-ايمن",
     "search_terms": [
-      "ty-25cmu-001-r-81110-aq010",
       "لايت كامري 25- امريكي le se تك زنون ايمن",
+      "ty-25cmu-001-r-81110-aq010",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -19854,9 +19854,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258316",
     "slug": "لايت-كامري-25-امريكي-le-se-تك-زنون-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-25cmu-001-l-81150-aq010        ",
-      "لايت كامري 25- امريكي le se تك زنون ايسر  ",
-      "daisen-hy"
+      "لايت كامري 25- امريكي le se تك زنون ايسر  "
     ],
     "description_preview": ""
   },
@@ -19874,9 +19874,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258317",
     "slug": "لايت-كامري-25-امريكي-xle-دبل-زنون-ايسر",
     "search_terms": [
-      "daisen-hy",
-      "ty-25cmu-002-l-81150-aq030",
       "نظام التعليق",
+      "ty-25cmu-002-l-81150-aq030",
+      "daisen-hy",
       "لايت كامري 25- امريكي xle دبل زنون ايسر"
     ],
     "description_preview": ""
@@ -19895,9 +19895,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258318",
     "slug": "لايت-كامري-25-امريكي-xle-دبل-زنون-ايمن",
     "search_terms": [
+      "نظام التعليق",
       "daisen-hy",
       "لايت كامري 25- امريكي xle دبل زنون ايمن",
-      "نظام التعليق",
       "ty-25cmu-002-r-81110-aq030"
     ],
     "description_preview": ""
@@ -19916,9 +19916,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258319",
     "slug": "نيكل-بدعامية-امامية-شباك-عريض-كورلا-ليفان-23-صيني-ايسر",
     "search_terms": [
-      "ty-23lv-019-l-53124-02490",
+      "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني ايسر",
       "daisen-hy",
-      "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني ايسر"
+      "ty-23lv-019-l-53124-02490"
     ],
     "description_preview": ""
   },
@@ -19936,8 +19936,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258320",
     "slug": "نيكل-بدعامية-امامية-شباك-عريض-كورلا-ليفان-23-صيني-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-23lv-019-r-53123-02070",
+      "daisen-hy",
       "نيكل بدعامية امامية شباك عريض كورلا ليفان 23- صيني  ايمن"
     ],
     "description_preview": ""
@@ -19957,8 +19957,8 @@ window.search-index = [
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
       "ty-24cm-017-r-52562-06190",
-      "ماسكة تحت بك لايت كامري 25- صيني خليجي ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ماسكة تحت بك لايت كامري 25- صيني خليجي ايمن"
     ],
     "description_preview": ""
   },
@@ -19977,8 +19977,8 @@ window.search-index = [
     "slug": "ماسكة-تحت-بك-لايت-فرونتلاندر-23-ايمن",
     "search_terms": [
       "ماسكة تحت بك لايت فرونتلاندر 23-  ايمن",
-      "ty-22fld-019-r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22fld-019-r"
     ],
     "description_preview": ""
   },
@@ -19996,9 +19996,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258323",
     "slug": "ماسكة-تحت-بك-لايت-فرونتلاندر-23-ايسر",
     "search_terms": [
-      "ty-22fld-019-l",
       "ماسكة تحت بك لايت فرونتلاندر 23- ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22fld-019-l"
     ],
     "description_preview": ""
   },
@@ -20016,9 +20016,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258324",
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-امريكي-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-25cmu-028-l-52563-aq010",
-      "ماسكة تحت بك لايت كامري 25- امريكي ايسر",
-      "daisen-hy"
+      "ماسكة تحت بك لايت كامري 25- امريكي ايسر"
     ],
     "description_preview": ""
   },
@@ -20056,9 +20056,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258326",
     "slug": "ماسكة-تحت-بك-لايت-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
-      "ty-24cm-017-l-52563-06100",
+      "ماسكة تحت بك لايت كامري 25- صيني خليجي ايسر",
       "daisen-hy",
-      "ماسكة تحت بك لايت كامري 25- صيني خليجي ايسر"
+      "ty-24cm-017-l-52563-06100"
     ],
     "description_preview": ""
   },
@@ -20116,9 +20116,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258329",
     "slug": "ماسكة-دعامية-امامية-كامري-25-امريكي-ايسر",
     "search_terms": [
-      "ماسكة دعامية امامية كامري 25- امريكي ايسر",
+      "daisen-hy",
       "ty-25cmu-018-l-52536-aq010",
-      "daisen-hy"
+      "ماسكة دعامية امامية كامري 25- امريكي ايسر"
     ],
     "description_preview": ""
   },
@@ -20136,9 +20136,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258330",
     "slug": "ماسكة-دعامية-امامية-كامري-25-امريكي-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-25cmu-018-r-52535-aq010",
-      "ماسكة دعامية امامية كامري 25- امريكي ايمن"
+      "ماسكة دعامية امامية كامري 25- امريكي ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -20157,8 +20157,8 @@ window.search-index = [
     "slug": "ماسكة-دعامية-امامية-كامري-25-صيني-خليجي-ايسر",
     "search_terms": [
       "ماسكة دعامية امامية كامري 25- صيني خليجي ايسر",
-      "ty-24cm-015-l-52536-06180",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-24cm-015-l-52536-06180"
     ],
     "description_preview": ""
   },
@@ -20176,8 +20176,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258332",
     "slug": "ماسكة-دعامية-امامية-كامري-25-صيني-خليجي-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-24cm-015-r-52535-06250",
+      "daisen-hy",
       "ماسكة دعامية امامية كامري 25- صيني خليجي ايمن"
     ],
     "description_preview": ""
@@ -20217,8 +20217,8 @@ window.search-index = [
     "slug": "ماسكة-دعامية-خلفية-فرونتلاندر-23-ايمن",
     "search_terms": [
       "ty-22fld-018-r",
-      "daisen-hy",
-      "ماسكة دعامية خلفية فرونتلاندر 23- ايمن"
+      "ماسكة دعامية خلفية فرونتلاندر 23- ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -20256,9 +20256,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258336",
     "slug": "nro-same-as-25cmu-027-ماسكة-دعامية-خلفية-كامري-25-صيني-امريكي-خليجي-ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-24cm-026-r-52575-06210",
-      "nro same as 25cmu-027 ماسكة دعامية خلفية كامري 25-  صيني امريكي خليجي ايمن"
+      "nro same as 25cmu-027 ماسكة دعامية خلفية كامري 25-  صيني امريكي خليجي ايمن",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -20276,9 +20276,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258337",
     "slug": "ماسكة-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايسر",
     "search_terms": [
-      "ty-24cm-026-l-52576-06210 = ty-25cmu-027-l-52576-aq010",
       "ماسكة دعامية خلفية كامري 25- امريكي خليجي صيني ايسر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-24cm-026-l-52576-06210 = ty-25cmu-027-l-52576-aq010"
     ],
     "description_preview": ""
   },
@@ -20296,9 +20296,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258338",
     "slug": "ماسكة-دعامية-خلفية-كامري-25-امريكي-خليجي-صيني-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ماسكة دعامية خلفية كامري 25- امريكي خليجي صيني ايمن",
-      "ty-25cmu-027-r-52575-aq010 = ty-24cm-026-r-52575-06210",
-      "daisen-hy"
+      "ty-25cmu-027-r-52575-aq010 = ty-24cm-026-r-52575-06210"
     ],
     "description_preview": ""
   },
@@ -20336,9 +20336,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258340",
     "slug": "هلال-جاملغ-امامي-فرونتلاندر-23-ايسر",
     "search_terms": [
-      "ty-22fld-023-l",
+      "daisen-hy",
       "هلال جاملغ امامي فرونتلاندر 23- ايسر",
-      "daisen-hy"
+      "ty-22fld-023-l"
     ],
     "description_preview": ""
   },
@@ -20357,8 +20357,8 @@ window.search-index = [
     "slug": "هلال-جاملغ-امامي-فرونتلاندر-23-ايمن",
     "search_terms": [
       "هلال جاملغ امامي فرونتلاندر 23- ايمن",
-      "ty-22fld-023-r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22fld-023-r"
     ],
     "description_preview": ""
   },
@@ -20377,8 +20377,8 @@ window.search-index = [
     "slug": "هلال-جاملغ-خلفي-فرونتلاندر-23-ايسر",
     "search_terms": [
       "daisen-hy",
-      "ty-22fld-024-l",
-      "هلال جاملغ خلفي فرونتلاندر 23- ايسر"
+      "هلال جاملغ خلفي فرونتلاندر 23- ايسر",
+      "ty-22fld-024-l"
     ],
     "description_preview": ""
   },
@@ -20416,9 +20416,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258640",
     "slug": "نيكل-لحية-خلفية-هايلندر-22--وسطية",
     "search_terms": [
-      "ty-22lf-008-2",
+      "daisen-hy",
       "نيكل لحية خلفية هايلندر 22 - وسطية ",
-      "daisen-hy"
+      "ty-22lf-008-2"
     ],
     "description_preview": ""
   },
@@ -20437,8 +20437,8 @@ window.search-index = [
     "slug": "نيكل-لحية-خلفية-هايلندر-22--زاوية-ايسر",
     "search_terms": [
       "daisen-hy",
-      "نيكل لحية خلفية هايلندر 22 - زاوية ايسر",
-      "ty-22lf-008-1-l"
+      "ty-22lf-008-1-l",
+      "نيكل لحية خلفية هايلندر 22 - زاوية ايسر"
     ],
     "description_preview": ""
   },
@@ -20476,9 +20476,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258651",
     "slug": "راديتر-تبريد-كامري-12--17-راديتر-تبريد-افلون-13--15",
     "search_terms": [
-      "denso",
+      "di447780-3560",
       "راديتر تبريد كامري 12 - 17 راديتر تبريد افلون 13 - 15 ",
-      "di447780-3560"
+      "denso"
     ],
     "description_preview": ""
   },
@@ -20496,9 +20496,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258682",
     "slug": "جويتر-1gr-عام",
     "search_terms": [
+      "aisan",
       "22030-31010-thr3-31010",
-      "جويتر 1gr عام ",
-      "aisan"
+      "جويتر 1gr عام "
     ],
     "description_preview": ""
   },
@@ -20517,8 +20517,8 @@ window.search-index = [
     "slug": "جويتر-ريفو-برادو-2tr",
     "search_terms": [
       "جويتر  ريفو برادو 2tr ",
-      "22030-75040-thr3-75040",
-      "aisan"
+      "aisan",
+      "22030-75040-thr3-75040"
     ],
     "description_preview": ""
   },
@@ -20537,8 +20537,8 @@ window.search-index = [
     "slug": "كانستر-برادو-11--1gr-عكرب-1gr",
     "search_terms": [
       "كانستر برادو 11 - 1gr عكرب 1gr",
-      "77704-60330-cans-60330",
-      "aisan"
+      "aisan",
+      "77704-60330-cans-60330"
     ],
     "description_preview": ""
   },
@@ -20557,8 +20557,8 @@ window.search-index = [
     "slug": "كانستر-برادو-05--09",
     "search_terms": [
       "cans-63010-77704-63010",
-      "كانستر برادو 05 - 09",
-      "aisan"
+      "aisan",
+      "كانستر برادو 05 - 09"
     ],
     "description_preview": ""
   },
@@ -20576,9 +20576,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258687",
     "slug": "كازكيت-محرك-1hz-11115-17040-05-كاز",
     "search_terms": [
-      "كازكيت محرك 1hz 11115-17040-05 كاز",
       "kp ",
       "11115-17010-05-ka103168",
+      "كازكيت محرك 1hz 11115-17040-05 كاز",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20597,9 +20597,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258688",
     "slug": "واشر-محرك-كامل-لاند-01--07-8سلندر-2uz",
     "search_terms": [
+      "واشر محرك كامل لاند 01 - 07  8سلندر 2uz",
       "kp ",
       "kfs101401 - 04111-50410",
-      "واشر محرك كامل لاند 01 - 07  8سلندر 2uz",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20618,10 +20618,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258689",
     "slug": "واشر-محرك-كورلا-امريكي-2zr",
     "search_terms": [
-      "kfs101333-04111-37093",
       "kp ",
       "واشر محرك كورلا امريكي 2zr",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "kfs101333-04111-37093"
     ],
     "description_preview": ""
   },
@@ -20641,8 +20641,8 @@ window.search-index = [
     "search_terms": [
       "kp ",
       "kfs228186-10101-vj027",
-      "واشر محرك بيكب نيسان ka24",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "واشر محرك بيكب نيسان ka24"
     ],
     "description_preview": ""
   },
@@ -20660,10 +20660,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258719",
     "slug": "قايش-محرك-1ur-3ur",
     "search_terms": [
-      "اجزاء المحرك",
       "aisin",
-      "avb-8pk2410",
-      "قايش محرك 1ur 3ur "
+      "قايش محرك 1ur 3ur ",
+      "اجزاء المحرك",
+      "avb-8pk2410"
     ],
     "description_preview": ""
   },
@@ -20681,9 +20681,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258720",
     "slug": "قايش-محرك-لاند-08--11-1gr-ريفو-16-هايس-19--7gr",
     "search_terms": [
+      "aisin",
       "avb-7pk2120",
       "قايش محرك لاند 08 - 11 1gr ريفو 16- هايس 19 - 7gr ",
-      "aisin",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20702,9 +20702,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258721",
     "slug": "قايش-محرك-افلون-18--سينا-17--هايلندر-17",
     "search_terms": [
+      "avb-6pk1560",
       "aisin",
       "قايش محرك افلون 18 - سينا 17 - هايلندر 17 - ",
-      "avb-6pk1560",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20723,8 +20723,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258723",
     "slug": "قايش-محرك-افلون-2gr",
     "search_terms": [
-      "قايش محرك افلون 2gr  ",
       "aisin",
+      "قايش محرك افلون 2gr  ",
       "avb-7pk2090",
       "اجزاء المحرك"
     ],
@@ -20744,10 +20744,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258724",
     "slug": "قايش-محرك-لاند-12--22--1gr",
     "search_terms": [
-      "avb-7pk2150",
       "aisin",
+      "اجزاء المحرك",
       "قايش محرك لاند 12 - 22 - 1gr ",
-      "اجزاء المحرك"
+      "avb-7pk2150"
     ],
     "description_preview": ""
   },
@@ -20765,10 +20765,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258725",
     "slug": "قايش-محرك-لاند-08--11-2uz",
     "search_terms": [
-      "avb-6pk2230",
-      "قايش محرك لاند 08 - 11 2uz  ",
       "aisin",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "قايش محرك لاند 08 - 11 2uz  ",
+      "avb-6pk2230"
     ],
     "description_preview": ""
   },
@@ -20786,10 +20786,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258726",
     "slug": "قايش-محرك-كوستر-2tr",
     "search_terms": [
-      "avb-7pk1870",
-      "قايش محرك كوستر 2tr ",
       "aisin",
-      "اجزاء المحرك"
+      "قايش محرك كوستر 2tr ",
+      "اجزاء المحرك",
+      "avb-7pk1870"
     ],
     "description_preview": ""
   },
@@ -20807,8 +20807,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258727",
     "slug": "قايش-محرك-بيكب-فيكو-ريفو-2tr",
     "search_terms": [
-      "قايش محرك بيكب فيكو ريفو 2tr  ",
       "aisin",
+      "قايش محرك بيكب فيكو ريفو 2tr  ",
       "avb-7pk2300",
       "اجزاء المحرك"
     ],
@@ -20828,9 +20828,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258728",
     "slug": "قايش-محرك-كورلا-خليجي-1zr-2zr-3zr",
     "search_terms": [
-      "قايش محرك كورلا خليجي 1zr  2zr 3zr ",
       "aisin",
       "avb-6pk1230",
+      "قايش محرك كورلا خليجي 1zr  2zr 3zr ",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20849,9 +20849,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258729",
     "slug": "قايش-محرك-كامري-17--رف-فور--19--4سلندر-امريكي-خليجي-2ar-a25a",
     "search_terms": [
-      "قايش محرك كامري 17 - رف فور - 19 - 4سلندر امريكي خليجي 2ar a25a",
       "aisin",
       "avb-6pk1150",
+      "قايش محرك كامري 17 - رف فور - 19 - 4سلندر امريكي خليجي 2ar a25a",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20891,9 +20891,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258731",
     "slug": "قايش-محرك-اكستيرا-بافندر-4000",
     "search_terms": [
+      "aisin",
       "قايش محرك اكستيرا بافندر 4000  ",
       "avb-7pk2215",
-      "aisin",
       "اجزاء المحرك"
     ],
     "description_preview": ""
@@ -20912,9 +20912,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258843",
     "slug": "دعامية-امامية-برادو-18--لون-لولوي",
     "search_terms": [
+      "دعامية امامية برادو 18 - لون لولوي ",
       "fj150-030/32-pw",
-      "daisen",
-      "دعامية امامية برادو 18 - لون لولوي "
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -20932,9 +20932,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258844",
     "slug": "دعامية-امامية-برادو-18--لون-اسود",
     "search_terms": [
-      "دعامية امامية برادو 18 - لون اسود",
       "daisen",
-      "fj150-030/32-bk"
+      "fj150-030/32-bk",
+      "دعامية امامية برادو 18 - لون اسود"
     ],
     "description_preview": ""
   },
@@ -20952,9 +20952,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258845",
     "slug": "كت-لحية-امامية-+-خلفية-لكزس-برادو-14--22-دون-شباك",
     "search_terms": [
+      "bwgx400-001-s",
       "daisen",
-      "كت لحية امامية + خلفية لكزس برادو 14 - 22  دون شباك ",
-      "bwgx400-001-s"
+      "كت لحية امامية + خلفية لكزس برادو 14 - 22  دون شباك "
     ],
     "description_preview": ""
   },
@@ -20972,9 +20972,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258846",
     "slug": "بدي-كت-تحديث-لكزس-22--24--lx600-f-sport--كامل-مع-نزال-جامة-باب-بدي-+-مسطرة-دوسة-جانبية-لون-لولوي",
     "search_terms": [
-      "daisen",
       "24lx600 body kit - pw",
-      "بدي كت تحديث لكزس 22 - 24 -  lx600 f sport - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون لولوي "
+      "بدي كت تحديث لكزس 22 - 24 -  lx600 f sport - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون لولوي ",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -20992,9 +20992,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258847",
     "slug": "بدي-كت-تحديث-لكزس-22--24--lx600-f-sport--كامل-مع-نزال-جامة-باب-بدي-+-مسطرة-دوسة-جانبية-لون-اسود",
     "search_terms": [
-      "lx24 lx600 body kit - bk",
       "بدي كت تحديث لكزس 22 - 24 -  lx600 f sport - كامل مع نزال جامة باب بدي + مسطرة دوسة جانبية لون اسود",
-      "daisen"
+      "daisen",
+      "lx24 lx600 body kit - bk"
     ],
     "description_preview": ""
   },
@@ -21012,10 +21012,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258860",
     "slug": "دبل-خلفي-لاند-05--07",
     "search_terms": [
-      "دبل خلفي لاند 05 - 07",
       "aisin",
-      "sabt-0090",
-      "نظام التعليق"
+      "نظام التعليق",
+      "دبل خلفي لاند 05 - 07",
+      "sabt-0090"
     ],
     "description_preview": ""
   },
@@ -21033,9 +21033,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258880",
     "slug": "فج-بريك-خلفي-برادو-05-18-ايمن",
     "search_terms": [
+      "فج بريك خلفي برادو 05-18 ايمن ",
       "a5r045",
-      "advics",
-      "فج بريك خلفي برادو 05-18 ايمن "
+      "advics"
     ],
     "description_preview": ""
   },
@@ -21071,10 +21071,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258951",
     "slug": "دبل-امامي-كورلا-08--13-ايمن",
     "search_terms": [
-      "aisin",
+      "نظام التعليق",
       "sabt-0066",
-      "دبل امامي كورلا 08 - 13 ايمن",
-      "نظام التعليق"
+      "aisin",
+      "دبل امامي كورلا 08 - 13 ايمن"
     ],
     "description_preview": ""
   },
@@ -21092,10 +21092,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=258952",
     "slug": "دبل-امامي-سني-هندي--فيرسا-11--19-ايسر",
     "search_terms": [
-      "aisin",
+      "نظام التعليق",
       "دبل امامي سني هندي - فيرسا 11 - 19 ايسر",
-      "sabn-0007",
-      "نظام التعليق"
+      "aisin",
+      "sabn-0007"
     ],
     "description_preview": ""
   },
@@ -21114,8 +21114,8 @@ window.search-index = [
     "slug": "دعامية-خلفية-لاند-08--15-لون-لولوي",
     "search_terms": [
       "دعامية خلفية لاند 08 - 15 لون لولوي",
-      "rear bumper lc200 12-pw",
-      "daisen"
+      "daisen",
+      "rear bumper lc200 12-pw"
     ],
     "description_preview": ""
   },
@@ -21153,9 +21153,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259250",
     "slug": "دعامية-امامية-لاند-98-07-مع-فتحة-بروجكتر",
     "search_terms": [
-      "ty-05lc-009",
       "دعامية امامية لاند 98-07 مع فتحة بروجكتر",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-05lc-009"
     ],
     "description_preview": ""
   },
@@ -21173,8 +21173,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259251",
     "slug": "دعامية-خلفية-لاند-98-07",
     "search_terms": [
-      "daisen-hy",
       "دعامية خلفية لاند 98-07 ",
+      "daisen-hy",
       "ty-05lc-010"
     ],
     "description_preview": ""
@@ -21193,9 +21193,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259264",
     "slug": "ليد-دعامية-كورلا-19-امريكي-se-ايسر",
     "search_terms": [
+      "ليد دعامية كورلا  19- امريكي se  ايسر",
       "daisen-hy",
-      "ty-19crlu-015l",
-      "ليد دعامية كورلا  19- امريكي se  ايسر"
+      "ty-19crlu-015l"
     ],
     "description_preview": ""
   },
@@ -21213,9 +21213,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259265",
     "slug": "ليد-دعامية-كورلا-19-امريكي-se-ايمن",
     "search_terms": [
+      "daisen-hy",
       "ty-19crlu-015r",
-      "ليد دعامية كورلا  19- امريكي se  ايمن",
-      "daisen-hy"
+      "ليد دعامية كورلا  19- امريكي se  ايمن"
     ],
     "description_preview": ""
   },
@@ -21233,9 +21233,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259266",
     "slug": "ليد-دعامية-كورلا-وارد-صيني-و-امريكي-23-ايسر",
     "search_terms": [
-      "ليد دعامية كورلا وارد صيني و امريكي 23- ايسر ",
+      "ty-23crlu-003l",
       "daisen-hy",
-      "ty-23crlu-003l"
+      "ليد دعامية كورلا وارد صيني و امريكي 23- ايسر "
     ],
     "description_preview": ""
   },
@@ -21254,8 +21254,8 @@ window.search-index = [
     "slug": "ليد-دعامية-كورلا-وارد-صيني-و-امريكي-23-ايمن",
     "search_terms": [
       "ليد دعامية كورلا وارد صيني و امريكي 23- ايمن",
-      "ty-23crlu-003r",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-23crlu-003r"
     ],
     "description_preview": ""
   },
@@ -21273,9 +21273,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259268",
     "slug": "تكمله-بطانه-جاملغ-خلفي-كورلا-19-23-usa-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-19crlu-027l",
-      "تكمله بطانه جاملغ خلفي كورلا 19- 23 usa ايسر",
-      "daisen-hy"
+      "تكمله بطانه جاملغ خلفي كورلا 19- 23 usa ايسر"
     ],
     "description_preview": ""
   },
@@ -21293,9 +21293,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259269",
     "slug": "تكمله-بطانه-جاملغ-خلفي-كورلا-19-23-usa-ايمن",
     "search_terms": [
+      "تكمله بطانه جاملغ خلفي كورلا 19- 23 usa ايمن",
       "daisen-hy",
-      "ty-19crlu-027r",
-      "تكمله بطانه جاملغ خلفي كورلا 19- 23 usa ايمن"
+      "ty-19crlu-027r"
     ],
     "description_preview": ""
   },
@@ -21314,9 +21314,9 @@ window.search-index = [
     "slug": "قايش-محرك-كورلا-08--13-1zz",
     "search_terms": [
       "aisin",
-      "قايش محرك كورلا 08 - 13 1zz",
       "avb-6pk1680",
-      "اجزاء المحرك"
+      "اجزاء المحرك",
+      "قايش محرك كورلا 08 - 13 1zz"
     ],
     "description_preview": ""
   },
@@ -21334,10 +21334,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259392",
     "slug": "قايش-محرك-هايس-05--18-سينا-16--17",
     "search_terms": [
-      "قايش محرك هايس 05 - 18 سينا 16 - 17",
       "aisin",
-      "avb-7pk1550",
-      "اجزاء المحرك"
+      "قايش محرك هايس 05 - 18 سينا 16 - 17",
+      "اجزاء المحرك",
+      "avb-7pk1550"
     ],
     "description_preview": ""
   },
@@ -21355,8 +21355,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259393",
     "slug": "قايش-محرك-كامري-07--11-2az",
     "search_terms": [
-      "قايش محرك كامري 07 - 11 2az",
       "aisin",
+      "قايش محرك كامري 07 - 11 2az",
       "avb-7pk1905",
       "اجزاء المحرك"
     ],
@@ -21396,9 +21396,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259504",
     "slug": "لايت-كورلا-14-16-خليجي-نيكل-ايمن",
     "search_terms": [
-      "لايت كورلا 14-16 خليجي نيكل ايمن",
       "ty-14crl-102-r",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كورلا 14-16 خليجي نيكل ايمن"
     ],
     "description_preview": ""
   },
@@ -21416,8 +21416,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259505",
     "slug": "لايت-كورلا-14-16-خليجي-اسود-ايسر",
     "search_terms": [
-      "لايت كورلا 14-16 خليجي اسود ايسر",
       "ty-14crl-102c-l",
+      "لايت كورلا 14-16 خليجي اسود ايسر",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -21436,9 +21436,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259506",
     "slug": "لايت-كورلا-14-16-خليجي-اسود-ايمن",
     "search_terms": [
-      "ty-14crl-102c-r",
+      "daisen-hy",
       "لايت كورلا 14-16 خليجي اسود ايمن",
-      "daisen-hy"
+      "ty-14crl-102c-r"
     ],
     "description_preview": ""
   },
@@ -21456,8 +21456,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259531",
     "slug": "بروجكتر-هايلندر-24--ليد",
     "search_terms": [
-      "dlaa",
       "بروجكتر هايلندر 24 - ليد",
+      "dlaa",
       "ty2493-led"
     ],
     "description_preview": ""
@@ -21476,9 +21476,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259532",
     "slug": "بروجكتر-تاكوما-24--ليد",
     "search_terms": [
-      "dlaa",
       "ty4831-led",
-      "بروجكتر تاكوما 24 - ليد "
+      "بروجكتر تاكوما 24 - ليد ",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -21516,9 +21516,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259534",
     "slug": "بروجكتر-تندرا-سيكويا-24--ليد",
     "search_terms": [
-      "dlaa",
+      "ty4276-led",
       "بروجكتر تندرا سيكويا 24 - ليد ",
-      "ty4276-led"
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -21536,9 +21536,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259535",
     "slug": "بروجكتر-شمعة-برادو-24--ليد",
     "search_terms": [
-      "dlaa",
+      "بروجكتر شمعة برادو 24 - ليد ",
       "ty1246-led",
-      "بروجكتر شمعة برادو 24 - ليد "
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -21556,9 +21556,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259536",
     "slug": "بروجكتر-برادو-24--ليد",
     "search_terms": [
+      "ty1146-led",
       "dlaa",
-      "بروجكتر برادو 24 - ليد",
-      "ty1146-led"
+      "بروجكتر برادو 24 - ليد"
     ],
     "description_preview": ""
   },
@@ -21576,9 +21576,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259537",
     "slug": "بروجكتر-تندرا-14--18",
     "search_terms": [
-      "dlaa",
       "ty558",
-      "بروجكتر تندرا 14 - 18 "
+      "بروجكتر تندرا 14 - 18 ",
+      "dlaa"
     ],
     "description_preview": ""
   },
@@ -21596,10 +21596,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259625",
     "slug": "سيت-بستم-محرك-z24--سايز-20",
     "search_terms": [
-      "اجزاء المحرك",
-      "art",
+      "سيت بستم محرك z24 - سايز 20",
       "ni4g21w-050",
-      "سيت بستم محرك z24 - سايز 20"
+      "art",
+      "اجزاء المحرك"
     ],
     "description_preview": ""
   },
@@ -21617,9 +21617,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259641",
     "slug": "لايت-كامري-25-امريكي-xse-دبل-زنون-ايسر",
     "search_terms": [
-      "لايت كامري 25- امريكي xse دبل زنون ايسر ",
       "نظام التعليق",
       "daisen-hy",
+      "لايت كامري 25- امريكي xse دبل زنون ايسر ",
       "ty-25cmu-002b-l-81150-aq040"
     ],
     "description_preview": ""
@@ -21638,10 +21638,10 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259642",
     "slug": "لايت-كامري-25-امريكي-xse-دبل-زنون-ايمن",
     "search_terms": [
-      "لايت كامري 25- امريكي xse دبل زنون ايمن ",
       "نظام التعليق",
       "ty-25cmu-002b-r-81110-aq040",
-      "daisen-hy"
+      "daisen-hy",
+      "لايت كامري 25- امريكي xse دبل زنون ايمن "
     ],
     "description_preview": ""
   },
@@ -21679,9 +21679,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259863",
     "slug": "لايت-ريفو-22--داخل-اسود-و-رصاصي-ايمن",
     "search_terms": [
-      "ty-22hlx-001g-r",
       "daisen-hy",
-      "لايت ريفو 22 - داخل اسود و رصاصي ايمن"
+      "لايت ريفو 22 - داخل اسود و رصاصي ايمن",
+      "ty-22hlx-001g-r"
     ],
     "description_preview": ""
   },
@@ -21699,9 +21699,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259864",
     "slug": "بك-لايت-تندر-22--ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-22tdu-001-l",
-      "بك لايت تندر 22 - ايسر",
-      "daisen-hy"
+      "بك لايت تندر 22 - ايسر"
     ],
     "description_preview": ""
   },
@@ -21719,8 +21719,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259865",
     "slug": "بك-لايت-تندر-22--ايمن",
     "search_terms": [
-      "daisen-hy",
       "ty-22tdu-001-r",
+      "daisen-hy",
       "بك لايت تندر 22 - ايمن"
     ],
     "description_preview": ""
@@ -21739,9 +21739,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259866",
     "slug": "بك-لايت-تندرا-22--ليد-ايسر",
     "search_terms": [
-      "بك لايت تندرا 22 - ليد ايسر",
       "daisen-hy",
-      "ty-22tdu-002-l"
+      "ty-22tdu-002-l",
+      "بك لايت تندرا 22 - ليد ايسر"
     ],
     "description_preview": ""
   },
@@ -21759,9 +21759,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=259867",
     "slug": "بك-لايت-تندرا-22-ليد--ايمن",
     "search_terms": [
+      "ty-22tdu-002-r",
       "daisen-hy",
-      "بك لايت تندرا 22 ليد - ايمن",
-      "ty-22tdu-002-r"
+      "بك لايت تندرا 22 ليد - ايمن"
     ],
     "description_preview": ""
   },
@@ -21780,8 +21780,8 @@ window.search-index = [
     "slug": "بك-زاوية-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايمن",
     "search_terms": [
       "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايمن ",
-      "daisen-hy",
-      "ty-22crl-002b-r"
+      "ty-22crl-002b-r",
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -21800,8 +21800,8 @@ window.search-index = [
     "slug": "بك-زاوية-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايسر",
     "search_terms": [
       "daisen-hy",
-      "ty-22crl-002b-l",
-      "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايسر"
+      "بك زاوية كورلا كروس 22 - وارد صين مواصفات ناصية ايسر",
+      "ty-22crl-002b-l"
     ],
     "description_preview": ""
   },
@@ -21819,9 +21819,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260014",
     "slug": "بك-صندوق-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايسر",
     "search_terms": [
+      "ty-22crl-003b-l",
       "daisen-hy",
-      "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايسر",
-      "ty-22crl-003b-l"
+      "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايسر"
     ],
     "description_preview": ""
   },
@@ -21839,9 +21839,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260015",
     "slug": "بك-صندوق-كورلا-كروس-22--وارد-صين-مواصفات-ناصية-ايمن",
     "search_terms": [
-      "ty-22crl-003b-r",
       "بك صندوق كورلا كروس 22 - وارد صين مواصفات ناصية ايمن",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-22crl-003b-r"
     ],
     "description_preview": ""
   },
@@ -21859,9 +21859,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260088",
     "slug": "total-care-100ml-peach-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-خوخ",
     "search_terms": [
-      "rkab45.s1.mde",
+      " total care 100ml -peach  ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ",
       "errecom",
-      " total care 100ml -peach  ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل خوخ"
+      "rkab45.s1.mde"
     ],
     "description_preview": ""
   },
@@ -21879,8 +21879,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260089",
     "slug": "total-care-100ml-lemon-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-ليمون",
     "search_terms": [
-      "errecom",
       " total care 100ml -lemon  ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل ليمون",
+      "errecom",
       "rkab7.s1.mde"
     ],
     "description_preview": ""
@@ -21899,8 +21899,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260090",
     "slug": "total-care-100ml-vanila-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-فانيلا",
     "search_terms": [
-      "rkab48.s1.mde",
       "errecom",
+      "rkab48.s1.mde",
       " total care 100ml -vanila  ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل فانيلا"
     ],
     "description_preview": ""
@@ -21919,9 +21919,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260091",
     "slug": "total-care-100ml-oud-ctn-12-kit-كت-عناية-و-منظف-و-معطر-قنوات-التبريد-و-الفريز-100-مل-عود",
     "search_terms": [
-      "rkab134.s1.mde",
       "errecom",
-      " total care 100ml -oud  ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود"
+      " total care 100ml -oud  ctn 12 kit- كت عناية و منظف و معطر قنوات التبريد و الفريز 100 مل عود",
+      "rkab134.s1.mde"
     ],
     "description_preview": ""
   },
@@ -21940,8 +21940,8 @@ window.search-index = [
     "slug": "بك-مسطرة-صندوق-افلون-19",
     "search_terms": [
       "ty-19azl-026",
-      "بك مسطرة صندوق افلون 19- ",
-      "daisen-hy"
+      "daisen-hy",
+      "بك مسطرة صندوق افلون 19- "
     ],
     "description_preview": ""
   },
@@ -21999,9 +21999,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260177",
     "slug": "سكن-إشارة-بالجاملغ-بيكب-عكرب-24-ايسر",
     "search_terms": [
-      "سكن إشارة بالجاملغ بيكب عكرب 24- ايسر ",
+      "ty-24lcp-002-l",
       "daisen-hy",
-      "ty-24lcp-002-l"
+      "سكن إشارة بالجاملغ بيكب عكرب 24- ايسر "
     ],
     "description_preview": ""
   },
@@ -22020,8 +22020,8 @@ window.search-index = [
     "slug": "سكن-إشارة-بالجاملغ-بيكب-عكرب-24-ايمن",
     "search_terms": [
       "ty-24lcp-002-r",
-      "سكن إشارة بالجاملغ بيكب عكرب 24- ايمن ",
-      "daisen-hy"
+      "daisen-hy",
+      "سكن إشارة بالجاملغ بيكب عكرب 24- ايمن "
     ],
     "description_preview": ""
   },
@@ -22039,9 +22039,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260179",
     "slug": "شباك-دعامية-جانبية-مفتوح-شباك-لاند-22--gxr-ايسر",
     "search_terms": [
+      "daisen-hy",
       "ty-21lc-020-l",
-      " شباك دعامية جانبية مفتوح شباك لاند 22 - gxr ايسر ",
-      "daisen-hy"
+      " شباك دعامية جانبية مفتوح شباك لاند 22 - gxr ايسر "
     ],
     "description_preview": ""
   },
@@ -22059,9 +22059,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260180",
     "slug": "شباك-دعامية-جانبية-مفتوح-شباك-لاند-22--gxr-ايمن",
     "search_terms": [
+      " شباك دعامية جانبية مفتوح شباك لاند 22 - gxr ايمن ",
       "daisen-hy",
-      "ty-21lc-020-r",
-      " شباك دعامية جانبية مفتوح شباك لاند 22 - gxr ايمن "
+      "ty-21lc-020-r"
     ],
     "description_preview": ""
   },
@@ -22079,9 +22079,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260345",
     "slug": "بخاخ-تبريد-كوستر-17",
     "search_terms": [
-      "441510-1330",
+      "بخاخ تبريد كوستر 17 - ",
       "denso",
-      "بخاخ تبريد كوستر 17 - "
+      "441510-1330"
     ],
     "description_preview": ""
   },
@@ -22099,9 +22099,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260361",
     "slug": "راديتر-ماء-كوستر-1hz-كاز-كبيرة--pa36",
     "search_terms": [
-      "12509",
+      "راديتر ماء كوستر 1hz كاز كبيرة - pa36 ",
       "daisen - rads",
-      "راديتر ماء كوستر 1hz كاز كبيرة - pa36 "
+      "12509"
     ],
     "description_preview": ""
   },
@@ -22120,8 +22120,8 @@ window.search-index = [
     "slug": "بولبرن-ويل-امامي-لاند-08--15-ايمن-ايسر",
     "search_terms": [
       "koyo",
-      " بولبرن ويل امامي لاند 08 - 15 ايمن ايسر ",
-      "2duf058n-5brmg"
+      "2duf058n-5brmg",
+      " بولبرن ويل امامي لاند 08 - 15 ايمن ايسر "
     ],
     "description_preview": ""
   },
@@ -22160,8 +22160,8 @@ window.search-index = [
     "slug": "راديتر-ماء-كورلا-19--20--le-خليجي-امريكي--pa26",
     "search_terms": [
       "121238",
-      "daisen - rads",
-      " راديتر ماء كورلا 19 - 20 -  le خليجي امريكي - pa26 "
+      " راديتر ماء كورلا 19 - 20 -  le خليجي امريكي - pa26 ",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22179,9 +22179,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260565",
     "slug": "راديتر-تبريد-ارمادا-05--12--c16",
     "search_terms": [
+      "15ac053",
       "daisen - rads",
-      "راديتر تبريد ارمادا 05 - 12 - c16 ",
-      "15ac053"
+      "راديتر تبريد ارمادا 05 - 12 - c16 "
     ],
     "description_preview": ""
   },
@@ -22200,8 +22200,8 @@ window.search-index = [
     "slug": "راديتر-تبريد-التيما-08--16--c12",
     "search_terms": [
       "daisen - rads",
-      "راديتر تبريد التيما 08 - 16 - c12 ",
-      "15ac003"
+      "15ac003",
+      "راديتر تبريد التيما 08 - 16 - c12 "
     ],
     "description_preview": ""
   },
@@ -22219,9 +22219,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260567",
     "slug": "راديتر-تبريد-باترول-10--c16",
     "search_terms": [
+      "15ac019a",
       "راديتر تبريد باترول 10 - c16 ",
-      "daisen - rads",
-      "15ac019a"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22279,9 +22279,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260570",
     "slug": "راديتر-تبريد-بافندر-05--12--c16",
     "search_terms": [
+      "راديتر تبريد بافندر 05 - 12 - c16 ",
       "15ac059",
-      "daisen - rads",
-      "راديتر تبريد بافندر 05 - 12 - c16 "
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22359,8 +22359,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260574",
     "slug": "راديتر-تبريد-بيكب-ريفو-16--c16",
     "search_terms": [
-      "12ac044",
       "daisen - rads",
+      "12ac044",
       "راديتر تبريد بيكب ريفو 16 - c16 "
     ],
     "description_preview": ""
@@ -22379,9 +22379,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260575",
     "slug": "راديتر-تبريد-بيكب-فيكو-05--15-c16--2tr",
     "search_terms": [
-      "راديتر تبريد بيكب فيكو 05 - 15 c16 - 2tr ",
       "12ac051",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر تبريد بيكب فيكو 05 - 15 c16 - 2tr "
     ],
     "description_preview": ""
   },
@@ -22399,8 +22399,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260576",
     "slug": "راديتر-تبريد-بيكب-نافارا-07--14--c16",
     "search_terms": [
-      "15ac091",
       "راديتر تبريد بيكب نافارا 07 - 14 - c16",
+      "15ac091",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -22439,9 +22439,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260578",
     "slug": "راديتر-تبريد-سنترا-13--19--c12",
     "search_terms": [
-      "راديتر تبريد سنترا 13 - 19 - c12",
       "15ac006",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر تبريد سنترا 13 - 19 - c12"
     ],
     "description_preview": ""
   },
@@ -22460,8 +22460,8 @@ window.search-index = [
     "slug": "راديتر-تبريد-سني-01--09--c16",
     "search_terms": [
       "15ac031",
-      "daisen - rads",
-      "راديتر تبريد سني 01 - 09 - c16"
+      "راديتر تبريد سني 01 - 09 - c16",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22479,9 +22479,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260580",
     "slug": "راديتر-تبريد-سني-كوري-07--11--c16",
     "search_terms": [
-      "راديتر تبريد سني كوري 07 - 11 - c16",
       "15ac063",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر تبريد سني كوري 07 - 11 - c16"
     ],
     "description_preview": ""
   },
@@ -22500,8 +22500,8 @@ window.search-index = [
     "slug": "راديتر-تبريد-سني-هندي-12--19--c16",
     "search_terms": [
       "راديتر تبريد سني هندي 12 - 19 - c16",
-      "15ac060",
-      "daisen - rads"
+      "daisen - rads",
+      "15ac060"
     ],
     "description_preview": ""
   },
@@ -22519,9 +22519,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260582",
     "slug": "راديتر-تبريد-عكرب-07--c16",
     "search_terms": [
+      "12ac197",
       "daisen - rads",
-      "راديتر تبريد عكرب 07 - c16",
-      "12ac197"
+      "راديتر تبريد عكرب 07 - c16"
     ],
     "description_preview": ""
   },
@@ -22580,8 +22580,8 @@ window.search-index = [
     "slug": "راديتر-تبريد-كامري-18--رف-فور-19--عادي-+-هايبرد--c12",
     "search_terms": [
       "راديتر تبريد كامري 18 - رف فور 19 - عادي + هايبرد  - c12",
-      "daisen - rads",
-      "12ac052"
+      "12ac052",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22619,9 +22619,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260587",
     "slug": "راديتر-تبريد-كورلا-01--07-عام--c16",
     "search_terms": [
-      "12ac003",
       "راديتر تبريد كورلا 01 - 07 عام  - c16",
-      "daisen - rads"
+      "daisen - rads",
+      "12ac003"
     ],
     "description_preview": ""
   },
@@ -22639,9 +22639,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260589",
     "slug": "راديتر-تبريد-كورلا-08--18--c16",
     "search_terms": [
+      "راديتر تبريد كورلا 08 - 18  - c16",
       "12ac001",
-      "daisen - rads",
-      "راديتر تبريد كورلا 08 - 18  - c16"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22679,9 +22679,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260591",
     "slug": "راديتر-تبريد-لاند-01--07--c16-1fz",
     "search_terms": [
-      "daisen - rads",
+      "راديتر تبريد لاند 01 - 07 - c16 -1fz",
       "12ac063",
-      "راديتر تبريد لاند 01 - 07 - c16 -1fz"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22700,8 +22700,8 @@ window.search-index = [
     "slug": "راديتر-تبريد-لاند-08--كاز-و-بانزين--c16",
     "search_terms": [
       "راديتر تبريد لاند 08 - كاز و بانزين  - c16",
-      "12ac034",
-      "daisen - rads"
+      "daisen - rads",
+      "12ac034"
     ],
     "description_preview": ""
   },
@@ -22719,9 +22719,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260594",
     "slug": "راديتر-تبريد-هايلندر-14--c16",
     "search_terms": [
+      "راديتر تبريد هايلندر 14 - c16",
       "12ac023",
-      "daisen - rads",
-      "راديتر تبريد هايلندر 14 - c16"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22740,8 +22740,8 @@ window.search-index = [
     "slug": "راديتر-ماء-افلون-05--10-pa16--2gr",
     "search_terms": [
       "12767",
-      "راديتر ماء افلون 05 - 10 -pa16 - 2gr",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر ماء افلون 05 - 10 -pa16 - 2gr"
     ],
     "description_preview": ""
   },
@@ -22759,9 +22759,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260596",
     "slug": "راديتر-ماء-افلون-كامري-رف-فور-لكزس-اي-اس-ان-اكس-18--a25-هايبرد--pa26",
     "search_terms": [
-      "راديتر ماء افلون كامري رف فور لكزس اي اس ان اكس 18 - a25 هايبرد  - pa26 ",
       "121197",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر ماء افلون كامري رف فور لكزس اي اس ان اكس 18 - a25 هايبرد  - pa26 "
     ],
     "description_preview": ""
   },
@@ -22779,9 +22779,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260597",
     "slug": "راديتر-ماء-اكستيرا-بيكب-نيسان-4.0--pa32",
     "search_terms": [
+      "daisen - rads",
       "راديتر ماء اكستيرا بيكب نيسان  4.0 - pa32 ",
-      "15577",
-      "daisen - rads"
+      "15577"
     ],
     "description_preview": ""
   },
@@ -22799,9 +22799,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260598",
     "slug": "راديتر-ماء-التيما-19--pa16",
     "search_terms": [
-      "15509",
       "راديتر ماء التيما 19 - pa16 ",
-      "daisen - rads"
+      "daisen - rads",
+      "15509"
     ],
     "description_preview": ""
   },
@@ -22819,9 +22819,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260599",
     "slug": "راديتر-ماء-التيما-مكسما-08--18--pa26",
     "search_terms": [
+      "راديتر ماء التيما مكسما 08 - 18  - pa26 ",
       "15236",
-      "daisen - rads",
-      "راديتر ماء التيما مكسما 08 - 18  - pa26 "
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22839,9 +22839,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260600",
     "slug": "راديتر-ماء-باترول-07--سفاري-اوتو--pa36",
     "search_terms": [
+      "daisen - rads",
       "راديتر ماء باترول 07 - سفاري اوتو  - pa36 ",
-      "15176",
-      "daisen - rads"
+      "15176"
     ],
     "description_preview": ""
   },
@@ -22859,9 +22859,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260601",
     "slug": "راديتر-ماء-باترول-10--pa36--qx-20",
     "search_terms": [
-      "daisen - rads",
+      "15307",
       "راديتر ماء باترول 10 - pa36 - qx 20",
-      "15307"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -22879,8 +22879,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260602",
     "slug": "راديتر-ماء-باترول-97-y60-عادي--pa26",
     "search_terms": [
-      "راديتر ماء باترول 97 y60 عادي - pa26 ",
       "daisen - rads",
+      "راديتر ماء باترول 97 y60 عادي - pa26 ",
       "15178"
     ],
     "description_preview": ""
@@ -22919,8 +22919,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260604",
     "slug": "راديتر-ماء-برادو-05--09-fj-عام--pa26",
     "search_terms": [
-      "راديتر ماء برادو 05 - 09 fj عام - pa26 ",
       "12233",
+      "راديتر ماء برادو 05 - 09 fj عام - pa26 ",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -22939,8 +22939,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260605",
     "slug": "راديتر-ماء-برادو-10--20--1gr-6cyl-فورنر-13--19--pa26",
     "search_terms": [
-      "12701",
       "daisen - rads",
+      "12701",
       "راديتر ماء برادو 10 - 20 - 1gr 6cyl فورنر 13 - 19 - pa26 "
     ],
     "description_preview": ""
@@ -22980,8 +22980,8 @@ window.search-index = [
     "slug": "راديتر-ماء-بيكب-ريفو-16--2gd-كاز-عادي--pa26",
     "search_terms": [
       "راديتر ماء بيكب ريفو 16 - 2gd كاز عادي  - pa26 ",
-      "12939",
-      "daisen - rads"
+      "daisen - rads",
+      "12939"
     ],
     "description_preview": ""
   },
@@ -23019,9 +23019,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260609",
     "slug": "راديتر-ماء-بيكب-ريفو-فورجنر-16--2tr-عادي--pa26",
     "search_terms": [
-      "daisen - rads",
+      "راديتر ماء بيكب ريفو فورجنر 16 - 2tr عادي  - pa26 ",
       "12940",
-      "راديتر ماء بيكب ريفو فورجنر 16 - 2tr عادي  - pa26 "
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23100,8 +23100,8 @@ window.search-index = [
     "slug": "راديتر-ماء-بيكب-فيكو-06--15-كاز-2kd-اوتو--pa26",
     "search_terms": [
       "12638",
-      "daisen - rads",
-      "راديتر ماء بيكب فيكو 06 - 15 كاز 2kd اوتو  - pa26 "
+      "راديتر ماء بيكب فيكو 06 - 15 كاز 2kd اوتو  - pa26 ",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23119,9 +23119,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260614",
     "slug": "راديتر-ماء-بيكب-نافارا-07--14-بانزين-اوتو--pa26",
     "search_terms": [
-      "راديتر ماء بيكب نافارا 07 - 14 بانزين اوتو - pa26 ",
       "15398",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر ماء بيكب نافارا 07 - 14 بانزين اوتو - pa26 "
     ],
     "description_preview": ""
   },
@@ -23139,8 +23139,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260615",
     "slug": "راديتر-ماء-بيكب-نافارا-15--بيكب-نيسان-4w-بانزين-15--اوتو--pa16",
     "search_terms": [
-      "daisen - rads",
       "15409",
+      "daisen - rads",
       "راديتر ماء بيكب نافارا 15 - بيكب نيسان 4w بانزين 15 - اوتو  - pa16 "
     ],
     "description_preview": ""
@@ -23159,9 +23159,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260616",
     "slug": "راديتر-ماء-رف-فور-06--18--pa22",
     "search_terms": [
-      "12373",
+      "راديتر ماء رف فور 06 - 18  - pa22 ",
       "daisen - rads",
-      "راديتر ماء رف فور 06 - 18  - pa22 "
+      "12373"
     ],
     "description_preview": ""
   },
@@ -23179,8 +23179,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260617",
     "slug": "راديتر-ماء-سني-12--19-هندي--pa26",
     "search_terms": [
-      "15338",
       "راديتر ماء سني 12 - 19  هندي - pa26 ",
+      "15338",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23199,9 +23199,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260618",
     "slug": "راديتر-ماء-فورجنر-بيكب-ريفو-16--pa26--6cyl-1gr",
     "search_terms": [
-      "121041",
+      "راديتر ماء فورجنر بيكب ريفو 16 - pa26 - 6cyl 1gr ",
       "daisen - rads",
-      "راديتر ماء فورجنر بيكب ريفو 16 - pa26 - 6cyl 1gr "
+      "121041"
     ],
     "description_preview": ""
   },
@@ -23219,9 +23219,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260619",
     "slug": "راديتر-ماء-فيرسا-12--17--pa26",
     "search_terms": [
-      "daisen - rads",
+      "15299",
       "راديتر ماء فيرسا 12 - 17 - pa26 ",
-      "15299"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23239,8 +23239,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260620",
     "slug": "راديتر-ماء-كامري-07--11--pa26",
     "search_terms": [
-      "راديتر ماء كامري 07 - 11  - pa26 ",
       "12361",
+      "راديتر ماء كامري 07 - 11  - pa26 ",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23259,9 +23259,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260621",
     "slug": "راديتر-ماء-كامري-12--17--pa26",
     "search_terms": [
-      "12765",
       "راديتر ماء كامري 12 - 17  - pa26 ",
-      "daisen - rads"
+      "daisen - rads",
+      "12765"
     ],
     "description_preview": ""
   },
@@ -23279,8 +23279,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260622",
     "slug": "راديتر-ماء-كامري-18--pa26",
     "search_terms": [
-      "121105-01",
       "راديتر ماء كامري 18 - pa26 ",
+      "121105-01",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23299,9 +23299,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260623",
     "slug": "راديتر-ماء-كورلا-20--امريكي-pa16--se",
     "search_terms": [
+      "121187",
       "daisen - rads",
-      "راديتر ماء كورلا 20 - امريكي pa16 - se",
-      "121187"
+      "راديتر ماء كورلا 20 - امريكي pa16 - se"
     ],
     "description_preview": ""
   },
@@ -23319,8 +23319,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260624",
     "slug": "راديتر-ماء-كورلا-عام-08--19--pa26",
     "search_terms": [
-      "12438",
       "راديتر ماء كورلا عام 08 - 19  - pa26 ",
+      "12438",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23339,9 +23339,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260625",
     "slug": "راديتر-ماء-لاند-01--07-pa32--1fz",
     "search_terms": [
-      "راديتر ماء لاند 01 - 07 pa32  - 1fz",
+      "daisen - rads",
       "12175",
-      "daisen - rads"
+      "راديتر ماء لاند 01 - 07 pa32  - 1fz"
     ],
     "description_preview": ""
   },
@@ -23359,9 +23359,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260626",
     "slug": "راديتر-ماء-لاند-08--19--pa48-1gr-6cyl",
     "search_terms": [
+      "12626",
       "راديتر ماء لاند 08 - 19 - pa48 -1gr 6cyl   ",
-      "daisen - rads",
-      "12626"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23379,9 +23379,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260627",
     "slug": "راديتر-ماء-لاند-08--21--16400-51040-1vd-اوتو--pa36",
     "search_terms": [
+      "daisen - rads",
       "12757",
-      "راديتر ماء لاند 08 - 21 - 16400-51040 1vd اوتو -  pa36  ",
-      "daisen - rads"
+      "راديتر ماء لاند 08 - 21 - 16400-51040 1vd اوتو -  pa36  "
     ],
     "description_preview": ""
   },
@@ -23399,9 +23399,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260628",
     "slug": "راديتر-ماء-لاند-08--21--1vd-عادي--pa42",
     "search_terms": [
-      "12816",
       "daisen - rads",
-      "راديتر ماء لاند 08 - 21 - 1vd عادي  - pa42 "
+      "راديتر ماء لاند 08 - 21 - 1vd عادي  - pa42 ",
+      "12816"
     ],
     "description_preview": ""
   },
@@ -23439,9 +23439,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260632",
     "slug": "راديتر-ماء-لكزس-برادو-10--13--20--pa26--1ur--gx",
     "search_terms": [
+      "12935",
       "راديتر ماء لكزس برادو 10 - 13 - 20 - pa26  - 1ur  - gx",
-      "daisen - rads",
-      "12935"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23460,8 +23460,8 @@ window.search-index = [
     "slug": "راديتر-ماء-لكزس-لاند-08--عام-pa48--8cyl-1ur-3ur-2uz",
     "search_terms": [
       "راديتر ماء لكزس لاند 08 - عام pa48 - 8cyl 1ur 3ur 2uz",
-      "12494",
-      "daisen - rads"
+      "daisen - rads",
+      "12494"
     ],
     "description_preview": ""
   },
@@ -23499,8 +23499,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260635",
     "slug": "راديتر-ماء-هايلندر-20--pa16--2gr",
     "search_terms": [
-      "121441",
       "راديتر ماء هايلندر 20 - pa16  - 2gr",
+      "121441",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23519,9 +23519,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260636",
     "slug": "راديتر-توربو-سوبر-لاند-22--f33-v35-بالبدنة-ايسر--pa48",
     "search_terms": [
-      "121541",
       "daisen - rads",
-      "راديتر توربو سوبر لاند 22 - f33 v35 بالبدنة ايسر  - pa48 "
+      "راديتر توربو سوبر لاند 22 - f33 v35 بالبدنة ايسر  - pa48 ",
+      "121541"
     ],
     "description_preview": ""
   },
@@ -23540,8 +23540,8 @@ window.search-index = [
     "slug": "راديتر-توربو-سوبر-لاند-22--f33-v35-بالبدنة-ايمن--pa48",
     "search_terms": [
       "121542",
-      "daisen - rads",
-      "راديتر توربو سوبر لاند 22 - f33 v35 بالبدنة ايمن  - pa48 "
+      "راديتر توربو سوبر لاند 22 - f33 v35 بالبدنة ايمن  - pa48 ",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23579,9 +23579,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260639",
     "slug": "راديتر-ماء-لاند-22--pa36--1gr",
     "search_terms": [
-      "121519",
       "daisen - rads",
-      "راديتر ماء لاند 22 - pa36 - 1gr"
+      "راديتر ماء لاند 22 - pa36 - 1gr",
+      "121519"
     ],
     "description_preview": ""
   },
@@ -23599,9 +23599,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260641",
     "slug": "راديتر-ماء-لاند-22--f33-كاز--pa36",
     "search_terms": [
-      "راديتر ماء لاند 22 - f33 كاز  - pa36 ",
       "121609",
-      "daisen - rads"
+      "daisen - rads",
+      "راديتر ماء لاند 22 - f33 كاز  - pa36 "
     ],
     "description_preview": ""
   },
@@ -23639,8 +23639,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260643",
     "slug": "راديتر-تبريد-سينا-21--هايبرد--20",
     "search_terms": [
-      "12ac189",
       "راديتر تبريد سينا 21 - هايبرد - 20 ",
+      "12ac189",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23680,8 +23680,8 @@ window.search-index = [
     "slug": "راديتر-ماء-كورلا-ليفان-21-8zr-16",
     "search_terms": [
       "121554",
-      "daisen - rads",
-      "راديتر ماء كورلا ليفان 21 -8zr -16"
+      "راديتر ماء كورلا ليفان 21 -8zr -16",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23719,8 +23719,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260647",
     "slug": "راديتر-سوبر-تندرا-22--v35-ايسر--pa48",
     "search_terms": [
-      "121592",
       "راديتر سوبر تندرا 22 - v35 ايسر - pa48 ",
+      "121592",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23739,8 +23739,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260648",
     "slug": "راديتر-سوبر-تندرا-22--v35-ايمن--pa48",
     "search_terms": [
-      "راديتر سوبر تندرا 22 - v35 ايمن  - pa48 ",
       "121593",
+      "راديتر سوبر تندرا 22 - v35 ايمن  - pa48 ",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23779,9 +23779,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260650",
     "slug": "راديتر-ماء-تندرا-سيكويا-22-pa26",
     "search_terms": [
+      "121562",
       "راديتر ماء تندرا سيكويا 22- pa26 ",
-      "daisen - rads",
-      "121562"
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23799,9 +23799,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260651",
     "slug": "مبرد-راديتر-سوبر-لاند-08--pe50-16-1vd",
     "search_terms": [
-      "daisen - rads",
       "87402",
-      "مبرد راديتر سوبر لاند 08 - pe50 -16 1vd"
+      "مبرد راديتر سوبر لاند 08 - pe50 -16 1vd",
+      "daisen - rads"
     ],
     "description_preview": ""
   },
@@ -23819,9 +23819,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260652",
     "slug": "راديتر-ماء-كوستر-20--كاز--pa48--n40",
     "search_terms": [
-      "راديتر ماء كوستر 20 - كاز - pa48 - n40 ",
       "daisen - rads",
-      "121446"
+      "121446",
+      "راديتر ماء كوستر 20 - كاز - pa48 - n40 "
     ],
     "description_preview": ""
   },
@@ -23839,8 +23839,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260654",
     "slug": "راديتر-ما-كوستر-1hz-كاز-صفيرة--pa36",
     "search_terms": [
-      "121150",
       "راديتر ما كوستر  1hz كاز صفيرة  - pa36 ",
+      "121150",
       "daisen - rads"
     ],
     "description_preview": ""
@@ -23879,9 +23879,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260771",
     "slug": "كرن-زاوية-دعامية-امامية-برادو-24--مع-فتحة-عدسة-ايمن",
     "search_terms": [
-      "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايمن ",
+      "ty-24prd-032-r 52115-0g900",
       "daisen-hy",
-      "ty-24prd-032-r 52115-0g900"
+      "كرن زاوية دعامية امامية برادو 24 - مع فتحة عدسة ايمن "
     ],
     "description_preview": ""
   },
@@ -23900,8 +23900,8 @@ window.search-index = [
     "slug": "كفر-بروجكتر-برادو-24--داخل-الكرن-مع-فتحة-عدسة-ايسر",
     "search_terms": [
       "كفر بروجكتر برادو 24 - داخل الكرن مع فتحة عدسة ايسر ",
-      "ty-24prd-034-l:52128-0g060",
-      "daisen-hy"
+      "daisen-hy",
+      "ty-24prd-034-l:52128-0g060"
     ],
     "description_preview": ""
   },
@@ -23919,9 +23919,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260773",
     "slug": "كفر-بروجكتر-برادو-24--داخل-الكرن-مع-فتحة-عدسة-ايمن",
     "search_terms": [
+      "daisen-hy",
       "كفر بروجكتر برادو 24 - داخل الكرن مع فتحة عدسة ايمن ",
-      "ty-24prd-034-r:52127-0g060",
-      "daisen-hy"
+      "ty-24prd-034-r:52127-0g060"
     ],
     "description_preview": ""
   },
@@ -23939,9 +23939,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260774",
     "slug": "شباك-رئيسي-برادو-24",
     "search_terms": [
+      "شباك رئيسي برادو 24 -  ",
       "ty-24prd-035",
-      "daisen-hy",
-      "شباك رئيسي برادو 24 -  "
+      "daisen-hy"
     ],
     "description_preview": ""
   },
@@ -23959,9 +23959,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260775",
     "slug": "كفر-هوائية-كرن-دعامية-امامية-اسفل-بروجكتر-برادو-24-ايسر",
     "search_terms": [
-      "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايسر  ",
       "ty-24prd-038-l 52116-0g900",
-      "daisen-hy"
+      "daisen-hy",
+      "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايسر  "
     ],
     "description_preview": ""
   },
@@ -23980,8 +23980,8 @@ window.search-index = [
     "slug": "كفر-هوائية-كرن-دعامية-امامية-اسفل-بروجكتر-برادو-24-ايمن",
     "search_terms": [
       "daisen-hy",
-      "ty-24prd-038-r 52115-0g900",
-      "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايمن  "
+      "كفر هوائية كرن دعامية امامية اسفل بروجكتر برادو  24- ايمن  ",
+      "ty-24prd-038-r 52115-0g900"
     ],
     "description_preview": ""
   },
@@ -23999,8 +23999,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260814",
     "slug": "شباك-بيكب-تويوتا-جمرة-01--04-نيكل",
     "search_terms": [
-      "daisen-hy",
       "شباك بيكب تويوتا جمرة 01 - 04 نيكل  ",
+      "daisen-hy",
       "xyh-ty-008"
     ],
     "description_preview": ""
@@ -24019,8 +24019,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260815",
     "slug": "دعامية-امامية-بيكب-تويوتا-جمرة-01-04-نيكل",
     "search_terms": [
-      "xyh-ty-012",
       "daisen-hy",
+      "xyh-ty-012",
       "دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  "
     ],
     "description_preview": ""
@@ -24039,8 +24039,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260816",
     "slug": "دعامية-امامية-بيكب-تويوتا-جمرة-97--2000-نيكل",
     "search_terms": [
-      "xyh-ty-010",
       "دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  ",
+      "xyh-ty-010",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -24059,9 +24059,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260817",
     "slug": "بوري-دعامية-امامية-بيكب-تويوتا-جمرة-01-04-نيكل",
     "search_terms": [
-      "بوري دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  ",
       "xyh-ty-013",
-      "daisen-hy"
+      "daisen-hy",
+      "بوري دعامية امامية بيكب تويوتا جمرة 01 -04 نيكل  "
     ],
     "description_preview": ""
   },
@@ -24079,9 +24079,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260818",
     "slug": "بوري-دعامية-امامية-بيكب-تويوتا-جمرة-97--2000-نيكل",
     "search_terms": [
+      "xyh-ty-015",
       "daisen-hy",
-      "بوري دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  ",
-      "xyh-ty-015"
+      "بوري دعامية امامية بيكب تويوتا جمرة 97 - 2000 نيكل  "
     ],
     "description_preview": ""
   },
@@ -24099,9 +24099,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260819",
     "slug": "دعامية-خلفية-فيكو-05--15-نيكل-بدون-فتحة-حساس",
     "search_terms": [
+      "daisen-hy",
       "xyh-ty-058",
-      "دعامية خلفية فيكو 05 - 15 نيكل بدون فتحة حساس  ",
-      "daisen-hy"
+      "دعامية خلفية فيكو 05 - 15 نيكل بدون فتحة حساس  "
     ],
     "description_preview": ""
   },
@@ -24119,9 +24119,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260820",
     "slug": "دعامية-امامية-فيكو-08--11-2w-4w-لون-ابيض",
     "search_terms": [
-      "دعامية امامية فيكو 08 - 11 2w 4w لون ابيض ",
       "xyh-ty-060",
-      "daisen-hy"
+      "daisen-hy",
+      "دعامية امامية فيكو 08 - 11 2w 4w لون ابيض "
     ],
     "description_preview": ""
   },
@@ -24140,8 +24140,8 @@ window.search-index = [
     "slug": "دعامية-امامية-فيكو-12--15-2w-4w-لون-ابيض",
     "search_terms": [
       "دعامية امامية فيكو 12 - 15 2w 4w لون ابيض ",
-      "xyh-ty-061",
-      "daisen-hy"
+      "daisen-hy",
+      "xyh-ty-061"
     ],
     "description_preview": ""
   },
@@ -24159,8 +24159,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260822",
     "slug": "عضد-مراة-جانبية-فيكو-12--15-ايمن",
     "search_terms": [
-      "daisen-hy",
       "xyh-ty-102-r",
+      "daisen-hy",
       "عضد مراة جانبية فيكو 12 - 15 ايمن  "
     ],
     "description_preview": ""
@@ -24179,9 +24179,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260823",
     "slug": "عضد-مراة-جانبية-فيكو-12--15-ايسر",
     "search_terms": [
+      "daisen-hy",
       "xyh-ty-102-l",
-      "عضد مراة جانبية فيكو 12 - 15 ايسر  ",
-      "daisen-hy"
+      "عضد مراة جانبية فيكو 12 - 15 ايسر  "
     ],
     "description_preview": ""
   },
@@ -24200,8 +24200,8 @@ window.search-index = [
     "slug": "دعامية-خلفية-ريفو-16--نيكل",
     "search_terms": [
       "daisen-hy",
-      "دعامية خلفية ريفو 16 - نيكل ",
-      "xyh-ty-121"
+      "xyh-ty-121",
+      "دعامية خلفية ريفو 16 - نيكل "
     ],
     "description_preview": ""
   },
@@ -24219,8 +24219,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260825",
     "slug": "واقية-طين-ريفو-16-4w-مع-كتابة-hilux-سيت-4-قطع",
     "search_terms": [
-      "واقية طين ريفو 16 4w مع كتابة hilux سيت 4 قطع ",
       "xyh-ty-151",
+      "واقية طين ريفو 16 4w مع كتابة hilux سيت 4 قطع ",
       "daisen-hy"
     ],
     "description_preview": ""
@@ -24239,9 +24239,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260826",
     "slug": "واقية-طين-ريفو-16-4w-مع-كتابة-احمر-trd-سيت-4-قطع",
     "search_terms": [
-      "xyh-ty-152",
       "واقية طين ريفو 16 4w مع كتابة احمر trd  سيت 4 قطع ",
-      "daisen-hy"
+      "daisen-hy",
+      "xyh-ty-152"
     ],
     "description_preview": ""
   },
@@ -24259,9 +24259,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260827",
     "slug": "شباك-ريفو-21--24-trd",
     "search_terms": [
-      "شباك ريفو 21 - 24 trd  ",
       "xyh-ty-181",
-      "daisen-hy"
+      "daisen-hy",
+      "شباك ريفو 21 - 24 trd  "
     ],
     "description_preview": ""
   },
@@ -24279,9 +24279,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260828",
     "slug": "شباك-ريفو-21--24-gr-بكتابة-تويوتا",
     "search_terms": [
+      "daisen-hy",
       "شباك ريفو 21 - 24 gr بكتابة تويوتا  ",
-      "xyh-ty-184",
-      "daisen-hy"
+      "xyh-ty-184"
     ],
     "description_preview": ""
   },
@@ -24299,9 +24299,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260829",
     "slug": "هلال-جاملغ-ريفو-21--24-trd-مع-كفر-احمر",
     "search_terms": [
-      "هلال جاملغ ريفو 21 - 24 trd مع كفر احمر  ",
       "daisen-hy",
-      "xyh-ty-189"
+      "xyh-ty-189",
+      "هلال جاملغ ريفو 21 - 24 trd مع كفر احمر  "
     ],
     "description_preview": ""
   },
@@ -24320,8 +24320,8 @@ window.search-index = [
     "slug": "شباك-عكرب-07--24-نيكل",
     "search_terms": [
       "daisen-hy",
-      "xyh-ty-236",
-      "شباك عكرب 07 - 24 نيكل "
+      "شباك عكرب 07 - 24 نيكل ",
+      "xyh-ty-236"
     ],
     "description_preview": ""
   },
@@ -24339,9 +24339,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260831",
     "slug": "بروجكتر-اف-جي-fj--تك-عدسة",
     "search_terms": [
-      "xyh-ty-338",
+      "بروجكتر اف جي fj - تك عدسة  ",
       "daisen-hy",
-      "بروجكتر اف جي fj - تك عدسة  "
+      "xyh-ty-338"
     ],
     "description_preview": ""
   },
@@ -24360,9 +24360,9 @@ window.search-index = [
     "slug": "بروجكتر-اف-جي-fj--تك-دبل-عدسة",
     "search_terms": [
       "نظام التعليق",
+      "daisen-hy",
       "بروجكتر اف جي fj - تك دبل عدسة   ",
-      "xyh-ty-339",
-      "daisen-hy"
+      "xyh-ty-339"
     ],
     "description_preview": ""
   },
@@ -24380,9 +24380,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260833",
     "slug": "شباك-fj-اف-جي-نيكل",
     "search_terms": [
-      "xyh-ty-340",
       "daisen-hy",
-      "شباك fj اف جي نيكل  "
+      "شباك fj اف جي نيكل  ",
+      "xyh-ty-340"
     ],
     "description_preview": ""
   },
@@ -24400,9 +24400,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260834",
     "slug": "بك-لايت-بيكب-نيسان-01--20-شبوط-ايسر",
     "search_terms": [
+      "daisen-hy",
       "xyh-ns-005-l",
-      "بك لايت بيكب نيسان 01 - 20 شبوط ايسر ",
-      "daisen-hy"
+      "بك لايت بيكب نيسان 01 - 20 شبوط ايسر "
     ],
     "description_preview": ""
   },
@@ -24441,8 +24441,8 @@ window.search-index = [
     "slug": "شباك-بيكب-نيسان-شبوط-05--داير-نيكل-داخل-اسود",
     "search_terms": [
       "daisen-hy",
-      "شباك بيكب نيسان شبوط 05 -  داير نيكل داخل اسود ",
-      "xyh-ns-008"
+      "xyh-ns-008",
+      "شباك بيكب نيسان شبوط 05 -  داير نيكل داخل اسود "
     ],
     "description_preview": ""
   },
@@ -24460,8 +24460,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260837",
     "slug": "لايت-نافارا-05-14-ايمن",
     "search_terms": [
-      "daisen-hy",
       "xyh-ns-027-r",
+      "daisen-hy",
       "لايت نافارا 05 -14 ايمن  "
     ],
     "description_preview": ""
@@ -24480,9 +24480,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260838",
     "slug": "لايت-نافارا-05-14-ايمن",
     "search_terms": [
+      "xyh-ns-027-l",
       "daisen-hy",
-      "لايت نافارا 05 -14 ايمن  ",
-      "xyh-ns-027-l"
+      "لايت نافارا 05 -14 ايمن  "
     ],
     "description_preview": ""
   },
@@ -24520,9 +24520,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=260840",
     "slug": "بك-لايت-نافارا-05--14-ايسر",
     "search_terms": [
-      "xyh-ns-030-l",
       "daisen-hy",
-      "بك لايت نافارا 05 - 14 ايسر "
+      "بك لايت نافارا 05 - 14 ايسر ",
+      "xyh-ns-030-l"
     ],
     "description_preview": ""
   },
@@ -24541,8 +24541,8 @@ window.search-index = [
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-5-واير-ابيض-ايسر",
     "search_terms": [
       "a073-1030w-l",
-      "daisen-m",
-      "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايسر "
+      "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24560,9 +24560,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261118",
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-5-واير-ابيض-ايمن",
     "search_terms": [
+      "a073-1030w-r",
       "مراة جانبية رف فور 19 - كهرباء اشارة 5 واير ابيض ايمن ",
-      "daisen-m",
-      "a073-1030w-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24580,9 +24580,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261119",
     "slug": "مراة-جانبية-رف-فور-19--كهرباء-اشارة-هيتر-8-واير-ابيض-ايسر",
     "search_terms": [
-      "مراة جانبية رف فور 19 - كهرباء اشارة هيتر 8 واير ابيض ايسر ",
       "a073-1034bsm-l",
-      "daisen-m"
+      "daisen-m",
+      "مراة جانبية رف فور 19 - كهرباء اشارة هيتر 8 واير ابيض ايسر "
     ],
     "description_preview": ""
   },
@@ -24621,8 +24621,8 @@ window.search-index = [
     "slug": "مراة-جانبية-سني-هندي-14--كهرباء-اشارة-عربي-5-واير-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايسر ",
-      "jc019-1030led-l",
-      "daisen-m"
+      "daisen-m",
+      "jc019-1030led-l"
     ],
     "description_preview": ""
   },
@@ -24640,9 +24640,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261122",
     "slug": "مراة-جانبية-سني-هندي-14--كهرباء-اشارة-عربي-5-واير-ابيض-ايمن",
     "search_terms": [
+      "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايمن ",
       "jc019-1030led-r",
-      "daisen-m",
-      "مراة جانبية سني هندي 14 - كهرباء اشارة عربي 5 واير ابيض ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24660,8 +24660,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261123",
     "slug": "مراة-جانبية-برادو-03--09-كهرباء-عربي-5-واير-نيكل-ايسر",
     "search_terms": [
-      "مراة جانبية برادو 03 - 09 كهرباء  عربي 5 واير نيكل ايسر ",
       "ja010-1200-c-l",
+      "مراة جانبية برادو 03 - 09 كهرباء  عربي 5 واير نيكل ايسر ",
       "daisen-m"
     ],
     "description_preview": ""
@@ -24700,9 +24700,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261125",
     "slug": "مراة-جانبية-بيكب-فيكو-05--10-كهرباء-عربي-3-واير-نيكل-ايسر",
     "search_terms": [
-      "daisen-m",
       "مراة جانبية بيكب فيكو 05 - 10 كهرباء عربي 3 واير نيكل ايسر ",
-      "ja013-1000-c-l"
+      "ja013-1000-c-l",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24720,9 +24720,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261126",
     "slug": "مراة-جانبية-بيكب-فيكو-05--10-كهرباء-عربي-3-واير-نيكل-ايمن",
     "search_terms": [
-      "daisen-m",
+      "ja013-1000-c-r",
       "مراة جانبية بيكب فيكو 05 - 10 كهرباء عربي 3 واير نيكل ايمن ",
-      "ja013-1000-c-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24741,8 +24741,8 @@ window.search-index = [
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-شفط-7-واير-اشارة-لون-اسود-ايسر",
     "search_terms": [
       "مراة جانبية كامري 12 - 17 كهرباء شفط 7 واير اشارة لون اسود ايسر ",
-      "daisen-m",
-      "ja022- 1230 l"
+      "ja022- 1230 l",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24760,8 +24760,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261128",
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-شفط-7-واير-اشارة-لون-اسود-ايمن",
     "search_terms": [
-      "ja022- 1230 r",
       "daisen-m",
+      "ja022- 1230 r",
       "مراة جانبية كامري 12 - 17 كهرباء شفط 7 واير اشارة لون اسود ايمن "
     ],
     "description_preview": ""
@@ -24780,9 +24780,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261129",
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-هيتر-7-واير-اشارة-لون-اسود-ايسر",
     "search_terms": [
-      "مراة جانبية كامري 12 - 17 كهرباء هيتر 7 واير اشارة لون اسود ايسر ",
       "ja022- 1034 l",
-      "daisen-m"
+      "daisen-m",
+      "مراة جانبية كامري 12 - 17 كهرباء هيتر 7 واير اشارة لون اسود ايسر "
     ],
     "description_preview": ""
   },
@@ -24820,9 +24820,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261131",
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-3-واير-اشارة-لون-اسود-ايسر",
     "search_terms": [
+      "ja022-1000 l",
       "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايسر ",
-      "daisen-m",
-      "ja022-1000 l"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24840,9 +24840,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261132",
     "slug": "مراة-جانبية-كامري-12--17-كهرباء-3-واير-اشارة-لون-اسود-ايمن",
     "search_terms": [
-      "ja022-1000 r",
       "daisen-m",
-      "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايمن "
+      "مراة جانبية كامري 12 - 17 كهرباء 3 واير اشارة لون اسود ايمن ",
+      "ja022-1000 r"
     ],
     "description_preview": ""
   },
@@ -24860,9 +24860,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261133",
     "slug": "مراة-جانبية-فيكو-12--15-اشارة-كهرباء-عربي-نيكل-ايسر",
     "search_terms": [
-      "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايسر ",
       "daisen-m",
-      "ja026-1030c-l"
+      "ja026-1030c-l",
+      "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايسر "
     ],
     "description_preview": ""
   },
@@ -24881,8 +24881,8 @@ window.search-index = [
     "slug": "مراة-جانبية-فيكو-12--15-اشارة-كهرباء-عربي-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية فيكو 12 - 15 اشارة كهرباء عربي نيكل ايمن ",
-      "daisen-m",
-      "ja026-1030c-r"
+      "ja026-1030c-r",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -24921,8 +24921,8 @@ window.search-index = [
     "slug": "مراة-جانبية-برادو-14--22-كهرباء-شفط-اشارة-عربي-لولوي-7-واير-ايمن",
     "search_terms": [
       "مراة جانبية برادو 14 - 22 كهرباء شفط اشارة عربي لولوي 7 واير ايمن ",
-      "ja045-1230-r",
-      "daisen-m"
+      "daisen-m",
+      "ja045-1230-r"
     ],
     "description_preview": ""
   },
@@ -24940,9 +24940,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261142",
     "slug": "مراة-جانبية-لاند-12--15-كهرباء-شفط-اشارة-عربي-7-واير-لولوي-ايسر",
     "search_terms": [
+      "daisen-m",
       "ja046-1230-pw-l",
-      "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايسر ",
-      "daisen-m"
+      "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايسر "
     ],
     "description_preview": ""
   },
@@ -24961,8 +24961,8 @@ window.search-index = [
     "slug": "مراة-جانبية-لاند-12--15-كهرباء-شفط-اشارة-عربي-7-واير-لولوي-ايمن",
     "search_terms": [
       "ja046-1230-pw-r",
-      "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايمن ",
-      "daisen-m"
+      "daisen-m",
+      "مراة جانبية لاند 12 - 15 كهرباء شفط اشارة عربي 7 واير لولوي ايمن "
     ],
     "description_preview": ""
   },
@@ -24980,9 +24980,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261144",
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-اشارة-هيتر-7-واير-ابيض-ايسر",
     "search_terms": [
-      "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايسر ",
+      "ja047-1034-l",
       "daisen-m",
-      "ja047-1034-l"
+      "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايسر "
     ],
     "description_preview": ""
   },
@@ -25000,9 +25000,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261145",
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-اشارة-هيتر-7-واير-ابيض-ايمن",
     "search_terms": [
-      "daisen-m",
       "مراة جانبية كورلا 14 - 19 امريكي كهرباء اشارة هيتر 7 واير ابيض ايمن ",
-      "ja047-1034-r"
+      "ja047-1034-r",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25020,9 +25020,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261146",
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-3-واير-ابيض-ايسر",
     "search_terms": [
-      "daisen-m",
       "ja047-1000-l",
-      "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايسر "
+      "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25040,9 +25040,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261147",
     "slug": "مراة-جانبية-كورلا-14--19-امريكي-كهرباء-3-واير-ابيض-ايمن",
     "search_terms": [
+      "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايمن ",
       "ja047-1000-r",
-      "daisen-m",
-      "مراة جانبية كورلا 14 - 19 امريكي كهرباء 3 واير ابيض ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25060,9 +25060,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261148",
     "slug": "مراة-جانبية-كامري-18--امريكي-كهرباء-ابيض-3-واير-ايسر",
     "search_terms": [
-      "daisen-m",
+      "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايسر ",
       "ja065-1000-l",
-      "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايسر "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25081,8 +25081,8 @@ window.search-index = [
     "slug": "مراة-جانبية-كامري-18--امريكي-كهرباء-ابيض-3-واير-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18 - امريكي كهرباء ابيض 3 واير ايمن ",
-      "daisen-m",
-      "ja065-1000-r"
+      "ja065-1000-r",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25140,9 +25140,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261153",
     "slug": "مراة-جانبية-ريفو-16-كهرباء-اشارة-شفط-عربي-اشارة-ترحيب-9-واير-نيكل-ايسر",
     "search_terms": [
+      "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايسر ",
       "ja056-1230pc-l",
-      "daisen-m",
-      "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايسر "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25160,9 +25160,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261154",
     "slug": "مراة-جانبية-ريفو-16-كهرباء-اشارة-شفط-عربي-اشارة-ترحيب-9-واير-نيكل-ايمن",
     "search_terms": [
+      "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايمن ",
       "ja056-1230pc-r",
-      "daisen-m",
-      "مراة جانبية ريفو 16- كهرباء اشارة شفط عربي اشارة ترحيب 9 واير نيكل ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25180,9 +25180,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261155",
     "slug": "مراة-جانبية-كامري-18-7-واير-شفط-اشارة-امريكي-لون-ابيض-ايسر",
     "search_terms": [
+      "ja061-1230-pw-l",
       "daisen-m",
-      "مراة جانبية كامري 18- 7 واير شفط اشارة امريكي لون ابيض ايسر ",
-      "ja061-1230-pw-l"
+      "مراة جانبية كامري 18- 7 واير شفط اشارة امريكي لون ابيض ايسر "
     ],
     "description_preview": ""
   },
@@ -25240,9 +25240,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261158",
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-لون-ابيض-ايمن",
     "search_terms": [
+      "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي لون ابيض ايمن ",
       "ja062-1030-r",
-      "daisen-m",
-      "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي لون ابيض ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25260,9 +25260,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261159",
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايسر",
     "search_terms": [
-      "daisen-m",
+      "ja062-1034bsm-l",
       "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي هيتر + نقطة عمياء لون ابيض ايسر ",
-      "ja062-1034bsm-l"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25280,9 +25280,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261160",
     "slug": "مراة-جانبية-سي-اج-ار-18--5-واير-كهرباء-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايمن",
     "search_terms": [
+      "ja062-1034bsm-r",
       "مراة جانبية سي اج ار 18 - 5 واير كهرباء اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن ",
-      "daisen-m",
-      "ja062-1034bsm-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25321,8 +25321,8 @@ window.search-index = [
     "slug": "مراة-جانبية-كامري-18-5-واير-اشارة-امريكي-لون-ابيض-ايمن",
     "search_terms": [
       "مراة جانبية كامري 18- 5 واير اشارة امريكي لون ابيض ايمن ",
-      "daisen-m",
-      "ja065-1030-r"
+      "ja065-1030-r",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25340,9 +25340,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261163",
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-لون-ابيض-ايسر",
     "search_terms": [
-      "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايسر ",
       "daisen-m",
-      "ja065-1034-l"
+      "ja065-1034-l",
+      "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايسر "
     ],
     "description_preview": ""
   },
@@ -25360,8 +25360,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261164",
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-لون-ابيض-ايمن",
     "search_terms": [
-      "daisen-m",
       "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر لون ابيض ايمن ",
+      "daisen-m",
       "ja065-1034-r"
     ],
     "description_preview": ""
@@ -25381,8 +25381,8 @@ window.search-index = [
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايسر ",
-      "daisen-m",
-      "ja065-1034bsm-l"
+      "ja065-1034bsm-l",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25400,9 +25400,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261167",
     "slug": "مراة-جانبية-كامري-18-7-واير-اشارة-امريكي-هيتر-+-نقطة-عمياء-لون-ابيض-ايمن",
     "search_terms": [
+      "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن ",
       "daisen-m",
-      "ja065-1034bsm-r",
-      "مراة جانبية كامري 18- 7 واير اشارة امريكي هيتر + نقطة عمياء لون ابيض ايمن "
+      "ja065-1034bsm-r"
     ],
     "description_preview": ""
   },
@@ -25421,8 +25421,8 @@ window.search-index = [
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-اسود-ايسر",
     "search_terms": [
       "ja066-1234-bk-l",
-      "daisen-m",
-      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايسر "
+      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25440,9 +25440,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261169",
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-اسود-ايمن",
     "search_terms": [
+      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايمن ",
       "ja066-1234-bk-r",
-      "daisen-m",
-      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون اسود ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25461,8 +25461,8 @@ window.search-index = [
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-لولوي-ايسر",
     "search_terms": [
       "ja066-1234-pw-l",
-      "daisen-m",
-      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايسر "
+      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25480,9 +25480,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261171",
     "slug": "مراة-جانبية-افلون-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-لولوي-ايمن",
     "search_terms": [
+      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايمن ",
       "ja066-1234-pw-r",
-      "daisen-m",
-      "مراة جانبية افلون 19 - 8 واير شفط كهرباء اشارة هيتر لون لولوي ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25500,9 +25500,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261172",
     "slug": "مراة-جانبية-كورلا-ليفان-21--كورلا-20--خليجي-5-واير-كهرباء-اشارة-ابيض-ايسر",
     "search_terms": [
+      "مراة جانبية كورلا ليفان 21 - كورلا 20 - خليجي 5 واير كهرباء اشارة ابيض ايسر ",
       "ja067-1030-l",
-      "daisen-m",
-      "مراة جانبية كورلا ليفان 21 - كورلا 20 - خليجي 5 واير كهرباء اشارة ابيض ايسر "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25520,9 +25520,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261173",
     "slug": "مراة-جانبية-كورلا-ليفان-21--5كورلا-20--خليجي-واير-كهرباء-اشارة-ابيض-ايمن",
     "search_terms": [
+      "daisen-m",
       "ja067-1030-r",
-      "مراة جانبية كورلا ليفان 21 - 5كورلا 20 - خليجي واير كهرباء اشارة ابيض ايمن ",
-      "daisen-m"
+      "مراة جانبية كورلا ليفان 21 - 5كورلا 20 - خليجي واير كهرباء اشارة ابيض ايمن "
     ],
     "description_preview": ""
   },
@@ -25581,8 +25581,8 @@ window.search-index = [
     "slug": "مراة-جانبية-كورلا-20--وارد-صيني-شكل-خليجي-5-واير-كهرباء-اشارة-ابيض-ايسر",
     "search_terms": [
       "مراة جانبية كورلا 20 - وارد صيني شكل خليجي 5 واير كهرباء اشارة ابيض ايسر ",
-      "daisen-m",
-      "ja070-1030 l"
+      "ja070-1030 l",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25620,9 +25620,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261178",
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-اسود-مع-نيكل-اشارة-ايسر",
     "search_terms": [
-      "daisen-m",
+      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايسر ",
       "ja076 -1230-l-bk",
-      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايسر "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25640,9 +25640,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261179",
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-اسود-مع-نيكل-اشارة-ايمن",
     "search_terms": [
+      "daisen-m",
       "ja076 -1230-r-bk",
-      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايمن ",
-      "daisen-m"
+      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون اسود مع نيكل اشارة ايمن "
     ],
     "description_preview": ""
   },
@@ -25660,9 +25660,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261180",
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-لولوي-مع-نيكل-اشارة-ايسر",
     "search_terms": [
-      "daisen-m",
       "ja076 -1230-l-pw",
-      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايسر "
+      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25680,9 +25680,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261181",
     "slug": "مراة-جانبية-لاند-16--21-7-واير-كهرباء-اشارة-شفط-عربي-كفر-لون-لولوي-مع-نيكل-اشارة-ايمن",
     "search_terms": [
+      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايمن ",
       "ja076 -1230-r-pw",
-      "daisen-m",
-      "مراة جانبية لاند 16 - 21 7 واير كهرباء اشارة شفط عربي كفر لون لولوي مع نيكل اشارة ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25701,8 +25701,8 @@ window.search-index = [
     "slug": "مراة-جانبية-رف-فور-19--7-واير-كهرباء-اشارة-هيتر-لون-ابيض-ايسر",
     "search_terms": [
       "ja078- 1034-l",
-      "daisen-m",
-      "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايسر "
+      "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25720,8 +25720,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261183",
     "slug": "مراة-جانبية-رف-فور-19--7-واير-كهرباء-اشارة-هيتر-لون-ابيض-ايمن",
     "search_terms": [
-      "ja078- 1034-r",
       "مراة جانبية رف فور 19 - 7 واير كهرباء اشارة هيتر لون ابيض ايمن ",
+      "ja078- 1034-r",
       "daisen-m"
     ],
     "description_preview": ""
@@ -25741,8 +25741,8 @@ window.search-index = [
     "slug": "مراة-جانبية-رف-فور-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-ابيض-ايسر",
     "search_terms": [
       "ja078-1234-l",
-      "daisen-m",
-      "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايسر "
+      "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25760,8 +25760,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261186",
     "slug": "مراة-جانبية-رف-فور-19--8-واير-شفط-كهرباء-اشارة-هيتر-لون-ابيض-ايمن",
     "search_terms": [
-      "ja078-1234-r",
       "مراة جانبية رف فور 19 - 8 واير شفط كهرباء اشارة هيتر لون ابيض ايمن ",
+      "ja078-1234-r",
       "daisen-m"
     ],
     "description_preview": ""
@@ -25780,9 +25780,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261187",
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-اسود-ايسر",
     "search_terms": [
-      "daisen-m",
       "ja082-1230mec-l-bk",
-      "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايسر "
+      "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25801,8 +25801,8 @@ window.search-index = [
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-اسود-ايمن",
     "search_terms": [
       "ja082-1230mec-r-bk",
-      "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايمن ",
-      "daisen-m"
+      "daisen-m",
+      "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون اسود ايمن "
     ],
     "description_preview": ""
   },
@@ -25820,9 +25820,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261189",
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-نيكل-ايسر",
     "search_terms": [
-      "ja082-1230mec-l-ch",
       "daisen-m",
-      "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايسر "
+      "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايسر ",
+      "ja082-1230mec-l-ch"
     ],
     "description_preview": ""
   },
@@ -25841,8 +25841,8 @@ window.search-index = [
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-نيكل-ايمن",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي نيكل ايمن ",
-      "daisen-m",
-      "ja082-1230mec-r-ch"
+      "ja082-1230mec-r-ch",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25860,8 +25860,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261191",
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-لولوي-ايسر",
     "search_terms": [
-      "ja082-1230mec-l-pw",
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون لولوي ايسر ",
+      "ja082-1230mec-l-pw",
       "daisen-m"
     ],
     "description_preview": ""
@@ -25881,8 +25881,8 @@ window.search-index = [
     "slug": "مراة-جانبية-لاند-22--13-واير-كهرباء-اشارة-شفط-ميموري-مع-زجاج-كاسر-للضوء--عربي-لون-لولوي-ايمن",
     "search_terms": [
       "مراة جانبية لاند 22 - 13 واير كهرباء اشارة شفط ميموري مع زجاج كاسر للضوء - عربي لون لولوي ايمن ",
-      "daisen-m",
-      "ja082-1230mec-r-pw"
+      "ja082-1230mec-r-pw",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25900,9 +25900,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261193",
     "slug": "مراة-جانبية-التما-19-8-واير-كهرباء-شفط-اشارة-هيتر-لون-اسود-ايسر",
     "search_terms": [
-      "jc034-1234-l",
+      "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايسر ",
       "daisen-m",
-      "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايسر "
+      "jc034-1234-l"
     ],
     "description_preview": ""
   },
@@ -25920,9 +25920,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261194",
     "slug": "مراة-جانبية-التما-19-8-واير-كهرباء-شفط-اشارة-هيتر-لون-اسود-ايمن",
     "search_terms": [
+      "jc034-1234-r",
       "مراة جانبية التما 19- 8 واير كهرباء شفط اشارة هيتر لون اسود ايمن ",
-      "daisen-m",
-      "jc034-1234-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -25940,8 +25940,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261195",
     "slug": "مراة-جانبية-التما-19-12-واير-كهرباء-شفط-اشارة-هيتر-كامرة-لون-اسود-ايسر",
     "search_terms": [
-      "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايسر ",
       "jc034-1234cr-l",
+      "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايسر ",
       "daisen-m"
     ],
     "description_preview": ""
@@ -25961,8 +25961,8 @@ window.search-index = [
     "slug": "مراة-جانبية-التما-19-12-واير-كهرباء-شفط-اشارة-هيتر-كامرة-لون-اسود-ايمن",
     "search_terms": [
       "مراة جانبية التما 19- 12 واير كهرباء شفط اشارة هيتر كامرة لون اسود ايمن ",
-      "jc034-1234cr-r",
-      "daisen-m"
+      "daisen-m",
+      "jc034-1234cr-r"
     ],
     "description_preview": ""
   },
@@ -25980,8 +25980,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261197",
     "slug": "مراة-جانبية-التما-19-6-واير-كهرباء-اشارة-هيتر-لون-اسود-ايسر",
     "search_terms": [
-      "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايسر ",
       "jc036-1034-l",
+      "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايسر ",
       "daisen-m"
     ],
     "description_preview": ""
@@ -26000,9 +26000,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261198",
     "slug": "مراة-جانبية-التما-19-6-واير-كهرباء-اشارة-هيتر-لون-اسود-ايمن",
     "search_terms": [
+      "jc036-1034-r",
       "مراة جانبية التما 19- 6 واير كهرباء اشارة هيتر لون اسود ايمن ",
-      "daisen-m",
-      "jc036-1034-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26020,9 +26020,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261199",
     "slug": "مراة-جانبية-روج-19--5-واير-كهرباء-اشارة-لون-اسود-ايسر",
     "search_terms": [
-      "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايسر ",
+      "jc037-1030-l",
       "daisen-m",
-      "jc037-1030-l"
+      "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايسر "
     ],
     "description_preview": ""
   },
@@ -26040,8 +26040,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261200",
     "slug": "مراة-جانبية-روج-19--5-واير-كهرباء-اشارة-لون-اسود-ايمن",
     "search_terms": [
-      "jc037-1030-r",
       "مراة جانبية روج 19 - 5 واير كهرباء اشارة لون اسود ايمن ",
+      "jc037-1030-r",
       "daisen-m"
     ],
     "description_preview": ""
@@ -26060,9 +26060,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261209",
     "slug": "مراة-جانبية-كورلا-20--امريكي-5-واير-كهرباء-اشارة-لون-ابيض-ايسر",
     "search_terms": [
-      "daisen-m",
+      "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايسر ",
       "ja071-1030-l",
-      "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايسر "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26080,9 +26080,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261210",
     "slug": "مراة-جانبية-كورلا-20--امريكي-5-واير-كهرباء-اشارة-لون-ابيض-ايمن",
     "search_terms": [
-      "ja071-1030-r",
       "مراة جانبية كورلا 20 - امريكي 5 واير كهرباء اشارة لون ابيض ايمن ",
-      "daisen-m"
+      "daisen-m",
+      "ja071-1030-r"
     ],
     "description_preview": ""
   },
@@ -26101,8 +26101,8 @@ window.search-index = [
     "slug": "مراة-جانبية-كورلا-20--امريكي-7-واير-شفط-كهرباء-اشارة-لون-ابيض-ايسر",
     "search_terms": [
       "ja071-1034-l",
-      "daisen-m",
-      "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايسر "
+      "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26120,9 +26120,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261212",
     "slug": "مراة-جانبية-كورلا-20--امريكي-7-واير-شفط-كهرباء-اشارة-لون-ابيض-ايمن",
     "search_terms": [
+      "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايمن ",
       "ja071-1034-r",
-      "daisen-m",
-      "مراة جانبية كورلا 20 - امريكي 7 واير شفط كهرباء اشارة لون ابيض ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26140,9 +26140,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261213",
     "slug": "مراة-جانبية-كورلا-20--امريكي-3-واير-كهرباء-لون-ابيض-ايسر",
     "search_terms": [
+      "مراة جانبية كورلا 20 - امريكي 3 واير  كهرباء لون ابيض ايسر ",
       "ja071-1000-l",
-      "daisen-m",
-      "مراة جانبية كورلا 20 - امريكي 3 واير  كهرباء لون ابيض ايسر "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26160,9 +26160,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261214",
     "slug": "مراة-جانبية-كورلا-20--امريكي-3-واير-كهرباء-لون-ابيض-ايمن",
     "search_terms": [
+      "مراة جانبية كورلا 20 - امريكي 3 واير كهرباء لون ابيض ايمن ",
       "ja071-1000-r",
-      "daisen-m",
-      "مراة جانبية كورلا 20 - امريكي 3 واير كهرباء لون ابيض ايمن "
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26201,8 +26201,8 @@ window.search-index = [
     "slug": "جامة-مراة-جانبية-لاند-08--21-برادو-10--19-ايسر",
     "search_terms": [
       "jp-ja016-l",
-      "daisen-m",
-      "جامة مراة جانبية لاند 08 - 21 برادو 10 - 19 ايسر "
+      "جامة مراة جانبية لاند 08 - 21 برادو 10 - 19 ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26220,9 +26220,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261217",
     "slug": "اشارة-مراة-لكزس-12--21-lx570-لكزس-برادو-ايمن",
     "search_terms": [
+      "jd-jf010-r",
       "اشارة مراة لكزس 12 - 21 lx570 لكزس برادو ايمن ",
-      "daisen-m",
-      "jd-jf010-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26240,9 +26240,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261218",
     "slug": "اشارة-مراة-لكزس-12--21-lx570-لكزس-برادو-ايسر",
     "search_terms": [
-      "jd-jf010-l",
+      "اشارة مراة لكزس 12 - 21 lx570 لكزس برادو ايسر ",
       "daisen-m",
-      "اشارة مراة لكزس 12 - 21 lx570 لكزس برادو ايسر "
+      "jd-jf010-l"
     ],
     "description_preview": ""
   },
@@ -26261,8 +26261,8 @@ window.search-index = [
     "slug": "اشارة-مراة-جانبية-لكزس-22-ايمن",
     "search_terms": [
       "jd-ja082-r",
-      "daisen-m",
-      "اشارة مراة جانبية لكزس 22- ايمن "
+      "اشارة مراة جانبية لكزس 22- ايمن ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26280,9 +26280,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261220",
     "slug": "اشارة-مراة-جانبية-لكزس-22-ايسر",
     "search_terms": [
-      "jd-ja082-l",
+      "daisen-m",
       "اشارة مراة جانبية لكزس 22- ايسر ",
-      "daisen-m"
+      "jd-ja082-l"
     ],
     "description_preview": ""
   },
@@ -26301,8 +26301,8 @@ window.search-index = [
     "slug": "اشارة-مراة-جانبية-رف-فور-19--ايمن",
     "search_terms": [
       "اشارة مراة جانبية رف فور 19 - ايمن ",
-      "daisen-m",
-      "jd-ja072-r"
+      "jd-ja072-r",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26320,9 +26320,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261222",
     "slug": "اشارة-مراة-جانبية-رف-فور-19--ايسر",
     "search_terms": [
+      "daisen-m",
       "اشارة مراة جانبية رف فور 19 - ايسر ",
-      "jd-ja072-l",
-      "daisen-m"
+      "jd-ja072-l"
     ],
     "description_preview": ""
   },
@@ -26361,8 +26361,8 @@ window.search-index = [
     "slug": "اشارة-مراة-جانبية-كورلا-20--ايسر",
     "search_terms": [
       "jd-ja067-l",
-      "daisen-m",
-      "اشارة مراة جانبية كورلا 20 - ايسر "
+      "اشارة مراة جانبية كورلا 20 - ايسر ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26380,9 +26380,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261225",
     "slug": "اشارة-مراة-جانبية-بيكب-ريفو-16-ايمن",
     "search_terms": [
+      "jd-ja056-r",
       "اشارة مراة جانبية بيكب ريفو 16 ايمن ",
-      "daisen-m",
-      "jd-ja056-r"
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26400,8 +26400,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261226",
     "slug": "اشارة-مراة-جانبية-بيكب-ريفو-16-ايسر",
     "search_terms": [
-      "اشارة مراة جانبية بيكب ريفو 16 ايسر ",
       "jd-ja056-l",
+      "اشارة مراة جانبية بيكب ريفو 16 ايسر ",
       "daisen-m"
     ],
     "description_preview": ""
@@ -26420,9 +26420,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261227",
     "slug": "جامة-مراة-جانبية-لاند-22--بدون-هيتر-عربي-ايمن",
     "search_terms": [
-      "jp-ja082-r",
       "daisen-m",
-      "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايمن "
+      "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايمن ",
+      "jp-ja082-r"
     ],
     "description_preview": ""
   },
@@ -26440,9 +26440,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261228",
     "slug": "جامة-مراة-جانبية-لاند-22--بدون-هيتر-عربي-ايسر",
     "search_terms": [
-      "jp-ja082-l",
       "daisen-m",
-      "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايسر "
+      "جامة مراة جانبية لاند 22 - بدون هيتر عربي ايسر ",
+      "jp-ja082-l"
     ],
     "description_preview": ""
   },
@@ -26461,8 +26461,8 @@ window.search-index = [
     "slug": "جامة-مراة-جانبية-لاند-22--هيتر-عربي-ايمن",
     "search_terms": [
       "jp-ja082-1-r",
-      "daisen-m",
-      "جامة مراة جانبية لاند 22 -  هيتر عربي ايمن "
+      "جامة مراة جانبية لاند 22 -  هيتر عربي ايمن ",
+      "daisen-m"
     ],
     "description_preview": ""
   },
@@ -26480,9 +26480,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261230",
     "slug": "جامة-مراة-جانبية-لاند-22--هيتر-عربي-ايسر",
     "search_terms": [
-      "جامة مراة جانبية لاند 22 -  هيتر عربي ايسر ",
+      "jp-ja082-1-l",
       "daisen-m",
-      "jp-ja082-1-l"
+      "جامة مراة جانبية لاند 22 -  هيتر عربي ايسر "
     ],
     "description_preview": ""
   },
@@ -26500,9 +26500,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261330",
     "slug": "ماشة-كلج-كوستر-فيكو-هايس-2tr-3rz",
     "search_terms": [
-      "mtpt-00617",
+      "aisin",
       "ماشة كلج كوستر فيكو هايس 2tr 3rz",
-      "aisin"
+      "mtpt-00617"
     ],
     "description_preview": ""
   },
@@ -26540,8 +26540,8 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261716",
     "slug": "يدة-قفل-باب-جكمجة-لاند-08--21",
     "search_terms": [
-      "lc200 consule box lock",
       "يدة قفل باب جكمجة لاند 08 - 21 ",
+      "lc200 consule box lock",
       "daisen"
     ],
     "description_preview": ""
@@ -26560,9 +26560,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261719",
     "slug": "بروجكتر-استقبال-اسفل-الابواب-الامامية-برادو-24--شكل-برادو-24",
     "search_terms": [
-      "daisen",
       "fj250 welcome light with shapre prado",
-      "بروجكتر استقبال اسفل الابواب الامامية برادو 24 - شكل برادو 24"
+      "بروجكتر استقبال اسفل الابواب الامامية برادو 24 - شكل برادو 24",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -26581,8 +26581,8 @@ window.search-index = [
     "slug": "بروجكتر-استقبال-اسفل-الابواب-الامامية-كورلا-عام-بعلامة-تويوتا-و-كورولا",
     "search_terms": [
       "corolla saloon welcome",
-      "daisen",
-      "بروجكتر استقبال اسفل الابواب الامامية كورلا عام بعلامة تويوتا و كورولا"
+      "بروجكتر استقبال اسفل الابواب الامامية كورلا عام بعلامة تويوتا و كورولا",
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -26600,9 +26600,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261721",
     "slug": "بروجكتر-استقبال-اسفل-الابواب-الامامية-هايلندر-بعلامة-تويوتا-وهايلندر",
     "search_terms": [
-      "daisen",
+      "بروجكتر استقبال اسفل الابواب الامامية هايلندر بعلامة تويوتا وهايلندر",
       "highlander welcome",
-      "بروجكتر استقبال اسفل الابواب الامامية هايلندر بعلامة تويوتا وهايلندر"
+      "daisen"
     ],
     "description_preview": ""
   },
@@ -26660,9 +26660,9 @@ window.search-index = [
     "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=261949",
     "slug": "بخاخ-تبريد-خلفي-هايس-13--20",
     "search_terms": [
-      "447510-0130",
       "بخاخ تبريد خلفي هايس 13 - 20 ",
-      "denso"
+      "denso",
+      "447510-0130"
     ],
     "description_preview": ""
   }
