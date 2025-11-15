@@ -115,22 +115,7 @@ footer ul li:hover{color:var(--red);cursor:pointer}
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Limit to specific number of items on mobile */
-@media (max-width: 767px) {
-  /* For 2-column grids: show max 4 items (2 rows) */
-  .grid.cols-2 > *:nth-child(n+5),
-  .grid.cols-3 > *:nth-child(n+5),
-  .grid.cols-4 > *:nth-child(n+5) {
-    display: none;
-  }
 
-  /* For 3-column grids: show max 6 items (2 rows) */
-  .grid.cols-6 > *:nth-child(n+7) {
-    display: none;
-  }
-
-
-}
 
 /* Remove limits on desktop */
 @media (min-width: 768px) {
@@ -291,7 +276,592 @@ main {
   }
 }
 
-
 @media(min-width:768px){
   .hero{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+}
 
+/* ========== MOBILE FILTER STYLES ========== */
+/* Mobile Filter Bottom Sheet - SINGLE DEFINITION */
+.mobile-filter-sheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: block; /* Ensure it's always block */
+}
+
+.mobile-filter-sheet.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.filter-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 10001;
+}
+
+.filter-sheet-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--w3);
+  border-radius: 20px 20px 0 0;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 10002;
+}
+
+.mobile-filter-sheet.open .filter-sheet-content {
+  transform: translateY(0);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--w1);
+}
+
+.filter-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--ink1);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.filter-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.filter-section {
+  border-bottom: 1px solid var(--w1);
+}
+
+.filter-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink1);
+  cursor: pointer;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.section-title[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.section-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.section-body.open {
+  max-height: 300px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.filter-pill {
+  padding: 8px 16px;
+  border: 1px solid var(--w1);
+  border-radius: 20px;
+  background: var(--w2);
+  color: var(--ink1);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-pill:hover {
+  border-color: var(--red);
+}
+
+.filter-pill.active {
+  background: var(--red);
+  color: white;
+  border-color: var(--red);
+}
+
+.filter-footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--w1);
+  background: var(--w3);
+}
+
+.filter-footer .btn {
+  flex: 1;
+}
+
+/* Mobile filter button */
+.mobile-filter-btn {
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: none; /* Hidden by default, shown on mobile */
+  white-space: nowrap;
+}
+
+/* Show/hide elements based on screen size */
+@media (max-width: 768px) {
+  .mobile-filter-btn {
+    display: inline-block !important;
+  }
+
+  /* Hide desktop filters on mobile */
+  .shop .grid > aside {
+    display: none !important;
+  }
+
+  /* Adjust grid for mobile */
+  .shop .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile responsive fixes for shop header */
+  .shop-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .search-sort-container {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search input {
+    width: 100%;
+    color: black;
+  }
+
+  .sort-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sort-container .muted {
+    margin-right: 0;
+    white-space: nowrap;
+  }
+
+  #sortSelect {
+    min-width: 150px;
+  }
+
+  /* Ensure grid doesn't overflow */
+  .plp {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .wrap {
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-filter-sheet {
+    display: none !important;
+  }
+
+  /* Show desktop filters on larger screens */
+  .shop .grid > aside {
+    display: block !important;
+  }
+
+  .mobile-filter-btn {
+    display: none !important;
+  }
+}
+
+
+/* ========== SHOP PAGE RESPONSIVE FIXES ========== */
+
+/* Desktop shop layout */
+@media (min-width: 769px) {
+  .grid.shop {
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  /* Show desktop filters on desktop */
+  #desktopFilters {
+    display: block !important;
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
+
+  /* Hide mobile filter button on desktop */
+  .mobile-filter-btn {
+    display: none !important;
+  }
+
+  /* Ensure PLP grid shows 3 columns on desktop */
+  .plp {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px;
+  }
+
+  /* Fix search bar styling on desktop */
+  .search-sort-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search {
+    flex: 1;
+    margin-right: 16px;
+  }
+
+  .sort-container {
+    min-width: 180px;
+  }
+}
+
+/* Mobile shop layout */
+@media (max-width: 768px) {
+  .grid.shop {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Hide desktop filters on mobile */
+  #desktopFilters {
+    display: none !important;
+  }
+
+  /* Show mobile filter button on mobile */
+  .mobile-filter-btn {
+    display: inline-block !important;
+  }
+
+  /* Mobile PLP grid */
+  .plp {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* Mobile search layout */
+  .search-sort-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .sort-container {
+    width: 100%;
+  }
+}
+
+/* Ensure the shop header works properly */
+.shop-header {
+  margin-bottom: 16px;
+}
+
+.search-sort-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Fix search input styling */
+.search input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: var(--black1);
+}
+
+.search input::placeholder {
+  color: #6b7280;
+}
+
+/* Ensure buttons are properly styled */
+.btn2 {
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.btn2:hover {
+  background: var(--red2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(188,20,44,0.3);
+}
+
+/* Sort container fixes */
+.sort-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-container label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+#sortSelect {
+  padding-left: 50px;
+  width: 100%;
+}
+
+/* Product card enhancements */
+.product-card {
+  background: var(--w2);
+  border: 1px solid var(--w1);
+  border-radius: 16px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 25px rgba(188,20,44,0.15);
+  border-color: var(--red);
+  transform: translateY(-2px);
+}
+
+.product-card .image {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.product-card .price {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Load more container styling */
+#loadMoreContainer {
+  text-align: center;
+  margin-top: 32px;
+  padding: 20px;
+  border: 2px solid var(--red);
+  background: rgba(188,20,44,0.05);
+  border-radius: 16px;
+}
+
+#loadMoreBtn {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+#loadMoreInfo {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--red);
+  font-weight: 500;
+}
+
+/* Compact Filter and Sort Buttons */
+.filter-sort-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .search-sort-container {
+    flex-direction: column;
+    gap: 12px;
+    padding:0 12px ;
+  }
+
+  .filter-sort-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mobile-filter-btn {
+    display: inline-block !important;
+    min-width: 80px;
+  }
+
+  .sort-container {
+    flex: 1;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .search {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .filter-sort-buttons {
+    flex-shrink: 0;
+
+  }
+
+  .mobile-filter-btn {
+    display: none !important;
+  }
+}
+
+/* Force 2-column layout on mobile */
+@media (max-width: 768px) {
+  .plp {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .plp > * {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .product-card {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* Fix search bar sizing on desktop */
+.search-sort-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0; /* Allow shrinking */
+}
+
+.search input {
+  flex: 1;
+  min-width: 0; /* Allow input to shrink */
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.filter-sort-buttons {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Desktop specific fixes */
+@media (min-width: 769px) {
+  .search {
+    flex: 1;
+    max-width: 500px; /* Limit maximum width */
+  }
+
+  .search input {
+    flex: 1;
+  }
+
+  .filter-sort-buttons {
+    min-width: 200px; /* Ensure sort dropdown has enough space */
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .search-sort-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .filter-sort-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -1,4 +1,4 @@
-window.filter-data = {
+window.filterData = {
   "categories": [
     {
       "id": 29,

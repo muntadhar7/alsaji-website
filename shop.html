@@ -6,237 +6,247 @@
   <title>Shop - AlSaji Auto Parts</title>
   <link type="image/x-icon" rel="shortcut icon" href="/assets/ALSAJI B2B.svg">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Mobile responsive fixes */
-    @media (max-width: 768px) {
-      .shop-header {
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
-      }
-
-      .search-sort-container {
-        flex-direction: column;
-        gap: 8px;
-        width: 100%;
-      }
-
-      .search {
-        width: 100%;
-        margin-right: 0;
-      }
-
-      .search input {
-        width: 100%;
-        color: black;
-      }
-
-      .sort-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      .sort-container .muted {
-        margin-right: 0;
-        white-space: nowrap;
-      }
-
-      #sortSelect {
-        min-width: 150px;
-      }
-
-      /* Ensure grid doesn't overflow */
-      .grid.shop {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .plp {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-      }
-
-      .wrap {
-        padding: 8px 16px;
-      }
-    }
-
-
-
-    /* Ensure search bar styling matches your theme */
-    .search {
-      display: flex;
-      align-items: center;
-      border: 1px solid var(--w1);
-      border-radius: 12px;
-      padding: 4px;
-      background: #fff;
-      flex: 1;
-    }
-
-    .search input {
-      border: 0;
-      outline: 0;
-      background: transparent;
-      flex: 1;
-      padding: 8px 12px;
-      font-size: 14px;
-    }
-
-    .search input::placeholder {
-      color: #6b7280;
-    }
-  </style>
 </head>
 <body style="visibility:hidden;">
-<!-- Load static data FIRST -->
+    <!-- Load static data FIRST -->
     <script src="js/main.js"></script>
-
     <script src="data/static_api.js"></script>
-
-    <!-- Then load API -->
     <script src="js/api.js"></script>
-
     <!-- Then load other components -->
+    <script src="js/mobile-filters.js"></script>
     <script src="js/cart-manager.js"></script>
-    <script src="js/vehicle-manager.js"></script> <!-- ✅ ADD THIS -->
+    <script src="js/vehicle-manager.js"></script>
     <script src="data/html/filtering.js"></script>
     <script src="js/app.js"></script>
 
+    <main class="wrap">
+      <div class="grid shop">
+        <!-- Desktop Filters (visible on desktop) -->
+        <aside class="card" id="desktopFilters">
+          <div style="display: flex; flex-direction: column; gap: 4px; padding: 8px 8px">
+            <div class="muted" id="resultsCount">Loading products...</div>
+            <h2 class="bold" style="margin: 0">Your vehicle</h2>
+          </div>
+          <div id="vehBox" class="card" style="background:#f9f7f9">
+            <div class="muted">No vehicle selected</div>
+          </div>
+          <div class="row between" style="align-items: center; padding: 8px 8px">
+            <h2 style="margin: 0 0 0 0;">Filters</h2>
+            <button class="btn clear-filters" style="white-space: nowrap;" id="clearButton">
+              Clear
+            </button>
+          </div>
+          <div class="card">
+            <div class="muted">Brand</div>
+            <select class="select" id="filterBrand">
+              <option value="">All Brands</option>
+            </select>
+          </div>
+          <div class="card" style="margin-top:8px">
+            <div class="muted">Category</div>
+            <select class="select" id="filterCategory">
+              <option value="">All Categories</option>
+            </select>
+          </div>
+          <div class="card" style="margin-top:8px">
+            <div class="muted">Price Range</div>
+            <select class="select" id="filterPrice">
+              <option value="">Any Price</option>
+              <option value="0-50000">Under IQD 50,000</option>
+              <option value="50000-100000">IQD 50,000 - 100,000</option>
+              <option value="100000-200000">IQD 100,000 - 200,000</option>
+              <option value="200000-9999999">Over IQD 200,000</option>
+            </select>
+          </div>
+          <div class="card" style="margin-top:8px">
+            <div class="muted">Availability</div>
+            <select class="select" id="filterStock">
+              <option value="">Any Stock Status</option>
+              <option value="True">In Stock</option>
+              <option value="False">Out of Stock</option>
+            </select>
+          </div>
+        </aside>
 
-  <main class="wrap">
-    <div class="grid shop">
-      <aside class="card">
-        <div style="display: flex; flex-direction: column; gap: 4px; padding: 8px 8px">
-          <div class="muted" id="resultsCount">Loading products...</div>
-          <h2 class="bold" style="margin: 0">Your vehicle</h2>
-        </div>
-        <div id="vehBox" class="card" style="background:#f9f7f9">
-          <div class="muted">No vehicle selected</div>
-        </div>
-        <div class="row between" style="align-items: center; padding: 8px 8px">
-          <h2 style="margin: 0 0 0 0;">Filters</h2>
-          <button class="btn clear-filters" style="white-space: nowrap;" id="clearButton">
-            Clear
+        <!-- Main Content Area -->
+        <section>
+          <!-- Shop Header -->
+<div class="shop-header row between" style="margin-bottom:8px">
+  <div class="search-sort-container row" style="align-items:center; gap:16px; width: 100%;">
+    <!-- Search Bar - Updated -->
+    <div class="search" style="flex: 1; display: flex; align-items: center; min-width: 0;">
+      <input class="search input" id="searchInput" placeholder="Search products..." style="flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; padding: 8px 12px;">
+      <button class="btn2" id="searchButton" style="white-space: nowrap; flex-shrink: 0;">Search</button>
+    </div>
+
+    <!-- Filter and Sort Buttons -->
+    <div class="filter-sort-buttons row" style="align-items: center; gap: 8px; flex-shrink: 0; padding: 0 8px; min-width: 200px;">
+      <!-- Sort Dropdown -->
+      <div class="sort-container" style="position: relative; display: inline-block; min-width: 150px; flex: 1;">
+        <label for="sortSelect" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888; pointer-events: none; font-size: 14px;">Sort</label>
+        <select class="select" id="sortSelect" style="padding-left: 50px; width: 100%;">
+          <option>Relevance</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest</option>
+        </select>
+      </div>
+      <!-- Mobile Filter Button -->
+      <button class="btn2 mobile-filter-btn" id="mobileFilterBtn" style="display: none; white-space: nowrap;">
+        Filters
+      </button>
+    </div>
+  </div>
+</div>          <!-- Product Grid -->
+          <div class="grid plp" id="productGrid">
+            <!-- Products loaded by JavaScript -->
+          </div>
+
+          <!-- Load More Button -->
+          <div id="loadMoreContainer" style="text-align: center; margin-top: 24px; display: none;">
+            <button class="btn secondary" id="loadMoreBtn">
+              Load More Products
+            </button>
+            <div id="loadMoreInfo" class="muted" style="margin-top: 8px; font-size: 14px;"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Mobile Filter Bottom Sheet -->
+    <div class="mobile-filter-sheet" id="mobileFilterSheet">
+      <div class="filter-overlay" id="filterOverlay"></div>
+      <div class="filter-sheet-content">
+        <!-- Header -->
+        <div class="filter-header">
+          <h3 style="margin: 0;">Filters</h3>
+          <button class="filter-close" id="filterClose">
+            <i style="font-size: 20px;">×</i>
           </button>
         </div>
-        <div class="card" >
-          <div class="muted">Brand</div>
-          <select class="select" id="filterBrand">
-            <option value="">All Brands</option>
-          </select>
-        </div>
-        <div class="card" style="margin-top:8px">
-          <div class="muted">Category</div>
-          <select class="select" id="filterCategory">
-            <option value="">All Categories</option>
-          </select>
-        </div>
-        <div class="card" style="margin-top:8px">
-          <div class="muted">Price Range</div>
-          <select class="select" id="filterPrice">
-            <option value="">Any Price</option>
-            <option value="0-50000">Under IQD 50,000</option>
-            <option value="50000-100000">IQD 50,000 - 100,000</option>
-            <option value="100000-200000">IQD 100,000 - 200,000</option>
-            <option value="200000-9999999">Over IQD 200,000</option>
-          </select>
-        </div>
-        <div class="card" style="margin-top:8px">
-          <div class="muted">Availability</div>
-          <select class="select" id="filterStock">
-            <option value="">Any Stock Status</option>
-            <option value="True">In Stock</option>
-            <option value="False">Out of Stock</option>
-          </select>
-        </div>
-      </aside>
-      <section>
-        <div class="shop-header row between" style="margin-bottom:8px">
-          <div class="search-sort-container row" style="align-items:center; width: 100%;">
-            <!-- Search Bar -->
-            <div class="search">
-              <input class="search input" id="searchInput" placeholder="Search products...">
-              <button class="btn2" id="searchButton" style="white-space: nowrap;">Search</button>
+
+        <!-- Filter Content -->
+        <div class="filter-content">
+          <!-- Brand Filter -->
+          <div class="filter-section">
+            <button class="section-title" data-section="brand">
+              Brand
+              <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
+              </svg>
+            </button>
+            <div class="section-body" id="brandSection">
+              <div class="filter-options">
+                <button class="filter-pill active" data-filter="brand-all">
+                  All Brands
+                </button>
+                <!-- Brand pills will be populated by JavaScript -->
+              </div>
             </div>
-            <!-- Sort Dropdown -->
-<div class="sort-container" style="position: relative; display: inline-block;">
-  <label for="sortSelect" style="
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-    pointer-events: none;
-    font-size: 14px;
-  ">Sort</label>
+          </div>
+        <!-- Filter Content -->
 
-  <select class="select" id="sortSelect" style="padding-left: 50px;">
-    <option>Relevance</option>
-    <option>Price: Low to High</option>
-    <option>Price: High to Low</option>
-    <option>Newest</option>
-  </select>
-</div>
+          <!-- Category Filter -->
+          <div class="filter-section">
+            <button class="section-title" data-section="category">
+              Category
+              <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
+              </svg>
+            </button>
+            <div class="section-body" id="categorySection">
+              <div class="filter-options">
+                <button class="filter-pill active" data-filter="category-all">
+                  All Categories
+                </button>
+                <!-- Category pills will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
 
+          <!-- Price Filter -->
+          <div class="filter-section">
+            <button class="section-title" data-section="price">
+              Price Range
+              <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
+              </svg>
+            </button>
+            <div class="section-body" id="priceSection">
+              <div class="filter-options" id="price-filters">
 
+              </div>
+            </div>
+          </div>
+
+          <!-- Stock Filter -->
+          <div class="filter-section">
+            <button class="section-title" data-section="stock">
+              Availability
+              <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
+              </svg>
+            </button>
+            <div class="section-body" id="stockSection">
+              <div class="filter-options">
+                <button class="filter-pill active" data-filter="stock-all">
+                  Any Stock
+                </button>
+                <button class="filter-pill" data-filter="stock-true">
+                  In Stock
+                </button>
+                <button class="filter-pill" data-filter="stock-false">
+                  Out of Stock
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="grid plp" id="productGrid">
-          <!-- Products loaded by JavaScript -->
-        </div>
-        <!-- Load More Button -->
-        <div id="loadMoreContainer" style="text-align: center; margin-top: 24px; display: none;">
-          <button class="btn secondary" id="loadMoreBtn">
-            Load More Products
+
+
+          <!-- Other filter sections remain the same -->
+          <!-- ... (rest of your mobile filter code) ... -->
+
+
+        <!-- Footer -->
+        <div class="filter-footer">
+          <button class="btn secondary" id="mobileClearFilters">
+            Clear All
           </button>
-          <div id="loadMoreInfo" class="muted" style="margin-top: 8px; font-size: 14px;"></div>
+          <button class="btn" id="mobileApplyFilters">
+            Show Results
+          </button>
         </div>
-      </section>
+      </div>
     </div>
-  </main>
-
-  <script src="data/json/vehicle_compatibility_index.js"></script>
-  <script src="js/shop.js"></script>
-
-  <script>
+    <script src="data/json/filter-data.js"></script>
+    <script src="data/json/search-index.js"></script>
+    <script src="data/json/vehicle_compatibility_index.js"></script>
+    <script src="js/shop.js"></script>
+    <script>
     // Search functionality
     document.addEventListener('DOMContentLoaded', function() {
       const searchInput = document.getElementById('searchInput');
       const searchButton = document.getElementById('searchButton');
 
-      // Function to perform search
       function performSearch() {
         const searchTerm = searchInput.value.trim();
-
-        // If there's a search term, apply the search filter
         if (searchTerm) {
-          // This would typically call a function from shop.js to filter products
-          // For now, we'll just log the search term
           console.log('Searching for:', searchTerm);
-
-          // In a real implementation, you would call a function from shop.js
-          // For example: window.filterProductsBySearch(searchTerm);
+          // Call your shop.js search function here
         } else {
-          // If search is empty, clear any search filters
           console.log('Clearing search');
-
-          // In a real implementation: window.clearSearchFilter();
+          // Call your shop.js clear search function here
         }
       }
 
-      // Search when button is clicked
       searchButton.addEventListener('click', performSearch);
-
-      // Search when Enter key is pressed in the search input
       searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           performSearch();
         }
       });
     });
-  </script>
+    </script>
 </body>
 </html>

@@ -318,7 +318,8 @@
 
       branches.forEach(branch => {
         const branchCard = document.createElement('div');
-        branchCard.className = 'branch-card';
+        branchCard.className = 'card';
+        branchCard.style = 'cursor:pointer';
         branchCard.id = `branch-${branch.id}`;
 
         branchCard.innerHTML = `
@@ -342,6 +343,13 @@
             infoWindows[markerIndex].open(map, markers[markerIndex]);
             map.setCenter(markers[markerIndex].getPosition());
             map.setZoom(15);
+            const mapSection = document.getElementById('map'); // Add this ID to your HTML
+              if (mapSection) {
+                mapSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+
           }
         });
 

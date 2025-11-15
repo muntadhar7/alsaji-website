@@ -1,4 +1,4 @@
-window.search-index = [
+window.searchIndex = [
   {
     "id": 184414,
     "name": " قبغ دبة فضلة رف فور 19 - كورلا بيكاتشو ",
