@@ -1,44 +1,44 @@
 {
   "categories": [
     {
-      "id": 22,
-      "name": "اجزاء المحرك",
-      "slug": "اجزاء-المحرك",
-      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=22&field=image_1920",
-      "product_count": 0
+      "id": 29,
+      "name": "نظام التعليق",
+      "slug": "نظام-التعليق",
+      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=29&field=image_1920",
+      "product_count": 43
     },
     {
       "id": 26,
       "name": "Lubricants - زيوت",
       "slug": "lubricants--زيوت",
       "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=26&field=image_1920",
-      "product_count": 0
+      "product_count": 42
+    },
+    {
+      "id": 22,
+      "name": "اجزاء المحرك",
+      "slug": "اجزاء-المحرك",
+      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=22&field=image_1920",
+      "product_count": 30
     },
     {
       "id": 28,
       "name": "ناقل الحركة",
       "slug": "ناقل-الحركة",
       "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=28&field=image_1920",
-      "product_count": 0
-    },
-    {
-      "id": 29,
-      "name": "نظام التعليق",
-      "slug": "نظام-التعليق",
-      "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=29&field=image_1920",
-      "product_count": 0
-    },
-    {
-      "id": 32,
-      "name": "شمعات احتراق",
-      "slug": "شمعات-احتراق",
-      "image_url": null,
-      "product_count": 0
+      "product_count": 12
     },
     {
       "id": 33,
       "name": "Cae care",
       "slug": "cae-care",
+      "image_url": null,
+      "product_count": 1
+    },
+    {
+      "id": 32,
+      "name": "شمعات احتراق",
+      "slug": "شمعات-احتراق",
       "image_url": null,
       "product_count": 0
     },
@@ -701,5 +701,5 @@
       "phone": false
     }
   ],
-  "last_updated": "2025-11-15T12:13:33.512499"
+  "last_updated": "2025-11-15T12:27:08.025983"
 }

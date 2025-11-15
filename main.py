@@ -154,22 +154,35 @@ class AlSajiDataExporter:
         pricelist_data = self.call_odoo_api(
             model='product.pricelist',
             method='search_read',
-            domain=[('name', 'ilike', 'public')],  # Get public pricelist
+            domain=[('name', 'ilike', 'public')],
             fields=['id', 'name'],
             limit=1
         )
 
-        pricelist_id = 1  # Default fallback
+        pricelist_id = 1
         if pricelist_data:
             pricelist_id = pricelist_data[0]['id']
             print(f"Using pricelist: {pricelist_data[0]['name']} (ID: {pricelist_id})")
         else:
             print("Using default pricelist ID: 1")
 
+        # **FIX 1: Fetch categories first to get their names**
+        print("Fetching categories...")
+        categories_data = self.call_odoo_api(
+            model='product.public.category',
+            method='search_read',
+            domain=[],
+            fields=['id', 'name']
+        )
+
+        # Create a mapping of category ID to category name
+        categories_map = {cat['id']: cat['name'] for cat in (categories_data or [])}
+        print(f"Loaded {len(categories_map)} categories")
+
         # Define fields to fetch
         fields = [
             'id', 'name', 'default_code', 'list_price', 'standard_price',
-            'public_categ_ids', 'description', 'description_sale',
+            'public_categ_ids', 'categ_id', 'description', 'description_sale',  # **FIX 2: Added categ_id**
             'qty_available', 'image_128', 'brand_id'
         ]
 
@@ -179,7 +192,8 @@ class AlSajiDataExporter:
             products_data = self.call_odoo_api(
                 model='product.template',
                 method='search_read',
-                domain=["&", "&", "&", ("sale_ok", "=", True), ("product_variant_id.is_vehicle", "=", False), ("categ_id", "!=", 5), ("is_published", "=", True)],  # Only products that can be sold
+                domain=["&", "&", "&", ("sale_ok", "=", True), ("product_variant_id.is_vehicle", "=", False),
+                        ("categ_id", "!=", 5), ("is_published", "=", True)],
                 fields=fields,
                 limit=page_size,
                 offset=offset
@@ -199,7 +213,6 @@ class AlSajiDataExporter:
             product_ids = [product['id'] for product in products_data]
             print(f"Getting prices for {len(product_ids)} products from pricelist...")
 
-            # Use pricelist to get actual prices
             prices_data = self.call_odoo_api(
                 model='product.pricelist',
                 method='get_products_price',
@@ -210,8 +223,8 @@ class AlSajiDataExporter:
                 }
             )
 
-            # Transform Odoo product data to your expected format with proper pricing
-            transformed_products = self.transform_products(products_data, prices_data, pricelist_id)
+            # **FIX 3: Pass categories_map to transform_products**
+            transformed_products = self.transform_products(products_data, prices_data, pricelist_id, categories_map)
             all_products.extend(transformed_products)
 
             print(f"Fetched {len(products_data)} products (offset: {offset})")
@@ -226,9 +239,13 @@ class AlSajiDataExporter:
         print(f"Total products fetched: {len(all_products)}")
         return all_products
 
-    def transform_products(self, odoo_products, prices_data=None, pricelist_id=1):
+    def transform_products(self, odoo_products, prices_data=None, pricelist_id=1, categories_map=None):
         """Transform Odoo product data to your expected format with proper pricing"""
         transformed = []
+
+        # Ensure categories_map is a dictionary
+        if categories_map is None:
+            categories_map = {}
 
         for product in odoo_products:
             print(f"Transforming product: {product.get('id')} - {product.get('name')}")
@@ -237,33 +254,39 @@ class AlSajiDataExporter:
             price = product.get('list_price', 0.0)
 
             if prices_data and isinstance(prices_data, list) and len(prices_data) > 0:
-                # Find the price for this product in the prices_data
                 product_id = product.get('id')
-                # prices_data should be a list of prices in the same order as product_ids
                 product_index = [p['id'] for p in odoo_products].index(product_id)
                 if product_index < len(prices_data):
                     price = prices_data[product_index]
                     print(f"  Using pricelist price: {price}")
 
-            # Apply the IQD rounding logic: price_iqd = int(round(price / 1000.0) * 1000)
+            # Apply the IQD rounding logic
             try:
-                price_iqd = int(round(float(price*1410) / 1000.0) * 1000)
+                price_iqd = int(round(float(price * 1410) / 1000.0) * 1000)
                 print(f"  Original price: {price}, IQD price: {price_iqd}")
             except (ValueError, TypeError):
                 price_iqd = 0
                 print(f"  Price conversion error, using 0")
 
-            # Handle category (many2one field)
+            # **FIX 4: Correct category handling**
             category = None
-            categ_id = product.get('public_categ_ids')
-            if categ_id and isinstance(categ_id, (list, tuple)) and len(categ_id) > 1:
-                category = {
-                    'id': categ_id[0],
-                    'name': categ_id[1]
-                }
-                print(f"  Category: {category['name']}")
+            categ_ids = product.get('public_categ_ids', [])
+
+            if categ_ids and isinstance(categ_ids, list):
+                # Take the first category ID and look up its name
+                first_categ_id = categ_ids[0] if categ_ids else None
+                if first_categ_id and first_categ_id in categories_map:
+                    category = {
+                        'id': first_categ_id,
+                        'name': categories_map[first_categ_id]
+                    }
+                    print(f"  Category: {category['name']} (ID: {category['id']})")
+                else:
+                    print(f"  Category ID {first_categ_id} not found in categories map")
             else:
-                print(f"  No category found: {categ_id}")
+                print(f"  No category IDs found: {categ_ids}")
+
+
 
             # Handle brand_id (many2one field)
             brand = None
@@ -281,18 +304,18 @@ class AlSajiDataExporter:
                 'id': product.get('id'),
                 'name': product.get('name', ''),
                 'default_code': product.get('default_code', ''),
-                'price': price_iqd,  # Use the calculated IQD price
-                'original_price': price,  # Keep original for reference
+                'price': price_iqd,
+                'original_price': price,
                 'cost_price': product.get('standard_price', 0.0),
                 'category': category,
                 'brand': brand,
                 'brand_id': product.get('brand_id'),
                 'description': product.get('description', '') or product.get('description_sale', ''),
                 'quantity_available': product.get('qty_available', 0),
-                'in_stock': product.get('qty_available', 0) > 0,  # Boolean field for stock availability
+                'in_stock': product.get('qty_available', 0) > 0,
                 'image_url': f"{self.base_url}/web/image?model=product.template&field=image_1920&id={product['id']}" if product.get(
                     'image_128') else None,
-                'branches': [],  # Default empty branches
+                'branches': [],
                 'pricelist_id': pricelist_id
             }
             transformed.append(transformed_product)

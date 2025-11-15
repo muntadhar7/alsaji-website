@@ -1,4 +1,4 @@
-// Static API - Auto-generated 2025-11-15T12:13:33.605301
+// Static API - Auto-generated 2025-11-15T12:27:08.110856
     window.staticAPI = {
   "products": [
     {
@@ -1020,7 +1020,10 @@
       "price": 11000,
       "original_price": 8.0,
       "cost_price": 1.73,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 406,
         "name": "MassFit"
@@ -1043,7 +1046,10 @@
       "price": 11000,
       "original_price": 8.0,
       "cost_price": 2.39,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 25,
         "name": "ERRECOM"
@@ -1388,7 +1394,10 @@
       "price": 6000,
       "original_price": 4.6,
       "cost_price": 2.69,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -1618,7 +1627,10 @@
       "price": 14000,
       "original_price": 10.0,
       "cost_price": 2.89,
-      "category": null,
+      "category": {
+        "id": 33,
+        "name": "Cae care"
+      },
       "brand": {
         "id": 25,
         "name": "ERRECOM"
@@ -1641,7 +1653,10 @@
       "price": 7000,
       "original_price": 5.0,
       "cost_price": 3.06,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -1940,7 +1955,10 @@
       "price": 8000,
       "original_price": 5.65,
       "cost_price": 3.67,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -1963,7 +1981,10 @@
       "price": 7000,
       "original_price": 5.0,
       "cost_price": 3.04,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -2101,7 +2122,10 @@
       "price": 7000,
       "original_price": 4.9,
       "cost_price": 3.84,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -2124,7 +2148,10 @@
       "price": 8000,
       "original_price": 5.6,
       "cost_price": 3.47,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -2147,7 +2174,10 @@
       "price": 9000,
       "original_price": 6.6,
       "cost_price": 3.85,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -2216,7 +2246,10 @@
       "price": 9000,
       "original_price": 6.38,
       "cost_price": 3.93,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -2354,7 +2387,10 @@
       "price": 9000,
       "original_price": 6.5,
       "cost_price": 3.62,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -2377,7 +2413,10 @@
       "price": 9000,
       "original_price": 6.61,
       "cost_price": 3.84,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -2469,7 +2508,10 @@
       "price": 10000,
       "original_price": 7.32,
       "cost_price": 4.0,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -3159,7 +3201,10 @@
       "price": 17000,
       "original_price": 12.0,
       "cost_price": 6.43,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -3320,7 +3365,10 @@
       "price": 17000,
       "original_price": 12.0,
       "cost_price": 6.54,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -4585,7 +4633,10 @@
       "price": 23000,
       "original_price": 16.0,
       "cost_price": 11.56,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -4608,7 +4659,10 @@
       "price": 26000,
       "original_price": 18.5,
       "cost_price": 10.99,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -4631,7 +4685,10 @@
       "price": 25000,
       "original_price": 17.5,
       "cost_price": 11.07,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -4815,7 +4872,10 @@
       "price": 27000,
       "original_price": 19.5,
       "cost_price": 11.63,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -4838,7 +4898,10 @@
       "price": 28000,
       "original_price": 20.13,
       "cost_price": 11.52,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -4884,7 +4947,10 @@
       "price": 27000,
       "original_price": 19.5,
       "cost_price": 11.82,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -4907,7 +4973,10 @@
       "price": 30000,
       "original_price": 21.5,
       "cost_price": 11.120000000000001,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -4953,7 +5022,10 @@
       "price": 28000,
       "original_price": 20.0,
       "cost_price": 11.9,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5137,7 +5209,10 @@
       "price": 36000,
       "original_price": 25.6,
       "cost_price": 11.9,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5275,7 +5350,10 @@
       "price": 32000,
       "original_price": 22.92,
       "cost_price": 12.950000000000001,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5298,7 +5376,10 @@
       "price": 31000,
       "original_price": 22.25,
       "cost_price": 12.280000000000001,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5321,7 +5402,10 @@
       "price": 30000,
       "original_price": 21.0,
       "cost_price": 13.200000000000001,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -5413,7 +5497,10 @@
       "price": 37000,
       "original_price": 26.4,
       "cost_price": 12.74,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5436,7 +5523,10 @@
       "price": 29000,
       "original_price": 20.75,
       "cost_price": 13.65,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -5459,7 +5549,10 @@
       "price": 37000,
       "original_price": 26.44,
       "cost_price": 12.9,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5528,7 +5621,10 @@
       "price": 37000,
       "original_price": 26.0,
       "cost_price": 13.14,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -5735,7 +5831,10 @@
       "price": 27000,
       "original_price": 19.25,
       "cost_price": 14.32,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -5850,7 +5949,10 @@
       "price": 36000,
       "original_price": 25.75,
       "cost_price": 16.68,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -5942,7 +6044,10 @@
       "price": 41000,
       "original_price": 29.28,
       "cost_price": 14.65,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -6770,7 +6875,10 @@
       "price": 42000,
       "original_price": 29.5,
       "cost_price": 16.1,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -6885,7 +6993,10 @@
       "price": 41000,
       "original_price": 29.0,
       "cost_price": 17.42,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 19,
         "name": "Nissan "
@@ -7483,7 +7594,10 @@
       "price": 48000,
       "original_price": 34.29,
       "cost_price": 18.46,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -7506,7 +7620,10 @@
       "price": 39000,
       "original_price": 28.0,
       "cost_price": 18.61,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -8058,7 +8175,10 @@
       "price": 48000,
       "original_price": 34.0,
       "cost_price": 18.96,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -8380,7 +8500,10 @@
       "price": 53000,
       "original_price": 37.56,
       "cost_price": 20.87,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 369,
         "name": "AISIN-LUB"
@@ -8610,7 +8733,10 @@
       "price": 45000,
       "original_price": 32.0,
       "cost_price": 22.07,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -8656,7 +8782,10 @@
       "price": 47000,
       "original_price": 33.0,
       "cost_price": 22.400000000000002,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -8955,7 +9084,10 @@
       "price": 47000,
       "original_price": 33.0,
       "cost_price": 23.16,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 19,
         "name": "Nissan "
@@ -9576,7 +9708,10 @@
       "price": 55000,
       "original_price": 39.0,
       "cost_price": 26.07,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -9875,7 +10010,10 @@
       "price": 56000,
       "original_price": 40.0,
       "cost_price": 27.2,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 19,
         "name": "Nissan "
@@ -10496,7 +10634,10 @@
       "price": 63000,
       "original_price": 45.0,
       "cost_price": 31.02,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 20,
         "name": "Toyota"
@@ -10542,7 +10683,10 @@
       "price": 70000,
       "original_price": 50.0,
       "cost_price": 31.28,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 22,
         "name": "ADVICS"
@@ -10565,7 +10709,10 @@
       "price": 70000,
       "original_price": 50.0,
       "cost_price": 31.28,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 22,
         "name": "ADVICS"
@@ -10841,7 +10988,10 @@
       "price": 62000,
       "original_price": 44.0,
       "cost_price": 32.6,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 19,
         "name": "Nissan "
@@ -11002,7 +11152,10 @@
       "price": 59000,
       "original_price": 42.0,
       "cost_price": 35.09,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -11071,7 +11224,10 @@
       "price": 78000,
       "original_price": 55.0,
       "cost_price": 33.94,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 18,
         "name": "Denso"
@@ -12911,7 +13067,10 @@
       "price": 113000,
       "original_price": 80.0,
       "cost_price": 46.32,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -12934,7 +13093,10 @@
       "price": 113000,
       "original_price": 80.0,
       "cost_price": 46.32,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -13233,7 +13395,10 @@
       "price": 97000,
       "original_price": 69.0,
       "cost_price": 55.19,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -13693,7 +13858,10 @@
       "price": 97000,
       "original_price": 69.0,
       "cost_price": 58.64,
-      "category": null,
+      "category": {
+        "id": 26,
+        "name": "Lubricants - زيوت"
+      },
       "brand": {
         "id": 1060,
         "name": "Veedol"
@@ -15602,7 +15770,10 @@
       "price": 212000,
       "original_price": 150.0,
       "cost_price": 104.16,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -15648,7 +15819,10 @@
       "price": 212000,
       "original_price": 150.0,
       "cost_price": 104.23,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -16338,7 +16512,10 @@
       "price": 324000,
       "original_price": 230.0,
       "cost_price": 168.42000000000002,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 18,
         "name": "Denso"
@@ -16660,7 +16837,10 @@
       "price": 959000,
       "original_price": 680.0,
       "cost_price": 549.39,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 30,
         "name": "DAISEN"
@@ -16683,7 +16863,10 @@
       "price": 959000,
       "original_price": 680.0,
       "cost_price": 549.4,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 30,
         "name": "DAISEN"
@@ -17097,7 +17280,10 @@
       "price": 35000,
       "original_price": 25.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17143,7 +17329,10 @@
       "price": 42000,
       "original_price": 30.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17258,7 +17447,10 @@
       "price": 25000,
       "original_price": 18.0,
       "cost_price": 11.19,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17350,7 +17542,10 @@
       "price": 45000,
       "original_price": 32.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17442,7 +17637,10 @@
       "price": 34000,
       "original_price": 24.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17465,7 +17663,10 @@
       "price": 21000,
       "original_price": 15.0,
       "cost_price": 9.14,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17534,7 +17735,10 @@
       "price": 24000,
       "original_price": 17.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17580,7 +17784,10 @@
       "price": 44000,
       "original_price": 31.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17718,7 +17925,10 @@
       "price": 34000,
       "original_price": 24.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17764,7 +17974,10 @@
       "price": 23000,
       "original_price": 16.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17787,7 +18000,10 @@
       "price": 35000,
       "original_price": 25.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17810,7 +18026,10 @@
       "price": 25000,
       "original_price": 18.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -17902,7 +18121,10 @@
       "price": 25000,
       "original_price": 18.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18017,7 +18239,10 @@
       "price": 141000,
       "original_price": 100.0,
       "cost_price": 68.88,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -18040,7 +18265,10 @@
       "price": 183000,
       "original_price": 130.0,
       "cost_price": 89.31,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 22,
         "name": "ADVICS"
@@ -18063,7 +18291,10 @@
       "price": 120000,
       "original_price": 85.0,
       "cost_price": 59.300000000000004,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -18086,7 +18317,10 @@
       "price": 127000,
       "original_price": 90.0,
       "cost_price": 58.43,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -18132,7 +18366,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 2.74,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 406,
         "name": "MassFit"
@@ -18155,7 +18392,10 @@
       "price": 45000,
       "original_price": 32.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18178,7 +18418,10 @@
       "price": 21000,
       "original_price": 15.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18201,7 +18444,10 @@
       "price": 63000,
       "original_price": 45.0,
       "cost_price": 29.39,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -18224,7 +18470,10 @@
       "price": 63000,
       "original_price": 45.0,
       "cost_price": 29.39,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -18270,7 +18519,10 @@
       "price": 34000,
       "original_price": 24.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18339,7 +18591,10 @@
       "price": 23000,
       "original_price": 16.0,
       "cost_price": 9.790000000000001,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18362,7 +18617,10 @@
       "price": 51000,
       "original_price": 36.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18477,7 +18735,10 @@
       "price": 45000,
       "original_price": 32.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18500,7 +18761,10 @@
       "price": 28000,
       "original_price": 20.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18523,7 +18787,10 @@
       "price": 31000,
       "original_price": 22.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18615,7 +18882,10 @@
       "price": 39000,
       "original_price": 28.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18638,7 +18908,10 @@
       "price": 35000,
       "original_price": 25.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18684,7 +18957,10 @@
       "price": 42000,
       "original_price": 30.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18707,7 +18983,10 @@
       "price": 42000,
       "original_price": 30.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18730,7 +19009,10 @@
       "price": 24000,
       "original_price": 17.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18753,7 +19035,10 @@
       "price": 25000,
       "original_price": 18.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -18776,7 +19061,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 2.89,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 406,
         "name": "MassFit"
@@ -19765,7 +20053,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 30.61,
-      "category": null,
+      "category": {
+        "id": 28,
+        "name": "ناقل الحركة"
+      },
       "brand": {
         "id": 22,
         "name": "ADVICS"
@@ -20777,7 +21068,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 31.35,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -20800,7 +21094,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 31.35,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -21927,7 +22224,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 7.23,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -22732,7 +23032,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 143.73,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -22755,7 +23058,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 141.18,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -23537,7 +23843,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 29.39,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -23560,7 +23869,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 130.81,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -23583,7 +23895,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 60.6,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -23606,7 +23921,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 51.01,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 402,
         "name": "KP "
@@ -23629,7 +23947,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 8.58,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23652,7 +23973,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 6.61,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23675,7 +23999,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 3.88,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23698,7 +24025,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 6.38,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23721,7 +24051,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 6.42,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23744,7 +24077,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 5.66,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23767,7 +24103,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 5.66,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23790,7 +24129,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 7.390000000000001,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23813,7 +24155,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 3.11,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23836,7 +24181,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 2.73,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23859,7 +24207,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 3.4,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -23882,7 +24233,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 7.3100000000000005,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24020,7 +24374,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24083,7 +24440,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24106,7 +24466,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24359,7 +24722,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 4.2,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24382,7 +24748,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 4.55,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24405,7 +24774,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 5.82,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 21,
         "name": "AISIN"
@@ -24681,7 +25053,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 24.92,
-      "category": null,
+      "category": {
+        "id": 22,
+        "name": "اجزاء المحرك"
+      },
       "brand": {
         "id": 371,
         "name": "ART"
@@ -24704,7 +25079,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 134.51,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -24727,7 +25105,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 134.51,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -27855,7 +28236,10 @@
       "price": 0,
       "original_price": 0.0,
       "cost_price": 0.0,
-      "category": null,
+      "category": {
+        "id": 29,
+        "name": "نظام التعليق"
+      },
       "brand": {
         "id": 28,
         "name": "DAISEN-HY"
@@ -30986,7 +31370,7 @@
       "logo": ""
     }
   ],
-  "lastUpdated": "2025-11-15T12:13:33.605301"
+  "lastUpdated": "2025-11-15T12:27:08.110856"
 ,
     vehicleCompatibilityIndex: [{"vehicle_model_id": 252042, "vehicle_model_name": "Land Cruiser", "brand_id": 1787, "brand_name": "Toyota", "compatible_products": [{"product_id": 195623, "product_name": "دسك امامي لاند لكزس 08 - 21 -04465-60280 يابان", "product_code": "A1N156", "price": 56000, "in_stock": true, "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.template&field=image_1920&id=195623"}], "year_range": "2008-2021", "from_year": 2008, "to_year": 2021}],
         // Vehicle Compatibility Functions
