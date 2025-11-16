@@ -8,16 +8,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="visibility:hidden;">
-    <!-- Load static data FIRST -->
-    <script src="js/main.js"></script>
-    <script src="data/static_api.js"></script>
-    <script src="js/api.js"></script>
-    <!-- Then load other components -->
-    <script src="js/mobile-filters.js"></script>
-    <script src="js/cart-manager.js"></script>
-    <script src="js/vehicle-manager.js"></script>
-    <script src="data/html/filtering.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+  <script src="data/static_api.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/shop.js"></script> <!-- Main shop logic -->
+  <script src="js/mobile-filters.js"></script> <!-- Mobile filters -->
+  <script src="data/html/filtering.js"></script> <!-- Mobile filters -->
+  <script src="js/cart-manager.js"></script>
+  <script src="js/vehicle-manager.js"></script>
+  <script src="data/json/vehicle_compatibility_index.js"></script>
 
     <main class="wrap">
       <div class="grid shop">
@@ -219,34 +218,32 @@
         </div>
       </div>
     </div>
-    <script src="data/json/filter-data.js"></script>
-    <script src="data/json/search-index.js"></script>
-    <script src="data/json/vehicle_compatibility_index.js"></script>
-    <script src="js/shop.js"></script>
-    <script>
-    // Search functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const searchInput = document.getElementById('searchInput');
-      const searchButton = document.getElementById('searchButton');
 
-      function performSearch() {
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+
+    function performSearch() {
         const searchTerm = searchInput.value.trim();
-        if (searchTerm) {
-          console.log('Searching for:', searchTerm);
-          // Call your shop.js search function here
-        } else {
-          console.log('Clearing search');
-          // Call your shop.js clear search function here
-        }
-      }
+        console.log('Searching for:', searchTerm);
+        shopState.currentPage = 1;
+        shopState.filters.search = searchTerm;
+        applyFilters();
+    }
 
-      searchButton.addEventListener('click', performSearch);
-      searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-          performSearch();
-        }
-      });
-    });
-    </script>
+    if (searchButton) {
+        searchButton.addEventListener('click', performSearch);
+    }
+    if (searchInput) {
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    }
+});
+</script>
 </body>
 </html>

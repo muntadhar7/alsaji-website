@@ -12,7 +12,6 @@ class ShopState {
             in_stock: false,
             price_min: '',
             price_max: '',
-            // ✅ VEHICLE FILTERS
             vehicle_make: '',
             vehicle_model: '',
             vehicle_year: ''
@@ -22,7 +21,6 @@ class ShopState {
         this.productsPerPage = 12;
         this.hasMoreProducts = false;
         this.totalProducts = 0;
-        this.currentVehicle = null;
     }
 }
 
@@ -39,69 +37,92 @@ function formatPrice(price) {
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
         clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
+        timeout = setTimeout(() => func(...args), wait);
     };
 }
 
-// URL PARAMETER HANDLING
+// URL parameter handling
 function getUrlParams() {
     const params = new URLSearchParams(window.location.search);
     const filters = {};
 
-    if (params.has('brand')) filters.brand = params.get('brand');
-    if (params.has('category')) filters.category = params.get('category');
-    if (params.has('search')) filters.search = params.get('search');
-    if (params.has('in_stock')) filters.in_stock = params.get('in_stock') === 'true';
-    if (params.has('price_min')) filters.price_min = params.get('price_min');
-    if (params.has('price_max')) filters.price_max = params.get('price_max');
-    if (params.has('page')) shopState.currentPage = parseInt(params.get('page')) || 1;
+    const urlMappings = {
+        'brand': 'brand',
+        'category': 'category',
+        'search': 'search',
+        'in_stock': 'in_stock',
+        'price_min': 'price_min',
+        'price_max': 'price_max',
+        'make': 'vehicle_make',
+        'model': 'vehicle_model',
+        'year': 'vehicle_year'
+    };
 
-    // ✅ ADD VEHICLE PARAMS
-    if (params.has('make')) filters.vehicle_make = params.get('make');
-    if (params.has('model')) filters.vehicle_model = params.get('model');
-    if (params.has('year')) filters.vehicle_year = params.get('year');
+    Object.entries(urlMappings).forEach(([param, filterKey]) => {
+        if (params.has(param)) {
+            const value = params.get(param);
+            if (filterKey === 'in_stock') {
+                filters[filterKey] = value === 'true';
+            } else {
+                filters[filterKey] = value;
+            }
+        }
+    });
+
+    if (params.has('page')) {
+        shopState.currentPage = parseInt(params.get('page')) || 1;
+    }
 
     return filters;
 }
 
-function updateUrlParams(filters) {
+function updateUrlParams() {
     const params = new URLSearchParams();
 
-    if (filters.brand) params.set('brand', filters.brand);
-    if (filters.category) params.set('category', filters.category);
-    if (filters.search) params.set('search', filters.search);
-    if (filters.in_stock) params.set('in_stock', 'true');
-    if (filters.price_min) params.set('price_min', filters.price_min);
-    if (filters.price_max) params.set('price_max', filters.price_max);
-    if (shopState.currentPage > 1) params.set('page', shopState.currentPage);
+    const filterMappings = {
+        'brand': 'brand',
+        'category': 'category',
+        'search': 'search',
+        'vehicle_make': 'make',
+        'vehicle_model': 'model',
+        'vehicle_year': 'year'
+    };
 
-    // ✅ ADD VEHICLE PARAMS
-    if (filters.vehicle_make) params.set('make', filters.vehicle_make);
-    if (filters.vehicle_model) params.set('model', filters.vehicle_model);
-    if (filters.vehicle_year) params.set('year', filters.vehicle_year);
+    Object.entries(filterMappings).forEach(([filterKey, param]) => {
+        if (shopState.filters[filterKey]) {
+            params.set(param, shopState.filters[filterKey]);
+        }
+    });
+
+    if (shopState.filters.in_stock) {
+        params.set('in_stock', 'true');
+    }
+
+    if (shopState.filters.price_min) {
+        params.set('price_min', shopState.filters.price_min);
+    }
+
+    if (shopState.filters.price_max) {
+        params.set('price_max', shopState.filters.price_max);
+    }
+
+    if (shopState.currentPage > 1) {
+        params.set('page', shopState.currentPage);
+    }
 
     const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
     window.history.replaceState({}, '', newUrl);
 }
 
-// Product ID validation
+// Cart functionality
 function validateProductId(productId) {
-    if (productId === null || productId === undefined || productId === '') {
-        return false;
-    }
-
+    if (!productId && productId !== 0) return false;
     const id = parseInt(productId);
     return !isNaN(id) && id > 0;
 }
 
-// Enhanced addToCart with validation
 async function addToCart(productId, quantity = 1) {
-    // Validate product ID before sending to API
     if (!validateProductId(productId)) {
         console.error('❌ Invalid product ID:', productId);
         showNotification('Invalid product selection', 'error');
@@ -112,10 +133,7 @@ async function addToCart(productId, quantity = 1) {
         const validatedProductId = parseInt(productId);
         const validatedQuantity = parseInt(quantity) || 1;
 
-        console.log('🛒 Adding to cart:', {
-            productId: validatedProductId,
-            quantity: validatedQuantity
-        });
+        console.log('🛒 Adding to cart:', { productId: validatedProductId, quantity: validatedQuantity });
 
         const result = await alsajiAPI.addToCart(validatedProductId, validatedQuantity);
         if (result.success) {
@@ -163,11 +181,7 @@ function showNotification(message, type = 'info') {
 
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
+        setTimeout(() => notification.remove(), 300);
     }, 3000);
 }
 
@@ -188,32 +202,19 @@ if (!document.querySelector('#notification-styles')) {
     document.head.appendChild(style);
 }
 
-// Data loading functions for static data
+// Data loading
 async function loadStaticData() {
     try {
         console.log('📁 Loading static data from JSON files...');
 
         const [productsData, categoriesData, brandsData] = await Promise.all([
-            fetch('data/json/products.json').then(r => {
-                if (!r.ok) throw new Error(`Products: ${r.status}`);
-                return r.json();
-            }),
-            fetch('data/json/categories.json').then(r => {
-                if (!r.ok) throw new Error(`Categories: ${r.status}`);
-                return r.json();
-            }),
-            fetch('data/json/brands.json').then(r => {
-                if (!r.ok) throw new Error(`Brands: ${r.status}`);
-                return r.json();
-            })
+            fetch('data/json/products.json').then(r => r.json()),
+            fetch('data/json/categories.json').then(r => r.json()),
+            fetch('data/json/brands.json').then(r => r.json())
         ]);
 
         console.log('✅ Static data loaded successfully');
-        return {
-            products: productsData,
-            categories: categoriesData,
-            brands: brandsData
-        };
+        return { products: productsData, categories: categoriesData, brands: brandsData };
     } catch (error) {
         console.error('❌ Failed to load static data:', error);
         showNotification('Failed to load product data', 'error');
@@ -221,116 +222,167 @@ async function loadStaticData() {
     }
 }
 
-// Shop page functionality
-document.addEventListener('DOMContentLoaded', async function() {
-    console.log('🛍️ Initializing shop...');
-
-    // ✅ SETUP VEHICLE FILTERS FIRST
-    setupVehicleFilters();
-
-    // ✅ LOAD DATA - vehicle filters are already set
-    await loadShopData();
-    setupShopEvents();
-
-    // ✅ NO NEED FOR applyUrlFilters() - filters are already applied in loadProducts()
-
-    console.log('✅ Shop initialized with filters:', shopState.filters);
-
-    // Load initial cart count
+// Vehicle compatibility
+async function loadVehicleCompatibilityData() {
     try {
-        const cartResult = await alsajiAPI.getCart();
-        if (cartResult.success && cartResult.cart) {
-            updateCartCount(cartResult.cart.item_count || 0);
+        console.log('🚗 Loading vehicle compatibility data...');
+
+        if (window.staticAPI?.vehicleCompatibilityIndex) {
+            console.log('✅ Vehicle compatibility loaded from static API');
+            return window.staticAPI.vehicleCompatibilityIndex;
         }
+
+        if (window.vehicleCompatibilityIndex) {
+            console.log('✅ Vehicle compatibility loaded from JS module');
+            return window.vehicleCompatibilityIndex;
+        }
+
+        const response = await fetch('data/json/vehicle_compatibility_index.json');
+        if (response.ok) {
+            const data = await response.json();
+            console.log('✅ Vehicle compatibility loaded from JSON file');
+            return data;
+        }
+
+        console.warn('⚠️ No vehicle compatibility data found');
+        return [];
     } catch (error) {
-        console.log('Cart not initialized yet');
-    }
-});
-
-async function loadShopData() {
-    shopState.currentPage = 1;
-    shopState.products = [];
-
-    try {
-        showLoadingState();
-
-        const staticData = await loadStaticData();
-
-        shopState.categories = staticData.categories;
-        shopState.brands = staticData.brands;
-
-        // ✅ ENHANCE PRODUCTS WITH COMPATIBILITY DATA (AWAIT THE PROMISE)
-        shopState.allProducts = await enhanceProductsWithCompatibility(staticData.products);
-
-        shopState.totalProducts = shopState.allProducts.length;
-
-        console.log('📊 Loaded data:', {
-            products: shopState.allProducts.length,
-            enhanced_with_compatibility: shopState.allProducts.filter(p => p.compatibility_info).length,
-            categories: shopState.categories.length,
-            brands: shopState.brands.length,
-            currentFilters: shopState.filters
-        });
-
-        populateFilters(staticData.categories, staticData.products);
-
-        // ✅ LOAD PRODUCTS WITH CURRENT FILTERS (INCLUDING VEHICLE)
-        await loadProducts();
-
-    } catch (error) {
-        console.error('❌ Failed to load shop data:', error);
-        showNotification('Failed to load products', 'error');
-        hideLoadingState();
+        console.error('❌ Error loading vehicle compatibility data:', error);
+        return [];
     }
 }
 
-function showLoadingState() {
-    shopState.isLoading = true;
+async function enhanceProductsWithCompatibility(products) {
+    console.log('🔧 Enhancing products with compatibility data...');
 
-    const container = document.getElementById('productGrid');
-    if (container) {
-        container.innerHTML = `
-            <div style="grid-column:1/-1;text-align:center;padding:40px">
-                <div style="font-size:24px;margin-bottom:12px">⏳</div>
-                <div class="muted">Loading products...</div>
-            </div>
-        `;
+    const compatibilityIndex = await loadVehicleCompatibilityData();
+
+    if (!compatibilityIndex?.length) {
+        console.warn('⚠️ No compatibility index available');
+        return products;
     }
 
-    const loadMoreContainer = document.getElementById('loadMoreContainer');
-    if (loadMoreContainer) {
-        loadMoreContainer.style.display = 'none';
+    console.log('📊 Compatibility index loaded:', compatibilityIndex.length, 'vehicle models');
+
+    const enhancedProducts = products.map(product => {
+        const compatibleVehicles = compatibilityIndex.filter(vehicle =>
+            vehicle.compatible_products.some(cp => {
+                const productId = cp.product_id || cp.product_template_id;
+                return productId === product.id;
+            })
+        );
+
+        if (compatibleVehicles.length > 0) {
+            const firstCompatible = compatibleVehicles[0];
+            return {
+                ...product,
+                compatibility_info: {
+                    vehicle_model_id: firstCompatible.vehicle_model_id,
+                    vehicle_model_name: firstCompatible.vehicle_model_name,
+                    brand_id: firstCompatible.brand_id,
+                    brand_name: firstCompatible.brand_name,
+                    from_year: firstCompatible.from_year,
+                    to_year: firstCompatible.to_year,
+                    year_range: firstCompatible.year_range,
+                    all_compatible_vehicles: compatibleVehicles
+                }
+            };
+        }
+
+        return product;
+    });
+
+    const enhancedCount = enhancedProducts.filter(p => p.compatibility_info).length;
+    console.log(`✅ Enhanced ${enhancedCount} products with compatibility data`);
+
+    return enhancedProducts;
+}
+
+async function checkVehicleCompatibility(product, filters) {
+    const { vehicle_make, vehicle_model, vehicle_year } = filters;
+
+    if (!vehicle_make && !vehicle_model && !vehicle_year) {
+        return true;
     }
+
+    if (product.compatibility_info) {
+        const compInfo = product.compatibility_info;
+
+        if (vehicle_model && compInfo.vehicle_model_id != vehicle_model) {
+            return false;
+        }
+
+        if (vehicle_year) {
+            const year = parseInt(vehicle_year);
+            const fromYear = compInfo.from_year;
+            const toYear = compInfo.to_year;
+
+            if (fromYear && toYear && (year < fromYear || year > toYear)) {
+                return false;
+            } else if (fromYear && year < fromYear) {
+                return false;
+            } else if (toYear && year > toYear) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    const compatibilityIndex = await loadVehicleCompatibilityData();
+    if (!compatibilityIndex?.length) return true;
+
+    const compatibleVehicles = compatibilityIndex.filter(vehicle =>
+        vehicle.compatible_products.some(cp => {
+            const productId = cp.product_id || cp.product_template_id;
+            return productId === product.id;
+        })
+    );
+
+    if (compatibleVehicles.length === 0) return true;
+
+    const matchingVehicles = compatibleVehicles.filter(vehicle => {
+        if (vehicle_model && vehicle.vehicle_model_id != vehicle_model) {
+            return false;
+        }
+
+        if (vehicle_year) {
+            const year = parseInt(vehicle_year);
+            const fromYear = vehicle.from_year;
+            const toYear = vehicle.to_year;
+
+            if (fromYear && toYear && (year < fromYear || year > toYear)) {
+                return false;
+            } else if (fromYear && year < fromYear) {
+                return false;
+            } else if (toYear && year > toYear) {
+                return false;
+            }
+        }
+
+        return true;
+    });
+
+    return matchingVehicles.length > 0;
 }
 
-function hideLoadingState() {
-    shopState.isLoading = false;
-}
-
-// ✅ UPDATE filterProducts FUNCTION TO INCLUDE VEHICLE FILTERING
+// Product filtering and rendering
 async function filterProducts(products, filters) {
-    console.log('🔍 filterProducts: Filtering', products.length, 'products with filters:', filters);
+    console.log('🔍 Filtering', products.length, 'products with filters:', filters);
 
-    // Use Promise.all to handle async compatibility checks
     const filterPromises = products.map(async (product) => {
         // Brand filter
         if (filters.brand && filters.brand !== 'All') {
             const brandName = product.brand ?
-                (typeof product.brand === 'object' ? product.brand.name : product.brand) :
-                '';
-            if (brandName !== filters.brand) {
-                return false;
-            }
+                (typeof product.brand === 'object' ? product.brand.name : product.brand) : '';
+            if (brandName !== filters.brand) return false;
         }
 
         // Category filter
         if (filters.category && filters.category !== 'All') {
             const categoryName = product.category ?
-                (typeof product.category === 'object' ? product.category.name : product.category) :
-                '';
-            if (categoryName !== filters.category) {
-                return false;
-            }
+                (typeof product.category === 'object' ? product.category.name : product.category) : '';
+            if (categoryName !== filters.category) return false;
         }
 
         // Search filter
@@ -344,40 +396,27 @@ async function filterProducts(products, filters) {
                 product.category ? (typeof product.category === 'object' ? product.category.name : product.category) : ''
             ].join(' ').toLowerCase();
 
-            if (!searchableText.includes(searchTerm)) {
-                return false;
-            }
+            if (!searchableText.includes(searchTerm)) return false;
         }
 
         // In stock filter
-        if (filters.in_stock && !product.in_stock) {
-            return false;
-        }
+        if (filters.in_stock && !product.in_stock) return false;
 
         // Price range filters
         if (filters.price_min) {
             const minPrice = parseFloat(filters.price_min);
-            if (!isNaN(minPrice) && product.price < minPrice) {
-                return false;
-            }
+            if (!isNaN(minPrice) && product.price < minPrice) return false;
         }
 
         if (filters.price_max) {
             const maxPrice = parseFloat(filters.price_max);
-            if (!isNaN(maxPrice) && product.price > maxPrice) {
-                return false;
-            }
+            if (!isNaN(maxPrice) && product.price > maxPrice) return false;
         }
 
-        // ✅ VEHICLE COMPATIBILITY FILTER (ASYNC)
+        // Vehicle compatibility filter
         if (filters.vehicle_make || filters.vehicle_model || filters.vehicle_year) {
             const isCompatible = await checkVehicleCompatibility(product, filters);
-            if (!isCompatible) {
-                console.log('❌ Product not compatible with vehicle:', product.name, 'ID:', product.id);
-                return false;
-            } else {
-                console.log('✅ Product compatible with vehicle:', product.name, 'ID:', product.id);
-            }
+            if (!isCompatible) return false;
         }
 
         return true;
@@ -386,289 +425,23 @@ async function filterProducts(products, filters) {
     const filterResults = await Promise.all(filterPromises);
     const filteredProducts = products.filter((_, index) => filterResults[index]);
 
-    console.log('🔍 filterProducts: After filtering:', filteredProducts.length, 'products remain');
-    console.log('🔍 filterProducts: Vehicle filter active?', !!(filters.vehicle_make || filters.vehicle_model || filters.vehicle_year));
-
+    console.log('🔍 After filtering:', filteredProducts.length, 'products remain');
     return filteredProducts;
 }
 
-// ✅ IMPROVED VEHICLE COMPATIBILITY CHECK FUNCTION
-async function checkVehicleCompatibility(product, filters) {
-    const { vehicle_make, vehicle_model, vehicle_year } = filters;
-
-    // If no vehicle filters are active, show all products
-    if (!vehicle_make && !vehicle_model && !vehicle_year) {
-        return true;
-    }
-
-    // Check if product has compatibility info
-    if (product.compatibility_info) {
-        const compInfo = product.compatibility_info;
-
-        // Check model match
-        if (vehicle_model && compInfo.vehicle_model_id != vehicle_model) {
-            return false;
-        }
-
-        // Check year range
-        if (vehicle_year) {
-            const year = parseInt(vehicle_year);
-            const fromYear = compInfo.from_year;
-            const toYear = compInfo.to_year;
-
-            if (fromYear && toYear) {
-                if (year < fromYear || year > toYear) {
-                    return false;
-                }
-            } else if (fromYear && year < fromYear) {
-                return false;
-            } else if (toYear && year > toYear) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    // If product doesn't have compatibility info, use the compatibility index directly
-    const compatibilityIndex = await loadVehicleCompatibilityData();
-
-    if (compatibilityIndex && compatibilityIndex.length > 0) {
-        const compatibleVehicles = compatibilityIndex.filter(vehicle => {
-            return vehicle.compatible_products.some(cp => {
-                const productId = cp.product_id || cp.product_template_id;
-                return productId === product.id;
-            });
-        });
-
-        if (compatibleVehicles.length === 0) {
-            // No compatibility data for this product
-            return true; // Change to false if you only want to show compatible products
-        }
-
-        // Filter compatible vehicles by the current vehicle filters
-        const matchingVehicles = compatibleVehicles.filter(vehicle => {
-            // Check model match
-            if (vehicle_model && vehicle.vehicle_model_id != vehicle_model) {
-                return false;
-            }
-
-            // Check year range
-            if (vehicle_year) {
-                const year = parseInt(vehicle_year);
-                const fromYear = vehicle.from_year;
-                const toYear = vehicle.to_year;
-
-                if (fromYear && toYear) {
-                    if (year < fromYear || year > toYear) {
-                        return false;
-                    }
-                } else if (fromYear && year < fromYear) {
-                    return false;
-                } else if (toYear && year > toYear) {
-                    return false;
-                }
-            }
-
-            return true;
-        });
-
-        return matchingVehicles.length > 0;
-    }
-
-    // If no compatibility data available at all, show the product
-    return true;
-}
-
-async function loadProducts() {
-    console.log('🔄 loadProducts: Starting with filters:', shopState.filters);
-
-    try {
-        if (!shopState.allProducts || !Array.isArray(shopState.allProducts)) {
-            console.error('❌ loadProducts: No products data available');
-            showNotification('No products data available', 'error');
-            hideLoadingState();
-            return;
-        }
-
-        console.log('📊 loadProducts: Total products available:', shopState.allProducts.length);
-
-        // ✅ FILTER PRODUCTS CLIENT-SIDE (ASYNC)
-        const filteredProducts = await filterProducts(shopState.allProducts, shopState.filters);
-        shopState.totalProducts = filteredProducts.length;
-
-        console.log('📊 loadProducts: After filtering:', filteredProducts.length, 'products');
-
-        // Calculate pagination
-        const startIndex = (shopState.currentPage - 1) * shopState.productsPerPage;
-        const endIndex = startIndex + shopState.productsPerPage;
-        const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
-
-        console.log('📊 loadProducts: Pagination info', {
-            total: filteredProducts.length,
-            currentPage: shopState.currentPage,
-            startIndex,
-            endIndex,
-            productsThisPage: paginatedProducts.length
-        });
-
-        // Update products array
-        if (shopState.currentPage === 1) {
-            shopState.products = paginatedProducts;
-        } else {
-            shopState.products = [...shopState.products, ...paginatedProducts];
-        }
-
-        // Check if there are more products to load
-        shopState.hasMoreProducts = endIndex < filteredProducts.length;
-
-        console.log('🎨 loadProducts: Calling renderProducts with', shopState.products.length, 'products');
-        renderProducts(shopState.products);
-        updateLoadMoreButton();
-        hideLoadingState();
-
-        console.log('✨ loadProducts: Completed successfully');
-
-    } catch (error) {
-        console.error('❌ loadProducts: Failed to load products:', error);
-        showNotification('Error loading products: ' + error.message, 'error');
-        hideLoadingState();
-    }
-}
-
-function updateLoadMoreButton() {
-    const container = document.getElementById('loadMoreContainer');
-    const button = document.getElementById('loadMoreBtn');
-    const info = document.getElementById('loadMoreInfo');
-
-    if (!container) {
-        console.error('loadMoreContainer not found in HTML');
-        return;
-    }
-
-    console.log('Updating load more button:', {
-        hasMoreProducts: shopState.hasMoreProducts,
-        productsLength: shopState.products.length,
-        totalProducts: shopState.totalProducts,
-        currentPage: shopState.currentPage
-    });
-
-    if (shopState.hasMoreProducts && shopState.products.length > 0) {
-        // SHOW LOAD MORE BUTTON
-        container.style.display = 'block';
-        container.style.border = '2px solid #3B82F6';
-        container.style.background = '#f0f7ff';
-        container.style.padding = '20px';
-        container.style.borderRadius = '8px';
-        container.style.marginTop = '24px';
-
-        if (button) {
-            button.textContent = `Load More (Page ${shopState.currentPage + 1})`;
-            button.disabled = shopState.isLoading;
-            button.style.display = 'block';
-            button.style.fontSize = '16px';
-            button.style.padding = '12px 24px';
-        }
-        if (info) {
-            const remaining = shopState.totalProducts - shopState.products.length;
-            info.textContent = `${remaining} more products available - Click to load next page`;
-            info.style.color = '#3B82F6';
-            info.style.display = 'block';
-            info.style.fontWeight = '500';
-        }
-        console.log('✅ Load more button: VISIBLE');
-
-    } else if (shopState.products.length > 0) {
-        // SHOW "ALL LOADED" MESSAGE
-        container.style.display = 'block';
-        container.style.border = '2px solid #10B981';
-        container.style.background = '#f0f9f4';
-        container.style.padding = '20px';
-        container.style.borderRadius = '8px';
-        container.style.marginTop = '24px';
-
-        if (button) {
-            button.style.display = 'none';
-        }
-        if (info) {
-            info.textContent = `✅ All ${shopState.products.length} products loaded (Page ${shopState.currentPage})`;
-            info.style.color = '#10B981';
-            info.style.display = 'block';
-            info.style.fontWeight = '500';
-        }
-        console.log('✅ Load more container: VISIBLE (all loaded)');
-
-    } else {
-        // NO PRODUCTS
-        container.style.display = 'none';
-        console.log('❌ Load more container: HIDDEN (no products)');
-    }
-}
-
-function loadMoreProducts() {
-    if (shopState.isLoading || !shopState.hasMoreProducts) return;
-
-    shopState.currentPage++;
-    shopState.isLoading = true;
-
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    if (loadMoreBtn) {
-        loadMoreBtn.disabled = true;
-        loadMoreBtn.textContent = 'Loading...';
-    }
-
-    loadProducts();
-}
-
-function applyFilters(newFilters = {}) {
-    console.log('🔄 applyFilters: Applying NEW filters:', newFilters);
-    console.log('🔄 applyFilters: Current shopState filters BEFORE:', shopState.filters);
-
-    shopState.isLoading = true;
-    shopState.currentPage = 1;
-
-    // ✅ UPDATE filters by merging - don't replace entirely
-    shopState.filters = {
-        ...shopState.filters, // Keep existing filters
-        ...newFilters // Apply new filters
-    };
-
-    // Convert "All" to empty string for filtering
-    if (shopState.filters.category === 'All') {
-        shopState.filters.category = '';
-    }
-    if (shopState.filters.brand === 'All') {
-        shopState.filters.brand = '';
-    }
-
-    console.log('🔄 applyFilters: Final filters for processing:', shopState.filters);
-
-    try {
-        loadProducts();
-        updateURL();
-        console.log('✅ applyFilters: Filters applied, products loaded:', shopState.products.length);
-    } catch (error) {
-        console.error('❌ applyFilters: Error applying filters:', error);
-        showNotification('Error applying filters', 'error');
-    } finally {
-        shopState.isLoading = false;
-        console.log('🏁 applyFilters: Finished, isLoading reset to false');
-    }
-}
-
 function renderProducts(products) {
+
     const container = document.getElementById('productGrid');
     const resultsCount = document.getElementById('resultsCount');
 
-    console.log('🎨 renderProducts: Called with', products.length, 'products');
+    console.log('🎨 Rendering', products.length, 'products');
 
     if (!container) {
-        console.error('❌ renderProducts: No product grid container found!');
+        console.error('❌ No product grid container found!');
         return;
     }
 
     if (products.length === 0 && !shopState.isLoading) {
-        console.log('🎨 renderProducts: Showing no products message');
         const activeFilters = [];
         if (shopState.filters.brand) activeFilters.push(`Brand: ${shopState.filters.brand}`);
         if (shopState.filters.category) activeFilters.push(`Category: ${shopState.filters.category}`);
@@ -696,25 +469,18 @@ function renderProducts(products) {
             </div>
         `;
     } else {
-        console.log('🎨 renderProducts: Rendering', products.length, 'product cards');
         container.innerHTML = products.map(product => {
-            // Safely extract brand and category names
             const brandName = product.brand ?
-                (typeof product.brand === 'object' ? product.brand.name : product.brand) :
-                'No Brand';
+                (typeof product.brand === 'object' ? product.brand.name : product.brand) : 'No Brand';
 
             const categoryName = product.category ?
-                (typeof product.category === 'object' ? product.category.name : product.category) :
-                'Uncategorized';
+                (typeof product.category === 'object' ? product.category.name : product.category) : 'Uncategorized';
 
-            // Handle image URL
             const imageUrl = product.image_url ?
                 (product.image_url.startsWith('http') ? product.image_url : `https://alsajigroup-staging-24665929.dev.odoo.com${product.image_url}`) :
                 `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik04MCA2MEgxMjBWODBIMzBWMTIwSDEyMFYxMDBIMzBWODBINzBWNjBaIiBmaWxsPSIjOEU5MEEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjEyIiBmaWxsPSIjOEU5MEEwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiPk5vIEltYWdlPC90ZXh0Pgo8L3N2Zz4K`;
 
             const reference = product.default_code || '';
-
-            // ✅ ADD VEHICLE COMPATIBILITY BADGE
             const compatibilityBadge = product.compatibility_info ? `
                 <div style="background:#10B981; color:white; padding:2px 6px; border-radius:4px; font-size:10px; margin-top:4px;">
                     ✅ Vehicle Compatible
@@ -742,6 +508,16 @@ function renderProducts(products) {
                 ${compatibilityBadge}
             </div>
         `}).join('');
+        setupCartButtonListeners();
+
+        // Add event listeners to cart buttons
+        container.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const productId = e.target.dataset.productId;
+                console.log('🛒 Add to cart clicked for product:', productId);
+                addToCart(productId);
+            });
+        });
     }
 
     if (resultsCount) {
@@ -754,280 +530,172 @@ function renderProducts(products) {
             resultsCount.textContent = `${totalShown} ${totalShown === 1 ? 'product' : 'products'} found`;
         }
 
-        // ✅ ADD VEHICLE FILTER INFO
         if (shopState.filters.vehicle_model) {
             resultsCount.textContent += ' • Vehicle Filter Applied';
         }
     }
 
-    console.log('🎨 renderProducts: Finished rendering');
+    console.log('🎨 Finished rendering products');
 }
 
-function populateFilters(categories, products) {
-    const categorySelect = document.getElementById('filterCategory');
-    const brandSelect = document.getElementById('filterBrand');
+function setupCartButtonListeners() {
+    console.log('🛒 Setting up cart button listeners...');
 
-    // Populate categories
-    if (categorySelect && categories) {
-        categorySelect.innerHTML = '<option value="">All Categories</option>' +
-            categories.map(cat => {
-                const catName = typeof cat === 'object' ? cat.name : cat;
-                return `<option value="${catName}">${catName}</option>`;
-            }).join('');
-    }
+    const cartButtons = document.querySelectorAll('.add-to-cart-btn');
+    console.log(`🛒 Found ${cartButtons.length} cart buttons`);
 
-    // Extract unique brands from products
-    if (brandSelect && products) {
-        const brands = extractBrandsFromProducts(products);
-        brandSelect.innerHTML = '<option value="">All Brands</option>' +
-            brands.map(brand => {
-                return `<option value="${brand}">${brand}</option>`;
-            }).join('');
-
-        console.log('🔄 populateFilters: Found', brands.length, 'brands from products');
-    }
-}
-
-function extractBrandsFromProducts(products) {
-    const brandSet = new Set();
-
-    products.forEach(product => {
-        if (product.brand) {
-            const brandName = typeof product.brand === 'object' ? product.brand.name : product.brand;
-            if (brandName && brandName !== 'No Brand') {
-                brandSet.add(brandName);
-            }
-        }
+    cartButtons.forEach(button => {
+        // Remove any existing listeners to prevent duplicates
+        button.replaceWith(button.cloneNode(true));
     });
 
-    return Array.from(brandSet).sort();
-}
+    // Re-select buttons after cloning
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-function applyUrlFilters() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlFilters = {};
-
-    console.log('🔗 applyUrlFilters: URL parameters found:', {
-        make: urlParams.get('make'),
-        model: urlParams.get('model'),
-        year: urlParams.get('year'),
-        category: urlParams.get('category'),
-        brand: urlParams.get('brand'),
-        search: urlParams.get('search')
-    });
-
-    // Only set filters that exist in URL - don't override with empty values
-    if (urlParams.has('category') && urlParams.get('category')) {
-        const category = urlParams.get('category');
-        urlFilters.category = category === 'All' ? '' : category;
-    }
-
-    if (urlParams.has('brand') && urlParams.get('brand')) {
-        const brand = urlParams.get('brand');
-        urlFilters.brand = brand === 'All' ? '' : brand;
-    }
-
-    if (urlParams.has('search') && urlParams.get('search')) {
-        urlFilters.search = urlParams.get('search');
-    }
-
-    if (urlParams.has('in_stock')) {
-        urlFilters.in_stock = urlParams.get('in_stock') === 'true';
-    }
-
-    if (urlParams.has('price_min') && urlParams.get('price_min')) {
-        urlFilters.price_min = urlParams.get('price_min');
-    }
-
-    if (urlParams.has('price_max') && urlParams.get('price_max')) {
-        urlFilters.price_max = urlParams.get('price_max');
-    }
-
-    // ✅ VEHICLE FILTERS - only apply if they exist in URL
-    if (urlParams.has('make') && urlParams.get('make')) {
-        urlFilters.vehicle_make = urlParams.get('make');
-    }
-    if (urlParams.has('model') && urlParams.get('model')) {
-        urlFilters.vehicle_model = urlParams.get('model');
-    }
-    if (urlParams.has('year') && urlParams.get('year')) {
-        urlFilters.vehicle_year = urlParams.get('year');
-    }
-
-    console.log('🔗 applyUrlFilters: URL filters to apply:', urlFilters);
-    console.log('🔗 applyUrlFilters: Current shopState filters before:', shopState.filters);
-
-    // ✅ MERGE filters properly - preserve existing vehicle filters if URL doesn't have them
-    const mergedFilters = {
-        ...shopState.filters, // Keep all existing filters
-        ...urlFilters // Apply URL filters (this will override existing ones only for specified fields)
-    };
-
-    console.log('🔗 applyUrlFilters: Merged filters after:', mergedFilters);
-
-    // ✅ Apply the merged filters
-    applyFilters(mergedFilters);
-}
-
-function updateURL() {
-    const urlParams = new URLSearchParams();
-
-    // Only add filters that have values
-    if (shopState.filters.category) {
-        urlParams.set('category', shopState.filters.category);
-    }
-
-    if (shopState.filters.brand) {
-        urlParams.set('brand', shopState.filters.brand);
-    }
-
-    if (shopState.filters.search) {
-        urlParams.set('search', shopState.filters.search);
-    }
-
-    if (shopState.filters.in_stock) {
-        urlParams.set('in_stock', 'true');
-    }
-
-    if (shopState.filters.price_min) {
-        urlParams.set('price_min', shopState.filters.price_min);
-    }
-
-    if (shopState.filters.price_max) {
-        urlParams.set('price_max', shopState.filters.price_max);
-    }
-
-    // Update URL without page reload
-    const newUrl = window.location.pathname + (urlParams.toString() ? '?' + urlParams.toString() : '');
-    window.history.replaceState({}, '', newUrl);
-
-    console.log('🔗 updateURL: Updated URL to:', newUrl);
-}
-
-function setupShopEvents() {
-    console.log('🛠️ Setting up shop events...');
-
-    // Filter changes
-    const filters = ['filterBrand', 'filterCategory', 'filterPrice', 'filterStock', 'sortSelect'];
-    filters.forEach(filterId => {
-        const element = document.getElementById(filterId);
-        if (element) {
-            element.addEventListener('change', debounce(function() {
-                console.log('🎛️ Filter changed:', filterId, 'value:', element.value);
-
-                shopState.currentPage = 1;
-                shopState.filters = getCurrentFilters();
-                console.log('📋 Current filters:', shopState.filters);
-
-                // Force immediate UI update
-                showLoadingState();
-
-                applyFilters();
-                updateUrlFromForm();
-            }, 300));
-        }
-    });
-
-    // Search input
-    const searchInput = document.getElementById('searchInput');
-    if (searchInput) {
-        searchInput.addEventListener('input', debounce(function() {
-            console.log('🔍 Search input:', searchInput.value);
-
-            shopState.currentPage = 1;
-            shopState.filters.search = searchInput.value;
-
-            // Force immediate UI update
-            showLoadingState();
-
-            applyFilters();
-            updateUrlFromForm();
-        }, 500));
-    }
-
-    // Enhanced add to cart buttons with better validation
-    document.addEventListener('click', function(e) {
-        const addToCartBtn = e.target.closest('.add-to-cart-btn');
-        if (addToCartBtn && !addToCartBtn.disabled) {
-            const productId = addToCartBtn.dataset.productId;
-
-            // Add loading state to button
-            const originalText = addToCartBtn.textContent;
-            addToCartBtn.textContent = 'Adding...';
-            addToCartBtn.disabled = true;
-
-            addToCart(productId).finally(() => {
-                // Restore button state
-                addToCartBtn.textContent = originalText;
-                addToCartBtn.disabled = false;
+            const productId = this.dataset.productId;
+            console.log('🛒 Add to cart clicked:', {
+                productId: productId,
+                button: this,
+                text: this.textContent
             });
-        }
+
+            if (productId) {
+                addToCart(productId);
+            } else {
+                console.error('❌ No product ID found on button:', this);
+            }
+        });
     });
 
-    // Load more button
+    console.log('✅ Cart button listeners setup complete');
+}
+
+// Main product loading
+async function loadProducts() {
+    console.log('🔄 Loading products with filters:', shopState.filters);
+
+    try {
+        if (!shopState.allProducts?.length) {
+            console.error('❌ No products data available');
+            showNotification('No products data available', 'error');
+            return;
+        }
+
+        console.log('📊 Total products available:', shopState.allProducts.length);
+
+        const filteredProducts = await filterProducts(shopState.allProducts, shopState.filters);
+        shopState.totalProducts = filteredProducts.length;
+
+        console.log('📊 After filtering:', filteredProducts.length, 'products');
+
+        const startIndex = (shopState.currentPage - 1) * shopState.productsPerPage;
+        const endIndex = startIndex + shopState.productsPerPage;
+        const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+
+        if (shopState.currentPage === 1) {
+            shopState.products = paginatedProducts;
+        } else {
+            shopState.products = [...shopState.products, ...paginatedProducts];
+        }
+
+        shopState.hasMoreProducts = endIndex < filteredProducts.length;
+
+        renderProducts(shopState.products);
+        updateLoadMoreButton();
+
+        console.log('✨ Products loaded successfully');
+
+    } catch (error) {
+        console.error('❌ Failed to load products:', error);
+        showNotification('Error loading products: ' + error.message, 'error');
+    }
+}
+
+function updateLoadMoreButton() {
+    const container = document.getElementById('loadMoreContainer');
+    const button = document.getElementById('loadMoreBtn');
+    const info = document.getElementById('loadMoreInfo');
+
+    if (!container) return;
+
+    if (shopState.hasMoreProducts && shopState.products.length > 0) {
+        container.style.display = 'block';
+        container.style.border = '2px solid #3B82F6';
+        container.style.background = '#f0f7ff';
+        container.style.padding = '20px';
+        container.style.borderRadius = '8px';
+        container.style.marginTop = '24px';
+
+        if (button) {
+            button.textContent = `Load More (Page ${shopState.currentPage + 1})`;
+            button.disabled = shopState.isLoading;
+        }
+        if (info) {
+            const remaining = shopState.totalProducts - shopState.products.length;
+            info.textContent = `${remaining} more products available - Click to load next page`;
+        }
+    } else if (shopState.products.length > 0) {
+        container.style.display = 'block';
+        container.style.border = '2px solid #10B981';
+        container.style.background = '#f0f9f4';
+        container.style.padding = '20px';
+        container.style.borderRadius = '8px';
+        container.style.marginTop = '24px';
+
+        if (button) button.style.display = 'none';
+        if (info) {
+            info.textContent = `✅ All ${shopState.products.length} products loaded (Page ${shopState.currentPage})`;
+        }
+    } else {
+        container.style.display = 'none';
+    }
+}
+
+function loadMoreProducts() {
+    if (shopState.isLoading || !shopState.hasMoreProducts) return;
+
+    shopState.currentPage++;
+    shopState.isLoading = true;
+
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', loadMoreProducts);
+        loadMoreBtn.disabled = true;
+        loadMoreBtn.textContent = 'Loading...';
     }
-    const clearFiltersButton = document.getElementById('clearButton');
-    if (clearFiltersButton) {
-        clearFiltersButton.addEventListener('click', clearFilters);
-    }
-    setupInfiniteScroll();
-    console.log('✅ Shop events setup complete');
-}
 
-function setupInfiniteScroll() {
-    let isThrottled = false;
-
-    window.addEventListener('scroll', () => {
-        if (isThrottled) return;
-
-        isThrottled = true;
-        setTimeout(() => {
-            isThrottled = false;
-
-            // Check if we should load more
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight;
-            const clientHeight = document.documentElement.clientHeight;
-
-            // Load when 500px from bottom
-            if (scrollTop + clientHeight >= scrollHeight - 500) {
-                if (!shopState.isLoading && shopState.hasMoreProducts) {
-                    console.log('Auto-loading more products...');
-                    loadMoreProducts();
-                }
-            }
-        }, 200);
+    loadProducts().finally(() => {
+        shopState.isLoading = false;
     });
-
-    console.log('Infinite scroll enabled');
 }
 
-function getCurrentFilters() {
-    const stockValue = document.getElementById('filterStock')?.value;
-    return {
-        brand: document.getElementById('filterBrand')?.value || '',
-        category: document.getElementById('filterCategory')?.value || '',
-        search: document.getElementById('searchInput')?.value || '',
-        in_stock: stockValue === 'True' ? true : stockValue === 'False' ? false : '',
-        price_min: document.getElementById('filterPriceMin')?.value || '',
-        price_max: document.getElementById('filterPriceMax')?.value || ''
-    };
-}
+// Filter management
+function applyFilters(newFilters = {}) {
+    console.log('🔄 Applying filters:', newFilters);
 
-function updateUrlFromForm() {
-    updateUrlParams(shopState.filters);
+    shopState.currentPage = 1;
+    shopState.filters = { ...shopState.filters, ...newFilters };
+
+    // Convert "All" to empty string
+    if (shopState.filters.category === 'All') shopState.filters.category = '';
+    if (shopState.filters.brand === 'All') shopState.filters.brand = '';
+
+    loadProducts();
+    updateUrlParams();
 }
 
 function clearFilters() {
-    const resetElements = ['filterBrand', 'filterCategory', 'filterStock', 'searchInput', 'filterPriceMin', 'filterPriceMax'];
-    resetElements.forEach(id => {
+    console.log('🧹 Clearing all filters...');
+
+    // Reset filter elements
+    ['filterBrand', 'filterCategory', 'filterStock', 'filterPrice', 'searchInput'].forEach(id => {
         const element = document.getElementById(id);
         if (element) element.value = '';
     });
 
+    // Reset shop state
     shopState.filters = {
         brand: '',
         category: '',
@@ -1035,28 +703,21 @@ function clearFilters() {
         in_stock: false,
         price_min: '',
         price_max: '',
-        // ✅ CLEAR VEHICLE FILTERS TOO
         vehicle_make: '',
         vehicle_model: '',
         vehicle_year: ''
     };
-    shopState.currentPage = 1;
-    shopState.products = [];
 
-    // Also clear vehicle selection
-    clearVehicleSelection();
+    shopState.currentPage = 1;
 
     applyFilters();
-    updateUrlParams({});
-    showNotification('Filters cleared', 'success');
+    showNotification('All filters cleared', 'success');
 }
 
-
-// ✅ VEHICLE FILTERS HANDLING
+// Vehicle filters
 function setupVehicleFilters() {
     console.log('🚗 Setting up vehicle filters...');
 
-    // Get vehicle from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const makeId = urlParams.get('make');
     const modelId = urlParams.get('model');
@@ -1064,22 +725,14 @@ function setupVehicleFilters() {
 
     if (makeId && modelId && year) {
         console.log('🚗 Vehicle detected in URL:', { makeId, modelId, year });
-
-        // Set vehicle filters immediately
         shopState.filters.vehicle_make = makeId;
         shopState.filters.vehicle_model = modelId;
         shopState.filters.vehicle_year = year;
-
-        // Display vehicle in the vehicle box
         displayCurrentVehicle(makeId, modelId, year);
-
-        console.log('🚗 Vehicle filters set, will be applied when products load');
     } else {
         console.log('🚗 No vehicle specified in URL');
-        // Check if there's a saved vehicle
         const savedVehicle = vehicleManager?.getCurrentVehicle();
         if (savedVehicle) {
-            console.log('🚗 Using saved vehicle:', savedVehicle);
             shopState.filters.vehicle_make = savedVehicle.makeId;
             shopState.filters.vehicle_model = savedVehicle.modelId;
             shopState.filters.vehicle_year = savedVehicle.year;
@@ -1108,12 +761,10 @@ function displayCurrentVehicle(makeName, modelName, year) {
 }
 
 function clearVehicleSelection() {
-    // Clear vehicle filters
     shopState.filters.vehicle_make = '';
     shopState.filters.vehicle_model = '';
     shopState.filters.vehicle_year = '';
 
-    // Clear from URL
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.delete('make');
     urlParams.delete('model');
@@ -1121,7 +772,6 @@ function clearVehicleSelection() {
     const newUrl = window.location.pathname + (urlParams.toString() ? '?' + urlParams.toString() : '');
     window.history.replaceState({}, '', newUrl);
 
-    // Clear vehicle display
     const vehBox = document.getElementById('vehBox');
     if (vehBox) {
         vehBox.innerHTML = '<div class="muted">No vehicle selected</div>';
@@ -1129,165 +779,264 @@ function clearVehicleSelection() {
         vehBox.style.border = 'none';
     }
 
-    // Clear from vehicle manager
     if (vehicleManager) {
         vehicleManager.clearVehicle();
     }
 
-    // Reload products without vehicle filters
     shopState.currentPage = 1;
     loadProducts();
-
     showNotification('Vehicle selection cleared', 'success');
 }
 
-// ✅ CHECK COMPATIBILITY DATA LOADING
-async function loadVehicleCompatibilityData() {
-    try {
-        console.log('🚗 Loading vehicle compatibility data...');
+// Event handlers
+function setupShopEvents() {
+    console.log('🛠️ Setting up shop events...');
 
-        // Try to load from static API first
-        if (window.staticAPI && window.staticAPI.vehicleCompatibilityIndex) {
-            console.log('✅ Vehicle compatibility loaded from static API');
-            return window.staticAPI.vehicleCompatibilityIndex;
-        }
-
-        // Try to load from JS module
-        if (window.vehicleCompatibilityIndex) {
-            console.log('✅ Vehicle compatibility loaded from JS module');
-            return window.vehicleCompatibilityIndex;
-        }
-
-        // Fallback: load from JSON file
-        const response = await fetch('data/json/vehicle_compatibility_index.json');
-        if (response.ok) {
-            const data = await response.json();
-            console.log('✅ Vehicle compatibility loaded from JSON file');
-            return data;
-        }
-
-        console.warn('⚠️ No vehicle compatibility data found');
-        return [];
-    } catch (error) {
-        console.error('❌ Error loading vehicle compatibility data:', error);
-        return [];
-    }
-}
-
-async function enhanceProductsWithCompatibility(products) {
-    console.log('🔧 Enhancing products with compatibility data...');
-
-    const compatibilityIndex = await loadVehicleCompatibilityData();
-
-    if (!compatibilityIndex || compatibilityIndex.length === 0) {
-        console.warn('⚠️ No compatibility index available');
-        return products;
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(function() {
+            shopState.currentPage = 1;
+            shopState.filters.search = searchInput.value;
+            applyFilters();
+        }, 500));
     }
 
-    console.log('📊 Compatibility index loaded:', compatibilityIndex.length, 'vehicle models');
+    // Load more button
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', loadMoreProducts);
+    }
 
-    let enhancedCount = 0;
-    const enhancedProducts = products.map(product => {
-        // Find compatible vehicles for this product
-        const compatibleVehicles = compatibilityIndex.filter(vehicle => {
-            // Check if any compatible product matches this product ID
-            return vehicle.compatible_products.some(cp => {
-                // Handle both product_id and product_template_id
-                const productId = cp.product_id || cp.product_template_id;
-                return productId === product.id;
+    // Clear filters button
+    const clearButton = document.getElementById('clearButton');
+    if (clearButton) {
+        clearButton.addEventListener('click', clearFilters);
+    }
+
+    // Desktop filter events
+    const brandSelect = document.getElementById('filterBrand');
+    if (brandSelect) {
+        brandSelect.addEventListener('change', (e) => {
+            applyFilters({ brand: e.target.value });
+        });
+    }
+
+    const categorySelect = document.getElementById('filterCategory');
+    if (categorySelect) {
+        categorySelect.addEventListener('change', (e) => {
+            applyFilters({ category: e.target.value });
+        });
+    }
+
+    const stockSelect = document.getElementById('filterStock');
+    if (stockSelect) {
+        stockSelect.addEventListener('change', (e) => {
+            const value = e.target.value;
+            applyFilters({
+                in_stock: value === 'True' ? true : value === 'False' ? false : ''
             });
         });
+    }
+    setTimeout(() => {
+        setupCartButtonListeners();
+    }, 100);
 
-        if (compatibleVehicles.length > 0) {
-            enhancedCount++;
 
-            // For now, attach the first compatible vehicle's info
-            const firstCompatible = compatibleVehicles[0];
+    console.log('✅ Shop events setup complete');
+}
 
-            return {
-                ...product,
-                compatibility_info: {
-                    vehicle_model_id: firstCompatible.vehicle_model_id,
-                    vehicle_model_name: firstCompatible.vehicle_model_name,
-                    brand_id: firstCompatible.brand_id,
-                    brand_name: firstCompatible.brand_name,
-                    from_year: firstCompatible.from_year,
-                    to_year: firstCompatible.to_year,
-                    year_range: firstCompatible.year_range,
-                    all_compatible_vehicles: compatibleVehicles
-                }
-            };
-        }
+// Main initialization
+async function loadShopData() {
+    shopState.currentPage = 1;
+    shopState.products = [];
 
-        return product;
-    });
+    try {
+        const staticData = await loadStaticData();
+        shopState.categories = staticData.categories;
+        shopState.brands = staticData.brands;
+        shopState.allProducts = await enhanceProductsWithCompatibility(staticData.products);
+        shopState.totalProducts = shopState.allProducts.length;
 
-    console.log(`✅ Enhanced ${enhancedCount} products with compatibility data`);
+        console.log('📊 Loaded data:', {
+            products: shopState.allProducts.length,
+            categories: shopState.categories.length,
+            brands: shopState.brands.length
+        });
 
-    // Log some examples
-    if (enhancedCount > 0) {
-        const enhancedExamples = enhancedProducts.filter(p => p.compatibility_info).slice(0, 3);
-        console.log('📝 Enhanced product examples:', enhancedExamples.map(p => ({
-            id: p.id,
-            name: p.name,
-            compatible_with: p.compatibility_info.vehicle_model_name
-        })));
+        // ✅ POPULATE DESKTOP FILTERS
+        populateDesktopFilters();
+
+        // ✅ POPULATE MOBILE FILTERS
+        populateMobileFilters();
+
+        await loadProducts();
+
+    } catch (error) {
+        console.error('❌ Failed to load shop data:', error);
+        showNotification('Failed to load products', 'error');
+    }
+}
+
+// ✅ ADD THIS FUNCTION: Populate desktop filters
+function populateDesktopFilters() {
+    console.log('🖥️ Populating desktop filters...');
+
+    // Brand filter
+    const brandSelect = document.getElementById('filterBrand');
+    if (brandSelect && shopState.brands) {
+        const brands = extractUniqueBrands();
+        brandSelect.innerHTML = '<option value="">All Brands</option>' +
+            brands.map(brand => `<option value="${brand}">${brand}</option>`).join('');
+        console.log(`✅ Populated desktop brand filter with ${brands.length} brands`);
     }
 
-    return enhancedProducts;
+    // Category filter
+    const categorySelect = document.getElementById('filterCategory');
+    if (categorySelect && shopState.categories) {
+        categorySelect.innerHTML = '<option value="">All Categories</option>' +
+            shopState.categories.map(category => {
+                const categoryName = typeof category === 'object' ? category.name : category;
+                return `<option value="${categoryName}">${categoryName}</option>`;
+            }).join('');
+        console.log(`✅ Populated desktop category filter with ${shopState.categories.length} categories`);
+    }
 }
-// ✅ ENHANCE PRODUCTS WITH COMPATIBILITY DATA
+// Global exports
+window.clearFilters = clearFilters;
+window.applyFilters = applyFilters;
+window.loadMoreProducts = loadMoreProducts;
+window.clearVehicleSelection = clearVehicleSelection;
 
-// Update the main initialization
+// Initialize shop
 document.addEventListener('DOMContentLoaded', async function() {
     console.log('🛍️ Initializing shop...');
 
-    // ✅ SETUP VEHICLE FILTERS FIRST
-    setupVehicleFilters();
-
-    await loadShopData();
-    setupShopEvents();
-    applyUrlFilters();
-
-    // Load initial cart count
     try {
-        const cartResult = await alsajiAPI.getCart();
-        if (cartResult.success && cartResult.cart) {
-            updateCartCount(cartResult.cart.item_count || 0);
+        setupVehicleFilters();
+        await loadShopData();
+        setupShopEvents();
+
+        // Load initial cart count
+        try {
+            const cartResult = await alsajiAPI.getCart();
+            if (cartResult.success && cartResult.cart) {
+                updateCartCount(cartResult.cart.item_count || 0);
+            }
+        } catch (error) {
+            console.log('Cart not initialized yet');
         }
+
+        console.log('✅ Shop fully initialized');
+
     } catch (error) {
-        console.log('Cart not initialized yet');
+        console.error('❌ Shop initialization failed:', error);
+        showNotification('Failed to initialize shop', 'error');
     }
 });
 
-// ✅ DEBUG FUNCTION TO CHECK VEHICLE COMPATIBILITY
-function debugVehicleFiltering() {
-    console.log('🔍 DEBUG VEHICLE FILTERING:');
-    console.log('Current shopState.filters:', shopState.filters);
-    console.log('Vehicle filters active:',
-        shopState.filters.vehicle_make || 'No make',
-        shopState.filters.vehicle_model || 'No model',
-        shopState.filters.vehicle_year || 'No year'
-    );
+// ✅ ADD THIS FUNCTION: Populate mobile filters from shopState data
+function populateMobileFilters() {
+    console.log('📱 Populating mobile filters from shopState...');
 
-    // Check if products have compatibility data
-    const productsWithCompatibility = shopState.allProducts.filter(p => p.compatibility_info);
-    console.log('Products with compatibility info:', productsWithCompatibility.length);
+    // Populate brand pills
+    const brandSection = document.querySelector('#brandSection .filter-options');
+    if (brandSection && shopState.brands) {
+        const brands = extractUniqueBrands();
+        const brandPills = brands.map(brand => `
+            <button class="filter-pill" data-filter="brand" data-value="${brand}">
+                ${brand}
+            </button>
+        `).join('');
 
-    // Check compatibility index
-    if (window.staticAPI && window.staticAPI.vehicleCompatibilityIndex) {
-        console.log('Compatibility index entries:', window.staticAPI.vehicleCompatibilityIndex.length);
-
-        const matchingVehicles = window.staticAPI.vehicleCompatibilityIndex.filter(
-            vehicle => vehicle.vehicle_model_id == shopState.filters.vehicle_model
-        );
-        console.log('Matching vehicles in index:', matchingVehicles.length);
-
-        if (matchingVehicles.length > 0) {
-            console.log('First matching vehicle:', matchingVehicles[0]);
-            console.log('Compatible products for this vehicle:', matchingVehicles[0].compatible_products.length);
-        }
+        brandSection.innerHTML = `
+            <button class="filter-pill active" data-filter="brand" data-value="all">
+                All Brands
+            </button>
+            ${brandPills}
+        `;
+        console.log(`✅ Populated ${brands.length} brand pills`);
     }
+
+    // Populate category pills
+    const categorySection = document.querySelector('#categorySection .filter-options');
+    if (categorySection && shopState.categories) {
+        const categoryPills = shopState.categories.map(category => {
+            const categoryName = typeof category === 'object' ? category.name : category;
+            return `
+                <button class="filter-pill" data-filter="category" data-value="${categoryName}">
+                    ${categoryName}
+                </button>
+            `;
+        }).join('');
+
+        categorySection.innerHTML = `
+            <button class="filter-pill active" data-filter="category" data-value="all">
+                All Categories
+            </button>
+            ${categoryPills}
+        `;
+        console.log(`✅ Populated ${shopState.categories.length} category pills`);
+    }
+
+    // Setup mobile filter events
+    setupMobileFilterEvents();
 }
 
-// Call this in the console to debug: debugVehicleFiltering()
+// ✅ ADD THIS FUNCTION: Extract unique brands from products
+function extractUniqueBrands() {
+    if (!shopState.allProducts) return [];
+
+    const brandSet = new Set();
+    shopState.allProducts.forEach(product => {
+        if (product.brand) {
+            const brandName = typeof product.brand === 'object' ? product.brand.name : product.brand;
+            if (brandName && brandName !== 'No Brand') {
+                brandSet.add(brandName);
+            }
+        }
+    });
+
+    return Array.from(brandSet).sort();
+}
+
+// ✅ ADD THIS FUNCTION: Setup mobile filter events
+function setupMobileFilterEvents() {
+    console.log('🎯 Setting up mobile filter events...');
+
+    // Brand filter pills
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('[data-filter="brand"]')) {
+            const pill = e.target.closest('[data-filter="brand"]');
+            const value = pill.dataset.value;
+
+            // Update active state
+            const section = pill.closest('.filter-options');
+            section.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+
+            // Apply filter
+            applyFilters({
+                brand: value === 'all' ? '' : value
+            });
+        }
+
+        // Category filter pills
+        if (e.target.closest('[data-filter="category"]')) {
+            const pill = e.target.closest('[data-filter="category"]');
+            const value = pill.dataset.value;
+
+            // Update active state
+            const section = pill.closest('.filter-options');
+            section.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+
+            // Apply filter
+            applyFilters({
+                category: value === 'all' ? '' : value
+            });
+        }
+    });
+
+    console.log('✅ Mobile filter events setup complete');
+}

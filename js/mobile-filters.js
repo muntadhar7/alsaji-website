@@ -1,26 +1,36 @@
-// Mobile Filter Functionality
+// SIMPLIFIED Mobile Filters - Focus on getting it working first
 class MobileFilters {
     constructor() {
         this.init();
     }
 
     init() {
+        console.log('📱 Initializing mobile filters...');
         this.setupEventListeners();
-        this.populateFilterOptions();
         this.setupMobileResponsive();
-        this.syncWithDesktopFilters();
+
+        // Wait a bit for shop data, then populate
+        setTimeout(() => {
+            this.populateFilterOptions();
+        }, 1000);
+
+        console.log('✅ Mobile filters initialized');
     }
 
     setupEventListeners() {
-        // Toggle filter sheet
+        console.log('🎯 Setting up mobile filter events...');
+
+        // Mobile filter button
         const mobileFilterBtn = document.getElementById('mobileFilterBtn');
         if (mobileFilterBtn) {
+            console.log('✅ Found mobile filter button');
             mobileFilterBtn.addEventListener('click', () => {
+                console.log('🎯 Mobile filter button CLICKED');
                 this.openFilterSheet();
             });
         }
 
-        // Close filter sheet
+        // Close buttons
         const filterClose = document.getElementById('filterClose');
         if (filterClose) {
             filterClose.addEventListener('click', () => {
@@ -35,8 +45,14 @@ class MobileFilters {
             });
         }
 
-        // Section toggles
+        // Section toggles - make sure sections start closed
         document.querySelectorAll('.section-title').forEach(button => {
+            const sectionId = button.getAttribute('data-section');
+            const sectionBody = document.getElementById(`${sectionId}Section`);
+            if (sectionBody) {
+                sectionBody.style.display = 'none';
+            }
+
             button.addEventListener('click', (e) => {
                 this.toggleSection(e.currentTarget);
             });
@@ -49,11 +65,11 @@ class MobileFilters {
             }
         });
 
-        // Apply filters
+        // Apply filters - NOW HANDLES ALL FILTERS INCLUDING PRICE
         const applyBtn = document.getElementById('mobileApplyFilters');
         if (applyBtn) {
             applyBtn.addEventListener('click', () => {
-                this.applyFilters();
+                this.applyAllFilters();
             });
         }
 
@@ -67,11 +83,10 @@ class MobileFilters {
     }
 
     setupMobileResponsive() {
-        // Check if mobile and show/hide appropriate elements
         const checkMobile = () => {
             const isMobile = window.innerWidth <= 768;
             const mobileFilterBtn = document.getElementById('mobileFilterBtn');
-            const desktopFilters = document.querySelector('.shop .grid > aside');
+            const desktopFilters = document.getElementById('desktopFilters');
 
             if (mobileFilterBtn) {
                 mobileFilterBtn.style.display = isMobile ? 'inline-block' : 'none';
@@ -82,262 +97,322 @@ class MobileFilters {
             }
         };
 
-        // Check on load and resize
         checkMobile();
         window.addEventListener('resize', checkMobile);
     }
 
     openFilterSheet() {
+        console.log('📱 Opening mobile filter sheet...');
         const sheet = document.getElementById('mobileFilterSheet');
         if (sheet) {
-            sheet.classList.add('open');
-            document.body.style.overflow = 'hidden';
+            sheet.classList.add('active');
+            document.body.classList.add('filter-sheet-open');
+            console.log('✅ Filter sheet opened with active class');
+        } else {
+            console.log('❌ Filter sheet element not found');
         }
     }
 
     closeFilterSheet() {
+        console.log('📱 Closing mobile filter sheet...');
         const sheet = document.getElementById('mobileFilterSheet');
         if (sheet) {
-            sheet.classList.remove('open');
-            document.body.style.overflow = '';
+            sheet.classList.remove('active');
+            document.body.classList.remove('filter-sheet-open');
         }
     }
 
     toggleSection(button) {
         const sectionId = button.getAttribute('data-section');
         const sectionBody = document.getElementById(`${sectionId}Section`);
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-        button.setAttribute('aria-expanded', !isExpanded);
         if (sectionBody) {
-            sectionBody.classList.toggle('open');
+            const isOpen = sectionBody.style.display === 'block';
+            sectionBody.style.display = isOpen ? 'none' : 'block';
+
+            // Toggle chevron
+            const chevron = button.querySelector('.chevron');
+            if (chevron) {
+                chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+
+            button.classList.toggle('expanded', !isOpen);
+        }
+    }
+
+    populateFilterOptions() {
+        console.log('📱 Populating filter options...');
+
+        // Populate brand pills
+        this.populateBrandPills();
+
+        // Populate category pills
+        this.populateCategoryPills();
+
+        // Populate price slider
+        this.populatePriceSlider();
+    }
+
+    // Updated price slider without individual apply button
+    populatePriceSlider() {
+        const priceOptions = document.querySelector('#priceSection .filter-options');
+        if (!priceOptions) {
+            console.log('❌ Price options container not found');
+            return;
+        }
+
+        // Calculate min and max prices from products (in 1000 IQD steps)
+        const prices = shopState.allProducts.map(p => p.price).filter(p => p > 0);
+        const minPrice = Math.floor(Math.min(...prices) / 1000) * 1000;
+        const maxPrice = Math.ceil(Math.max(...prices) / 1000) * 1000;
+
+        const currentMin = shopState.filters.price_min || minPrice;
+        const currentMax = shopState.filters.price_max || maxPrice;
+
+        priceOptions.innerHTML = `
+            <div class="price-slider-container">
+                <div class="price-display">
+                    <span>IQD </span>
+                    <span id="min-price-display">${currentMin.toLocaleString()}</span>
+                    <span> - IQD </span>
+                    <span id="max-price-display">${currentMax.toLocaleString()}</span>
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range"
+                           id="min-price"
+                           min="${minPrice}"
+                           max="${maxPrice}"
+                           value="${currentMin}"
+                           step="1000"
+                           class="price-slider">
+                    <input type="range"
+                           id="max-price"
+                           min="${minPrice}"
+                           max="${maxPrice}"
+                           value="${currentMax}"
+                           step="1000"
+                           class="price-slider">
+                </div>
+                <div class="price-slider-labels">
+                    <span>${(minPrice/1000).toFixed(0)}K</span>
+                    <span>${(maxPrice/1000).toFixed(0)}K</span>
+                </div>
+
+            </div>
+        `;
+
+        this.initializePriceSlider();
+    }
+
+    // Updated price slider initialization - no apply button needed
+    initializePriceSlider() {
+        const minSlider = document.getElementById('min-price');
+        const maxSlider = document.getElementById('max-price');
+        const minDisplay = document.getElementById('min-price-display');
+        const maxDisplay = document.getElementById('max-price-display');
+
+        if (!minSlider || !maxSlider) return;
+
+        const updateDisplays = () => {
+            const minValue = parseInt(minSlider.value);
+            const maxValue = parseInt(maxSlider.value);
+
+            // Ensure min doesn't exceed max and vice versa
+            if (minValue > maxValue) {
+                minSlider.value = maxValue;
+                maxSlider.value = minValue;
+            }
+
+            if (minDisplay) minDisplay.textContent = parseInt(minSlider.value).toLocaleString();
+            if (maxDisplay) maxDisplay.textContent = parseInt(maxSlider.value).toLocaleString();
+        };
+
+        minSlider.addEventListener('input', updateDisplays);
+        maxSlider.addEventListener('input', updateDisplays);
+    }
+
+    populateBrandPills() {
+        const brandOptions = document.querySelector('#brandSection .filter-options');
+        if (!brandOptions) {
+            console.log('❌ Brand options container not found');
+            return;
+        }
+
+        // Get brands from desktop select or extract from products
+        const brandSelect = document.getElementById('filterBrand');
+        if (brandSelect && brandSelect.options.length > 1) {
+            let brandPills = '';
+            Array.from(brandSelect.options).forEach(option => {
+                if (option.value) {
+                    brandPills += `
+                        <button class="filter-pill" data-filter-type="brand" data-filter-value="${option.value}">
+                            ${option.text}
+                        </button>
+                    `;
+                }
+            });
+
+            brandOptions.innerHTML = `
+                <button class="filter-pill active" data-filter-type="brand" data-filter-value="all">
+                    All Brands
+                </button>
+                ${brandPills}
+            `;
+            console.log('✅ Brand pills populated:', brandSelect.options.length);
+        } else {
+            console.log('❌ No brand options found in desktop select');
+        }
+    }
+
+    populateCategoryPills() {
+        const categoryOptions = document.querySelector('#categorySection .filter-options');
+        if (!categoryOptions) {
+            console.log('❌ Category options container not found');
+            return;
+        }
+
+        const categorySelect = document.getElementById('filterCategory');
+        if (categorySelect && categorySelect.options.length > 1) {
+            let categoryPills = '';
+            Array.from(categorySelect.options).forEach(option => {
+                if (option.value) {
+                    categoryPills += `
+                        <button class="filter-pill" data-filter-type="category" data-filter-value="${option.value}">
+                            ${option.text}
+                        </button>
+                    `;
+                }
+            });
+
+            categoryOptions.innerHTML = `
+                <button class="filter-pill active" data-filter-type="category" data-filter-value="all">
+                    All Categories
+                </button>
+                ${categoryPills}
+            `;
+            console.log('✅ Category pills populated:', categorySelect.options.length);
+        } else {
+            console.log('❌ No category options found in desktop select');
         }
     }
 
     handleFilterPill(pill) {
-        const filterData = pill.getAttribute('data-filter');
-        if (!filterData) return;
+        const filterType = pill.dataset.filterType;
+        const filterValue = pill.dataset.filterValue;
 
-        const filterType = filterData.split('-')[0];
+        console.log(`📱 Filter pill clicked: ${filterType} = ${filterValue}`);
 
         // Remove active class from other pills in same group
-        const allPills = document.querySelectorAll(`[data-filter^="${filterType}-"]`);
-        allPills.forEach(p => {
-            p.classList.remove('active');
-        });
+        const container = pill.closest('.filter-options');
+        if (container) {
+            container.querySelectorAll('.filter-pill').forEach(p => {
+                p.classList.remove('active');
+            });
+        }
 
         // Add active class to clicked pill
         pill.classList.add('active');
     }
 
-    populateFilterOptions() {
-        // Wait a bit for the shop data to load
-        setTimeout(() => {
-            // Populate brand pills from your existing brand dropdown
-            const brandSelect = document.getElementById('filterBrand');
-            const brandOptions = document.getElementById('brandSection')?.querySelector('.filter-options');
+    // UPDATED: Now includes price filters
+    getAllSelectedFilters() {
+        const filters = {};
 
-            console.log('Brand select found:', !!brandSelect);
-            console.log('Brand options found:', !!brandOptions);
+        // Get active brand
+        const activeBrand = document.querySelector('#brandSection .filter-pill.active');
+        if (activeBrand && activeBrand.dataset.filterValue !== 'all') {
+            filters.brand = activeBrand.dataset.filterValue;
+        }
 
-            if (brandSelect && brandOptions) {
-                console.log('Brand options count:', brandSelect.options.length);
+        // Get active category
+        const activeCategory = document.querySelector('#categorySection .filter-pill.active');
+        if (activeCategory && activeCategory.dataset.filterValue !== 'all') {
+            filters.category = activeCategory.dataset.filterValue;
+        }
 
-                // Clear existing pills (keep "All Brands")
-                const allBrandPill = brandOptions.querySelector('[data-filter="brand-all"]');
-                brandOptions.innerHTML = '';
-                if (allBrandPill) {
-                    brandOptions.appendChild(allBrandPill);
-                }
-
-                Array.from(brandSelect.options).forEach(option => {
-                    if (option.value && option.value !== '') {
-                        const pill = document.createElement('button');
-                        pill.className = 'filter-pill';
-                        pill.setAttribute('data-filter', `brand-${option.value}`);
-                        pill.textContent = option.text;
-                        brandOptions.appendChild(pill);
-                        console.log('Added brand pill:', option.text);
-                    }
-                });
-            }
-
-            // Populate category pills from your existing category dropdown
-            const categorySelect = document.getElementById('filterCategory');
-            const categoryOptions = document.getElementById('categorySection')?.querySelector('.filter-options');
-
-            console.log('Category select found:', !!categorySelect);
-            console.log('Category options found:', !!categoryOptions);
-
-            if (categorySelect && categoryOptions) {
-                console.log('Category options count:', categorySelect.options.length);
-
-                // Clear existing pills (keep "All Categories")
-                const allCategoryPill = categoryOptions.querySelector('[data-filter="category-all"]');
-                categoryOptions.innerHTML = '';
-                if (allCategoryPill) {
-                    categoryOptions.appendChild(allCategoryPill);
-                }
-
-                Array.from(categorySelect.options).forEach(option => {
-                    if (option.value && option.value !== '') {
-                        const pill = document.createElement('button');
-                        pill.className = 'filter-pill';
-                        pill.setAttribute('data-filter', `category-${option.value}`);
-                        pill.textContent = option.text;
-                        categoryOptions.appendChild(pill);
-                        console.log('Added category pill:', option.text);
-                    }
-                });
-            }
-
-            // Add event listeners to new pills
-            document.querySelectorAll('.filter-pill').forEach(pill => {
-                pill.addEventListener('click', (e) => {
-                    this.handleFilterPill(e.target);
-                });
-            });
-
-            console.log('Finished populating filter options');
-        }, 1000); // Wait 1 second for data to load
-    }
-    syncWithDesktopFilters() {
-        // Sync mobile filters with current desktop filter state
-        const brandSelect = document.getElementById('filterBrand');
-        const categorySelect = document.getElementById('filterCategory');
-        const priceSelect = document.getElementById('filterPrice');
-        const stockSelect = document.getElementById('filterStock');
-
-        // Sync brand
-        if (brandSelect && brandSelect.value) {
-            const brandPill = document.querySelector(`[data-filter="brand-${brandSelect.value}"]`);
-            if (brandPill) {
-                document.querySelectorAll('[data-filter^="brand-"]').forEach(p => p.classList.remove('active'));
-                brandPill.classList.add('active');
+        // Get active stock
+        const activeStock = document.querySelector('#stockSection .filter-pill.active');
+        if (activeStock) {
+            const stockSlug = activeStock.dataset.filterSlug;
+            if (stockSlug === 'stock-true') {
+                filters.in_stock = true;
+            } else if (stockSlug === 'stock-false') {
+                filters.in_stock = false;
             }
         }
 
-        // Sync category
-        if (categorySelect && categorySelect.value) {
-            const categoryPill = document.querySelector(`[data-filter="category-${categorySelect.value}"]`);
-            if (categoryPill) {
-                document.querySelectorAll('[data-filter^="category-"]').forEach(p => p.classList.remove('active'));
-                categoryPill.classList.add('active');
+        // Get price range from sliders
+        const minSlider = document.getElementById('min-price');
+        const maxSlider = document.getElementById('max-price');
+        if (minSlider && maxSlider) {
+            const minPrice = parseInt(minSlider.value);
+            const maxPrice = parseInt(maxSlider.value);
+            const prices = shopState.allProducts.map(p => p.price).filter(p => p > 0);
+            const absoluteMin = Math.floor(Math.min(...prices) / 1000) * 1000;
+            const absoluteMax = Math.ceil(Math.max(...prices) / 1000) * 1000;
+
+            // Only apply price filter if it's different from the full range
+            if (minPrice > absoluteMin || maxPrice < absoluteMax) {
+                filters.price_min = minPrice;
+                filters.price_max = maxPrice;
             }
         }
 
-        // Sync price
-        if (priceSelect && priceSelect.value) {
-            const pricePill = document.querySelector(`[data-filter="price-${priceSelect.value}"]`);
-            if (pricePill) {
-                document.querySelectorAll('[data-filter^="price-"]').forEach(p => p.classList.remove('active'));
-                pricePill.classList.add('active');
-            }
-        }
-
-        // Sync stock
-        if (stockSelect && stockSelect.value) {
-            const stockValue = stockSelect.value === 'True' ? 'true' : 'false';
-            const stockPill = document.querySelector(`[data-filter="stock-${stockValue}"]`);
-            if (stockPill) {
-                document.querySelectorAll('[data-filter^="stock-"]').forEach(p => p.classList.remove('active'));
-                stockPill.classList.add('active');
-            }
-        }
-    }
-
-    getSelectedFilters() {
-        const filters = {
-            brand: '',
-            category: '',
-            price: '',
-            stock: ''
-        };
-
-        // Get active pills
-        document.querySelectorAll('.filter-pill.active').forEach(pill => {
-            const filterData = pill.getAttribute('data-filter');
-            if (!filterData) return;
-
-            const parts = filterData.split('-');
-            const type = parts[0];
-            const value = parts.slice(1).join('-');
-
-            if (value !== 'all') {
-                filters[type] = value;
-            }
-        });
-
+        console.log('📱 All selected filters:', filters);
         return filters;
     }
 
-    applyFilters() {
-        const filters = this.getSelectedFilters();
+    // UPDATED: Apply all filters including price
+    applyAllFilters() {
+        const filters = this.getAllSelectedFilters();
 
-        // Update desktop filter dropdowns to match mobile selections
-        const brandSelect = document.getElementById('filterBrand');
-        const categorySelect = document.getElementById('filterCategory');
-        const priceSelect = document.getElementById('filterPrice');
-        const stockSelect = document.getElementById('filterStock');
+        console.log('📱 Applying ALL mobile filters:', filters);
 
-        if (brandSelect) {
-            brandSelect.value = filters.brand || '';
-        }
-        if (categorySelect) {
-            categorySelect.value = filters.category || '';
-        }
-        if (priceSelect) {
-            priceSelect.value = filters.price || '';
-        }
-        if (stockSelect) {
-            stockSelect.value = filters.stock === 'true' ? 'True' : filters.stock === 'false' ? 'False' : '';
-        }
-
-        // Trigger filter change using your existing shop functionality
+        // Use the main applyFilters function
         if (typeof window.applyFilters === 'function') {
-            window.applyFilters();
+            window.applyFilters(filters);
         } else {
-            // Fallback: trigger change events
-            if (brandSelect) brandSelect.dispatchEvent(new Event('change'));
-            if (categorySelect) categorySelect.dispatchEvent(new Event('change'));
-            if (priceSelect) priceSelect.dispatchEvent(new Event('change'));
-            if (stockSelect) stockSelect.dispatchEvent(new Event('change'));
+            console.error('❌ applyFilters function not found');
         }
 
         this.closeFilterSheet();
     }
 
     clearFilters() {
+        console.log('📱 Clearing all mobile filters');
+
         // Reset all pills to "all"
-        document.querySelectorAll('.filter-pill').forEach(pill => {
-            pill.classList.remove('active');
+        document.querySelectorAll('.filter-options').forEach(container => {
+            const allPill = container.querySelector('[data-filter-value="all"]');
+            container.querySelectorAll('.filter-pill').forEach(pill => {
+                pill.classList.remove('active');
+            });
+            if (allPill) {
+                allPill.classList.add('active');
+            }
         });
 
-        // Activate "all" pills
-        document.querySelectorAll('[data-filter$="-all"]').forEach(pill => {
-            pill.classList.add('active');
-        });
+        // Reset price sliders to full range
+        const minSlider = document.getElementById('min-price');
+        const maxSlider = document.getElementById('max-price');
+        if (minSlider && maxSlider) {
+            const prices = shopState.allProducts.map(p => p.price).filter(p => p > 0);
+            const minPrice = Math.floor(Math.min(...prices) / 1000) * 1000;
+            const maxPrice = Math.ceil(Math.max(...prices) / 1000) * 1000;
 
-        // Clear desktop filters
-        const brandSelect = document.getElementById('filterBrand');
-        const categorySelect = document.getElementById('filterCategory');
-        const priceSelect = document.getElementById('filterPrice');
-        const stockSelect = document.getElementById('filterStock');
+            minSlider.value = minPrice;
+            maxSlider.value = maxPrice;
 
-        if (brandSelect) brandSelect.value = '';
-        if (categorySelect) categorySelect.value = '';
-        if (priceSelect) priceSelect.value = '';
-        if (stockSelect) stockSelect.value = '';
+            // Update displays
+            const minDisplay = document.getElementById('min-price-display');
+            const maxDisplay = document.getElementById('max-price-display');
+            if (minDisplay) minDisplay.textContent = minPrice.toLocaleString();
+            if (maxDisplay) maxDisplay.textContent = maxPrice.toLocaleString();
+        }
 
-        // Trigger filter change using your existing shop functionality
+        // Clear all filters using the main function
         if (typeof window.clearFilters === 'function') {
             window.clearFilters();
-        } else {
-            // Fallback: trigger change events
-            if (brandSelect) brandSelect.dispatchEvent(new Event('change'));
-            if (categorySelect) categorySelect.dispatchEvent(new Event('change'));
-            if (priceSelect) priceSelect.dispatchEvent(new Event('change'));
-            if (stockSelect) stockSelect.dispatchEvent(new Event('change'));
         }
 
         this.closeFilterSheet();
@@ -346,18 +421,5 @@ class MobileFilters {
 
 // Initialize mobile filters when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new MobileFilters();
+    window.mobileFilters = new MobileFilters();
 });
-
-// Make functions globally available for your existing shop.js
-window.applyProductFilters = function() {
-    if (typeof window.applyFilters === 'function') {
-        window.applyFilters();
-    }
-};
-
-window.clearAllFilters = function() {
-    if (typeof window.clearFilters === 'function') {
-        window.clearFilters();
-    }
-};

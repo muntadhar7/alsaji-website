@@ -5,185 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Checkout - AlSaji Auto Parts</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <script src="data/static_api.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/cart-manager.js"></script>
-    <script src="js/main.js"></script>
-
-
-  <header class="util">
-    <div class="wrap row between">
-      <div class="row" style="gap:12px"></div>
-      <div class="row" style="gap:12px">
-        <button class="chip" id="langBtn">AR</button>
-        <a class="chip" href="account.html">Account</a>
-        <a class="chip" href="cart.html">🛒 <span id="cartCount">0</span></a>
-      </div>
-    </div>
-    <nav class="nav">
-      <div class="wrap row">
-        <a class="tab" href="index.html">Home</a>
-        <a class="tab" href="shop.html">Shop</a>
-        <a class="tab" href="services.html">Services</a>
-        <a class="tab" href="brands.html">Brands & Partners</a>
-        <a class="tab" href="branches.html">Branches</a>
-        <a class="tab" href="news.html">News & Guides</a>
-        <a class="tab" href="support.html">Support</a>
-        <a class="tab" href="trade.html">Trade Portal</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="wrap">
-    <h1>Checkout</h1>
-
-    <!-- Empty Cart State -->
-    <div id="emptyCart" class="card" style="display: none; text-align: center; padding: 60px 20px;">
-      <div style="font-size: 48px; margin-bottom: 20px;">🛒</div>
-      <h2 style="margin-bottom: 12px;">Your cart is empty</h2>
-      <p class="muted" style="margin-bottom: 24px;">Add some products to checkout</p>
-      <a href="shop.html" class="btn">Continue Shopping</a>
-    </div>
-
-    <!-- Checkout Form -->
-    <div id="checkoutForm" style="display: none;">
-      <div class="grid" style="grid-template-columns: 2fr 1fr; gap: 24px;">
-
-        <!-- Left Column: Customer Information -->
-        <div>
-          <div class="card">
-            <h3>Shipping Information</h3>
-
-            <div class="form-group">
-              <label for="fullName">Full Name *</label>
-              <input type="text" id="fullName" required placeholder="Enter your full name">
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" required placeholder="Enter your email">
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" required placeholder="Enter your phone number">
-            </div>
-
-            <div class="form-group">
-              <label for="address">Shipping Address *</label>
-              <textarea id="address" required placeholder="Enter your complete address" rows="3"></textarea>
-            </div>
-
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
-              <div class="form-group">
-                <label for="city">City *</label>
-                <input type="text" id="city" required placeholder="City">
-              </div>
-              <div class="form-group">
-                <label for="area">Area *</label>
-                <input type="text" id="area" required placeholder="Area">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="notes">Order Notes (Optional)</label>
-              <textarea id="notes" placeholder="Any special instructions for delivery" rows="2"></textarea>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Payment Method</h3>
-
-            <div class="payment-methods">
-              <label class="payment-option">
-                <input type="radio" name="payment" value="cash" checked>
-                <div class="payment-content">
-                  <div style="font-weight: 600;">Cash on Delivery</div>
-                  <div class="muted" style="font-size: 14px;">Pay when you receive your order</div>
-                </div>
-              </label>
-
-              <label class="payment-option">
-                <input type="radio" name="payment" value="card">
-                <div class="payment-content">
-                  <div style="font-weight: 600;">Credit/Debit Card</div>
-                  <div class="muted" style="font-size: 14px;">Pay securely with your card</div>
-                </div>
-              </label>
-
-              <label class="payment-option">
-                <input type="radio" name="payment" value="transfer">
-                <div class="payment-content">
-                  <div style="font-weight: 600;">Bank Transfer</div>
-                  <div class="muted" style="font-size: 14px;">Transfer money to our bank account</div>
-                </div>
-              </label>
-            </div>
-
-            <!-- Card Payment Fields (Hidden by default) -->
-            <div id="cardFields" style="display: none; margin-top: 16px; padding: 16px; background: var(--w2); border-radius: 8px;">
-              <div class="form-group">
-                <label for="cardNumber">Card Number</label>
-                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
-              </div>
-              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
-                <div class="form-group">
-                  <label for="expiry">Expiry Date</label>
-                  <input type="text" id="expiry" placeholder="MM/YY">
-                </div>
-                <div class="form-group">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" placeholder="123">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Order Summary -->
-        <div>
-          <div class="card">
-            <h3>Order Summary</h3>
-
-            <div id="checkoutItems">
-              <!-- Cart items will be loaded here -->
-            </div>
-
-            <div style="border-top: 1px solid var(--w1); padding-top: 16px;">
-              <div class="row between" style="margin-bottom: 8px;">
-                <div class="muted">Subtotal</div>
-                <div id="checkoutSubtotal">IQD 0</div>
-              </div>
-              <div class="row between" style="margin-bottom: 8px;">
-                <div class="muted">Shipping</div>
-                <div id="checkoutShipping">IQD 5,000</div>
-              </div>
-              <div class="row between" style="margin-bottom: 12px;">
-                <div class="muted">Tax</div>
-                <div id="checkoutTax">IQD 0</div>
-              </div>
-              <div class="row between" style="padding-top: 12px; border-top: 1px solid var(--w1); font-weight: 600;">
-                <div>Total</div>
-                <div id="checkoutTotal" style="color: var(--red);">IQD 0</div>
-              </div>
-            </div>
-
-            <button class="btn" style="width: 100%; margin-top: 20px;" id="placeOrderBtn">
-              Place Order
-            </button>
-
-            <a href="cart.html" class="btn secondary" style="width: 100%; margin-top: 8px; text-align: center; display: block; text-decoration: none;">
-              Back to Cart
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
   <style>
+    /* Mobile-first responsive styles */
     .form-group {
       margin-bottom: 16px;
     }
@@ -204,6 +27,7 @@
       border-radius: 6px;
       font-size: 14px;
       transition: border-color 0.2s;
+      box-sizing: border-box;
     }
 
     .form-group input:focus,
@@ -261,6 +85,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
 
     .checkout-item-image img {
@@ -272,11 +97,13 @@
 
     .checkout-item-details {
       flex: 1;
+      min-width: 0; /* Prevents flex item from overflowing */
     }
 
     .checkout-item-name {
       font-weight: 500;
       margin-bottom: 4px;
+      word-break: break-word;
     }
 
     .checkout-item-price {
@@ -288,7 +115,219 @@
       color: var(--muted);
       font-size: 14px;
     }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+      }
+
+      .form-group {
+        margin-bottom: 14px;
+      }
+
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
+      }
+
+      .checkout-item {
+        padding: 10px 0;
+      }
+
+      .checkout-item-image {
+        width: 50px;
+        height: 50px;
+      }
+
+      .checkout-item-name {
+        font-size: 14px;
+      }
+
+      .checkout-item-price {
+        font-size: 14px;
+      }
+
+      .btn {
+        padding: 12px 16px;
+        font-size: 16px;
+      }
+
+      .nav .wrap.row {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav .tab {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+    }
+
+    /* Small mobile devices */
+    @media (max-width: 480px) {
+      .grid[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+      }
+
+      .card {
+        padding: 12px;
+      }
+
+      .checkout-item {
+        gap: 8px;
+      }
+
+      .checkout-item-image {
+        width: 45px;
+        height: 45px;
+      }
+
+      .checkout-item-name {
+        font-size: 13px;
+      }
+
+      .checkout-item-price {
+        font-size: 13px;
+      }
+    }
   </style>
+</head>
+<body>
+  <script src="data/static_api.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/cart-manager.js"></script>
+  <script src="js/main.js"></script>
+    <script src="js/layout.js"></script>
+
+
+  <main class="wrap">
+    <h1>Checkout</h1>
+
+    <!-- Empty Cart State -->
+    <div id="emptyCart" class="card" style="display: none; text-align: center; padding: 60px 20px;">
+      <div style="font-size: 48px; margin-bottom: 20px;">🛒</div>
+      <h2 style="margin-bottom: 12px;">Your cart is empty</h2>
+      <p class="muted" style="margin-bottom: 24px;">Add some products to checkout</p>
+      <a href="shop.html" class="btn">Continue Shopping</a>
+    </div>
+
+    <!-- Checkout Form -->
+    <div id="checkoutForm" style="display: none;">
+      <div class="grid" style="grid-template-columns: 2fr 1fr; gap: 24px;">
+
+        <!-- Left Column: Customer Information -->
+        <div>
+          <div class="card">
+            <h3>Shipping Information</h3>
+
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="address">Shipping Address *</label>
+              <textarea id="address" required placeholder="Enter your complete address" rows="3"></textarea>
+            </div>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" required placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="area">Area *</label>
+                <input type="text" id="area" required placeholder="Area">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Order Notes (Optional)</label>
+              <textarea id="notes" placeholder="Any special instructions for delivery" rows="2"></textarea>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Payment Method</h3>
+
+            <div class="payment-methods">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="cash" checked>
+                <div class="payment-content">
+                  <div style="font-weight: 600;">Cash on Delivery</div>
+                  <div class="muted" style="font-size: 14px;">Pay when you receive your order</div>
+                </div>
+              </label>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div>
+          <div class="card">
+            <h3>Order Summary</h3>
+
+            <div id="checkoutItems">
+              <!-- Cart items will be loaded here -->
+            </div>
+
+            <div style="border-top: 1px solid var(--w1); padding-top: 16px;">
+              <div class="row between" style="margin-bottom: 8px;">
+                <div class="muted">Subtotal</div>
+                <div id="checkoutSubtotal">IQD 0</div>
+              </div>
+              <div class="row between" style="margin-bottom: 8px;">
+                <div class="muted">Shipping</div>
+                <div id="checkoutShipping">IQD 5,000</div>
+              </div>
+              <div class="row between" style="margin-bottom: 12px;">
+                <div class="muted">Tax</div>
+                <div id="checkoutTax">IQD 0</div>
+              </div>
+              <div class="row between" style="padding-top: 12px; border-top: 1px solid var(--w1); font-weight: 600;">
+                <div>Total</div>
+                <div id="checkoutTotal" style="color: var(--red);">IQD 0</div>
+              </div>
+            </div>
+
+            <button class="btn" style="width: 100%; margin-top: 20px;" id="placeOrderBtn">
+              Place Order
+            </button>
+
+            <a href="cart.html" class="btn secondary" style="width: 100%; margin-top: 8px; text-align: center; display: block; text-decoration: none;">
+              Back to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script>
   class CheckoutPage {
@@ -393,13 +432,15 @@
 
       toggleCardFields(show) {
           const cardFields = document.getElementById('cardFields');
-          cardFields.style.display = show ? 'block' : 'none';
+          if (cardFields) {
+              cardFields.style.display = show ? 'block' : 'none';
 
-          // Toggle required attribute for card fields
-          const cardInputs = cardFields.querySelectorAll('input');
-          cardInputs.forEach(input => {
-              input.required = show;
-          });
+              // Toggle required attribute for card fields
+              const cardInputs = cardFields.querySelectorAll('input');
+              cardInputs.forEach(input => {
+                  input.required = show;
+              });
+          }
       }
 
   async placeOrder() {
@@ -419,140 +460,140 @@
           btn.textContent = 'Creating Order...';
           btn.disabled = true;
 
-          // Process order (this now sends to Odoo)
-          const orderResult = await this.processOrder({
-              ...formData,
-              order_number: orderNumber
-          });
+        // Process order (NO CUSTOM ORDER NUMBER)
+        const orderResult = await this.processOrder(formData);
 
-          if (orderResult.success) {
-              // Clear cart
-              await alsajiAPI.clearCart();
+        if (orderResult.success) {
+            // Clear cart
+            await alsajiAPI.clearCart();
 
-              // Redirect to confirmation page
-              const totalAmount = this.cart.total + 5000 + Math.round(this.cart.total * 0.05);
-              const urlParams = new URLSearchParams({
-                  order: orderNumber,
-                  total: totalAmount,
-                  odoo_id: orderResult.odoo_order_id || 'manual'
-              });
+            // Redirect to confirmation page
+            const totalAmount = this.cart.total + 5000 + Math.round(this.cart.total * 0.05);
+            const urlParams = new URLSearchParams({
+                order: orderResult.odoo_order_number, // 🔥 USE ODOO ORDER NUMBER
+                total: totalAmount,
+                odoo_id: orderResult.odoo_order_id || 'manual'
+            });
 
-              window.location.href = `order-confirmed.html?${urlParams.toString()}`;
-          } else {
-              throw new Error(orderResult.error);
-          }
+            window.location.href = `order-confirmed.html?${urlParams.toString()}`;
+        } else {
+            throw new Error(orderResult.error);
+        }
 
-      } catch (error) {
-          console.error('Order failed:', error);
-          alert('Failed to place order: ' + error.message);
+    } catch (error) {
+        console.error('Order failed:', error);
+        alert('Failed to place order: ' + error.message);
 
-          // Reset button
-          const btn = document.getElementById('placeOrderBtn');
-          btn.textContent = 'Place Order';
-          btn.disabled = false;
-      }
-  }
-      validateForm() {
-          const requiredFields = ['fullName', 'email', 'phone', 'address', 'city', 'area'];
-          let isValid = true;
+        // Reset button
+        const btn = document.getElementById('placeOrderBtn');
+        btn.textContent = 'Place Order';
+        btn.disabled = false;
+    }
+}
 
-          requiredFields.forEach(fieldId => {
-              const field = document.getElementById(fieldId);
-              if (!field.value.trim()) {
-                  field.style.borderColor = 'var(--red)';
-                  isValid = false;
-              } else {
-                  field.style.borderColor = '';
-              }
-          });
+  getFormData() {
+    // 🔥 FIX: Check if elements exist before accessing their values
+    const fullNameEl = document.getElementById('fullName');
+    const phoneEl = document.getElementById('phone');
+    const addressEl = document.getElementById('address');
+    const cityEl = document.getElementById('city');
+    const areaEl = document.getElementById('area');
 
-          // Email validation
-          const email = document.getElementById('email');
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (email.value && !emailRegex.test(email.value)) {
-              email.style.borderColor = 'var(--red)';
-              isValid = false;
-              alert('Please enter a valid email address');
-          }
+    if (!fullNameEl || !phoneEl || !addressEl || !cityEl || !areaEl) {
+        throw new Error('Required form fields are missing');
+    }
 
-          if (!isValid) {
-              alert('Please fill in all required fields correctly.');
-          }
+    return {
+        customer: {
+            fullName: fullNameEl.value,
+            email: '', // 🔥 ADD DEFAULT EMAIL SINCE FIELD DOESN'T EXIST
+            phone: phoneEl.value,
+            address: addressEl.value,
+            city: cityEl.value,
+            area: areaEl.value,
+            notes: document.getElementById('notes')?.value || ''
+        },
+        payment: 'cash', // 🔥 ALWAYS CASH
+        order: this.cart,
+        timestamp: new Date().toISOString()
+    };
+}
 
-          return isValid;
-      }
+validateForm() {
+    const requiredFields = ['fullName', 'phone', 'address', 'city', 'area'];
+    let isValid = true;
 
-      getFormData() {
-          const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+    requiredFields.forEach(fieldId => {
+        const field = document.getElementById(fieldId);
+        if (!field || !field.value.trim()) {
+            if (field) field.style.borderColor = 'var(--red)';
+            isValid = false;
+        } else {
+            field.style.borderColor = '';
+        }
+    });
 
-          return {
-              customer: {
-                  fullName: document.getElementById('fullName').value,
-                  email: document.getElementById('email').value,
-                  phone: document.getElementById('phone').value,
-                  address: document.getElementById('address').value,
-                  city: document.getElementById('city').value,
-                  area: document.getElementById('area').value,
-                  notes: document.getElementById('notes').value
-              },
-              payment: paymentMethod,
-              cardDetails: paymentMethod === 'card' ? {
-                  cardNumber: document.getElementById('cardNumber').value,
-                  expiry: document.getElementById('expiry').value,
-                  cvv: document.getElementById('cvv').value
-              } : null,
-              order: this.cart,
-              timestamp: new Date().toISOString()
-          };
-      }
+    if (!isValid) {
+        alert('Please fill in all required fields correctly.');
+    }
 
-  async processOrder(formData) {
-      // Prepare order data for Odoo
-      const orderData = {
-          order_number: formData.order_number || 'ALS' + Date.now().toString().slice(-8),
-          customer: formData.customer,
-          payment: formData.payment,
-          items: this.cart.items.map(item => ({
-              product_id: item.product_id,
-              name: item.name,
-              quantity: item.quantity,
-              unit_price: item.unit_price,
-              subtotal: item.subtotal
-          })),
-          total: this.cart.total,
-          shipping: 5000,
-          tax: Math.round(this.cart.total * 0.05),
-          timestamp: formData.timestamp
-      };
+    return isValid;
+}
 
-      try {
-          // Send order to Odoo
-          const odooResult = await alsajiAPI.createOdooOrder(orderData);
+// In checkout.html - update the processOrder method
+async processOrder(formData) {
+    // Prepare order data for Odoo
+    const orderData = {
+        customer: formData.customer,
+        payment: formData.payment,
+        items: this.cart.items.map(item => ({
+            product_id: item.product_id,
+            name: item.name,
+            quantity: item.quantity,
+            unit_price: item.unit_price,
+            subtotal: item.subtotal
+        })),
+        total: this.cart.total,
+        shipping: 5000,
+        tax: Math.round(this.cart.total * 0.05),
+        timestamp: formData.timestamp
+    };
 
-          if (odooResult.success) {
-              console.log('✅ Order created in Odoo:', odooResult.odoo_order_id);
-              return {
-                  success: true,
-                  odoo_order_id: odooResult.odoo_order_id,
-                  message: 'Order created successfully in Odoo'
-              };
-          } else {
-              throw new Error(odooResult.error || 'Failed to create order in Odoo');
-          }
+    try {
+        // Send order to Odoo
+        const odooResult = await alsajiAPI.createOdooOrder(orderData);
 
-      } catch (error) {
-          console.error('❌ Odoo order creation failed:', error);
+        if (odooResult.success) {
+            console.log('✅ Order created in Odoo:', odooResult.odoo_order_id);
+            return {
+                success: true,
+                odoo_order_id: odooResult.odoo_order_id,
+                odoo_order_number: odooResult.odoo_order_number, // 🔥 RETURN ODOO NUMBER
+                message: 'Order created successfully in Odoo'
+            };
+        } else {
+            throw new Error(odooResult.error || 'Failed to create order in Odoo');
+        }
 
-          // Fallback: Save order for manual processing
-          this.saveOrderForManualProcessing(orderData);
+    } catch (error) {
+        console.error('❌ Odoo order creation failed:', error);
 
-          return {
-              success: true,
-              fallback: true,
-              message: 'Order saved for manual processing (Odoo unavailable)'
-          };
-      }
-  }
+        // Fallback: Save order for manual processing
+        // 🔥 Generate a simple timestamp-based reference for fallback
+        const fallbackRef = 'WEB-' + Date.now().toString().slice(-6);
+        this.saveOrderForManualProcessing({
+            ...orderData,
+            fallback_reference: fallbackRef
+        });
+
+        return {
+            success: true,
+            fallback: true,
+            odoo_order_number: fallbackRef, // 🔥 USE FALLBACK REFERENCE
+            message: 'Order saved for manual processing (Odoo unavailable)'
+        };
+    }
+}
 
   saveOrderForManualProcessing(orderData) {
       try {

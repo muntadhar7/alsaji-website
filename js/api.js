@@ -1,4 +1,4 @@
-// api.js - Complete fixed version
+// api.js - Refactored and optimized version
 class AlSajiAPI {
     constructor() {
         this.useStaticData = true;
@@ -12,87 +12,1108 @@ class AlSajiAPI {
         this.cartCacheTime = null;
         this.CART_CACHE_DURATION = 30000;
 
-        // 🔥 ADD THIS: Authentication coordination properties
+        // Authentication coordination
         this.authPromise = null;
         this.authAttempts = 0;
         this.MAX_AUTH_ATTEMPTS = 2;
 
         this.checkStaticData();
+        this.initializeSession();
     }
 
-    // Add this method to set credentials
+    // ==================== INITIALIZATION METHODS ====================
+
+    initializeSession() {
+        try {
+            const savedSession = localStorage.getItem('alsaji_session');
+            if (savedSession) {
+                const session = JSON.parse(savedSession);
+                if (session.uid && session.password && session.expires > Date.now()) {
+                    this.uid = session.uid;
+                    this.password = session.password;
+                    this.username = session.username;
+                    this.sessionInfo = session;
+                    console.log('✅ Restored session from storage, UID:', this.uid);
+                }
+            }
+        } catch (e) {
+            console.log('❌ Invalid saved session format');
+            this.clearSession();
+        }
+    }
+
+    checkStaticData() {
+        if (typeof window.staticAPI === 'undefined') {
+            console.warn('❌ staticAPI not found. Make sure static_api.js is loaded.');
+            this.useStaticData = false;
+        } else if (window.staticAPI.products && window.staticAPI.products.length === 0) {
+            console.warn('⚠️ Static API has no products. Data may not be loaded yet.');
+        } else {
+            console.log('✅ Static API available:', {
+                products: window.staticAPI.products?.length || 0,
+                categories: window.staticAPI.categories?.length || 0,
+                brands: window.staticAPI.brands?.length || 0
+            });
+        }
+    }
+
+    // ==================== AUTHENTICATION METHODS ====================
+
     setCredentials(username, password) {
         this.username = username;
         this.password = password;
-        this.uid = null; // Reset UID to force re-authentication
-        localStorage.removeItem('alsaji_session'); // Clear old session
+        this.uid = null;
+        localStorage.removeItem('alsaji_session');
         console.log('🔐 Credentials set, will authenticate on next API call');
     }
-    // Add this method to create Odoo orders
-    async createOdooOrder(orderData) {
+
+    async ensureAuthenticated() {
+        if (this.uid && this.password) {
+            return true;
+        }
+
+        // Try to restore from localStorage
+        this.initializeSession();
+        if (this.uid && this.password) {
+            return true;
+        }
+
+        if (!this.username || !this.password) {
+            console.log('🔐 No credentials set, using local mode');
+            return false;
+        }
+
+        if (this.authPromise) {
+            return await this.authPromise;
+        }
+
+        if (this.authAttempts >= this.MAX_AUTH_ATTEMPTS) {
+            console.log('🔐 Max auth attempts reached, using local mode');
+            return false;
+        }
+
+        this.authAttempts++;
+        this.authPromise = this.authenticate();
+
         try {
-            console.log('🔄 Creating sales order in Odoo...', orderData);
+            return await this.authPromise;
+        } finally {
+            this.authPromise = null;
+        }
+    }
 
-            // First, find or create customer
-            const partnerId = await this.findOrCreateCustomer(orderData.customer);
+    async authenticate() {
+        try {
+            console.log('🔐 Attempting Odoo authentication...');
 
-            // Prepare order lines
-            const orderLines = orderData.items.map(item => [
-                0, 0, { // (0, 0, {values}) means create new line
-                    'product_id': item.product_id,
-                    'product_uom_qty': item.quantity,
-                    'price_unit': item.unit_price,
-                    'name': item.name,
-                    'tax_id': false
-                }
-            ]);
-
-            // Create sales order values
-            const orderValues = {
-                'partner_id': partnerId,
-                'partner_invoice_id': partnerId,
-                'partner_shipping_id': partnerId,
-                'order_line': orderLines,
-                'client_order_ref': orderData.order_number,
-                'note': this.formatOrderNotes(orderData),
-                'state': 'draft', // Keep as draft (quotation)
-                'require_payment': false,
-                'require_signature': false,
+            const authData = {
+                jsonrpc: "2.0",
+                method: "call",
+                params: {
+                    service: "common",
+                    method: "login",
+                    args: [this.liveAPI.dbName, this.username, this.password]
+                },
+                id: 1
             };
 
-            console.log('📦 Order values:', orderValues);
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-            // Create the sales order in Odoo
-            const orderResult = await this.executeOdooMethod(
-                'sale.order',
-                'create',
-                [orderValues]
-            );
+            const response = await fetch('https://alsaji.com/proxy.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                signal: controller.signal,
+                body: JSON.stringify(authData)
+            });
 
-            if (orderResult && orderResult.result) {
-                const orderId = orderResult.result;
-                console.log(`✅ Sales order created in Odoo with ID: ${orderId}`);
+            clearTimeout(timeoutId);
 
-                // Mark as "Request Sent" by updating notes
-                await this.markAsRequestSent(orderId, orderData);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
 
-                return {
-                    success: true,
-                    odoo_order_id: orderId,
-                    message: 'Order created successfully in Odoo'
-                };
+            const result = await response.json();
+
+            if (result.result) {
+                this.uid = result.result;
+                this.saveSession();
+                console.log('✅ Authentication successful. User ID:', this.uid);
+                return true;
             } else {
-                throw new Error('Failed to create order in Odoo');
+                throw new Error(result.error?.data?.message || 'Authentication failed');
             }
 
         } catch (error) {
-            console.error('❌ Failed to create Odoo order:', error);
+            console.error('❌ Authentication error:', error.message);
+            return false;
+        }
+    }
+
+    saveSession() {
+        const sessionData = {
+            uid: this.uid,
+            password: this.password,
+            username: this.username,
+            expires: Date.now() + (60 * 60 * 1000),
+        };
+        localStorage.setItem('alsaji_session', JSON.stringify(sessionData));
+    }
+
+    clearSession() {
+        this.uid = null;
+        this.username = null;
+        this.password = null;
+        this.sessionInfo = null;
+        localStorage.removeItem('alsaji_session');
+        localStorage.removeItem('alsaji_username');
+    }
+
+    async logout() {
+        try {
+            if (this.uid) {
+                const logoutData = {
+                    jsonrpc: "2.0",
+                    method: "call",
+                    params: {
+                        service: "common",
+                        method: "logout",
+                        args: [this.liveAPI.dbName, this.uid]
+                    },
+                    id: 1
+                };
+
+                await fetch('https://alsaji.com/proxy.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(logoutData)
+                });
+            }
+        } catch (error) {
+            console.log('Logout request failed:', error);
+        }
+
+        this.clearSession();
+        console.log('✅ Logged out successfully');
+        return { success: true };
+    }
+
+    // ==================== PRODUCT METHODS ====================
+
+    async getProducts(filters = {}) {
+        console.log('🔄 Getting products with filters:', filters);
+
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                const result = window.staticAPI.getProducts(filters);
+                console.log(`✅ Static API returned ${result.products.length} products`);
+                return result;
+            } catch (error) {
+                console.error('❌ Static API failed:', error);
+            }
+        }
+
+        return await this.getFallbackProducts(filters);
+    }
+
+    async getProductById(productId) {
+        if (!this.useStaticData || !window.staticAPI?.products) {
+            return null;
+        }
+
+        const id = parseInt(productId);
+        console.log(`🔍 Looking for product ID: ${id}`);
+
+        // Multiple lookup strategies
+        const product = window.staticAPI.products.find(p =>
+            p.id === id || p.id == id || p.id.toString() === productId.toString()
+        );
+
+        if (!product) {
+            console.log(`❌ Product ${productId} not found in ${window.staticAPI.products.length} products`);
+        }
+
+        return product;
+    }
+
+    async getCategories() {
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                return window.staticAPI.getCategories();
+            } catch (error) {
+                console.error('Static categories failed:', error);
+            }
+        }
+        return await this.getFallbackCategories();
+    }
+
+    async getBrands() {
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                return window.staticAPI.getBrands();
+            } catch (error) {
+                console.error('Static brands failed:', error);
+            }
+        }
+        return await this.getFallbackBrands();
+    }
+
+    async getSearchSuggestions(query) {
+        if (!query || query.length < 2) {
+            return { success: true, suggestions: [] };
+        }
+
+        if (this.useStaticData && window.staticAPI) {
+            try {
+                return {
+                    success: true,
+                    suggestions: window.staticAPI.searchSuggestions(query)
+                };
+            } catch (error) {
+                console.error('Static suggestions failed:', error);
+            }
+        }
+        return await this.getFallbackSuggestions(query);
+    }
+
+    async getFeaturedProducts(limit = 8) {
+        return this.getProducts({ limit });
+    }
+
+    // ==================== CART METHODS ====================
+
+
+
+    async getLocalCart() {
+        try {
+            const cartJson = localStorage.getItem('alsaji_cart');
+            if (cartJson) {
+                const cart = JSON.parse(cartJson);
+                this.ensureCartStructure(cart);
+                return {
+                    success: true,
+                    cart: cart,
+                    source: 'local'
+                };
+            }
+        } catch (error) {
+            console.error('Failed to parse local cart:', error);
+        }
+
+        return {
+            success: true,
+            cart: this.getEmptyCart(),
+            source: 'local'
+        };
+    }
+
+    getEmptyCart() {
+        return {
+            items: [],
+            item_count: 0,
+            total: 0,
+            tax_total: 0,
+            currency: 'IQD'
+        };
+    }
+
+    ensureCartStructure(cart) {
+        if (!cart.items) cart.items = [];
+        if (!cart.item_count) cart.item_count = 0;
+        if (!cart.total) cart.total = 0;
+        if (!cart.tax_total) cart.tax_total = 0;
+        if (!cart.currency) cart.currency = 'IQD';
+    }
+
+    isCartCacheValid() {
+        return this.cartCache &&
+               this.cartCacheTime &&
+               (Date.now() - this.cartCacheTime) < this.CART_CACHE_DURATION;
+    }
+
+
+
+
+
+    updateCartTotals(cart) {
+        cart.item_count = cart.items.reduce((sum, item) => sum + item.quantity, 0);
+        cart.total = cart.items.reduce((sum, item) => sum + item.subtotal, 0);
+    }
+
+    async saveCart(cart) {
+        localStorage.setItem('alsaji_cart', JSON.stringify(cart));
+        this.cartCache = null;
+        this.triggerCartUpdate(cart.item_count);
+    }
+
+    triggerCartUpdate(count) {
+        if (window.AlSajiCartEvents) {
+            window.AlSajiCartEvents.updateCartCount(count);
+        }
+    }
+
+    validateProductId(productId) {
+        if (!productId || productId === '' || productId === null || productId === undefined) {
+            return false;
+        }
+        const id = parseInt(productId);
+        return !isNaN(id) && id > 0;
+    }
+
+    // ==================== CART METHODS - FIXED VERSION ====================
+
+    async getCart(forceRefresh = false) {
+        // Check cache first
+        if (!forceRefresh && this.isCartCacheValid()) {
+            console.log('📦 Returning cached cart');
+            return this.cartCache;
+        }
+
+        // Always check local cart first for immediate response
+        const localCart = await this.getLocalCart();
+
+        // Try Odoo API in background if authenticated, but don't wait for it
+        if (await this.ensureAuthenticated()) {
+            this.syncCartToOdoo(localCart.cart).catch(error => {
+                console.log('🔄 Background Odoo sync failed:', error);
+            });
+        }
+
+        // Return local cart immediately for best user experience
+        this.cartCache = localCart;
+        this.cartCacheTime = Date.now();
+        return localCart;
+    }
+
+    async liveGetCart() {
+        try {
+            console.log('🔄 Getting live cart from Odoo...');
+
+            // Search for current user's cart (sale orders in draft state)
+            const searchResult = await this.executeOdooMethod(
+                'sale.order',
+                'search_read',
+                [],
+                {
+                    domain: [
+                        ['partner_id', '=', this.uid],
+                        ['state', '=', 'draft']
+                    ],
+                    fields: ['id', 'amount_total', 'amount_tax', 'currency_id', 'order_line'],
+                    limit: 1,
+                    order: 'id desc'
+                }
+            );
+
+            let cartData = null;
+            let orderLines = [];
+
+            if (searchResult?.result?.length > 0) {
+                cartData = searchResult.result[0];
+
+                // Get detailed order line information
+                if (cartData.order_line && cartData.order_line.length > 0) {
+                    const linesResult = await this.executeOdooMethod(
+                        'sale.order.line',
+                        'read',
+                        [cartData.order_line],
+                        {
+                            fields: ['product_id', 'name', 'product_uom_qty', 'price_unit', 'price_subtotal', 'product_uom']
+                        }
+                    );
+                    orderLines = linesResult?.result || [];
+                }
+            } else {
+                // No cart found in Odoo - create a new one
+                console.log('📝 No cart found in Odoo, creating new one...');
+                const newCartResult = await this.executeOdooMethod(
+                    'sale.order',
+                    'create',
+                    [{
+                        'partner_id': this.uid,
+                        'state': 'draft'
+                    }]
+                );
+
+                if (newCartResult?.result) {
+                    cartData = {
+                        id: newCartResult.result,
+                        amount_total: 0,
+                        amount_tax: 0,
+                        currency_id: [1, 'IQD'], // Default currency
+                        order_line: []
+                    };
+                }
+            }
+
+            const formattedCart = {
+                items: orderLines.map(line => ({
+                    product_id: line.product_id[0],
+                    name: line.name,
+                    quantity: line.product_uom_qty,
+                    unit_price: line.price_unit,
+                    subtotal: line.price_subtotal,
+                    image: null,
+                    sku: line.product_id[1],
+                    odoo_line_id: line.id
+                })),
+                total: cartData?.amount_total || 0,
+                item_count: orderLines.reduce((sum, line) => sum + line.product_uom_qty, 0),
+                tax_total: cartData?.amount_tax || 0,
+                currency: cartData?.currency_id?.[1] || 'IQD',
+                odoo_order_id: cartData?.id || null
+            };
+
+            return {
+                success: true,
+                cart: formattedCart,
+                source: 'odoo'
+            };
+
+        } catch (error) {
+            console.error('❌ Failed to get live cart:', error);
+            // Return local cart as fallback
+            return this.getLocalCart();
+        }
+    }
+
+async syncCartToOdoo(localCart) {
+    try {
+        if (!localCart.items || localCart.items.length === 0) {
+            console.log('🔄 No items to sync to Odoo');
+            return;
+        }
+
+        console.log('🔄 Syncing cart to Odoo...', localCart.items.length, 'items');
+
+        // Get or create Odoo cart
+        const odooCart = await this.getOrCreateOdooCart();
+        if (!odooCart) {
+            throw new Error('Failed to get or create Odoo cart');
+        }
+
+        // 🔥 SIMPLIFIED: Get current lines first, then only delete ones that exist
+        let existingLineIds = [];
+        if (odooCart.order_line && odooCart.order_line.length > 0) {
+            try {
+                // Read current lines to see which ones actually exist
+                const currentLines = await this.executeOdooMethod(
+                    'sale.order.line',
+                    'read',
+                    [odooCart.order_line],
+                    { fields: ['id'] }
+                );
+
+                if (currentLines?.result?.length > 0) {
+                    existingLineIds = currentLines.result.map(line => line.id);
+                }
+            } catch (readError) {
+                console.log('⚠️ Could not read current cart lines, assuming empty cart');
+                existingLineIds = [];
+            }
+        }
+
+        // Delete only the lines that actually exist
+        if (existingLineIds.length > 0) {
+            try {
+                await this.executeOdooMethod(
+                    'sale.order.line',
+                    'unlink',
+                    [existingLineIds]
+                );
+                console.log(`✅ Cleared ${existingLineIds.length} existing Odoo cart lines`);
+            } catch (deleteError) {
+                if (deleteError.message.includes('Record does not exist')) {
+                    console.log('⚠️ Some lines were already deleted during sync');
+                } else {
+                    throw deleteError;
+                }
+            }
+        }
+
+        // Add all items to Odoo cart
+        for (const item of localCart.items) {
+            await this.addItemToOdooCart(odooCart.id, item);
+        }
+
+        console.log('✅ Cart synced to Odoo successfully');
+
+    } catch (error) {
+        console.error('❌ Failed to sync cart to Odoo:', error);
+        throw error;
+    }
+}    async getOrCreateOdooCart() {
+        try {
+            // Search for existing cart
+            const searchResult = await this.executeOdooMethod(
+                'sale.order',
+                'search_read',
+                [],
+                {
+                    domain: [
+                        ['partner_id', '=', this.uid],
+                        ['state', '=', 'draft']
+                    ],
+                    fields: ['id', 'order_line'],
+                    limit: 1,
+                    order: 'id desc'
+                }
+            );
+
+            if (searchResult?.result?.length > 0) {
+                return searchResult.result[0];
+            }
+
+            // Create new cart
+            const createResult = await this.executeOdooMethod(
+                'sale.order',
+                'create',
+                [{
+                    'partner_id': this.uid,
+                    'state': 'draft'
+                }]
+            );
+
+            if (createResult?.result) {
+                return {
+                    id: createResult.result,
+                    order_line: []
+                };
+            }
+
+            return null;
+
+        } catch (error) {
+            console.error('❌ Failed to get/create Odoo cart:', error);
+            throw error;
+        }
+    }
+
+    async addItemToOdooCart(orderId, item) {
+        try {
+            const lineResult = await this.executeOdooMethod(
+                'sale.order.line',
+                'create',
+                [{
+                    'order_id': orderId,
+                    'product_id': item.product_id,
+                    'product_uom_qty': item.quantity,
+                    'price_unit': item.unit_price,
+                    'name': item.name
+                }]
+            );
+
+            return lineResult?.result;
+
+        } catch (error) {
+            console.error('❌ Failed to add item to Odoo cart:', error);
+            throw error;
+        }
+    }
+
+    async addToCart(productId, quantity = 1) {
+        try {
+            console.log(`🛒 Adding to cart: product ${productId}, quantity ${quantity}`);
+
+            if (!this.validateProductId(productId)) {
+                throw new Error('Invalid product ID');
+            }
+
+            const cartResult = await this.getCart();
+            const cart = cartResult.cart;
+
+            const existingItemIndex = cart.items.findIndex(item => item.product_id == productId);
+
+            if (existingItemIndex >= 0) {
+                // Update existing item
+                cart.items[existingItemIndex].quantity += quantity;
+                cart.items[existingItemIndex].subtotal =
+                    cart.items[existingItemIndex].unit_price * cart.items[existingItemIndex].quantity;
+            } else {
+                // Add new item
+                const product = await this.getProductById(productId);
+                if (!product) {
+                    throw new Error('Product not found');
+                }
+
+                cart.items.push({
+                    id: Date.now(),
+                    product_id: parseInt(productId),
+                    name: product.name,
+                    quantity: parseInt(quantity),
+                    unit_price: product.price,
+                    subtotal: product.price * quantity,
+                    image: product.image_url,
+                    product_data: product
+                });
+            }
+
+            this.updateCartTotals(cart);
+            await this.saveCart(cart);
+
+            // Sync to Odoo in background if authenticated
+            if (await this.ensureAuthenticated()) {
+                this.syncCartToOdoo(cart).catch(error => {
+                    console.log('⚠️ Background Odoo sync failed, but local cart updated:', error);
+                });
+            }
+
+            console.log('✅ Added to cart successfully');
+            return {
+                success: true,
+                message: 'Product added to cart',
+                cart_count: cart.item_count,
+                cart: cart
+            };
+
+        } catch (error) {
+            console.error('❌ Add to cart failed:', error);
             return {
                 success: false,
                 error: error.message
             };
         }
     }
+
+    async updateCart(lineId, quantity) {
+        try {
+            const cartResult = await this.getCart();
+            const cart = cartResult.cart;
+
+            const itemIndex = cart.items.findIndex(item => item.id == lineId);
+            if (itemIndex === -1) {
+                throw new Error('Item not found in cart');
+            }
+
+            if (quantity <= 0) {
+                return await this.removeFromCart(lineId);
+            }
+
+            cart.items[itemIndex].quantity = quantity;
+            cart.items[itemIndex].subtotal = cart.items[itemIndex].unit_price * quantity;
+
+            this.updateCartTotals(cart);
+            await this.saveCart(cart);
+
+            // Sync to Odoo in background
+            if (await this.ensureAuthenticated()) {
+                this.syncCartToOdoo(cart).catch(error => {
+                    console.log('⚠️ Background Odoo sync failed:', error);
+                });
+            }
+
+            return {
+                success: true,
+                message: 'Cart updated',
+                cart: cart
+            };
+
+        } catch (error) {
+            return {
+                success: false,
+                error: error.message
+            };
+        }
+    }
+
+    async removeFromCart(lineId) {
+        try {
+            const cartResult = await this.getCart();
+            const cart = cartResult.cart;
+
+            cart.items = cart.items.filter(item => item.id != lineId);
+            this.updateCartTotals(cart);
+            await this.saveCart(cart);
+
+            // Sync to Odoo in background
+            if (await this.ensureAuthenticated()) {
+                this.syncCartToOdoo(cart).catch(error => {
+                    console.log('⚠️ Background Odoo sync failed:', error);
+                });
+            }
+
+            return {
+                success: true,
+                message: 'Item removed from cart',
+                cart: cart
+            };
+
+        } catch (error) {
+            return {
+                success: false,
+                error: error.message
+            };
+        }
+    }
+
+    async clearCart() {
+        try {
+            localStorage.removeItem('alsaji_cart');
+            this.cartCache = null;
+            this.triggerCartUpdate(0);
+
+            // Clear Odoo cart in background
+            if (await this.ensureAuthenticated()) {
+                this.clearOdooCart().catch(error => {
+                    console.log('⚠️ Background Odoo clear failed:', error);
+                });
+            }
+
+            return {
+                success: true,
+                message: 'Cart cleared'
+            };
+        } catch (error) {
+            return {
+                success: false,
+                error: error.message
+            };
+        }
+    }
+
+    async clearOdooCart() {
+        try {
+            const odooCart = await this.getOrCreateOdooCart();
+            if (odooCart && odooCart.order_line && odooCart.order_line.length > 0) {
+                await this.executeOdooMethod(
+                    'sale.order.line',
+                    'unlink',
+                    [odooCart.order_line]
+                );
+                console.log('✅ Odoo cart cleared');
+            }
+        } catch (error) {
+            console.error('❌ Failed to clear Odoo cart:', error);
+            throw error;
+        }
+    }
+
+    // ==================== ORDER METHODS ====================
+
+async createOdooOrder(orderData) {
+    try {
+        console.log('🔄 Creating sales order in Odoo...', orderData);
+
+        // 🔥 REMOVE: No custom order number generation
+        const partnerId = await this.findOrCreateCashCustomer(orderData.customer);
+        const orderLines = this.prepareOrderLines(orderData.items);
+
+        const orderValues = {
+            'partner_id': partnerId,
+            'partner_invoice_id': partnerId,
+            'partner_shipping_id': partnerId,
+            'order_line': orderLines,
+            'note': this.formatOrderNotes(orderData),
+            'state': 'draft', // Keep as draft initially
+            'require_payment': false,
+            'require_signature': false,
+        };
+
+        console.log('📦 Order values:', orderValues);
+
+        const orderResult = await this.executeOdooMethod(
+            'sale.order',
+            'create',
+            [orderValues]
+        );
+
+        if (orderResult?.result) {
+            const orderId = orderResult.result;
+            console.log(`✅ Sales order created in Odoo with ID: ${orderId}`);
+
+            // 🔥 NEW: Get the Odoo-generated order name/number
+            const orderInfo = await this.executeOdooMethod(
+                'sale.order',
+                'read',
+                [[orderId]],
+                { fields: ['name'] } // 'name' field contains the Odoo order number
+            );
+
+            const odooOrderNumber = orderInfo?.result?.[0]?.name || orderId.toString();
+
+            await this.markAsRequestSent(orderId, orderData, odooOrderNumber);
+
+            return {
+                success: true,
+                odoo_order_id: orderId,
+                odoo_order_number: odooOrderNumber, // 🔥 RETURN ODOO ORDER NUMBER
+                message: 'Order created successfully in Odoo'
+            };
+        } else {
+            throw new Error('Failed to create order in Odoo');
+        }
+
+    } catch (error) {
+        console.error('❌ Failed to create Odoo order:', error);
+        return {
+            success: false,
+            error: error.message
+        };
+    }
+}
+// 🔥 NEW: Find or create customer with CASH payment type
+async findOrCreateCashCustomer(customerData) {
+    try {
+        if (!customerData || !customerData.phone) {
+            // If no customer data, create a generic website customer with cash payment
+            return await this.createCashCustomer({
+                name: 'Website Customer',
+                phone: '000000000',
+                email: 'website@alsaji.com'
+            });
+        }
+
+        // Try to find customer by phone (more reliable than email)
+        const searchResult = await this.executeOdooMethod(
+            'res.partner',
+            'search_read',
+            [],
+            {
+                domain: [
+                    '|',
+                    ['phone', '=', customerData.phone],
+                    ['mobile', '=', customerData.phone]
+                ],
+                fields: ['id', 'partner_payment_type', 'name', 'email'],
+                limit: 1
+            }
+        );
+
+        let partnerId;
+
+        if (searchResult?.result?.length > 0) {
+            partnerId = searchResult.result[0].id;
+            const existingPaymentType = searchResult.result[0].partner_payment_type;
+
+            // 🔥 UPDATE existing customer to CASH payment type if needed
+            if (existingPaymentType !== 'cash') {
+                console.log(`🔄 Updating customer ${partnerId} payment type to CASH`);
+
+                await this.executeOdooMethod(
+                    'res.partner',
+                    'write',
+                    [
+                        [partnerId],
+                        {
+                            'partner_payment_type': 'cash',
+                            'name': customerData.fullName || searchResult.result[0].name,
+                            'email': customerData.email || searchResult.result[0].email,
+                            'phone': customerData.phone,
+                            'street': customerData.address || '',
+                            'city': customerData.city || '',
+                        }
+                    ]
+                );
+            }
+
+            console.log(`✅ Using existing customer: ${partnerId} with CASH payment`);
+        } else {
+            // Create new customer with CASH payment type
+            partnerId = await this.createCashCustomer(customerData);
+        }
+
+        return partnerId;
+
+    } catch (error) {
+        console.error('❌ Customer lookup/creation failed:', error);
+        // 🔥 FALLBACK: Create a generic website customer
+        return await this.createCashCustomer({
+            name: customerData?.fullName || 'Website Customer',
+            phone: customerData?.phone || '000000000',
+            email: customerData?.email || 'website@alsaji.com',
+            address: customerData?.address || '',
+            city: customerData?.city || ''
+        });
+    }
+}
+
+// 🔥 HELPER: Create customer with CASH payment type
+async createCashCustomer(customerData) {
+    const customerValues = {
+        'name': customerData.name || 'Website Customer',
+        'email': customerData.email || '',
+        'phone': customerData.phone || '000000000',
+        'street': customerData.address || '',
+        'city': customerData.city || '',
+        'partner_payment_type': 'cash', // 🔥 FORCE CASH PAYMENT TYPE
+        'type': 'invoice',
+        'company_type': 'person',
+    };
+
+    const createResult = await this.executeOdooMethod(
+        'res.partner',
+        'create',
+        [customerValues]
+    );
+
+    if (createResult?.result) {
+        console.log(`✅ Created new CASH customer: ${createResult.result}`);
+        return createResult.result;
+    } else {
+        throw new Error('Failed to create customer');
+    }
+}
+
+// 🔥 FIX: Also update the fallback method to use orderData.customer
+async createOdooOrderFallback(orderData) {
+    const partnerId = 1; // Always use public partner
+
+    const orderLines = this.prepareOrderLines(orderData.items);
+
+    const orderValues = {
+        'partner_id': partnerId,
+        'order_line': orderLines,
+        'client_order_ref': orderData.order_number,
+        'state': 'draft',
+    };
+
+    const orderResult = await this.executeOdooMethod(
+        'sale.order',
+        'create',
+        [orderValues]
+    );
+
+    if (orderResult?.result) {
+        const orderId = orderResult.result;
+        console.log(`✅ Fallback order created in Odoo with ID: ${orderId}`);
+
+        // Add notes separately to avoid any validation issues
+        try {
+            await this.executeOdooMethod(
+                'sale.order',
+                'write',
+                [
+                    [orderId],
+                    { 'note': this.formatOrderNotes(orderData) }
+                ]
+            );
+        } catch (noteError) {
+            console.log('⚠️ Could not add notes to order, but order was created');
+        }
+
+        return {
+            success: true,
+            odoo_order_id: orderId,
+            message: 'Order created successfully (fallback method)'
+        };
+    } else {
+        throw new Error('Failed to create fallback order');
+    }
+}
+
+
+
+// And the formatRequestSentNotes method
+formatRequestSentNotes(orderData) {
+    const customer = orderData.customer || {}; // 🔥 Use orderData.customer
+    const itemsText = orderData.items.map(item =>
+        `- ${item.name} (Qty: ${item.quantity}) - IQD ${item.unit_price.toLocaleString()} each`
+    ).join('\n');
+
+    return `WEBSITE ORDER - REQUEST SENT
+=================================
+Order Number: ${orderData.order_number}
+Customer: ${customer.fullName || 'N/A'}
+Email: ${customer.email || 'N/A'}
+Phone: ${customer.phone || 'N/A'}
+Shipping Address: ${customer.address || 'N/A'}
+City: ${customer.city || 'N/A'} | Area: ${customer.area || 'N/A'}
+Payment Method: ${orderData.payment || 'N/A'}
+Customer Notes: ${customer.notes || 'None'}
+
+ORDER ITEMS:
+${itemsText}
+
+ORDER TOTALS:
+Subtotal: IQD ${orderData.total.toLocaleString()}
+Shipping: IQD ${orderData.shipping.toLocaleString()}
+Tax: IQD ${orderData.tax.toLocaleString()}
+Grand Total: IQD ${(orderData.total + orderData.shipping + orderData.tax).toLocaleString()}
+
+STATUS: REQUEST SENT - Awaiting manual processing
+Created: ${new Date().toLocaleString()}`;
+}
+    // 🔥 SIMPLIFIED: Always use cash payment type for website customers
+    async findOrCreateCustomerWithCashPayment(customerData) {
+        try {
+            if (!customerData || !customerData.email) {
+                return 1; // Default public partner (usually cash)
+            }
+
+            // Search for existing customer by email
+            const searchResult = await this.executeOdooMethod(
+                'res.partner',
+                'search_read',
+                [],
+                {
+                    domain: [['email', '=', customerData.email]],
+                    fields: ['id', 'partner_payment_type'],
+                    limit: 1
+                }
+            );
+
+            let partnerId;
+
+            if (searchResult?.result?.length > 0) {
+                partnerId = searchResult.result[0].id;
+                const existingPaymentType = searchResult.result[0].partner_payment_type;
+
+                // 🔥 FORCE CASH: Update customer to cash payment type if not already
+                if (existingPaymentType !== 'cash') {
+                    console.log(`🔄 Updating customer payment type from ${existingPaymentType} to cash`);
+
+                    await this.executeOdooMethod(
+                        'res.partner',
+                        'write',
+                        [
+                            [partnerId],
+                            {
+                                'partner_payment_type': 'cash', // 🔥 FORCE CASH
+                                'name': customerData.fullName || 'Website Customer',
+                                'phone': customerData.phone || '',
+                                'street': customerData.address || '',
+                                'city': customerData.city || '',
+                            }
+                        ]
+                    );
+                }
+
+                console.log(`✅ Using customer: ${partnerId} with CASH payment type`);
+            } else {
+                // Create new customer with CASH payment type
+                const customerValues = {
+                    'name': customerData.fullName || 'Website Customer',
+                    'email': customerData.email || '',
+                    'phone': customerData.phone || '',
+                    'street': customerData.address || '',
+                    'city': customerData.city || '',
+                    'partner_payment_type': 'cash', // 🔥 ALWAYS CASH FOR WEBSITE
+                    'type': 'invoice',
+                    'company_type': 'person',
+                };
+
+                const createResult = await this.executeOdooMethod(
+                    'res.partner',
+                    'create',
+                    [customerValues]
+                );
+
+                if (createResult?.result) {
+                    partnerId = createResult.result;
+                    console.log(`✅ Created new customer: ${partnerId} with CASH payment type`);
+                } else {
+                    throw new Error('Failed to create customer');
+                }
+            }
+
+            return partnerId;
+
+        } catch (error) {
+            console.error('❌ Customer lookup/creation failed:', error);
+            return 1; // Default public partner (cash)
+        }
+    }
+
 
     async findOrCreateCustomer(customerData) {
         try {
@@ -112,18 +1133,19 @@ class AlSajiAPI {
                 }
             );
 
-            if (searchResult && searchResult.result && searchResult.result.length > 0) {
+            if (searchResult?.result?.length > 0) {
                 console.log(`✅ Found existing customer: ${searchResult.result[0].id}`);
                 return searchResult.result[0].id;
             }
 
-            // Create new customer
+            // Create new customer with CASH payment type
             const customerValues = {
                 'name': customerData.fullName || 'Website Customer',
                 'email': customerData.email || '',
                 'phone': customerData.phone || '',
                 'street': customerData.address || '',
                 'city': customerData.city || '',
+                'partner_payment_type': 'cash', // 🔥 ALWAYS CASH
                 'type': 'invoice',
                 'company_type': 'person',
             };
@@ -134,7 +1156,7 @@ class AlSajiAPI {
                 [customerValues]
             );
 
-            if (createResult && createResult.result) {
+            if (createResult?.result) {
                 console.log(`✅ Created new customer: ${createResult.result}`);
                 return createResult.result;
             } else {
@@ -147,72 +1169,84 @@ class AlSajiAPI {
         }
     }
 
-    async markAsRequestSent(orderId, orderData) {
-        try {
-            const noteContent = this.formatRequestSentNotes(orderData);
-
-            const updateResult = await this.executeOdooMethod(
-                'sale.order',
-                'write',
-                [
-                    [orderId], // Array of IDs to update
-                    {
-                        'note': noteContent,
-                        // If you have a custom field for request status, add it here
-                        // 'x_studio_request_sent': true,
-                    }
-                ]
-            );
-
-            if (updateResult && updateResult.result) {
-                console.log(`✅ Order ${orderId} marked as 'Request Sent'`);
-            } else {
-                console.log('⚠️ Could not update order notes');
+    prepareOrderLines(items) {
+        return items.map(item => [
+            0, 0, {
+                'product_id': item.product_id,
+                'product_uom_qty': item.quantity,
+                'price_unit': item.unit_price,
+                'name': item.name,
+                'tax_id': false
             }
+        ]);
+    }
 
-        } catch (error) {
-            console.error('⚠️ Could not mark order as request sent:', error);
+async markAsRequestSent(orderId, orderData, odooOrderNumber) {
+    try {
+        const noteContent = this.formatRequestSentNotes(orderData, odooOrderNumber); // 🔥 PASS ODOO ORDER NUMBER
+
+        const updateResult = await this.executeOdooMethod(
+            'sale.order',
+            'write',
+            [
+                [orderId],
+                {
+                    'note': noteContent,
+                    // If you want to confirm the order immediately, uncomment:
+                    // 'state': 'sent' // Changes from draft to sent
+                }
+            ]
+        );
+
+        if (updateResult && updateResult.result) {
+            console.log(`✅ Order ${orderId} marked as 'Request Sent' with Odoo number: ${odooOrderNumber}`);
+        } else {
+            console.log('⚠️ Could not update order notes');
         }
+
+    } catch (error) {
+        console.error('⚠️ Could not mark order as request sent:', error);
     }
+}
+    // Also make sure the formatOrderNotes method uses orderData.customer
+formatOrderNotes(orderData) {
+    const customer = orderData.customer || {};
+    return `Website Order
+Customer: ${customer.fullName || 'N/A'}
+Phone: ${customer.phone || 'N/A'}
+Payment: ${orderData.payment || 'N/A'}`;
+}
 
-    formatOrderNotes(orderData) {
-        const customer = orderData.customer || {};
-        return `Website Order - ${orderData.order_number}
-    Customer: ${customer.fullName || 'N/A'}
-    Payment: ${orderData.payment || 'N/A'}`;
-    }
+formatRequestSentNotes(orderData, odooOrderNumber) { // 🔥 ADD ODOO ORDER NUMBER PARAM
+    const customer = orderData.customer || {};
+    const itemsText = orderData.items.map(item =>
+        `- ${item.name} (Qty: ${item.quantity}) - IQD ${item.unit_price.toLocaleString()} each`
+    ).join('\n');
 
-    formatRequestSentNotes(orderData) {
-        const customer = orderData.customer || {};
-        const itemsText = orderData.items.map(item =>
-            `- ${item.name} (Qty: ${item.quantity}) - IQD ${item.unit_price.toLocaleString()} each`
-        ).join('\n');
+    return `WEBSITE ORDER - REQUEST SENT
+=================================
+Odoo Order Number: ${odooOrderNumber} 🔥 USE ODOO NUMBER
+Customer: ${customer.fullName || 'N/A'}
+Phone: ${customer.phone || 'N/A'}
+Shipping Address: ${customer.address || 'N/A'}
+City: ${customer.city || 'N/A'} | Area: ${customer.area || 'N/A'}
+Payment Method: ${orderData.payment || 'N/A'}
+Customer Notes: ${customer.notes || 'None'}
 
-        return `WEBSITE ORDER - REQUEST SENT
-    =================================
-    Order Number: ${orderData.order_number}
-    Customer: ${customer.fullName || 'N/A'}
-    Email: ${customer.email || 'N/A'}
-    Phone: ${customer.phone || 'N/A'}
-    Shipping Address: ${customer.address || 'N/A'}
-    City: ${customer.city || 'N/A'} | Area: ${customer.area || 'N/A'}
-    Payment Method: ${orderData.payment || 'N/A'}
-    Customer Notes: ${customer.notes || 'None'}
+ORDER ITEMS:
+${itemsText}
 
-    ORDER ITEMS:
-    ${itemsText}
+ORDER TOTALS:
+Subtotal: IQD ${orderData.total.toLocaleString()}
+Shipping: IQD ${orderData.shipping.toLocaleString()}
+Tax: IQD ${orderData.tax.toLocaleString()}
+Grand Total: IQD ${(orderData.total + orderData.shipping + orderData.tax).toLocaleString()}
 
-    ORDER TOTALS:
-    Subtotal: IQD ${orderData.total.toLocaleString()}
-    Shipping: IQD ${orderData.shipping.toLocaleString()}
-    Tax: IQD ${orderData.tax.toLocaleString()}
-    Grand Total: IQD ${(orderData.total + orderData.shipping + orderData.tax).toLocaleString()}
+STATUS: REQUEST SENT - Awaiting manual processing
+Created: ${new Date().toLocaleString()}`;
+}
+    // ==================== ODOO EXECUTION METHODS ====================
 
-    STATUS: REQUEST SENT - Awaiting manual processing
-    Created: ${new Date().toLocaleString()}`;
-    }
-
-    // In your api.js, update the executeOdooMethod method:
     async executeOdooMethod(model, method, args = [], kwargs = {}) {
         try {
             await this.ensureAuthenticated();
@@ -242,16 +1276,12 @@ class AlSajiAPI {
 
             console.log(`🌐 Odoo API Call: ${model}.${method}`);
 
-            // Use your BlueHost proxy
-            const response = await fetch('https://alsaji.com/proxy.php/https://alsaji.com/proxy.php', {
+            const response = await fetch('https://alsaji.com/proxy.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest'
-                // Add any other headers your proxy might need
-                // 'Authorization': 'Bearer your-token' // if you add security later
-                // 'X-API-Key': 'your-api-key'
-            },
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
                 body: JSON.stringify(requestData)
             });
 
@@ -266,7 +1296,7 @@ class AlSajiAPI {
                 throw new Error(result.error.data?.message || result.error.message || 'Odoo API error');
             }
 
-            console.log(`✅ Odoo API Success: ${model}.${method}`, result.result);
+            console.log(`✅ Odoo API Success: ${model}.${method}`);
             return result;
 
         } catch (error) {
@@ -275,123 +1305,15 @@ class AlSajiAPI {
         }
     }
 
-    checkStaticData() {
-        if (typeof window.staticAPI === 'undefined') {
-            console.warn('❌ staticAPI not found. Make sure static_api.js is loaded.');
-            this.useStaticData = false;
-        } else if (window.staticAPI.products && window.staticAPI.products.length === 0) {
-            console.warn('⚠️ Static API has no products. Data may not be loaded yet.');
-        } else {
-            console.log('✅ Static API available:', {
-                products: window.staticAPI.products ? window.staticAPI.products.length : 0,
-                categories: window.staticAPI.categories ? window.staticAPI.categories.length : 0,
-                brands: window.staticAPI.brands ? window.staticAPI.brands.length : 0
-            });
-        }
-    }
-
-    // ==================== STATIC DATA METHODS ====================
-
-    async getProducts(filters = {}) {
-        console.log('🔄 Getting products with filters:', filters);
-
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                const result = window.staticAPI.getProducts(filters);
-                console.log(`✅ Static API returned ${result.products.length} products`);
-                return result;
-            } catch (error) {
-                console.error('❌ Static API failed:', error);
-                return await this.getFallbackProducts(filters);
-            }
-        }
-        return await this.getFallbackProducts(filters);
-    }
-
-    async getCategories() {
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                return window.staticAPI.getCategories();
-            } catch (error) {
-                console.error('Static categories failed:', error);
-                return await this.getFallbackCategories();
-            }
-        }
-        return await this.getFallbackCategories();
-    }
-
-    async getBrands() {
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                return window.staticAPI.getBrands();
-            } catch (error) {
-                console.error('Static brands failed:', error);
-                return await this.getFallbackBrands();
-            }
-        }
-        return await this.getFallbackBrands();
-    }
-
-    async getSearchSuggestions(query) {
-        if (!query || query.length < 2) {
-            return { success: true, suggestions: [] };
-        }
-
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                return {
-                    success: true,
-                    suggestions: window.staticAPI.searchSuggestions(query)
-                };
-            } catch (error) {
-                console.error('Static suggestions failed:', error);
-                return await this.getFallbackSuggestions(query);
-            }
-        }
-        return await this.getFallbackSuggestions(query);
-    }
-
-    async getFeaturedProducts(limit = 8) {
-        return this.getProducts({ limit });
-    }
-
-    // Add this method to your AlSajiAPI class in api.js
-    async getProductById(productId) {
-        if (!this.useStaticData || !window.staticAPI || !window.staticAPI.products) {
-            console.log('Static API not available for product lookup');
-            return null;
-        }
-
-        // Convert to number and try different matching strategies
-        const id = parseInt(productId);
-        console.log(`🔍 Looking for product ID: ${id} (original: ${productId})`);
-
-        // Try multiple lookup strategies
-        let product = window.staticAPI.products.find(p => p.id === id);
-        if (product) return product;
-
-        product = window.staticAPI.products.find(p => p.id == id);
-        if (product) return product;
-
-        product = window.staticAPI.products.find(p => p.id.toString() === productId.toString());
-        if (product) return product;
-
-        console.log(`❌ Product ${productId} not found in ${window.staticAPI.products.length} products`);
-        return null;
-    }
-
     // ==================== FALLBACK METHODS ====================
 
     async getFallbackProducts(filters = {}) {
         console.log('🔄 Using fallback products method');
 
-        // Try to load from JSON file directly
         try {
             const response = await fetch('data/json/products.json');
             if (response.ok) {
                 const products = await response.json();
-
-                // Simple filtering
                 let filtered = [...products];
 
                 if (filters.search) {
@@ -417,7 +1339,6 @@ class AlSajiAPI {
             console.log('Could not load products.json:', error);
         }
 
-        // Ultimate fallback
         return {
             success: false,
             error: 'No product data available',
@@ -482,491 +1403,6 @@ class AlSajiAPI {
         };
     }
 
-    // ==================== CART & AUTH METHODS ====================
-
-
-
-    // 🔥 NEW: Coordinated authentication method
-    async ensureAuthenticated() {
-        // If already authenticated, return immediately
-        if (this.uid && this.password) {
-            console.log('✅ Already authenticated, UID:', this.uid);
-            return true;
-        }
-
-        // Try to get session from localStorage first (fast path)
-        const savedSession = localStorage.getItem('alsaji_session');
-        if (savedSession) {
-            try {
-                const session = JSON.parse(savedSession);
-                if (session.uid && session.password && session.expires > Date.now()) {
-                    this.uid = session.uid;
-                    this.password = session.password;
-                    this.sessionInfo = session;
-                    console.log('✅ Restored session from storage, UID:', this.uid);
-                    return true;
-                }
-            } catch (e) {
-                console.log('❌ Invalid saved session format');
-            }
-        }
-
-        // If no credentials, skip authentication (cart will work locally)
-        if (!this.username || !this.password) {
-            console.log('🔐 No credentials set, using local mode');
-            return false;
-        }
-
-        // 🔥 NEW: Coordinate authentication attempts
-        if (this.authPromise) {
-            console.log('🔐 Waiting for existing auth attempt...');
-            return await this.authPromise;
-        }
-
-        // Limit authentication attempts
-        if (this.authAttempts >= this.MAX_AUTH_ATTEMPTS) {
-            console.log('🔐 Max auth attempts reached, using local mode');
-            return false;
-        }
-
-        this.authAttempts++;
-        console.log(`🔐 Starting authentication attempt ${this.authAttempts}`);
-
-        this.authPromise = this.authenticate();
-        try {
-            const result = await this.authPromise;
-            return result;
-        } finally {
-            this.authPromise = null;
-        }
-    }
-
-    // Update the authenticate method to be more efficient
-    async authenticate() {
-        try {
-            console.log('🔐 Attempting Odoo authentication...');
-
-            const authData = {
-                jsonrpc: "2.0",
-                method: "call",
-                params: {
-                    service: "common",
-                    method: "login",
-                    args: [
-                        this.liveAPI.dbName,
-                        this.username,
-                        this.password
-                    ]
-                },
-                id: 1
-            };
-
-            // Add timeout to authentication
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
-
-            const proxyUrl = 'https://alsaji.com/proxy.php';
-
-            const response = await fetch(proxyUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                signal: controller.signal,
-                body: JSON.stringify(authData)
-            });
-
-            clearTimeout(timeoutId);
-
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-            }
-
-            const result = await response.json();
-            console.log('🔐 Auth response:', result);
-
-            if (result.result) {
-                this.uid = result.result;
-
-                // Save session to localStorage
-                const sessionData = {
-                    uid: this.uid,
-                    password: this.password,
-                    username: this.username,
-                    expires: Date.now() + (60 * 60 * 1000), // 1 hour
-                };
-
-                localStorage.setItem('alsaji_session', JSON.stringify(sessionData));
-
-                console.log('✅ Authentication successful. User ID:', this.uid);
-                return true;
-            } else {
-                console.error('❌ Authentication failed');
-                return false;
-            }
-
-        } catch (error) {
-            if (error.name === 'AbortError') {
-                console.error('❌ Authentication timeout');
-            } else {
-                console.error('❌ Authentication error:', error);
-            }
-            return false;
-        }
-    }
-
-    async login(username, password) {
-        try {
-            console.log('🔐 Attempting login via proxy...');
-
-            // Use proxy URL instead of direct Odoo URL
-            const proxyUrl = 'https://alsaji.com/proxy.php';
-
-            const authData = {
-                jsonrpc: "2.0",
-                method: "call",
-                params: {
-                    service: "common",
-                    method: "login",
-                    args: [
-                        this.liveAPI.dbName,
-                        username,
-                        password
-                    ]
-                },
-                id: 1
-            };
-
-            console.log('🔐 Auth request via proxy:', authData);
-
-            const response = await fetch(proxyUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(authData)
-            });
-
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-            }
-
-            const result = await response.json();
-            console.log('🔐 Auth response:', result);
-
-            if (result.result) {
-                this.uid = result.result;
-                this.username = username;
-                this.password = password;
-
-                // Save session to localStorage
-                const sessionData = {
-                    uid: this.uid,
-                    username: username,
-                    password: password,
-                    expires: Date.now() + (60 * 60 * 1000), // 1 hour
-                };
-
-                localStorage.setItem('alsaji_session', JSON.stringify(sessionData));
-                localStorage.setItem('alsaji_username', username);
-
-                console.log('✅ Login successful, UID:', this.uid);
-                return {
-                    success: true,
-                    user: { uid: this.uid, username: username }
-                };
-            } else {
-                console.error('❌ Login failed:', result.error);
-                return {
-                    success: false,
-                    error: result.error?.data?.message || result.error?.message || 'Login failed'
-                };
-            }
-        } catch (error) {
-            console.error('❌ Login error:', error);
-            return {
-                success: false,
-                error: 'Network error during login: ' + error.message
-            };
-        }
-    }
-
-    async logout() {
-        try {
-            // Use proxy for logout if authenticated
-            if (this.uid) {
-                const proxyUrl = 'https://alsaji.com/proxy.php';
-                const logoutData = {
-                    jsonrpc: "2.0",
-                    method: "call",
-                    params: {
-                        service: "common",
-                        method: "logout",
-                        args: [this.liveAPI.dbName, this.uid]
-                    },
-                    id: 1
-                };
-
-                await fetch(proxyUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(logoutData)
-                });
-            }
-        } catch (error) {
-            console.log('Logout request failed (may be expected):', error);
-        }
-
-        // Clear local session
-        this.uid = null;
-        this.username = null;
-        this.password = null;
-        this.sessionInfo = null;
-        this.cartCache = null;
-        localStorage.removeItem('alsaji_session');
-        localStorage.removeItem('alsaji_username');
-        localStorage.removeItem('alsaji_cart');
-
-        console.log('✅ Logged out successfully');
-        return { success: true };
-    }
-
-    async getCart(forceRefresh = false) {
-        // Check cache first (fast path)
-        if (!forceRefresh && this.cartCache && this.cartCacheTime &&
-            (Date.now() - this.cartCacheTime) < this.CART_CACHE_DURATION) {
-            console.log('📦 Returning cached cart');
-            return this.cartCache;
-        }
-
-        // 🔥 NEW: Don't wait for authentication - use local cart immediately
-        try {
-            // Try Odoo API in background if authenticated
-            if (this.uid && this.password) {
-                const cart = await this.liveGetCart();
-                if (cart.success) {
-                    this.cartCache = cart;
-                    this.cartCacheTime = Date.now();
-                    return cart;
-                }
-            }
-        } catch (error) {
-            console.log('Odoo cart failed, using local:', error);
-        }
-
-        // Use local cart (fast path)
-        return await this.getLocalCart();
-    }
-
-    async liveGetCart() {
-        try {
-            // This would call Odoo's cart API
-            // For now, we'll use localStorage as fallback
-            throw new Error('Odoo cart API not implemented');
-        } catch (error) {
-            throw error;
-        }
-    }
-
-    async getLocalCart() {
-        try {
-            const cartJson = localStorage.getItem('alsaji_cart');
-            if (cartJson) {
-                const cart = JSON.parse(cartJson);
-                // 🔥 FIX: Ensure cart has the required structure
-                if (!cart.items) cart.items = [];
-                if (!cart.item_count) cart.item_count = 0;
-                if (!cart.total) cart.total = 0;
-
-                return {
-                    success: true,
-                    cart: cart,
-                    source: 'local'
-                };
-            }
-
-            // Return empty cart with proper structure
-            return {
-                success: true,
-                cart: {
-                    items: [],
-                    item_count: 0,
-                    total: 0
-                },
-                source: 'local'
-            };
-        } catch (error) {
-            // Return empty cart on error
-            return {
-                success: true,
-                cart: {
-                    items: [],
-                    item_count: 0,
-                    total: 0
-                },
-                source: 'local'
-            };
-        }
-    }
-    updateCartTotals(cart) {
-        cart.item_count = cart.items.reduce((sum, item) => sum + item.quantity, 0);
-        cart.total = cart.items.reduce((sum, item) => sum + item.subtotal, 0);
-    }
-
-    async addToCart(productId, quantity = 1) {
-        try {
-            console.log(`🛒 Adding to cart: product ${productId}, quantity ${quantity}`);
-
-            // Validate product ID
-            if (!this.validateProductId(productId)) {
-                throw new Error('Invalid product ID');
-            }
-
-            // Get current cart
-            const cartResult = await this.getCart();
-            const cart = cartResult.cart; // 🔥 FIX: Extract cart from result
-
-            // Find existing item
-            const existingItemIndex = cart.items.findIndex(item => item.product_id == productId);
-
-            if (existingItemIndex >= 0) {
-                // Update quantity
-                cart.items[existingItemIndex].quantity += quantity;
-                cart.items[existingItemIndex].subtotal = cart.items[existingItemIndex].unit_price * cart.items[existingItemIndex].quantity;
-            } else {
-                // Get product info from static data
-                const product = await this.getProductById(productId);
-                if (!product) {
-                    throw new Error('Product not found');
-                }
-
-                // Add new item
-                cart.items.push({
-                    id: Date.now(), // Temporary ID
-                    product_id: parseInt(productId),
-                    name: product.name,
-                    quantity: parseInt(quantity),
-                    unit_price: product.price,
-                    subtotal: product.price * quantity,
-                    image: product.image_url,
-                    product_data: product
-                });
-            }
-
-            // Recalculate totals
-            this.updateCartTotals(cart);
-
-            // Save to localStorage
-            localStorage.setItem('alsaji_cart', JSON.stringify(cart));
-
-            // Clear cache and trigger global update
-            this.cartCache = null;
-            if (window.AlSajiCartEvents) {
-                window.AlSajiCartEvents.updateCartCount(cart.item_count);
-            }
-
-            console.log('✅ Added to cart successfully');
-            return {
-                success: true,
-                message: 'Product added to cart',
-                cart_count: cart.item_count,
-                cart: cart
-            };
-
-        } catch (error) {
-            console.error('❌ Add to cart failed:', error);
-            return {
-                success: false,
-                error: error.message
-            };
-        }
-    }
-
-    async updateCart(lineId, quantity) {
-        try {
-            // ... existing update logic ...
-
-            localStorage.setItem('alsaji_cart', JSON.stringify(cart));
-            this.cartCache = null;
-
-            // Trigger global update
-            if (window.AlSajiCartEvents) {
-                window.AlSajiCartEvents.updateCartCount(cart.item_count);
-            }
-
-            return {
-                success: true,
-                message: 'Cart updated',
-                cart: cart
-            };
-
-        } catch (error) {
-            return {
-                success: false,
-                error: error.message
-            };
-        }
-    }
-
-    async removeFromCart(lineId) {
-        try {
-            // ... existing remove logic ...
-
-            this.updateCartTotals(cart);
-            localStorage.setItem('alsaji_cart', JSON.stringify(cart));
-            this.cartCache = null;
-
-            // Trigger global update
-            if (window.AlSajiCartEvents) {
-                window.AlSajiCartEvents.updateCartCount(cart.item_count);
-            }
-
-            return {
-                success: true,
-                message: 'Item removed from cart',
-                cart: cart
-            };
-
-        } catch (error) {
-            return {
-                success: false,
-                error: error.message
-            };
-        }
-    }
-
-    async clearCart() {
-        try {
-            localStorage.removeItem('alsaji_cart');
-            this.cartCache = null;
-
-            // Trigger global update
-            if (window.AlSajiCartEvents) {
-                window.AlSajiCartEvents.updateCartCount(0);
-            }
-
-            return {
-                success: true,
-                message: 'Cart cleared'
-            };
-        } catch (error) {
-            return {
-                success: false,
-                error: error.message
-            };
-        }
-    }
-
-    validateProductId(productId) {
-        if (!productId || productId === '' || productId === null || productId === undefined) {
-            return false;
-        }
-        const id = parseInt(productId);
-        return !isNaN(id) && id > 0;
-    }
-
     // ==================== UTILITY METHODS ====================
 
     isLoggedIn() {
@@ -974,26 +1410,13 @@ class AlSajiAPI {
     }
 
     getUsername() {
-        try {
-            const session = localStorage.getItem('alsaji_session');
-            if (session) {
-                const sessionData = JSON.parse(session);
-                return sessionData.username || null;
-            }
-            return localStorage.getItem('alsaji_username');
-        } catch (error) {
-            return localStorage.getItem('alsaji_username');
-        }
+        return this.username || localStorage.getItem('alsaji_username');
     }
 
     getLastSyncTime() {
-        if (window.staticAPI && window.staticAPI.lastUpdated) {
-            return new Date(window.staticAPI.lastUpdated);
-        }
-        return null;
+        return window.staticAPI?.lastUpdated ? new Date(window.staticAPI.lastUpdated) : null;
     }
 
-    // Force refresh cart cache
     refreshCart() {
         this.cartCache = null;
         this.cartCacheTime = null;
@@ -1001,43 +1424,25 @@ class AlSajiAPI {
     }
 }
 
-// Create global instance
-window.alsajiAPI = new AlSajiAPI();
+// ==================== GLOBAL CART EVENT SYSTEM ====================
 
-// Auto-initialize session on load
-document.addEventListener('DOMContentLoaded', function() {
-    window.alsajiAPI.ensureAuthenticated().then(authenticated => {
-        if (authenticated) {
-            console.log('✅ Auto-login successful');
-        }
-    });
-});
-
-// ==================== GLOBAL CART SYNCHRONIZATION ====================
-
-// Global cart event system
 window.AlSajiCartEvents = {
-    // Update cart count everywhere
     updateCartCount: function(count) {
-        // Update all cart count elements
         const cartCountElements = document.querySelectorAll('#cartCount');
         cartCountElements.forEach(element => {
             element.textContent = count;
         });
 
-        // Dispatch event for other components
-        const event = new CustomEvent('cartCountUpdated', {
+        document.dispatchEvent(new CustomEvent('cartCountUpdated', {
             detail: { count: count }
-        });
-        document.dispatchEvent(event);
+        }));
 
         console.log('🔄 Cart count updated globally:', count);
     },
 
-    // Force refresh cart count from storage
     refreshCartCount: async function() {
         try {
-            const cartResult = await window.alsajiAPI.getCart(true); // Force refresh
+            const cartResult = await window.alsajiAPI.getCart(true);
             const count = cartResult.cart?.item_count || 0;
             this.updateCartCount(count);
         } catch (error) {
@@ -1046,7 +1451,7 @@ window.AlSajiCartEvents = {
     }
 };
 
-// Listen for storage events (when cart changes in other tabs)
+// Event listeners for cross-tab synchronization
 window.addEventListener('storage', function(e) {
     if (e.key === 'alsaji_cart') {
         console.log('🔄 Cart changed in another tab, updating count...');
@@ -1054,22 +1459,22 @@ window.addEventListener('storage', function(e) {
     }
 });
 
-// Listen for cart updates on this page
-document.addEventListener('cartUpdated', function(e) {
+document.addEventListener('cartUpdated', function() {
     AlSajiCartEvents.refreshCartCount();
 });
 
-// Auto-initialize cart count on page load
+// Auto-initialization
 document.addEventListener('DOMContentLoaded', function() {
-    // Wait a bit for the header to load
     setTimeout(() => {
         AlSajiCartEvents.refreshCartCount();
     }, 500);
 
-    // Also update when page becomes visible
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
             AlSajiCartEvents.refreshCartCount();
         }
     });
 });
+
+// Create global instance
+window.alsajiAPI = new AlSajiAPI();

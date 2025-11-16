@@ -356,3 +356,29 @@ function initializeCartManager() {
 
 // Start everything when DOM is ready
 document.addEventListener('DOMContentLoaded', loadLayout);
+
+// Mobile menu functionality
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileNav = document.getElementById('mobileNav');
+const mobileNavClose = document.getElementById('mobileNavClose');
+
+if (hamburgerBtn && mobileNav) {
+  hamburgerBtn.addEventListener('click', () => {
+    mobileNav.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  mobileNavClose.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  // Close menu when clicking on links
+  const mobileLinks = mobileNav.querySelectorAll('.mobile-tab');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+}
