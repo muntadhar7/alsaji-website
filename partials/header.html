@@ -1,10 +1,21 @@
 <header class="util">
   <div class="wrap row between">
+    <!-- Desktop: Logo + Navigation -->
     <div class="row" style="gap:12px; align-items:center;">
       <a href="index.html" class="logo">
         <img src="assets/Alsaji Primary Logo EN.svg" alt="Logo" style="height:40px;">
       </a>
     </div>
+
+    <!-- MOBILE LOGO - ADD THIS -->
+    <div class="mobile-logo-container">
+      <a href="index.html">
+        <img src="assets/Alsaji Primary Logo Mark.svg" alt="Logo" class="mobile-logo">
+      </a>
+    </div>
+
+
+    <!-- Desktop: Header Actions -->
     <div class="row header-actions" style="gap:12px">
       <button class="chip" id="langBtn">AR</button>
       <a class="chip" href="account.html">Account</a>
@@ -12,7 +23,7 @@
         <span class="cart-icon">🛒</span>
         <span id="cartCount">0</span>
       </a>
-      <!-- Hamburger Menu Button -->
+      <!-- Hamburger Menu Button (hidden on desktop) -->
       <button class="hamburger-btn" id="hamburgerBtn">
         <span></span>
         <span></span>
@@ -34,10 +45,17 @@
       <a class="mobile-tab" href="support.html">Support</a>
       <a class="mobile-tab" href="trade.html">Trade Portal</a>
 
+      <!-- Cart in mobile menu -->
+      <a class="mobile-tab" href="cart.html" style="display: flex; align-items: center; gap: 8px;">
+        <span class="cart-icon">🛒</span>
+        <span>Cart</span>
+        <span id="mobileCartCount" style="background: var(--red); color: white; padding: 2px 6px; border-radius: 10px; font-size: 12px; min-width: 20px; text-align: center;">0</span>
+      </a>
+
       <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--ink2); display: flex; gap: 8px; flex-wrap: wrap;">
-      <button class="chip" id="mobileLangBtn">AR</button>
-      <a class="chip" href="account.html">Account</a>
-    </div>
+        <button class="chip" id="mobileLangBtn">AR</button>
+        <a class="chip" href="account.html">Account</a>
+      </div>
     </div>
   </div>
 
@@ -175,9 +193,12 @@
       display: block;
     }
 
+    /* MOBILE-ONLY CHANGES START HERE */
     .util .wrap.row.between {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       gap: 12px;
       padding: 12px 16px;
       width: 100%;
@@ -186,39 +207,71 @@
       overflow: hidden;
     }
 
+    /* Minimal logo container on left */
+    .mobile-logo-container {
+      display: flex !important;
+      align-items: center;
+      flex: 1;
+    }
+
+    .mobile-logo {
+      height: 32px;
+      width: auto;
+    }
+
+    /* Hide desktop logo and show mobile logo */
     .util .wrap.row.between > .row:first-child {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 100%;
+      display: none !important;
     }
 
+    /* Remove all chips from header on mobile */
+    .header-actions .chip {
+      display: none !important;
+    }
+
+    /* Position hamburger on the right */
+    .hamburger-btn {
+      display: flex;
+      margin-left: auto; /* Push to right */
+    }
+
+    /* Header actions container adjustment */
     .header-actions {
-      width: 100%;
       display: flex;
-      justify-content: flex-end;
       align-items: center;
-      gap: 8px;
-      max-width: 100%;
-      flex-wrap: wrap;
+      justify-content: flex-end;
+      flex: 1;
     }
-
-    .logo img {
-      height: 32px !important;
-      max-width: 100%;
-    }
-
-    .chip {
-      padding: 6px 10px;
-      font-size: 13px;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    /* MOBILE-ONLY CHANGES END HERE */
 
     .util {
       overflow: hidden;
       max-width: 100%;
+    }
+  }
+
+  /* Desktop styles - keep original layout */
+  @media (min-width: 1024px) {
+    .util .wrap.row.between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: block !important;
+    }
+
+    .header-actions .chip {
+      display: inline-flex !important;
+    }
+
+    .mobile-logo-container {
+      display: none !important;
+    }
+
+    .hamburger-btn {
+      display: none !important;
     }
   }
 
@@ -228,21 +281,8 @@
       padding: 10px 12px;
     }
 
-    .logo img {
-      height: 28px !important;
-    }
-
-    .chip {
-      padding: 5px 8px;
-      font-size: 12px;
-    }
-
-    .header-actions .chip {
-      flex-shrink: 0;
-    }
-
-    .hamburger-btn {
-      flex-shrink: 0;
+    .mobile-logo {
+      height: 32px !important;
     }
   }
 
@@ -261,26 +301,72 @@
   body.menu-open {
     overflow: hidden;
   }
-
-  /* Make all chips uniform */
-.header-actions .chip {
-    display: inline-flex;          /* Use flex for centering */
-    justify-content: center;       /* Center horizontally */
-    align-items: center;           /* Center vertically */
-    width: 80px;                   /* Set a fixed width */
-    height: 36px;                  /* Set a fixed height */
-    padding: 0 12px;               /* Optional padding inside */
-    box-sizing: border-box;        /* Include padding in width/height */
-    text-align: center;
-    white-space: nowrap;           /* Prevent text wrap */
-}
-
-/* Optional: adjust cart chip if it has numbers */
-.header-actions .cart-chip {
-    width: auto;                    /* Let it expand if needed */
-    min-width: 80px;                /* Keep minimum width */
-    justify-content: center;
-    gap: 4px;                       /* Space between icon and number */
-}
-
 </style>
+
+<script>
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileNavClose = document.getElementById('mobileNavClose');
+  const body = document.body;
+
+  if (hamburgerBtn && mobileNav) {
+    hamburgerBtn.addEventListener('click', function() {
+      mobileNav.classList.add('active');
+      body.classList.add('menu-open');
+      hamburgerBtn.classList.add('active');
+    });
+
+    mobileNavClose.addEventListener('click', function() {
+      mobileNav.classList.remove('active');
+      body.classList.remove('menu-open');
+      hamburgerBtn.classList.remove('active');
+    });
+
+    // Close menu when clicking on a link
+    const mobileTabs = mobileNav.querySelectorAll('.mobile-tab');
+    mobileTabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        body.classList.remove('menu-open');
+        hamburgerBtn.classList.remove('active');
+      });
+    });
+  }
+
+  // Language toggle functionality
+  const langBtn = document.getElementById('langBtn');
+  const mobileLangBtn = document.getElementById('mobileLangBtn');
+
+  function toggleLanguage() {
+    const currentLang = langBtn.textContent;
+    const newLang = currentLang === 'AR' ? 'EN' : 'AR';
+
+    if (langBtn) langBtn.textContent = newLang;
+    if (mobileLangBtn) mobileLangBtn.textContent = newLang;
+
+    // Add your language switching logic here
+    console.log('Switching language to:', newLang);
+  }
+
+  if (langBtn) langBtn.addEventListener('click', toggleLanguage);
+  if (mobileLangBtn) mobileLangBtn.addEventListener('click', toggleLanguage);
+});
+
+// Update cart count function for both header and mobile menu
+function updateCartCount(count) {
+  const cartCount = document.getElementById('cartCount');
+  const mobileCartCount = document.getElementById('mobileCartCount');
+
+  if (cartCount) {
+    cartCount.textContent = count;
+    cartCount.style.display = count > 0 ? 'flex' : 'none';
+  }
+
+  if (mobileCartCount) {
+    mobileCartCount.textContent = count;
+    mobileCartCount.style.display = count > 0 ? 'flex' : 'none';
+  }
+}
+</script>

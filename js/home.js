@@ -309,7 +309,7 @@ function renderCategories(categories) {
                  onclick="window.location.href='shop.html?category=${encodeURIComponent(categoryName)}'"
                  style="cursor:pointer; text-align:center; border-radius:10px; overflow:hidden; background:#f8f9fa; display:flex; flex-direction:column; justify-content:space-between; height:100%;">
 
-                <div style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden; background:#ffffff;">
+                <div class = "image" style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden; ">
                     <img src="${imageUrl}"
                          alt="${categoryName}"
                          style="width:100%; height:100%; object-fit:contain; padding:0px;"
@@ -352,7 +352,7 @@ function renderBrandsHome(brands) {
                  onclick="window.location.href='shop.html?brand=${encodeURIComponent(brandName)}'"
                  style="cursor:pointer; text-align:center; border-radius:10px; overflow:hidden; display:flex; background:#f8f9fa; flex-direction:column; justify-content:space-between; height:100%;">
 
-                <div style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden; background:#ffffff;">
+                <div class = "image" style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden; ">
                     <img src="${imageUrl}"
                          alt="${brandName}"
                          style="width:100%; height:100%; object-fit:contain; padding:15px;"
@@ -398,10 +398,10 @@ function renderFeaturedProducts(products) {
             `data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik04MCA2MEgxMjBWODBIMzBWMTIwSDEyMFYxMDBIMzBWODBINzBWNjBaIiBmaWxsPSIjOEU5MEEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjEyIiBmaWxsPSIjOEU5MEEwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiPlByb2R1Y3Q8L3RleHQ+Cjwvc3ZnPgo=`;
 
         return `
-            <div class="card"
+            <div class="card product-card"
                  style="text-align:center; border-radius:10px; overflow:hidden; display:flex; flex-direction:column; background:#f8f9fa; justify-content:space-between; height:100%;">
 
-                <div style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden; background:#ffffff;">
+                <div class = "image" style="position:relative; width:100%; aspect-ratio:1/1; overflow:hidden;">
                     <img src="${imageUrl}"
                          alt="${productName}"
                          style="width:100%; height:100%; object-fit:contain; padding:10px;"
@@ -422,9 +422,7 @@ function renderFeaturedProducts(products) {
                         </button>
                     </div>
 
-                    <div class="muted" style="font-size:11px;">
-                        ${inStock ? '✅ In stock' : '❌ Out of stock'}
-                    </div>
+
                 </div>
             </div>
         `;

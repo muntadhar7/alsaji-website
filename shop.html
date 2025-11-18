@@ -72,28 +72,35 @@
           <!-- Shop Header -->
 <div class="shop-header row between" style="margin-bottom:8px">
   <div class="search-sort-container row" style="align-items:center; gap:16px; width: 100%;">
-    <!-- Search Bar - Updated -->
-    <div class="search" style="flex: 1; display: flex; align-items: center; min-width: 0;">
+    <!-- Search Bar - Updated for mobile -->
+    <div class="search" id="mobileSearchContainer" style="flex: 1; display: flex; align-items: center; min-width: 0;">
       <input class="search input" id="searchInput" placeholder="Search products..." style="flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; padding: 8px 12px;">
-      <button class="btn2" id="searchButton" style="white-space: nowrap; flex-shrink: 0;">Search</button>
+      <button class="btn2" id="searchButton" style="white-space: nowrap; flex-shrink: 0; display: none;">Search</button>
     </div>
 
-    <!-- Filter and Sort Buttons -->
-    <div class="filter-sort-buttons row" style="align-items: center; gap: 8px; flex-shrink: 0; padding: 0 8px; min-width: 200px;">
-      <!-- Sort Dropdown -->
-      <div class="sort-container" style="position: relative; display: inline-block; min-width: 150px; flex: 1;">
-        <label for="sortSelect" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888; pointer-events: none; font-size: 14px;">Sort</label>
-        <select class="select" id="sortSelect" style="padding-left: 50px; width: 100%;">
-          <option>Relevance</option>
-          <option>Price: Low to High</option>
-          <option>Price: High to Low</option>
-          <option>Newest</option>
-        </select>
+    <!-- Mobile Search Toggle Row -->
+    <div class="mobile-search-toggle row" id="mobileSearchToggle" style="align-items: center; gap: 8px; width: 100%; display: none;">
+      <div class="search-icon" style="flex: 1; display: flex; align-items: center; padding: 8px 12px; background: var(--w2); border-radius: 12px; cursor: pointer;">
+        <span style="color: #888; ">🔍</span>
       </div>
-      <!-- Mobile Filter Button -->
-      <button class="btn2 mobile-filter-btn" id="mobileFilterBtn" style="display: none; white-space: nowrap;">
-        Filters
-      </button>
+
+      <!-- Filter and Sort Buttons -->
+      <div class="filter-sort-buttons row" style="align-items: center; gap: 8px; flex-shrink: 16;">
+        <!-- Sort Dropdown -->
+        <div class="sort-container" style="position: relative; display: inline-block; min-width: 60px; flex: 1;">
+          <label for="sortSelect" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #888; pointer-events: none; font-size: 14px;">Sort</label>
+          <select class="select" id="sortSelect" style="padding-left: 50px; width: 100%;">
+            <option>Relevance</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+        </div>
+        <!-- Mobile Filter Button -->
+        <button class="btn2 mobile-filter-btn" id="mobileFilterBtn" style="white-space: nowrap; min-width: 80px;">
+          Filters
+        </button>
+      </div>
     </div>
   </div>
 </div>          <!-- Product Grid -->
@@ -224,26 +231,143 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('searchButton');
+    const mobileSearchContainer = document.getElementById('mobileSearchContainer');
+    const mobileSearchToggle = document.getElementById('mobileSearchToggle');
+    const sortSelect = document.getElementById('sortSelect');
+    const mobileFilterBtn = document.getElementById('mobileFilterBtn');
 
+    // Show mobile search toggle on mobile
+    function checkMobileView() {
+        if (window.innerWidth <= 768) {
+            mobileSearchContainer.style.display = 'none';
+            mobileSearchToggle.style.display = 'flex';
+        } else {
+            mobileSearchContainer.style.display = 'flex';
+            mobileSearchToggle.style.display = 'none';
+            searchButton.style.display = 'inline-block';
+        }
+    }
+
+    // Toggle search input on mobile
+    function toggleMobileSearch() {
+        mobileSearchToggle.style.display = 'none';
+        mobileSearchContainer.style.display = 'flex';
+        searchInput.focus();
+    }
+
+    // Perform search
     function performSearch() {
         const searchTerm = searchInput.value.trim();
         console.log('Searching for:', searchTerm);
         shopState.currentPage = 1;
         shopState.filters.search = searchTerm;
         applyFilters();
+
+        // On mobile, close search and show toggle again if search is empty
+        if (window.innerWidth <= 768 && !searchTerm) {
+            mobileSearchContainer.style.display = 'none';
+            mobileSearchToggle.style.display = 'flex';
+        }
+    }
+
+    // Event listeners
+    if (mobileSearchToggle) {
+        mobileSearchToggle.addEventListener('click', toggleMobileSearch);
     }
 
     if (searchButton) {
         searchButton.addEventListener('click', performSearch);
     }
+
     if (searchInput) {
         searchInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 performSearch();
             }
         });
+
+        // Close search on blur if empty (mobile)
+        searchInput.addEventListener('blur', function() {
+            if (window.innerWidth <= 768 && !this.value.trim()) {
+                setTimeout(() => {
+                    mobileSearchContainer.style.display = 'none';
+                    mobileSearchToggle.style.display = 'flex';
+                }, 200);
+            }
+        });
     }
+
+    // Sort functionality
+    if (sortSelect) {
+        sortSelect.addEventListener('change', function() {
+            console.log('Sort by:', this.value);
+            // Add your sort logic here
+        });
+    }
+
+    // Mobile filter button
+    if (mobileFilterBtn) {
+        mobileFilterBtn.addEventListener('click', function() {
+            // Add your mobile filter sheet opening logic here
+            const mobileFilterSheet = document.getElementById('mobileFilterSheet');
+            if (mobileFilterSheet) {
+                mobileFilterSheet.classList.add('active');
+                document.body.classList.add('filter-sheet-open');
+            }
+        });
+    }
+
+    // Initial check
+    checkMobileView();
+    window.addEventListener('resize', checkMobileView);
 });
 </script>
+
+<style>
+/* Add these styles to your CSS */
+@media (max-width: 768px) {
+    .mobile-search-toggle {
+        display: flex !important;
+    }
+
+    .search-sort-container {
+        flex-direction: column;
+        gap: 8px !important;
+    }
+
+    .mobile-search-toggle .search-icon {
+        border: 1px solid var(--w1);
+        transition: all 0.2s ease;
+    }
+
+    .mobile-search-toggle .search-icon:hover {
+        border-color: var(--red);
+        background: var(--w3);
+    }
+
+    .filter-sort-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sort-container {
+        min-width: 140px !important;
+    }
+
+    .mobile-filter-btn {
+        min-width: 80px !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-search-toggle {
+        display: none !important;
+    }
+
+    .search-sort-container {
+        flex-direction: row !important;
+    }
+}
+</style>
 </body>
 </html>
