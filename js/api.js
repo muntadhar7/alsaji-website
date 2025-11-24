@@ -1,4 +1,29 @@
+// Add at VERY TOP of api.js
+console.log('🔍 API.js loading - staticAPI available:', !!window.staticAPI);
 
+// Wait for staticAPI if not ready
+if (!window.staticAPI) {
+    console.log('⏳ Waiting for staticAPI...');
+    let staticAPILoaded = false;
+
+    // Method 1: Check periodically
+    const waitForStaticAPI = setInterval(() => {
+        if (window.staticAPI) {
+            clearInterval(waitForStaticAPI);
+            staticAPILoaded = true;
+            console.log('✅ staticAPI loaded after wait');
+            initializeAPI(); // Re-initialize your API
+        }
+    }, 100);
+
+    // Method 2: Timeout fallback
+    setTimeout(() => {
+        if (!staticAPILoaded) {
+            console.warn('⚠️ staticAPI still not loaded, using fallback');
+            clearInterval(waitForStaticAPI);
+        }
+    }, 2000);
+}
 
 // api.js - Refactored and optimized version
 class AlSajiAPI {
@@ -205,15 +230,7 @@ class AlSajiAPI {
     async getProducts(filters = {}) {
         console.log('🔄 Getting products with filters:', filters);
 
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                const result = window.staticAPI.getProducts(filters);
-                console.log(`✅ Static API returned ${result.products.length} products`);
-                return result;
-            } catch (error) {
-                console.error('❌ Static API failed:', error);
-            }
-        }
+
 
         return await this.getFallbackProducts(filters);
     }
@@ -239,24 +256,12 @@ class AlSajiAPI {
     }
 
     async getCategories() {
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                return window.staticAPI.getCategories();
-            } catch (error) {
-                console.error('Static categories failed:', error);
-            }
-        }
+
         return await this.getFallbackCategories();
     }
 
     async getBrands() {
-        if (this.useStaticData && window.staticAPI) {
-            try {
-                return window.staticAPI.getBrands();
-            } catch (error) {
-                console.error('Static brands failed:', error);
-            }
-        }
+
         return await this.getFallbackBrands();
     }
 
