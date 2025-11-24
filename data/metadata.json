@@ -1,11 +1,11 @@
 {
-  "export_date": "2025-11-15T13:21:27.362072",
-  "total_products": 1327,
-  "total_categories": 8,
+  "export_date": "2025-11-23T16:50:06.858189",
+  "total_products": 1582,
+  "total_categories": 10,
   "total_brands": 80,
-  "total_vehicle_brands": 1,
-  "total_vehicle_models": 1,
+  "total_vehicle_brands": 3,
+  "total_vehicle_models": 33,
   "total_branches": 1,
-  "total_compatibility_records": 4,
-  "data_hash": "c1f1908865f749720d476ecf5c71d348"
+  "total_compatibility_records": 184,
+  "data_hash": "1de603e8ada89d3f01541b6754d80bb0"
 }

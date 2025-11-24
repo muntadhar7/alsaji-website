@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الدفع - الساجي لقطع غيار السيارات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+  <style>
+    /* Mobile-first responsive styles */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--w3);
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .payment-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .payment-option {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--w3);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .payment-option:hover {
+      border-color: var(--primary);
+    }
+
+    .payment-option input[type="radio"] {
+      margin-right: 12px;
+    }
+
+    .payment-content {
+      flex: 1;
+    }
+
+    .checkout-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--w1);
+    }
+
+    .checkout-item:last-child {
+      border-bottom: none;
+    }
+
+    .checkout-item-image {
+      width: 60px;
+      height: 60px;
+      background: var(--w2);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .checkout-item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .checkout-item-details {
+      flex: 1;
+      min-width: 0; /* Prevents flex item from overflowing */
+    }
+
+    .checkout-item-name {
+      font-weight: 500;
+      margin-bottom: 4px;
+      word-break: break-word;
+    }
+
+    .checkout-item-price {
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    .checkout-item-quantity {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+      }
+
+      .form-group {
+        margin-bottom: 14px;
+      }
+
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
+      }
+
+      .checkout-item {
+        padding: 10px 0;
+      }
+
+      .checkout-item-image {
+        width: 50px;
+        height: 50px;
+      }
+
+      .checkout-item-name {
+        font-size: 14px;
+      }
+
+      .checkout-item-price {
+        font-size: 14px;
+      }
+
+      .btn {
+        padding: 12px 16px;
+        font-size: 16px;
+      }
+
+      .nav .wrap.row {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav .tab {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+    }
+
+    /* Small mobile devices */
+    @media (max-width: 480px) {
+      .grid[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+      }
+
+      .card {
+        padding: 12px;
+      }
+
+      .checkout-item {
+        gap: 8px;
+      }
+
+      .checkout-item-image {
+        width: 45px;
+        height: 45px;
+      }
+
+      .checkout-item-name {
+        font-size: 13px;
+      }
+
+      .checkout-item-price {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script src="../data/static_api.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/cart-manager.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/layout.js"></script>
+
+
+
+  <main class="wrap">
+    <h1>الدفع</h1>
+
+    <!-- Empty Cart State -->
+    <div id="emptyCart" class="card" style="display: none; text-align: center; padding: 60px 20px;">
+      <div style="font-size: 48px; margin-bottom: 20px;">🛒</div>
+      <h2 style="margin-bottom: 12px;">سلة التسوق فارغة</h2>
+      <p class="muted" style="margin-bottom: 24px;">أضف بعض المنتجات للدفع</p>
+      <a href="shop.html" class="btn">مواصلة التسوق</a>
+    </div>
+
+    <!-- Checkout Form -->
+    <div id="checkoutForm" style="display: none;">
+      <div class="grid" style="grid-template-columns: 2fr 1fr; gap: 24px;">
+
+        <!-- Left Column: Customer Information -->
+        <div>
+          <div class="card">
+            <h3>معلومات الشحن</h3>
+
+            <div class="form-group">
+              <label for="fullName">الاسم الكامل *</label>
+              <input type="text" id="fullName" required placeholder="أدخل الاسم الكامل">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">رقم الهاتف *</label>
+              <input type="tel" id="phone" required placeholder="أدخل رقم الهاتف">
+            </div>
+
+            <div class="form-group">
+              <label for="address">عنوان الشحن *</label>
+              <textarea id="address" required placeholder="أدخل العنوان الكامل" rows="3"></textarea>
+            </div>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="form-group">
+                <label for="city">المدينة *</label>
+                <input type="text" id="city" required placeholder="المدينة">
+              </div>
+              <div class="form-group">
+                <label for="area">المنطقة *</label>
+                <input type="text" id="area" required placeholder="المنطقة">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">ملاحظات الطلب (اختياري)</label>
+              <textarea id="notes" placeholder="أي تعليمات خاصة للتوصيل" rows="2"></textarea>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>طريقة الدفع</h3>
+
+            <div class="payment-methods">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="cash" checked>
+                <div class="payment-content">
+                  <div style="font-weight: 600;">الدفع عند الاستلام</div>
+                  <div class="muted" style="font-size: 14px;">ادفع عند استلام طلبك</div>
+                </div>
+              </label>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div>
+          <div class="card">
+            <h3>ملخص الطلب</h3>
+
+            <div id="checkoutItems">
+              <!-- سيتم تحميل عناصر السلة هنا -->
+            </div>
+
+            <div style="border-top: 1px solid var(--w1); padding-top: 16px;">
+              <div class="row between" style="margin-bottom: 8px;">
+                <div class="muted">المجموع الفرعي</div>
+                <div id="checkoutSubtotal">دينار 0</div>
+              </div>
+              <div class="row between" style="margin-bottom: 8px;">
+                <div class="muted">الشحن</div>
+                <div id="checkoutShipping">دينار 5,000</div>
+              </div>
+              <div class="row between" style="margin-bottom: 12px;">
+                <div class="muted">الضريبة</div>
+                <div id="checkoutTax">دينار 0</div>
+              </div>
+              <div class="row between" style="padding-top: 12px; border-top: 1px solid var(--w1); font-weight: 600;">
+                <div>الإجمالي</div>
+                <div id="checkoutTotal" style="color: var(--red);">دينار 0</div>
+              </div>
+            </div>
+
+            <button class="btn" style="width: 100%; margin-top: 20px;" id="placeOrderBtn">
+              تأكيد الطلب
+            </button>
+
+            <a href="cart.html" class="btn secondary" style="width: 100%; margin-top: 8px; text-align: center; display: block; text-decoration: none;">
+              العودة إلى السلة
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  // Language switching
+  document.getElementById('langSwitch').addEventListener('click', function() {
+    window.location.href = '../checkout.html';
+  });
+
+  class CheckoutPage {
+      constructor() {
+          this.cart = null;
+          this.init();
+      }
+
+      async init() {
+          console.log('🛒 تهيئة صفحة الدفع...');
+          await this.loadCart();
+          this.setupEventListeners();
+          this.updateCartCount();
+      }
+
+      async loadCart() {
+          try {
+              // Wait for API to be available
+              if (typeof alsajiAPI === 'undefined') {
+                  console.log('جاري انتظار API...');
+                  setTimeout(() => this.loadCart(), 100);
+                  return;
+              }
+
+              const cartResult = await alsajiAPI.getCart();
+              if (cartResult.success && cartResult.cart.items.length > 0) {
+                  this.cart = cartResult.cart;
+                  this.showCheckoutForm();
+                  this.renderOrderSummary();
+              } else {
+                  this.showEmptyCart();
+              }
+          } catch (error) {
+              console.error('فشل في تحميل السلة:', error);
+              this.showEmptyCart();
+          }
+      }
+
+      showCheckoutForm() {
+          document.getElementById('emptyCart').style.display = 'none';
+          document.getElementById('checkoutForm').style.display = 'block';
+      }
+
+      showEmptyCart() {
+          document.getElementById('emptyCart').style.display = 'block';
+          document.getElementById('checkoutForm').style.display = 'none';
+      }
+
+      renderOrderSummary() {
+          if (!this.cart) return;
+
+          const itemsContainer = document.getElementById('checkoutItems');
+          itemsContainer.innerHTML = this.cart.items.map(item => `
+              <div class="checkout-item">
+                  <div class="checkout-item-image">
+                      ${item.image ?
+                          `<img src="${item.image}" alt="${item.name}">` :
+                          '<div class="muted" style="font-size:12px">لا توجد صورة</div>'
+                      }
+                  </div>
+                  <div class="checkout-item-details">
+                      <div class="checkout-item-name">${this.escapeHtml(item.name)}</div>
+                      <div class="checkout-item-quantity">الكمية: ${item.quantity}</div>
+                  </div>
+                  <div class="checkout-item-price">دينار ${(item.subtotal || 0).toLocaleString()}</div>
+              </div>
+          `).join('');
+
+          this.updateTotals();
+      }
+
+      updateTotals() {
+          if (!this.cart) return;
+
+          const subtotal = this.cart.total || 0;
+          const shipping = 5000; // Fixed shipping cost
+          const tax = Math.round(subtotal * 0.05); // 5% tax
+          const total = subtotal + shipping + tax;
+
+          document.getElementById('checkoutSubtotal').textContent = `دينار ${subtotal.toLocaleString()}`;
+          document.getElementById('checkoutShipping').textContent = `دينار ${shipping.toLocaleString()}`;
+          document.getElementById('checkoutTax').textContent = `دينار ${tax.toLocaleString()}`;
+          document.getElementById('checkoutTotal').textContent = `دينار ${total.toLocaleString()}`;
+      }
+
+      setupEventListeners() {
+          // Payment method changes
+          document.querySelectorAll('input[name="payment"]').forEach(radio => {
+              radio.addEventListener('change', (e) => {
+                  this.toggleCardFields(e.target.value === 'card');
+              });
+          });
+
+          // Place order button
+          document.getElementById('placeOrderBtn').addEventListener('click', () => {
+              this.placeOrder();
+          });
+
+          // Update cart count
+          this.updateCartCount();
+      }
+
+      toggleCardFields(show) {
+          const cardFields = document.getElementById('cardFields');
+          if (cardFields) {
+              cardFields.style.display = show ? 'block' : 'none';
+
+              // Toggle required attribute for card fields
+              const cardInputs = cardFields.querySelectorAll('input');
+              cardInputs.forEach(input => {
+                  input.required = show;
+              });
+          }
+      }
+
+  async placeOrder() {
+      try {
+          // Validate form
+          if (!this.validateForm()) {
+              return;
+          }
+
+          // Get form data
+          const formData = this.getFormData();
+          const orderNumber = 'ALS' + Date.now().toString().slice(-8);
+
+          // Show loading state
+          const btn = document.getElementById('placeOrderBtn');
+          const originalText = btn.textContent;
+          btn.textContent = 'جاري إنشاء الطلب...';
+          btn.disabled = true;
+
+        // Process order (NO CUSTOM ORDER NUMBER)
+        const orderResult = await this.processOrder(formData);
+
+        if (orderResult.success) {
+            // Clear cart
+            await alsajiAPI.clearCart();
+
+            // Redirect to confirmation page
+            const totalAmount = this.cart.total + 5000 + Math.round(this.cart.total * 0.05);
+            const urlParams = new URLSearchParams({
+                order: orderResult.odoo_order_number, // 🔥 USE ODOO ORDER NUMBER
+                total: totalAmount,
+                odoo_id: orderResult.odoo_order_id || 'manual'
+            });
+
+            window.location.href = `order-confirmed.html?${urlParams.toString()}`;
+        } else {
+            throw new Error(orderResult.error);
+        }
+
+    } catch (error) {
+        console.error('فشل الطلب:', error);
+        alert('فشل في تأكيد الطلب: ' + error.message);
+
+        // Reset button
+        const btn = document.getElementById('placeOrderBtn');
+        btn.textContent = 'تأكيد الطلب';
+        btn.disabled = false;
+    }
+}
+
+  getFormData() {
+    // 🔥 FIX: Check if elements exist before accessing their values
+    const fullNameEl = document.getElementById('fullName');
+    const phoneEl = document.getElementById('phone');
+    const addressEl = document.getElementById('address');
+    const cityEl = document.getElementById('city');
+    const areaEl = document.getElementById('area');
+
+    if (!fullNameEl || !phoneEl || !addressEl || !cityEl || !areaEl) {
+        throw new Error('حقول النموذج المطلوبة مفقودة');
+    }
+
+    return {
+        customer: {
+            fullName: fullNameEl.value,
+            email: '', // 🔥 ADD DEFAULT EMAIL SINCE FIELD DOESN'T EXIST
+            phone: phoneEl.value,
+            address: addressEl.value,
+            city: cityEl.value,
+            area: areaEl.value,
+            notes: document.getElementById('notes')?.value || ''
+        },
+        payment: 'cash', // 🔥 ALWAYS CASH
+        order: this.cart,
+        timestamp: new Date().toISOString()
+    };
+}
+
+validateForm() {
+    const requiredFields = ['fullName', 'phone', 'address', 'city', 'area'];
+    let isValid = true;
+
+    requiredFields.forEach(fieldId => {
+        const field = document.getElementById(fieldId);
+        if (!field || !field.value.trim()) {
+            if (field) field.style.borderColor = 'var(--red)';
+            isValid = false;
+        } else {
+            field.style.borderColor = '';
+        }
+    });
+
+    if (!isValid) {
+        alert('يرجى ملء جميع الحقول المطلوبة بشكل صحيح.');
+    }
+
+    return isValid;
+}
+
+// In checkout.html - update the processOrder method
+async processOrder(formData) {
+    // Prepare order data for Odoo
+    const orderData = {
+        customer: formData.customer,
+        payment: formData.payment,
+        items: this.cart.items.map(item => ({
+            product_id: item.product_id,
+            name: item.name,
+            quantity: item.quantity,
+            unit_price: item.unit_price,
+            subtotal: item.subtotal
+        })),
+        total: this.cart.total,
+        shipping: 5000,
+        tax: Math.round(this.cart.total * 0.05),
+        timestamp: formData.timestamp
+    };
+
+    try {
+        // Send order to Odoo
+        const odooResult = await alsajiAPI.createOdooOrder(orderData);
+
+        if (odooResult.success) {
+            console.log('✅ تم إنشاء الطلب في Odoo:', odooResult.odoo_order_id);
+            return {
+                success: true,
+                odoo_order_id: odooResult.odoo_order_id,
+                odoo_order_number: odooResult.odoo_order_number, // 🔥 RETURN ODOO NUMBER
+                message: 'تم إنشاء الطلب بنجاح في Odoo'
+            };
+        } else {
+            throw new Error(odooResult.error || 'فشل في إنشاء الطلب في Odoo');
+        }
+
+    } catch (error) {
+        console.error('❌ فشل إنشاء طلب Odoo:', error);
+
+        // Fallback: Save order for manual processing
+        // 🔥 Generate a simple timestamp-based reference for fallback
+        const fallbackRef = 'WEB-' + Date.now().toString().slice(-6);
+        this.saveOrderForManualProcessing({
+            ...orderData,
+            fallback_reference: fallbackRef
+        });
+
+        return {
+            success: true,
+            fallback: true,
+            odoo_order_number: fallbackRef, // 🔥 USE FALLBACK REFERENCE
+            message: 'تم حفظ الطلب للمعالجة اليدوية (Odoo غير متاح)'
+        };
+    }
+}
+
+  saveOrderForManualProcessing(orderData) {
+      try {
+          let pendingOrders = JSON.parse(localStorage.getItem('alsaji_pending_orders') || '[]');
+          pendingOrders.push({
+              ...orderData,
+              created_at: new Date().toISOString(),
+              status: 'pending'
+          });
+          localStorage.setItem('alsaji_pending_orders', JSON.stringify(pendingOrders));
+          console.log('📋 تم حفظ الطلب للمعالجة اليدوية');
+      } catch (error) {
+          console.error('فشل في حفظ الطلب للمعالجة اليدوية:', error);
+      }
+  }
+
+      async updateCartCount() {
+          try {
+              if (typeof alsajiAPI === 'undefined') return;
+
+              const cartResult = await alsajiAPI.getCart();
+              const count = cartResult.cart.item_count || 0;
+
+              const cartCountElement = document.getElementById('cartCount');
+              if (cartCountElement) {
+                  cartCountElement.textContent = count;
+              }
+          } catch (error) {
+              console.error('فشل في تحديث عدد العناصر:', error);
+          }
+      }
+
+      escapeHtml(text) {
+          if (!text) return '';
+          const div = document.createElement('div');
+          div.textContent = text;
+          return div.innerHTML;
+      }
+  }
+
+  // Initialize checkout page
+  document.addEventListener('DOMContentLoaded', () => {
+      window.checkoutPage = new CheckoutPage();
+  });
+
+    // In your main app.js or wherever you initialize the API
+document.addEventListener('DOMContentLoaded', function() {
+    // Set Odoo credentials
+    alsajiAPI.setCredentials('mntr59@gmail.com', '0212');
+
+    // This will automatically authenticate when needed
+    alsajiAPI.ensureAuthenticated().then(authenticated => {
+        if (authenticated) {
+            console.log('✅ تسجيل الدخول التلقائي ناجح');
+        } else {
+            console.error('❌ فشل تسجيل الدخول التلقائي');
+        }
+    });
+});
+  </script>
+
+</body>
+</html>

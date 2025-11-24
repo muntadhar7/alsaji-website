@@ -21,7 +21,7 @@ body{margin:0;font-family:"Poppins",Arial,Helvetica,sans-serif;background:var(--
 
 /* Header and navigation */
 .util{background:var(--ink1);border-bottom:1px solid var(--ink2);position:sticky;top:0;z-index:1000}
-.util .row{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;color:var(--w2)}
+.util .row{wrap:nowrap;display:flex;align-items:center;justify-content:space-between;padding:8px 16px;color:var(--w2)}
 .chip{border:1px solid rgba(255,255,255,0.2);padding:6px 10px;border-radius:999px;background:var(--ink2);font-size:14px;cursor:pointer;text-decoration:none;color:var(--w2);display:inline-block}
 .chip:hover{background:var(--navy1)}
 .chip.active{background:var(--red);color:#fff}
@@ -64,7 +64,7 @@ h3{font-size:16px;margin:0;color:var(--ink2)}
 .select:focus{border-color:var(--red);outline:none;box-shadow:0 0 0 3px rgba(188,20,44,0.1)}
 
 /* Hero section */
-.hero{background:linear-gradient(135deg,#fff,var(--w2));border-radius:24px;padding:16px;position:relative;overflow:hidden}
+.hero{background:var(--w3);border-radius:24px;padding:16px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--red)}
 .sticky-support{position:fixed;right:20px;bottom:20px;z-index:40}
 .sticky-support .group{display:flex;gap:8px;background:#fff;border-radius:999px;padding:6px 8px;box-shadow:0 8px 24px rgba(0,0,0,.12);border:1px solid var(--red)}
@@ -109,9 +109,19 @@ footer ul li:hover{color:var(--red);cursor:pointer}
   .cols-3{grid-template-columns:repeat(3,1fr)}
   .cols-4{grid-template-columns:repeat(4,1fr)}
   .cols-6{grid-template-columns:repeat(6,1fr)}
+  .cols-10{grid-template-columns:repeat(10,1fr)}
   .plp{grid-template-columns:repeat(3,1fr)!important}
   .shop{grid-template-columns:280px 1fr}
-  .hero{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .hero > :nth-child(3),
+    .hero > :nth-child(4) {
+        grid-column: 1 / -1; /* span both columns */
+    }
   .mobile-filter-btn{display:none!important}
   #desktopFilters{display:block!important;position:sticky;top:100px;max-height:calc(100vh-120px);overflow-y:auto}
   .search-sort-container{flex-direction:row;align-items:center}
@@ -431,7 +441,11 @@ body.filter-sheet-open{overflow:hidden}
 .product-card .row.between {
     margin-top: auto !important;
     margin-bottom: 0 !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two equal columns */
+    gap: 8px;
 }
+
 
 /* Make grid items equal height */
 .grid {
@@ -440,4 +454,296 @@ body.filter-sheet-open{overflow:hidden}
 
 .grid > * {
     height: 100%;
+}
+
+  *{box-sizing:border-box}
+        body{margin:0;font-family:"Poppins",Arial,Helvetica,sans-serif;background:var(--w2);color:var(--black1)}
+        .wrap{max-width:1200px;margin:0 auto;padding:8px 24px}
+
+        /* Grid and cards */
+        .grid{display:grid;gap:12px;align-items: stretch;}
+        .grid > * {height: 100%;}
+        .card{background:#fff;border:1px solid var(--w1);border-radius:16px;padding:12px;box-shadow:0 1px 0 rgba(0,0,0,.02);transition:all 0.2s ease}
+        .card:hover{box-shadow:0 4px 12px rgba(188,20,44,0.1);border-color:var(--red)}
+
+        /* Buttons */
+        .btn{background:var(--red);color:#fff;border:0;border-radius:12px;padding:10px 16px;cursor:pointer;font-size:14px;text-decoration:none;display:inline-block;text-align:center;transition:all 0.2s ease;font-weight:500;width: 100%;}
+        .btn:hover{background:var(--red2);transform:translateY(-1px);box-shadow:0 4px 12px rgba(188,20,44,0.3)}
+        .btn.secondary{background:#fff;color:var(--ink1);border:1px solid var(--w1)}
+        .btn.secondary:hover{background:var(--w2);border-color:var(--red);color:var(--red)}
+
+        /* Common utilities */
+        .muted{color:#6b7280;font-size:12px}
+        .row{display:flex;gap:8px}
+        .select{width:100%;padding:14px 10px;opacity: 0.75;border:1px solid var(--w1);border-radius:12px;background:#fff;font-size:14px;transition:all 0.2s ease}
+        .select:focus{border-color:var(--red);outline:none;box-shadow:0 0 0 3px rgba(188,20,44,0.1)}
+        .select:disabled{background-color:var(--w2);color:#9ca3af;cursor:not-allowed}
+
+        /* Stats row */
+        .stats-row{display:flex;gap:8px;margin-top:8px;padding:16px}
+        .stats-row .card{flex:1;text-align:center;padding:12px 8px;background:var(--w2);border:1px solid var(--w1)}
+        .stats-row .card strong{font-size:16px;color:var(--ink1)}
+
+        /* Fitment grid layout */
+        .fitment-grid{grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto auto;gap:8px}
+        .fitment-buttons{grid-column:span 1;display:grid;grid-template-columns:1fr 1fr;gap:8px; }
+       .fitment-grid > :nth-child(7) {
+            grid-column: 1 / 3; /* span 2 columns */
+        }
+
+        .fitment-grid > :nth-child(8) {
+            grid-column: 3 / 4; /* last column */
+        }
+
+        /* Mobile styles */
+        @media (max-width:768px){
+            .wrap{padding:8px 16px}
+            .stats-row{display:none}
+            .fitment-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto auto;gap:8px}
+            .fitment-buttons{grid-column:span 1}
+            .fitment-buttons .btn {
+                margin: 8px 12px;
+                font-size: 13px;
+            }
+        }
+
+        /* Desktop styles */
+        @media (min-width:769px){
+            .cols-3{grid-template-columns:repeat(3,1fr)}
+        }
+
+        /* Add these optimizations to your existing CSS */
+
+/* Critical above-the-fold styles */
+body:not(.loaded) {
+  visibility: visible !important;
+  opacity: 1;
+}
+
+/* Optimize animations and transitions */
+.card, .btn, .filter-pill {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+/* Reduce layout shifts with aspect ratios */
+.image, .product-card img {
+  aspect-ratio: 1 / 1;
+  content-visibility: auto;
+}
+
+/* Optimize grid rendering */
+.grid {
+  will-change: transform;
+}
+
+/* Critical mobile optimizations */
+@media (max-width: 768px) {
+  .grid.plp {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .product-card {
+    min-height: 300px !important;
+    padding: 8px;
+  }
+
+  /* Reduce paint areas */
+  .card {
+    isolation: isolate;
+  }
+}
+
+/* Optimize desktop */
+@media (min-width: 769px) {
+  .shop {
+    grid-template-columns: minmax(250px, 280px) 1fr;
+  }
+}
+
+/* Optimize filter sheet performance */
+.mobile-filter-sheet .filter-content {
+  transform: translateZ(0);
+}
+
+/* Optimize button rendering */
+.btn, .btn2 {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Reduce repaints on scroll */
+.filter-content {
+  contain: paint;
+}
+
+/* Optimize price slider */
+.price-slider-container {
+  contain: layout style;
+}
+/* Mobile Search Bar Layout */
+.mobile-search-container {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+}
+
+.mobile-search-input {
+    flex: 1;
+    position: relative;
+}
+
+.mobile-search-input input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.mobile-search-input .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.mobile-filter-btn {
+    padding: 10px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Hide desktop elements on mobile */
+@media (max-width: 768px) {
+    .desktop-search,
+    .desktop-sorting {
+        display: none !important;
+    }
+
+    .mobile-search-container {
+        display: flex !important;
+    }
+}
+
+/* Hero Image Styles */
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional: Text overlay if you want to keep the text on the image */
+.hero-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 40px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  color: white;
+}
+
+.hero-text-overlay h1 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.hero-text-overlay .muted {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-image-container {
+    height: 200px;
+  }
+
+  .hero-text-overlay {
+    padding: 0 20px;
+  }
+}
+
+/* VIN Decoder Styles */
+.vin-decoder-section {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+}
+
+.vin-input-group {
+  display: flex;
+  align-items: center;
+}
+
+.vin-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+.vin-input-group .btn {
+  max-width: 20%;
+  width: 100%;
+  padding: 8px 0;
+}
+
+
+.vin-input:focus {
+  outline: none;
+  border-color: var(--ink1);
+  box-shadow: 0 0 0 2px rgba(0, 100, 200, 0.1);
+}
+
+.vin-result {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for VIN decoder */
+@media (max-width: 768px) {
+  .vin-input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vin-input-group .btn {
+    margin-left: 0 !important;
+    margin-top: 8px;
+  }
+}
+
+.right-half-buttons {
+    display: flex;
+    justify-content: flex-end;   /* push buttons to the right */
+    width: 50%;                   /* take right half only */
+    margin-left: auto;            /* keep them on the right side */
+    gap: 8px;                     /* spacing between buttons */
 }

@@ -498,7 +498,7 @@ class AlSajiDataExporter:
 
                 # Handle logo URL
                 logo_url = ""
-                logo_data = brand.get('logo')
+                logo_data = f"https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&id={brand_id}&field=logo"
                 if logo_data:
                     if isinstance(logo_data, list) and len(logo_data) > 0:
                         logo_url = logo_data[0]
@@ -575,7 +575,7 @@ class AlSajiDataExporter:
             model='vehicle.model',
             method='search_read',
             domain=[('is_published','=',True)],
-            fields=['id', 'name', 'image', ]
+            fields=['id', 'name', 'image', 'brand_id']
         )
 
         if models_data is None:
@@ -591,6 +591,7 @@ class AlSajiDataExporter:
             logo_url = ''
             logo = model.get('image')
             logo_id = model.get('id')
+            brand_id = model.get('brand_id')
             if logo:
                 logo_url = f"{self.base_url}/web/image?model=product.vehicle&field=logo&id={logo_id}" if model.get(
                     'image') else None,
@@ -600,6 +601,7 @@ class AlSajiDataExporter:
                 'id': model['id'],
                 'name': model.get('name', ''),
                 'logo': logo_url,
+                'brand_id': brand_id,
 
             })
 

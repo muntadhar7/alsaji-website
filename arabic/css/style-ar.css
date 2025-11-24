@@ -1,0 +1,385 @@
+/* Arabic/RTL specific styles - Building on existing RTL support */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-primary: 'DIN Next Pro','Tajawal', 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Base RTL overrides */
+body {
+  font-family: var(--font-primary);
+  text-align: right;
+  direction: rtl;
+}
+
+/* RTL layout adjustments */
+.row {
+  flex-direction: row-reverse;
+}
+
+.row.between {
+  flex-direction: row-reverse;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+/* Grid RTL adjustments */
+.grid {
+  direction: rtl;
+}
+
+/* Language switcher positioning */
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.language-switcher .btn.small {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  background: var(--navy1);
+  color: var(--w2);
+}
+
+.language-switcher .btn.small:hover {
+  background: var(--red);
+}
+
+/* Form elements RTL */
+.select {
+  text-align: right;
+  direction: rtl;
+  padding: 14px 10px 14px 30px;
+}
+
+input, textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+.search input {
+  text-align: right;
+}
+
+/* Hero section RTL */
+.hero::before {
+  left: auto;
+  right: 0;
+}
+
+.hero > div:first-child {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+/* Button groups RTL */
+.fitment-buttons {
+  flex-direction: row-reverse;
+}
+
+.sticky-support .group {
+  flex-direction: row-reverse;
+}
+
+.sticky-support {
+  left: 20px;
+  right: auto;
+}
+
+/* Navigation RTL */
+.nav .row {
+  flex-direction: row-reverse;
+}
+
+
+
+.util .row {
+  flex-direction: row-reverse;
+}
+
+/* Chip and tab positioning */
+.chip, .tab {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+/* Footer RTL adjustments */
+footer .cols {
+  direction: rtl;
+}
+
+footer ul {
+  padding-right: 0;
+  text-align: right;
+}
+
+/* Filter sheet RTL */
+.mobile-filter-sheet .filter-sheet-content {
+  left: auto;
+  right: 0;
+}
+
+.filter-header {
+  flex-direction: row-reverse;
+}
+
+.section-title {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.section-title .chevron {
+  margin-left: 0;
+  margin-right: 8px;
+  transform: rotate(180deg);
+}
+
+.section-title.expanded .chevron {
+  transform: rotate(0deg);
+}
+
+.filter-options {
+  justify-content: flex-end;
+}
+
+.filter-footer {
+  flex-direction: row-reverse;
+}
+
+/* Price slider RTL */
+.price-slider-labels {
+  flex-direction: row-reverse;
+}
+
+.slider-range {
+  left: auto;
+  right: 0%;
+}
+
+/* Mobile navigation RTL */
+@media (max-width: 768px) {
+  .mobile-nav {
+    right: auto;
+    left: -100%;
+  }
+
+  .mobile-nav.active {
+    left: 0;
+    right: auto;
+  }
+
+  .mobile-nav-close {
+    right: auto;
+    left: 15px;
+  }
+
+  .mobile-search-container {
+    flex-direction: row-reverse;
+  }
+
+  .mobile-search-input input {
+    padding: 10px 12px 10px 40px;
+  }
+
+  .mobile-search-input .search-icon {
+    right: auto;
+    left: 12px;
+  }
+
+  .header-actions {
+    flex-direction: row-reverse;
+  }
+
+  .cart-chip {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+
+  .util .wrap.row.between > .row:first-child {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* Cart and product cards RTL */
+.cart-container {
+  direction: rtl;
+}
+
+.product-card {
+  text-align: right;
+}
+
+.product-card .row.between {
+  flex-direction: row-reverse;
+}
+
+/* Stats row RTL */
+.stats-row {
+  flex-direction: row-reverse;
+}
+
+/* Fitment grid RTL layout */
+.fitment-grid {
+  direction: rtl;
+}
+
+/* Text alignment fixes */
+h1, h2, h3, h4, h5, h6, p {
+  text-align: right;
+}
+
+/* Margin and padding RTL fixes */
+.mr-auto {
+  margin-right: unset;
+  margin-left: auto;
+}
+
+.ml-auto {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+/* Float fixes for RTL */
+.float-left {
+  float: right;
+}
+
+.float-right {
+  float: left;
+}
+
+/* Badge and label positioning */
+.badge {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+/* Search container RTL */
+.search {
+  flex-direction: row-reverse;
+}
+
+.search input::placeholder {
+  text-align: right;
+}
+
+/* Dropdown and select arrow positioning */
+.select {
+  background-position: left 10px center;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+
+/* Modal and overlay RTL */
+.modal, .overlay {
+  direction: rtl;
+}
+
+/* Breadcrumb RTL */
+.breadcrumb {
+  flex-direction: row-reverse;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "←";
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.breadcrumb-item:not(:last-child)::before {
+  content: none;
+}
+
+/* Table RTL */
+table {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Pagination RTL */
+.pagination {
+  flex-direction: row-reverse;
+}
+
+/* Form labels RTL */
+label {
+  text-align: right;
+  display: block;
+}
+
+/* Checkbox and radio RTL */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+/* Utility classes for RTL */
+.text-left {
+  text-align: right;
+}
+
+.text-right {
+  text-align: left;
+}
+
+/* Loading states RTL */
+.loading {
+  direction: rtl;
+}
+
+/* Notification and toast RTL */
+.toast, .notification {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Enhanced RTL scrollbar */
+.filter-content::-webkit-scrollbar-thumb {
+  background: var(--navy2);
+}
+
+.filter-content::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
+}
+
+/* RTL animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.mobile-nav {
+  animation: slideInRight 0.3s ease;
+}
+
+.mobile-nav:not(.active) {
+  animation: slideOutRight 0.3s ease;
+}
+
+/* Print styles for RTL */
+@media print {
+  body {
+    direction: rtl;
+    text-align: right;
+  }
+}

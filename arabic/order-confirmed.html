@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تم تأكيد الطلب - الساجي لقطع غيار السيارات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+</head>
+<body>
+  <script src="../data/static_api.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/cart-manager.js"></script>
+  <script src="../js/layout.js"></script>
+
+
+
+  <main class="wrap" style="text-align:center;padding:60px 20px">
+    <div style="max-width:500px;margin:0 auto">
+      <div style="font-size:64px;margin-bottom:20px">✅</div>
+      <h1 style="margin-bottom:12px;color:var(--green)">تم تأكيد الطلب!</h1>
+      <p class="muted" style="margin-bottom:24px">
+        شكراً لطلبك. لقد استلمنا طلبك وسنقوم بمعالجته قريباً.
+      </p>
+
+      <div class="card" style="text-align:right;margin-bottom:24px">
+        <h3>تفاصيل الطلب</h3>
+        <div class="row between" style="margin-bottom:12px">
+          <div class="muted">رقم الطلب:</div>
+          <div id="orderNumber" style="font-weight:600;color:var(--primary)"></div>
+        </div>
+        <div class="row between" style="margin-bottom:12px">
+          <div class="muted">تاريخ الطلب:</div>
+          <div id="orderDate"></div>
+        </div>
+        <div class="row between" style="margin-bottom:12px">
+          <div class="muted">موعد التسليم المتوقع:</div>
+          <div style="color:var(--green);font-weight:500">2-3 أيام عمل</div>
+        </div>
+        <div class="row between">
+          <div class="muted">المبلغ الإجمالي:</div>
+          <div id="orderTotal" style="font-weight:600;color:var(--red)"></div>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:right;margin-bottom:24px;background:var(--w2)">
+        <h4 style="margin-bottom:12px">ماذا بعد؟</h4>
+        <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px">
+          <div style="background:var(--green);color:white;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">1</div>
+          <div>
+            <div style="font-weight:500">معالجة الطلب</div>
+            <div class="muted" style="font-size:14px">سنقوم بتحضير عناصرك للشحن</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px">
+          <div style="background:var(--w3);color:var(--text);border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">2</div>
+          <div>
+            <div style="font-weight:500">الشحن</div>
+            <div class="muted" style="font-size:14px">سيتم شحن طلبك خلال 24 ساعة</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="background:var(--w3);color:var(--text);border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">3</div>
+          <div>
+            <div style="font-weight:500">التسليم</div>
+            <div class="muted" style="font-size:14px">سوف تستلم طلبك خلال 2-3 أيام عمل</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="shop.html" class="btn">مواصلة التسوق</a>
+        <a href="index.html" class="btn secondary">العودة للرئيسية</a>
+        <button class="btn secondary" onclick="printOrder()">طباعة الإيصال</button>
+      </div>
+
+      <div style="margin-top:32px;padding:16px;background:var(--w2);border-radius:8px;">
+        <p class="muted" style="margin:0;font-size:14px">
+          تحتاج مساعدة؟ <a href="support.html" style="color:var(--primary)">اتصل بفريق الدعم</a> أو اتصل بنا على <strong>+964 123 456 7890</strong>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  // Language switching
+  document.getElementById('langSwitch').addEventListener('click', function() {
+    window.location.href = '../order-confirmed.html';
+  });
+
+  class OrderConfirmation {
+      constructor() {
+          this.init();
+      }
+
+      init() {
+          console.log('✅ تهيئة تأكيد الطلب...');
+          this.loadOrderDetails();
+          this.updateCartCount();
+          this.saveOrderToHistory();
+      }
+
+    // In order-confirmed.html, add this to loadOrderDetails method:
+loadOrderDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const orderId = urlParams.get('order');
+    const total = urlParams.get('total');
+    const odooId = urlParams.get('odoo_id');
+
+    // Set order number
+    document.getElementById('orderNumber').textContent = orderId;
+
+    // 🔥 SET ORDER DATE (current date)
+    const orderDate = new Date();
+    const formattedDate = orderDate.toLocaleDateString('ar-IQ', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
+    // Find or create order date element
+    let orderDateElement = document.getElementById('orderDate');
+    if (!orderDateElement) {
+        // If element doesn't exist, create it
+        const orderNumberElement = document.getElementById('orderNumber');
+        if (orderNumberElement && orderNumberElement.parentNode) {
+            orderDateElement = document.createElement('div');
+            orderDateElement.id = 'orderDate';
+            orderDateElement.className = 'order-date';
+            orderDateElement.style.marginTop = '8px';
+            orderDateElement.style.color = 'var(--muted)';
+            orderNumberElement.parentNode.insertBefore(orderDateElement, orderNumberElement.nextSibling);
+        }
+    }
+    if (orderDateElement) {
+        orderDateElement.textContent = `${formattedDate}`;
+    }
+
+    // 🔥 SET TOTAL AMOUNT
+    if (total) {
+        // Find or create total amount element
+        let totalElement = document.getElementById('orderTotal');
+        if (!totalElement) {
+            const orderNumberElement = document.getElementById('orderNumber');
+            if (orderNumberElement && orderNumberElement.parentNode) {
+                totalElement = document.createElement('div');
+                totalElement.id = 'orderTotal';
+                totalElement.className = 'order-total';
+                totalElement.style.marginTop = '8px';
+                totalElement.style.fontSize = '1.2em';
+                totalElement.style.fontWeight = 'bold';
+                totalElement.style.color = 'var(--red)';
+                const orderDateEl = document.getElementById('orderDate');
+                if (orderDateEl) {
+                    orderDateEl.parentNode.insertBefore(totalElement, orderDateEl.nextSibling);
+                } else {
+                    orderNumberElement.parentNode.insertBefore(totalElement, orderNumberElement.nextSibling);
+                }
+            }
+        }
+        if (totalElement) {
+            totalElement.textContent = ` دينار ${parseInt(total).toLocaleString()}`;
+        }
+    }
+
+    // Show Odoo status if available
+    if (odooId && odooId !== 'manual') {
+        console.log(`✅ تم مزامنة الطلب مع Odoo بالرقم: ${odooId}`);
+        // You can add Odoo status display here if needed
+    }
+
+}
+
+      saveOrderToHistory() {
+          // Save order to order history
+          const orderNumber = document.getElementById('orderNumber').textContent;
+          const orderTotal = document.getElementById('orderTotal').textContent;
+
+          const orderData = {
+              id: orderNumber,
+              date: new Date().toISOString(),
+              total: this.extractAmount(orderTotal),
+              status: 'confirmed'
+          };
+
+          // Save to localStorage
+          localStorage.setItem('alsaji_last_order', JSON.stringify(orderData));
+
+          // Add to order history
+          let orderHistory = JSON.parse(localStorage.getItem('alsaji_order_history') || '[]');
+          orderHistory.unshift(orderData);
+          localStorage.setItem('alsaji_order_history', JSON.stringify(orderHistory.slice(0, 10))); // Keep last 10 orders
+      }
+
+      extractAmount(amountText) {
+          // Extract numeric value from "دينار 1,234" format
+          const match = amountText.match(/دينار\s*([\d,]+)/);
+          if (match) {
+              return parseInt(match[1].replace(/,/g, ''));
+          }
+          return 0;
+      }
+
+      async updateCartCount() {
+          try {
+              // Reset cart count to 0 since order is confirmed
+              const cartCountElement = document.getElementById('cartCount');
+              if (cartCountElement) {
+                  cartCountElement.textContent = '0';
+              }
+
+              // Also clear the cart in localStorage to be sure
+              localStorage.removeItem('alsaji_cart');
+
+          } catch (error) {
+              console.error('فشل في تحديث عدد العناصر:', error);
+          }
+      }
+  }
+
+  function printOrder() {
+      const orderContent = `
+          <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; direction: rtl; text-align: right;">
+              <div style="text-align: center; margin-bottom: 20px;">
+                  <h1 style="color: #2c5aa0; margin-bottom: 8px;">الساجي لقطع غيار السيارات</h1>
+                  <p style="color: #666; margin: 0;">تأكيد الطلب</p>
+              </div>
+
+              <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                      <strong>رقم الطلب:</strong>
+                      <span>${document.getElementById('orderNumber').textContent}</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                      <strong>تاريخ الطلب:</strong>
+                      <span>${document.getElementById('orderDate').textContent}</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                      <strong>موعد التسليم المتوقع:</strong>
+                      <span>2-3 أيام عمل</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; font-size: 18px;">
+                      <strong>المبلغ الإجمالي:</strong>
+                      <span style="color: #dc3545;">${document.getElementById('orderTotal').textContent}</span>
+                  </div>
+              </div>
+
+              <div style="text-align: center; color: #666; font-size: 14px;">
+                  <p>شكراً لطلبك!</p>
+                  <p>الساجي لقطع غيار السيارات - قطع غيار عالية الجودة، خدمة موثوقة</p>
+              </div>
+          </div>
+      `;
+
+      const printWindow = window.open('', '_blank');
+      printWindow.document.write(`
+          <html>
+              <head>
+                  <title>تأكيد الطلب - ${document.getElementById('orderNumber').textContent}</title>
+                  <style>
+                      body { font-family: Arial, sans-serif; margin: 20px; direction: rtl; }
+                      @media print {
+                          body { margin: 0; }
+                      }
+                  </style>
+              </head>
+              <body>${orderContent}</body>
+          </html>
+      `);
+      printWindow.document.close();
+      printWindow.focus();
+
+      setTimeout(() => {
+          printWindow.print();
+          printWindow.close();
+      }, 250);
+  }
+
+  // Initialize order confirmation
+  document.addEventListener('DOMContentLoaded', () => {
+      new OrderConfirmation();
+  });
+  </script>
+
+</body>
+</html>

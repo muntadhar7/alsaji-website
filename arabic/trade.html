@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>البوابة التجارية - الساجي لقطع غيار السيارات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+  <style>
+    .portal-card {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid var(--w1);
+    }
+    .portal-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--red);
+      box-shadow: 0 4px 12px rgba(188,20,44,0.1);
+    }
+    .portal-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body style="visibility:hidden;">
+  <script src="../js/main.js"></script>
+
+
+
+  <main class="wrap">
+    <h1>البوابة التجارية</h1>
+    <p class="muted" style="margin-bottom: 24px;">الوصول إلى أسعار الجملة، طلبات بالجملة، وميزات الأعمال</p>
+
+    <!-- Main Portal Card -->
+    <div class="card portal-card" onclick="openTradePortal()" style="text-align: center; padding: 40px;">
+      <div class="portal-icon">🏢</div>
+      <h2>بوابة الساجي للأعمال</h2>
+      <p class="muted">انقر لفتح البوابة التجارية الكاملة في علامة تبويب جديدة</p>
+      <button class="btn" style="margin-top: 16px;">
+        فتح البوابة التجارية ↗
+      </button>
+    </div>
+  </main>
+
+  <script>
+    // Language switching
+    document.getElementById('langSwitch').addEventListener('click', function() {
+      window.location.href = '../trade.html';
+    });
+
+    // Show page immediately
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = '1';
+
+    const B2B_BASE_URL = 'https://www.alsajib2b.com';
+
+    function openTradePortal() {
+      window.open(B2B_BASE_URL, '_blank', 'noopener,noreferrer');
+      showToast('جاري فتح البوابة التجارية...', 'info');
+    }
+
+    // Add click effects to all portal cards
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.portal-card');
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          this.style.transform = 'scale(0.98)';
+          setTimeout(() => {
+            this.style.transform = '';
+          }, 150);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

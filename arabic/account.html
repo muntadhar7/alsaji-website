@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الحساب - الساجي لقطع غيار السيارات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+  <style>
+    .login-section, .account-section { display: none; }
+    .login-section.active, .account-section.active { display: block; }
+    .user-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--red);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .account-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding: 20px;
+      background: linear-gradient(135deg, var(--ink1), var(--navy1));
+      border-radius: 16px;
+      color: white;
+    }
+    .account-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--w2);
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--w1);
+      transition: all 0.3s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .stat-number {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--red);
+      display: block;
+    }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: var(--ink1);
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--w1);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--red);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(188,20,44,0.1);
+    }
+    .feature-card {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid var(--w1);
+    }
+    .feature-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--red);
+      box-shadow: 0 4px 12px rgba(188,20,44,0.1);
+    }
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .section-content {
+      display: none;
+    }
+    .section-content.active {
+      display: block;
+    }
+    .order-item, .vehicle-item, .address-item {
+      border: 1px solid var(--w1);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      background: white;
+    }
+    .order-status {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .status-pending { background: #fff3cd; color: #856404; }
+    .status-confirmed { background: #d1ecf1; color: #0c5460; }
+    .status-shipped { background: #d4edda; color: #155724; }
+    .status-delivered { background: #e2e3e5; color: #383d41; }
+    .btn-small {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+    <script src="../js/main.js"></script>
+  <script src="../data/static_api.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/account.js"></script>
+
+
+
+  <main class="wrap">
+    <!-- Login Section -->
+    <div class="login-section active" id="loginSection">
+      <div class="card" style="max-width: 400px; margin: 40px auto; text-align: center;">
+        <h1>مرحباً بعودتك</h1>
+        <p class="muted" style="margin-bottom: 24px;">سجل الدخول إلى حسابك في الساجي</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">البريد الإلكتروني</label>
+            <input type="email" id="loginEmail" name="email" required placeholder="your@email.com" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">كلمة المرور</label>
+            <input type="password" id="loginPassword" name="password" required placeholder="أدخل كلمة المرور" autocomplete="current-password">
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%; margin-bottom: 16px;">
+            تسجيل الدخول
+          </button>
+
+          <div class="row between" style="margin-bottom: 16px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-size: 14px;">
+              <input type="checkbox" name="remember"> تذكرني
+            </label>
+            <a href="#" class="muted" style="font-size: 14px;">نسيت كلمة المرور؟</a>
+          </div>
+        </form>
+
+        <div style="border-top: 1px solid var(--w1); padding-top: 16px;">
+          <p class="muted" style="margin-bottom: 12px;">ليس لديك حساب؟</p>
+          <button class="btn secondary" id="showRegister" style="width: 100%;">
+            إنشاء حساب تجاري
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Dashboard -->
+    <div class="account-section" id="accountSection">
+      <!-- Account Header -->
+      <div class="account-header">
+        <div class="user-avatar" id="userAvatar">م</div>
+        <div style="flex: 1;">
+          <h1 id="userName" style="margin: 0; color: white;">جاري التحميل...</h1>
+          <p class="muted" id="userEmail" style="color: rgba(255,255,255,0.8); margin: 4px 0;">جاري التحميل...</p>
+          <p id="accountType" style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">
+            <span id="accountTypeBadge" class="chip" style="background: rgba(255,255,255,0.2); color: white;">نوع الحساب</span>
+          </p>
+        </div>
+        <button class="btn secondary" id="logoutBtn" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">تسجيل الخروج</button>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="account-stats">
+        <div class="stat-card">
+          <span class="stat-number" id="ordersCount">0</span>
+          <span class="muted">إجمالي الطلبات</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="vehiclesCount">0</span>
+          <span class="muted">المركبات المحفوظة</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="tradeDiscount">0%</span>
+          <span class="muted">خصم تجاري</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="accountSince">2024</span>
+          <span class="muted">عضو منذ</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="row" style="gap:8px;margin-bottom:16px; flex-wrap: wrap;">
+        <button class="chip active" id="acctRetail">📦 الطلبات والمرتجعات</button>
+        <button class="chip" id="acctTrade">🚗 مركباتي</button>
+        <button class="chip" id="acctAddresses">🏠 العناوين</button>
+        <button class="chip" id="acctProfile">👤 الملف الشخصي</button>
+      </div>
+
+      <!-- Orders & Returns View -->
+      <div class="account-section active" id="acctRetailView">
+        <div class="row between" style="margin-bottom: 16px;">
+          <h2>سجل الطلبات</h2>
+          <button class="btn secondary" onclick="loadSampleOrders()">تحميل بيانات تجريبية</button>
+        </div>
+
+        <div id="ordersContent" class="section-content active">
+          <div class="card">
+            <div id="ordersList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">📦</div>
+                <h3>لا توجد طلبات بعد</h3>
+                <p>سوف تظهر سجل طلباتك هنا</p>
+                <button class="btn" onclick="window.location.href='shop.html'">ابدأ التسوق</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="returnsContent" class="section-content">
+          <div class="card">
+            <h3>المرتجعات والمستردات</h3>
+            <p class="muted">إدارة طلبات المرتجعات والمستردات</p>
+            <div id="returnsList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🔄</div>
+                <h3>لا توجد مرتجعات</h3>
+                <p>لم تطلب أي مرتجعات بعد</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vehicles View -->
+      <div class="account-section" id="acctTradeView">
+        <div class="row between" style="margin-bottom: 16px;">
+          <h2>المركبات المحفوظة</h2>
+          <button class="btn" onclick="showAddVehicleForm()">+ إضافة مركبة</button>
+        </div>
+
+        <div id="vehiclesContent" class="section-content active">
+          <div class="card">
+            <div id="vehiclesList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🚗</div>
+                <h3>لا توجد مركبات محفوظة</h3>
+                <p>أضف مركباتك للحصول على توصيات قطع غيار مخصصة</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="addVehicleContent" class="section-content">
+          <div class="card">
+            <h3>إضافة مركبة جديدة</h3>
+            <form id="addVehicleForm">
+              <div class="grid cols-3" style="gap: 12px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="vehicleMake">الشركة المصنعة</label>
+                  <select id="vehicleMake" name="make" required>
+                    <option value="">اختر الشركة المصنعة</option>
+                    <option value="toyota">تويوتا</option>
+                    <option value="nissan">نيسان</option>
+                    <option value="hyundai">هيونداي</option>
+                    <option value="kia">كيا</option>
+                    <option value="mitsubishi">ميتسوبيشي</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="vehicleModel">الموديل</label>
+                  <input type="text" id="vehicleModel" name="model" required placeholder="مثال: كامري">
+                </div>
+                <div class="form-group">
+                  <label for="vehicleYear">السنة</label>
+                  <select id="vehicleYear" name="year" required>
+                    <option value="">اختر السنة</option>
+                    <!-- السنوات سيتم تعبئتها بواسطة JavaScript -->
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="vehicleNickname">اسم مختصر (اختياري)</label>
+                <input type="text" id="vehicleNickname" name="nickname" placeholder="مثال: سيارتي اليومية">
+              </div>
+              <div class="row" style="gap: 8px;">
+                <button type="submit" class="btn">حفظ المركبة</button>
+                <button type="button" class="btn secondary" onclick="showVehiclesList()">إلغاء</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Addresses View -->
+      <div class="account-section" id="acctAddressesView">
+        <div class="row between" style="margin-bottom: 16px;">
+          <h2>عناوين الشحن</h2>
+          <button class="btn" onclick="showAddAddressForm()">+ إضافة عنوان</button>
+        </div>
+
+        <div id="addressesContent" class="section-content active">
+          <div class="card">
+            <div id="addressesList">
+              <div class="muted" style="text-align: center; padding: 40px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">🏠</div>
+                <h3>لا توجد عناوين محفوظة</h3>
+                <p>أضف عناوين الشحن الخاصة بك لإتمام الشراء بشكل أسرع</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="addAddressContent" class="section-content">
+          <div class="card">
+            <h3>إضافة عنوان جديد</h3>
+            <form id="addAddressForm">
+              <div class="grid cols-2" style="gap: 12px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="addressName">الاسم الكامل</label>
+                  <input type="text" id="addressName" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="addressPhone">الهاتف</label>
+                  <input type="tel" id="addressPhone" name="phone" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="addressStreet">عنوان الشارع</label>
+                <input type="text" id="addressStreet" name="street" required>
+              </div>
+              <div class="grid cols-3" style="gap: 12px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="addressCity">المدينة</label>
+                  <input type="text" id="addressCity" name="city" required>
+                </div>
+                <div class="form-group">
+                  <label for="addressArea">المنطقة</label>
+                  <input type="text" id="addressArea" name="area" required>
+                </div>
+                <div class="form-group">
+                  <label for="addressType">نوع العنوان</label>
+                  <select id="addressType" name="type" required>
+                    <option value="home">منزل</option>
+                    <option value="work">عمل</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row" style="gap: 8px;">
+                <button type="submit" class="btn">حفظ العنوان</button>
+                <button type="button" class="btn secondary" onclick="showAddressesList()">إلغاء</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile View -->
+      <div class="account-section" id="acctProfileView">
+        <h2>إعدادات الملف الشخصي</h2>
+        <div class="grid cols-2" style="gap: 24px;">
+          <div class="card">
+            <h3>المعلومات الشخصية</h3>
+            <form id="profileForm">
+              <div class="grid cols-2" style="gap: 12px;">
+                <div class="form-group">
+                  <label for="firstName">الاسم الأول</label>
+                  <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">اسم العائلة</label>
+                  <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">الهاتف</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="company">الشركة</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+
+              <button type="submit" class="btn">تحديث الملف الشخصي</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>إعدادات الحساب</h3>
+            <div class="form-group">
+              <label>نوع الحساب</label>
+              <div style="padding: 12px; background: var(--w2); border-radius: 8px;">
+                <strong id="displayAccountType">عميل تجزئة</strong>
+                <p class="muted" style="margin: 4px 0 0 0; font-size: 12px;">
+                  <span id="displayBenefits">أسعار وميزات قياسية</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>كلمة المرور</label>
+              <button class="btn secondary" style="width: 100%;" onclick="showChangePassword()">
+                تغيير كلمة المرور
+              </button>
+            </div>
+
+            <div class="form-group">
+              <label>الإشعارات</label>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="display: flex; align-items: center; gap: 8px;">
+                  <input type="checkbox" checked> تحديثات الطلبات
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px;">
+                  <input type="checkbox" checked> العروض الترويجية
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px;">
+                  <input type="checkbox"> تنبيهات انخفاض الأسعار
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Language switching
+    document.getElementById('langSwitch').addEventListener('click', function() {
+      window.location.href = '../account.html';
+    });
+  </script>
+
+</body>
+</html>

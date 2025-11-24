@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الخدمات - الساجي لقطع غيار السيارات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+</head>
+<body style="visibility:hidden;">
+
+
+
+  <main class="wrap">
+    <h1>خدماتنا</h1>
+    <div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:12px" id="steps">
+      <div class="chip" style="background:var(--w2)">الخدمة</div>
+      <div class="chip" style="background:#fff; font-color: black">المركبة</div>
+      <div class="chip" style="background:#fff">الفرع</div>
+      <div class="chip" style="background:#fff">التاريخ والوقت</div>
+      <div class="chip" style="background:#fff">التأكيد</div>
+    </div>
+    <div class="card">
+      <div class="muted" id="stepText">الخطوة 1 من 5</div>
+      <h3 id="stepTitle">اختر نوع الخدمة</h3>
+      <div class="grid cols-3" style="margin-top:16px">
+        <div class="card service-option" data-service="oil-change">
+          <div class="image" style="height:80px"></div>
+          <div style="margin-top:8px">خدمة تغيير الزيت</div>
+          <div class="muted">من 25,000 دينار</div>
+        </div>
+        <div class="card service-option" data-service="brake-service">
+          <div class="image" style="height:80px"></div>
+          <div style="margin-top:8px">خدمة الفرامل</div>
+          <div class="muted">من 45,000 دينار</div>
+        </div>
+        <div class="card service-option" data-service="suspension">
+          <div class="image" style="height:80px"></div>
+          <div style="margin-top:8px">فحص التعليق</div>
+          <div class="muted">من 35,000 دينار</div>
+        </div>
+      </div>
+      <div class="row between" style="margin-top:16px">
+        <button class="btn secondary" id="backStep" disabled>السابق</button>
+        <button class="btn" id="nextStep">التالي</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- نفس التذييل الموجود في index.html -->
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/services.js"></script>
+
+  <script>
+    // Language switching
+    document.getElementById('langSwitch').addEventListener('click', function() {
+      window.location.href = '../services.html';
+    });
+  </script>
+</body>
+</html>

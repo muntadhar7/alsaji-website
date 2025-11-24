@@ -30,24 +30,36 @@
       "id": 22,
       "name": "اجزاء المحرك"
     },
-    "image_url": null
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=32&field=image_1920"
   },
   {
     "id": 33,
     "name": "Cae care",
     "parent": null,
-    "image_url": null
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=33&field=image_1920"
   },
   {
     "id": 34,
     "name": "Lubricants -   الزيوت والسوائل",
     "parent": null,
-    "image_url": null
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=34&field=image_1920"
   },
   {
     "id": 35,
     "name": "الاكسسوار -Accessories",
     "parent": null,
-    "image_url": null
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=35&field=image_1920"
+  },
+  {
+    "id": 37,
+    "name": "engine parts",
+    "parent": null,
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=37&field=image_1920"
+  },
+  {
+    "id": 38,
+    "name": "Body parts",
+    "parent": null,
+    "image_url": "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.public.category&id=38&field=image_1920"
   }
 ]

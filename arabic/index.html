@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الساجي - قطع غيار سيارات أصلية</title>
+  <link type="image/x-icon" rel="shortcut icon" href="/assets/ALSAJI B2B.svg">
+
+  <!-- Load base CSS first -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Then load Arabic overrides -->
+  <link rel="stylesheet" href="css/style-ar.css">
+
+  <!-- Arabic font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body style="visibility:hidden;">
+
+
+    <!-- Load scripts with correct paths -->
+    <script src="../data/static_api.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/cart-manager.js"></script>
+    <script src="../js/vehicle-manager.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/main.js"></script>
+
+  <main class="wrap">
+     <div class="hero">
+      <div>
+        <h1>قطع غيار أصلية. تركيب واضح. استلام سريع.</h1>
+        <p class="muted">تسوق بالتجزئة أو اطلب كورشة عمل مع توافر على مستوى الفروع في جميع أنحاء العراق.</p>
+      </div>
+      <div class="grid fitment-grid">
+        <label class="muted">الشركة المصنعة<br>
+          <select class="select" id="make">
+            <option value="">اختر الشركة المصنعة</option>
+            <option value="toyota">تويوتا</option>
+            <option value="honda">هوندا</option>
+            <option value="ford">فورد</option>
+            <option value="bmw">بي إم دبليو</option>
+            <option value="mercedes">مرسيدس-بنز</option>
+          </select>
+        </label>
+        <label class="muted">الموديل<br>
+          <select class="select" id="model" disabled>
+            <option value="">اختر الموديل</option>
+          </select>
+        </label>
+        <label class="muted">السنة<br>
+          <select class="select" id="year" disabled>
+            <option value="">اختر السنة</option>
+          </select>
+        </label>
+        <label class="muted">المحرك<br>
+          <select class="select" id="engine" disabled>
+            <option value="">اختر المحرك</option>
+          </select>
+        </label>
+        <label class="muted">نوع الاستيراد<br>
+          <select class="select" id="importType" disabled>
+            <option value="">اختر نوع الاستيراد</option>
+          </select>
+        </label>
+
+        <label class="muted"><br>
+          <div class="fitment-buttons">
+            <button class="btn" id="applyFitment">تطبيق</button>
+            <button class="btn secondary" id="clearFitment">مسح</button>
+          </div>
+        </label>
+        <a class="btn secondary" href="shop.html">تسوق</a>
+        <a class="btn secondary" href="trade.html">بوابة الوكلاء</a>
+      </div>
+     </div>
+
+    <section style="margin-top:24px">
+      <div class="row between">
+        <h2>الفئات الشائعة</h2>
+        <a class="btn ghost" href="shop.html">عرض الكل</a>
+      </div>
+      <div class="grid cols-4" id="popularCategories">
+        <!-- سيتم تحميلها بواسطة JavaScript -->
+      </div>
+    </section>
+
+    <section style="margin-top:12px">
+      <div class="row between">
+        <h2>أفضل الماركات</h2>
+        <a class="btn ghost" href="brands.html">عرض الكل</a>
+      </div>
+      <div class="grid cols-6" id="topBrands">
+        <!-- سيتم تحميلها بواسطة JavaScript -->
+      </div>
+    </section>
+
+    <section style="margin-top:12px">
+      <div class="row between">
+        <h2>المنتجات المميزة</h2>
+      </div>
+      <div class="grid cols-4" id="featuredProducts">
+        <!-- سيتم تحميلها بواسطة JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-support">
+    <div class="group">
+      <button class="btn" style="background:#25D366">واتساب</button>
+      <button class="btn">الدردشة المباشرة</button>
+    </div>
+  </div>
+
+  <script src="../js/home.js"></script>
+  <script>
+    // Language switching
+    document.getElementById('langSwitch').addEventListener('click', function() {
+      window.location.href = '../index.html'; // Go to English version
+    });
+
+    // Arabic vehicle data and JavaScript logic would go here
+    // (similar to the previous example but with Arabic translations)
+  </script>
+</body>
+</html>

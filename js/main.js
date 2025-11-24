@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeCommonFeatures() {
     setupBranchMenu();
     setupLanguageToggle();
-    updateCartCount();
+    initializeHamburgerMenu();
+    highlightActiveTab();
 }
 
 // Branch menu functionality
@@ -37,7 +38,7 @@ async function loadBranches() {
         if (branchList) {
             branchList.innerHTML = branches.map(branch => `
                 <button class="chip branch-item" data-branch-id="${branch.id}" style="width:100%;text-align:left;margin:4px 0">
-                    ${branch.name} <span class="muted" style="float:right">Pickup today 4-6</span>
+                    ${branch.name} <span class="muted" style="float:right">${getTranslation('pickup_today')}</span>
                 </button>
             `).join('');
 
@@ -50,7 +51,7 @@ async function loadBranches() {
                     if (branch) {
                         document.getElementById('branchBtn').textContent = branch.name;
                         document.getElementById('branchMenu').style.display = 'none';
-                        showNotification(`Branch changed to ${branch.name}`, 'success');
+                        showNotification(`${getTranslation('branch_changed')} ${branch.name}`, 'success');
                     }
                 });
             });
@@ -60,30 +61,219 @@ async function loadBranches() {
     }
 }
 
-// Language toggle
-function setupLanguageToggle() {
-    const langBtn = document.getElementById('langBtn');
-    if (langBtn) {
-        langBtn.addEventListener('click', function() {
-            const currentLang = this.textContent;
-            const newLang = currentLang === 'AR' ? 'EN' : 'AR';
-            this.textContent = newLang;
-
-            // Toggle RTL/LTR
-            document.documentElement.dir = newLang === 'AR' ? 'rtl' : 'ltr';
-            document.documentElement.lang = newLang === 'AR' ? 'ar' : 'en';
-
-            showNotification(`Language changed to ${newLang}`, 'info');
-        });
+// Translation dictionary
+const translations = {
+    en: {
+        'account': 'Account',
+        'home': 'Home',
+        'shop': 'Shop',
+        'services': 'Services',
+        'brands': 'Brands & Partners',
+        'branches': 'Branches',
+        'news': 'News & Guides',
+        'support': 'Support',
+        'trade': 'Trade Portal',
+        'cart': 'Cart',
+        'pickup_today': 'Pickup today 4-6',
+        'branch_changed': 'Branch changed to',
+        'language_changed': 'Language changed to',
+        'english': 'English',
+        'arabic': 'Arabic',
+        'welcome': 'Welcome',
+        'search_placeholder': 'Search products...',
+        'all_categories': 'All Categories',
+        'all_brands': 'All Brands',
+        'apply_fitment': 'Apply',
+        'clear_fitment': 'Clear',
+        'select_make': 'Select Make',
+        'select_model': 'Select Model',
+        'select_year': 'Select Year',
+        'select_engine': 'Select Engine',
+        'select_import_type': 'Select Import Type'
+    },
+    ar: {
+        'account': 'حسابي',
+        'home': 'الرئيسية',
+        'shop': 'المتجر',
+        'services': 'الخدمات',
+        'brands': 'العلامات التجارية والشركاء',
+        'branches': 'الفروع',
+        'news': 'الأخبار والدلائل',
+        'support': 'الدعم',
+        'trade': 'البوابة التجارية',
+        'cart': 'عربة التسوق',
+        'pickup_today': 'استلام اليوم 4-6',
+        'branch_changed': 'تم تغيير الفرع إلى',
+        'language_changed': 'تم تغيير اللغة إلى',
+        'english': 'الإنجليزية',
+        'arabic': 'العربية',
+        'welcome': 'مرحباً',
+        'search_placeholder': 'ابحث في المنتجات...',
+        'all_categories': 'كل الفئات',
+        'all_brands': 'كل الماركات',
+        'apply_fitment': 'تطبيق',
+        'clear_fitment': 'مسح',
+        'select_make': 'اختر الشركة المصنعة',
+        'select_model': 'اختر الموديل',
+        'select_year': 'اختر السنة',
+        'select_engine': 'اختر المحرك',
+        'select_import_type': 'اختر نوع الاستيراد'
     }
+};
+
+function getTranslation(key, lang = null) {
+    const currentLang = lang || (document.documentElement.lang === 'ar' ? 'ar' : 'en');
+    return translations[currentLang][key] || key;
 }
 
-// Cart functionality
-function updateCartCount(count = 0) {
-    const cartCount = document.getElementById('cartCount');
-    if (cartCount) {
-        cartCount.textContent = count;
+// Language toggle with directory switching
+function setupLanguageToggle() {
+    const langBtn = document.getElementById('langBtn');
+    const mobileLangBtn = document.getElementById('mobileLangBtn');
+
+    function toggleLanguage() {
+        const currentLang = document.documentElement.lang || 'en';
+        const newLang = currentLang === 'en' ? 'ar' : 'en';
+
+        // Get current page info
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        const isInArabicDir = currentPath.includes('/arabic/');
+
+        // Determine target URL
+        let targetUrl;
+
+        if (newLang === 'ar' && !isInArabicDir) {
+            // Switch to Arabic: move to /arabic/ directory
+            targetUrl = `/arabic/${currentPage}`;
+        } else if (newLang === 'en' && isInArabicDir) {
+            // Switch to English: move to root directory
+            // Remove 'arabic/' from the path
+            targetUrl = `/${currentPage}`;
+        } else {
+            // Should not happen, but fallback
+            targetUrl = newLang === 'ar' ? '/arabic/index.html' : '/index.html';
+        }
+
+        console.log(`Switching from ${currentLang} to ${newLang}`);
+        console.log(`Current path: ${currentPath}, Target: ${targetUrl}`);
+
+        // Navigate to the target page
+        window.location.href = targetUrl;
     }
+
+    // Add event listeners
+    if (langBtn) {
+        langBtn.addEventListener('click', toggleLanguage);
+    }
+    if (mobileLangBtn) {
+        mobileLangBtn.addEventListener('click', toggleLanguage);
+    }
+
+    // Initialize language button text on page load
+    function initializeLanguageButton() {
+        const currentLang = window.location.pathname.includes('/arabic/') ? 'ar' : 'en';
+
+        if (langBtn) langBtn.textContent = currentLang === 'en' ? 'العربية' : 'English';
+        if (mobileLangBtn) mobileLangBtn.textContent = currentLang === 'en' ? 'العربية' : 'English';
+
+        // Set HTML attributes
+        document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+        document.documentElement.lang = currentLang;
+
+        // Update page content for current language
+        updatePageContent(currentLang);
+    }
+
+    initializeLanguageButton();
+}
+// Function to update page content based on language
+function updatePageContent(lang) {
+    console.log('Updating page content to:', lang);
+
+    // Update navigation tabs
+    const navTabs = document.querySelectorAll('.tab, .mobile-tab');
+    navTabs.forEach(tab => {
+        const href = tab.getAttribute('href');
+        if (href) {
+            const pageKey = getPageKeyFromHref(href);
+            if (pageKey) {
+                const translatedText = getTranslation(pageKey, lang);
+                tab.textContent = translatedText;
+            }
+        }
+    });
+
+    // Update other UI elements with data-translate attribute
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        const translatedText = getTranslation(key, lang);
+
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+            element.placeholder = translatedText;
+        } else {
+            element.textContent = translatedText;
+        }
+    });
+
+    // Update select options
+    document.querySelectorAll('select option').forEach(option => {
+        const value = option.value;
+        if (value && translations[lang][value]) {
+            option.textContent = translations[lang][value];
+        }
+    });
+
+    // Update buttons with specific IDs
+    const buttonTranslations = {
+        'applyFitment': 'apply_fitment',
+        'clearFitment': 'clear_fitment',
+        'searchButton': 'search',
+        'mobileFilterBtn': 'filters'
+    };
+
+    Object.keys(buttonTranslations).forEach(buttonId => {
+        const button = document.getElementById(buttonId);
+        if (button) {
+            button.textContent = getTranslation(buttonTranslations[buttonId], lang);
+        }
+    });
+
+    // Update search placeholder
+    const searchInput = document.getElementById('searchInput') || document.getElementById('mobileSearchInput');
+    if (searchInput) {
+        searchInput.placeholder = getTranslation('search_placeholder', lang);
+    }
+
+    // Update fitment select placeholders
+    const fitmentSelects = ['make', 'model', 'year', 'engine', 'importType'];
+    fitmentSelects.forEach(selectId => {
+        const select = document.getElementById(selectId);
+        if (select) {
+            const firstOption = select.querySelector('option[value=""]');
+            if (firstOption) {
+                firstOption.textContent = getTranslation(`select_${selectId}`, lang);
+            }
+        }
+    });
+}
+
+function getPageKeyFromHref(href) {
+    const pageMap = {
+        'index.html': 'home',
+        'shop.html': 'shop',
+        'services.html': 'services',
+        'brands.html': 'brands',
+        'branches.html': 'branches',
+        'news.html': 'news',
+        'support.html': 'support',
+        'trade.html': 'trade',
+        'account.html': 'account',
+        'cart.html': 'cart'
+    };
+
+    const pageName = href.split('/').pop() || href;
+    return pageMap[pageName];
 }
 
 // Notification system
@@ -134,7 +324,8 @@ document.head.appendChild(style);
 
 // Utility functions
 function formatPrice(price) {
-    return 'IQD ' + price.toLocaleString();
+    const lang = document.documentElement.lang === 'ar' ? 'ar' : 'en';
+    return lang === 'ar' ? `دينار ${price.toLocaleString()}` : `IQD ${price.toLocaleString()}`;
 }
 
 function debounce(func, wait) {
@@ -149,120 +340,37 @@ function debounce(func, wait) {
     };
 }
 
-// Global Cart Count Manager
-class CartCountManager {
-    constructor() {
-        this.api = new AlSajiAPI();
-        this.updateInterval = null;
-        this.init();
-    }
-
-    async init() {
-        await this.updateCartCount();
-        // Update cart count every 30 seconds to keep it fresh
-        this.updateInterval = setInterval(() => this.updateCartCount(), 30000);
-
-        // Also update when page becomes visible (user returns to tab)
-        document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible') {
-                this.updateCartCount();
-            }
-        });
-    }
-
-    async updateCartCount() {
-        try {
-            const result = await this.api.getCart();
-            if (result.success) {
-                const count = result.cart_count || 0;
-                this.updateCartCountDisplay(count);
-            } else {
-                console.error('Failed to load cart count:', result.error);
-                this.updateCartCountDisplay(0);
-            }
-        } catch (error) {
-            console.error('Error loading cart count:', error);
-            this.updateCartCountDisplay(0);
-        }
-    }
-
-    updateCartCountDisplay(count) {
-        const cartCountElements = document.querySelectorAll('#cartCount');
-        cartCountElements.forEach(element => {
-            element.textContent = count;
-        });
-
-        // Also update any other cart count elements that might exist
-        const additionalCartElements = document.querySelectorAll('[data-cart-count]');
-        additionalCartElements.forEach(element => {
-            element.textContent = count;
-        });
-    }
-
-    // Call this when items are added to cart from other pages
-    async refreshCartCount() {
-        await this.updateCartCount();
-    }
-
-    // Clean up when needed
-    destroy() {
-        if (this.updateInterval) {
-            clearInterval(this.updateInterval);
-        }
-    }
-}
-
-// Initialize global cart count manager
-let cartCountManager;
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize cart count manager
-    cartCountManager = new CartCountManager();
-
-    // Your existing main.js code here...
-});
-
-// Global function to refresh cart count (call this after adding items)
-window.refreshCartCount = function() {
-    if (cartCountManager) {
-        cartCountManager.refreshCartCount();
-    }
-};
-
+// Layout loading
 async function loadLayout() {
-  try {
-    // Load header and footer in parallel
-    const [headerRes, footerRes] = await Promise.all([
-      fetch('partials/header.html'),
-      fetch('partials/footer.html')
-    ]);
+    try {
+        const [headerRes, footerRes] = await Promise.all([
+            fetch('../partials/header.html'),
+            fetch('../partials/footer.html')
+        ]);
 
-    const [headerHtml, footerHtml] = await Promise.all([
-      headerRes.text(),
-      footerRes.text()
-    ]);
+        const [headerHtml, footerHtml] = await Promise.all([
+            headerRes.text(),
+            footerRes.text()
+        ]);
 
-    document.body.insertAdjacentHTML('afterbegin', headerHtml);
-    document.body.insertAdjacentHTML('beforeend', footerHtml);
+        document.body.insertAdjacentHTML('afterbegin', headerHtml);
+        document.body.insertAdjacentHTML('beforeend', footerHtml);
 
-    // Show page immediately
-    document.body.style.visibility = 'visible';
+        document.body.style.visibility = 'visible';
 
-    // Initialize hamburger menu AFTER header is inserted
-    initializeHamburgerMenu();
+        // Initialize ALL features after header is loaded
+        initializeCommonFeatures();
 
-    // Initialize cart in background
-    setTimeout(() => {
-      initializeCartManager();
-    }, 100);
+        setTimeout(() => {
+            initializeCartManager();
+        }, 100);
 
-    // Highlight active tab
-    highlightActiveTab();
-
-  } catch (err) {
-    console.error('Failed to load header/footer:', err);
-    document.body.style.visibility = 'visible';
-  }
+    } catch (err) {
+        console.error('Failed to load header/footer:', err);
+        document.body.style.visibility = 'visible';
+        // Initialize features even if header/footer fail
+        initializeCommonFeatures();
+    }
 }
 
 // Hamburger menu functionality
@@ -363,22 +471,22 @@ const mobileNav = document.getElementById('mobileNav');
 const mobileNavClose = document.getElementById('mobileNavClose');
 
 if (hamburgerBtn && mobileNav) {
-  hamburgerBtn.addEventListener('click', () => {
-    mobileNav.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  });
-
-  mobileNavClose.addEventListener('click', () => {
-    mobileNav.classList.remove('active');
-    document.body.style.overflow = '';
-  });
-
-  // Close menu when clicking on links
-  const mobileLinks = mobileNav.querySelectorAll('.mobile-tab');
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-      document.body.style.overflow = '';
+    hamburgerBtn.addEventListener('click', () => {
+        mobileNav.classList.add('active');
+        document.body.style.overflow = 'hidden';
     });
-  });
+
+    mobileNavClose.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Close menu when clicking on links
+    const mobileLinks = mobileNav.querySelectorAll('.mobile-tab');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
 }

@@ -4,6 +4,295 @@
     "name": "Land Cruiser",
     "logo": [
       "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.vehicle&field=logo&id=252042"
+    ],
+    "brand_id": [
+      1787,
+      "Toyota"
+    ]
+  },
+  {
+    "id": 253211,
+    "name": "Land Cruiser - لاند كروزر",
+    "logo": "",
+    "brand_id": false
+  },
+  {
+    "id": 253266,
+    "name": "PATROL - سفاري",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253267,
+    "name": "PICK UP - بيكب اب",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253268,
+    "name": "Camry - كامري",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253269,
+    "name": "COROLLA - كورولا",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253270,
+    "name": "Pathfinder - باثفايندر",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253271,
+    "name": "AVALON - افالون",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253272,
+    "name": "ALTIMA - التما",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253273,
+    "name": "X- TERRA - اكستيرا",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253274,
+    "name": "GX 470 - جي اكس 470",
+    "logo": "",
+    "brand_id": [
+      2807,
+      "Lexus - لكزس"
+    ]
+  },
+  {
+    "id": 253275,
+    "name": "LX570- ال اكس 570",
+    "logo": "",
+    "brand_id": [
+      2807,
+      "Lexus - لكزس"
+    ]
+  },
+  {
+    "id": 253276,
+    "name": "RAV4 - رف فور",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253277,
+    "name": "HIGHLANDER - هايلندر",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253278,
+    "name": "LX600- ال اكس 600",
+    "logo": "",
+    "brand_id": [
+      2807,
+      "Lexus - لكزس"
+    ]
+  },
+  {
+    "id": 253279,
+    "name": "COROLLA CROSS - كورولا كروس",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253280,
+    "name": "CROWN - كراون",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253281,
+    "name": "Land Cruiser - لاند كروزر",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253282,
+    "name": "HILUX - هايلكس",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253283,
+    "name": "PATROL - باترول",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253284,
+    "name": "HIACE - هايس",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253285,
+    "name": "SUNNY - سني",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253286,
+    "name": "FORTUNER - فورجنر",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253287,
+    "name": "Prado - برادو",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253288,
+    "name": "FJ CRUSIER - اف جي كروزر",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253289,
+    "name": "NAVARA - نافارا",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253290,
+    "name": "X- TRAIL- اكستريل",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253291,
+    "name": "SEQUOIA - سيكويا",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253292,
+    "name": "4 RUNNER - فور رنر",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253293,
+    "name": "ROUGE - روج",
+    "logo": "",
+    "brand_id": [
+      2808,
+      "NISSAN - نيسان"
+    ]
+  },
+  {
+    "id": 253294,
+    "name": "COASTER - كوستر",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253295,
+    "name": "COROLLA LEVIN -كورولا ليفان",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
+    ]
+  },
+  {
+    "id": 253296,
+    "name": "LC78 - لاند كروزر 78",
+    "logo": "",
+    "brand_id": [
+      2806,
+      "TOYOTA - تويوتا"
     ]
   }
 ]

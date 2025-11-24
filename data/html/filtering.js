@@ -52,103 +52,17 @@
         `).join('');
     }
 
-renderPriceFilters() {
-    const container = document.getElementById('price-filters');
-    if (!container) return;
+    renderPriceFilters() {
+        const container = document.getElementById('price-filters');
+        if (!container) return;
 
-    // Get min and max prices from your data
-    const minPrice = 0;
-    const maxPrice = 1000000; // Adjust based on your data
-    const currentMin = shopState.filters.price_min || minPrice;
-    const currentMax = shopState.filters.price_max || maxPrice;
-
-    container.innerHTML = `
-        <div class="price-slider-container">
-            <div class="price-display">
-                <span>IQD </span>
-                <span id="min-price-display">${currentMin.toLocaleString()}</span>
-                <span> - IQD </span>
-                <span id="max-price-display">${currentMax.toLocaleString()}</span>
-            </div>
-            <div class="slider-wrapper">
-                <input type="range"
-                       id="min-price"
-                       min="${minPrice}"
-                       max="${maxPrice}"
-                       value="${currentMin}"
-                       class="price-slider">
-                <input type="range"
-                       id="max-price"
-                       min="${minPrice}"
-                       max="${maxPrice}"
-                       value="${currentMax}"
-                       class="price-slider">
-            </div>
-            <button id="apply-price-filter" class="btn" style="margin-top: 10px; width: 100%;">
-                Apply Price Filter
-            </button>
-        </div>
-    `;
-
-    this.initializePriceSlider();
-}
-
-initializePriceSlider() {
-    const minSlider = document.getElementById('min-price');
-    const maxSlider = document.getElementById('max-price');
-    const minDisplay = document.getElementById('min-price-display');
-    const maxDisplay = document.getElementById('max-price-display');
-    const applyBtn = document.getElementById('apply-price-filter');
-
-    if (!minSlider || !maxSlider) return;
-
-    // Update displays when sliders move
-    minSlider.addEventListener('input', () => {
-        const minValue = parseInt(minSlider.value);
-        const maxValue = parseInt(maxSlider.value);
-
-        // Ensure min doesn't exceed max
-        if (minValue > maxValue) {
-            minSlider.value = maxValue;
-            return;
-        }
-
-        minDisplay.textContent = minValue.toLocaleString();
-    });
-
-    maxSlider.addEventListener('input', () => {
-        const minValue = parseInt(minSlider.value);
-        const maxValue = parseInt(maxSlider.value);
-
-        // Ensure max doesn't go below min
-        if (maxValue < minValue) {
-            maxSlider.value = minValue;
-            return;
-        }
-
-        maxDisplay.textContent = maxValue.toLocaleString();
-    });
-
-    // Apply filter on button click
-    applyBtn.addEventListener('click', () => {
-        const minValue = parseInt(minSlider.value);
-        const maxValue = parseInt(maxSlider.value);
-
-        shopState.filters.price_min = minValue;
-        shopState.filters.price_max = maxValue;
-
-        // Update URL
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set('price_min', minValue);
-        urlParams.set('price_max', maxValue);
-        window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
-
-        // Apply filters
-        if (window.applyFilters) {
-            applyFilters();
-        }
-    });
-}
+        container.innerHTML = this.filterData.price_ranges.map(range => `
+            <label style="display: block; margin: 5px 0;">
+                <input type="radio" name="price-range" value="${range.min}-${range.max}">
+                ${range.label} (${range.count})
+            </label>
+        `).join('');
+    }
 
     setupEventListeners() {
         document.addEventListener('change', (e) => {

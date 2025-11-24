@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Branches - AlSaji Auto Parts</title>
-    <link rel="stylesheet" href="css/style.css">
+  <title>الفروع - الساجي لقطع غيار السيارات</title>
+    <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
   <style>
     /* Your existing CSS styles */
     :root {
@@ -16,13 +17,6 @@
       --muted: #6c757d;
       --text: #212529;
     }
-
-
-
-
-
-
-
 
     .map-container {
       height: 400px;
@@ -106,74 +100,80 @@
   </style>
 </head>
 <body>
-  <script src="js/main.js"></script>
-  <script src="js/api.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/api.js"></script>
+
 
 
   <main class="wrap">
-    <h1>Our Branches</h1>
+    <h1>فروعنا</h1>
 
     <div class="map-container">
       <div id="map"></div>
     </div>
 
     <div class="grid cols-3" id="branchesList">
-      <!-- Branch cards will be populated by JavaScript -->
+      <!-- سيتم تعبئة بطاقات الفروع بواسطة JavaScript -->
     </div>
   </main>
 
   <!-- Load config first -->
-  <script src="js/config.js"></script>
+  <script src="../js/config.js"></script>
 
   <script>
+    // Language switching
+    document.getElementById('langSwitch').addEventListener('click', function() {
+      window.location.href = '../branches.html';
+    });
+
     // Static branch data
      const branches = [
            {
         id: 5,
-        name: "Main Branch",
-        address: "Building No. 73, Alley 13, Block 506, Al-Mustansiriya District, Palestine Street, Baghdad, Iraq",
+        name: "الفرع الرئيسي",
+        address: "مبنى رقم 73، زقاق 13، قطعة 506، حي المستنصرية، شارع فلسطين، بغداد، العراق",
         phone: "+964 790 190 7456",
-        hours: "8:30 AM - 4:30 PM",
+        hours: "8:30 صباحاً - 4:30 مساءً",
         lat: 33.36259784351992,
         lng: 44.410128460610515,
         type: "main"
       },
       {
         id: 1,
-        name: "UAE Regional Office",
-        address: "Office No. 1305, 13th Floor, Sheikh Rashid Building, Exhibition Commercial Area - Dubai, UAE",
+        name: "المكتب الإقليمي - الإمارات",
+        address: "المكتب رقم 1305، الطابق 13، مبنى الشيخ راشد، منطقة المعارض التجارية - دبي، الإمارات",
         phone: "+971 4 364 0000",
-        hours: "9:00 AM - 5:00 PM",
+        hours: "9:00 صباحاً - 5:00 مساءً",
         lat: 25.206610249881944,
         lng: 55.270196009259735,
         type: "regional"
       },
       {
         id: 2,
-        name: "Turkmen Club Square",
-        address: "Al-Akhaa Turkmen Club Square, Palestine Street, Baghdad - Iraq",
+        name: "ساحة النادي التركماني",
+        address: "ساحة النادي الأخاء التركماني، شارع فلسطين، بغداد - العراق",
         phone: "+964 771 777 7229",
-        hours: "8:30 AM - 4:30 PM",
+        hours: "8:30 صباحاً - 4:30 مساءً",
         lat: 33.36243460088588,
         lng: 44.40730000733017,
         type: "regular"
       },
       {
         id: 3,
-        name: "Street 6",
-        address: "Street 6, Al-Alawi - Near Al-Karama Hospital, Baghdad - Iraq",
+        name: "الشارع السادس",
+        address: "الشارع السادس، العلوي - بالقرب من مستشفى الكرامة، بغداد - العراق",
         phone: "+964 771 777 7392",
-        hours: "7:00 AM - 3:00 PM",
+        hours: "7:00 صباحاً - 3:00 مساءً",
         lat: 33.334042105791426,
         lng: 44.380005848839374,
         type: "regular"
       },
       {
         id: 4,
-        name: "Erbil",
-        address: "St. 100, across Familymall, Erbil - Iraq",
+        name: "أربيل",
+        address: "الشارع 100، مقابل فاميلي مول، أربيل - العراق",
         phone: "+964 750 900 9331 / +964 750 900 9332",
-        hours: "8:30 AM - 4:30 PM",
+        hours: "8:30 صباحاً - 4:30 مساءً",
         lat: 36.19598808715695,
         lng: 44.04216989621947,
         type: "regular"
@@ -181,39 +181,39 @@
 
       {
         id: 6,
-        name: "Karrada",
-        address: "Al-Karrada, Al-Wehda District, National Theater Square, Next to Air Force Hospital, Baghdad - Iraq",
+        name: "الكرادة",
+        address: "الكرادة، حي الوحدة، ساحة المسرح الوطني، بجوار مستشفى القوة الجوية، بغداد - العراق",
         phone: "+964 771 777 7391",
-        hours: "8:30 AM - 4:30 PM",
+        hours: "8:30 صباحاً - 4:30 مساءً",
         lat: 33.30688482145459,
         lng: 44.43066854941859,
         type: "regular"
       },
       {
         id: 7,
-        name: "Al-Sinek",
-        address: "Al-Sinek, Al-Khani Commercial Complex, Near Sheikh Abdul Qadir Al-Kailani Shrine, Baghdad - Iraq",
+        name: "الصنك",
+        address: "الصنك، مجمع الخاني التجاري، بالقرب من مرقد الشيخ عبد القادر الكيلاني، بغداد - العراق",
         phone: "+964 771 777 7228 / +964 783 027 9777",
-        hours: "7:00 AM - 3:00 PM",
+        hours: "7:00 صباحاً - 3:00 مساءً",
         lat: 33.33691045493454,
         lng: 44.40747166860866,
         type: "regular"
       },
       {
         id: 8,
-        name: "Vehicle Services Branch",
-        address: "Al-Karrada, Al-Wehda District, National Theater Square, Next to Air Force Hospital, Baghdad - Iraq",
+        name: "فرع خدمات المركبات",
+        address: "الكرادة، حي الوحدة، ساحة المسرح الوطني، بجوار مستشفى القوة الجوية، بغداد - العراق",
         phone: "+964 783 023 9000",
-        hours: "8:00 AM - 8:00 PM",
+        hours: "8:00 صباحاً - 8:00 مساءً",
         lat: 33.30704677515004,
         lng: 44.43124669767629,
         type: "services"
       },
             {
         id: 9,
-        name: "Jurf Warehouses",
-        address: "Jurf Al-Naddaf, Baghdad - Iraq",
-        hours: "8:00 AM - 8:00 PM",
+        name: "مستودعات الجرف",
+        address: "جرف النضاف، بغداد - العراق",
+        hours: "8:00 صباحاً - 8:00 مساءً",
         lat: 33.229060596098456,
         lng: 44.56804179406394,
         type: "Warehouse"
@@ -226,7 +226,7 @@
     let infoWindows = [];
 
     function initMap() {
-      // Center map on Riyadh
+      // Center map on Baghdad
       const center = { lat: 33.3152, lng: 44.3661 };
 
       // Create map
@@ -268,8 +268,8 @@
             <div style="padding: 10px; max-width: 250px;">
               <h3 style="margin: 0 0 8px; color: #2c3e50;">${branch.name}</h3>
               <p style="margin: 0 0 8px; color: #6c757d; font-size: 14px;">${branch.address}</p>
-              <p style="margin: 0 0 8px; font-size: 14px;"><strong>Phone:</strong> ${branch.phone}</p>
-              <p style="margin: 0; font-size: 14px;"><strong>Hours:</strong> ${branch.hours}</p>
+              <p style="margin: 0 0 8px; font-size: 14px;"><strong>هاتف:</strong> ${branch.phone}</p>
+              <p style="margin: 0; font-size: 14px;"><strong>ساعات العمل:</strong> ${branch.hours}</p>
             </div>
           `
         });
@@ -311,11 +311,11 @@
           <h3 class="branch-name">${branch.name}</h3>
           <p class="branch-address">${branch.address}</p>
           <div class="branch-contact">
-            <div><strong>Phone:</strong> ${branch.phone}</div>
-            <div><strong>Email:</strong> ${branch.email}</div>
+            <div><strong>هاتف:</strong> ${branch.phone}</div>
+            <div><strong>بريد إلكتروني:</strong> ${branch.email}</div>
           </div>
           <div class="branch-hours">
-            <strong>Business Hours:</strong> ${branch.hours}
+            <strong>ساعات العمل:</strong> ${branch.hours}
           </div>
         `;
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الماركات والشركاء - الساجي لقطع غيار السيارات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+</head>
+<body style="visibility:hidden;">
+
+
+
+  <main class="wrap">
+    <h1>ماركاتنا وشركاؤنا</h1>
+    <div id="brandsGrid">
+      <!-- سيتم تحميلها بواسطة JavaScript -->
+    </div>
+
+  </main>
+
+  <footer>
+    <!-- نفس التذييل الموجود في index.html -->
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../data/static_api.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/brands.js"></script>
+  <script src="../js/home.js"></script>
+
+  <script>
+    // Language switching
+    document.getElementById('langSwitch').addEventListener('click', function() {
+      window.location.href = '../brands.html';
+    });
+  </script>
+
+</body>
+</html>

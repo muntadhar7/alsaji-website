@@ -1,70 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shop - AlSaji Auto Parts</title>
+  <title>المتجر - الساجي لقطع غيار السيارات</title>
   <link type="image/x-icon" rel="shortcut icon" href="/assets/ALSAJI B2B.svg">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="js/shop.js" as="script">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style-ar.css">
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="preload" href="../js/shop.js" as="script">
 </head>
 <body style="visibility:hidden;">
-  <script src="js/main.js"></script>
-  <script src="data/static_api.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/shop.js"></script>
-  <script src="js/mobile-filters.js"></script>
-  <script src="js/shop-ui.js"></script> <!-- NEW: Added this file -->
-  <script src="js/cart-manager.js"></script>
-  <script src="js/vehicle-manager.js"></script>
-  <script src="data/json/vehicle_compatibility_index.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../data/static_api.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/shop.js"></script>
+  <script src="../js/mobile-filters.js"></script>
+  <script src="../js/shop-ui.js"></script> <!-- NEW: Added this file -->
+  <script src="../js/cart-manager.js"></script>
+  <script src="../js/vehicle-manager.js"></script>
+  <script src="../data/json/vehicle_compatibility_index.js"></script>
+
+
 
   <main class="wrap">
     <div class="grid shop">
       <!-- Desktop Filters (hidden on mobile) -->
       <aside class="card" id="desktopFilters">
         <div style="display: flex; flex-direction: column; gap: 4px; padding: 8px 8px">
-          <div class="muted" id="resultsCount">Loading products...</div>
-          <h2 class="bold" style="margin: 0">Your vehicle</h2>
+          <div class="muted" id="resultsCount">جاري تحميل المنتجات...</div>
+          <h2 class="bold" style="margin: 0">مركبتك</h2>
         </div>
         <div id="vehBox" class="card" style="background:#f9f7f9">
-          <div class="muted">No vehicle selected</div>
+          <div class="muted">لم يتم اختيار مركبة</div>
         </div>
         <div class="row between" style="align-items: center; padding: 8px 8px">
-          <h2 style="margin: 0 0 0 0;">Filters</h2>
+          <h2 style="margin: 0 0 0 0;">الفلاتر</h2>
           <button class="btn clear-filters" style="white-space: nowrap;" id="clearButton">
-            Clear
+            مسح الكل
           </button>
         </div>
         <div class="card">
-          <div class="muted">Brand</div>
+          <div class="muted">الماركة</div>
           <select class="select" id="filterBrand">
-            <option value="">All Brands</option>
+            <option value="">كل الماركات</option>
           </select>
         </div>
         <div class="card" style="margin-top:8px">
-          <div class="muted">Category</div>
+          <div class="muted">الفئة</div>
           <select class="select" id="filterCategory">
-            <option value="">All Categories</option>
+            <option value="">كل الفئات</option>
           </select>
         </div>
         <div class="card" style="margin-top:8px">
-          <div class="muted">Price Range</div>
+          <div class="muted">نطاق السعر</div>
           <select class="select" id="filterPrice">
-            <option value="">Any Price</option>
-            <option value="0-50000">Under IQD 50,000</option>
-            <option value="50000-100000">IQD 50,000 - 100,000</option>
-            <option value="100000-200000">IQD 100,000 - 200,000</option>
-            <option value="200000-9999999">Over IQD 200,000</option>
+            <option value="">أي سعر</option>
+            <option value="0-50000">أقل من 50,000 دينار</option>
+            <option value="50000-100000">50,000 - 100,000 دينار</option>
+            <option value="100000-200000">100,000 - 200,000 دينار</option>
+            <option value="200000-9999999">أكثر من 200,000 دينار</option>
           </select>
         </div>
         <div class="card" style="margin-top:8px">
-          <div class="muted">Availability</div>
+          <div class="muted">التوفر</div>
           <select class="select" id="filterStock">
-            <option value="">Any Stock Status</option>
-            <option value="True">In Stock</option>
-            <option value="False">Out of Stock</option>
+            <option value="">أي حالة مخزون</option>
+            <option value="True">متوفر</option>
+            <option value="False">غير متوفر</option>
           </select>
         </div>
       </aside>
@@ -77,14 +80,14 @@
           <div class="desktop-search-sort row between" style="align-items: center; gap: 6px;">
             <div class="search" style="flex: 1; display: flex; align-items: center; min-width: 0;">
               <input class="search input" id="searchInput" placeholder="Search products..." style="flex: 1; min-width: 520px; padding: 10px 12px;  border-radius: 8px;">
-              <button class="btn" id="searchButton" style="margin-left: 8px; white-space: nowrap;">Search</button>
+              <button class="btn" id="searchButton" style="margin-left: 8px; white-space: nowrap;">بحث</button>
             </div>
             <div class="desktop-sort" style="flex-shrink: 0;">
               <select class="select" id="desktopSortSelect">
-                <option value="relevance">Relevance</option>
-                <option value="price-low">Price: Low to High</option>
-                <option value="price-high">Price: High to Low</option>
-                <option value="newest">Newest</option>
+                <option value="relevance">الأكثر صلة</option>
+                <option value="price-low">السعر: من الأقل للأعلى</option>
+                <option value="price-high">السعر: من الأعلى للأقل</option>
+                <option value="newest">الأحدث</option>
               </select>
             </div>
           </div>
@@ -94,8 +97,8 @@
             <!-- Mobile Search Bar -->
             <div class="mobile-search-container" id="mobileSearchContainer" style="display: none; margin-bottom: 12px;">
               <div class="search" style="display: flex; align-items: center; width: 100%; background: white; border: 1px solid var(--w1); border-radius: 8px; padding: 4px;">
-                <input type="text" id="mobileSearchInput" placeholder="Search products..." style="flex: 1; border: none; outline: none; padding: 8px 12px; background: transparent;">
-                <button class="btn-text" id="mobileSearchClose" style="padding: 8px; color: #666;">🔍︎</button>
+                <input type="text" id="mobileSearchInput" placeholder="ابحث في المنتجات..." style="flex: 1; border: none; outline: none; padding: 8px 12px; background: transparent;">
+                <button class="btn-text" id="mobileSearchClose" style="padding: 8px; color: #666;">✕</button>
               </div>
             </div>
 
@@ -105,7 +108,7 @@
                 <!-- Filter & Sort Buttons -->
                 <div class="mobile-buttons" style="display: flex; gap: 8px; flex-shrink: 0;">
                   <button class="btn2" id="mobileFilterBtn" style="white-space: nowrap; min-width: 80px;">
-                    Filters
+                    الفلاتر
                   </button>
                 </div>
               </div>
@@ -123,7 +126,7 @@
               <div style="font-weight:500;margin:8px 0" class="loading"></div>
               <div class="row between">
                 <div class="loading"></div>
-                <button class="btn loading" disabled>Loading</button>
+                <button class="btn loading" disabled>جاري التحميل</button>
               </div>
             </div>
           </div>
@@ -132,7 +135,7 @@
         <!-- Load More Button -->
         <div id="loadMoreContainer" style="text-align: center; margin-top: 24px; display: none;">
           <button class="btn secondary" id="loadMoreBtn">
-            Load More Products
+            تحميل المزيد من المنتجات
           </button>
           <div id="loadMoreInfo" class="muted" style="margin-top: 8px; font-size: 14px;"></div>
         </div>
@@ -146,7 +149,7 @@
     <div class="filter-sheet-content">
       <!-- Header -->
       <div class="filter-header">
-        <h3 style="margin: 0;">Filters</h3>
+        <h3 style="margin: 0;">الفلاتر</h3>
         <button class="filter-close" id="filterClose">
           <i style="font-size: 20px;">×</i>
         </button>
@@ -155,91 +158,91 @@
       <!-- Filter Content -->
       <div class="filter-content">
         <!-- Vehicle Filter Section -->
-<!-- In your mobile filter sheet -->
-<div class="filter-section">
-    <button class="section-title" data-section="vehicle">
-        Vehicle
-        <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-            <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
-        </svg>
-    </button>
-    <div class="section-body" id="vehicleSection">
-        <div class="vehicle-filter-content">
-            <!-- Current Vehicle Display -->
-            <div id="mobileCurrentVehicle" class="current-vehicle-display" style="display: none;">
+        <div class="filter-section">
+          <button class="section-title" data-section="vehicle">
+            المركبة
+            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+              <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
+            </svg>
+          </button>
+          <div class="section-body" id="vehicleSection">
+            <div class="vehicle-filter-content">
+              <!-- Current Vehicle Display -->
+              <div id="mobileCurrentVehicle" class="current-vehicle-display" style="display: none;">
                 <div class="row between" style="align-items: center; margin-bottom: 12px; padding: 8px; background: #f0f9ff; border-radius: 8px;">
-                    <div>
-                        <strong id="mobileCurrentVehicleText">Current Vehicle</strong>
-                        <div class="muted" style="font-size: 12px;">Filtering for this vehicle</div>
-                    </div>
-                    <button class="btn secondary" id="mobileClearVehicle" style="padding: 4px 8px; font-size: 12px;">
-                        Clear
-                    </button>
+                  <div>
+                    <strong id="mobileCurrentVehicleText">المركبة الحالية</strong>
+                    <div class="muted" style="font-size: 12px;">جاري التصفية لهذه المركبة</div>
+                  </div>
+                  <button class="btn secondary" id="mobileClearVehicle" style="padding: 4px 8px; font-size: 12px;">
+                    مسح
+                  </button>
                 </div>
-            </div>
+              </div>
 
-            <!-- Vehicle Selection Form -->
-            <div class="vehicle-selection-form">
+              <!-- Vehicle Selection Form -->
+              <div class="vehicle-selection-form">
                 <div class="form-group">
-                    <label class="muted" style="display: block; margin-bottom: 4px; font-size: 14px;">Make</label>
-                    <select class="select" id="mobileVehicleMake" style="width: 100%;">
-                        <option value="">Select Make</option>
-                    </select>
+                  <label class="muted" style="display: block; margin-bottom: 4px; font-size: 14px;">الشركة المصنعة</label>
+                  <select class="select" id="mobileVehicleMake" style="width: 100%;">
+                    <option value="">اختر الشركة المصنعة</option>
+                  </select>
                 </div>
 
                 <div class="form-group" style="margin-top: 12px;">
-                    <label class="muted" style="display: block; margin-bottom: 4px; font-size: 14px;">Model</label>
-                    <select class="select" id="mobileVehicleModel" style="width: 100%;" disabled>
-                        <option value="">Select Model</option>
-                    </select>
+                  <label class="muted" style="display: block; margin-bottom: 4px; font-size: 14px;">الموديل</label>
+                  <select class="select" id="mobileVehicleModel" style="width: 100%;" disabled>
+                    <option value="">اختر الموديل</option>
+                  </select>
                 </div>
 
                 <div class="form-group" style="margin-top: 12px;">
-                    <label class="muted" style="display: block; margin-bottom: 4px; font-size: 14px;">Year</label>
-                    <select class="select" id="mobileVehicleYear" style="width: 100%;" disabled>
-                        <option value="">Select Year</option>
-                    </select>
+                  <label class="muted" style="display: block; margin-bottom: 4px; font-size: 14px;">السنة</label>
+                  <select class="select" id="mobileVehicleYear" style="width: 100%;" disabled>
+                    <option value="">اختر السنة</option>
+                  </select>
                 </div>
 
                 <button class="btn" id="mobileApplyVehicle" style="width: 100%; margin-top: 16px;" disabled>
-                    Apply Vehicle Filter
+                  تطبيق فلتر المركبة
                 </button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+
         <!-- Other filter sections (Brand, Category, Price, Stock) remain the same -->
         <div class="filter-section">
           <button class="section-title" data-section="brand">
-            Brand
+            الماركة
             <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
               <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
             </svg>
           </button>
           <div class="section-body" id="brandSection">
             <div class="filter-options">
-              <button class="filter-pill active" data-filter-type="brand" data-filter-value="all">All Brands</button>
+              <button class="filter-pill active" data-filter-type="brand" data-filter-value="all">كل الماركات</button>
             </div>
           </div>
         </div>
 
         <div class="filter-section">
           <button class="section-title" data-section="category">
-            Category
+            الفئة
             <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
               <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
             </svg>
           </button>
           <div class="section-body" id="categorySection">
             <div class="filter-options">
-              <button class="filter-pill active" data-filter-type="category" data-filter-value="all">All Categories</button>
+              <button class="filter-pill active" data-filter-type="category" data-filter-value="all">كل الفئات</button>
             </div>
           </div>
         </div>
 
         <div class="filter-section">
           <button class="section-title" data-section="price">
-            Price Range
+            نطاق السعر
             <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
               <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
             </svg>
@@ -253,16 +256,16 @@
 
         <div class="filter-section">
           <button class="section-title" data-section="stock">
-            Availability
+            التوفر
             <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
               <path d="M9.00019 8.49997C8.86858 8.50073 8.73812 8.4755 8.61628 8.42574C8.49444 8.37597 8.38363 8.30265 8.29019 8.20997L6.00019 5.90997L3.71019 8.20997C3.52188 8.39827 3.26649 8.50406 3.00019 8.50406C2.73388 8.50406 2.47849 8.39827 2.29019 8.20997C2.10188 8.02166 1.99609 7.76627 1.99609 7.49997C1.99609 7.23366 2.10188 6.97827 2.29019 6.78997L6.00019 3.08997L9.71019 6.78997C9.80391 6.88293 9.87831 6.99353 9.92908 7.11539C9.97985 7.23725 10.006 7.36795 10.006 7.49997C10.006 7.63198 9.97985 7.76268 9.92908 7.88454C9.87831 8.0064 9.80391 8.117 9.71019 8.20997C9.61675 8.30265 9.50593 8.37597 9.38409 8.42574C9.26225 8.4755 9.13179 8.50073 9.00019 8.49997Z"></path>
             </svg>
           </button>
           <div class="section-body" id="stockSection">
             <div class="filter-options">
-              <button class="filter-pill active" data-filter-type="stock" data-filter-value="all">Any Stock</button>
-              <button class="filter-pill" data-filter-type="stock" data-filter-value="true">In Stock</button>
-              <button class="filter-pill" data-filter-type="stock" data-filter-value="false">Out of Stock</button>
+              <button class="filter-pill active" data-filter-type="stock" data-filter-value="all">أي مخزون</button>
+              <button class="filter-pill" data-filter-type="stock" data-filter-value="true">متوفر</button>
+              <button class="filter-pill" data-filter-type="stock" data-filter-value="false">غير متوفر</button>
             </div>
           </div>
         </div>
@@ -271,10 +274,10 @@
       <!-- Footer -->
       <div class="filter-footer">
         <button class="btn secondary" id="mobileClearFilters">
-          Clear All
+          مسح الكل
         </button>
         <button class="btn" id="mobileApplyFilters">
-          Show Results
+          عرض النتائج
         </button>
       </div>
     </div>
@@ -285,20 +288,22 @@
     <div class="sort-overlay" id="sortOverlay"></div>
     <div class="sort-sheet-content">
       <div class="sort-header">
-        <h3 style="margin: 0;">Sort By</h3>
+        <h3 style="margin: 0;">ترتيب حسب</h3>
         <button class="sort-close" id="sortClose">
           <i style="font-size: 20px;">×</i>
         </button>
       </div>
       <div class="sort-options">
-        <button class="sort-option active" data-sort-value="relevance">Relevance</button>
-        <button class="sort-option" data-sort-value="price-low">Price: Low to High</button>
-        <button class="sort-option" data-sort-value="price-high">Price: High to Low</button>
-        <button class="sort-option" data-sort-value="newest">Newest</button>
-        <button class="sort-option" data-sort-value="name">Name: A to Z</button>
+        <button class="sort-option active" data-sort-value="relevance">الأكثر صلة</button>
+        <button class="sort-option" data-sort-value="price-low">السعر: من الأقل للأعلى</button>
+        <button class="sort-option" data-sort-value="price-high">السعر: من الأعلى للأقل</button>
+        <button class="sort-option" data-sort-value="newest">الأحدث</button>
+        <button class="sort-option" data-sort-value="name">الاسم: من أ إلى ي</button>
       </div>
     </div>
   </div>
+
+
 
   <style>
   /* Mobile Filter Sheet Styles */
@@ -429,7 +434,7 @@
       padding: 16px;
       background: none;
       border: none;
-      text-align: left;
+      text-align: right;
       font-size: 16px;
       cursor: pointer;
       border-bottom: 1px solid var(--w2);

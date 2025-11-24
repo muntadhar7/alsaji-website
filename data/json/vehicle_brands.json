@@ -1,9 +1,17 @@
 [
   {
-    "id": 1787,
-    "name": "Toyota",
-    "logo": [
-      "https://alsajigroup-staging-24665929.dev.odoo.com/web/image?model=product.productbrand&field=logo&id=1787"
-    ]
+    "id": 2806,
+    "name": "TOYOTA - تويوتا",
+    "logo": ""
+  },
+  {
+    "id": 2807,
+    "name": "Lexus - لكزس",
+    "logo": ""
+  },
+  {
+    "id": 2808,
+    "name": "NISSAN - نيسان",
+    "logo": ""
   }
 ]

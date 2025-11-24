@@ -1311,7 +1311,7 @@ Created: ${new Date().toLocaleString()}`;
         console.log('🔄 Using fallback products method');
 
         try {
-            const response = await fetch('data/json/products.json');
+            const response = await fetch('../data/json/products.json');
             if (response.ok) {
                 const products = await response.json();
                 let filtered = [...products];
@@ -1351,7 +1351,7 @@ Created: ${new Date().toLocaleString()}`;
 
     async getFallbackCategories() {
         try {
-            const response = await fetch('data/json/categories.json');
+            const response = await fetch('../data/json/categories.json');
             if (response.ok) {
                 const categories = await response.json();
                 return {
@@ -1374,7 +1374,7 @@ Created: ${new Date().toLocaleString()}`;
 
     async getFallbackBrands() {
         try {
-            const response = await fetch('data/json/brands.json');
+            const response = await fetch('../data/json/brands.json');
             if (response.ok) {
                 const brands = await response.json();
                 return {
@@ -1428,16 +1428,55 @@ Created: ${new Date().toLocaleString()}`;
 
 window.AlSajiCartEvents = {
     updateCartCount: function(count) {
-        const cartCountElements = document.querySelectorAll('#cartCount');
-        cartCountElements.forEach(element => {
-            element.textContent = count;
+        // Update ALL cart count elements in the header
+        const cartCountElements = [
+            '#cartCount',                    // Desktop cart chip
+            '#mobileCartCountHeader',       // Mobile header cart
+            '#mobileCartCount'              // Mobile menu cart
+        ];
+
+        let updatedCount = 0;
+
+        cartCountElements.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(element => {
+                element.textContent = count;
+
+                // Show/hide logic for badges
+                if (count > 0) {
+                    element.style.display = 'flex';
+                    element.style.display = 'inline'; // For span elements
+                } else {
+                    element.style.display = 'none';
+                }
+
+                updatedCount++;
+                console.log(`✅ Updated ${selector}: ${count}`);
+            });
         });
 
+        // Also dispatch event for other components
         document.dispatchEvent(new CustomEvent('cartCountUpdated', {
             detail: { count: count }
         }));
 
-        console.log('🔄 Cart count updated globally:', count);
+        console.log(`🔄 Cart count updated: ${count} (${updatedCount} elements)`);
+
+        // Debug if no elements found
+        if (updatedCount === 0) {
+            console.warn('⚠️ No cart count elements found. Available elements:');
+            this.debugCartElements();
+        }
+    },
+
+    debugCartElements: function() {
+        const allElements = document.querySelectorAll('*');
+        const cartElements = Array.from(allElements).filter(el =>
+            el.textContent.includes('cart') ||
+            el.id.includes('cart') ||
+            el.className.includes('cart')
+        );
+        console.log('🔍 Found cart-related elements:', cartElements);
     },
 
     refreshCartCount: async function() {

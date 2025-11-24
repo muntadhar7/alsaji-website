@@ -3,22 +3,29 @@
     <!-- Desktop: Logo + Navigation -->
     <div class="row" style="gap:12px; align-items:center;">
       <a href="index.html" class="logo">
-        <img src="assets/Alsaji Primary Logo EN.svg" alt="Logo" style="height:40px;">
+        <img src="../assets/Alsaji Primary Logo EN.svg" alt="Logo" style="height:40px;">
       </a>
     </div>
 
-    <!-- MOBILE LOGO - ADD THIS -->
+    <!-- MOBILE CART - Left side -->
+    <div class="mobile-cart-container">
+      <a href="cart.html" class="mobile-cart">
+        <span class="cart-icon">🛒</span>
+        <span id="mobileCartCountHeader" class="mobile-cart-count">0</span>
+      </a>
+    </div>
+
+    <!-- MOBILE LOGO - Centered on mobile -->
     <div class="mobile-logo-container">
       <a href="index.html">
         <img src="assets/Alsaji Primary Logo Mark.svg" alt="Logo" class="mobile-logo">
       </a>
     </div>
 
-
     <!-- Desktop: Header Actions -->
     <div class="row header-actions" style="gap:12px">
-      <button class="chip" id="langBtn">AR</button>
-      <a class="chip" href="account.html">Account</a>
+      <button class="chip" id="langBtn">العربية</button>
+      <a class="chip" href="account.html" data-translate="account">Account</a>
       <a class="chip cart-chip" href="cart.html">
         <span class="cart-icon">🛒</span>
         <span id="cartCount">0</span>
@@ -36,25 +43,25 @@
   <div class="mobile-nav" id="mobileNav">
     <button class="mobile-nav-close" id="mobileNavClose">✕</button>
     <div class="mobile-nav-content">
-      <a class="mobile-tab" href="index.html">Home</a>
-      <a class="mobile-tab" href="shop.html">Shop</a>
-      <a class="mobile-tab" href="services.html">Services</a>
-      <a class="mobile-tab" href="brands.html">Brands & Partners</a>
-      <a class="mobile-tab" href="branches.html">Branches</a>
-      <a class="mobile-tab" href="news.html">News & Guides</a>
-      <a class="mobile-tab" href="support.html">Support</a>
-      <a class="mobile-tab" href="trade.html">Trade Portal</a>
+      <a class="mobile-tab" href="index.html" data-translate="home">Home</a>
+      <a class="mobile-tab" href="shop.html" data-translate="shop">Shop</a>
+      <a class="mobile-tab" href="services.html" data-translate="services">Services</a>
+      <a class="mobile-tab" href="brands.html" data-translate="brands">Brands & Partners</a>
+      <a class="mobile-tab" href="branches.html" data-translate="branches">Branches</a>
+      <a class="mobile-tab" href="news.html" data-translate="news">News & Guides</a>
+      <a class="mobile-tab" href="support.html" data-translate="support">Support</a>
+      <a class="mobile-tab" href="trade.html" data-translate="trade">Trade Portal</a>
 
       <!-- Cart in mobile menu -->
       <a class="mobile-tab" href="cart.html" style="display: flex; align-items: center; gap: 8px;">
         <span class="cart-icon">🛒</span>
-        <span>Cart</span>
+        <span data-translate="cart">Cart</span>
         <span id="mobileCartCount" style="background: var(--red); color: white; padding: 2px 6px; border-radius: 10px; font-size: 12px; min-width: 20px; text-align: center;">0</span>
       </a>
 
       <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--ink2); display: flex; gap: 8px; flex-wrap: wrap;">
-        <button class="chip" id="mobileLangBtn">AR</button>
-        <a class="chip" href="account.html">Account</a>
+        <button class="chip" id="mobileLangBtn">العربية</button>
+        <a class="chip" href="account.html" data-translate="account">Account</a>
       </div>
     </div>
   </div>
@@ -62,19 +69,20 @@
   <!-- Original Navigation (stays for desktop) -->
   <nav class="nav">
     <div class="wrap row">
-      <a class="tab active" href="index.html">Home</a>
-      <a class="tab" href="shop.html">Shop</a>
-      <a class="tab" href="services.html">Services</a>
-      <a class="tab" href="brands.html">Brands & Partners</a>
-      <a class="tab" href="branches.html">Branches</a>
-      <a class="tab" href="news.html">News & Guides</a>
-      <a class="tab" href="support.html">Support</a>
-      <a class="tab" href="trade.html">Trade Portal</a>
+      <a class="tab active" href="index.html" data-translate="home">Home</a>
+      <a class="tab" href="shop.html" data-translate="shop">Shop</a>
+      <a class="tab" href="services.html" data-translate="services">Services</a>
+      <a class="tab" href="brands.html" data-translate="brands">Brands & Partners</a>
+      <a class="tab" href="branches.html" data-translate="branches">Branches</a>
+      <a class="tab" href="news.html" data-translate="news">News & Guides</a>
+      <a class="tab" href="support.html" data-translate="support">Support</a>
+      <a class="tab" href="trade.html" data-translate="trade">Trade Portal</a>
     </div>
   </nav>
 </header>
-
 <style>
+
+
   /* Your existing CSS styles here - keep all the CSS */
   /* Prevent horizontal scrolling globally */
   html, body {
@@ -103,12 +111,12 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    margin-left: auto;
   }
 
   .hamburger-btn span {
     display: block;
     height: 2px;
-    width: 100%;
     background-color: var(--w2);
     border-radius: 2px;
     transition: all 0.3s ease;
@@ -178,77 +186,86 @@
   .mobile-tab:hover {
     background: var(--red);
   }
-
-  /* Mobile Layout */
-  @media (max-width: 1023px) {
-    .hamburger-btn {
-      display: flex;
-    }
-
-    .nav {
-      display: none;
-    }
-
-    .mobile-nav {
-      display: block;
-    }
-
-    /* MOBILE-ONLY CHANGES START HERE */
-    .util .wrap.row.between {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 16px;
-      width: 100%;
-      box-sizing: border-box;
-      max-width: 100%;
-      overflow: hidden;
-    }
-
-    /* Minimal logo container on left */
-    .mobile-logo-container {
-      display: flex !important;
-      align-items: center;
-      flex: 1;
-    }
-
-    .mobile-logo {
-      height: 32px;
-      width: auto;
-    }
-
-    /* Hide desktop logo and show mobile logo */
-    .util .wrap.row.between > .row:first-child {
-      display: none !important;
-    }
-
-    /* Remove all chips from header on mobile */
-    .header-actions .chip {
-      display: none !important;
-    }
-
-    /* Position hamburger on the right */
-    .hamburger-btn {
-      display: flex;
-      margin-left: auto; /* Push to right */
-    }
-
-    /* Header actions container adjustment */
-    .header-actions {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex: 1;
-    }
-    /* MOBILE-ONLY CHANGES END HERE */
-
-    .util {
-      overflow: hidden;
-      max-width: 100%;
-    }
+/* Mobile Layout */
+@media (max-width: 1023px) {
+  .hamburger-btn {
+    display: flex;
   }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  /* FIXED MOBILE HEADER LAYOUT */
+  .util .wrap.row.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cart on left - takes 1/3 */
+  .mobile-cart-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .mobile-cart {
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+    color: var(--w2);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--ink2);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Logo centered - takes 1/3 */
+  .mobile-logo-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .mobile-logo {
+    height: 32px;
+    width: auto;
+  }
+
+  /* Hamburger on right - takes 1/3 */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    margin-right: 0;
+  }
+
+  /* Hide desktop elements */
+  .util .wrap.row.between > .row:first-child {
+    display: none !important;
+  }
+
+  .header-actions .chip:not(.cart-chip),
+  .header-actions .cart-chip {
+    display: none !important;
+  }
+}
 
   /* Desktop styles - keep original layout */
   @media (min-width: 1024px) {
@@ -270,10 +287,63 @@
       display: none !important;
     }
 
+    .mobile-cart-container {
+      display: none !important;
+    }
+
     .hamburger-btn {
       display: none !important;
     }
   }
+
+@media (max-width: 1023px) {
+  .util .wrap.row.between {
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr; /* Equal columns */
+    align-items: center;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cart - left side */
+  .mobile-cart-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column: 1;
+  }
+
+  /* Logo - center */
+  .mobile-logo-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+  }
+
+  /* Hamburger - right side */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 3;
+    gap: 0 !important; /* Remove gap on mobile */
+  }
+
+  .hamburger-btn {
+    margin-RIGHT: 0;
+  }
+
+  /* Hide other elements */
+  .util .wrap.row.between > .row:first-child {
+    display: none !important;
+  }
+
+  .header-actions .chip {
+    display: none !important;
+  }
+}
 
   @media (max-width: 480px) {
     .util .wrap.row.between {
@@ -282,7 +352,12 @@
     }
 
     .mobile-logo {
-      height: 32px !important;
+      height: 28px !important;
+    }
+
+    .mobile-cart {
+      padding: 6px 10px;
+      font-size: 14px;
     }
   }
 
@@ -304,7 +379,7 @@
 </style>
 
 <script>
-// Mobile menu functionality
+// Mobile menu functionality ONLY - remove language toggle from here
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const mobileNav = document.getElementById('mobileNav');
@@ -334,39 +409,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
-
-  // Language toggle functionality
-  const langBtn = document.getElementById('langBtn');
-  const mobileLangBtn = document.getElementById('mobileLangBtn');
-
-  function toggleLanguage() {
-    const currentLang = langBtn.textContent;
-    const newLang = currentLang === 'AR' ? 'EN' : 'AR';
-
-    if (langBtn) langBtn.textContent = newLang;
-    if (mobileLangBtn) mobileLangBtn.textContent = newLang;
-
-    // Add your language switching logic here
-    console.log('Switching language to:', newLang);
-  }
-
-  if (langBtn) langBtn.addEventListener('click', toggleLanguage);
-  if (mobileLangBtn) mobileLangBtn.addEventListener('click', toggleLanguage);
 });
-
-// Update cart count function for both header and mobile menu
-function updateCartCount(count) {
-  const cartCount = document.getElementById('cartCount');
-  const mobileCartCount = document.getElementById('mobileCartCount');
-
-  if (cartCount) {
-    cartCount.textContent = count;
-    cartCount.style.display = count > 0 ? 'flex' : 'none';
-  }
-
-  if (mobileCartCount) {
-    mobileCartCount.textContent = count;
-    mobileCartCount.style.display = count > 0 ? 'flex' : 'none';
-  }
-}
 </script>
