@@ -1,27 +1,4 @@
-(function loadPathHelper() {
-    // Only load if not already loaded
-    if (typeof fixAllPaths === 'function') return;
 
-    const script = document.createElement('script');
-
-    // Detect if we're in Arabic folder to set correct path
-    const isArabic = window.location.pathname.includes('/arabic/');
-    const helperPath = isArabic ? '../js/utils/pathHelper.js' : 'js/utils/pathHelper.js';
-
-    script.src = helperPath;
-    script.onload = function() {
-        console.log('Path helper loaded successfully');
-        // Initialize the helper once loaded
-        if (typeof fixAllPaths === 'function') {
-            document.addEventListener('DOMContentLoaded', fixAllPaths);
-        }
-    };
-    script.onerror = function() {
-        console.warn('Failed to load path helper, continuing without it');
-    };
-
-    document.head.appendChild(script);
-})();
 
 
 // Common functionality across all pages

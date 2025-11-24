@@ -22,6 +22,14 @@ function getBasePath() {
     }
 }
 
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    fixAllPaths();
+    if (typeof loadLayout === 'function') {
+        loadLayout();
+    }
+});
+
 function fixAllPaths() {
     const basePath = getBasePath();
 
