@@ -1,6 +1,7 @@
 
 
 
+
 // Common functionality across all pages
 document.addEventListener('DOMContentLoaded', function() {
     initializeCommonFeatures();
@@ -344,39 +345,84 @@ function debounce(func, wait) {
 }
 
 // Layout loading
+// In main.js - MODIFY your loadLayout function
 async function loadLayout() {
-    // FIX PATHS FIRST
-    if (typeof fixAllPaths === 'function') fixAllPaths();
+    // BETTER: Check multiple conditions to prevent duplication
+    const headerExists = document.querySelector('header');
+    const layoutLoaded = document.body.hasAttribute('data-layout-loaded');
+    const isInitializing = document.body.hasAttribute('data-layout-loading');
+
+    if (headerExists || layoutLoaded || isInitializing) {
+        console.log('Layout already loaded or loading, skipping...');
+        return;
+    }
+
+    // Mark as loading to prevent concurrent calls
+    document.body.setAttribute('data-layout-loading', 'true');
+
+    // Determine correct path for partials
+    let partialsPath = 'partials/';
+    const currentPath = window.location.pathname;
+
+    if (currentPath.includes('/arabic/')) {
+        partialsPath = '../partials/';
+        console.log('📍 Arabic folder detected, using path:', partialsPath);
+    }
+
     try {
+        console.log('📥 Loading layout from:', partialsPath);
         const [headerRes, footerRes] = await Promise.all([
-            fetch('../partials/header.html'),
-            fetch('../partials/footer.html')
+            fetch(partialsPath + 'header.html'),
+            fetch(partialsPath + 'footer.html')
         ]);
+
+        if (!headerRes.ok) throw new Error(`Header failed: ${headerRes.status}`);
+        if (!footerRes.ok) throw new Error(`Footer failed: ${footerRes.status}`);
 
         const [headerHtml, footerHtml] = await Promise.all([
             headerRes.text(),
             footerRes.text()
         ]);
 
+        // Clear any existing content first
+        const existingHeader = document.querySelector('header');
+        const existingFooter = document.querySelector('footer');
+        if (existingHeader) existingHeader.remove();
+        if (existingFooter) existingFooter.remove();
+
         document.body.insertAdjacentHTML('afterbegin', headerHtml);
         document.body.insertAdjacentHTML('beforeend', footerHtml);
 
+        // Update markers
+        document.body.setAttribute('data-layout-loaded', 'true');
+        document.body.removeAttribute('data-layout-loading');
         document.body.style.visibility = 'visible';
 
-        // Initialize ALL features after header is loaded
-        initializeCommonFeatures();
+        console.log('✅ Layout loaded successfully');
+
+        // Initialize features only once
+        if (!window.commonFeaturesInitialized) {
+            initializeCommonFeatures();
+        }
 
         setTimeout(() => {
-            initializeCartManager();
+            if (typeof initializeCartManager === 'function') {
+                initializeCartManager();
+            }
         }, 100);
 
     } catch (err) {
         console.error('Failed to load header/footer:', err);
+        document.body.removeAttribute('data-layout-loading');
         document.body.style.visibility = 'visible';
-        // Initialize features even if header/footer fail
-        initializeCommonFeatures();
+
+        // Only initialize if not already done
+        if (!window.commonFeaturesInitialized) {
+            initializeCommonFeatures();
+        }
     }
 }
+
 
 // Hamburger menu functionality
 function initializeHamburgerMenu() {

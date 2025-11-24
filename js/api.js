@@ -1,3 +1,5 @@
+
+
 // api.js - Refactored and optimized version
 class AlSajiAPI {
     constructor() {

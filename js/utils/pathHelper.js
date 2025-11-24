@@ -1,3 +1,16 @@
+// pathHelper.js - FIXED VERSION
+(function() {
+    'use strict';
+
+    // Remove the illegal return statement from here
+    if (window.pathHelperLoaded) {
+        console.log('Path helper already loaded, skipping...');
+        return; // This return is fine inside a function
+    }
+    window.pathHelperLoaded = true;
+
+    console.log('🚀 Path helper loading...');
+
 // utils/pathHelper.js
 function getBasePath() {
     const currentPath = window.location.pathname;
@@ -30,27 +43,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// In pathHelper.js - Only fix new elements, not existing ones multiple times
 function fixAllPaths() {
     const basePath = getBasePath();
 
-    console.log('Base path detected:', basePath); // Debug log
+    console.log('Base path detected:', basePath);
 
-    // Fix all links, images, scripts, and other assets
+    // Only fix elements that haven't been fixed yet
     document.querySelectorAll('a, img, script, link, iframe, source, embed').forEach(element => {
+        if (element.hasAttribute('data-path-fixed')) return;
+
         const attr = getSrcHrefAttr(element);
         if (attr && element[attr]) {
             const originalUrl = element[attr];
             element[attr] = fixPath(originalUrl, basePath);
-            console.log(`Fixed ${attr}: ${originalUrl} → ${element[attr]}`); // Debug log
+            element.setAttribute('data-path-fixed', 'true');
+            console.log(`Fixed ${attr}: ${originalUrl} → ${element[attr]}`);
         }
     });
-
-    // Fix CSS background images and other inline styles
-    document.querySelectorAll('[style*="url("]').forEach(element => {
-        element.style.cssText = fixCssUrls(element.style.cssText, basePath);
-    });
 }
-
 function getSrcHrefAttr(element) {
     if (element.hasAttribute('src')) return 'src';
     if (element.hasAttribute('href')) return 'href';
@@ -87,3 +98,4 @@ function fixCssUrls(cssText, basePath) {
     });
 }
 
+})();
