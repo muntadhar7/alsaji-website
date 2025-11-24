@@ -1,24 +1,22 @@
 // utils/pathHelper.js
 function getBasePath() {
     const currentPath = window.location.pathname;
-
-    // Handle GitHub Pages structure: username.github.io/repo-name/
     const isGitHubPages = window.location.hostname.includes('github.io');
 
     if (isGitHubPages) {
         const pathSegments = currentPath.split('/').filter(segment => segment);
-
-        // Repository name is usually the first segment after domain
         const repoName = pathSegments[0];
         const isArabic = pathSegments.includes('arabic');
 
         if (isArabic) {
-            return `/${repoName}/../`;
+            // In Arabic folder: /repo-name/arabic/
+            return `/${repoName}/arabic/`;
         } else {
+            // In root: /repo-name/
             return `/${repoName}/`;
         }
     } else {
-        // Local development or other hosting
+        // Local development
         const isArabic = currentPath.includes('/arabic/');
         return isArabic ? '../' : './';
     }
@@ -81,10 +79,3 @@ function fixCssUrls(cssText, basePath) {
     });
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-    fixAllPaths();
-    if (typeof loadLayout === 'function') {
-        loadLayout();
-    }
-});

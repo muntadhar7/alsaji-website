@@ -88,7 +88,7 @@ function renderBrands(brands) {
                             align-items:center;
                             justify-content:center;
                         ">
-                        <img src="data:image/png;base64,${image}"
+                        <img src="${image}"
                          alt="${brandName}"
                          style="max-width:100%;max-height:100%;object-fit:contain;padding:12px;"
                          onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'text-align:center;color:var(--navy2);font-size:14px;padding:20px\'>${brandName}</div>'">
